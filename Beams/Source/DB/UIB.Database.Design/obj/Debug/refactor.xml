@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0">
+  <Operation Name="Rename Refactor" Key="c29ce1bf-5e9d-4452-8ebf-9b9077f730ff" ChangeDateTime="08/28/2023 21:18:00" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[safety].[UIB_Zone_Machines].[Update]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[safety].[UIB_Zone_Machines]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UpdDateTime" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a8481deb-07b7-44db-a63d-ebe420b4e1bf" ChangeDateTime="04/11/2024 12:32:28" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[common].[UIB_Location_Ranges].[Piece_OD_Min]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[common].[UIB_Location_Ranges]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Piece_Lenght_Min" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="79448fdf-13aa-40eb-8837-134888a3770f" ChangeDateTime="04/11/2024 12:32:41" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[common].[UIB_Location_Ranges].[Piece_Lenght_Min]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[common].[UIB_Location_Ranges]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Piece_Length_Min" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d5e3abf2-cc0f-4d99-a74e-8f6445dc47f1" ChangeDateTime="04/11/2024 12:32:43" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[common].[UIB_Location_Ranges].[Piece_OD_Max]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[common].[UIB_Location_Ranges]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Piece_Length_Max" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="59f7a066-4b2d-4741-bac4-206c6b82f173" ChangeDateTime="04/11/2024 12:32:54" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[common].[UIB_Location_Ranges].[ODRange]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[common].[UIB_Location_Ranges]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LengthRange" />
+  </Operation>
+</Operations>

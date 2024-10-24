@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>UIB.Database.Design</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{18593836-6ad8-4817-a552-3065871e964d}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>UIB.Database.Design</RootNamespace>
+    <AssemblyName>UIB.Database.Design</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Filegroups" />
+    <Folder Include="Logins" />
+    <Folder Include="Roles" />
+    <Folder Include="Schemas" />
+    <Folder Include="Scripts" />
+    <Folder Include="Sequences" />
+    <Folder Include="Store Procedures" />
+    <Folder Include="Tables" />
+    <Folder Include="Tables\Catalogs" />
+    <Folder Include="Tables\Events" />
+    <Folder Include="Tables\History" />
+    <Folder Include="Tables\Process" />
+    <Folder Include="Tables\Telegrams" />
+    <Folder Include="Users" />
+    <Folder Include="Views" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Filegroups\Events.sql" />
+    <Build Include="Filegroups\History.sql" />
+    <Build Include="Filegroups\Process.sql" />
+    <Build Include="Filegroups\Telegrams.sql" />
+    <Build Include="Logins\clientuser.sql" />
+    <Build Include="Logins\globaluser.sql" />
+    <Build Include="Logins\l2_espuser.sql" />
+    <Build Include="Logins\l2_pppluser.sql" />
+    <Build Include="Logins\l2_pltcmuser.sql" />
+    <Build Include="Logins\rodeouser.sql" />
+    <Build Include="Logins\serveruser.sql" />
+    <Build Include="Roles\clientaccess.sql" />
+    <Build Include="Roles\globalaccess.sql" />
+    <Build Include="Roles\l2_espaccess.sql" />
+    <Build Include="Roles\l2_ppplaccess.sql" />
+    <Build Include="Roles\l2_pltcmaccess.sql" />
+    <Build Include="Roles\rodeoaccess.sql" />
+    <Build Include="Roles\serveraccess.sql" />
+    <Build Include="Schemas\common.sql" />
+    <Build Include="Schemas\global.sql" />
+    <Build Include="Schemas\l2_esp.sql" />
+    <Build Include="Schemas\l2_pppl.sql" />
+    <Build Include="Schemas\l2_pltcm.sql" />
+    <Build Include="Schemas\report.sql" />
+    <Build Include="Schemas\rodeo.sql" />
+    <Build Include="Schemas\safety.sql" />
+    <Build Include="Schemas\system.sql" />
+    <Build Include="Schemas\to.sql" />
+    <Build Include="Schemas\tracking.sql" />
+    <Build Include="Sequences\UIB_GHP_Reference.sql" />
+    <Build Include="Store Procedures\GetAlarms.sql" />
+    <Build Include="Store Procedures\GetAndUpdatePickList.sql" />
+    <Build Include="Store Procedures\GetGHPNewSequence.sql" />
+    <Build Include="Store Procedures\GetHistoricAlarms.sql" />
+    <Build Include="Store Procedures\GetHistoricCommands.sql" />
+    <Build Include="Store Procedures\GetHistoricUserLogs.sql" />
+    <Build Include="Store Procedures\GetUserLogs.sql" />
+    <Build Include="Store Procedures\InsHistoricAlarm.sql" />
+    <Build Include="Store Procedures\InsHistoricCommand.sql" />
+    <Build Include="Store Procedures\InsHistoricUserLog.sql" />
+    <Build Include="Store Procedures\UpdHistoricAlarm.sql" />
+    <Build Include="Store Procedures\UpdHistoricAlarmForced.sql" />
+    <Build Include="Store Procedures\UpdHistoricUserLog.sql" />
+    <Build Include="Store Procedures\UpdHistoricUserLogForced.sql" />
+    <Build Include="Tables\Catalogs\UIB_Display_Piece_Group_Items.sql" />
+    <Build Include="Tables\Catalogs\UIB_Display_Piece_Groups.sql" />
+    <Build Include="Tables\Catalogs\UIB_Drive_Control.sql" />
+    <Build Include="Tables\Catalogs\UIB_Drive_Failures.sql" />
+    <Build Include="Tables\Catalogs\UIB_Drive_Process.sql" />
+    <Build Include="Tables\Catalogs\UIB_Encoder_Control.sql" />
+    <Build Include="Tables\Catalogs\UIB_Encoder_Failures.sql" />
+    <Build Include="Tables\Catalogs\UIB_Encoder_Process.sql" />
+    <Build Include="Tables\Catalogs\UIB_Encoder_Statuses.sql" />
+    <Build Include="Tables\Catalogs\UIB_Encoder_Types.sql" />
+    <Build Include="Tables\Catalogs\UIB_Ground_EStop_Failures.sql" />
+    <Build Include="Tables\Catalogs\UIB_Ground_EStop_Groups.sql" />
+    <Build Include="Tables\Catalogs\UIB_Ground_EStop_Interfaces.sql" />
+    <Build Include="Tables\Catalogs\UIB_Ground_EStop_Panels.sql" />
+    <Build Include="Tables\Catalogs\UIB_Ground_EStop_Requests.sql" />
+    <Build Include="Tables\Catalogs\UIB_HoldOn_Reasons.sql" />
+    <Build Include="Tables\Catalogs\UIB_Job_Types.sql" />
+    <Build Include="Tables\Catalogs\UIB_Location_Groups.sql" />
+    <Build Include="Tables\Catalogs\UIB_Location_Ranges.sql" />
+    <Build Include="Tables\Catalogs\UIB_Machine_Drives.sql" />
+    <Build Include="Tables\Catalogs\UIB_Machine_Encoders.sql" />
+    <Build Include="Tables\Catalogs\UIB_Machine_Event_Types.sql" />
+    <Build Include="Tables\Catalogs\UIB_Machine_Exit_Locations.sql" />
+    <Build Include="Tables\Catalogs\UIB_Machine_Exit_Zones.sql" />
+    <Build Include="Tables\Catalogs\UIB_Machine_Failures.sql" />
+    <Build Include="Tables\Catalogs\UIB_Machine_Interfaces.sql" />
+    <Build Include="Tables\Catalogs\UIB_Machine_Interlocks.sql" />
+    <Build Include="Tables\Catalogs\UIB_Message_Types.sql" />
+    <Build Include="Tables\Catalogs\UIB_Pick_Lists.sql" />
+    <Build Include="Tables\Catalogs\UIB_Piece_Event_Types.sql" />
+    <Build Include="Tables\Catalogs\UIB_PLC_IOs.sql" />
+    <Build Include="Tables\Catalogs\UIB_PLC_Modules.sql" />
+    <Build Include="Tables\Catalogs\UIB_PLC_Racks.sql" />
+    <Build Include="Tables\Catalogs\UIB_PLC_VIOs.sql" />
+    <Build Include="Tables\Catalogs\UIB_PLCs.sql" />
+    <Build Include="Tables\Catalogs\UIB_RCP_ErrorCodes.sql" />
+    <Build Include="Tables\Catalogs\UIB_RCP_Flags.sql" />
+    <Build Include="Tables\Catalogs\UIB_RCP_OperationModes.sql" />
+    <Build Include="Tables\Catalogs\UIB_Request_Interlocks.sql" />
+    <Build Include="Tables\Catalogs\UIB_Request_Signals.sql" />
+    <Build Include="Tables\Catalogs\UIB_Request_Transport_Dependencies.sql" />
+    <Build Include="Tables\Catalogs\UIB_Request_Type_Signals.sql" />
+    <Build Include="Tables\Catalogs\UIB_Request_Types.sql" />
+    <Build Include="Tables\Catalogs\UIB_Requests.sql" />
+    <Build Include="Tables\Catalogs\UIB_Troubleshooting_Files.sql" />
+    <Build Include="Tables\Catalogs\UIB_Troubleshooting_References.sql" />
+    <Build Include="Tables\Catalogs\UIB_Zone_Dependencies.sql" />
+    <Build Include="Tables\Catalogs\UIB_Zone_Event_Types.sql" />
+    <Build Include="Tables\Catalogs\UIB_Zone_Fences.sql" />
+    <Build Include="Tables\Catalogs\UIB_Zone_Interlocks.sql" />
+    <Build Include="Tables\Catalogs\UIB_Zone_Machines.sql" />
+    <Build Include="Tables\Catalogs\UIB_Zone_Sections.sql" />
+    <Build Include="Tables\Catalogs\UIB_Zone_Types.sql" />
+    <Build Include="Tables\Catalogs\UIB_Zones.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Client_Credentials.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Client_Types.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Clients.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Event_Types.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Location_Types.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Locations.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Machine_Groups.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Machine_Sequencer.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Machine_Statuses.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Machine_Type_Positions.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Machine_Types.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Machines.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Network_Component_Alarms.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Network_Component_Types.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Network_Components.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Networks.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Piece_Statuses.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Piece_Types.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Setting_Group_Machine_Types.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Setting_Groups.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Setting_Tags.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_TO_Actions.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_TO_ErrorCodes.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_TO_Statuses.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_TO_Step_ErrorCodes.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_TO_Types.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Yards.sql" />
+    <Build Include="Tables\Events\UIB_Incoming_Messages.sql" />
+    <Build Include="Tables\Events\UIB_Machine_Events.sql" />
+    <Build Include="Tables\Events\UIB_Outgoing_Messages.sql" />
+    <Build Include="Tables\Events\UIB_Piece_Events.sql" />
+    <Build Include="Tables\Events\UIB_Zone_Events.sql" />
+    <Build Include="Tables\Events\Rodeo_Events.sql" />
+    <Build Include="Tables\History\UIB_Failures_History.sql" />
+    <Build Include="Tables\History\Rodeo_Alarms_History.sql" />
+    <Build Include="Tables\History\Rodeo_Commands_History.sql" />
+    <Build Include="Tables\History\Rodeo_UserLogs_History.sql" />
+    <Build Include="Tables\Process\UIB_Job_Forecasts.sql" />
+    <Build Include="Tables\Process\UIB_Jobs.sql" />
+    <Build Include="Tables\Process\UIB_Setting_Values.sql" />
+    <Build Include="Tables\Process\Rodeo_TransportOrders.sql" />
+    <Build Include="Users\clientuser.sql" />
+    <Build Include="Users\globaluser.sql" />
+    <Build Include="Users\l2_espuser.sql" />
+    <Build Include="Users\l2_pppluser.sql" />
+    <Build Include="Users\l2_pltcmuser.sql" />
+    <Build Include="Users\rodeouser.sql" />
+    <Build Include="Users\serveruser.sql" />
+    <Build Include="Tables\Process\Rodeo_TO_Pieces.sql" />
+    <Build Include="Tables\Process\Rodeo_TO_Steps.sql" />
+    <Build Include="Tables\Process\Rodeo_TO_Step_History.sql" />
+    <Build Include="Tables\Process\UIB_Destination_Next_Pieces.sql" />
+    <Build Include="Tables\Catalogs\UIB_Job_Type_Routes.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_TO_Directions.sql" />
+    <Build Include="Tables\Catalogs\UIB_Request_Signal_Requests.sql" />
+    <Build Include="Tables\Catalogs\UIB_Location_Range_Yards.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Yard_Transfers.sql" />
+    <Build Include="Tables\Process\Rodeo_TO_Notifications.sql" />
+    <Build Include="Roles\scheduleraccess.sql" />
+    <Build Include="Logins\scheduleruser.sql" />
+    <Build Include="Tables\Catalogs\UIB_Drive_Statuses.sql" />
+    <Build Include="Tables\Catalogs\UIB_Drive_Types.sql" />
+    <Build Include="Tables\Catalogs\UIB_Brake_Control.sql" />
+    <Build Include="Tables\Catalogs\UIB_Brake_Process.sql" />
+    <Build Include="Tables\Catalogs\UIB_Brake_Statuses.sql" />
+    <Build Include="Tables\Catalogs\UIB_Brake_Types.sql" />
+    <Build Include="Tables\Catalogs\UIB_Machine_Brakes.sql" />
+    <Build Include="Tables\Catalogs\UIB_Machine_Motors.sql" />
+    <Build Include="Tables\Catalogs\UIB_Motor_Brakes.sql" />
+    <Build Include="Tables\Catalogs\UIB_Motor_Gearboxs.sql" />
+    <Build Include="Tables\Catalogs\UIB_Motor_Motors.sql" />
+    <Build Include="Tables\Catalogs\UIB_Motor_Types.sql" />
+    <Build Include="Tables\Catalogs\UIB_Pick_List_Groups.sql" />
+    <Build Include="Tables\Catalogs\UIB_Pick_List_Groups_Filters.sql" />
+    <Build Include="Tables\Catalogs\UIB_Pick_Lists_Filters.sql" />
+    <Build Include="Views\UIB_Pick_List_Groups_All.sql" />
+    <Build Include="Views\UIB_Pick_Lists_All.sql" />
+    <Build Include="Tables\Process\Rodeo_Pieces.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_TO_Route_Steps.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_TO_Routes.sql" />
+    <Build Include="Tables\Catalogs\UIB_RCP_Configs.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Positions.sql" />
+    <Build Include="Tables\Catalogs\UIB_Files.sql" />
+    <Build Include="Tables\Catalogs\UIB_File_Types.sql" />
+    <Build Include="Tables\Catalogs\UIB_Bridge_WorkModes.sql" />
+    <Build Include="Tables\Catalogs\UIB_Trolley_WorkModes.sql" />
+    <Build Include="Tables\Catalogs\UIB_Hoist_WorkModes.sql" />
+    <Build Include="Tables\Catalogs\UIB_Grab_WorkModes.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Piece_Alloy_Families.sql" />
+    <Build Include="Tables\Catalogs\Rodeo_Piece_Alloys.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Database.Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="UIB.Database.Design.refactorlog" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>set AppDir=$(SolutionDir)..\
+set ExecDir=%AppDir%AppRelease\executables
+set CustomDllDir=%AppDir%AppRelease\executables\uib_dlls
+
+if exist "%ExecDir%" (
+  if exist "%CustomDllDir%" ( echo "%CustomDllDir%" )
+  else ( mkdir "%CustomDllDir%" )
+)
+else (
+  mkdir "%ExecDir%"
+  mkdir "%CustomDllDir%"
+)
+
+COPY /y "$(TargetDir)$(TargetFileName)" "%CustomDllDir%\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

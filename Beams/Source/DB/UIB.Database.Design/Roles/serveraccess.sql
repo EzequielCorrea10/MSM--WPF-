@@ -1,0 +1,49 @@
+﻿--USE [$(DatabaseName)]
+
+--GO
+
+CREATE ROLE [serveraccess]
+
+GO
+
+GRANT DELETE, EXECUTE, INSERT, UPDATE, SELECT ON SCHEMA::[rodeo] TO [serveraccess]
+
+GO
+
+GRANT DELETE, EXECUTE, INSERT, UPDATE, SELECT ON SCHEMA::[common] TO [serveraccess]
+
+GO
+
+GRANT DELETE, EXECUTE, INSERT, UPDATE, SELECT ON SCHEMA::[report] TO [serveraccess]
+
+GO
+
+GRANT DELETE, EXECUTE, INSERT, UPDATE, SELECT ON SCHEMA::[safety] TO [serveraccess]
+
+GO
+
+GRANT DELETE, EXECUTE, INSERT, UPDATE, SELECT ON SCHEMA::[system] TO [serveraccess]
+
+GO
+
+GRANT DELETE, EXECUTE, INSERT, UPDATE, SELECT ON SCHEMA::[to] TO [serveraccess]
+
+GO
+
+GRANT DELETE, EXECUTE, INSERT, UPDATE, SELECT ON SCHEMA::[tracking] TO [serveraccess]
+
+GO
+
+GRANT DELETE, EXECUTE, INSERT, UPDATE, SELECT ON SCHEMA::[global] TO [serveraccess]
+
+GO
+
+GRANT DELETE, EXECUTE, INSERT, UPDATE, SELECT ON SCHEMA::[l2_esp] TO [serveraccess]
+
+GO
+
+GRANT DELETE, EXECUTE, INSERT, UPDATE, SELECT ON SCHEMA::[l2_pltcm] TO [serveraccess]
+
+GO
+
+--GRANT DELETE, EXECUTE, INSERT, UPDATE, SELECT ON SCHEMA::[l2_pgl] TO [serveraccess]

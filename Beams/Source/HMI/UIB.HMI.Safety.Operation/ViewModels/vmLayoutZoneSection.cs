@@ -11,7 +11,6 @@ namespace MSM.HMI.Safety.Operation.ViewModels
     using Janus.Rodeo.Windows.Library.UI.Common;
     using Janus.Rodeo.Windows.Library.UI.Controls.Widgets;
 
-    using MSM.Database;
     using MSM.Utility.Common;
     using MSM.Utility.Configuration;
     using MSM.Utility.Common.Catalogs;

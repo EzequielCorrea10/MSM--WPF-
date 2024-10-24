@@ -1,0 +1,2032 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="NOVISAIMS" Class="UIBDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007" Extended="True">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.1.55\MSSQL2019;Initial Catalog=NOVISAIMS;User ID=sa" SettingsObjectName="UIB.Database.Properties.Settings" SettingsPropertyName="NOVISAIMSConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="common.UIB_Drive_Control" Member="UIB_Drive_Controls">
+    <Type Name="UIB_Drive_Control">
+      <Column Name="IdDriveControl" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdDriveType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70) NOT NULL" CanBeNull="false" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AlertLevel" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Drive_Type_UIB_Drive_Control" Member="UIB_Drive_Type" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="UIB_Drive_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Drive_Failures" Member="UIB_Drive_Failures">
+    <Type Name="UIB_Drive_Failure">
+      <Column Name="IdDriveFailure" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdDriveType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Alarmname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="TroubleshootingReference" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Drive_Type_UIB_Drive_Failure" Member="UIB_Drive_Type" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="UIB_Drive_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Drive_Process" Member="UIB_Drive_Processes">
+    <Type Name="UIB_Drive_Process">
+      <Column Name="IdDriveProcess" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdDriveType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70) NOT NULL" CanBeNull="false" />
+      <Column Name="Unit" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Drive_Type_UIB_Drive_Process" Member="UIB_Drive_Type" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="UIB_Drive_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Drive_Statuses" Member="UIB_Drive_Statuses">
+    <Type Name="UIB_Drive_Statuse">
+      <Column Name="IdDriveStatus" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdDriveType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70) NOT NULL" CanBeNull="false" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AlertLevel" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Drive_Type_UIB_Drive_Statuse" Member="UIB_Drive_Type" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="UIB_Drive_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Drive_Types" Member="UIB_Drive_Types">
+    <Type Name="UIB_Drive_Type">
+      <Column Name="IdDriveType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Drive_Type_UIB_Drive_Control" Member="UIB_Drive_Controls" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="UIB_Drive_Control" />
+      <Association Name="UIB_Drive_Type_UIB_Drive_Failure" Member="UIB_Drive_Failures" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="UIB_Drive_Failure" />
+      <Association Name="UIB_Drive_Type_UIB_Drive_Process" Member="UIB_Drive_Processes" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="UIB_Drive_Process" />
+      <Association Name="UIB_Drive_Type_UIB_Drive_Statuse" Member="UIB_Drive_Statuses" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="UIB_Drive_Statuse" />
+      <Association Name="UIB_Drive_Type_UIB_Machine_Drive" Member="UIB_Machine_Drives" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="UIB_Machine_Drive" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Encoder_Control" Member="UIB_Encoder_Controls">
+    <Type Name="UIB_Encoder_Control">
+      <Column Name="IdEncoderControl" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdEncoderType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70) NOT NULL" CanBeNull="false" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AlertLevel" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Encoder_Type_UIB_Encoder_Control" Member="UIB_Encoder_Type" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="UIB_Encoder_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Encoder_Failures" Member="UIB_Encoder_Failures">
+    <Type Name="UIB_Encoder_Failure">
+      <Column Name="IdEncoderFailure" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdEncoderType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Alarmname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="TroubleshootingReference" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Encoder_Type_UIB_Encoder_Failure" Member="UIB_Encoder_Type" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="UIB_Encoder_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Encoder_Process" Member="UIB_Encoder_Processes">
+    <Type Name="UIB_Encoder_Process">
+      <Column Name="IdEncoderProcess" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdEncoderType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70) NOT NULL" CanBeNull="false" />
+      <Column Name="Unit" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Encoder_Type_UIB_Encoder_Process" Member="UIB_Encoder_Type" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="UIB_Encoder_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Encoder_Statuses" Member="UIB_Encoder_Statuses">
+    <Type Name="UIB_Encoder_Statuse">
+      <Column Name="IdEncoderStatus" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdEncoderType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70) NOT NULL" CanBeNull="false" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AlertLevel" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Encoder_Type_UIB_Encoder_Statuse" Member="UIB_Encoder_Type" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="UIB_Encoder_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Encoder_Types" Member="UIB_Encoder_Types">
+    <Type Name="UIB_Encoder_Type">
+      <Column Name="IdEncoderType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Encoder_Type_UIB_Encoder_Control" Member="UIB_Encoder_Controls" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="UIB_Encoder_Control" />
+      <Association Name="UIB_Encoder_Type_UIB_Encoder_Failure" Member="UIB_Encoder_Failures" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="UIB_Encoder_Failure" />
+      <Association Name="UIB_Encoder_Type_UIB_Encoder_Process" Member="UIB_Encoder_Processes" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="UIB_Encoder_Process" />
+      <Association Name="UIB_Encoder_Type_UIB_Encoder_Statuse" Member="UIB_Encoder_Statuses" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="UIB_Encoder_Statuse" />
+      <Association Name="UIB_Encoder_Type_UIB_Machine_Encoder" Member="UIB_Machine_Encoders" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="UIB_Machine_Encoder" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Layout_Section_Machines" Member="UIB_Layout_Section_Machines">
+    <Type Name="UIB_Layout_Section_Machine">
+      <Column Name="IdLayoutSectionMachine" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdLayoutSection" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Layout_Section_UIB_Layout_Section_Machine" Member="UIB_Layout_Section" ThisKey="IdLayoutSection" OtherKey="IdLayoutSection" Type="UIB_Layout_Section" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_UIB_Layout_Section_Machine" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Layout_Sections" Member="UIB_Layout_Sections">
+    <Type Name="UIB_Layout_Section">
+      <Column Name="IdLayoutSection" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="X1AbsolutePos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="X2AbsolutePos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Y1AbsolutePos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Y2AbsolutePos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ColorShown" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Layout_Section_UIB_Layout_Section_Machine" Member="UIB_Layout_Section_Machines" ThisKey="IdLayoutSection" OtherKey="IdLayoutSection" Type="UIB_Layout_Section_Machine" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Location_Groups" Member="UIB_Location_Groups">
+    <Type Name="UIB_Location_Group">
+      <Column Name="IdLocationGroup" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Height" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AllowDisable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AllowDeparture" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AllowArrival" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="L3Value" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Location_Group_UIB_Job_Type" Member="UIB_Job_Types_Begin" ThisKey="IdLocationGroup" OtherKey="IdLocationGroupBeginDefault" Type="UIB_Job_Type" />
+      <Association Name="UIB_Location_Group_UIB_Job_Type1" Member="UIB_Job_Types_End" ThisKey="IdLocationGroup" OtherKey="IdLocationGroupEndDefault" Type="UIB_Job_Type" />
+      <Association Name="UIB_Location_Group_UIB_Job_Yard_Transfer_Step" Member="UIB_Job_Yard_Transfer_Steps_Begin" ThisKey="IdLocationGroup" OtherKey="IdLocationGroupBegin" Type="UIB_Job_Yard_Transfer_Step" />
+      <Association Name="UIB_Location_Group_UIB_Job_Yard_Transfer_Step1" Member="UIB_Job_Yard_Transfer_Steps_End" ThisKey="IdLocationGroup" OtherKey="IdLocationGroupEnd" Type="UIB_Job_Yard_Transfer_Step" />
+      <Association Name="UIB_Location_Group_Rodeo_Location" Member="Rodeo_Locations" ThisKey="IdLocationGroup" OtherKey="IdLocationGroup" Type="Rodeo_Location" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Location_Ranges" Member="UIB_Location_Ranges">
+    <Type Name="UIB_Location_Range">
+      <Column Name="IdLocationRange" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LengthRange" Storage="_ODRange" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="WidthSubRange" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Piece_Length_Min" Storage="_Piece_OD_Min" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Piece_Length_Max" Storage="_Piece_OD_Max" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Piece_Width_Min" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Piece_Width_Max" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Location_Range_UIB_Location_Range_Yard" Member="UIB_Location_Range_Yards" ThisKey="IdLocationRange" OtherKey="IdLocationRange" Type="UIB_Location_Range_Yard" />
+      <Association Name="UIB_Location_Range_Rodeo_Location" Member="Rodeo_Locations" ThisKey="IdLocationRange" OtherKey="IdLocationRange" Type="Rodeo_Location" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Machine_Drives" Member="UIB_Machine_Drives">
+    <Type Name="UIB_Machine_Drive">
+      <Column Name="IdMachineDrive" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdDriveType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Alias" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SelectionTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="SelectionBit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SelectionPlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Drive_Type_UIB_Machine_Drive" Member="UIB_Drive_Type" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="UIB_Drive_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_UIB_Machine_Drive" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Machine_Encoders" Member="UIB_Machine_Encoders">
+    <Type Name="UIB_Machine_Encoder">
+      <Column Name="IdMachineEncoder" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdEncoderType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Alias" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SelectionTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="SelectionBit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SelectionPlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Encoder_Type_UIB_Machine_Encoder" Member="UIB_Encoder_Type" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="UIB_Encoder_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_UIB_Machine_Encoder" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.Rodeo_Client_Types" Member="Rodeo_Client_Types">
+    <Type Name="Rodeo_Client_Type">
+      <Column Name="IdClientType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="AppPath" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ImagePath" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Client_Type_Rodeo_Client" Member="Rodeo_Clients" ThisKey="IdClientType" OtherKey="IdClientType" Type="Rodeo_Client" />
+    </Type>
+  </Table>
+  <Table Name="common.Rodeo_Clients" Member="Rodeo_Clients">
+    <Type Name="Rodeo_Client">
+      <Column Name="IdClient" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdClientType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IPAddress" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NAT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ConnectivityAlarmname" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Client_UIB_Zone_Event" Member="UIB_Zone_Events" ThisKey="IdClient" OtherKey="IdClient" Type="UIB_Zone_Event" />
+      <Association Name="Rodeo_Client_Rodeo_Event" Member="Rodeo_Events" ThisKey="IdClient" OtherKey="IdClient" Type="Rodeo_Event" />
+      <Association Name="Rodeo_Client_Rodeo_Client_Credential" Member="Rodeo_Client_Credential" ThisKey="IdClient" OtherKey="IdClient" Type="Rodeo_Client_Credential" Cardinality="One" />
+      <Association Name="Rodeo_Client_Type_Rodeo_Client" Member="Rodeo_Client_Type" ThisKey="IdClientType" OtherKey="IdClientType" Type="Rodeo_Client_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.Rodeo_Location_Types" Member="Rodeo_Location_Types">
+    <Type Name="Rodeo_Location_Type">
+      <Column Name="IdLocationType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Location_Type_Rodeo_Location" Member="Rodeo_Locations" ThisKey="IdLocationType" OtherKey="IdLocationType" Type="Rodeo_Location" />
+    </Type>
+  </Table>
+  <Table Name="common.Rodeo_Machine_Groups" Member="Rodeo_Machine_Groups">
+    <Type Name="Rodeo_Machine_Group">
+      <Column Name="IdMachineGroup" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_Group_Rodeo_Machine" Member="Rodeo_Machines" ThisKey="IdMachineGroup" OtherKey="IdMachineGroup" Type="Rodeo_Machine" />
+      <Association Name="Rodeo_Machine_Group_UIB_Zone_Machine" Member="UIB_Zone_Machines" ThisKey="IdMachineGroup" OtherKey="IdMachineGroup" Type="UIB_Zone_Machine" />
+    </Type>
+  </Table>
+  <Table Name="common.Rodeo_Machine_Sequencer" Member="Rodeo_Machine_Sequencers">
+    <Type Name="Rodeo_Machine_Sequencer">
+      <Column Name="IdMachineSequencer" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TextSizeDisplayed" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_Machine_Sequencer" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.Rodeo_Machine_Statuses" Member="Rodeo_Machine_Statuses">
+    <Type Name="Rodeo_Machine_Statuse">
+      <Column Name="IdMachineStatus" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_Machine_Statuse" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.Rodeo_Machine_Type_Positions" Member="Rodeo_Machine_Type_Positions">
+    <Type Name="Rodeo_Machine_Type_Position">
+      <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Position" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="XOffset" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="YOffset" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZOffset" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_Machine_Type_Position" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.Rodeo_Machine_Types" Member="Rodeo_Machine_Types">
+    <Type Name="Rodeo_Machine_Type">
+      <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PrefixName" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="DefaultMechanicalDrawningsPath" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DefaultElectricalDrawningsPath" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_Machine_Sequencer" Member="Rodeo_Machine_Sequencers" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Sequencer" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_Machine_Statuse" Member="Rodeo_Machine_Statuses" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Statuse" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_Machine_Type_Position" Member="Rodeo_Machine_Type_Positions" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type_Position" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_Machine" Member="Rodeo_Machines" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine" />
+      <Association Name="Rodeo_Machine_Type_UIB_Machine_Failure" Member="UIB_Machine_Failures" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="UIB_Machine_Failure" />
+      <Association Name="Rodeo_Machine_Type_UIB_Machine_Interface" Member="UIB_Machine_Interfaces" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="UIB_Machine_Interface" />
+      <Association Name="Rodeo_Machine_Type_UIB_Machine_Interlock" Member="UIB_Machine_Interlocks" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="UIB_Machine_Interlock" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_Setting_Group_Machine_Type" Member="Rodeo_Setting_Group_Machine_Types" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Setting_Group_Machine_Type" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_TO_Action" Member="Rodeo_TO_Actions" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_TO_Action" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_TO_Direction" Member="Rodeo_TO_Directions" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_TO_Direction" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_TO_ErrorCode" Member="Rodeo_TO_ErrorCodes" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_TO_ErrorCode" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_TO_Step_ErrorCode" Member="Rodeo_TO_Step_ErrorCodes" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_TO_Step_ErrorCode" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_Setting_Tag" Member="Rodeo_Setting_Tags" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Setting_Tag" />
+      <Association Name="Rodeo_Machine_Type_UIB_Job_Yard_Transfer_Step" Member="UIB_Job_Yard_Transfer_Steps" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="UIB_Job_Yard_Transfer_Step" />
+      <Association Name="Rodeo_Machine_Type_UIB_Job_Type_Route" Member="UIB_Job_Type_Routes" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="UIB_Job_Type_Route" />
+    </Type>
+  </Table>
+  <Table Name="common.Rodeo_Machines" Member="Rodeo_Machines">
+    <Type Name="Rodeo_Machine">
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdMachineGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PrefixID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IdParkingLocation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdWorkingLocation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdYard" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="XAbsoluteOffset" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="YAbsoluteOffset" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ZOffset" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="X1AbsoluteLimitPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="X2AbsoluteLimitPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Y1AbsoluteLimitPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Y2AbsoluteLimitPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Z1LimitPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Z2LimitPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MinHeadingLimit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaxHeadingLimit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsAutomatic" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsManaged" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MinTravelZPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Lenght" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="YardOrder" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="AllowDisableZoneOnAuto" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MechanicalDrawningsPath" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ElectricalDrawningsPath" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ColorShown" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_UIB_Layout_Section_Machine" Member="UIB_Layout_Section_Machines" ThisKey="IdMachine" OtherKey="IdMachine" Type="UIB_Layout_Section_Machine" />
+      <Association Name="Rodeo_Machine_UIB_Machine_Drive" Member="UIB_Machine_Drives" ThisKey="IdMachine" OtherKey="IdMachine" Type="UIB_Machine_Drive" />
+      <Association Name="Rodeo_Machine_UIB_Machine_Encoder" Member="UIB_Machine_Encoders" ThisKey="IdMachine" OtherKey="IdMachine" Type="UIB_Machine_Encoder" />
+      <Association Name="Rodeo_Machine_UIB_Machine_Event" Member="UIB_Machine_Events" ThisKey="IdMachine" OtherKey="IdMachine" Type="UIB_Machine_Event" />
+      <Association Name="Rodeo_Machine_UIB_Piece_Event" Member="UIB_Piece_Events" ThisKey="IdMachine" OtherKey="IdMachine" Type="UIB_Piece_Event" />
+      <Association Name="Rodeo_Machine_UIB_Ground_EStop_Failure" Member="UIB_Ground_EStop_Failures" ThisKey="IdMachine" OtherKey="IdMachine" Type="UIB_Ground_EStop_Failure" />
+      <Association Name="Rodeo_Machine_UIB_Machine_Exit_Zone" Member="UIB_Machine_Exit_Zones" ThisKey="IdMachine" OtherKey="IdMachine" Type="UIB_Machine_Exit_Zone" />
+      <Association Name="Rodeo_Machine_UIB_Machine_Failure" Member="UIB_Machine_Failures" ThisKey="IdMachine" OtherKey="IdMachine" Type="UIB_Machine_Failure" />
+      <Association Name="Rodeo_Machine_UIB_Machine_Interface" Member="UIB_Machine_Interfaces" ThisKey="IdMachine" OtherKey="IdMachine" Type="UIB_Machine_Interface" />
+      <Association Name="Rodeo_Machine_UIB_Machine_Interlock" Member="UIB_Machine_Interlocks" ThisKey="IdMachine" OtherKey="IdMachine" Type="UIB_Machine_Interlock" />
+      <Association Name="Rodeo_Machine_UIB_Zone" Member="UIB_Zones" ThisKey="IdMachine" OtherKey="IdMachineRequiredOnDisable" Type="UIB_Zone" />
+      <Association Name="Rodeo_Machine_Rodeo_Network_Component_Alarm" Member="Rodeo_Network_Component_Alarms" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Network_Component_Alarm" />
+      <Association Name="Rodeo_Machine_Rodeo_Network_Component" Member="Rodeo_Network_Components" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Network_Component" />
+      <Association Name="Rodeo_Machine_UIB_Machine_Exit_Location" Member="UIB_Machine_Exit_Locations" ThisKey="IdMachine" OtherKey="IdMachine" Type="UIB_Machine_Exit_Location" />
+      <Association Name="Rodeo_Machine_Rodeo_TransportOrder" Member="Rodeo_TransportOrders" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_TransportOrder" />
+      <Association Name="Rodeo_Machine_Rodeo_Setting_Tag" Member="Rodeo_Setting_Tags" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Setting_Tag" />
+      <Association Name="Rodeo_Machine_Rodeo_Piece" Member="Rodeo_Pieces" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Piece" />
+      <Association Name="Rodeo_Machine_Group_Rodeo_Machine" Member="Rodeo_Machine_Group" ThisKey="IdMachineGroup" OtherKey="IdMachineGroup" Type="Rodeo_Machine_Group" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_Machine" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_Rodeo_Machine" Member="Rodeo_Yard" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Location_Rodeo_Machine" Member="Rodeo_Location" ThisKey="IdParkingLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
+      <Association Name="Rodeo_Location_Rodeo_Machine1" Member="Rodeo_Location1" ThisKey="IdWorkingLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="global.Rodeo_Transportation_Types" Member="Rodeo_Transportation_Types">
+    <Type Name="Rodeo_Transportation_Type">
+      <Column Name="IdTransportationType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="L3Value" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="report.UIB_Incoming_Messages" Member="UIB_Incoming_Messages">
+    <Type Name="UIB_Incoming_Message">
+      <Column Name="IdIncomingMessage" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdJob" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IdMessageType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Origin" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MsgReference" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RawMessage" Type="System.Object" DbType="Variant NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="RawResponse" Type="System.Object" DbType="Variant" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DataMessage" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="DataResponse" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="MessageTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="ResponseTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Message_Type_UIB_Incoming_Message" Member="UIB_Message_Type" ThisKey="IdMessageType" OtherKey="IdMessageType" Type="UIB_Message_Type" IsForeignKey="true" />
+      <Association Name="UIB_Job_UIB_Incoming_Message" Member="UIB_Job" ThisKey="IdJob" OtherKey="IdJob" Type="UIB_Job" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="report.UIB_Machine_Event_Types" Member="UIB_Machine_Event_Types">
+    <Type Name="UIB_Machine_Event_Type">
+      <Column Name="IdMachineEventType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Machine_Event_Type_UIB_Machine_Event" Member="UIB_Machine_Events" ThisKey="IdMachineEventType" OtherKey="IdMachineEventType" Type="UIB_Machine_Event" />
+    </Type>
+  </Table>
+  <Table Name="report.UIB_Machine_Events" Member="UIB_Machine_Events">
+    <Type Name="UIB_Machine_Event">
+      <Column Name="IdMachineEvent" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdMachineEventType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PieceName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Data" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="EventTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Machine_Event_Type_UIB_Machine_Event" Member="UIB_Machine_Event_Type" ThisKey="IdMachineEventType" OtherKey="IdMachineEventType" Type="UIB_Machine_Event_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_UIB_Machine_Event" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="report.UIB_Message_Types" Member="UIB_Message_Types">
+    <Type Name="UIB_Message_Type">
+      <Column Name="IdMessageType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Source" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="L3OrL2Value" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Message_Type_UIB_Incoming_Message" Member="UIB_Incoming_Messages" ThisKey="IdMessageType" OtherKey="IdMessageType" Type="UIB_Incoming_Message" />
+      <Association Name="UIB_Message_Type_UIB_Outgoing_Message" Member="UIB_Outgoing_Messages" ThisKey="IdMessageType" OtherKey="IdMessageType" Type="UIB_Outgoing_Message" />
+    </Type>
+  </Table>
+  <Table Name="report.UIB_Outgoing_Messages" Member="UIB_Outgoing_Messages">
+    <Type Name="UIB_Outgoing_Message">
+      <Column Name="IdOutgoingMessage" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdJob" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IdMessageType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Destination" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MsgReference" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RawMessage" Type="System.Object" DbType="Variant NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="RawResponse" Type="System.Object" DbType="Variant" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DataMessage" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="DataResponse" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="MessageTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="ResponseTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Message_Type_UIB_Outgoing_Message" Member="UIB_Message_Type" ThisKey="IdMessageType" OtherKey="IdMessageType" Type="UIB_Message_Type" IsForeignKey="true" />
+      <Association Name="UIB_Job_UIB_Outgoing_Message" Member="UIB_Job" ThisKey="IdJob" OtherKey="IdJob" Type="UIB_Job" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="report.UIB_Piece_Event_Types" Member="UIB_Piece_Event_Types">
+    <Type Name="UIB_Piece_Event_Type">
+      <Column Name="IdPieceEventType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Piece_Event_Type_UIB_Piece_Event" Member="UIB_Piece_Events" ThisKey="IdPieceEventType" OtherKey="IdPieceEventType" Type="UIB_Piece_Event" />
+    </Type>
+  </Table>
+  <Table Name="report.UIB_Piece_Events" Member="UIB_Piece_Events">
+    <Type Name="UIB_Piece_Event">
+      <Column Name="IdPieceEvent" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdPieceEventType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PieceName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Data" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="EventTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Piece_Event_Type_UIB_Piece_Event" Member="UIB_Piece_Event_Type" ThisKey="IdPieceEventType" OtherKey="IdPieceEventType" Type="UIB_Piece_Event_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_UIB_Piece_Event" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="report.UIB_Zone_Event_Types" Member="UIB_Zone_Event_Types">
+    <Type Name="UIB_Zone_Event_Type">
+      <Column Name="IdZoneEventType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Zone_Event_Type_UIB_Zone_Event" Member="UIB_Zone_Events" ThisKey="IdZoneEventType" OtherKey="IdZoneEventType" Type="UIB_Zone_Event" />
+      <Association Name="UIB_Zone_Event_Type_UIB_Request_Signal" Member="UIB_Request_Signals" ThisKey="IdZoneEventType" OtherKey="IdZoneEventType" Type="UIB_Request_Signal" />
+    </Type>
+  </Table>
+  <Table Name="report.UIB_Zone_Events" Member="UIB_Zone_Events">
+    <Type Name="UIB_Zone_Event">
+      <Column Name="IdZoneEvent" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdZoneEventType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdZone" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdRequest" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdClient" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UsernameExecute" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Data" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="EventTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Zone_Event_Type_UIB_Zone_Event" Member="UIB_Zone_Event_Type" ThisKey="IdZoneEventType" OtherKey="IdZoneEventType" Type="UIB_Zone_Event_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Client_UIB_Zone_Event" Member="Rodeo_Client" ThisKey="IdClient" OtherKey="IdClient" Type="Rodeo_Client" IsForeignKey="true" />
+      <Association Name="UIB_Request_UIB_Zone_Event" Member="UIB_Request" ThisKey="IdRequest" OtherKey="IdRequest" Type="UIB_Request" IsForeignKey="true" />
+      <Association Name="UIB_Zone_UIB_Zone_Event" Member="UIB_Zone" ThisKey="IdZone" OtherKey="IdZone" Type="UIB_Zone" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="report.Rodeo_Event_Types" Member="Rodeo_Event_Types">
+    <Type Name="Rodeo_Event_Type">
+      <Column Name="IdEventType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Event_Type_Rodeo_Event" Member="Rodeo_Events" ThisKey="IdEventType" OtherKey="IdEventType" Type="Rodeo_Event" />
+    </Type>
+  </Table>
+  <Table Name="report.Rodeo_Events" Member="Rodeo_Events">
+    <Type Name="Rodeo_Event">
+      <Column Name="IdEvent" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdEventType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdClient" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UsernameExecute" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="Data" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="IdJob" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IdTransportOrder" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Step" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PieceName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LocationName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MachineName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EventTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Client_Rodeo_Event" Member="Rodeo_Client" ThisKey="IdClient" OtherKey="IdClient" Type="Rodeo_Client" IsForeignKey="true" />
+      <Association Name="Rodeo_Event_Type_Rodeo_Event" Member="Rodeo_Event_Type" ThisKey="IdEventType" OtherKey="IdEventType" Type="Rodeo_Event_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_TransportOrder_Rodeo_Event" Member="Rodeo_TransportOrder" ThisKey="IdTransportOrder" OtherKey="IdTransportOrder" Type="Rodeo_TransportOrder" IsForeignKey="true" />
+      <Association Name="UIB_Job_Rodeo_Event" Member="UIB_Job" ThisKey="IdJob" OtherKey="IdJob" Type="UIB_Job" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="rodeo.UIB_Failures_History" Member="UIB_Failures_Histories">
+    <Type Name="UIB_Failures_History">
+      <Column Name="IdMachineFailureHistory" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdMachineFailure" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TimeOn" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="TimeOff" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="IsCloseForced" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Machine_Failure_UIB_Failures_History" Member="UIB_Machine_Failure" ThisKey="IdMachineFailure" OtherKey="IdMachineFailure" Type="UIB_Machine_Failure" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="rodeo.Rodeo_Alarms_History" Member="Rodeo_Alarms_Histories">
+    <Type Name="Rodeo_Alarms_History">
+      <Column Name="IdAlarmHistory" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdAlarm" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TimeOn" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="TimeOff" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="TimeAccept" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="TimeAcceptUserName" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="TimeReset" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="TimeResetUserName" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="TimeQuarantine" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="TimeQuarantineUserName" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="Event" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsCloseForced" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="rodeo.Rodeo_Commands_History" Member="Rodeo_Commands_Histories">
+    <Type Name="Rodeo_Commands_History">
+      <Column Name="IdCommandHistory" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TagName" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="SetPoint" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="SentValue" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="PreviousValue" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="SentTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="AnswerTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="AnswerCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="AppName" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="LocName" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="rodeo.Rodeo_UserLogs_History" Member="Rodeo_UserLogs_Histories">
+    <Type Name="Rodeo_UserLogs_History">
+      <Column Name="IdUserLogHistory" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdClient" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdSession" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="TimeIN" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="TimeOUT" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="AuthorIN" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="AuthorOUT" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="IsCloseForced" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Ground_EStop_Failures" Member="UIB_Ground_EStop_Failures">
+    <Type Name="UIB_Ground_EStop_Failure">
+      <Column Name="IdGroundEStopFailure" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdGroundEStopGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Alarmname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="TextSizeDisplayed" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TroubleshootingReference" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_UIB_Ground_EStop_Failure" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="UIB_Ground_EStop_Group_UIB_Ground_EStop_Failure" Member="UIB_Ground_EStop_Group" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="UIB_Ground_EStop_Group" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Ground_EStop_Groups" Member="UIB_Ground_EStop_Groups">
+    <Type Name="UIB_Ground_EStop_Group">
+      <Column Name="IdGroundEStopGroup" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="StatusTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="StatusBit" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="StatusPlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StatusAlarmname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="ResetTagname" Type="System.String" DbType="VarChar(70) NOT NULL" CanBeNull="false" />
+      <Column Name="ResetSetpoint" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ResetPlcValue" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Ground_EStop_Group_UIB_Ground_EStop_Failure" Member="UIB_Ground_EStop_Failures" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="UIB_Ground_EStop_Failure" />
+      <Association Name="UIB_Ground_EStop_Group_UIB_Ground_EStop_Interface" Member="UIB_Ground_EStop_Interfaces" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="UIB_Ground_EStop_Interface" />
+      <Association Name="UIB_Ground_EStop_Group_UIB_Ground_EStop_Panel" Member="UIB_Ground_EStop_Panels" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="UIB_Ground_EStop_Panel" />
+      <Association Name="UIB_Ground_EStop_Group_UIB_Ground_EStop_Request" Member="UIB_Ground_EStop_Requests" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="UIB_Ground_EStop_Request" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Ground_EStop_Interfaces" Member="UIB_Ground_EStop_Interfaces">
+    <Type Name="UIB_Ground_EStop_Interface">
+      <Column Name="IdGroundEStopInterface" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdGroundEStopGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Alarmname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="TextSizeDisplayed" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Ground_EStop_Group_UIB_Ground_EStop_Interface" Member="UIB_Ground_EStop_Group" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="UIB_Ground_EStop_Group" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Ground_EStop_Panels" Member="UIB_Ground_EStop_Panels">
+    <Type Name="UIB_Ground_EStop_Panel">
+      <Column Name="IdGroundEStopPanel" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdGroundEStopGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Alarmname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="TextSizeDisplayed" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Ground_EStop_Group_UIB_Ground_EStop_Panel" Member="UIB_Ground_EStop_Group" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="UIB_Ground_EStop_Group" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Ground_EStop_Requests" Member="UIB_Ground_EStop_Requests">
+    <Type Name="UIB_Ground_EStop_Request">
+      <Column Name="IdGroundEStopRequest" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdGroundEStopGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdRequest" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Ground_EStop_Group_UIB_Ground_EStop_Request" Member="UIB_Ground_EStop_Group" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="UIB_Ground_EStop_Group" IsForeignKey="true" />
+      <Association Name="UIB_Request_UIB_Ground_EStop_Request" Member="UIB_Request" ThisKey="IdRequest" OtherKey="IdRequest" Type="UIB_Request" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Machine_Exit_Zones" Member="UIB_Machine_Exit_Zones">
+    <Type Name="UIB_Machine_Exit_Zone">
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdZone" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Move_IdYard" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Move_XPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Move_YPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Move_IdLocation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Priority" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_UIB_Machine_Exit_Zone" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="UIB_Zone_UIB_Machine_Exit_Zone" Member="UIB_Zone" ThisKey="IdZone" OtherKey="IdZone" Type="UIB_Zone" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_UIB_Machine_Exit_Zone" Member="Rodeo_Yard" ThisKey="Move_IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Location_UIB_Machine_Exit_Zone" Member="Rodeo_Location" ThisKey="Move_IdLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Machine_Failures" Member="UIB_Machine_Failures">
+    <Type Name="UIB_Machine_Failure">
+      <Column Name="IdMachineFailure" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ParentIdMachineFailure" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Alarmname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="TextSizeDisplayed" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TroubleshootingReference" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Machine_Failure_UIB_Failures_History" Member="UIB_Failures_Histories" ThisKey="IdMachineFailure" OtherKey="IdMachineFailure" Type="UIB_Failures_History" />
+      <Association Name="UIB_Machine_Failure_UIB_Machine_Failure" Member="UIB_Machine_Failure_ParentID" ThisKey="ParentIdMachineFailure" OtherKey="IdMachineFailure" Type="UIB_Machine_Failure" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_Type_UIB_Machine_Failure" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_UIB_Machine_Failure" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Machine_Interfaces" Member="UIB_Machine_Interfaces">
+    <Type Name="UIB_Machine_Interface">
+      <Column Name="IdMachineInterface" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ParentIdMachineInterface" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GroupName" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Alarmname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="IsString" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Unit" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TextSizeDisplayed" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TroubleshootingReference" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_Type_UIB_Machine_Interface" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_UIB_Machine_Interface" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Machine_Interlocks" Member="UIB_Machine_Interlocks">
+    <Type Name="UIB_Machine_Interlock">
+      <Column Name="IdMachineInterlock" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ParentIdMachineInterlock" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TextSizeDisplayed" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TroubleshootingReference" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Machine_Interlock_UIB_Machine_Interlock" Member="UIB_Machine_Interlock_ParentID" ThisKey="ParentIdMachineInterlock" OtherKey="IdMachineInterlock" Type="UIB_Machine_Interlock" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_Type_UIB_Machine_Interlock" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_UIB_Machine_Interlock" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Request_Interlocks" Member="UIB_Request_Interlocks">
+    <Type Name="UIB_Request_Interlock">
+      <Column Name="IdRequest" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdRequestSignal" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RequestSignalTrueOrFalse" Type="System.Boolean" DbType="Bit NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ByIdZone" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ByZoneEnableOrDisable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ByIdRequest" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ByIdRequestSignal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ByRequestSignalTrueOrFalse" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ByOtherTitle" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ByOtherTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="ByOtherBit" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ByOtherPlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TextSizeDisplayed" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Request_Signal_UIB_Request_Interlock" Member="UIB_Request_Signal_ByID" ThisKey="ByIdRequestSignal" OtherKey="IdRequestSignal" Type="UIB_Request_Signal" IsForeignKey="true" />
+      <Association Name="UIB_Request_Signal_UIB_Request_Interlock1" Member="UIB_Request_Signal_ID" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="UIB_Request_Signal" IsForeignKey="true" />
+      <Association Name="UIB_Request_UIB_Request_Interlock" Member="UIB_Request_ByID" ThisKey="ByIdRequest" OtherKey="IdRequest" Type="UIB_Request" IsForeignKey="true" />
+      <Association Name="UIB_Request_UIB_Request_Interlock1" Member="UIB_Request_ID" ThisKey="IdRequest" OtherKey="IdRequest" Type="UIB_Request" IsForeignKey="true" />
+      <Association Name="UIB_Zone_UIB_Request_Interlock" Member="UIB_Zone" ThisKey="ByIdZone" OtherKey="IdZone" Type="UIB_Zone" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Request_Signals" Member="UIB_Request_Signals">
+    <Type Name="UIB_Request_Signal">
+      <Column Name="IdRequestSignal" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdZoneEventType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TextDisplayed" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TextOtherwise" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WriteTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="SetpointValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Alarmname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="IsAlert" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SignalInterlock_ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="SignalInterlock_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SignalInterlock_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OtherwiseInterlock_ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="OtherwiseInterlock_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OtherwiseInterlock_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Request_Signal_UIB_Request_Interlock" Member="UIB_Request_Interlocks_ByID" ThisKey="IdRequestSignal" OtherKey="ByIdRequestSignal" Type="UIB_Request_Interlock" />
+      <Association Name="UIB_Request_Signal_UIB_Request_Interlock1" Member="UIB_Request_Interlocks_ID" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="UIB_Request_Interlock" />
+      <Association Name="UIB_Request_Signal_UIB_Request_Transport_Dependency" Member="UIB_Request_Transport_Dependencies" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="UIB_Request_Transport_Dependency" />
+      <Association Name="UIB_Request_Signal_UIB_Request_Type_Signal" Member="UIB_Request_Type_Signals" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="UIB_Request_Type_Signal" />
+      <Association Name="UIB_Request_Signal_UIB_Zone_Interlock" Member="UIB_Zone_Interlocks" ThisKey="IdRequestSignal" OtherKey="ByIdRequestSignal" Type="UIB_Zone_Interlock" />
+      <Association Name="UIB_Request_Signal_UIB_Request_Signal_Request" Member="UIB_Request_Signal_Requests" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="UIB_Request_Signal_Request" />
+      <Association Name="UIB_Zone_Event_Type_UIB_Request_Signal" Member="UIB_Zone_Event_Type" ThisKey="IdZoneEventType" OtherKey="IdZoneEventType" Type="UIB_Zone_Event_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Request_Transport_Dependencies" Member="UIB_Request_Transport_Dependencies">
+    <Type Name="UIB_Request_Transport_Dependency">
+      <Column Name="IdRequest" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdTransportLocation" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdRequestSignal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RequestSignalTrueOrFalse" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Request_Signal_UIB_Request_Transport_Dependency" Member="UIB_Request_Signal" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="UIB_Request_Signal" IsForeignKey="true" />
+      <Association Name="Rodeo_Location_UIB_Request_Transport_Dependency" Member="Rodeo_Location" ThisKey="IdTransportLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Request_Type_Signals" Member="UIB_Request_Type_Signals">
+    <Type Name="UIB_Request_Type_Signal">
+      <Column Name="IdRequestType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdRequestSignal" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ShowOnBrief" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ReadAllowed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="WriteAllowed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ManActionReq" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AutoActionReq" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Request_Signal_UIB_Request_Type_Signal" Member="UIB_Request_Signal" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="UIB_Request_Signal" IsForeignKey="true" />
+      <Association Name="UIB_Request_Type_UIB_Request_Type_Signal" Member="UIB_Request_Type" ThisKey="IdRequestType" OtherKey="IdRequestType" Type="UIB_Request_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Request_Types" Member="UIB_Request_Types">
+    <Type Name="UIB_Request_Type">
+      <Column Name="IdRequestType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ShowOnLayout" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ColorShown" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Request_Type_UIB_Request_Type_Signal" Member="UIB_Request_Type_Signals" ThisKey="IdRequestType" OtherKey="IdRequestType" Type="UIB_Request_Type_Signal" />
+      <Association Name="UIB_Request_Type_UIB_Request" Member="UIB_Requests" ThisKey="IdRequestType" OtherKey="IdRequestType" Type="UIB_Request" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Requests" Member="UIB_Requests">
+    <Type Name="UIB_Request">
+      <Column Name="IdRequest" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdRequestType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdZone" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IdYard" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="XPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="YPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ZPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsAxisX" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TextPosition" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="TextDisplayed" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Request_UIB_Zone_Event" Member="UIB_Zone_Events" ThisKey="IdRequest" OtherKey="IdRequest" Type="UIB_Zone_Event" />
+      <Association Name="UIB_Request_UIB_Ground_EStop_Request" Member="UIB_Ground_EStop_Requests" ThisKey="IdRequest" OtherKey="IdRequest" Type="UIB_Ground_EStop_Request" />
+      <Association Name="UIB_Request_UIB_Request_Interlock" Member="UIB_Request_Interlocks_ByID" ThisKey="IdRequest" OtherKey="ByIdRequest" Type="UIB_Request_Interlock" />
+      <Association Name="UIB_Request_UIB_Request_Interlock1" Member="UIB_Request_Interlocks_ID" ThisKey="IdRequest" OtherKey="IdRequest" Type="UIB_Request_Interlock" />
+      <Association Name="UIB_Request_UIB_Zone_Interlock" Member="UIB_Zone_Interlocks" ThisKey="IdRequest" OtherKey="ByIdRequest" Type="UIB_Zone_Interlock" />
+      <Association Name="UIB_Request_UIB_Request_Signal_Request" Member="UIB_Request_Signal_Requests" ThisKey="IdRequest" OtherKey="IdRequest" Type="UIB_Request_Signal_Request" />
+      <Association Name="UIB_Request_Type_UIB_Request" Member="UIB_Request_Type" ThisKey="IdRequestType" OtherKey="IdRequestType" Type="UIB_Request_Type" IsForeignKey="true" />
+      <Association Name="UIB_Zone_UIB_Request" Member="UIB_Zone" ThisKey="IdZone" OtherKey="IdZone" Type="UIB_Zone" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_UIB_Request" Member="Rodeo_Yard" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Zone_Dependencies" Member="UIB_Zone_Dependencies">
+    <Type Name="UIB_Zone_Dependency">
+      <Column Name="IdZoneParent" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdZoneChild" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ValidateAlwaysOnDisable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ValidateRequestOnlyOnDisable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DisableOnCascade" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EnableOnCascade" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Zone_UIB_Zone_Dependency" Member="UIB_Zone_Child" ThisKey="IdZoneChild" OtherKey="IdZone" Type="UIB_Zone" IsForeignKey="true" />
+      <Association Name="UIB_Zone_UIB_Zone_Dependency1" Member="UIB_Zone_Parent" ThisKey="IdZoneParent" OtherKey="IdZone" Type="UIB_Zone" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Zone_Fences" Member="UIB_Zone_Fences">
+    <Type Name="UIB_Zone_Fence">
+      <Column Name="IdFence" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="X1Pos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Y1Pos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="X2Pos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Y2Pos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ThicknessDrawn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Zone_Interlocks" Member="UIB_Zone_Interlocks">
+    <Type Name="UIB_Zone_Interlock">
+      <Column Name="IdZone" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EnableOrDisable" Type="System.Boolean" DbType="Bit NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ByIdZone" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ByZoneEnableOrDisable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ByIdRequest" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ByIdRequestSignal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ByRequestSignalTrueOrFalse" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ByOtherTitle" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ByOtherTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="ByOtherBit" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ByOtherPlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TextSizeDisplayed" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Request_Signal_UIB_Zone_Interlock" Member="UIB_Request_Signal" ThisKey="ByIdRequestSignal" OtherKey="IdRequestSignal" Type="UIB_Request_Signal" IsForeignKey="true" />
+      <Association Name="UIB_Request_UIB_Zone_Interlock" Member="UIB_Request" ThisKey="ByIdRequest" OtherKey="IdRequest" Type="UIB_Request" IsForeignKey="true" />
+      <Association Name="UIB_Zone_UIB_Zone_Interlock" Member="UIB_Zone_ByID" ThisKey="ByIdZone" OtherKey="IdZone" Type="UIB_Zone" IsForeignKey="true" />
+      <Association Name="UIB_Zone_UIB_Zone_Interlock1" Member="UIB_Zone_ID" ThisKey="IdZone" OtherKey="IdZone" Type="UIB_Zone" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Zone_Machines" Member="UIB_Zone_Machines">
+    <Type Name="UIB_Zone_Machine">
+      <Column Name="IdZone" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdMachineGroup" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CanBeAccessed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AllowTravelAnytime" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AllowTravelForParking" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ForbiddenTravelAnytime" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_Group_UIB_Zone_Machine" Member="Rodeo_Machine_Group" ThisKey="IdMachineGroup" OtherKey="IdMachineGroup" Type="Rodeo_Machine_Group" IsForeignKey="true" />
+      <Association Name="UIB_Zone_UIB_Zone_Machine" Member="UIB_Zone" ThisKey="IdZone" OtherKey="IdZone" Type="UIB_Zone" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Zone_Sections" Member="UIB_Zone_Sections">
+    <Type Name="UIB_Zone_Section">
+      <Column Name="IdZone" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Section" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdYard" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="X1Pos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Y1Pos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="X2Pos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Y2Pos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SafeRunwayInsideX1Pos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SafeRunwayInsideX2Pos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SafeRunwayInsideY1Pos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SafeRunwayInsideY2Pos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SafeRunwayOutsideX1Pos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SafeRunwayOutsideX2Pos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SafeRunwayOutsideY1Pos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SafeRunwayOutsideY2Pos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsAxisX" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TextDisplayed" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="IsTransportArea" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ColorShown" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Zone_UIB_Zone_Section" Member="UIB_Zone" ThisKey="IdZone" OtherKey="IdZone" Type="UIB_Zone" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_UIB_Zone_Section" Member="Rodeo_Yard" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Zone_Types" Member="UIB_Zone_Types">
+    <Type Name="UIB_Zone_Type">
+      <Column Name="IdZoneType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ColorShown" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Zone_Type_UIB_Zone" Member="UIB_Zones" ThisKey="IdZoneType" OtherKey="IdZoneType" Type="UIB_Zone" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Zones" Member="UIB_Zones">
+    <Type Name="UIB_Zone">
+      <Column Name="IdZone" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdZoneType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsFirstLine" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TimeoutMachineIdleInside" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AllowFieldOperation" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AllowManualOperation" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AllowManualAuthorization" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AllowTOAssignOnDisable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AllowTravelAssistedOnDisable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsTODestination" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IdMachineRequiredOnDisable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Exist_ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="Exist_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Exist_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Exist_WriteTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="Exist_SetpointValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Enable_ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="Enable_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Enable_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Enable_WriteTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="Enable_SetpointValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="L2DisableReq_ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="L2DisableReq_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="L2DisableReq_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="L2DisableReq_WriteTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="L2DisableReq_SetpointValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="L2EnableReq_ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="L2EnableReq_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="L2EnableReq_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="L2EnableReq_WriteTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="L2EnableReq_SetpointValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EnableInterlock_ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="EnableInterlock_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EnableInterlock_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Zone_UIB_Zone_Event" Member="UIB_Zone_Events" ThisKey="IdZone" OtherKey="IdZone" Type="UIB_Zone_Event" />
+      <Association Name="UIB_Zone_UIB_Machine_Exit_Zone" Member="UIB_Machine_Exit_Zones" ThisKey="IdZone" OtherKey="IdZone" Type="UIB_Machine_Exit_Zone" />
+      <Association Name="UIB_Zone_UIB_Request_Interlock" Member="UIB_Request_Interlocks" ThisKey="IdZone" OtherKey="ByIdZone" Type="UIB_Request_Interlock" />
+      <Association Name="UIB_Zone_UIB_Request" Member="UIB_Requests" ThisKey="IdZone" OtherKey="IdZone" Type="UIB_Request" />
+      <Association Name="UIB_Zone_UIB_Zone_Dependency" Member="UIB_Zone_Dependencies_Child" ThisKey="IdZone" OtherKey="IdZoneChild" Type="UIB_Zone_Dependency" />
+      <Association Name="UIB_Zone_UIB_Zone_Dependency1" Member="UIB_Zone_Dependencies_Parent" ThisKey="IdZone" OtherKey="IdZoneParent" Type="UIB_Zone_Dependency" />
+      <Association Name="UIB_Zone_UIB_Zone_Interlock" Member="UIB_Zone_Interlocks_ByID" ThisKey="IdZone" OtherKey="ByIdZone" Type="UIB_Zone_Interlock" />
+      <Association Name="UIB_Zone_UIB_Zone_Interlock1" Member="UIB_Zone_Interlocks_ID" ThisKey="IdZone" OtherKey="IdZone" Type="UIB_Zone_Interlock" />
+      <Association Name="UIB_Zone_UIB_Zone_Machine" Member="UIB_Zone_Machines" ThisKey="IdZone" OtherKey="IdZone" Type="UIB_Zone_Machine" />
+      <Association Name="UIB_Zone_UIB_Zone_Section" Member="UIB_Zone_Sections" ThisKey="IdZone" OtherKey="IdZone" Type="UIB_Zone_Section" />
+      <Association Name="Rodeo_Machine_UIB_Zone" Member="Rodeo_Machine" ThisKey="IdMachineRequiredOnDisable" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="UIB_Zone_Type_UIB_Zone" Member="UIB_Zone_Type" ThisKey="IdZoneType" OtherKey="IdZoneType" Type="UIB_Zone_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="system.UIB_PLC_Modules" Member="UIB_PLC_Modules">
+    <Type Name="UIB_PLC_Module">
+      <Column Name="IdPLCModule" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdPLCRack" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Slot" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IPAddress" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NAT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ConnectivityAlarmname" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="ImageWidth" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_PLC_Module_UIB_PLC_IO" Member="UIB_PLC_IOs" ThisKey="IdPLCModule" OtherKey="IdPLCModule" Type="UIB_PLC_IO" />
+      <Association Name="UIB_PLC_Rack_UIB_PLC_Module" Member="UIB_PLC_Rack" ThisKey="IdPLCRack" OtherKey="IdPLCRack" Type="UIB_PLC_Rack" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="system.UIB_PLC_Racks" Member="UIB_PLC_Racks">
+    <Type Name="UIB_PLC_Rack">
+      <Column Name="IdPLCRack" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdPLC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Rack" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IPAddress" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NAT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ConnectivityAlarmname" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="ImagePath" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ImageWidth" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ImageHeight" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_PLC_Rack_UIB_PLC_Module" Member="UIB_PLC_Modules" ThisKey="IdPLCRack" OtherKey="IdPLCRack" Type="UIB_PLC_Module" />
+      <Association Name="UIB_PLC_UIB_PLC_Rack" Member="UIB_PLC" ThisKey="IdPLC" OtherKey="IdPLC" Type="UIB_PLC" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="system.UIB_PLC_VIOs" Member="UIB_PLC_VIOs">
+    <Type Name="UIB_PLC_VIO">
+      <Column Name="IdPLCVIO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdPLC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70) NOT NULL" CanBeNull="false" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_PLC_UIB_PLC_VIO" Member="UIB_PLC" ThisKey="IdPLC" OtherKey="IdPLC" Type="UIB_PLC" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="system.UIB_PLCs" Member="UIB_PLCs">
+    <Type Name="UIB_PLC">
+      <Column Name="IdPLC" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ImagePath" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ImageWidth" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ImageHeight" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_PLC_UIB_PLC_Rack" Member="UIB_PLC_Racks" ThisKey="IdPLC" OtherKey="IdPLC" Type="UIB_PLC_Rack" />
+      <Association Name="UIB_PLC_UIB_PLC_VIO" Member="UIB_PLC_VIOs" ThisKey="IdPLC" OtherKey="IdPLC" Type="UIB_PLC_VIO" />
+    </Type>
+  </Table>
+  <Table Name="system.UIB_Setting_Values" Member="UIB_Setting_Values">
+    <Type Name="UIB_Setting_Value">
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Value" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="system.UIB_Troubleshooting_Files" Member="UIB_Troubleshooting_Files">
+    <Type Name="UIB_Troubleshooting_File">
+      <Column Name="Reference" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LinkTitle" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="LinkPDFFile" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="UIB_Troubleshooting_Reference_UIB_Troubleshooting_File" Member="UIB_Troubleshooting_Reference" ThisKey="Reference" OtherKey="Reference" Type="UIB_Troubleshooting_Reference" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="system.UIB_Troubleshooting_References" Member="UIB_Troubleshooting_References">
+    <Type Name="UIB_Troubleshooting_Reference">
+      <Column Name="Reference" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="UIB_Troubleshooting_Reference_UIB_Troubleshooting_File" Member="UIB_Troubleshooting_Files" ThisKey="Reference" OtherKey="Reference" Type="UIB_Troubleshooting_File" />
+    </Type>
+  </Table>
+  <Table Name="system.Rodeo_Client_Credentials" Member="Rodeo_Client_Credentials">
+    <Type Name="Rodeo_Client_Credential">
+      <Column Name="IdClient" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OSUsr" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OSPwd" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="RDUsr" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RDPwd" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Association Name="Rodeo_Client_Rodeo_Client_Credential" Member="Rodeo_Client" ThisKey="IdClient" OtherKey="IdClient" Type="Rodeo_Client" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="system.Rodeo_Network_Component_Alarms" Member="Rodeo_Network_Component_Alarms">
+    <Type Name="Rodeo_Network_Component_Alarm">
+      <Column Name="IdNetworkComponent" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Sequence" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Alarmname" Type="System.String" DbType="VarChar(70) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_Rodeo_Network_Component_Alarm" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="Rodeo_Network_Component_Rodeo_Network_Component_Alarm" Member="Rodeo_Network_Component" ThisKey="IdNetworkComponent" OtherKey="IdNetworkComponent" Type="Rodeo_Network_Component" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="system.Rodeo_Network_Component_Types" Member="Rodeo_Network_Component_Types">
+    <Type Name="Rodeo_Network_Component_Type">
+      <Column Name="IdNetworkComponentType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ImagePath" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Network_Component_Type_Rodeo_Network_Component" Member="Rodeo_Network_Components" ThisKey="IdNetworkComponentType" OtherKey="IdNetworkComponentType" Type="Rodeo_Network_Component" />
+    </Type>
+  </Table>
+  <Table Name="system.Rodeo_Network_Components" Member="Rodeo_Network_Components">
+    <Type Name="Rodeo_Network_Component">
+      <Column Name="IdNetworkComponent" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdNetworkComponentType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdNetwork" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IPAddress" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NAT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LocalIPAddress1" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="LocalIPAddress2" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ConnectivityAlarmname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Network_Component_Rodeo_Network_Component_Alarm" Member="Rodeo_Network_Component_Alarms" ThisKey="IdNetworkComponent" OtherKey="IdNetworkComponent" Type="Rodeo_Network_Component_Alarm" />
+      <Association Name="Rodeo_Machine_Rodeo_Network_Component" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="Rodeo_Network_Component_Type_Rodeo_Network_Component" Member="Rodeo_Network_Component_Type" ThisKey="IdNetworkComponentType" OtherKey="IdNetworkComponentType" Type="Rodeo_Network_Component_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Network_Rodeo_Network_Component" Member="Rodeo_Network" ThisKey="IdNetwork" OtherKey="IdNetwork" Type="Rodeo_Network" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="system.Rodeo_Networks" Member="Rodeo_Networks">
+    <Type Name="Rodeo_Network">
+      <Column Name="IdNetwork" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ImagePath" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Network_Rodeo_Network_Component" Member="Rodeo_Network_Components" ThisKey="IdNetwork" OtherKey="IdNetwork" Type="Rodeo_Network_Component" />
+    </Type>
+  </Table>
+  <Table Name="system.Rodeo_Setting_Group_Machine_Types" Member="Rodeo_Setting_Group_Machine_Types">
+    <Type Name="Rodeo_Setting_Group_Machine_Type">
+      <Column Name="IdSettingGroup" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_Setting_Group_Machine_Type" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Setting_Group_Rodeo_Setting_Group_Machine_Type" Member="Rodeo_Setting_Group" ThisKey="IdSettingGroup" OtherKey="IdSettingGroup" Type="Rodeo_Setting_Group" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="[to].UIB_Destination_Next_Pieces" Member="UIB_Destination_Next_Pieces">
+    <Type Name="UIB_Destination_Next_Piece">
+      <Column Name="L2Destination" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Sequence" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PieceName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="[to].UIB_Job_Forecasts" Member="UIB_Job_Forecasts">
+    <Type Name="UIB_Job_Forecast">
+      <Column Name="IdJob" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Sequence" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LocationNameBegin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MachineNameBegin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IdYardBegin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="XPosBegin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="YPosBegin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ZPosBegin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HeadingBegin" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="LocationNameEnd" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MachineNameEnd" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IdYardEnd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="XPosEnd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="YPosEnd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ZPosEnd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HeadingEnd" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PieceName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MachineName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Job_UIB_Job_Forecast" Member="UIB_Job" ThisKey="IdJob" OtherKey="IdJob" Type="UIB_Job" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_UIB_Job_Forecast" Member="Rodeo_Yard_Begin" ThisKey="IdYardBegin" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_UIB_Job_Forecast1" Member="Rodeo_Yard_End" ThisKey="IdYardEnd" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="[to].UIB_Job_Types" Member="UIB_Job_Types">
+    <Type Name="UIB_Job_Type">
+      <Column Name="IdJobType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Priority" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IdLocationGroupBeginDefault" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdLocationGroupEndDefault" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Job_Type_UIB_Job" Member="UIB_Jobs" ThisKey="IdJobType" OtherKey="IdJobType" Type="UIB_Job" />
+      <Association Name="UIB_Job_Type_UIB_Job_Type_Route" Member="UIB_Job_Type_Routes" ThisKey="IdJobType" OtherKey="IdJobType" Type="UIB_Job_Type_Route" />
+      <Association Name="UIB_Location_Group_UIB_Job_Type" Member="UIB_Location_Group_Begin" ThisKey="IdLocationGroupBeginDefault" OtherKey="IdLocationGroup" Type="UIB_Location_Group" IsForeignKey="true" />
+      <Association Name="UIB_Location_Group_UIB_Job_Type1" Member="UIB_Location_Group_End" ThisKey="IdLocationGroupEndDefault" OtherKey="IdLocationGroup" Type="UIB_Location_Group" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="[to].UIB_Machine_Exit_Locations" Member="UIB_Machine_Exit_Locations">
+    <Type Name="UIB_Machine_Exit_Location">
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdLocation" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TimeoutMachineIdleInside" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Move_IdLocation" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Priority" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_UIB_Machine_Exit_Location" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="Rodeo_Location_UIB_Machine_Exit_Location" Member="Rodeo_Location" ThisKey="Move_IdLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
+      <Association Name="Rodeo_Location_UIB_Machine_Exit_Location1" Member="Rodeo_Location1" ThisKey="IdLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="[to].UIB_RCP_ErrorCodes" Member="UIB_RCP_ErrorCodes">
+    <Type Name="UIB_RCP_ErrorCode">
+      <Column Name="IdRCPErrorCode" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsError" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="[to].UIB_RCP_Flags" Member="UIB_RCP_Flags">
+    <Type Name="UIB_RCP_Flag">
+      <Column Name="IdRCPFlag" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsError" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Timeout" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="[to].UIB_RCP_OperationModes" Member="UIB_RCP_OperationModes">
+    <Type Name="UIB_RCP_OperationMode">
+      <Column Name="IdRCPOperationModes" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="[to].Rodeo_TO_Actions" Member="Rodeo_TO_Actions">
+    <Type Name="Rodeo_TO_Action">
+      <Column Name="IdTOAction" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TheorySpeed" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TheoryDuration" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_TO_Action_Rodeo_TO_Step" Member="Rodeo_TO_Steps" ThisKey="IdTOAction" OtherKey="IdTOAction" Type="Rodeo_TO_Step" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_TO_Action" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="[to].Rodeo_TO_Directions" Member="Rodeo_TO_Directions">
+    <Type Name="Rodeo_TO_Direction">
+      <Column Name="IdTODirection" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_TO_Direction" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="[to].Rodeo_TO_ErrorCodes" Member="Rodeo_TO_ErrorCodes">
+    <Type Name="Rodeo_TO_ErrorCode">
+      <Column Name="IdTOErrorCode" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsError" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_TO_ErrorCode" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="[to].Rodeo_TO_Pieces" Member="Rodeo_TO_Pieces">
+    <Type Name="Rodeo_TO_Piece">
+      <Column Name="IdTransportOrder" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MachinePosition" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PieceName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdJob" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="JobSequence" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsDigging" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PickupLocationName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PickupMachineName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PickupIdYard" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PickupXPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PickupYPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PickupZPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PickupHeading" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DropLocationName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DropMachineName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DropIdYard" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropXPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropYPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropZPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropHeading" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PickupTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="StorageTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_TransportOrder_Rodeo_TO_Piece" Member="Rodeo_TransportOrder" ThisKey="IdTransportOrder" OtherKey="IdTransportOrder" Type="Rodeo_TransportOrder" IsForeignKey="true" />
+      <Association Name="UIB_Job_Rodeo_TO_Piece" Member="UIB_Job" ThisKey="IdJob" OtherKey="IdJob" Type="UIB_Job" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_Rodeo_TO_Piece" Member="Rodeo_Yard_Pickup" ThisKey="PickupIdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_Rodeo_TO_Piece1" Member="Rodeo_Yard_Drop" ThisKey="DropIdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="[to].Rodeo_TO_Statuses" Member="Rodeo_TO_Statuses">
+    <Type Name="Rodeo_TO_Statuse">
+      <Column Name="IdTOStatus" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_TO_Statuse_Rodeo_TO_Step_History" Member="Rodeo_TO_Step_Histories" ThisKey="IdTOStatus" OtherKey="IdTOStatus" Type="Rodeo_TO_Step_History" />
+      <Association Name="Rodeo_TO_Statuse_Rodeo_TO_Step" Member="Rodeo_TO_Steps" ThisKey="IdTOStatus" OtherKey="IdTOStatus" Type="Rodeo_TO_Step" />
+      <Association Name="Rodeo_TO_Statuse_Rodeo_TransportOrder" Member="Rodeo_TransportOrders" ThisKey="IdTOStatus" OtherKey="IdTOStatus" Type="Rodeo_TransportOrder" />
+      <Association Name="Rodeo_TO_Statuse_UIB_Job" Member="UIB_Jobs" ThisKey="IdTOStatus" OtherKey="IdTOStatus" Type="UIB_Job" />
+    </Type>
+  </Table>
+  <Table Name="[to].Rodeo_TO_Step_ErrorCodes" Member="Rodeo_TO_Step_ErrorCodes">
+    <Type Name="Rodeo_TO_Step_ErrorCode">
+      <Column Name="IdTOStepErrorCode" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsError" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_TO_Step_ErrorCode" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="[to].Rodeo_TO_Step_History" Member="Rodeo_TO_Step_Histories">
+    <Type Name="Rodeo_TO_Step_History">
+      <Column Name="IdTransportOrder" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Step" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdTOStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BeginTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EndTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_TO_Statuse_Rodeo_TO_Step_History" Member="Rodeo_TO_Statuse" ThisKey="IdTOStatus" OtherKey="IdTOStatus" Type="Rodeo_TO_Statuse" IsForeignKey="true" />
+      <Association Name="Rodeo_TransportOrder_Rodeo_TO_Step_History" Member="Rodeo_TransportOrder" ThisKey="IdTransportOrder" OtherKey="IdTransportOrder" Type="Rodeo_TransportOrder" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="[to].Rodeo_TO_Steps" Member="Rodeo_TO_Steps">
+    <Type Name="Rodeo_TO_Step">
+      <Column Name="IdTransportOrder" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Step" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdTOAction" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdTOStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LocationNameBegin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IdYardBegin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="XPosBegin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="YPosBegin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZPosBegin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HeadingBegin" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocationNameEnd" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IdYardEnd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="XPosEnd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="YPosEnd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ZPosEnd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HeadingEnd" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="GrabberOpening" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="WaitTime" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Speed" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ConnectLocationName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IdPathBegin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PathOffsetBegin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdPathEnd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PathOffsetEnd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MachineHeading" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MachineName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BeginTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="EndTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_TO_Action_Rodeo_TO_Step" Member="Rodeo_TO_Action" ThisKey="IdTOAction" OtherKey="IdTOAction" Type="Rodeo_TO_Action" IsForeignKey="true" />
+      <Association Name="Rodeo_TO_Statuse_Rodeo_TO_Step" Member="Rodeo_TO_Statuse" ThisKey="IdTOStatus" OtherKey="IdTOStatus" Type="Rodeo_TO_Statuse" IsForeignKey="true" />
+      <Association Name="Rodeo_TransportOrder_Rodeo_TO_Step" Member="Rodeo_TransportOrder" ThisKey="IdTransportOrder" OtherKey="IdTransportOrder" Type="Rodeo_TransportOrder" IsForeignKey="true" />
+      <Association Name="UIB_Path_Rodeo_TO_Step" Member="UIB_Path_Begin" ThisKey="IdPathBegin" OtherKey="IdPath" Type="UIB_Path" IsForeignKey="true" />
+      <Association Name="UIB_Path_Rodeo_TO_Step1" Member="UIB_Path_End" ThisKey="IdPathEnd" OtherKey="IdPath" Type="UIB_Path" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_Rodeo_TO_Step" Member="Rodeo_Yard_Begin" ThisKey="IdYardBegin" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_Rodeo_TO_Step1" Member="Rodeo_Yard_End" ThisKey="IdYardEnd" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="[to].Rodeo_TO_Types" Member="Rodeo_TO_Types">
+    <Type Name="Rodeo_TO_Type">
+      <Column Name="IdTOType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_TO_Type_Rodeo_TransportOrder" Member="Rodeo_TransportOrders" ThisKey="IdTOType" OtherKey="IdTOType" Type="Rodeo_TransportOrder" />
+    </Type>
+  </Table>
+  <Table Name="[to].Rodeo_TransportOrders" Member="Rodeo_TransportOrders">
+    <Type Name="Rodeo_TransportOrder">
+      <Column Name="IdTransportOrder" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdTOType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdTOStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdPreviousTO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="LocationNameBegin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IdYardBegin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="XPosBegin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="YPosBegin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZPosBegin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HeadingBegin" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocationNameEnd" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IdYardEnd" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="XPosEnd" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="YPosEnd" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZPosEnd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HeadingEnd" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="RecordingID1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RecordingID2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RecordingID3" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RecordingID4" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Bypasses" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RequestTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="BeginTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="EndTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="UsernameRequest" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="UsernameCancel" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_TransportOrder_Rodeo_Event" Member="Rodeo_Events" ThisKey="IdTransportOrder" OtherKey="IdTransportOrder" Type="Rodeo_Event" />
+      <Association Name="Rodeo_TransportOrder_Rodeo_TO_Piece" Member="Rodeo_TO_Pieces" ThisKey="IdTransportOrder" OtherKey="IdTransportOrder" Type="Rodeo_TO_Piece" />
+      <Association Name="Rodeo_TransportOrder_Rodeo_TO_Step_History" Member="Rodeo_TO_Step_Histories" ThisKey="IdTransportOrder" OtherKey="IdTransportOrder" Type="Rodeo_TO_Step_History" />
+      <Association Name="Rodeo_TransportOrder_Rodeo_TO_Step" Member="Rodeo_TO_Steps" ThisKey="IdTransportOrder" OtherKey="IdTransportOrder" Type="Rodeo_TO_Step" />
+      <Association Name="Rodeo_TransportOrder_Rodeo_TO_Notification" Member="Rodeo_TO_Notification" ThisKey="IdTransportOrder" OtherKey="IdTransportOrder" Type="Rodeo_TO_Notification" Cardinality="One" />
+      <Association Name="Rodeo_Machine_Rodeo_TransportOrder" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="Rodeo_TO_Statuse_Rodeo_TransportOrder" Member="Rodeo_TO_Statuse" ThisKey="IdTOStatus" OtherKey="IdTOStatus" Type="Rodeo_TO_Statuse" IsForeignKey="true" />
+      <Association Name="Rodeo_TO_Type_Rodeo_TransportOrder" Member="Rodeo_TO_Type" ThisKey="IdTOType" OtherKey="IdTOType" Type="Rodeo_TO_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_Rodeo_TransportOrder" Member="Rodeo_Yard_Begin" ThisKey="IdYardBegin" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_Rodeo_TransportOrder1" Member="Rodeo_Yard_End" ThisKey="IdYardEnd" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="tracking.UIB_HoldOn_Reasons" Member="UIB_HoldOn_Reasons">
+    <Type Name="UIB_HoldOn_Reason">
+      <Column Name="IdHoldOnReason" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="L3Value" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="tracking.Rodeo_Piece_Statuses" Member="Rodeo_Piece_Statuses">
+    <Type Name="Rodeo_Piece_Statuse">
+      <Column Name="IdPieceStatus" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Piece_Statuse_Rodeo_Piece" Member="Rodeo_Pieces" ThisKey="IdPieceStatus" OtherKey="IdPieceStatus" Type="Rodeo_Piece" />
+    </Type>
+  </Table>
+  <Table Name="tracking.Rodeo_Piece_Types" Member="Rodeo_Piece_Types">
+    <Type Name="Rodeo_Piece_Type">
+      <Column Name="IdPieceType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Piece_Type_Rodeo_Piece" Member="Rodeo_Pieces" ThisKey="IdPieceType" OtherKey="IdPieceType" Type="Rodeo_Piece" />
+    </Type>
+  </Table>
+  <Table Name="safety.UIB_Request_Signal_Requests" Member="UIB_Request_Signal_Requests">
+    <Type Name="UIB_Request_Signal_Request">
+      <Column Name="IdRequest" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdRequestSignal" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WriteTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="SetpointValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Alarmname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="SignalInterlock_ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="SignalInterlock_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SignalInterlock_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OtherwiseInterlock_ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="OtherwiseInterlock_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OtherwiseInterlock_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Request_Signal_UIB_Request_Signal_Request" Member="UIB_Request_Signal" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="UIB_Request_Signal" IsForeignKey="true" />
+      <Association Name="UIB_Request_UIB_Request_Signal_Request" Member="UIB_Request" ThisKey="IdRequest" OtherKey="IdRequest" Type="UIB_Request" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="tracking.UIB_Paths" Member="UIB_Paths">
+    <Type Name="UIB_Path">
+      <Column Name="IdPath" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IdTOSpeed" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdYardBegin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="XPosBegin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="YPosBegin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdYardEnd" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="XPosEnd" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="YPosEnd" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Heading" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="OrderByX" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Path_Rodeo_TO_Step" Member="Rodeo_TO_Steps_Begin" ThisKey="IdPath" OtherKey="IdPathBegin" Type="Rodeo_TO_Step" />
+      <Association Name="UIB_Path_Rodeo_TO_Step1" Member="Rodeo_TO_Steps_End" ThisKey="IdPath" OtherKey="IdPathEnd" Type="Rodeo_TO_Step" />
+      <Association Name="Rodeo_Yard_UIB_Path" Member="Rodeo_Yard_Begin" ThisKey="IdYardBegin" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_UIB_Path1" Member="Rodeo_Yard_End" ThisKey="IdYardEnd" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Location_Range_Yards" Member="UIB_Location_Range_Yards">
+    <Type Name="UIB_Location_Range_Yard">
+      <Column Name="IdLocationRange" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdYard" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Location_Range_UIB_Location_Range_Yard" Member="UIB_Location_Range" ThisKey="IdLocationRange" OtherKey="IdLocationRange" Type="UIB_Location_Range" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_UIB_Location_Range_Yard" Member="Rodeo_Yard" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="system.Rodeo_Setting_Groups" Member="Rodeo_Setting_Groups">
+    <Type Name="Rodeo_Setting_Group">
+      <Column Name="IdSettingGroup" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IsMachinePreset" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Setting_Group_Rodeo_Setting_Group_Machine_Type" Member="Rodeo_Setting_Group_Machine_Types" ThisKey="IdSettingGroup" OtherKey="IdSettingGroup" Type="Rodeo_Setting_Group_Machine_Type" />
+      <Association Name="Rodeo_Setting_Group_Rodeo_Setting_Tag" Member="Rodeo_Setting_Tags" ThisKey="IdSettingGroup" OtherKey="IdSettingGroup" Type="Rodeo_Setting_Tag" />
+    </Type>
+  </Table>
+  <Table Name="system.Rodeo_Setting_Tags" Member="Rodeo_Setting_Tags">
+    <Type Name="Rodeo_Setting_Tag">
+      <Column Name="IdSettingTag" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdSettingGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdMachineType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70) NOT NULL" CanBeNull="false" />
+      <Column Name="OnlyWriteAll" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="WriteAllTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Machine_Type_Rodeo_Setting_Tag" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_Rodeo_Setting_Tag" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="Rodeo_Setting_Group_Rodeo_Setting_Tag" Member="Rodeo_Setting_Group" ThisKey="IdSettingGroup" OtherKey="IdSettingGroup" Type="Rodeo_Setting_Group" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="[to].UIB_Jobs" Member="UIB_Jobs">
+    <Type Name="UIB_Job">
+      <Column Name="IdJob" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdMasterJob" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IdJobType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdTOStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PickupReqLocationName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PickupReqMachineName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PickupReqIdYard" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PickupReqXPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PickupReqYPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PickupReqZPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PickupReqHeading" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PickupFinalLocationName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PickupFinalMachineName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PickupFinalIdYard" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PickupFinalXPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PickupFinalYPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PickupFinalZPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PickupFinalHeading" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DropReqLocationName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DropReqMachineName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DropReqIdYard" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropReqXPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropReqYPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropReqZPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropReqHeading" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DropAssignLocationName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DropAssignMachineName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DropAssignIdYard" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropAssignXPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropAssignYPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropAssignZPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropAssignHeading" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DropInitialLocationName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DropInitialMachineName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DropInitialIdYard" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropInitialXPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropInitialYPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropInitialZPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropInitialHeading" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DropRedirectLocationName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DropRedirectMachineName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DropRedirectIdYard" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropRedirectXPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropRedirectYPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropRedirectZPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DropRedirectHeading" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FormattedInstructions" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PieceName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="HighPriority" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Bypasses" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RequestTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="BeginTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="PickupTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="StorageTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="EndTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="CancelTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="UsernameRequest" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="UsernameCancel" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Job_UIB_Incoming_Message" Member="UIB_Incoming_Messages" ThisKey="IdJob" OtherKey="IdJob" Type="UIB_Incoming_Message" />
+      <Association Name="UIB_Job_UIB_Outgoing_Message" Member="UIB_Outgoing_Messages" ThisKey="IdJob" OtherKey="IdJob" Type="UIB_Outgoing_Message" />
+      <Association Name="UIB_Job_Rodeo_Event" Member="Rodeo_Events" ThisKey="IdJob" OtherKey="IdJob" Type="Rodeo_Event" />
+      <Association Name="UIB_Job_UIB_Job_Forecast" Member="UIB_Job_Forecasts" ThisKey="IdJob" OtherKey="IdJob" Type="UIB_Job_Forecast" />
+      <Association Name="UIB_Job_Rodeo_TO_Piece" Member="Rodeo_TO_Pieces" ThisKey="IdJob" OtherKey="IdJob" Type="Rodeo_TO_Piece" />
+      <Association Name="UIB_Job_Type_UIB_Job" Member="UIB_Job_Type" ThisKey="IdJobType" OtherKey="IdJobType" Type="UIB_Job_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_TO_Statuse_UIB_Job" Member="Rodeo_TO_Statuse" ThisKey="IdTOStatus" OtherKey="IdTOStatus" Type="Rodeo_TO_Statuse" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_UIB_Job" Member="Rodeo_Yard_PickupFinal" ThisKey="PickupFinalIdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_UIB_Job1" Member="Rodeo_Yard_PickupReq" ThisKey="PickupReqIdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_UIB_Job2" Member="Rodeo_Yard_DropInitial" ThisKey="DropInitialIdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_UIB_Job3" Member="Rodeo_Yard_DropAssign" ThisKey="DropAssignIdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_UIB_Job4" Member="Rodeo_Yard_DropReq" ThisKey="DropReqIdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_UIB_Job5" Member="Rodeo_Yard_DropRedirect" ThisKey="DropRedirectIdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.Rodeo_Yards" Member="Rodeo_Yards">
+    <Type Name="Rodeo_Yard">
+      <Column Name="IdYard" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="X1AbsolutePos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="X2AbsolutePos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Y1AbsolutePos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Y2AbsolutePos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Z1Pos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Z2Pos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsAxisX" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Yard_Rodeo_Machine" Member="Rodeo_Machines" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Machine" />
+      <Association Name="Rodeo_Yard_UIB_Machine_Exit_Zone" Member="UIB_Machine_Exit_Zones" ThisKey="IdYard" OtherKey="Move_IdYard" Type="UIB_Machine_Exit_Zone" />
+      <Association Name="Rodeo_Yard_UIB_Request" Member="UIB_Requests" ThisKey="IdYard" OtherKey="IdYard" Type="UIB_Request" />
+      <Association Name="Rodeo_Yard_UIB_Zone_Section" Member="UIB_Zone_Sections" ThisKey="IdYard" OtherKey="IdYard" Type="UIB_Zone_Section" />
+      <Association Name="Rodeo_Yard_UIB_Job_Forecast" Member="UIB_Job_Forecasts_Begin" ThisKey="IdYard" OtherKey="IdYardBegin" Type="UIB_Job_Forecast" />
+      <Association Name="Rodeo_Yard_UIB_Job_Forecast1" Member="UIB_Job_Forecasts_End" ThisKey="IdYard" OtherKey="IdYardEnd" Type="UIB_Job_Forecast" />
+      <Association Name="Rodeo_Yard_Rodeo_TO_Piece" Member="Rodeo_TO_Pieces_Pickup" ThisKey="IdYard" OtherKey="PickupIdYard" Type="Rodeo_TO_Piece" />
+      <Association Name="Rodeo_Yard_Rodeo_TO_Piece1" Member="Rodeo_TO_Pieces_Drop" ThisKey="IdYard" OtherKey="DropIdYard" Type="Rodeo_TO_Piece" />
+      <Association Name="Rodeo_Yard_Rodeo_TO_Step" Member="Rodeo_TO_Steps_Begin" ThisKey="IdYard" OtherKey="IdYardBegin" Type="Rodeo_TO_Step" />
+      <Association Name="Rodeo_Yard_Rodeo_TO_Step1" Member="Rodeo_TO_Steps_End" ThisKey="IdYard" OtherKey="IdYardEnd" Type="Rodeo_TO_Step" />
+      <Association Name="Rodeo_Yard_Rodeo_TransportOrder" Member="Rodeo_TransportOrders_Begin" ThisKey="IdYard" OtherKey="IdYardBegin" Type="Rodeo_TransportOrder" />
+      <Association Name="Rodeo_Yard_Rodeo_TransportOrder1" Member="Rodeo_TransportOrders_End" ThisKey="IdYard" OtherKey="IdYardEnd" Type="Rodeo_TransportOrder" />
+      <Association Name="Rodeo_Yard_UIB_Path" Member="UIB_Paths_Begin" ThisKey="IdYard" OtherKey="IdYardBegin" Type="UIB_Path" />
+      <Association Name="Rodeo_Yard_UIB_Path1" Member="UIB_Paths_End" ThisKey="IdYard" OtherKey="IdYardEnd" Type="UIB_Path" />
+      <Association Name="Rodeo_Yard_UIB_Location_Range_Yard" Member="UIB_Location_Range_Yards" ThisKey="IdYard" OtherKey="IdYard" Type="UIB_Location_Range_Yard" />
+      <Association Name="Rodeo_Yard_UIB_Job" Member="UIB_Jobs_PickupFinal" ThisKey="IdYard" OtherKey="PickupFinalIdYard" Type="UIB_Job" />
+      <Association Name="Rodeo_Yard_UIB_Job1" Member="UIB_Jobs_PickupReq" ThisKey="IdYard" OtherKey="PickupReqIdYard" Type="UIB_Job" />
+      <Association Name="Rodeo_Yard_UIB_Job2" Member="UIB_Jobs_DropInitial" ThisKey="IdYard" OtherKey="DropInitialIdYard" Type="UIB_Job" />
+      <Association Name="Rodeo_Yard_UIB_Job3" Member="UIB_Jobs_DropAssign" ThisKey="IdYard" OtherKey="DropAssignIdYard" Type="UIB_Job" />
+      <Association Name="Rodeo_Yard_UIB_Job4" Member="UIB_Jobs_DropReq" ThisKey="IdYard" OtherKey="DropReqIdYard" Type="UIB_Job" />
+      <Association Name="Rodeo_Yard_UIB_Job5" Member="UIB_Jobs_DropRedirect" ThisKey="IdYard" OtherKey="DropRedirectIdYard" Type="UIB_Job" />
+      <Association Name="Rodeo_Yard_UIB_Job_Yard_Transfer_Step" Member="UIB_Job_Yard_Transfer_Steps" ThisKey="IdYard" OtherKey="IdYardBeginOnlyApplicable" Type="UIB_Job_Yard_Transfer_Step" />
+      <Association Name="Rodeo_Yard_UIB_Job_Type_Route" Member="UIB_Job_Type_Routes" ThisKey="IdYard" OtherKey="IdYardOnlyApplicable" Type="UIB_Job_Type_Route" />
+      <Association Name="Rodeo_Yard_Rodeo_Location" Member="Rodeo_Locations" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Location" />
+      <Association Name="Rodeo_Yard_Rodeo_Piece" Member="Rodeo_Pieces" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Piece" />
+    </Type>
+  </Table>
+  <Table Name="[to].UIB_Job_Yard_Transfer_Steps" Member="UIB_Job_Yard_Transfer_Steps">
+    <Type Name="UIB_Job_Yard_Transfer_Step">
+      <Column Name="IdJobYardTransferStep" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IsYardBeginOnFinalDestination" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsYardEndOnFinalDestination" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IdLocationGroupBegin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdLocationGroupEnd" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdYardBeginOnlyApplicable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Location_Group_UIB_Job_Yard_Transfer_Step" Member="UIB_Location_Group_Begin" ThisKey="IdLocationGroupBegin" OtherKey="IdLocationGroup" Type="UIB_Location_Group" IsForeignKey="true" />
+      <Association Name="UIB_Location_Group_UIB_Job_Yard_Transfer_Step1" Member="UIB_Location_Group_End" ThisKey="IdLocationGroupEnd" OtherKey="IdLocationGroup" Type="UIB_Location_Group" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_Type_UIB_Job_Yard_Transfer_Step" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_UIB_Job_Yard_Transfer_Step" Member="Rodeo_Yard" ThisKey="IdYardBeginOnlyApplicable" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="[to].UIB_Job_Type_Routes" Member="UIB_Job_Type_Routes">
+    <Type Name="UIB_Job_Type_Route">
+      <Column Name="IdJobTypeRoute" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdJobType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdYardOnlyApplicable" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdLocationGroupBegin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdLocationGroupEnd" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Job_Type_UIB_Job_Type_Route" Member="UIB_Job_Type" ThisKey="IdJobType" OtherKey="IdJobType" Type="UIB_Job_Type" IsForeignKey="true" />
+      <Association Name="UIB_Location_Group_UIB_Job_Type_Route" Member="UIB_Location_Group_Begin" ThisKey="IdLocationGroupBegin" OtherKey="IdLocationGroup" Type="UIB_Location_Group" IsForeignKey="true" />
+      <Association Name="UIB_Location_Group_UIB_Job_Type_Route1" Member="UIB_Location_Group_End" ThisKey="IdLocationGroupEnd" OtherKey="IdLocationGroup" Type="UIB_Location_Group" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_Type_UIB_Job_Type_Route" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_UIB_Job_Type_Route" Member="Rodeo_Yard" ThisKey="IdYardOnlyApplicable" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="[to].Rodeo_TO_Notifications" Member="Rodeo_TO_Notifications">
+    <Type Name="Rodeo_TO_Notification">
+      <Column Name="IdTransportOrder" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PickupConditional" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ResetRequested" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CancelRequested" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RedirectRequested" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RecalculateRequested" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RCPFlagCode" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_TransportOrder_Rodeo_TO_Notification" Member="Rodeo_TransportOrder" ThisKey="IdTransportOrder" OtherKey="IdTransportOrder" Type="Rodeo_TransportOrder" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="tracking.UIB_Pick_List_Groups" Member="UIB_Pick_List_Groups">
+    <Type Name="UIB_Pick_List_Groups">
+      <Column Name="IdPickListGroup" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IdPickListGroupParent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="UIB_Pick_List_Groups_UIB_Pick_List_Groups" Member="UIB_Pick_List_Groups2" ThisKey="IdPickListGroup" OtherKey="IdPickListGroupParent" Type="UIB_Pick_List_Groups" />
+      <Association Name="UIB_Pick_List_Groups_UIB_Pick_Lists" Member="UIB_Pick_Lists" ThisKey="IdPickListGroup" OtherKey="IdPickListGroup" Type="UIB_Pick_Lists" />
+      <Association Name="UIB_Pick_List_Groups_UIB_Pick_List_Groups" Member="UIB_Pick_List_Groups1" ThisKey="IdPickListGroupParent" OtherKey="IdPickListGroup" Type="UIB_Pick_List_Groups" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="tracking.UIB_Pick_Lists_Filters" Member="UIB_Pick_Lists_Filters">
+    <Type Name="UIB_Pick_Lists_Filters">
+      <Column Name="IdPickList" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdPickListGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BackgroundColor" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ForegroundColor" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Pick_List_Groups_Filters_UIB_Pick_Lists_Filters" Member="UIB_Pick_List_Groups_Filters" ThisKey="IdPickListGroup" OtherKey="IdPickListGroup" Type="UIB_Pick_List_Groups_Filters" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="tracking.UIB_Pick_List_Groups_Filters" Member="UIB_Pick_List_Groups_Filters">
+    <Type Name="UIB_Pick_List_Groups_Filters">
+      <Column Name="IdPickListGroup" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IdPickListGroupParent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="UIB_Pick_List_Groups_Filters_UIB_Pick_Lists_Filters" Member="UIB_Pick_Lists_Filters" ThisKey="IdPickListGroup" OtherKey="IdPickListGroup" Type="UIB_Pick_Lists_Filters" />
+      <Association Name="UIB_Pick_List_Groups_Filters_UIB_Pick_List_Groups_Filters" Member="UIB_Pick_List_Groups_Filters2" ThisKey="IdPickListGroup" OtherKey="IdPickListGroupParent" Type="UIB_Pick_List_Groups_Filters" />
+      <Association Name="UIB_Pick_List_Groups_Filters_UIB_Pick_List_Groups_Filters" Member="UIB_Pick_List_Groups_Filters1" ThisKey="IdPickListGroupParent" OtherKey="IdPickListGroup" Type="UIB_Pick_List_Groups_Filters" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="tracking.UIB_Pick_Lists" Member="UIB_Pick_Lists">
+    <Type Name="UIB_Pick_Lists">
+      <Column Name="IdPickList" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdPickListGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BackgroundColor" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ForegroundColor" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_Pick_Lists_Rodeo_Piece" Member="Rodeo_Pieces" ThisKey="IdPickList" OtherKey="IdPickList" Type="Rodeo_Piece" />
+      <Association Name="UIB_Pick_List_Groups_UIB_Pick_Lists" Member="UIB_Pick_List_Groups" ThisKey="IdPickListGroup" OtherKey="IdPickListGroup" Type="UIB_Pick_List_Groups" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="tracking.UIB_Pick_List_Groups_All" Member="UIB_Pick_List_Groups_All">
+    <Type Name="UIB_Pick_List_Groups_All">
+      <Column Name="IdPickListGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IdPickListGroupParent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="tracking.UIB_Pick_Lists_All" Member="UIB_Pick_Lists_All">
+    <Type Name="UIB_Pick_Lists_All">
+      <Column Name="IdPickList" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdPickListGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BackgroundColor" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ForegroundColor" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="common.Rodeo_Locations" Member="Rodeo_Locations">
+    <Type Name="Rodeo_Location">
+      <Column Name="IdLocation" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdLocationType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdLocationGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdLocationRange" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IdYard" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="XPos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="YPos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ZPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TheoricalXMin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TheoricalYMin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TheoricalZMin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TheoricalXMax" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TheoricalYMax" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TheoricalZMax" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ZOrder" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="DefaultHeading" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Row" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Col" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IsVertical" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="L3Value" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="RCSValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TOLT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PickupPriority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StoragePriority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CarPresent_ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="CarPresent_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CarPresent_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PiecePresent_ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="PiecePresent_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PiecePresent_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PieceID_ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="PieceID_WriteTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="PieceID_TriggerTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="PieceID_SetpointValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReadyForPickup_ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="ReadyForPickup_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReadyForPickup_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReadyForStorage_ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="ReadyForStorage_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReadyForStorage_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AccessRequest_ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="AccessRequest_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AccessRequest_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AccessGranted_ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="AccessGranted_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AccessGranted_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Location_Rodeo_Machine" Member="Rodeo_Machines" ThisKey="IdLocation" OtherKey="IdParkingLocation" Type="Rodeo_Machine" />
+      <Association Name="Rodeo_Location_Rodeo_Machine1" Member="Rodeo_Machines1" ThisKey="IdLocation" OtherKey="IdWorkingLocation" Type="Rodeo_Machine" />
+      <Association Name="Rodeo_Location_UIB_Machine_Exit_Zone" Member="UIB_Machine_Exit_Zones" ThisKey="IdLocation" OtherKey="Move_IdLocation" Type="UIB_Machine_Exit_Zone" />
+      <Association Name="Rodeo_Location_UIB_Request_Transport_Dependency" Member="UIB_Request_Transport_Dependencies" ThisKey="IdLocation" OtherKey="IdTransportLocation" Type="UIB_Request_Transport_Dependency" />
+      <Association Name="Rodeo_Location_UIB_Machine_Exit_Location" Member="UIB_Machine_Exit_Locations" ThisKey="IdLocation" OtherKey="Move_IdLocation" Type="UIB_Machine_Exit_Location" />
+      <Association Name="Rodeo_Location_UIB_Machine_Exit_Location1" Member="UIB_Machine_Exit_Locations1" ThisKey="IdLocation" OtherKey="IdLocation" Type="UIB_Machine_Exit_Location" />
+      <Association Name="Rodeo_Location_Rodeo_Location" Member="Rodeo_Locations" ThisKey="IdLocation" OtherKey="TOLT" Type="Rodeo_Location" />
+      <Association Name="Rodeo_Location_Rodeo_Piece" Member="Rodeo_Pieces" ThisKey="IdLocation" OtherKey="IdLocation" Type="Rodeo_Piece" />
+      <Association Name="Rodeo_Location_Rodeo_Position" Member="Rodeo_Position" ThisKey="IdLocation" OtherKey="IdLocation" Type="Rodeo_Position" Cardinality="One" />
+      <Association Name="Rodeo_Location_Type_Rodeo_Location" Member="Rodeo_Location_Type" ThisKey="IdLocationType" OtherKey="IdLocationType" Type="Rodeo_Location_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Location_Rodeo_Location" Member="Rodeo_Location1" ThisKey="TOLT" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_Rodeo_Location" Member="Rodeo_Yard" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="UIB_Location_Group_Rodeo_Location" Member="UIB_Location_Group" ThisKey="IdLocationGroup" OtherKey="IdLocationGroup" Type="UIB_Location_Group" IsForeignKey="true" />
+      <Association Name="UIB_Location_Range_Rodeo_Location" Member="UIB_Location_Range" ThisKey="IdLocationRange" OtherKey="IdLocationRange" Type="UIB_Location_Range" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="tracking.Rodeo_Pieces" Member="Rodeo_Pieces">
+    <Type Name="Rodeo_Piece">
+      <Column Name="PieceName" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdPieceType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdPieceStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdPickList" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdYard" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="XPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="YPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ZPos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ZOrder" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Heading" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IdLocation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LocationOrder" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MachinePosition" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="MachinePositionOrder" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="HoldOnReasonStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NextStep" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Thickness" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Width" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Length" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Weight" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NonStackable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Owner" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ArrivalTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="DepartureTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
+      <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Location_Rodeo_Piece" Member="Rodeo_Location" ThisKey="IdLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_Rodeo_Piece" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="Rodeo_Piece_Statuse_Rodeo_Piece" Member="Rodeo_Piece_Statuse" ThisKey="IdPieceStatus" OtherKey="IdPieceStatus" Type="Rodeo_Piece_Statuse" IsForeignKey="true" />
+      <Association Name="Rodeo_Piece_Type_Rodeo_Piece" Member="Rodeo_Piece_Type" ThisKey="IdPieceType" OtherKey="IdPieceType" Type="Rodeo_Piece_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_Rodeo_Piece" Member="Rodeo_Yard" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="UIB_Pick_Lists_Rodeo_Piece" Member="UIB_Pick_List" Storage="_UIB_Pick_Lists" ThisKey="IdPickList" OtherKey="IdPickList" Type="UIB_Pick_Lists" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="system.UIB_PLC_IOs" Member="UIB_PLC_IOs">
+    <Type Name="UIB_PLC_IO">
+      <Column Name="IdPLCIO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdPLCModule" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Tagname" Type="System.String" DbType="VarChar(70) NOT NULL" CanBeNull="false" />
+      <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Size" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_PLC_Module_UIB_PLC_IO" Member="UIB_PLC_Module" ThisKey="IdPLCModule" OtherKey="IdPLCModule" Type="UIB_PLC_Module" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_File_Types" Member="UIB_File_Types">
+    <Type Name="UIB_File_Type">
+      <Column Name="IdFileType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_File_Type_UIB_File" Member="UIB_Files" ThisKey="IdFileType" OtherKey="IdFileType" Type="UIB_File" />
+    </Type>
+  </Table>
+  <Table Name="common.UIB_Files" Member="UIB_Files">
+    <Type Name="UIB_File">
+      <Column Name="IdFile" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdFileType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FileName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="UIB_File_Type_UIB_File" Member="UIB_File_Type" ThisKey="IdFileType" OtherKey="IdFileType" Type="UIB_File_Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="common.Rodeo_Positions" Member="Rodeo_Positions">
+    <Type Name="Rodeo_Position">
+      <Column Name="IdLocation" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Alias" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="X" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Y" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Z" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Heading" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
+      <Association Name="Rodeo_Location_Rodeo_Position" Member="Rodeo_Location" ThisKey="IdLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="[to].UIB_RCP_Configs" Member="UIB_RCP_Config">
+    <Type Name="UIB_RCP_Config">
+      <Column Name="IdMachine" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MachineConfigName" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="IP" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RequestPort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ServerPort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RCPPort" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsTripleIN" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ConnectWatchdog" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="tracking.GetAndUpdatePickList" Method="GetAndUpdatePickList">
+    <Parameter Name="piece_name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="picklist" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="tracking.GetGHPNewSequence" Method="GetGHPNewSequence">
+    <Parameter Name="sequence" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

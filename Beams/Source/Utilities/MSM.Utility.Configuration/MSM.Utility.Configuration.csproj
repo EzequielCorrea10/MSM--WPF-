@@ -40,7 +40,7 @@
     </Reference>
     <Reference Include="Janus.Rodeo.Windows.Process.Rd_WatchDog, Version=1.0.8147.18073, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Rodeo\executables\processes\Janus.Rodeo.Windows.Process.Rd_WatchDog.dll</HintPath>
+      <HintPath>..\..\..\AppRelease\executables\processes\Janus.Rodeo.Windows.Process.Rd_WatchDog.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

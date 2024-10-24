@@ -4,3 +4,20 @@
 2024-10-24 11:33:28.960: InitializeRegister, Message: ********** Start the application **********
 2024-10-24 11:33:28.970: InitializeRegister, Message: Information of PID=16732, Process=UIB.HMI.Safety.Operation, Arguments=
 2024-10-24 11:33:28.926: .ctor, Debug: Begin Layout
+2024-10-24 12:57:01.167: InitializeRegister, Message: ********** Start the application **********
+2024-10-24 12:57:01.178: InitializeRegister, Message: Information of PID=44180, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-24 12:57:01.137: Application_Startup, Exception: 
+Exception message: There is an error in XML document (213, 63).
+********** Start of Exception **********
+   at System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   at System.Xml.Serialization.XmlSerializer.Deserialize(Stream stream)
+   at Janus.Rodeo.Windows.Library.UI.Common.Helpers.CfgReader.Xml.GetItem[T](Stream value)
+   at MSM.Utility.Configuration.Configurations..ctor() in D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Configuration\Configurations.cs:line 89
+   at MSM.Utility.Configuration.Configurations.get_Instance() in D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Configuration\Configurations.cs:line 52
+   at MSM.Utility.Configuration.Configurations.get_General() in D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Configuration\Configurations.cs:line 103
+   at MSM.HMI.Safety.Operation.App.Application_Startup(Object sender, StartupEventArgs e) in D:\Proyectos\MSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\App.xaml.cs:line 26
+
+********** End of Exception **********
+2024-10-24 13:03:47.091: InitializeRegister, Message: ********** Start the application **********
+2024-10-24 13:03:47.101: InitializeRegister, Message: Information of PID=55584, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-24 13:03:47.043: .ctor, Debug: Begin Layout

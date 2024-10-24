@@ -14,3 +14,11 @@ D:\Projects\MSM\MSM\Beams\AppRelease\debug\MSM.Utility.Configuration.dll
 D:\Projects\MSM\MSM\Beams\AppRelease\debug\MSM.Utility.Configuration.pdb
 D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\MSM.Utility.Configuration.dll
 D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\MSM.Utility.Configuration.pdb
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\MSM.Utility.Configuration.csproj.AssemblyReference.cache
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\MSM.Utility.Configuration.csproj.CoreCompileInputs.cache
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\MSM.Utility.Configuration.dll
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\MSM.Utility.Configuration.pdb
+D:\Proyectos\MSM\Beams\AppRelease\debug\Configurations.xml
+D:\Proyectos\MSM\Beams\AppRelease\debug\MSM.Utility.Configuration.dll
+D:\Proyectos\MSM\Beams\AppRelease\debug\MSM.Utility.Configuration.pdb
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\MSM.Util.21B099F3.Up2Date

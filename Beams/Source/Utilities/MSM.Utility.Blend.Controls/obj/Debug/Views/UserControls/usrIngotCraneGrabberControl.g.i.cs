@@ -9,7 +9,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using HelixToolkit.Wpf;
 using MSM.Utility.Blend.Controls;
 using MSM.Utility.Blend.Controls.Converters;
 using System;

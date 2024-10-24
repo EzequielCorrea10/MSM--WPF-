@@ -88,7 +88,7 @@ namespace MSM.HMI.Safety.Operation {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/UIB.HMI.Safety.Operation;component/desktopwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MSM.HMI.Safety.Operation;component/desktopwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\DesktopWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

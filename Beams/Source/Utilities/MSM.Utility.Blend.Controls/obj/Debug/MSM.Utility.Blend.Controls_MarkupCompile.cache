@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\
 MSM.Utility.Blend.Controls
 none
 false
@@ -13,8 +13,8 @@ DEBUG;TRACE
 4-418468046
 
 8803477623
-221216378111
+211039804737
 Views\UserControls\usrCGrabbControl.xaml;Views\UserControls\usrCHookControl.xaml;Views\UserControls\usrCraneGrabberControl.xaml;Views\UserControls\usrIngotCraneGrabberControl.xaml;
 
-False
+True
 

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D02EE36E-48F6-420C-9C0C-1E685BB816CC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>UIB.HMI.Safety.Operation</RootNamespace>
-    <AssemblyName>UIB.HMI.Safety.Operation</AssemblyName>
+    <RootNamespace>MSM.HMI.Safety.Operation</RootNamespace>
+    <AssemblyName>MSM.HMI.Safety.Operation</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -65,15 +65,15 @@
     </Reference>
     <Reference Include="Janus.Rodeo.Windows.Library.UI.Alarms, Version=1.0.8256.19707, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Rodeo\apps\uis\Janus.Rodeo.Windows.Library.UI.Alarms.dll</HintPath>
+      <HintPath>..\..\..\AppRelease\executables\rodeo_dlls\Janus.Rodeo.Windows.Library.UI.Alarms.dll</HintPath>
     </Reference>
     <Reference Include="Janus.Rodeo.Windows.Library.UI.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Rodeo\apps\uis\Janus.Rodeo.Windows.Library.UI.Common.dll</HintPath>
+      <HintPath>..\..\..\AppRelease\executables\rodeo_dlls\Janus.Rodeo.Windows.Library.UI.Common.dll</HintPath>
     </Reference>
     <Reference Include="Janus.Rodeo.Windows.Library.UI.Controls, Version=1.0.8256.19703, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Rodeo\apps\uis\Janus.Rodeo.Windows.Library.UI.Controls.dll</HintPath>
+      <HintPath>..\..\..\AppRelease\executables\rodeo_dlls\Janus.Rodeo.Windows.Library.UI.Controls.dll</HintPath>
     </Reference>
     <Reference Include="MSM.Utility.Common, Version=1.0.9063.20102, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -98,6 +98,10 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIB.Database, Version=1.0.9063.21163, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\AppRelease\executables\uib_dlls\UIB.Database.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
@@ -197,12 +201,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\DB\UIB.Database\UIB.Database.csproj">
-      <Project>{052ce148-26a8-44f6-b3b7-e7cc7184c400}</Project>
-      <Name>UIB.Database</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Handlers\" />

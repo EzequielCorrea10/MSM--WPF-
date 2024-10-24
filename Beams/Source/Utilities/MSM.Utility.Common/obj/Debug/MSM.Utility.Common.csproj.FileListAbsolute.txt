@@ -12,3 +12,10 @@ D:\Projects\MSM\MSM\Beams\AppRelease\debug\MSM.Utility.Common.pdb
 D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\MSM.Util.A6A24A3C.Up2Date
 D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\MSM.Utility.Common.dll
 D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\MSM.Utility.Common.pdb
+D:\Proyectos\MSM\Beams\AppRelease\debug\MSM.Utility.Common.dll
+D:\Proyectos\MSM\Beams\AppRelease\debug\MSM.Utility.Common.pdb
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\MSM.Utility.Common.csproj.AssemblyReference.cache
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\MSM.Utility.Common.csproj.CoreCompileInputs.cache
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\MSM.Util.A6A24A3C.Up2Date
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\MSM.Utility.Common.dll
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\MSM.Utility.Common.pdb

@@ -1,0 +1,27 @@
+﻿CREATE TABLE [to].[Rodeo_TO_Statuses]( --Scheduled, Future, Sent, Active, Cancelled, Finished, Redirected, Stopped, Hold
+	[IdTOStatus] [int] NOT NULL,
+	[Name] [varchar](50) NOT NULL,
+	[FullDescription] [varchar](100) NULL,
+	[Order] [int] NOT NULL,
+	[PlcValue] [int] NOT NULL,
+	[Active] [bit] NOT NULL,
+ CONSTRAINT [PK_Rodeo_TO_Statuses] PRIMARY KEY CLUSTERED 
+(
+	[IdTOStatus] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+ CONSTRAINT [UK_Rodeo_TO_Statuses] UNIQUE NONCLUSTERED 
+(
+	[PlcValue] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO 
+
+CREATE UNIQUE NONCLUSTERED INDEX [IX_Rodeo_TO_Statuses_Name] ON [to].[Rodeo_TO_Statuses]
+(
+	[Name] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+
+GO
+
+ALTER TABLE [to].[Rodeo_TO_Statuses] ADD  CONSTRAINT [DF_Rodeo_TO_Statuses_Active]  DEFAULT ((1)) FOR [Active]

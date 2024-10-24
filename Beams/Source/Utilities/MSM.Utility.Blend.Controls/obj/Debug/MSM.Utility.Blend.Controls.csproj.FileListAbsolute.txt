@@ -52,3 +52,14 @@ D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\
 D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\MSM.Utility.Blend.Controls.Properties.Resources.resources
 D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\MSM.Utility.Blend.Controls.dll
 D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\MSM.Utility.Blend.Controls.pdb
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\MSM.Utility.Blend.Controls.csproj.AssemblyReference.cache
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\Views\UserControls\usrCraneGrabberControl.baml
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\Views\UserControls\usrCGrabbControl.g.cs
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\Views\UserControls\usrCHookControl.g.cs
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\Views\UserControls\usrCraneGrabberControl.g.cs
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\Views\UserControls\usrIngotCraneGrabberControl.g.cs
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\MSM.Utility.Blend.Controls_MarkupCompile.cache
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\MSM.Utility.Blend.Controls_MarkupCompile.lref
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\MSM.Utility.Blend.Controls.dll
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\MSM.Utility.Blend.Controls.pdb

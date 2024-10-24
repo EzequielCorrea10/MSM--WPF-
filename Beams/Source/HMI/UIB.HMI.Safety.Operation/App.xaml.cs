@@ -27,10 +27,6 @@ namespace MSM.HMI.Safety.Operation
                 RodeoHandler.ClientName = Configurations.General.ClientName;
                 RodeoHandler.TestMode = Configurations.General.TestMode;
 
-                if (string.IsNullOrEmpty(Configurations.General.ClientName))
-                {
-                    throw new Exception(string.Format("Client Name cannot be empty or null"));
-                }
 
 
                 ScreenPages activeScreen = (ScreenPages)Enum.Parse(typeof(ScreenPages), MSM.HMI.Safety.Operation.Properties.Settings.Default.SCREEN.ToString());
