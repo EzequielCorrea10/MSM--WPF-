@@ -25,7 +25,7 @@ namespace TagLoader.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("MSM")]
+        [global::System.Configuration.DefaultSettingValueAttribute("UIB")]
         public string RodeoSector {
             get {
                 return ((string)(this["RodeoSector"]));

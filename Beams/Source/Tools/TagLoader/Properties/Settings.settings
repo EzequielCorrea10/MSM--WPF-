@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="RodeoSector" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">MSM</Value>
+      <Value Profile="(Default)">UIB</Value>
     </Setting>
   </Settings>
 </SettingsFile>

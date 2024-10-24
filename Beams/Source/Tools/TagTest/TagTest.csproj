@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A8D10C19-B799-4FD6-B48B-6A883453D202}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TagTest</RootNamespace>
+    <AssemblyName>TagTest</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Janus.Rodeo.Windows.Library.DBConnection.Data">
+      <HintPath>..\..\..\Rodeo\apps\uis\Janus.Rodeo.Windows.Library.DBConnection.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.HistoryControl">
+      <HintPath>..\..\..\Rodeo\apps\uis\Janus.Rodeo.Windows.Library.HistoryControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_Cfg">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_Cfg.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_Circular">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_Circular.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_Common">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_CSServerClient">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_CSServerClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_HaServerClient">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_HaServerClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_HcServerClient">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_HcServerClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_HistorianClient">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_HistorianClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_HistoUserClient">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_HistoUserClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_Islands">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_Islands.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_Log">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_Plc">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_Plc.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_RaServerClient">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_RaServerClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_RtData">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_RtData.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_RtServerClient">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_RtServerClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_Scales">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_Scales.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_ScanData">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_ScanData.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_Services">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_SharedMemory">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_SharedMemory.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_Socket">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_Socket.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_TrServerClient">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_TrServerClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_UserClient">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_UserClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_UserData">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_UserData.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.RtrDriver">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.RtrDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.RtsDriver">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.RtsDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.RumDriver">
+      <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.RumDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Trend_Display">
+      <HintPath>..\..\..\Rodeo\apps\uis\Janus.Rodeo.Windows.Library.Trend_Display.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.UI.Alarms">
+      <HintPath>..\..\..\Rodeo\apps\uis\Janus.Rodeo.Windows.Library.UI.Alarms.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.UI.Commands">
+      <HintPath>..\..\..\Rodeo\apps\uis\Janus.Rodeo.Windows.Library.UI.Commands.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.UI.Common">
+      <HintPath>..\..\..\Rodeo\apps\uis\Janus.Rodeo.Windows.Library.UI.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.UI.Controls">
+      <HintPath>..\..\..\Rodeo\apps\uis\Janus.Rodeo.Windows.Library.UI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.UI.RuleCore">
+      <HintPath>..\..\..\Rodeo\apps\uis\Janus.Rodeo.Windows.Library.UI.RuleCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.UI.Users">
+      <HintPath>..\..\..\Rodeo\apps\uis\Janus.Rodeo.Windows.Library.UI.Users.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\RodeoTag.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
