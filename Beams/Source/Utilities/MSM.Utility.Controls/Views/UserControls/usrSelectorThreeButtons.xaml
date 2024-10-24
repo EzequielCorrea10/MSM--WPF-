@@ -1,0 +1,275 @@
+﻿<UserControl x:Class="MSM.Utility.Controls.usrSelectorThreeButtons"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:behaviour="clr-namespace:MSM.Utility.Controls.Behaviours"
+             MinHeight="40" MinWidth="50" Name="this">
+    <UserControl.Resources>
+        <BitmapImage x:Key="img_OnSwitch" UriSource="pack://application:,,,/Janus.Rodeo.Windows.Library.UI.Controls;component/Themes/Resources/Icons/imgOnSwitch.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="img_OffSwitch" UriSource="pack://application:,,,/Janus.Rodeo.Windows.Library.UI.Controls;component/Themes/Resources/Icons/imgOffSwitch.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="img_NeutralSwitch" UriSource="pack://application:,,,/Janus.Rodeo.Windows.Library.UI.Controls;component/Themes/Resources/Icons/imgNeutralSwitch.png" RenderOptions.BitmapScalingMode="HighQuality" />
+
+        <Style x:Key="btnThreeSelector" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="FontFamily" Value="Metro UI" />
+            <Setter Property="Foreground" Value="WhiteSmoke" />
+            <Setter Property="FontStyle" Value="Normal" />
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="WhiteSmoke"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <ControlTemplate.Resources>
+                            <Storyboard x:Key="ShowShine">
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ButtonScale" Storyboard.TargetProperty="(ScaleTransform.ScaleX)">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:0.300" Value="1.2"/>
+                                </DoubleAnimationUsingKeyFrames>
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ButtonScale" Storyboard.TargetProperty="(ScaleTransform.ScaleY)">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:0.300" Value="1.2"/>
+                                </DoubleAnimationUsingKeyFrames>
+
+                                <ColorAnimation Storyboard.TargetName="ButtonBorder" Storyboard.TargetProperty="Background.Color" From="Transparent" To="#0a67a3" Duration="0:0:0.1"  />
+                                <DoubleAnimation Storyboard.TargetName="ButtonBorder" Storyboard.TargetProperty="Opacity" From="0.2" To="1" Duration="0:0:0.5" />
+                            </Storyboard>
+                            <Storyboard x:Key="HideShine">
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ButtonScale" Storyboard.TargetProperty="(ScaleTransform.ScaleX)">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:0.300" Value="1"/>
+                                </DoubleAnimationUsingKeyFrames>
+                                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ButtonScale" Storyboard.TargetProperty="(ScaleTransform.ScaleY)">
+                                    <SplineDoubleKeyFrame KeyTime="00:00:0.300" Value="1"/>
+                                </DoubleAnimationUsingKeyFrames>
+
+                                <DoubleAnimation Storyboard.TargetName="ButtonBorder" Storyboard.TargetProperty="Opacity" From="1" To="0.2" Duration="0:0:0.3" />
+                                <ColorAnimation Storyboard.TargetName="ButtonBorder" Storyboard.TargetProperty="Background.Color" From="#0a67a3" To="Transparent" Duration="0:0:0.1"  />
+                            </Storyboard>
+                        </ControlTemplate.Resources>
+
+                        <Grid x:Name="grdContent" Margin="0,5,0,0">
+                            <Border Name="ButtonBorder" Opacity="0.2" Margin="1,0,-1,0" CornerRadius="1" BorderThickness="1" BorderBrush="WhiteSmoke" Background="Transparent" />
+
+                            <ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Center" VerticalAlignment="Top" 
+                                              Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Margin="{TemplateBinding Padding}"
+                                              TextBlock.Foreground="{TemplateBinding TextBlock.Foreground}" TextBlock.FontWeight="{TemplateBinding TextBlock.FontWeight}">
+                                <ContentPresenter.RenderTransform>
+                                    <ScaleTransform x:Name="ButtonScale" ScaleX="1" ScaleY="1" 
+                                                CenterX="{Binding Path=Width, ElementName=contentPresenter, Converter={StaticResource halfSubstractionConverter}}" 
+                                                CenterY="{Binding Path=Height, ElementName=contentPresenter, Converter={StaticResource halfSubstractionConverter}}" />
+                                </ContentPresenter.RenderTransform>
+                            </ContentPresenter>
+
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates" >
+                                    <VisualState x:Name="Normal">
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ButtonScale" Storyboard.TargetProperty="(ScaleTransform.ScaleX)">
+                                                <SplineDoubleKeyFrame KeyTime="00:00:0.300" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ButtonScale" Storyboard.TargetProperty="(ScaleTransform.ScaleY)">
+                                                <SplineDoubleKeyFrame KeyTime="00:00:0.300" Value="1"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled"  Value="True">
+                                <Setter Property="Opacity" TargetName="contentPresenter" Value="1"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled"  Value="False">
+                                <Setter Property="Opacity" TargetName="contentPresenter" Value="0.9"/>
+                                <Setter Property="Visibility" TargetName="ButtonBorder" Value="Collapsed"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="RenderTransform" TargetName="contentPresenter">
+                                    <Setter.Value>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleX="0.8" ScaleY="0.8"/>
+                                            <SkewTransform AngleX="0" AngleY="0"/>
+                                            <RotateTransform Angle="0"/>
+                                        </TransformGroup>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard Storyboard="{StaticResource HideShine}" x:Name="HideShine_BeginStoryboard"/>
+                                </Trigger.ExitActions>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard Storyboard="{StaticResource ShowShine}" x:Name="ShowShine_BeginStoryboard"/>
+                                </Trigger.EnterActions>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MaxHeight="30"/>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />            
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Top"
+                Width="{Binding Path=ButtonWidth, ElementName=this}" Height="{Binding Path=ButtonHeight, ElementName=this}" FontSize="{Binding Path=ButtonFontSize, ElementName=this}" Content="{Binding Path=SecondOptionName, ElementName=this, UpdateSourceTrigger=PropertyChanged}"
+                Background="Transparent" Cursor="Hand" Padding="0,10,0,0" TextBlock.TextAlignment="Center" Margin="0,-5,0,0"
+                Command="{Binding Path=SecondOptionCommand, ElementName=this, UpdateSourceTrigger=PropertyChanged}"
+                CommandParameter="{Binding Path=SecondOptionCommandParameter, ElementName=this, UpdateSourceTrigger=PropertyChanged}"
+                behaviour:TouchDeviceMouseOver.IsEnabled="True">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}" BasedOn="{StaticResource btnThreeSelector}">
+                    <Setter Property="TextBlock.Foreground" Value="WhiteSmoke"/>
+                    <Setter Property="IsEnabled" Value="True" />
+                    <Style.Triggers>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Path=OptionSelected, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="2" />
+                                <Condition Binding="{Binding Path=IsSecondOptionRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="TextBlock.Foreground" Value="#FF75C910"/>
+                            <Setter Property="IsEnabled" Value="False" />
+                        </MultiDataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Path=OptionSelected, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="2" />
+                                <Condition Binding="{Binding Path=IsSecondOptionRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="TextBlock.Foreground" Value="Red"/>
+                            <Setter Property="IsEnabled" Value="False" />
+                        </MultiDataTrigger>
+                        <DataTrigger Binding="{Binding Path=IsEnabled, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="false">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=SecondOptionCommand, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="{x:Null}">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=SecondOptionName, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="{x:Null}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Button Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" VerticalAlignment="Top"
+                Width="{Binding Path=ButtonWidth, ElementName=this}" Height="{Binding Path=ButtonHeight, ElementName=this}" FontSize="{Binding Path=ButtonFontSize, ElementName=this}" Content="{Binding Path=FirstOptionName, ElementName=this, UpdateSourceTrigger=PropertyChanged}"
+                Background="Transparent" Cursor="Hand" Padding="0,10,0,0" TextBlock.TextAlignment="Center" Margin="-20,40,0,0"
+                Command="{Binding Path=FirstOptionCommand, ElementName=this, UpdateSourceTrigger=PropertyChanged}"
+                CommandParameter="{Binding Path=FirstOptionCommandParameter, ElementName=this, UpdateSourceTrigger=PropertyChanged}"
+                behaviour:TouchDeviceMouseOver.IsEnabled="True">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}" BasedOn="{StaticResource btnThreeSelector}">
+                    <Setter Property="TextBlock.Foreground" Value="WhiteSmoke"/>
+                    <Setter Property="IsEnabled" Value="True" />
+                    <Style.Triggers>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Path=OptionSelected, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="1" />
+                                <Condition Binding="{Binding Path=IsFirstOptionRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="TextBlock.Foreground" Value="#FF75C910"/>
+                            <Setter Property="IsEnabled" Value="False" />
+                        </MultiDataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Path=OptionSelected, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="1" />
+                                <Condition Binding="{Binding Path=IsFirstOptionRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="TextBlock.Foreground" Value="Red"/>
+                            <Setter Property="IsEnabled" Value="False" />
+                        </MultiDataTrigger>
+                        <DataTrigger Binding="{Binding Path=FirstOptionCommand, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="{x:Null}">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=IsEnabled, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="false">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Button Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" VerticalAlignment="Top" 
+                Width="{Binding Path=ButtonWidth, ElementName=this}" Height="{Binding Path=ButtonHeight, ElementName=this}"  FontSize="{Binding Path=ButtonFontSize, ElementName=this}" Content="{Binding Path=ThirdOptionName, ElementName=this, UpdateSourceTrigger=PropertyChanged}"
+                Background="Transparent" Cursor="Hand" Padding="0,10,0,0" TextBlock.TextAlignment="Center" Margin="10,40,0,0" 
+                Command="{Binding Path=ThirdOptionCommand, ElementName=this, UpdateSourceTrigger=PropertyChanged}"
+                CommandParameter="{Binding Path=ThirdOptionCommandParameter, ElementName=this, UpdateSourceTrigger=PropertyChanged}"
+                behaviour:TouchDeviceMouseOver.IsEnabled="True">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}" BasedOn="{StaticResource btnThreeSelector}">
+                    <Setter Property="TextBlock.Foreground" Value="WhiteSmoke"/>                  
+                    <Setter Property="IsEnabled" Value="True" />
+                    <Style.Triggers>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Path=OptionSelected, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="3" />
+                                <Condition Binding="{Binding Path=IsThirdOptionRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="TextBlock.Foreground" Value="#FF75C910"/>
+                            <Setter Property="IsEnabled" Value="False" />
+                        </MultiDataTrigger>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Path=OptionSelected, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="3" />
+                                <Condition Binding="{Binding Path=IsThirdOptionRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="TextBlock.Foreground" Value="Red"/>
+                            <Setter Property="IsEnabled" Value="False" />
+                        </MultiDataTrigger>
+                        <DataTrigger Binding="{Binding Path=ThirdOptionCommand, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="{x:Null}">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=IsEnabled, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="false">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Image Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Width="{Binding Path=ImageWidth, ElementName=this}" Height="{Binding Path=ImageHeight, ElementName=this}">
+            <Image.Style>
+                <Style TargetType="{x:Type Image}">
+                    <Setter Property="Source" Value="{StaticResource img_NeutralSwitch}"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Path=OptionSelected, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="1">
+                            <Setter Property="Source" Value="{StaticResource img_OffSwitch}"/>                            
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=OptionSelected, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="2">
+                            <Setter Property="Source" Value="{StaticResource img_NeutralSwitch}"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Path=OptionSelected, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="3">
+                            <Setter Property="Source" Value="{StaticResource img_OnSwitch}"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Image.Style>
+        </Image>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding Path=Description, ElementName=this, UpdateSourceTrigger=PropertyChanged}" FontSize="{Binding Path=DescriptionFontSize, ElementName=this}"
+                   Padding="2,5,2,5" Foreground="WhiteSmoke" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <TextBlock.Style>
+                <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource {x:Type TextBlock}}">
+                    <Setter Property="Visibility" Value="Visible"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Path=Description, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="{x:Null}">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+    </Grid>
+</UserControl>

@@ -1,0 +1,6 @@
+2024-10-24 11:10:47.612: InitializeRegister, Message: ********** Start the application **********
+2024-10-24 11:10:47.619: InitializeRegister, Message: Information of PID=47376, Process=UIB.HMI.Safety.Operation, Arguments=
+2024-10-24 11:10:47.604: .ctor, Debug: Begin Layout
+2024-10-24 11:33:28.960: InitializeRegister, Message: ********** Start the application **********
+2024-10-24 11:33:28.970: InitializeRegister, Message: Information of PID=16732, Process=UIB.HMI.Safety.Operation, Arguments=
+2024-10-24 11:33:28.926: .ctor, Debug: Begin Layout

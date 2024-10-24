@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MSM>
+	<General>
+    <!--<ConnectionString>Data Source=10.10.10.56;Initial Catalog=MSSCSACMS;Persist Security Info=True;User ID=sa;Password=RODEO$PWD;MultipleActiveResultSets=True</ConnectionString>!-->
+		<ConnectionString>Data Source=LAPCDENACHITO\SQLEXPRESS;Initial Catalog=RodeoTest;Persist Security Info=True;User ID=rodeouser;Password=RODEO$PWD;MultipleActiveResultSets=True</ConnectionString>
+		<ReplicationQueue></ReplicationQueue>
+		<RodeoSector>MSM</RodeoSector>
+		<ClientName>SERVER</ClientName>
+		<TestMode>true</TestMode>
+		<TestUser>Administrator</TestUser>
+		<MinimizeTimeout>60000</MinimizeTimeout>
+	</General>
+	<Catalogs>
+		<AlwaysDB>true</AlwaysDB>
+		<Troubleshooting>pdf_files</Troubleshooting>
+    <PathPDFReader>C:\Program Files (x86)\Foxit Software\Foxit PDF Reader\FoxitPDFReader.exe</PathPDFReader>
+		<Folder>config_files</Folder>
+	</Catalogs>
+	<TOServer>
+		<Instances>
+			<Instance ref="all" machinegroup="*" port="5010" ipaddress="127.0.0.1" localinterface="" />
+		</Instances>
+		<TimeoutToRetriesRequestedTO>2000</TimeoutToRetriesRequestedTO>
+		<CalculateInterferenceByTime>true</CalculateInterferenceByTime>
+		<AllowRetainTO>false</AllowRetainTO>
+		<WriteTOStepCompressed>true</WriteTOStepCompressed>
+		<ReadTOStepCompressed>true</ReadTOStepCompressed>
+    <SimulateTransportOrder>true</SimulateTransportOrder>
+    <!--Solo para gruas semiautomaticas-->
+    <SHMMemory>
+      <Name>L2_RCP_DATA</Name>
+      <Timeout>2000</Timeout>
+      <TAGS max="50">
+        <TAG name="total_steps" index="0" />
+        <TAG name="current_step" index="1" />
+        <TAG name="step_action" index="2" />
+        <TAG name="target_x" index="3" />
+        <TAG name="target_y" index="4" />
+        <TAG name="tol_x" index="5" />
+        <TAG name="tol_y" index="6" />
+        <TAG name="run" index="7" />
+        <TAG name="next_step" index="10" />
+        <TAG name="x_alarm_conn" index="21" />
+        <TAG name="y_alarm_conn" index="22" />
+        <TAG name="pos_x" index="31" />
+        <TAG name="pos_y" index="32" />
+        <TAG name="rcp_error" index="33" />
+      </TAGS>
+    </SHMMemory>
+  </TOServer>
+	<TOOptimization>
+		<Path_Rules>C:\Projects\MSM\AppRelease\rules\online</Path_Rules>
+		<Path_CSV>>C:\Projects\MSM\AppRelease\Priorities</Path_CSV>
+		<Current_Rule>MSM</Current_Rule>
+	</TOOptimization>
+	<TrackingServer>
+		<Instances>
+			<Instance ref="all" yardname="*" port="5020" ipaddress="127.0.0.1" localinterface="" />
+		</Instances>
+		<RailDirection>NorthToSouth</RailDirection>
+		<RailDataIntegrityEnabled>false</RailDataIntegrityEnabled>
+		<RCPConsumer>
+			<Port>5021</Port>
+			<IPAddress>10.120.0.90</IPAddress>
+			<LocalInterface>10.120.0.90</LocalInterface>
+		</RCPConsumer>
+		<AEIReaders port="5023" ipaddress="127.0.0.1">
+			<!--<AEIReader number="1" name="North Entrance" keepalive="60000"/>-->
+		</AEIReaders>
+	</TrackingServer>
+	<SafetyServer>
+		<RequestPort>50301</RequestPort>
+		<RequestIPAddress>127.0.0.1</RequestIPAddress>
+		<RequestLocalInterface></RequestLocalInterface>
+		<ValidateSafetyBetweenYards>false</ValidateSafetyBetweenYards>
+	</SafetyServer>
+	<SystemServer>
+		<EventQueue>
+			<Host>MSM</Host>
+			<Name>system_events</Name>
+			<Username>MSMuser</Username>
+			<Password>MSMmq@pwd</Password>
+		</EventQueue>
+		<Connectivity_timeout>5000</Connectivity_timeout>
+		<Server_inactivity_timeout>5000</Server_inactivity_timeout>
+		<Always_validate_login>false</Always_validate_login>
+		<NICs>
+			<L1>L1</L1>
+			<L2>L2</L2>
+			<MGMT></MGMT>
+		</NICs>
+		<Action_confirm_user>MaintenanceUser</Action_confirm_user>
+	</SystemServer>
+	<RSServer>
+		<TimeProcess>250</TimeProcess>
+		<RequestPort>50400</RequestPort>
+		<RequestIPAddress>127.0.0.1</RequestIPAddress>
+		<RequestLocalInterface></RequestLocalInterface>
+		<EventQueueName>MSM_schedule_events</EventQueueName>
+		<DisableHouseKeeping>true</DisableHouseKeeping>
+		<AutomaticCancelJob>false</AutomaticCancelJob>
+		<SaveAutomaticJob>false</SaveAutomaticJob>
+		<MaxAutomaticJobScheduled>1</MaxAutomaticJobScheduled>
+		<freezen_values>true</freezen_values>
+	</RSServer>
+	<DVRServer>
+		<RequestPort>5050</RequestPort>
+		<Machines>
+			<Machine name="CR 005">
+				<RequestIPAddress>127.0.0.1</RequestIPAddress>
+				<RequestLocalInterface></RequestLocalInterface>
+        <DefaultOperationCamera>Bridge Camera</DefaultOperationCamera>
+        <OperationCameras>
+					<OperationCamera name="Bridge Camera" folder="axis-B8A44F55B31A" ipaddress="10.10.51.49" PTZEnabled="true" username="root" password="Janus90"/>
+					<OperationCamera name="Trolley Camera" folder="axis-B8A44F55B31A" ipaddress="10.10.51.49" PTZEnabled="false" username="root" password="Janus90"/>
+					<OperationCamera name="Mobile Camera" folder="axis-B8A44F50E2AD" ipaddress="10.10.51.27" PTZEnabled="true" username="root" password="RODEO$PWD"/>
+        </OperationCameras>
+			</Machine>
+			<Machine name="CR 006">
+				<RequestIPAddress>192.168.1.55</RequestIPAddress>
+				<RequestLocalInterface></RequestLocalInterface>
+        <DefaultOperationCamera>Trolley Camera</DefaultOperationCamera>
+        <OperationCameras>
+          <OperationCamera name="Bridge Camera" folder="axis-B8A44F55B31A" ipaddress="10.10.51.49" PTZEnabled="false" username="root" password="Janus90"/>
+          <OperationCamera name="Trolley Camera" folder="axis-B8A44F50E2AD" ipaddress="10.10.51.27" PTZEnabled="true" username="root" password="RODEO$PWD"/>
+          <OperationCamera name="Mobile Camera" folder="axis-B8A44F55B31A" ipaddress="10.10.51.49" PTZEnabled="false" username="root" password="Janus90"/>
+        </OperationCameras>
+			</Machine>
+			<Machine name="CR 007">
+				<RequestIPAddress>192.168.1.55</RequestIPAddress>
+				<RequestLocalInterface></RequestLocalInterface>
+        <DefaultOperationCamera>Mobile Camera</DefaultOperationCamera>
+        <OperationCameras>
+          <OperationCamera name="Bridge Camera" folder="axis-B8A44F50E2AD" ipaddress="10.10.51.27" PTZEnabled="true" username="root" password="RODEO$PWD"/>
+          <OperationCamera name="Trolley Camera" folder="axis-B8A44F55B31A" ipaddress="10.10.51.49" PTZEnabled="false" username="root" password="Janus90"/>
+          <OperationCamera name="Mobile Camera" folder="axis-B8A44F55B31A" ipaddress="10.10.51.49" PTZEnabled="false" username="root" password="Janus90"/>
+        </OperationCameras>
+			</Machine>
+		</Machines>
+		<CameraSettings>
+			<StorageFolder>\\\\10.10.52.150\OperationCamera</StorageFolder>
+			<SharingVideoFolder>OperationCamera</SharingVideoFolder>
+			<Username>root</Username>
+			<Password>RODEO$PWD</Password>
+			<VirtualInput>1</VirtualInput>
+		</CameraSettings>
+    <TimeVideoDays>7</TimeVideoDays>
+    <TimeVideoMs>60000</TimeVideoMs>
+	</DVRServer>
+	<L3Server>
+		<RequestPort>50000</RequestPort>
+		<RequestIPAddress>127.0.0.1</RequestIPAddress>
+		<RequestLocalInterface></RequestLocalInterface>
+		<ReadQueuePath>MSI\private$\SCALP2UIACS</ReadQueuePath>
+		<WriteQueuePath>MSI\private$\UIACS2SCALP</WriteQueuePath>
+		<UserRequestName>Administrator</UserRequestName>
+		<TimeoutToRetriesRequest>2000</TimeoutToRetriesRequest>
+		<EventQueueName>MSM_l3_events</EventQueueName>
+		<L4GhostPrefix>TMPI</L4GhostPrefix>
+		<L4_Api>
+			<PathGetPieceInformation>https://otews-qa.opentrac.com/MSSCrane.cfc?method=getMaterialInfo</PathGetPieceInformation>
+			<TimeoutWebService>5000</TimeoutWebService>
+		</L4_Api>
+		<L4_DB>
+			<ConnectionString>Data Source=LAPCDENACHITO\SQLEXPRESS;Initial Catalog=RodeoTest;Persist Security Info=True;User ID=rodeouser;Password=RODEO$PWD;MultipleActiveResultSets=True</ConnectionString>
+			<ReadCycleTime>1000</ReadCycleTime>
+			<ReadLifeTime>60000</ReadLifeTime>
+		</L4_DB>
+	</L3Server>
+	<AcqServer>
+		<CHooks>
+			<CHook name="CHA2">
+				<Bridge group="10" ipaddress="10.120.0.61" port="3046" factor="1" offset="0" timeout="2000"/>
+				<Trolley group="11" ipaddress="10.120.0.61" port="3046" factor="1" offset="0" timeout="2000"/>
+				<!--<STU ipaddress="10.120.0.61" port="3046" channel="1" factor="1" offset="0" timeout="1000"/>!-->
+			</CHook>
+			<CHook name="CHA3">
+				<Bridge group="12" ipaddress="10.120.0.65" port="3046" factor="1" offset="0" timeout="2000"/>
+				<Trolley group="13" ipaddress="10.120.0.65" port="3046" factor="1" offset="0" timeout="2000"/>
+				<!--<STU ipaddress="10.120.0.65" port="3046" channel="1" factor="1" offset="0" timeout="1000"/>!-->
+			</CHook>
+			<CHook name="CHB2">
+				<Bridge group="14" ipaddress="10.120.0.69" port="3046" factor="1" offset="15394" timeout="2000"/>
+				<Trolley group="15" ipaddress="10.120.0.69" port="3046" factor="1" offset="-1170" timeout="2000"/>
+				<STU group="15" ipaddress="10.120.0.69" port="3046" channel="1" factor="2085.116318" offset="-8292.507598" timeout="2000"/>
+			</CHook>
+			<CHook name="CHC2">
+				<Bridge group="16" ipaddress="10.120.0.73" port="3046" factor="1" offset="17551" timeout="2000"/>
+				<Trolley group="17" ipaddress="10.120.0.73" port="3046" factor="-1" offset="32839" timeout="2000"/>
+				<STU group="17" ipaddress="10.120.0.73" port="3046" channel="3" factor="2078.009329" offset="-8216.448887" timeout="2000"/>
+			</CHook>
+		</CHooks>
+	</AcqServer>
+	<WDServer>
+    <CycleTime>2000</CycleTime>
+    <RedundancyEnabled>false</RedundancyEnabled>
+    <Rodeo>
+      <MasterFile>processes.xml</MasterFile>
+    </Rodeo>
+    <Processes>
+		<!--
+      <L3Server>MSM.L3.Server.exe</L3Server>
+      <TOServer>MSM.TO.Server.exe</TOServer>
+      <TrackingServer>MSM.Tracking.Server.exe</TrackingServer>
+      <SafetyServer>MSM.Safety.Server.exe</SafetyServer>
+      <RSServer>MSM.RS.Server.exe</RSServer>
+      <SystemServer>MSM.Sys.Server.exe</SystemServer>
+      <DBToXmlServer>MSM.DBToXML.Server.exe</DBToXmlServer>
+      <DVRServer>MSM.DVR.Server.exe</DVRServer>
+	  <AcqServer>MSM.Acq.Server.exe</AcqServer>
+	  <RCPService>ServerAcquisitionData.exe</RCPService>
+	  !-->
+		<Process name="L3" hb="{0}.HB_L3_Server">MSM.L3.Server.exe</Process>
+		<Process name="TO" hb="{0}.HB_TO_Server">MSM.TO.Server.exe all</Process>
+		<Process name="Tracking" hb="{0}.HB_TRK_Server">MSM.Tracking.Server.exe all</Process>
+		<Process name="Safety" hb="{0}.HB_SAFETY_Server">MSM.Safety.Server.exe</Process>
+		<Process name="PS" hb="{0}.HB_RS_Server">MSM.RS.Server.exe</Process>
+		<Process name="System" hb="{0}.HB_SYSTEM_Server">MSM.Sys.Server.exe</Process>
+		<Process name="DBtoXML" hb="{0}.HB_DBTOXML_Server">MSM.DBToXML.Server.exe</Process>
+		<Process name="DVR Server" hb="{0}.HB_DVR_Server">MSM.DVR.Server.exe</Process>
+		<Process name="Acq Server" hb="{0}.HB_Acq_Server">MSM.Acq.Server.exe</Process>
+		<Process name="RCP Service" hb="{0}.HB_RCP_Server">ServerAcquisitionData.exe</Process>
+	</Processes>
+  </WDServer>
+  <HMIs safety_layout_inverted="false" crane_operation_inverted="false" rails_operation_inverted="false">
+    <FFmpegDirectory>C:\Program Files (x86)\Janus Automation\MSM\3rd-party\ffmpeg\bin</FFmpegDirectory>
+    <FFmpegFrameRate>5</FFmpegFrameRate>
+    <TransportOperationArrivalPermit>true</TransportOperationArrivalPermit>
+    <transport_order_layout>
+      <min_x>0</min_x>
+      <max_x>268000</max_x>
+      <min_y>0</min_y>
+      <max_y>30000</max_y>
+    </transport_order_layout>
+    <EnglishUnits>false</EnglishUnits>
+    <RCPSimulation>true</RCPSimulation>
+    <KeyboardEnabled>false</KeyboardEnabled>
+    <RCP>
+      <Command>ClientAcquisitionData.Ingot.exe</Command>
+      <args>"{0}"</args>
+    </RCP>
+    <RuleDesigner>
+      <Command>Janus.Rodeo.Windows.Process.RuleCore.exe</Command>
+      <args></args>
+    </RuleDesigner>
+    <OperationCamera>
+      <Command>MSM.HMI.Machine.Camera.exe</Command>
+      <args>-HISTORICALTYPE=1 -Y</args>
+    </OperationCamera>
+    <OperationMachine>
+      <Command>MSM.HMI.Machine.Operation.exe</Command>
+      <args></args>
+    </OperationMachine>
+    <ProcessManagement>
+      <Command>MSM.HMI.Process.Mgmt.exe</Command>
+      <args></args>
+    </ProcessManagement>
+    <Permissions>
+      <EnableDisableMachine>OperativeCommands</EnableDisableMachine>
+      <OperationModeMachine>OperativeCommands</OperationModeMachine>
+      <PauseMachine>OperativeCommands</PauseMachine>
+      <SendHousekeeping>OperativeCommands</SendHousekeeping>
+      <SendSwitchManual>OperativeCommands</SendSwitchManual>
+      <SendParkingMachine>OperativeCommands</SendParkingMachine>
+      <ViewRCPDetails>OperativeCommands</ViewRCPDetails>
+      <ViewOperationCamera>OperativeCommands</ViewOperationCamera>
+
+      <TestSiren>OperativeCommands</TestSiren>
+      <ResetPLC>OperativeCommands</ResetPLC>
+      <ResetEncoders>MaintenanceCommands</ResetEncoders>
+      <ResetVFDs>MaintenanceCommands</ResetVFDs>
+      <EnableRCPAntisway>OperativeCommands</EnableRCPAntisway>
+
+      <EnableDisableLocGroup>OperativeCommands</EnableDisableLocGroup>
+      <EnableDisableLocation>OperativeCommands</EnableDisableLocation>
+      <EnableDisableZone>OperativeCommands</EnableDisableZone>
+      <EditTemporaryZone>OperativeCommands</EditTemporaryZone>
+      <BypassDevice>OperativeCommands</BypassDevice>
+      <WriteSignalDevice>OperativeCommands</WriteSignalDevice>
+
+      <CreateJOB>OperativeCommands</CreateJOB>
+      <CancelJOB>OperativeCommands</CancelJOB>
+      <ChangePriority>OperativeCommands</ChangePriority>
+      <CreateTO>OperativeCommands</CreateTO>
+      <ContinueTO>OperativeCommands</ContinueTO>
+      <CancelTO>OperativeCommands</CancelTO>
+      <Disableingots>OperativeCommands</Disableingots>
+      <Retentioningots>OperativeCommands</Retentioningots>
+      <Scaningots>OperativeCommands</Scaningots>
+      <ModifyRails>OperativeCommands</ModifyRails>
+
+      <ViewSettings>OperativeCommands</ViewSettings>
+      <ModifyPresets>OperativeCommands</ModifyPresets>
+      <ViewUsers>OperativeCommands</ViewUsers>
+      <EditUsers>OperativeCommands</EditUsers>
+      <CreateUsers>OperativeCommands</CreateUsers>
+      <EditRules>OperativeCommands</EditRules>
+      <ViewOptimization>OperativeCommands</ViewOptimization>
+      <ForceLogin>OperativeCommands</ForceLogin>
+    </Permissions>
+    <Reports>
+		
+      <JobScheduled refreshInterval="5" />
+      <JobHistory fromDays="-1" toDays="0" refreshInterval="60" />
+      <TOHistory fromDays="-1" toDays="0" refreshInterval="60" />
+      <IngotInformation refreshInterval="600" />
+      <FutureArrival refreshInterval="600" />
+      <FutureDeparture refreshInterval="600" />
+      <RecordingHistory fromDays="-1" toDays="0" refreshInterval="60" />
+      <IngotEvents fromDays="-1" toDays="0" refreshInterval="3600" />
+      <MachineEvents fromDays="-1" toDays="0" refreshInterval="3600"  />
+      <ZoneEvents fromDays="-1" toDays="0" refreshInterval="3600"  />
+      <EventHistory fromDays="-1" toDays="0" refreshInterval="3600"  />
+      <MessageHistory fromDays="-1" toDays="0" refreshInterval="3600"  />
+      <ScanResultHistory fromDays="-1" toDays="0" refreshInterval="3600" />
+      <AEIMessageHistory fromDays="-1" toDays="0" refreshInterval="3600" />
+      <RailEvents fromDays="-1" toDays="0" refreshInterval="3600"  />
+      <TruckEvents fromDays="-1" toDays="0" refreshInterval="3600"  />
+      <AlarmHistory fromDays="-1" />
+      <CommandHistory fromDays="-1" />
+      <UserLogHistory fromDays="-1" />
+    </Reports>
+  </HMIs>
+</MSM>
+

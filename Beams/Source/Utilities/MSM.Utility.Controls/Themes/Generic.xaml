@@ -1,0 +1,683 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+    xmlns:System="clr-namespace:System;assembly=mscorlib"
+    xmlns:jctr="clr-namespace:Janus.Rodeo.Windows.Library.UI.Controls;assembly=Janus.Rodeo.Windows.Library.UI.Controls"
+    xmlns:lctr="clr-namespace:MSM.Utility.Controls"
+    xmlns:lconv="clr-namespace:MSM.Utility.Controls.Converters"
+    xmlns:lenum="clr-namespace:MSM.Utility.Common.Enumerations;assembly=MSM.Utility.Common">
+
+    <SolidColorBrush x:Key="AlternativeRowColor" Color="#FF475D49"/>
+
+    <lconv:GetIndexMultiConverter x:Key="getIndexMultiConverter" />
+    <lconv:DisabledVisibilityConverter x:Key="disabledVisibilityConverter" />
+    <lconv:StringToNullableShortConverter x:Key="nullShortConverter" />
+    <lconv:StringToNullableIntConverter x:Key="nullIntConverter" />
+    <lconv:StringToNullableLongConverter x:Key="nullLongConverter" />
+    <lconv:StringToOneLineConverter x:Key="stringToOneLineConverter" />
+    <lconv:StringToImageConverter x:Key="stringToImageConverter" />
+    <lconv:HalfSubstractionConverter x:Key="halfSubstractionConverter" />
+    <lconv:IsNullConverter x:Key="isNullConverter" />
+    <lconv:EngineeringUnitConverter x:Key="engineeringUnitConverter" />
+    <lconv:EngineeringValueByUnitConverter x:Key="engineeringValueByUnitConverter" />    
+    <lconv:EngineeringPositionConverter x:Key="engineeringPositionConverter" />
+    <lconv:PositionFormattedConverter x:Key="positionFormattedConverter" />
+    <lconv:DoubleAdditionConverter x:Key="doubleAdditionConverter" />
+    <lconv:ContentStringFormatConverter x:Key="contentStringFormatConverter" />
+    <lconv:NullToVisibilityCollapsedConverter x:Key="nullToVisibilityCollapsedConverter" />
+    <lconv:NullToVisibilityHiddenConverter x:Key="nullToVisibilityHiddenConverter" />
+    
+
+
+    <BitmapImage x:Key="img_OnSchedule" UriSource="../Themes/Resources/Jobs/Schedule_orange.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_OnFuture" UriSource="../Themes/Resources/Jobs/Future.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_OnCancel" UriSource="../Themes/Resources/Jobs/Cancel_red.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_OnFinish" UriSource="../Themes/Resources/Jobs/Finished_green.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_OnAction" UriSource="../Themes/Resources/Jobs/InAction_blue.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_OnRedirect" UriSource="../Themes/Resources/Jobs/redirect.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_OnStopped" UriSource="../Themes/Resources/Jobs/stopped.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_OnContinue" UriSource="../Themes/Resources/Jobs/continue.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_OnStop" UriSource="../Themes/Resources/Jobs/stop.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_OnPause" UriSource="../Themes/Resources/Jobs/pause.png" RenderOptions.BitmapScalingMode="HighQuality" />
+
+    <BitmapImage x:Key="img_Priority" UriSource="../Themes/Resources/Jobs/priority.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_NoPriority" UriSource="../Themes/Resources/Jobs/nopriority.png" RenderOptions.BitmapScalingMode="HighQuality" />
+
+    <BitmapImage x:Key="img_PiecePickup" UriSource="../Themes/Resources/Icons/piecePick.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_PieceStorage" UriSource="../Themes/Resources/Icons/pieceDrop.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_IconRefresh" UriSource="../Themes/Resources/Icons/Refresh.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_IconClear" UriSource="../Themes/Resources/Icons/Clear.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_IconInterlock" UriSource="../Themes/Resources/Icons/interlocks.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Send" UriSource="../Themes/Resources/Icons/send.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Parking" UriSource="../Themes/Resources/Icons/parking.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_MLPickup" UriSource="../Themes/Resources/Icons/manual_pickup.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_SwitchManualDelay" UriSource="../Themes/Resources/Icons/manual_delay.png" RenderOptions.BitmapScalingMode="HighQuality" />    
+    <BitmapImage x:Key="img_Login" UriSource="../Themes/Resources/Icons/login.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Logout" UriSource="../Themes/Resources/Icons/logout.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Hold" UriSource="../Themes/Resources/Icons/hold.png" RenderOptions.BitmapScalingMode="HighQuality" />
+
+    <BitmapImage x:Key="img_PieceNew" UriSource="../Themes/Resources/Icons/pieceNew.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_PieceInside" UriSource="../Themes/Resources/Icons/pieceStored.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_PieceOutside" UriSource="../Themes/Resources/Icons/pieceOutside.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_PieceObsolete" UriSource="../Themes/Resources/Icons/pieceObsolete.png" RenderOptions.BitmapScalingMode="HighQuality" />
+
+    <BitmapImage x:Key="img_BtnGray" UriSource="../Themes/Resources/Buttons/BotonGris_transparent.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_BtnGrayPress" UriSource="../Themes/Resources/Buttons/BotonGris_presionado_transparent.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_BtnOrange" UriSource="../Themes/Resources/Buttons/BotonAnaranjado_transparent.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_BtnOrangePress" UriSource="../Themes/Resources/Buttons/BotonAnaranjado_presionado_trans.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_BtnGreen" UriSource="../Themes/Resources/Buttons/BotonVerde_transparent.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_BtnGreenPress" UriSource="../Themes/Resources/Buttons/BotonVerde_presionado_transparent.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_BtnSliderOn" UriSource="../Themes/Resources/Buttons/onbutton.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_BtnSliderOff" UriSource="../Themes/Resources/Buttons/offbutton.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_BtnIndicatorGreen" UriSource="../Themes/Resources/Buttons/IndicatorGreen.png" RenderOptions.BitmapScalingMode="HighQuality" />
+
+    <BitmapImage x:Key="img_Crane" UriSource="../Themes/Resources/Desktop/Crane.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_CHook" UriSource="../Themes/Resources/Desktop/CHook.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Hook" UriSource="../Themes/Resources/Desktop/Hook.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Car" UriSource="../Themes/Resources/Desktop/Car.png" RenderOptions.BitmapScalingMode="HighQuality" />
+
+    <BitmapImage x:Key="img_OffIndicator" UriSource="../Themes/Resources/Images/IndicatorOff.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_OnIndicator" UriSource="../Themes/Resources/Images/IndicatorOn.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_OnGreenIndicator" UriSource="../Themes/Resources/Images/IndicatorGreen.png" RenderOptions.BitmapScalingMode="HighQuality" />
+
+    <BitmapImage x:Key="img_TO" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/TO.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Interlocks" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/interlocks.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Failure" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/Troubleshooting.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_LimitSwitches" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/LS.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Drives" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/drives.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Scanner" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/scanner.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Camera" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/camera.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Alarms" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/alarms.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Saddle" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/restrictlayout.png" RenderOptions.BitmapScalingMode="HighQuality" />
+
+    <BitmapImage x:Key="img_ParkingLocation" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/CarLocation/unknownPattern.jpg" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Saddle_No_Piece" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/CarLocation/no_piece_small.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Saddle_Piece_Present" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/CarLocation/piece_present_small.png" RenderOptions.BitmapScalingMode="HighQuality" />
+
+    <BitmapImage x:Key="img_Departure_Saddles" UriSource="../Themes/Resources/Desktop/daparture_saddles.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Arrival_Saddles" UriSource="../Themes/Resources/Desktop/arrival_saddles.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_All_Saddles" UriSource="../Themes/Resources/Desktop/all_saddles.png" RenderOptions.BitmapScalingMode="HighQuality" />
+
+
+    <BitmapImage x:Key="img_Refresh" UriSource="pack://application:,,,/Janus.Rodeo.Windows.Library.UI.Controls;component/Themes/Resources/Icons/refresh.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Search" UriSource="../Themes/Resources/Icons/search.png" RenderOptions.BitmapScalingMode="HighQuality" />
+
+    <BitmapImage
+        x:Key="imgFile"
+        RenderOptions.BitmapScalingMode="HighQuality"
+        UriSource="../Themes/Resources/Icons/imgFile.png" />
+
+    <BitmapImage
+        x:Key="imgPhoto"
+        RenderOptions.BitmapScalingMode="HighQuality"
+        UriSource="../Themes/Resources/Icons/imgPhoto.png" />
+
+    <BitmapImage
+        x:Key="img_Documents"
+        RenderOptions.BitmapScalingMode="HighQuality"
+        UriSource="../Themes/Resources/Icons/imgDocuments.png"/>
+
+    <BitmapImage
+        x:Key="img_Assistance"
+        RenderOptions.BitmapScalingMode="HighQuality"
+        UriSource="../Themes/Resources/Icons/imgAssistance.png"/>
+
+    <!--<Style TargetType="{x:Type ComboBox}">
+        <Style.Triggers>
+            <Trigger Property="Validation.HasError" Value="True">
+                <Setter Property="ToolTip" 
+                        Value="{Binding RelativeSource={x:Static RelativeSource.Self}, Path=(Validation.Errors)[0].ErrorContent}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>-->
+
+    <Style TargetType="{x:Type DataGrid}" BasedOn="{StaticResource {x:Type DataGrid}}">
+        <Setter Property="IsReadOnly" Value="True" />
+    </Style>
+
+    <!--Control colors-->
+    <Color x:Key="ControlLightColor">#FF333333</Color>
+    <Color x:Key="ControlMediumColor">#FF111111</Color>
+    <Color x:Key="ControlDarkColor">#FF111111</Color>
+
+    <!--Border colors-->
+    <Color x:Key="BorderMediumColor">#FF6E6E6E</Color>
+
+    <LinearGradientBrush x:Key="MenuPopupBrush" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="{DynamicResource ControlLightColor}" Offset="0" />
+        <GradientStop Color="{DynamicResource ControlMediumColor}" Offset="0.5" />
+        <GradientStop Color="{DynamicResource ControlLightColor}" Offset="1" />
+    </LinearGradientBrush>
+
+    <Style TargetType="ContextMenu">
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="OverridesDefaultStyle" Value="True" />
+        <Setter Property="Grid.IsSharedSizeScope" Value="true" />
+        <Setter Property="HasDropShadow" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ContextMenu}">
+                    <Border x:Name="Border" Background="{StaticResource MenuPopupBrush}" BorderThickness="1">
+                        <Border.BorderBrush>
+                            <SolidColorBrush Color="{StaticResource BorderMediumColor}" />
+                        </Border.BorderBrush>
+                        <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Cycle" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="HasDropShadow" Value="true">
+                            <Setter TargetName="Border" Property="Padding" Value="0,3,0,3" />
+                            <Setter TargetName="Border" Property="CornerRadius" Value="6" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="MenuItem">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="Padding" Value="0,10"/>
+    </Style>
+
+    <Style x:Key="btnLink" TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Foreground" Value="Black" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Label Style="{StaticResource TransOptionLabel}" Content="{TemplateBinding Content}" Height="{TemplateBinding Height}" Width="{TemplateBinding Width}" FontSize="{TemplateBinding FontSize}" 
+                           Foreground="{TemplateBinding Foreground}" Margin="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                        <Label.Template>
+                            <ControlTemplate TargetType="Label">
+                                <TextBlock Margin="{TemplateBinding Padding}" Padding="0,2,0,0" 
+                                           TextDecorations="Underline"
+                                           Text="{Binding Path=Content, RelativeSource={RelativeSource AncestorType=Label}}" />
+                            </ControlTemplate>
+                        </Label.Template>
+                    </Label>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="IndustrialGridButton" TargetType="{x:Type jctr:GridButton}">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type jctr:GridButton}">
+                    <Grid x:Name="grdImage" HorizontalAlignment="Center" VerticalAlignment="Center" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
+                        <Image x:Name="ControlImage" Source= "{Binding Path=ImageSource, RelativeSource={RelativeSource TemplatedParent}}" Stretch="Uniform" />
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="True">
+                            <Setter Property="Opacity" TargetName="ControlImage" Value="1"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Opacity" TargetName="ControlImage" Value="0.7"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="defaultDetailRowStyle" TargetType="DataGridRow" BasedOn="{StaticResource defaultRowStyle}">
+        <Style.Triggers>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="BorderBrush" Value="Transparent"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="FontWeight" Value="SemiBold"/>
+                <Setter Property="Padding" Value="1"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    <Style x:Key="NewResizeMainButton" TargetType="{x:Type jctr:MainButton}">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type jctr:MainButton}">
+                    <ControlTemplate.Resources>
+                        <Storyboard x:Key="ShowShine">
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ControlImage" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:0.300" Value="1"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ImageScale" Storyboard.TargetProperty="(ScaleTransform.ScaleX)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:0.300" Value="1"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ImageScale" Storyboard.TargetProperty="(ScaleTransform.ScaleY)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:0.300" Value="1"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                        <Storyboard x:Key="HideShine">
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ControlImage" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:0.300" Value="0.8"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ImageScale" Storyboard.TargetProperty="(ScaleTransform.ScaleX)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:0.300" Value="0.8"/>
+                            </DoubleAnimationUsingKeyFrames>
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ImageScale" Storyboard.TargetProperty="(ScaleTransform.ScaleY)">
+                                <SplineDoubleKeyFrame KeyTime="00:00:0.300" Value="0.8"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </ControlTemplate.Resources>
+
+                    <Grid x:Name="grdImage" HorizontalAlignment="Center" VerticalAlignment="Center" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">                        
+                        <Image x:Name="ControlImage" Source="{Binding Path=Image, RelativeSource={RelativeSource TemplatedParent}}" Stretch="Fill" Margin="{TemplateBinding Padding}">
+                            <Image.RenderTransform>
+                                <ScaleTransform x:Name="ImageScale" ScaleX="0.8" ScaleY="0.8"
+                                                CenterX="{Binding Path=Width, ElementName=grdImage, Converter={StaticResource halfSubstractionConverter}}" 
+                                                CenterY="{Binding Path=Height, ElementName=grdImage, Converter={StaticResource halfSubstractionConverter}}" />
+                            </Image.RenderTransform>
+                        </Image>
+
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                Background="{TemplateBinding Background}"
+                                Opacity="0.5"
+                                CornerRadius="10" 
+                                Padding="0"
+                                Margin="{TemplateBinding Padding}">
+                            <Border.RenderTransform>
+                                <ScaleTransform ScaleX="{Binding Path=ScaleX, ElementName=ImageScale}" 
+                                                ScaleY="{Binding Path=ScaleY, ElementName=ImageScale}"
+                                                CenterX="{Binding Path=Width, ElementName=grdImage, Converter={StaticResource halfSubstractionConverter}}" 
+                                                CenterY="{Binding Path=Height, ElementName=grdImage, Converter={StaticResource halfSubstractionConverter}}" />
+                            </Border.RenderTransform>
+                        </Border>
+
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled"  Value="True">
+                            <Setter Property="Opacity" TargetName="ControlImage" Value="0.8"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled"  Value="False">
+                            <Setter Property="Opacity" TargetName="ControlImage" Value="0.5"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderTransform" TargetName="ControlImage">
+                                <Setter.Value>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
+                                        <SkewTransform AngleX="0" AngleY="0"/>
+                                        <RotateTransform Angle="0"/>
+                                        <TranslateTransform X="0" Y="0"/>
+                                    </TransformGroup>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Trigger.ExitActions>
+                                <BeginStoryboard Storyboard="{StaticResource HideShine}" x:Name="HideShine_BeginStoryboard"/>
+                            </Trigger.ExitActions>
+                            <Trigger.EnterActions>
+                                <BeginStoryboard Storyboard="{StaticResource ShowShine}" x:Name="ShowShine_BeginStoryboard"/>
+                            </Trigger.EnterActions>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="BtnTabItemStyle" TargetType="{x:Type TabItem}">
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontFamily" Value="Metro UI" />
+        <Setter Property="Foreground" Value="WhiteSmoke"/>
+        <Setter Property="FocusVisualStyle" Value="{StaticResource MyFocusVisualStyte}" />
+        <Setter Property="Background" Value="Black" />
+        <Setter Property="BorderBrush" Value="WhiteSmoke"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TabItem}">
+                    <ControlTemplate.Resources>
+                        <Storyboard x:Key="StartAction">
+                            <DoubleAnimation Storyboard.TargetName="Border1Highlited" Storyboard.TargetProperty="(UIElement.Opacity)" From="0" To="1" Duration="0:0:0.5" />
+                            <DoubleAnimation Storyboard.TargetName="Border2Highlited" Storyboard.TargetProperty="(UIElement.Opacity)" From="0" To="1" Duration="0:0:0.5" />
+                        </Storyboard>
+
+                        <Storyboard x:Key="ExitAction">
+                            <DoubleAnimation Storyboard.TargetName="Border1Highlited" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.3" />
+                            <DoubleAnimation Storyboard.TargetName="Border2Highlited" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.3" />
+                        </Storyboard>
+
+                        <Storyboard x:Key="ShowBorder">
+                            <ColorAnimation Storyboard.TargetName="ButtonBorder" Storyboard.TargetProperty="Background.Color" From="Transparent" To="#0a67a3" Duration="0:0:0.1"  />
+                            <DoubleAnimation Storyboard.TargetName="ButtonBorder" Storyboard.TargetProperty="Opacity" From="0.2" To="1" Duration="0:0:0.5" />
+                        </Storyboard>
+
+                        <Storyboard x:Key="HideBorder">
+                            <DoubleAnimation Storyboard.TargetName="ButtonBorder" Storyboard.TargetProperty="Opacity" From="1" To="0.2" Duration="0:0:0.3" />
+                            <ColorAnimation Storyboard.TargetName="ButtonBorder" Storyboard.TargetProperty="Background.Color" From="#0a67a3" To="Transparent" Duration="0:0:0.1"  />
+                        </Storyboard>
+                    </ControlTemplate.Resources>
+
+                    <Grid x:Name="Root">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="1" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="6" />
+                            <RowDefinition Height="2" />
+                        </Grid.RowDefinitions>
+
+                        <Border Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Opacity="0.2" Margin="1,0,-1,0" CornerRadius="1" Background="{TemplateBinding Background}" />
+
+                        <Border Grid.Column="0" Grid.Row="0" Grid.RowSpan="3"
+                                Name="ButtonBorder" Opacity="0.2" Margin="1,0,-1,0" CornerRadius="1" BorderThickness="1" BorderBrush="WhiteSmoke" Background="Transparent" />
+
+                        <ContentPresenter Name="ContentSite"
+                                          VerticalAlignment="Center"
+                                          HorizontalAlignment="Center"
+                                          ContentSource="Header"
+                                          Margin="30,10,30,4"
+                                          RecognizesAccessKey="True" />
+                        
+                        <Border Grid.Row="1" Grid.ColumnSpan="2" Name="Border1Highlited" Background="Transparent"/>
+                        <Border Grid.Row="2" Grid.ColumnSpan="2" Name="Border2Highlited" Background="Transparent"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Panel.ZIndex" Value="100" />
+                            <Setter TargetName="Border1Highlited" Property="Background" Value="#33b4ed" />
+                            <Setter TargetName="Border2Highlited" Property="Background" Value="#009de2" />
+                            <Setter TargetName="ButtonBorder" Property="BorderThickness" Value="0" />
+                            <Trigger.EnterActions>
+                                <BeginStoryboard Storyboard="{StaticResource StartAction}"/>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard Storyboard="{StaticResource ExitAction}"/>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Foreground" Value="#cccccc" />
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="False" />
+                                <Condition Property="IsMouseOver" Value="True" />
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Cursor" Value="Hand"/>
+                            <MultiTrigger.EnterActions>
+                                <BeginStoryboard Storyboard="{StaticResource ShowBorder}"/>
+                            </MultiTrigger.EnterActions>
+                            <MultiTrigger.ExitActions>
+                                <BeginStoryboard Storyboard="{StaticResource HideBorder}"/>
+                            </MultiTrigger.ExitActions>
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <ControlTemplate x:Key="jStretchyExpanderBorderColor" TargetType="{x:Type lctr:jExpander}">
+        <Border x:Name="ExpanderBorder" 
+                    Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    Padding="0">
+            <DockPanel>
+                <Grid DockPanel.Dock="Top">
+                    <ToggleButton x:Name="ExpanderButton"
+                                  BorderBrush="{TemplateBinding BorderBrush}"
+                                  Template="{StaticResource AnimatedExpanderButtonBorderColor}"
+                                  Content="{TemplateBinding Header}"
+                                  IsChecked="{Binding Path=IsExpanded, RelativeSource={RelativeSource TemplatedParent}}"
+                                  OverridesDefaultStyle="True">
+                    </ToggleButton>
+
+                    <Button x:Name="FilterButton" Width="100" Height="30" Margin="0,0,5,0" Background="Transparent" Style="{StaticResource btnTransparent}" VerticalContentAlignment="Center"  HorizontalAlignment="Right"
+                            Command="{TemplateBinding CommandFilter}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{StaticResource img_IconRefresh}" Height="20"/>
+                            <Label Content="Refresh" Style="{StaticResource TransOptionLabel}" FontSize="15" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="10,0,0,0" Padding="0"/>
+                        </StackPanel>
+                    </Button>
+                </Grid>
+                <ContentPresenter x:Name="ExpanderContent"
+                                      ContentSource="Content"
+                                      DockPanel.Dock="Bottom" 
+                                      HorizontalAlignment="{TemplateBinding HorizontalAlignment}">
+                    <ContentPresenter.LayoutTransform>
+                        <ScaleTransform ScaleY="0"/>
+                    </ContentPresenter.LayoutTransform>
+                </ContentPresenter>
+            </DockPanel>
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsExpanded" Value="True">
+                <Trigger.EnterActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="ExpanderContent"
+                                                 Storyboard.TargetProperty="(ContentPresenter.LayoutTransform).(ScaleTransform.ScaleY)"                                                 
+                                                 To="1"
+                                                 Duration="0:0:0.4"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </Trigger.EnterActions>
+                <Trigger.ExitActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="ExpanderContent"
+                                                 Storyboard.TargetProperty="(ContentPresenter.LayoutTransform).(ScaleTransform.ScaleY)"
+                                                 To="0"
+                                                 Duration="0:0:0.4"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </Trigger.ExitActions>
+                <Setter TargetName="FilterButton" Property="Visibility" Value="Collapsed"/>
+            </Trigger>
+            <Trigger Property="IsExpanded" Value="False">
+                <Setter TargetName="FilterButton" Property="Visibility" Value="Visible"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <Style x:Key="btnTransparentTouch" TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="FontFamily" Value="Metro UI" />
+        <Setter Property="Foreground" Value="WhiteSmoke" />
+        <Setter Property="FontStyle" Value="Normal" />
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="BorderBrush" Value="WhiteSmoke"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid x:Name="grdContent">
+                        <Grid.Background>
+                            <SolidColorBrush x:Name="backGridColor" Color="#0a67a3" Opacity="0" />
+                        </Grid.Background>
+                        <Border Opacity="1" x:Name="Border" Width="Auto" Height="Auto" Margin="1,0,-1,0" CornerRadius="1" BorderThickness="1" BorderBrush="WhiteSmoke" Background="{TemplateBinding Background}"/>
+                        <ContentPresenter VerticalAlignment="Center" TextBlock.Foreground="WhiteSmoke" TextBlock.FontWeight="SemiBold" HorizontalAlignment="Center" x:Name="contentPresenter">
+                        </ContentPresenter>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderTransform" TargetName="grdContent">
+                                <Setter.Value>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
+                                        <SkewTransform AngleX="0" AngleY="0"/>
+                                        <RotateTransform Angle="0"/>
+                                        <TranslateTransform X="7" Y="5"/>
+                                    </TransformGroup>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ShadowButton" TargetType="{x:Type Button}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="maingrid" BorderThickness="0,0,5,5" BorderBrush="Black" Background="{TemplateBinding Background}">
+                        <Border BorderThickness="0.5" BorderBrush="White">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderTransform" TargetName="maingrid">
+                                <Setter.Value>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
+                                        <SkewTransform AngleX="0" AngleY="0"/>
+                                        <RotateTransform Angle="0"/>
+                                        <TranslateTransform X="7" Y="5"/>
+                                    </TransformGroup>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ShadowOptionButton" TargetType="{x:Type Button}">
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="FontSize" Value="25" />
+        <Setter Property="Margin" Value="15" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="maingrid" BorderThickness="0,0,5,5" BorderBrush="Black" Background="Transparent">
+                        <Border BorderThickness="0.5" BorderBrush="White">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="RenderTransform" TargetName="maingrid">
+                                <Setter.Value>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
+                                        <SkewTransform AngleX="0" AngleY="0"/>
+                                        <RotateTransform Angle="0"/>
+                                        <TranslateTransform X="7" Y="5"/>
+                                    </TransformGroup>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>                
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="dgEngineeringUnit" TargetType="{x:Type DataGridColumnHeader}">
+        <Setter Property="BorderBrush" Value="WhiteSmoke" />
+        <Setter Property="BorderThickness" Value="0.8" />
+        <Setter Property="Foreground" Value="WhiteSmoke" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="FontFamily" Value="Metro UI" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <SolidColorBrush Color="Black" Opacity="0.2" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="txtWhiteText" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="FontSize" Value="25" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+    </Style>    
+
+    <Style x:Key="txtWhiteText_Center" BasedOn="{StaticResource ResourceKey=txtWhiteText}" TargetType="TextBlock">
+        <Setter Property="TextAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="brdStatus" TargetType="Border">
+        <Setter Property="Background" Value="#99009900"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Path=MachineState, UpdateSourceTrigger=PropertyChanged}" Value="0">
+                <Setter Property="Background" Value="DarkBlue"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=MachineState, UpdateSourceTrigger=PropertyChanged}" Value="1">
+                <Setter Property="Background" Value="Transparent"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=MachineState, UpdateSourceTrigger=PropertyChanged}" Value="2">
+                <Setter Property="Background" Value="DarkGoldenrod"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=MachineState, UpdateSourceTrigger=PropertyChanged}" Value="3">
+                <Setter Property="Background" Value="DarkMagenta"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=MachineState, UpdateSourceTrigger=PropertyChanged}" Value="4">
+                <Setter Property="Background" Value="DarkRed"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=MachineState, UpdateSourceTrigger=PropertyChanged}" Value="98">
+                <Setter Property="Background" Value="#FF00074F"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=MachineState, UpdateSourceTrigger=PropertyChanged}" Value="99">
+                <Setter Property="Background" Value="#FF00074F"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+    
+
+    <!--Car COLORS-->
+    <Style x:Key="AutoColor" TargetType="Border">
+        <Setter Property="Background" >
+            <Setter.Value>
+                <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5" Opacity="0.7">
+                    <GradientStop Color="#8b8b8e" Offset="0.0" />
+                    <GradientStop Color="#115c00" Offset="0.20" />
+                    <GradientStop Color="#115c00" Offset="0.50" />
+                    <GradientStop Color="#115c00" Offset="1.0" />
+                    <!--<GradientStop Color="Orange" Offset="0.0" />
+                    <GradientStop Color="Orange" Offset="0.20" />
+                    <GradientStop Color="#FFFFDC00" Offset="0.50" />
+                    <GradientStop Color="#FFFFDC00" Offset="1.0" />-->
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>        
+    </Style>
+
+
+
+    <Style x:Key="CarTrafficColor" TargetType="Border">
+        <Setter Property="Background" Value="White" />
+        <Setter Property="Opacity" Value="0.7" />        
+    </Style>
+
+    <Style x:Key="CarTrafficColorPanel" TargetType="Border">
+        <Setter Property="Background" Value="White" />
+        <Setter Property="Opacity" Value="0.9" />        
+    </Style>
+
+    <Style x:Key="txtTransOptionLabel" TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="FontFamily" Value="Metro UI" />
+        <Setter Property="FontStyle" Value="Normal" />
+        <Setter Property="FontWeight" Value="Normal"/>
+    </Style>
+
+
+
+</ResourceDictionary>

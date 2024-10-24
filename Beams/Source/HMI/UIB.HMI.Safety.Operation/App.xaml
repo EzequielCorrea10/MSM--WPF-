@@ -1,0 +1,17 @@
+﻿<Application
+    x:Class="MSM.HMI.Safety.Operation.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    DispatcherUnhandledException="Application_DispatcherUnhandledException"
+    Exit="Application_Exit"
+    Startup="Application_Startup">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Janus.Rodeo.Windows.Library.UI.Controls;component/Themes/Generic.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Janus.Rodeo.Windows.Library.UI.Controls;component/Themes/Themes.Default.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MSM.Utility.Controls;component/Themes/Generic.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

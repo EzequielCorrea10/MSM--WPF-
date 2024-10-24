@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="MSM.Utility.Blend.Controls.usrIngotCraneGrabberControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MSM.Utility.Blend.Controls"
+             xmlns:converter="clr-namespace:MSM.Utility.Blend.Controls.Converters"
+             xmlns:helix="http://helix-toolkit.org/wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             Name="this">
+    <UserControl.Resources>
+        <converter:OffsetRotationConverter x:Key="OffsetRotationConverter"/>
+    </UserControl.Resources>
+    <Grid>
+        <Viewport3D ClipToBounds="True" Margin="15,5">
+            <Viewport3D.Camera>
+                <PerspectiveCamera FieldOfView="95" FarPlaneDistance="100" LookDirection="0,-7,-13.1" NearPlaneDistance="0.1" Position="0,3.1,3.4" UpDirection="0,1,0"/>
+            </Viewport3D.Camera>
+            <ModelVisual3D x:Name="World">
+                <ModelVisual3D x:Name="AmbientLightContainer">
+                    <ModelVisual3D.Content>
+                        <AmbientLight x:Name="AmbientLight" Color="#FF7F7F7F"/>
+                    </ModelVisual3D.Content>
+                </ModelVisual3D>
+                <ModelVisual3D x:Name="DirectionalLightContainer">
+                    <ModelVisual3D.Content>
+                        <DirectionalLight x:Name="DirectionalLight" Color="#FF7F7F7F" Direction="0,0,-1">
+                            <DirectionalLight.Transform>
+                                <TranslateTransform3D OffsetZ="3" OffsetX="0" OffsetY="0"/>
+                            </DirectionalLight.Transform>
+                        </DirectionalLight>
+                    </ModelVisual3D.Content>
+                </ModelVisual3D>
+                <ModelVisual3D x:Name="DefaultGroup">
+                    <ModelVisual3D.Transform>
+                        <Transform3DGroup>
+                            <ScaleTransform3D ScaleZ="1" ScaleY="1" ScaleX="1"/>
+                            <RotateTransform3D>
+                                <RotateTransform3D.Rotation>
+                                    <AxisAngleRotation3D Axis="0,1,0" Angle="{Binding Path=Rotation, Converter={StaticResource OffsetRotationConverter}, ElementName=this, UpdateSourceTrigger=PropertyChanged}"/>
+                                </RotateTransform3D.Rotation>
+                            </RotateTransform3D>
+                            <TranslateTransform3D OffsetZ="0" OffsetX="0" OffsetY="2"/>
+                        </Transform3DGroup>
+                    </ModelVisual3D.Transform>
+                    <!--<helix:FileModelVisual3D Source="C:\Proyectos\Novelis.USA\MSM\Source\Utilities\MSM.Utility.Blend.Controls\Model\IngotGrab\IngotGrab.obj" />-->
+                </ModelVisual3D>
+            </ModelVisual3D>
+        </Viewport3D>
+    </Grid>
+</UserControl>

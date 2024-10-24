@@ -1,0 +1,35 @@
+﻿<Window x:Class="MSM.Utility.Blend.Controls.Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MSM.Utility.Blend.Controls.Test"
+        xmlns:blendcontrol="clr-namespace:MSM.Utility.Blend.Controls;assembly=MSM.Utility.Blend.Controls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="Auto" Width="Auto">
+    <Grid Style="{StaticResource grdBackgroundTransparent}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="10" Grid.ColumnSpan="2">
+            <CheckBox Content="HasPiece" IsChecked="{Binding HasPiece, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" VerticalAlignment="Center"/>
+            <Label Width="15"/>
+            <CheckBox Content="Wrapped" IsChecked="{Binding Wrapped, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" VerticalAlignment="Center"/>
+            <Label Width="15"/>
+            <TextBlock Text="Rotation:" VerticalAlignment="Center"/>
+            <Slider Minimum="0" Maximum="360" Value="{Binding Rotation, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="165"/>
+            <!--<TextBox Text="{Binding Rotation, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Width="30"/>-->
+        </StackPanel>
+        <!--<blendcontrol:usrCHookControl Margin="10,0" Grid.Row="1" Grid.Column="0" Height="500" Rotation="{Binding Rotation, UpdateSourceTrigger=PropertyChanged}"
+                                      PieceCaught="{Binding HasPiece, UpdateSourceTrigger=PropertyChanged}" PieceWrapped="{Binding Wrapped, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <blendcontrol:usrCGrabbControl Margin="10,0" Grid.Row="1" Grid.Column="1" Height="500" Rotation="{Binding Rotation, UpdateSourceTrigger=PropertyChanged}"
+                                      PieceCaught="{Binding HasPiece, UpdateSourceTrigger=PropertyChanged}" PieceWrapped="{Binding Wrapped, UpdateSourceTrigger=PropertyChanged}"/>-->
+
+    </Grid>
+</Window>

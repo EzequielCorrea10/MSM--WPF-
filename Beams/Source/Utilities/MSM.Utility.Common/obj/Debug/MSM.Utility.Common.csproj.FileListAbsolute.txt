@@ -1,0 +1,14 @@
+D:\Projects\Beams\Source\Utilities\UIB.Utility.Common\obj\Debug\MSM.Utility.Common.csproj.AssemblyReference.cache
+D:\Projects\Beams\Source\Utilities\UIB.Utility.Common\obj\Debug\MSM.Utility.Common.csproj.CoreCompileInputs.cache
+D:\Projects\Beams\Source\Utilities\UIB.Utility.Common\obj\Debug\UIB.Utility.Common.dll
+D:\Projects\Beams\Source\Utilities\UIB.Utility.Common\obj\Debug\UIB.Utility.Common.pdb
+D:\Projects\Beams\AppRelease\debug\UIB.Utility.Common.dll
+D:\Projects\Beams\AppRelease\debug\UIB.Utility.Common.pdb
+D:\Projects\Beams\Source\Utilities\UIB.Utility.Common\obj\Debug\MSM.Util.A6A24A3C.Up2Date
+D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\MSM.Utility.Common.csproj.AssemblyReference.cache
+D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\MSM.Utility.Common.csproj.CoreCompileInputs.cache
+D:\Projects\MSM\MSM\Beams\AppRelease\debug\MSM.Utility.Common.dll
+D:\Projects\MSM\MSM\Beams\AppRelease\debug\MSM.Utility.Common.pdb
+D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\MSM.Util.A6A24A3C.Up2Date
+D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\MSM.Utility.Common.dll
+D:\Projects\MSM\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\MSM.Utility.Common.pdb

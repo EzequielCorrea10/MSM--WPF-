@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CDE2AE60-7567-4762-881E-3E4FA8A48698}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UIB.DBToXML.Server.Model</RootNamespace>
+    <AssemblyName>UIB.DBToXML.Server.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\AppRelease\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_Common, Version=1.0.6849.22366, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Rodeo\executables\dlls\Janus.Rodeo.Windows.Library.Rd_Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.Rd_Log">
+      <HintPath>..\..\..\Rodeo\executables\dlls\Janus.Rodeo.Windows.Library.Rd_Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Rodeo.Windows.Library.UI.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Rodeo\apps\uis\Janus.Rodeo.Windows.Library.UI.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Main.cs" />
+    <Compile Include="Handlers\DBAccess.cs" />
+    <Compile Include="Model\Controllers\NetworkControl.cs" />
+    <Compile Include="Model\Enumeration\ControlErrors.cs" />
+    <Compile Include="Model\EventArgs\OnCycleExecutedEventArgs.cs" />
+    <Compile Include="Model\Structures\Catalogs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DB\UIB.Database\UIB.Database.csproj">
+      <Project>{052ce148-26a8-44f6-b3b7-e7cc7184c400}</Project>
+      <Name>UIB.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\System\UIB.Sys.Server.Common\UIB.Sys.Server.Common.csproj">
+      <Project>{e2c1db1a-3ac9-40db-a094-cb754cd290dd}</Project>
+      <Name>UIB.Sys.Server.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>SET AppDir=$(SolutionDir)..\
+COPY /y "$(TargetDir)$(TargetFileName)" "%25AppDir%25AppRelease\executables\uib_dlls\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

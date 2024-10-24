@@ -1,0 +1,689 @@
+﻿<UserControl x:Class="MSM.HMI.Safety.Operation.Views.usrLayout"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:jctr="clr-namespace:Janus.Rodeo.Windows.Library.UI.Controls;assembly=Janus.Rodeo.Windows.Library.UI.Controls"
+             xmlns:jwidgets="clr-namespace:Janus.Rodeo.Windows.Library.UI.Controls.Widgets;assembly=Janus.Rodeo.Windows.Library.UI.Controls"
+             xmlns:lctr="clr-namespace:MSM.Utility.Controls;assembly=MSM.Utility.Controls"
+             xmlns:lenum="clr-namespace:MSM.Utility.Common.Enumerations;assembly=MSM.Utility.Common"
+             xmlns:venum="clr-namespace:MSM.HMI.Safety.Operation.Enumerations"
+             xmlns:converter="clr-namespace:MSM.HMI.Safety.Operation.Converters"
+             xmlns:selector="clr-namespace:MSM.HMI.Safety.Operation.Selectors"
+             xmlns:behaviour="clr-namespace:MSM.HMI.Safety.Operation.Behaviours"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:view="clr-namespace:MSM.HMI.Safety.Operation.Views"              
+             BorderThickness="0">
+    <UserControl.Resources>
+        <converter:LayoutLeftMarginConverter x:Key="layoutLeftMarginConverter" />
+        <converter:LayoutTopMarginConverter x:Key="layoutTopMarginConverter" />
+        <converter:LayoutWidthConverter x:Key="layoutWidthConverter" />
+        <converter:LayoutHeightConverter x:Key="layoutHeightConverter" />
+        <converter:LayoutTopConverter x:Key="layoutTopConverter" />
+        <converter:LayoutLeftConverter x:Key="layoutLeftConverter" />
+        <selector:LayoutElementSelector x:Key="layoutElementSelector" />
+        <converter:LayoutMachineYardConverter x:Key="layoutMachineYardConverter"/>
+        <BitmapImage x:Key="img_GridLEFT" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Images/LeftArrowGrid.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="img_GridRIGHT" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Images/RightArrowGrid.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="img_Binocular" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Icons/binocular.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="img_ZoomOut" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Icons/ZoomOut.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="img_ZoomIn" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Icons/ZoomIn.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="img_Show" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Icons/Show.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="Img_Cardinals_1" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Images/cardinals_1.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="Img_Cardinals_2" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Images/cardinals_2.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="RightArrow" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Icons/rightArrow.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="DownArrow" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Icons/coilDrop.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <!-- Pixel  -->
+        <sys:Double x:Key="LWidth">1500</sys:Double>
+        <sys:Double x:Key="LHeight">665</sys:Double>
+
+        <!-- Millimeters  -->
+        <sys:Int32 x:Key="BridgeWidth">6500</sys:Int32>
+        <!-- Pixel  -->
+        <sys:Double x:Key="BridgeHeightYard">664</sys:Double>
+        <sys:Double x:Key="BridgeHeightGeneral">221</sys:Double>
+        <!-- Millimeters  -->
+        <sys:Int32 x:Key="TrolleyHeight">2500</sys:Int32>
+        <sys:Int32 x:Key="TrolleyWidth">4500</sys:Int32>
+        <!-- Pixel  -->
+        <sys:Int32 x:Key="TrolleyGeneralHeight">2000</sys:Int32>
+        <sys:Int32 x:Key="TrolleyGeneralWidth">1800</sys:Int32>
+
+
+
+        <sys:Int32 x:Key="ZeroValue">0</sys:Int32>
+        <sys:Boolean x:Key="boolTrue">True</sys:Boolean>
+        <sys:Boolean x:Key="boolFalse">False</sys:Boolean>
+
+
+        <Style x:Key="Lststyle" TargetType="ListBoxItem">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListBoxItem">
+                        <Border Name="Border" Background="Transparent" Padding="7" SnapsToDevicePixels="True">
+                            <ContentPresenter />
+                        </Border>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <ControlTemplate x:Key="btnArrow" TargetType="{x:Type ToggleButton}">
+            <Border x:Name="btnArrow" Width="50" Height="30" BorderThickness="1,1,0.3,1" BorderBrush="Gray" Cursor="Hand">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                        <GradientStop Offset="0" Color="#FF252525" />
+                        <GradientStop Offset="0.5" Color="#FF686868" />
+                        <GradientStop Offset="0.5" Color="#FF686868" />
+                        <GradientStop Offset="1" Color="#FF252525" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Polygon Fill="White" Height="20" Points="10 10, 10 27, 13 22.3, 17 32, 19 32, 20 31, 16 21, 22 22" HorizontalAlignment="Center" Stretch="Uniform" Stroke="Black" StrokeThickness="0.5">
+                    <Polygon.Effect>
+                        <DropShadowEffect ShadowDepth = "3" Direction = "320" Color = "#BF373737" Opacity = "0.7" BlurRadius = "2" />
+                    </Polygon.Effect>
+                </Polygon>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Background" TargetName="btnArrow">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                                <GradientStop Offset="0" Color="#FF686868" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="1" Color="#FF686868" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsChecked" Value="true">
+                    <Setter Property="Background" TargetName="btnArrow">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                                <GradientStop Offset="0" Color="#FF686868" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="1" Color="#FF686868" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Cursor" TargetName="btnArrow" Value="Arrow"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="btnHand" TargetType="{x:Type ToggleButton}">
+            <Border x:Name="brdHand" Width="50" Height="30" BorderThickness="1,1,1,1" BorderBrush="Gray" Cursor="Hand">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                        <GradientStop Offset="0" Color="#FF252525" />
+                        <GradientStop Offset="0.5" Color="#FF686868" />
+                        <GradientStop Offset="0.5" Color="#FF686868" />
+                        <GradientStop Offset="1" Color="#FF252525" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Label Foreground="White" FontSize="19" HorizontalAlignment="Center" Content="&#9995;">
+                    <Label.Effect>
+                        <DropShadowEffect ShadowDepth = "3" Direction = "320" Color = "#BF373737" Opacity = "0.7" BlurRadius = "2" />
+                    </Label.Effect>
+                </Label>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Background" TargetName="brdHand">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                                <GradientStop Offset="0" Color="#FF686868" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="1" Color="#FF686868" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsChecked" Value="true">
+                    <Setter Property="Background" TargetName="brdHand">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                                <GradientStop Offset="0" Color="#FF686868" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="1" Color="#FF686868" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Cursor" TargetName="brdHand" Value="Arrow"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="btnBinocular" TargetType="{x:Type ToggleButton}">
+            <Border Name="brdBinocular" Width="50" Height="30" BorderThickness="0.3,1,1,1" BorderBrush="Gray" Cursor="Hand">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                        <GradientStop Offset="0" Color="#FF252525" />
+                        <GradientStop Offset="0.5" Color="#FF686868" />
+                        <GradientStop Offset="0.5" Color="#FF686868" />
+                        <GradientStop Offset="1" Color="#FF252525" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Image Source="{StaticResource img_Binocular}" Width="40" Height="30" RenderOptions.BitmapScalingMode="Fant">
+                    <Image.Effect>
+                        <DropShadowEffect ShadowDepth = "3" Direction = "320" Color = "#BF373737" Opacity = "0.7" BlurRadius = "2" />
+                    </Image.Effect>
+                </Image>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Background" TargetName="brdBinocular">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                                <GradientStop Offset="0" Color="#FF686868" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="1" Color="#FF686868" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsChecked" Value="true">
+                    <Setter Property="Background" TargetName="brdBinocular">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                                <GradientStop Offset="0" Color="#FF686868" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="1" Color="#FF686868" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Cursor" TargetName="brdBinocular" Value="Arrow"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="btnZoomOut" TargetType="{x:Type ToggleButton}">
+            <Border Name="brdBinocular" Width="50" Height="30" BorderThickness="0.3,1,1,1" BorderBrush="Gray" Cursor="Hand">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                        <GradientStop Offset="0" Color="#FF252525" />
+                        <GradientStop Offset="0.5" Color="#FF686868" />
+                        <GradientStop Offset="0.5" Color="#FF686868" />
+                        <GradientStop Offset="1" Color="#FF252525" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Image Source="{StaticResource img_ZoomOut}" Width="40" Height="30" RenderOptions.BitmapScalingMode="Fant">
+                    <Image.Effect>
+                        <DropShadowEffect ShadowDepth = "3" Direction = "320" Color = "#BF373737" Opacity = "0.7" BlurRadius = "2" />
+                    </Image.Effect>
+                </Image>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Background" TargetName="brdBinocular">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                                <GradientStop Offset="0" Color="#FF686868" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="1" Color="#FF686868" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <!--<Trigger Property="IsChecked" Value="true">
+                    <Setter Property="Background" TargetName="brdBinocular">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                                <GradientStop Offset="0" Color="#FF686868" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="1" Color="#FF686868" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Cursor" TargetName="brdBinocular" Value="Arrow"/>
+                </Trigger>-->
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="btnZoomIn" TargetType="{x:Type ToggleButton}">
+            <Border Name="brdBinocular" Width="50" Height="30" BorderThickness="0.3,1,1,1" BorderBrush="Gray" Cursor="Hand">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                        <GradientStop Offset="0" Color="#FF252525" />
+                        <GradientStop Offset="0.5" Color="#FF686868" />
+                        <GradientStop Offset="0.5" Color="#FF686868" />
+                        <GradientStop Offset="1" Color="#FF252525" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Image Source="{StaticResource img_ZoomIn}" Width="40" Height="30" RenderOptions.BitmapScalingMode="Fant">
+                    <Image.Effect>
+                        <DropShadowEffect ShadowDepth = "3" Direction = "320" Color = "#BF373737" Opacity = "0.7" BlurRadius = "2" />
+                    </Image.Effect>
+                </Image>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Background" TargetName="brdBinocular">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                                <GradientStop Offset="0" Color="#FF686868" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="1" Color="#FF686868" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <!--<Trigger Property="IsChecked" Value="true">
+                    <Setter Property="Background" TargetName="brdBinocular">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                                <GradientStop Offset="0" Color="#FF686868" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
+                                <GradientStop Offset="1" Color="#FF686868" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Cursor" TargetName="brdBinocular" Value="Arrow"/>
+                </Trigger>-->
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+
+        <Style x:Key="btnTOLink" TargetType="{x:Type Button}">
+            <Setter Property="Command" Value="{Binding Path=TODetailsCommand}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Label Foreground="{Binding Path=Machine.BackgroundColor}" FontWeight="Bold"
+                               VerticalContentAlignment="Center" HorizontalContentAlignment="Right">
+                            <Label.Style>
+                                <Style TargetType="Label" BasedOn="{StaticResource TransOptionLabel}">
+                                    <Setter Property="Height" Value="70" />
+                                    <Setter Property="Width" Value="70" />
+                                    <Setter Property="Margin" Value="-410,-115,-150, 300"/>
+                                    <Setter Property="FontSize" Value="20" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=DataContext.GeneralLayout , Mode=OneWay, UpdateSourceTrigger=PropertyChanged , RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" Value="True">
+                                            <Setter Property="Height" Value="50" />
+                                            <Setter Property="Width" Value="50" />
+                                            <Setter Property="Margin" Value="-231,-405,30,-150"/>
+                                            <Setter Property="FontSize" Value="16" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Label.Style>
+                            <Label.RenderTransform>
+                                <TransformGroup>
+                                    <RotateTransform Angle="-90" CenterY="20" CenterX="150"/>
+                                </TransformGroup>
+                            </Label.RenderTransform>
+                            <Label.Template>
+                                <ControlTemplate TargetType="Label">
+                                    <TextBlock TextDecorations="Underline" Cursor="Hand" VerticalAlignment="Center" HorizontalAlignment="Right"
+                                               Text="{Binding Path=TransportOrder.TOReference, StringFormat={} TO: {0}}" />
+                                </ControlTemplate>
+                            </Label.Template>
+                        </Label>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="btnTOLinkHorizontal" TargetType="{x:Type Button}">
+            <Setter Property="Command" Value="{Binding Path=TODetailsCommand}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Label Style="{StaticResource TransOptionLabel}" 
+                               Foreground="Black" FontWeight="Bold"
+                               VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+                            <Label.Template>
+                                <ControlTemplate TargetType="Label">
+                                    <TextBlock TextDecorations="Underline" Cursor="Hand" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                               Text="TO"/>
+
+                                </ControlTemplate>
+                            </Label.Template>
+                        </Label>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="btnCheck" TargetType="ToggleButton">
+            <Setter Property="FontFamily" Value="Metro UI" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Background" Value="#342814" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Grid x:Name="grdContent">
+                            <Grid.Background>
+                                <SolidColorBrush Color="Transparent" />
+                            </Grid.Background>
+                            <Border Opacity="0.5" x:Name="Border" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Margin="1,0,-1,0" CornerRadius="5" BorderThickness="0" Background="{TemplateBinding Background}" />
+                            <Border Opacity="1" x:Name="BorderTickness" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Margin="1,0,-1,0" BorderBrush="WhiteSmoke" CornerRadius="5" BorderThickness="2" Background="Transparent" />
+                            <ContentPresenter VerticalAlignment="Center" TextBlock.Foreground="WhiteSmoke" TextBlock.FontSize="{TemplateBinding FontSize}" TextBlock.FontWeight="Bold" HorizontalAlignment="Center" x:Name="contentPresenter" />
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="False">
+                                <Setter Property="Opacity" TargetName="Border" Value="0.2"/>
+                                <Setter Property="Opacity" TargetName="BorderTickness" Value="0.2"/>
+                                <Setter Property="Opacity" Value="0.7"/>
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="Opacity" TargetName="Border" Value="1"/>
+                                <Setter Property="Opacity" TargetName="BorderTickness" Value="1"/>
+                                <Setter Property="Opacity" Value="1"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="btnSelected" TargetType="Button">
+            <Setter Property="FontFamily" Value="Metro UI" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Background" Value="#FF12311F" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Opacity" Value="1" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=Enabled, Mode=OneWay}" Value="False">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Grid x:Name="grdContent">
+                                    <Grid.Background>
+                                        <SolidColorBrush Color="Transparent" />
+                                    </Grid.Background>
+                                    <Border Opacity="0.5"  Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Margin="1,0,-1,0" CornerRadius="5" BorderThickness="0" Background="{TemplateBinding Background}" />
+                                    <Border Opacity="0.2"  Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Margin="1,0,-1,0" BorderBrush="WhiteSmoke" CornerRadius="5" BorderThickness="2" Background="Transparent" />
+                                    <ContentPresenter VerticalAlignment="Center" TextBlock.Foreground="WhiteSmoke" TextBlock.FontSize="{TemplateBinding FontSize}" TextBlock.FontWeight="Bold" HorizontalAlignment="Center" x:Name="contentPresenter" />
+                                </Grid>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding Path=Enabled, Mode=OneWay}" Value="True">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Grid x:Name="grdContent">
+                                    <Grid.Background>
+                                        <SolidColorBrush Color="Transparent" />
+                                    </Grid.Background>
+                                    <Border Opacity="1" x:Name="Border" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Margin="1,0,-1,0" CornerRadius="5" BorderThickness="0" Background="{TemplateBinding Background}" />
+                                    <Border Opacity="1" x:Name="BorderTickness" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Margin="1,0,-1,0" BorderBrush="WhiteSmoke" CornerRadius="5" BorderThickness="2" Background="Transparent" />
+                                    <ContentPresenter VerticalAlignment="Center" TextBlock.Foreground="WhiteSmoke" TextBlock.FontSize="{TemplateBinding FontSize}" TextBlock.FontWeight="Bold" HorizontalAlignment="Center" x:Name="contentPresenter" />
+
+                                </Grid>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </DataTrigger>
+
+            </Style.Triggers>
+
+        </Style>
+
+
+
+
+        <DataTemplate x:Key="maintDataTemplate">
+
+        </DataTemplate>
+
+
+
+
+
+
+    </UserControl.Resources>
+    <DockPanel LastChildFill="False" HorizontalAlignment="Center">
+        <Grid DockPanel.Dock="Top">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <!--<ToggleButton Style="{StaticResource btnCheck}" Width="100" Height="35" FontSize="16" Margin="5,0,0,0" Foreground="WhiteSmoke" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                              Content="T. Zones" IsChecked="{Binding Path=IsTemporaryZoneVisible, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                              ToolTipService.ToolTip="Show/Hide the defined temporary zones"/>-->
+
+                <!--<ToggleButton Style="{StaticResource btnCheck}" Width="100" Height="35" FontSize="16" Margin="5,0,0,0" Foreground="WhiteSmoke" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                              Content="TO Route" IsChecked="{Binding Path=IsTransportOrderVisible, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                              ToolTipService.ToolTip="Show/Hide the route of the active transport orders"/>
+
+                <ToggleButton Style="{StaticResource btnCheck}" Width="100" Height="35" FontSize="16" Margin="5,0,0,0" Foreground="WhiteSmoke" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                              Content="Machines" IsChecked="{Binding Path=IsMachineVisible, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                              ToolTipService.ToolTip="Show/Hide the machines"/>-->
+
+                <!--<StackPanel Orientation="Horizontal" Margin="10,0,0,0" HorizontalAlignment="Right" VerticalAlignment="Center">
+                    <Label Content="Features:" Style="{StaticResource TransOptionLabel}" FontSize="18" FontWeight="SemiBold" Width="90" Margin="0,0,0,0" Padding="0,0,10,0" HorizontalAlignment="Right" HorizontalContentAlignment="Right" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+                    <jctr:MultiSelectComboBox FontSize="15" FontWeight="SemiBold" Width="220" ItemAlignment="Left"
+                                                          ItemsSource="{Binding Path=AllEnableComponents, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                                                          SelectedItems="{Binding Path=AllEnableComponentsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                              SelectedItemsChanged="MultiSelectComboBox_SelectedItemsChanged"/>
+                </StackPanel>-->
+
+
+                <!--<StackPanel  Orientation="Horizontal" Margin="5,0,0,0" HorizontalAlignment="Right" VerticalAlignment="Center">
+                    <ListBox  ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" ItemContainerStyle="{StaticResource Lststyle}" Background="Transparent" BorderBrush="Transparent" ItemsSource="{Binding Path=Yards, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel Background="Transparent"></WrapPanel>
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <Button Style="{StaticResource btnSelected}" Width="70" Height="35" FontSize="16" Margin="5,0,0,0" Foreground="WhiteSmoke" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                                        Content="{Binding Path=ShortDescription, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Click="btnSelectYard1_Click" Tag="{Binding Path=.}" ToolTipService.ToolTip="Show bay" 
+                                        Command="{Binding Path=DataContext.SelectYardCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding Path=., Mode=OneTime}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </StackPanel>-->
+
+                <!--<StackPanel Orientation="Horizontal" Margin="20,0,0,0" HorizontalAlignment="Right" VerticalAlignment="Center">
+                    <Label Content="Zones By Machine:" Style="{StaticResource TransOptionLabel}" FontSize="18" FontWeight="SemiBold" Width="170" Margin="0,0,0,0" Padding="0,0,10,0" HorizontalAlignment="Right" HorizontalContentAlignment="Right" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+                    <jctr:MultiSelectComboBox FontSize="15" FontWeight="SemiBold" Width="120" ItemAlignment="Left"
+                                                          ItemsSource="{Binding Path=AllMachine, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                                                          SelectedItems="{Binding Path=MachineSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedItemsChanged="MultiSelectMachineComboBox_SelectedItemsChanged"/>
+
+
+
+                </StackPanel>-->
+
+                <!--<StackPanel Orientation="Horizontal" Margin="20,0,0,0" HorizontalAlignment="Right" VerticalAlignment="Center">
+                    <StackPanel.Style>
+                        <Style TargetType="StackPanel">
+                            <Setter Property="Visibility" Value="Visible" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Path=FlyZone.Enabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Value="{x:Null}">
+                                    <Setter Property="Visibility" Value="Collapsed" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </StackPanel.Style>
+
+                    <lctr:usrLightIndicator LightOn="{Binding Path=FlyZone.Enabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" IsLightOnGreen="True" IsLightOffRed="True" Width="35" Height="35" />
+                    <Button Content="RUNWAY CATWALK" Height="35" Width="170" FontSize="16" Foreground="White" Style="{StaticResource btnLink}" Padding="0,2,0,0" Command="{Binding Path=FlyZone.ZoneDetailsCommand}" />
+                </StackPanel>-->
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,120,0">
+                <ToggleButton x:Name="btnArrow" Margin="0" Template="{StaticResource btnArrow}" Click="btnArrow_Click" IsChecked="False" ToolTip="Allow the user to create temporary zone directly on the layout"/>
+                <ToggleButton x:Name="btnHand" Margin="0" Template="{StaticResource btnHand}" Click="btnMove_Click" IsChecked="False" ToolTip="Allow the user to move the layout using the mouse / touch"/>
+                <ToggleButton x:Name="btnBinocular" Margin="0" Template="{StaticResource btnBinocular}" Click="btnZoom_Click" IsChecked="False" ToolTip="Allow the user to make zoom on the layout"/>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,-60,0,0">
+                <Image Height="100" Width="100" Source="{StaticResource Img_Cardinals_1}" RenderOptions.BitmapScalingMode="HighQuality">
+                    <Image.Style>
+                        <Style TargetType="Image">
+                            <Setter Property="Visibility" Value="Visible" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Path=IsInverted, Mode=OneTime}" Value="True">
+                                    <Setter Property="Visibility" Value="Collapsed" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+
+                <Image Height="100" Width="100" Source="{StaticResource Img_Cardinals_2}" RenderOptions.BitmapScalingMode="HighQuality">
+                    <Image.Style>
+                        <Style TargetType="Image">
+                            <Setter Property="Visibility" Value="Collapsed" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Path=IsInverted, Mode=OneTime}" Value="True">
+                                    <Setter Property="Visibility" Value="Visible" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+            </StackPanel>
+
+        </Grid>
+
+        <DockPanel DockPanel.Dock="Bottom" LastChildFill="True" Margin="0,0,0,-15">
+            <Button DockPanel.Dock="Left" Margin="0" Width="50" Style="{StaticResource btnTransparent}" Click="btnLayoutLeft_Click" BorderThickness="1,1,2,2" Background="#e7ffe1" BorderBrush="Black">
+                <Border>
+                    <Image Source="{StaticResource img_GridLEFT}" Stretch="Uniform" Width="40"/>
+                </Border>
+            </Button>
+
+            <ScrollViewer Name="scrollXY" Width="1520" Height="669" Margin="5,2,5,2" Padding="0" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"
+                          behaviour:TouchScrolling.IsEnabled="False"
+                          behaviour:TouchZoom.IsEnabled="False"
+                          behaviour:TouchDrawing.IsEnabled="False"
+                          behaviour:TouchDrawing.LayoutWidth="{StaticResource LWidth}"
+                          behaviour:TouchDrawing.LayoutHeight="{StaticResource LHeight}"
+                          behaviour:TouchDrawing.LayoutGeneralWidth="{StaticResource LWidth}"
+                          behaviour:TouchDrawing.LayoutGeneralHeight="{StaticResource LHeight}"
+                          behaviour:TouchDrawing.LayoutGeneral="{Binding Path=GeneralLayout}">
+                <ScrollViewer.Style>
+                    <Style TargetType="ScrollViewer" >
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Path=IsInverted, Mode=OneTime}" Value="True">
+                                <Setter Property="LayoutTransform">
+                                    <Setter.Value>
+                                        <RotateTransform Angle="180" />
+                                    </Setter.Value>
+                                </Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </ScrollViewer.Style>
+
+                <Grid Style="{StaticResource grdBackground}" Margin="0">
+
+                    <Grid >
+                        <Rectangle Margin="0,39,52,439" 
+                       Stroke="White"  
+                       StrokeThickness="2">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.001 0.01">
+                                    <GradientStop Offset="0.5" Color="Black"/>
+                                    <GradientStop Offset="0.5" Color="White"/>
+                                    <GradientStop Offset="0.5" Color="Gray"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                            <Rectangle.InputBindings>
+                                <MouseBinding Gesture="LeftClick" Command="{Binding Path=DataContext.FooCommand , RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                              CommandParameter="EntryWest" />
+                            </Rectangle.InputBindings>
+                        </Rectangle>
+
+                        <!--<Border x:Name="Border"
+                                            Width="{TemplateBinding Width}" Height="{TemplateBinding Height}"
+                                            Background="{Binding Path=ButtonFillColor}"
+                                            BorderThickness="{TemplateBinding BorderThickness}"
+                                            BorderBrush="{TemplateBinding BorderBrush}"
+                                            VerticalAlignment="Center"
+                                            HorizontalAlignment="Center">
+                            <TextBlock x:Name="Label"
+                                                   Text="{Binding Path=Properties.ShowText}" FontWeight="{TemplateBinding FontWeight}" FontSize="{TemplateBinding FontSize}" Foreground="{TemplateBinding Foreground}" Background="{TemplateBinding Background}"
+                                                   Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center">
+                                <TextBlock.Style>
+                                    <Style TargetType="TextBlock" >
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Path=DataContext.IsInverted, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" Value="True"/>
+                                            <DataTrigger Binding="{Binding Path=DataContext.IsInverted, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" Value="True"/>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+                        </Border>-->
+
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="202,114,1268,505"/>
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="709,114,761,505"/>
+                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1310,114,160,505"/>
+                    </Grid>
+
+                    <Grid>
+                        <Rectangle Margin="50,235,52,243" 
+                       Stroke="White"  
+                       StrokeThickness="2">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.001 0.01">
+                                    <GradientStop Offset="0.5" Color="Black"/>
+                                    <GradientStop Offset="0.5" Color="White"/>
+                                    <GradientStop Offset="0.5" Color="Orange"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                            <Rectangle.InputBindings>
+                                <MouseBinding Gesture="LeftClick" Command="{Binding Path=DataContext.FooCommand , RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                            CommandParameter="Queue" />
+                            </Rectangle.InputBindings>
+                        </Rectangle>
+                        
+                        
+                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="202,324,1268,295"/>
+                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="709,324,761,295" RenderTransformOrigin="-0.84,0.66"/>
+                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1310,324,160,295"/>
+
+                    </Grid>
+
+                    <Grid>
+                        <Rectangle Margin="50,431,0,47" 
+                       Stroke="White"  
+                       StrokeThickness="2">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.001 0.01">
+                                    <GradientStop Offset="0.5" Color="Black"/>
+                                    <GradientStop Offset="0.5" Color="White"/>
+                                    <GradientStop Offset="0.5" Color="Gray"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                            <Rectangle.InputBindings>
+                                <MouseBinding Gesture="LeftClick" Command="{Binding Path=DataContext.FooCommand , RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                            CommandParameter="ExitWest" />
+                            </Rectangle.InputBindings>
+                        </Rectangle>
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="202,518,1268,101"/>
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="709,518,761,101" RenderTransformOrigin="-0.26,0.52"/>
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="1310,518,160,101" RenderTransformOrigin="-0.26,0.52"/>
+
+                    </Grid>
+
+                    <Border Name="zoomRectangle" BorderThickness="1" BorderBrush="WhiteSmoke" Margin="0,0,0,0" Width="0" Height="0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                </Grid>
+            </ScrollViewer>
+
+            <Button DockPanel.Dock="Right" Margin="0" Width="50" Style="{StaticResource btnTransparent}" Click="btnLayoutRight_Click" BorderThickness="1,1,2,2" Background="#e7ffe1" BorderBrush="Black">
+                <Border>
+                    <Image Source="{StaticResource img_GridRIGHT}" Stretch="Uniform" Width="40"/>
+                </Border>
+            </Button>
+        </DockPanel>
+    </DockPanel>
+</UserControl>

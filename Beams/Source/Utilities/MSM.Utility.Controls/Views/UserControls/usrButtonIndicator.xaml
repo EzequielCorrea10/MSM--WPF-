@@ -1,0 +1,249 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             x:Class="MSM.Utility.Controls.usrButtonIndicator" 
+             x:Name="this">
+
+    <UserControl.Resources>
+        <BitmapImage x:Key="img_BrakesGray" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/BrakesGray55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_BrakesGreen"  UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/BrakesGreen55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_BrakesRed"    UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/BrakesRed55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_DrivesGray"   UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/DrivesGray55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_DrivesGreen"  UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/DrivesGreen55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_DrivesRed"    UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/DrivesRed55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_MotorGray"    UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/MotorsGray55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_MotorGreen"   UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/MotorsGreen55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_MotorRed"     UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/MotorsRed55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_SymeoGray"    UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/SymeoGray55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_SymeoGreen"   UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/SymeoGreen55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_SymeoRed"     UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/SymeoRed55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+    </UserControl.Resources>
+
+    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <StackPanel Width="{Binding Button1Width, ElementName=this, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Margin="0,0,0,0" Height="55" Width="55" Padding="0,0,0,0" Command="{Binding Path=DrivesCommand}"
+                    CommandParameter="{Binding Path=vmCommandParameter, ElementName=this, UpdateSourceTrigger=PropertyChanged}">
+                <Image Width="{Binding Width, ElementName=this, UpdateSourceTrigger=PropertyChanged}" 
+                Height="{Binding Height, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Stretch="Uniform">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Source" Value="{StaticResource img_DrivesGray}" />
+                            <Style.Triggers>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button1On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                        <Condition Binding="{Binding IsButton1OffRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_DrivesGray}" />
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button1On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                        <Condition Binding="{Binding IsButton1OffRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_DrivesRed}" />
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button1On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                        <Condition Binding="{Binding IsButton1OnGreen, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_DrivesRed}" />
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button1On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                        <Condition Binding="{Binding IsButton1OnGreen, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_DrivesGreen}" />
+                                </MultiDataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Width="{Binding Button2Width, ElementName=this, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Margin="0,0,0,0" Height="55" Width="55" Padding="0,0,0,0" Command="{Binding Path=BrakesCommand}"
+                    CommandParameter="{Binding Path=vmCommandParameter, ElementName=this, UpdateSourceTrigger=PropertyChanged}">
+                <Image Width="{Binding Width, ElementName=this, UpdateSourceTrigger=PropertyChanged}" 
+                Height="{Binding Height, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Stretch="Uniform">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Source" Value="{StaticResource img_BrakesGray}" />
+                            <Style.Triggers>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button2On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                        <Condition Binding="{Binding IsButton2OffRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_BrakesGray}" />
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button2On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                        <Condition Binding="{Binding IsButton2OffRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_BrakesRed}" />
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button2On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                        <Condition Binding="{Binding IsButton2OnGreen, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_BrakesRed}" />
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button2On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                        <Condition Binding="{Binding IsButton2OnGreen, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_BrakesGreen}" />
+                                </MultiDataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Width="{Binding Button3Width, ElementName=this, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Margin="0,0,0,0" Height="55" Width="55" Padding="0,0,0,0" Command="{Binding Path=RegularBrakesCommand}"
+                    CommandParameter="{Binding Path=vmCommandParameter, ElementName=this, UpdateSourceTrigger=PropertyChanged}">
+                <Image Width="{Binding Width, ElementName=this, UpdateSourceTrigger=PropertyChanged}" 
+                Height="{Binding Height, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Stretch="Uniform">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Source" Value="{StaticResource img_BrakesGray}" />
+                            <Style.Triggers>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button3On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                        <Condition Binding="{Binding IsButton3OffRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_BrakesGray}" />
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button3On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                        <Condition Binding="{Binding IsButton3OffRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_BrakesRed}" />
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button3On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                        <Condition Binding="{Binding IsButton3OnGreen, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_BrakesRed}" />
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button3On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                        <Condition Binding="{Binding IsButton3OnGreen, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_BrakesGreen}" />
+                                </MultiDataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Width="{Binding Button4Width, ElementName=this, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Margin="0,0,0,0" Height="55" Width="55" Padding="0,0,0,0" Command="{Binding Path=MotorsCommand}"
+                    CommandParameter="{Binding Path=vmCommandParameter, ElementName=this, UpdateSourceTrigger=PropertyChanged}">
+                <Image Width="{Binding Width, ElementName=this, UpdateSourceTrigger=PropertyChanged}" 
+                        Height="{Binding Height, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Stretch="Uniform">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Source" Value="{StaticResource img_MotorGray}" />
+                            <Style.Triggers>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button4On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                        <Condition Binding="{Binding IsButton4OffRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_MotorGray}" />
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button4On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                        <Condition Binding="{Binding IsButton4OffRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_MotorRed}" />
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button4On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                        <Condition Binding="{Binding IsButton4OnGreen, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_MotorRed}" />
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button4On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                        <Condition Binding="{Binding IsButton4OnGreen, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_MotorGreen}" />
+                                </MultiDataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Width="{Binding Button5Width, ElementName=this, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Margin="0,0,0,0" Height="55" Width="55" Padding="0,0,0,0" Command="{Binding Path=SymeoCommand}"
+                    CommandParameter="{Binding Path=vmCommandParameter, ElementName=this, UpdateSourceTrigger=PropertyChanged}">
+                <Image Width="{Binding Width, ElementName=this, UpdateSourceTrigger=PropertyChanged}" 
+           Height="{Binding Height, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Stretch="Uniform">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Source" Value="{StaticResource img_SymeoGray}" />
+                            <Style.Triggers>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button5On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                        <Condition Binding="{Binding IsButton5OffRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_SymeoGray}" />
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button5On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                        <Condition Binding="{Binding IsButton5OffRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_SymeoRed}" />
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button5On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                        <Condition Binding="{Binding IsButton5OnGreen, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_SymeoRed}" />
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding Button5On, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                        <Condition Binding="{Binding IsButton5OnGreen, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="Source" Value="{StaticResource img_SymeoGreen}" />
+                                </MultiDataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+            </Button>
+        </StackPanel>
+
+    </StackPanel>
+
+</UserControl>
+

@@ -1,0 +1,22 @@
+﻿cd C:\Program Files\RabbitMQ Server\rabbitmq_server-3.8.3\sbin
+
+CREATE_USER
+
+rabbitmqctl list_users
+rabbitmqctl add_user mssuser mssmq@pwd
+rabbitmqctl list_user_permissions mssuser
+
+CREATE_VHOSTS
+
+rabbitmqctl list_vhosts
+rabbitmqctl add_vhost MSS
+rabbitmqctl list_permissions -p MSS
+rabbitmqctl set_permissions -p MSS mssuser ".*" ".*" ".*"
+
+CREATE_QUEUES
+
+rabbitmqctl list_queues -p MSS
+
+TOOLS
+
+rabbitmq-plugins enable rabbitmq_management

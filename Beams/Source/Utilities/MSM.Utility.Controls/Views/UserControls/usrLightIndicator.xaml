@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="MSM.Utility.Controls.usrLightIndicator"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             Name="this">
+    <Image Width="{Binding Path=Width, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Height="{Binding Path=Height, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Stretch="Uniform">
+        <Image.Style>
+            <Style TargetType="Image">
+                <Setter Property="Source" Value="{StaticResource img_OffIndicator}" />
+                <Style.Triggers>
+                    <MultiDataTrigger>
+                        <MultiDataTrigger.Conditions>
+                            <Condition Binding="{Binding Path=LightOn, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                            <Condition Binding="{Binding Path=IsLightOffRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                        </MultiDataTrigger.Conditions>
+                        <Setter Property="Source" Value="{StaticResource img_OffIndicator}" />
+                    </MultiDataTrigger>
+                    <MultiDataTrigger>
+                        <MultiDataTrigger.Conditions>
+                            <Condition Binding="{Binding Path=LightOn, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                            <Condition Binding="{Binding Path=IsLightOffRed, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                        </MultiDataTrigger.Conditions>
+                        <Setter Property="Source" Value="{StaticResource img_OnIndicator}" />
+                    </MultiDataTrigger>
+                    <MultiDataTrigger>
+                        <MultiDataTrigger.Conditions>
+                            <Condition Binding="{Binding Path=LightOn, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="true" />
+                            <Condition Binding="{Binding Path=IsLightOnGreen, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="False" />
+                        </MultiDataTrigger.Conditions>
+                        <Setter Property="Source" Value="{StaticResource img_OnIndicator}" />
+                    </MultiDataTrigger>
+                    <MultiDataTrigger>
+                        <MultiDataTrigger.Conditions>
+                            <Condition Binding="{Binding Path=LightOn, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="true" />
+                            <Condition Binding="{Binding Path=IsLightOnGreen, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="True" />
+                        </MultiDataTrigger.Conditions>
+                        <Setter Property="Source" Value="{StaticResource img_OnGreenIndicator}" />
+                    </MultiDataTrigger>
+                </Style.Triggers>
+            </Style>
+        </Image.Style>
+    </Image>
+</UserControl>

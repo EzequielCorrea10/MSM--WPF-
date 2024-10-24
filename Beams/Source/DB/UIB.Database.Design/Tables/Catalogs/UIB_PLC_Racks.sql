@@ -1,0 +1,34 @@
+﻿CREATE TABLE [system].[MSM_PLC_Racks](
+	[IdPLCRack] [int] NOT NULL,
+	[IdPLC] [int] NOT NULL,
+	[Rack] [int] NOT NULL,
+	[FullDescription] [varchar](100) NULL,
+	[IPAddress] [varchar](20) NULL,
+	[NAT] [varchar](20) NULL,
+	[ConnectivityAlarmname] [varchar](60) NULL,
+	[ImagePath] [varchar](100) NULL,
+	[ImageWidth] [float] NULL,
+	[ImageHeight] [float] NULL,
+	[Active] [bit] NOT NULL,
+ CONSTRAINT [PK_MSM_PLC_Racks] PRIMARY KEY CLUSTERED 
+(
+	[IdPLCRack] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+ CONSTRAINT [UK_MSM_PLC_Racks] UNIQUE NONCLUSTERED 
+(
+	[IdPLC] ASC,
+	[Rack] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+ALTER TABLE [system].[MSM_PLC_Racks]  WITH CHECK ADD  CONSTRAINT [FK_MSM_PLC_Racks_MSM_PLCs] FOREIGN KEY([IdPLC]) REFERENCES [system].[MSM_PLCs] ([IdPLC])
+
+GO
+
+ALTER TABLE [system].[MSM_PLC_Racks] CHECK CONSTRAINT [FK_MSM_PLC_Racks_MSM_PLCs]
+
+GO 
+
+ALTER TABLE [system].[MSM_PLC_Racks] ADD  CONSTRAINT [DF_MSM_PLC_Components_Active]  DEFAULT ((1)) FOR [Active]

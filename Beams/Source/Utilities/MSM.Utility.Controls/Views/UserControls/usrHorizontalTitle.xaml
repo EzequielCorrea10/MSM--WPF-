@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="MSM.Utility.Controls.usrHorizontalTitle"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             Name="this">
+    <Border BorderThickness="{Binding Path=MeterBorderThickness, ElementName=this}" 
+            BorderBrush="{Binding Path=MeterBorderBrush, ElementName=this}" 
+            CornerRadius="{Binding Path=MeterCornerRadius, ElementName=this}">
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+                <GradientStop Color="#FF333333" Offset="0" />
+                <GradientStop Color="#FF111111" Offset="0.5" />
+                <GradientStop Color="#FF111111" Offset="1.0" />
+            </LinearGradientBrush>
+        </Border.Background>
+        <StackPanel Height="{Binding Path=MeterHeight, ElementName=this}" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <TextBlock Text="{Binding Path=TitleDescription, ElementName=this}" 
+                       Width="{Binding Path=TitleWidth, ElementName=this}"
+                       FontSize="{Binding Path=MeterFontSize, ElementName=this}" 
+                       Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Style="{StaticResource withShadow}"/>
+            <TextBlock Text="{Binding Path=ValueDescription, ElementName=this}" 
+                       Width="{Binding Path=ValueWidth, ElementName=this}"
+                       FontSize="{Binding Path=MeterFontSize, ElementName=this}" 
+                       Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" Style="{StaticResource withShadow}"/>
+            <TextBlock Text="{Binding Path=SPDescription, ElementName=this}" 
+                       Width="{Binding Path=ValueWidth, ElementName=this}"
+                       FontSize="{Binding Path=MeterFontSize, ElementName=this}" 
+                       Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource withShadow}">
+                        <Setter Property="Visibility" Value="Visible"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Path=SPDescription, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="{x:Null}">
+                                <Setter Property="Visibility" Value="Collapsed"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+            <TextBlock Text="{Binding Path=ExtraDescription, ElementName=this}" 
+                       Width="{Binding Path=ValueWidth, ElementName=this}"
+                       FontSize="{Binding Path=MeterFontSize, ElementName=this}" 
+                       Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource withShadow}">
+                        <Setter Property="Visibility" Value="Visible"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Path=ExtraDescription, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="{x:Null}">
+                                <Setter Property="Visibility" Value="Collapsed"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+            <TextBlock Text="{Binding Path=UnitDescription, ElementName=this}" 
+                       Width="{Binding Path=UnitWidth, ElementName=this}"
+                       FontSize="{Binding Path=MeterFontSize, ElementName=this}"
+                       Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource withShadow}">
+                        <Setter Property="Visibility" Value="Visible"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Path=UnitDescription, ElementName=this, UpdateSourceTrigger=PropertyChanged}" Value="{x:Null}">
+                                <Setter Property="Visibility" Value="Collapsed"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+        </StackPanel>
+    </Border>
+</UserControl>

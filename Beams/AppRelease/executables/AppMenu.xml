@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+  <ScreenSaver sleeptime="0" runatstartup="false"></ScreenSaver>
+  <Controls>
+    <LoginAllowed>true</LoginAllowed>
+    <KeyboardEnabled>false</KeyboardEnabled>
+    <AckAlarmAvailable>true</AckAlarmAvailable>
+    <HistoricalAvailable tag="true" alarm="true">true</HistoricalAvailable>
+    <CommTimeout>1000</CommTimeout>
+  </Controls>
+  <CustomerImage embedded="true" source="/MSM.Utility.Controls;component/Themes/Resources/Desktop/novelis_logo.png" />
+  <MenuItems>
+      <MenuItem order="0">
+        <Command>MSM.HMI.Transport.Operation.exe</Command>
+        <Permission></Permission>
+        <Image embedded="true" source="/MSM.Utility.Controls;component/Themes/Resources/Desktop/CoilDelivery.png" />
+        <ToolTip>Coil Delivery</ToolTip>
+      </MenuItem>
+      <MenuItem order="1">
+        <Command>MSM.HMI.Process.Mgmt.exe</Command>
+        <Permission></Permission>
+        <Image embedded="true" source="/Janus.Rodeo.Windows.Library.UI.Controls;component/Themes/Resources/Desktop/Schedules.png" />
+        <ToolTip>Jobs / TOs / Pieces - Information</ToolTip>
+      </MenuItem>
+      <!--<MenuItem order="1">
+        <Command>MSM.HMI.Process.Mgmt.exe</Command>
+        <Permission></Permission>
+        <Image embedded="true" source="/Janus.Rodeo.Windows.Library.UI.Controls;component/Themes/Resources/Desktop/info.png" />
+        <ToolTip>Pieces - Information</ToolTip>
+      </MenuItem>-->
+      <MenuItem order="2">
+        <Command>Pieces.exe-popupwindow -silent-crashes -logFile ..\logs\Pieces3D.log</Command>
+        <Permission></Permission>
+        <Image embedded="true" source="/Janus.Rodeo.Windows.Library.UI.Controls;component/Themes/Resources/Desktop/3d.png" />
+        <ToolTip>3D Plant</ToolTip>
+        <RestartByHistorical>true</RestartByHistorical>
+	<SetPositionEnabled>true</SetPositionEnabled>
+      </MenuItem>
+      <MenuItem order="3">
+        <Command>Pieces.exe-popupwindow -silent-crashes -2d -logFile ..\logs\Pieces2D.log</Command>
+        <Permission></Permission>
+        <Image embedded="true" source="/Janus.Rodeo.Windows.Library.UI.Controls;component/Themes/Resources/Desktop/2d.png" />
+        <ToolTip>2D Layout</ToolTip>
+        <RestartByHistorical>true</RestartByHistorical>
+	<SetPositionEnabled>true</SetPositionEnabled>
+      </MenuItem>
+      <MenuItem order="4">
+        <Command>MSM.HMI.Machine.Operation.exe</Command>
+        <Permission></Permission>
+        <Image embedded="true" source="/MSM.Utility.Controls;component/Themes/Resources/Desktop/Hook.png" />
+        <ToolTip>Machine Operation</ToolTip>
+        <RestartByHistorical>true</RestartByHistorical>
+      </MenuItem>
+      <MenuItem order="5">
+        <Command>MSM.HMI.Safety.Operation.exe</Command>
+        <Permission></Permission>
+        <Image embedded="true" source="/MSM.Utility.Controls;component/Themes/Resources/Desktop/Safety.png" />
+        <ToolTip>Safety Screen</ToolTip>
+      </MenuItem>
+      <MenuItem order="6">
+        <Command>MSM.HMI.Events.History.exe</Command>
+        <Permission></Permission>
+        <Image embedded="true" source="/Janus.Rodeo.Windows.Library.UI.Controls;component/Themes/Resources/Desktop/Reports.png" />
+        <ToolTip>Events Reports</ToolTip>
+      </MenuItem>
+      <MenuItem order="7">
+        <Command>MSM.HMI.Sys.Mgmt.exe</Command>
+        <Permission></Permission>
+        <Image embedded="true" source="/Janus.Rodeo.Windows.Library.UI.Controls;component/Themes/Resources/Desktop/Config.png" />
+        <ToolTip>Tools</ToolTip>
+      </MenuItem>
+      <MenuItem order="8">
+        <Command>MSM.HMI.Rodeo.History.exe</Command>
+        <Permission></Permission>
+        <Image embedded="true" source="/MSM.Utility.Controls;component/Themes/Resources/Desktop/History.png" />
+        <ToolTip>Alarms / Commands / Users - History</ToolTip>
+      </MenuItem>
+      <MenuItem order="9">
+        <Command>Janus.Rodeo.Windows.Library.Trend_Display.Configuration.exe</Command>
+        <Permission></Permission>
+        <Image embedded="true" source="/Janus.Rodeo.Windows.Library.UI.Controls;component/Themes/Resources/Desktop/Trending.png" />
+        <ToolTip>Reports - Trending</ToolTip>
+      </MenuItem>
+  </MenuItems>
+  <RodeoReferences>
+    <HostName>MSMSERVER</HostName>
+    <Sector>MSM</Sector>
+  </RodeoReferences>
+    <KillProcesses> 
+      <OnMenuItemClick>
+        <Process>MSM.HMI.Machine.Operation</Process>
+        <Process>MSM.HMI.Camera.Operation</Process>
+        <Process>MSM.HMI.Process.Mgmt</Process>
+        <Process>ClientAcquisitionData</Process>
+        <Process>Janus.Rodeo.Windows.Process.RuleCore</Process>
+        <Process>Coils</Process>
+      </OnMenuItemClick>
+      <OnAppExit>
+        <Process>Janus.Rodeo.Windows.Process.Rd_WatchDog.Host</Process>
+        <Process>MSM.HMI.Machine.Operation</Process>
+        <Process>MSM.HMI.Camera.Operation</Process>
+        <Process>MSM.HMI.Process.Mgmt</Process>
+        <Process>ClientAcquisitionData</Process>
+        <Process>Janus.Rodeo.Windows.Process.RuleCore</Process>
+        <Process>Coils</Process>
+      </OnAppExit>
+    </KillProcesses>  
+</Menu>
