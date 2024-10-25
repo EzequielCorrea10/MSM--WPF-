@@ -23,6 +23,7 @@ namespace MSM.HMI.Safety.Operation
     using MSM.HMI.Safety.Operation.Enumerations;
     using MSM.HMI.Safety.Operation.Views;
     using MSM.HMI.Safety.Operation.ViewModels;
+    using MSM.HMI.Safety.Operation.Views.Windows;
 
     /// <summary>
     /// Interaction logic for DesktopWindow.xaml
@@ -267,12 +268,21 @@ namespace MSM.HMI.Safety.Operation
         //    generalDetails.ShowDialog();
         //}
 
-        //private void OpenEStopGroupsWindow()
-        //{
-        //    winEStopGroups eStopsDetails = new winEStopGroups(this.controller.EStopController.GroupSelected);
-        //    eStopsDetails.Owner = this;
-        //    eStopsDetails.ShowDialog();
-        //}
+        private void OpenEStopGroupsWindow()
+        {
+            bool result = false;
+
+            ZoneDetail eStopsDetails = new ZoneDetail();
+            eStopsDetails.Owner = this;
+            eStopsDetails.Closed += ((s, ev) =>
+            {
+                if (((Window)s).DialogResult.HasValue)
+                {
+                    result = ((Window)s).DialogResult.Value;
+                }
+            });
+            eStopsDetails.ShowDialog();
+        }
 
         //private void OpenPanelsEStopWindow()
         //{

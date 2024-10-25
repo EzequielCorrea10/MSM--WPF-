@@ -21,3 +21,69 @@ Exception message: There is an error in XML document (213, 63).
 2024-10-24 13:03:47.091: InitializeRegister, Message: ********** Start the application **********
 2024-10-24 13:03:47.101: InitializeRegister, Message: Information of PID=55584, Process=MSM.HMI.Safety.Operation, Arguments=
 2024-10-24 13:03:47.043: .ctor, Debug: Begin Layout
+2024-10-25 09:16:57.649: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 09:16:57.662: InitializeRegister, Message: Information of PID=4580, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 09:16:57.606: .ctor, Debug: Begin Layout
+2024-10-25 09:47:41.884: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 09:47:41.899: InitializeRegister, Message: Information of PID=38236, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 09:47:41.843: .ctor, Debug: Begin Layout
+2024-10-25 09:53:27.226: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 09:53:27.239: InitializeRegister, Message: Information of PID=49952, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 09:53:27.184: .ctor, Debug: Begin Layout
+2024-10-25 09:53:55.486: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 09:53:55.500: InitializeRegister, Message: Information of PID=23156, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 09:53:55.448: .ctor, Debug: Begin Layout
+2024-10-25 09:59:44.003: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 09:59:44.017: InitializeRegister, Message: Information of PID=30724, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 09:59:43.963: .ctor, Debug: Begin Layout
+2024-10-25 10:04:24.486: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 10:04:24.497: InitializeRegister, Message: Information of PID=28700, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 10:04:24.441: .ctor, Debug: Begin Layout
+2024-10-25 10:05:20.202: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 10:05:20.215: InitializeRegister, Message: Information of PID=21920, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 10:05:20.163: .ctor, Debug: Begin Layout
+2024-10-25 10:06:48.360: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 10:06:48.372: InitializeRegister, Message: Information of PID=12760, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 10:06:48.314: .ctor, Debug: Begin Layout
+2024-10-25 10:54:16.765: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 10:54:16.780: InitializeRegister, Message: Information of PID=19092, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 10:54:16.725: .ctor, Debug: Begin Layout
+2024-10-25 10:54:49.355: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 10:54:49.374: InitializeRegister, Message: Information of PID=52764, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 10:54:49.317: .ctor, Debug: Begin Layout
+2024-10-25 11:05:32.491: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 11:05:32.503: InitializeRegister, Message: Information of PID=16624, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 11:05:32.460: .ctor, Debug: Begin Layout
+2024-10-25 11:08:38.681: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 11:08:38.694: InitializeRegister, Message: Information of PID=55172, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 11:08:38.670: .ctor, Debug: Begin Layout
+2024-10-25 11:14:27.950: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 11:14:27.963: InitializeRegister, Message: Information of PID=5820, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 11:14:27.904: .ctor, Debug: Begin Layout
+2024-10-25 11:18:12.836: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 11:18:12.847: InitializeRegister, Message: Information of PID=56732, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 11:18:12.796: .ctor, Debug: Begin Layout
+2024-10-25 11:21:40.277: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 11:21:40.290: InitializeRegister, Message: Information of PID=49836, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 11:21:40.257: .ctor, Debug: Begin Layout
+2024-10-25 11:26:29.846: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 11:26:29.863: InitializeRegister, Message: Information of PID=55212, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 11:26:29.822: .ctor, Debug: Begin Layout
+2024-10-25 11:28:24.928: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 11:28:24.945: InitializeRegister, Message: Information of PID=56024, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 11:28:24.871: .ctor, Debug: Begin Layout
+2024-10-25 11:29:19.811: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 11:29:19.823: InitializeRegister, Message: Information of PID=23164, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 11:29:19.739: .ctor, Debug: Begin Layout
+2024-10-25 11:32:22.441: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 11:32:22.455: InitializeRegister, Message: Information of PID=18912, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 11:32:22.428: .ctor, Debug: Begin Layout
+2024-10-25 11:33:44.332: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 11:33:44.347: InitializeRegister, Message: Information of PID=21360, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 11:33:44.288: .ctor, Debug: Begin Layout
+2024-10-25 11:42:32.470: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 11:42:32.486: InitializeRegister, Message: Information of PID=51632, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 11:42:32.434: .ctor, Debug: Begin Layout
+2024-10-25 11:56:37.763: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 11:56:37.778: InitializeRegister, Message: Information of PID=41496, Process=MSM.HMI.Safety.Operation, Arguments=
+2024-10-25 11:56:37.750: .ctor, Debug: Begin Layout

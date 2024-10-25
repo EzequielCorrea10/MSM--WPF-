@@ -6285,3 +6285,37 @@
 2024-10-24 13:22:43.219: LoadClientTypes, Debug: 6 Rows defined for Client types
 2024-10-24 13:22:43.416: LoadClients, Debug: 8 Rows defined for Clients
 2024-10-24 13:22:45.604: Init, Debug: RTS Driver counter: 1
+2024-10-24 13:31:08.740: InitializeRegister, Message: ********** Start the application **********
+2024-10-24 13:31:08.752: InitializeRegister, Message: Information of PID=17524, Process=TagLoader, Arguments=
+2024-10-24 13:31:08.731: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-10-24 13:31:08.898: LoadClients, Debug: 8 Rows defined for Clients
+2024-10-24 13:31:11.317: Init, Debug: RTS Driver counter: 1
+2024-10-24 13:39:47.015: InitializeRegister, Message: ********** Start the application **********
+2024-10-24 13:39:47.035: InitializeRegister, Message: Information of PID=55640, Process=TagLoader, Arguments=
+2024-10-24 13:39:47.005: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-10-24 13:39:47.221: LoadClients, Debug: 8 Rows defined for Clients
+2024-10-24 13:39:49.254: Init, Debug: RTS Driver counter: 1
+2024-10-24 14:15:16.143: InitializeRegister, Message: ********** Start the application **********
+2024-10-24 14:15:16.155: InitializeRegister, Message: Information of PID=25392, Process=TagLoader, Arguments=
+2024-10-24 14:15:16.135: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-10-24 14:15:16.375: LoadClients, Debug: 8 Rows defined for Clients
+2024-10-24 14:15:17.462: ExecuteOpen, Debug: error to open shmem RTSignal_MSM
+2024-10-24 14:15:17.462: ExecuteOpenCreate, Debug: Open Memory was not sucessfull, We'll try to create it
+2024-10-24 14:15:17.471: ExecuteOpen, Debug: error to open shmem USRData_MSM_MSMSERVER
+2024-10-24 14:15:17.471: Open, Message: Open was not sucesfully, sector MSM - host MSMSERVER
+2024-10-24 14:15:26.031: Init, Debug: RTS Driver counter: 1
+2024-10-24 14:15:26.032: ExecuteOpen, Debug: error to open shmem RTData_MSM_MSMSERVER
+2024-10-24 14:15:26.033: Open, Message: Open was not sucesfully, sector MSM - host MSMSERVER
+2024-10-24 14:15:56.494: ExecuteOpen, Debug: error to open shmem RTData_MSM_MSMSERVER
+2024-10-24 14:15:56.494: Open, Message: Open was not sucesfully, sector MSM - host MSMSERVER
+2024-10-24 14:16:00.956: ExecuteOpen, Debug: error to open shmem RTData_MSM_MSMSERVER
+2024-10-24 14:16:00.956: Open, Message: Open was not sucesfully, sector MSM - host MSMSERVER
+2024-10-24 14:16:01.130: ExecuteOpen, Debug: error to open shmem RTData_MSM_MSMSERVER
+2024-10-24 14:16:01.130: Open, Message: Open was not sucesfully, sector MSM - host MSMSERVER
+2024-10-24 14:16:01.270: ExecuteOpen, Debug: error to open shmem RTData_MSM_MSMSERVER
+2024-10-24 14:16:01.270: Open, Message: Open was not sucesfully, sector MSM - host MSMSERVER
+2024-10-25 10:38:40.207: InitializeRegister, Message: ********** Start the application **********
+2024-10-25 10:38:40.220: InitializeRegister, Message: Information of PID=31456, Process=TagLoader, Arguments=
+2024-10-25 10:38:40.199: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-10-25 10:38:40.391: LoadClients, Debug: 8 Rows defined for Clients
+2024-10-25 10:38:44.796: Init, Debug: RTS Driver counter: 1

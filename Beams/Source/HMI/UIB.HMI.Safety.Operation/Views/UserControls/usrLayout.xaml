@@ -597,12 +597,10 @@
                                     <GradientStop Offset="0.5" Color="Gray"/>
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
-                            <Rectangle.InputBindings>
-                                <MouseBinding Gesture="LeftClick" Command="{Binding Path=DataContext.FooCommand , RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
-                                              CommandParameter="EntryWest" />
-                            </Rectangle.InputBindings>
                         </Rectangle>
-
+                        <Button Margin="0,39,52,439" Width="Auto" Height="Auto" Opacity="0" Command="{Binding Path=DataContext.FooCommand , RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                        CommandParameter="EntryWest">
+                        </Button>
                         <!--<Border x:Name="Border"
                                             Width="{TemplateBinding Width}" Height="{TemplateBinding Height}"
                                             Background="{Binding Path=ButtonFillColor}"

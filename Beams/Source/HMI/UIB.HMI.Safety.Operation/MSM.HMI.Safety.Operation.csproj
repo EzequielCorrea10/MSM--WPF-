@@ -149,6 +149,9 @@
     <Compile Include="Views\UserControls\usrLayout.xaml.cs">
       <DependentUpon>usrLayout.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Windows\ZoneDetail.xaml.cs">
+      <DependentUpon>ZoneDetail.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DesktopWindow.xaml.cs">
@@ -189,6 +192,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\Windows\ZoneDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -205,7 +212,6 @@
   <ItemGroup>
     <Folder Include="Handlers\" />
     <Folder Include="Model\Dependencies\" />
-    <Folder Include="Views\Windows\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

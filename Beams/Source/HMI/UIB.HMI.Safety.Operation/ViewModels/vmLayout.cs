@@ -21,12 +21,14 @@ namespace MSM.HMI.Safety.Operation.ViewModels
 
     using MSM.Database;
     using MSM.HMI.Safety.Operation.Enumerations;
+    using MSM.HMI.Safety.Operation.Views;
     using MSM.Utility.Common;
     //using MSM.Database;
     using MSM.Utility.Configuration;
     using MSM.Utility.Common.Catalogs;
     using Janus.Rodeo.Windows.Library.UI.Common;
     using System.Windows;
+    using MSM.HMI.Safety.Operation.Views.Windows;
 
     //using MSM.HMI.Safety.Operation.Enumerations;
 
@@ -97,178 +99,11 @@ namespace MSM.HMI.Safety.Operation.ViewModels
             this._EnableFeaturesCommand = new RelayCommand(param => this.EnableFeaturesExecute(param));
             this._SelectYardCommand = new RelayCommand(param => this.SelectYardExecute(param));
             this._FooCommand = new RelayCommand(param => this.SendExecute(param));
-
-
-            //if (!this.IsDesignerContext())
-            //{
-            //    List<vmZoneSection> sections = new List<vmZoneSection>();
-            //    foreach (vmZone zone in zones.Where(p => p.Properties.Type == MSM.Safety.Server.Common.Enumerations.ZoneTypes.Permanent).OrderBy(p => p.Properties.IsFirstLine ? 1 : 0))
-            //    {
-            //        sections.AddRange(zone.Sections);
-            //    }
-            //    foreach (vmZone zone in zones.Where(p => (p.Properties.Type == MSM.Safety.Server.Common.Enumerations.ZoneTypes.Dead)))
-            //    {
-            //        sections.AddRange(zone.Sections);
-            //    }
-            //    foreach (vmZone zone in zones.Where(p => p.Properties.Type == MSM.Safety.Server.Common.Enumerations.ZoneTypes.Temporary))
-            //    {
-            //        sections.AddRange(zone.Sections);
-            //    }
-            //    this._sections = sections.ToArray();
-            //   // this._locations = locations;
-            //    //this._positions = positions;
-            //    this._fly_zone = zones.FirstOrDefault(p => p.Properties.Type == MSM.Safety.Server.Common.Enumerations.ZoneTypes.Fly);
-            //    this._fences = Handlers.DBAccess.GetFences().Select(p => new vmFence(p)).ToArray();
-            //    this._requests = requests.Where(p => p.RequestType.ShowOnLayout).ToArray();
-            //   // this._machines = machines;
-            //    this._temporary_drawing = new vmZoneTemporaryDrawing();
-            //    this._temporary_drawing.Enabled = false;
-
-            //   // this.AllMachine = this._machines.ToDictionary(o => o.Properties.Name, o => (object)o.Properties);
-            //   // this.MachineSelected = this._machines.ToDictionary(o => o.Properties.Name, o => (object)o.Properties);
-            //    this._yards = yards.Select(p => new vmYard(p)).ToArray();
-            //    this._yards[0].Enabled = true;
-            //    this.AllEnableComponents = new Dictionary<string, object>();
-            //    this.AllEnableComponentsSelected = new Dictionary<string, object>();
-
-            //    this.AllEnableComponents.Add("Request", (object)FeatureLayoutTypes.IsRequestVisible);
-            //    this.AllEnableComponents.Add("Locations", (object)FeatureLayoutTypes.IsLayerVisible);
-            //    this.AllEnableComponents.Add("Fences", (object)FeatureLayoutTypes.IsFenceVisible);
-            //    this.AllEnableComponents.Add("Positions", (object)FeatureLayoutTypes.IsPositionVisible);
-            //    this.AllEnableComponentsSelected.Add("Request", (object)FeatureLayoutTypes.IsRequestVisible);
-            //    this.AllEnableComponentsSelected.Add("Fences", (object)FeatureLayoutTypes.IsFenceVisible);
-            //    this.AllEnableComponentsSelected.Add("Positions", (object)FeatureLayoutTypes.IsPositionVisible);
-            //    this._zone_machine = Handlers.DBAccess.GetZoneMachines();
-            //    ShowZones();
-
-
-            //    this._layoutElementSem = new AutoResetEvent(false);
-            //    this._layoutElementLock = new object();
-            //    this._lstLayoutElements = new ObservableCollection<object>();
-            //    this.PaintLayoutElement();
-            //    BindingOperations.EnableCollectionSynchronization(this._lstLayoutElements, this._layoutElementLock);
-            //    RdTrace.Debug("End Layout");
-            //}
         }
         #endregion
 
         #region Properties
-        //public vmZoneSection[] Sections
-        //{
-        //    get { return this._sections; }
-        //    set
-        //    {
-        //        if (this._sections != value)
-        //        {
-        //            this._sections = value;
-
-        //            OnPropertyChanged("Sections");
-        //            OnPropertyChanged("LayoutElements");
-        //        }
-        //    }
-        //}
-
-        //public vmLocation[] Locations
-        //{
-        //    get { return this._locations; }
-        //    set
-        //    {
-        //        if (this._locations != value)
-        //        {
-        //            this._locations = value;
-
-        //            OnPropertyChanged("Locations");
-        //            OnPropertyChanged("LayoutElements");
-        //        }
-        //    }
-        //}
-
-        //public vmFence[] Fences
-        //{
-        //    get { return this._fences; }
-        //    set
-        //    {
-        //        if (this._fences != value)
-        //        {
-        //            this._fences = value;
-
-        //            OnPropertyChanged("Fences");
-        //            OnPropertyChanged("LayoutElements");
-        //        }
-        //    }
-        //}
-
-        //public vmPosition[] Positions
-        //{
-        //    get { return this._positions; }
-        //    set
-        //    {
-        //        if (this._positions != value)
-        //        {
-        //            this._positions = value;
-
-        //            OnPropertyChanged("Positions");
-        //            OnPropertyChanged("LayoutElements");
-        //        }
-        //    }
-        //}
-        //public vmZone FlyZone
-        //{
-        //    get { return this._fly_zone; }
-        //    set
-        //    {
-        //        if (this._fly_zone != value)
-        //        {
-        //            this._fly_zone = value;
-
-        //            OnPropertyChanged("FlyZone");
-        //        }
-        //    }
-        //}
-
-        //public vmRequest[] Requests
-        //{
-        //    get { return this._requests; }
-        //    set
-        //    {
-        //        if (this._requests != value)
-        //        {
-        //            this._requests = value;
-
-        //            OnPropertyChanged("Requests");
-        //            OnPropertyChanged("LayoutElements");
-        //        }
-        //    }
-        //}
-
-        //public vmMachine[] Machines
-        //{
-        //    get { return this._machines; }
-        //    set
-        //    {
-        //        if (this._machines != value)
-        //        {
-        //            this._machines = value;
-
-        //            OnPropertyChanged("Machines");
-        //            OnPropertyChanged("LayoutElements");
-        //        }
-        //    }
-        //}
-
-        //public vmYard[] Yards
-        //{
-        //    get { return this._yards; }
-        //    set
-        //    {
-        //        if (this._yards != value)
-        //        {
-        //            this._yards = value;
-
-        //            this.OnPropertyChanged("Yards");
-        //        }
-        //    }
-        //}        
+      
 
         public ObservableCollection<object> LayoutElements
         {
@@ -278,19 +113,6 @@ namespace MSM.HMI.Safety.Operation.ViewModels
             }
         }
 
-        //public vmZoneTemporaryDrawing TemporaryDrawing
-        //{
-        //    get { return this._temporary_drawing; }
-        //    set
-        //    {
-        //        if (this._temporary_drawing != value)
-        //        {
-        //            this._temporary_drawing = value;
-
-        //            OnPropertyChanged("TemporaryDrawing");
-        //        }
-        //    }
-        //}
 
         public bool IsInverted
         {
@@ -495,14 +317,26 @@ namespace MSM.HMI.Safety.Operation.ViewModels
                 }
             }
         }
+        public class CounterMessage : Window
+        {
+            public CounterMessage(string message)
+            {
+                this.Message = message;
+            }
 
+            public string Message
+            {
+                get;
+                set;
+            }
+        }
 
 
 
         #endregion
 
         #region Create Zone command
-       // public Func<vmZoneTemporaryDrawing, bool> CreateTemporaryZoneAction { get; set; }
+        // public Func<vmZoneTemporaryDrawing, bool> CreateTemporaryZoneAction { get; set; }
 
         private ICommand _CreateTemporaryZoneCommand;
         public ICommand CreateTemporaryZoneCommand
@@ -849,7 +683,8 @@ namespace MSM.HMI.Safety.Operation.ViewModels
         {
             if(parameter.ToString() == "EntryWest")
             {
-
+                ZoneDetail generalDetails = new ZoneDetail();
+                generalDetails.Show();
             }
         }
         #endregion
