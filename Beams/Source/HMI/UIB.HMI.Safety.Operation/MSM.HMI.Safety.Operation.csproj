@@ -51,6 +51,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ClassLibrary2">
+      <HintPath>C:\Users\Janus\source\repos\ClassLibrary2\ClassLibrary2\bin\Debug\netstandard2.0\ClassLibrary2.dll</HintPath>
+    </Reference>
     <Reference Include="Janus.Rodeo.Windows.Library.Rd_Cfg, Version=1.0.8251.22719, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_Cfg.dll</HintPath>
@@ -146,6 +149,7 @@
     <Compile Include="ViewModels\vmLayoutZoneSection.cs" />
     <Compile Include="ViewModels\vmMainCommon.cs" />
     <Compile Include="ViewModels\vmMainDesktop.cs" />
+    <Compile Include="ViewModels\vmZoneDetail.cs" />
     <Compile Include="Views\UserControls\usrLayout.xaml.cs">
       <DependentUpon>usrLayout.xaml</DependentUpon>
     </Compile>

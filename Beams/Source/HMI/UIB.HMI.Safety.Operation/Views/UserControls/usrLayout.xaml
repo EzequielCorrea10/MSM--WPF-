@@ -450,75 +450,10 @@
     <DockPanel LastChildFill="False" HorizontalAlignment="Center">
         <Grid DockPanel.Dock="Top">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
-                <!--<ToggleButton Style="{StaticResource btnCheck}" Width="100" Height="35" FontSize="16" Margin="5,0,0,0" Foreground="WhiteSmoke" VerticalAlignment="Center" HorizontalAlignment="Center" 
-                              Content="T. Zones" IsChecked="{Binding Path=IsTemporaryZoneVisible, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
-                              ToolTipService.ToolTip="Show/Hide the defined temporary zones"/>-->
-
-                <!--<ToggleButton Style="{StaticResource btnCheck}" Width="100" Height="35" FontSize="16" Margin="5,0,0,0" Foreground="WhiteSmoke" VerticalAlignment="Center" HorizontalAlignment="Center" 
-                              Content="TO Route" IsChecked="{Binding Path=IsTransportOrderVisible, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
-                              ToolTipService.ToolTip="Show/Hide the route of the active transport orders"/>
-
-                <ToggleButton Style="{StaticResource btnCheck}" Width="100" Height="35" FontSize="16" Margin="5,0,0,0" Foreground="WhiteSmoke" VerticalAlignment="Center" HorizontalAlignment="Center" 
-                              Content="Machines" IsChecked="{Binding Path=IsMachineVisible, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
-                              ToolTipService.ToolTip="Show/Hide the machines"/>-->
-
-                <!--<StackPanel Orientation="Horizontal" Margin="10,0,0,0" HorizontalAlignment="Right" VerticalAlignment="Center">
-                    <Label Content="Features:" Style="{StaticResource TransOptionLabel}" FontSize="18" FontWeight="SemiBold" Width="90" Margin="0,0,0,0" Padding="0,0,10,0" HorizontalAlignment="Right" HorizontalContentAlignment="Right" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
-                    <jctr:MultiSelectComboBox FontSize="15" FontWeight="SemiBold" Width="220" ItemAlignment="Left"
-                                                          ItemsSource="{Binding Path=AllEnableComponents, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
-                                                          SelectedItems="{Binding Path=AllEnableComponentsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                              SelectedItemsChanged="MultiSelectComboBox_SelectedItemsChanged"/>
-                </StackPanel>-->
-
-
-                <!--<StackPanel  Orientation="Horizontal" Margin="5,0,0,0" HorizontalAlignment="Right" VerticalAlignment="Center">
-                    <ListBox  ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" ItemContainerStyle="{StaticResource Lststyle}" Background="Transparent" BorderBrush="Transparent" ItemsSource="{Binding Path=Yards, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}">
-                        <ListBox.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <WrapPanel Background="Transparent"></WrapPanel>
-                            </ItemsPanelTemplate>
-                        </ListBox.ItemsPanel>
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left">
-                                    <Button Style="{StaticResource btnSelected}" Width="70" Height="35" FontSize="16" Margin="5,0,0,0" Foreground="WhiteSmoke" VerticalAlignment="Center" HorizontalAlignment="Center" 
-                                        Content="{Binding Path=ShortDescription, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Click="btnSelectYard1_Click" Tag="{Binding Path=.}" ToolTipService.ToolTip="Show bay" 
-                                        Command="{Binding Path=DataContext.SelectYardCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding Path=., Mode=OneTime}"/>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
-                </StackPanel>-->
-
-                <!--<StackPanel Orientation="Horizontal" Margin="20,0,0,0" HorizontalAlignment="Right" VerticalAlignment="Center">
-                    <Label Content="Zones By Machine:" Style="{StaticResource TransOptionLabel}" FontSize="18" FontWeight="SemiBold" Width="170" Margin="0,0,0,0" Padding="0,0,10,0" HorizontalAlignment="Right" HorizontalContentAlignment="Right" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
-                    <jctr:MultiSelectComboBox FontSize="15" FontWeight="SemiBold" Width="120" ItemAlignment="Left"
-                                                          ItemsSource="{Binding Path=AllMachine, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
-                                                          SelectedItems="{Binding Path=MachineSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedItemsChanged="MultiSelectMachineComboBox_SelectedItemsChanged"/>
-
-
-
-                </StackPanel>-->
-
-                <!--<StackPanel Orientation="Horizontal" Margin="20,0,0,0" HorizontalAlignment="Right" VerticalAlignment="Center">
-                    <StackPanel.Style>
-                        <Style TargetType="StackPanel">
-                            <Setter Property="Visibility" Value="Visible" />
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Path=FlyZone.Enabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Value="{x:Null}">
-                                    <Setter Property="Visibility" Value="Collapsed" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </StackPanel.Style>
-
-                    <lctr:usrLightIndicator LightOn="{Binding Path=FlyZone.Enabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" IsLightOnGreen="True" IsLightOffRed="True" Width="35" Height="35" />
-                    <Button Content="RUNWAY CATWALK" Height="35" Width="170" FontSize="16" Foreground="White" Style="{StaticResource btnLink}" Padding="0,2,0,0" Command="{Binding Path=FlyZone.ZoneDetailsCommand}" />
-                </StackPanel>-->
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,120,0">
-                <ToggleButton x:Name="btnArrow" Margin="0" Template="{StaticResource btnArrow}" Click="btnArrow_Click" IsChecked="False" ToolTip="Allow the user to create temporary zone directly on the layout"/>
+                <ToggleButton x:Name="btnArrow" Margin="0" Template="{StaticResource btnArrow}" Click="btnArrow_Click" IsChecked="False" ToolTip="Allow the user to create temporary zone directly on the layout" Checked="btnArrow_Checked"/>
                 <ToggleButton x:Name="btnHand" Margin="0" Template="{StaticResource btnHand}" Click="btnMove_Click" IsChecked="False" ToolTip="Allow the user to move the layout using the mouse / touch"/>
                 <ToggleButton x:Name="btnBinocular" Margin="0" Template="{StaticResource btnBinocular}" Click="btnZoom_Click" IsChecked="False" ToolTip="Allow the user to make zoom on the layout"/>
             </StackPanel>
@@ -593,34 +528,14 @@
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.001 0.01">
                                     <GradientStop Offset="0.5" Color="Black"/>
-                                    <GradientStop Offset="0.5" Color="White"/>
-                                    <GradientStop Offset="0.5" Color="Gray"/>
+                                    <GradientStop Offset="0.5" Color="DimGray"/>
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
                         </Rectangle>
+                        
                         <Button Margin="0,39,52,439" Width="Auto" Height="Auto" Opacity="0" Command="{Binding Path=DataContext.FooCommand , RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
                         CommandParameter="EntryWest">
                         </Button>
-                        <!--<Border x:Name="Border"
-                                            Width="{TemplateBinding Width}" Height="{TemplateBinding Height}"
-                                            Background="{Binding Path=ButtonFillColor}"
-                                            BorderThickness="{TemplateBinding BorderThickness}"
-                                            BorderBrush="{TemplateBinding BorderBrush}"
-                                            VerticalAlignment="Center"
-                                            HorizontalAlignment="Center">
-                            <TextBlock x:Name="Label"
-                                                   Text="{Binding Path=Properties.ShowText}" FontWeight="{TemplateBinding FontWeight}" FontSize="{TemplateBinding FontSize}" Foreground="{TemplateBinding Foreground}" Background="{TemplateBinding Background}"
-                                                   Margin="2" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center">
-                                <TextBlock.Style>
-                                    <Style TargetType="TextBlock" >
-                                        <Style.Triggers>
-                                            <DataTrigger Binding="{Binding Path=DataContext.IsInverted, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" Value="True"/>
-                                            <DataTrigger Binding="{Binding Path=DataContext.IsInverted, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" Value="True"/>
-                                        </Style.Triggers>
-                                    </Style>
-                                </TextBlock.Style>
-                            </TextBlock>
-                        </Border>-->
 
                         <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="202,114,1268,505"/>
                         <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="709,114,761,505"/>
@@ -634,8 +549,7 @@
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.001 0.01">
                                     <GradientStop Offset="0.5" Color="Black"/>
-                                    <GradientStop Offset="0.5" Color="White"/>
-                                    <GradientStop Offset="0.5" Color="Orange"/>
+                                    <GradientStop Offset="0.5" Color="DarkSlateGray"/>
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
                             <Rectangle.InputBindings>
@@ -658,8 +572,7 @@
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.001 0.01">
                                     <GradientStop Offset="0.5" Color="Black"/>
-                                    <GradientStop Offset="0.5" Color="White"/>
-                                    <GradientStop Offset="0.5" Color="Gray"/>
+                                    <GradientStop Offset="0.5" Color="DimGray"/>
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
                             <Rectangle.InputBindings>

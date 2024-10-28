@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media;
 
+
 namespace MSM.HMI.Safety.Operation.ViewModels
 {
     using Janus.Rodeo.Windows.Library.Rd_Log;
@@ -18,6 +20,9 @@ namespace MSM.HMI.Safety.Operation.ViewModels
     using Janus.Rodeo.Windows.Library.UI.Controls;
     using Janus.Rodeo.Windows.Library.UI.Controls.Helpers;
     using Janus.Rodeo.Windows.Library.UI.Controls.Widgets;
+    using Janus.Rodeo.Windows.Library.UI.Common;
+    using RodeoTagWrapper;
+
 
     using MSM.Database;
     using MSM.HMI.Safety.Operation.Enumerations;
@@ -26,13 +31,14 @@ namespace MSM.HMI.Safety.Operation.ViewModels
     //using MSM.Database;
     using MSM.Utility.Configuration;
     using MSM.Utility.Common.Catalogs;
-    using Janus.Rodeo.Windows.Library.UI.Common;
     using System.Windows;
     using MSM.HMI.Safety.Operation.Views.Windows;
+    using System.Reflection;
+    using System.IO;
 
     //using MSM.HMI.Safety.Operation.Enumerations;
 
-    internal class vmLayout : ModelViewBase
+    public class vmLayout : ModelViewBase
     {
         #region private attributes
       //  private vmZoneSection[] _sections;
@@ -59,6 +65,7 @@ namespace MSM.HMI.Safety.Operation.ViewModels
         private bool _machine_visible;
         private bool _requests_visible;
         private bool _general_layout;
+        private string _zone_name;
 
         private Dictionary<string, object> _allMachine;
         private Dictionary<string, object> _machineSelected;
@@ -143,6 +150,36 @@ namespace MSM.HMI.Safety.Operation.ViewModels
                     this._temporary_zone_visible = value;
 
                     OnPropertyChanged("IsTemporaryZoneVisible");
+                }
+            }
+        }
+
+        public string ZoneName
+        {
+            get { return this._zone_name; }
+            set
+            {
+                if (this._zone_name != value)
+                {
+                    this._zone_name = value;
+
+                   this.OnPropertyChanged("ZoneName");
+
+                }
+            }
+        }
+
+        public string Beams
+        {
+            get { return this._zone_name; }
+            set
+            {
+                if (this._zone_name != value)
+                {
+                    this._zone_name = value;
+
+                    this.OnPropertyChanged("ZoneName");
+
                 }
             }
         }
@@ -681,12 +718,22 @@ namespace MSM.HMI.Safety.Operation.ViewModels
 
         private void SendExecute(object parameter)
         {
-            if(parameter.ToString() == "EntryWest")
-            {
-                ZoneDetail generalDetails = new ZoneDetail();
-                generalDetails.Show();
-            }
+
+            var test = RodeoTagWrapper.WriteTextTag("MSM.CBED_COLLECTINGBEDENTRYEAST_BEAMS", "test");
+            var test2 = RodeoTagWrapper.ReadTextTag("MSM.CBED_COLLECTINGBEDENTRYEAST_BEAMS");
+
+            ZoneName = parameter.ToString();
+            Beams = parameter.ToString();
+            vmZoneDetail generalDetail0s = new vmZoneDetail(parameter.ToString(), "test");
+
+            ZoneDetail zoneDetail = new ZoneDetail(this);
+
+            zoneDetail.ShowDialog();
+
         }
+
+
         #endregion
+
     }
 }

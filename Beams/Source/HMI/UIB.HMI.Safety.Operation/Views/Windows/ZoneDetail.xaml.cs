@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MSM.HMI.Safety.Operation.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,12 +20,19 @@ namespace MSM.HMI.Safety.Operation.Views.Windows
     /// </summary>
     public partial class ZoneDetail : Window
     {
-        public ZoneDetail()
+        #region private attributes
+        private vmZoneDetail controller;
+        #endregion
+        public ZoneDetail(vmLayout layout)
         {
             InitializeComponent();
 
+            this.controller = new vmZoneDetail(layout.ZoneName, layout.Beams);
+
             this.Loaded += winEStopDetails_Loaded;
             this.Closing += winEStopDetails_Closing;
+            this.DataContext = this.controller;
+
         }
 
         private void winEStopDetails_Loaded(object sender, RoutedEventArgs e)

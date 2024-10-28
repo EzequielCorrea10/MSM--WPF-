@@ -9,7 +9,7 @@
                   xmlns:view="clr-namespace:MSM.HMI.Safety.Operation.Views"              
                   WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize" BorderThickness="10" Effect="{StaticResource showEffectWindow}"
                   SizeToContent="WidthAndHeight" WindowStartupLocation="CenterOwner" FontStretch="Condensed" Background="Transparent" 
-        Title="ZoneDetail" Height="300" Width="800">
+        Title="ZoneDetail" Height="300" Width="Auto">
     <Window.Resources>
         <Style TargetType="ScrollBar">
             <Setter Property="Width" Value="50" />
@@ -56,9 +56,9 @@
 
                         <Border Grid.Row="0" BorderThickness="1" CornerRadius="5" Background="White" Margin="140,0,260,10" Grid.ColumnSpan="3" >
                             <TextBox Style="{StaticResource txtReadOnly}" 
-                                             FontSize="18" FontWeight="SemiBold" Width="600" Height="30" Margin="0,0,0,0" 
+                                             FontSize="18" FontWeight="SemiBold" Width="Auto" Height="30" Margin="0,0,0,0" 
                                              TextAlignment="Center" 
-                                     Text="{Binding Path=Properties.Name, Mode=OneTime}" Cursor="Arrow" />
+                                             Text="{Binding Path= ZoneName, Mode=OneTime,UpdateSourceTrigger=PropertyChanged}"/>
                         </Border>
 
                         <Label Grid.Column="0" Grid.Row="1" Content="Beam/s:" Style="{StaticResource TransOptionLabel}" FontSize="20" FontWeight="Bold" Margin="0,16,0,0" Padding="10,0,0,0" 
@@ -66,9 +66,9 @@
 
                         <Border Grid.Row="1" BorderThickness="1" CornerRadius="5" Background="White" Margin="140,10,260,0" Grid.ColumnSpan="3" >
                             <TextBox Style="{StaticResource txtReadOnly}" 
-                                             FontSize="18" FontWeight="SemiBold" Width="600" Height="30" Margin="0,0,0,0" 
+                                             FontSize="18" FontWeight="SemiBold" Width="Auto" Height="30" Margin="0,0,0,0" 
                                              TextAlignment="Center" 
-                                     Text="{Binding Path=Properties.Name, Mode=OneTime}" Cursor="Arrow" />
+                                             Text="{Binding Path= Beams, Mode=OneTime,UpdateSourceTrigger=PropertyChanged}"/>
                         </Border>
                     </Grid>
                 </Border>

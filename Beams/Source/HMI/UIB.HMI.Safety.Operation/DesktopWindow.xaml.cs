@@ -268,22 +268,6 @@ namespace MSM.HMI.Safety.Operation
         //    generalDetails.ShowDialog();
         //}
 
-        private void OpenEStopGroupsWindow()
-        {
-            bool result = false;
-
-            ZoneDetail eStopsDetails = new ZoneDetail();
-            eStopsDetails.Owner = this;
-            eStopsDetails.Closed += ((s, ev) =>
-            {
-                if (((Window)s).DialogResult.HasValue)
-                {
-                    result = ((Window)s).DialogResult.Value;
-                }
-            });
-            eStopsDetails.ShowDialog();
-        }
-
         //private void OpenPanelsEStopWindow()
         //{
         //    winPanelsDetails generalDetails = new winPanelsDetails(this.controller.EStopController);

@@ -130,8 +130,6 @@ namespace MSM.HMI.Safety.Operation.Views
         }
 
 
-
-
         private void btnSelectYard1_Click(object sender, RoutedEventArgs e)
         {            
             //Button _button = (Button)sender;
@@ -150,6 +148,11 @@ namespace MSM.HMI.Safety.Operation.Views
         {
             vmLayout data = (vmLayout)this.DataContext;
             data.ShowCommand.Execute(sender);
+        }
+
+        private void btnArrow_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

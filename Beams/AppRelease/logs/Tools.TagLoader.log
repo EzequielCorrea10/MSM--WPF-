@@ -6319,3 +6319,8 @@
 2024-10-25 10:38:40.199: LoadClientTypes, Debug: 6 Rows defined for Client types
 2024-10-25 10:38:40.391: LoadClients, Debug: 8 Rows defined for Clients
 2024-10-25 10:38:44.796: Init, Debug: RTS Driver counter: 1
+2024-10-28 11:51:20.447: InitializeRegister, Message: ********** Start the application **********
+2024-10-28 11:51:20.463: InitializeRegister, Message: Information of PID=41688, Process=TagLoader, Arguments=
+2024-10-28 11:51:20.439: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-10-28 11:51:20.630: LoadClients, Debug: 8 Rows defined for Clients
+2024-10-28 11:51:23.469: Init, Debug: RTS Driver counter: 1
