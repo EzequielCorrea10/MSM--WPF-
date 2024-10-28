@@ -33,9 +33,7 @@ namespace MSM.HMI.Safety.Operation.Views
         {
             InitializeComponent();
 
-            this.btnHand.IsChecked = true;
 
-            this.btnMove_Click(null, null);
         }
 
         #endregion
@@ -93,40 +91,13 @@ namespace MSM.HMI.Safety.Operation.Views
             }
         }
 
-        private void btnArrow_Click(object sender, RoutedEventArgs e)
-        {
-            //this.btnArrow.IsChecked = true;
-            this.btnHand.IsChecked = false;
-            this.btnBinocular.IsChecked = false;
-
-
-            MSM.HMI.Safety.Operation.Behaviours.TouchScrolling.SetIsEnabled(this.scrollXY, false);
-            MSM.HMI.Safety.Operation.Behaviours.TouchZoom.SetIsEnabled(this.scrollXY, false);
-            MSM.HMI.Safety.Operation.Behaviours.TouchDrawing.SetIsEnabled(this.scrollXY, this.btnArrow.IsChecked ?? false);
-        }
-
-        private void btnMove_Click(object sender, RoutedEventArgs e)
-        {
-            this.btnArrow.IsChecked = false;
-            //this.btnHand.IsChecked = true;
-            this.btnBinocular.IsChecked = false;
-
-
-            MSM.HMI.Safety.Operation.Behaviours.TouchDrawing.SetIsEnabled(this.scrollXY, false);
-            MSM.HMI.Safety.Operation.Behaviours.TouchZoom.SetIsEnabled(this.scrollXY, false);
-            MSM.HMI.Safety.Operation.Behaviours.TouchScrolling.SetIsEnabled(this.scrollXY, this.btnHand.IsChecked ?? false);
-        }
 
         private void btnZoom_Click(object sender, RoutedEventArgs e)
         {
-            this.btnArrow.IsChecked = false;
-            this.btnHand.IsChecked = false;
-
-            //this.btnBinocular.IsChecked = true;
-
-            MSM.HMI.Safety.Operation.Behaviours.TouchDrawing.SetIsEnabled(this.scrollXY, false);
-            MSM.HMI.Safety.Operation.Behaviours.TouchScrolling.SetIsEnabled(this.scrollXY, false);
-            MSM.HMI.Safety.Operation.Behaviours.TouchZoom.SetIsEnabled(this.scrollXY, this.btnBinocular.IsChecked ?? false);
+            West.Visibility = (West.Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
+            East.Visibility = (East.Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
+            WestD.Visibility = (WestD.Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
+            EastD.Visibility = (EastD.Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
         }
 
 
@@ -152,7 +123,16 @@ namespace MSM.HMI.Safety.Operation.Views
 
         private void btnArrow_Checked(object sender, RoutedEventArgs e)
         {
+            West.Visibility = West.Visibility;
+            West.Visibility = West.Visibility;
 
         }
+
+        private void btnBinocular_Checked(object sender, RoutedEventArgs e)
+        {
+            West.Visibility = (West.Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
+            East.Visibility = (East.Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
+        }
+
     }
 }

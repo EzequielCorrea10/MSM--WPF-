@@ -33,6 +33,7 @@
         <BitmapImage x:Key="Img_Cardinals_2" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Images/cardinals_2.png" RenderOptions.BitmapScalingMode="HighQuality" />
         <BitmapImage x:Key="RightArrow" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Icons/rightArrow.png" RenderOptions.BitmapScalingMode="HighQuality" />
         <BitmapImage x:Key="DownArrow" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Icons/coilDrop.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="DownArrow2" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Icons/camera.png" RenderOptions.BitmapScalingMode="HighQuality" />
         <!-- Pixel  -->
         <sys:Double x:Key="LWidth">1500</sys:Double>
         <sys:Double x:Key="LHeight">665</sys:Double>
@@ -159,7 +160,7 @@
             </ControlTemplate.Triggers>
         </ControlTemplate>
 
-        <ControlTemplate x:Key="btnBinocular" TargetType="{x:Type ToggleButton}">
+        <ControlTemplate x:Key="btnBinocular" TargetType="{x:Type Button}">
             <Border Name="brdBinocular" Width="50" Height="30" BorderThickness="0.3,1,1,1" BorderBrush="Gray" Cursor="Hand">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
@@ -169,9 +170,9 @@
                         <GradientStop Offset="1" Color="#FF252525" />
                     </LinearGradientBrush>
                 </Border.Background>
-                <Image Source="{StaticResource img_Binocular}" Width="40" Height="30" RenderOptions.BitmapScalingMode="Fant">
+                <Image Source="{StaticResource DownArrow2}" Width="40" Height="30" RenderOptions.BitmapScalingMode="Fant" Margin="5,0,4,0" VerticalAlignment="Top">
                     <Image.Effect>
-                        <DropShadowEffect ShadowDepth = "3" Direction = "320" Color = "#BF373737" Opacity = "0.7" BlurRadius = "2" />
+                        <DropShadowEffect ShadowDepth = "3" Direction = "320" Color = "Gray" Opacity = "0.7" BlurRadius = "2" />
                     </Image.Effect>
                 </Image>
             </Border>
@@ -187,19 +188,6 @@
                             </LinearGradientBrush>
                         </Setter.Value>
                     </Setter>
-                </Trigger>
-                <Trigger Property="IsChecked" Value="true">
-                    <Setter Property="Background" TargetName="brdBinocular">
-                        <Setter.Value>
-                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
-                                <GradientStop Offset="0" Color="#FF686868" />
-                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
-                                <GradientStop Offset="0.5" Color="#FF9B9B9B" />
-                                <GradientStop Offset="1" Color="#FF686868" />
-                            </LinearGradientBrush>
-                        </Setter.Value>
-                    </Setter>
-                    <Setter Property="Cursor" TargetName="brdBinocular" Value="Arrow"/>
                 </Trigger>
             </ControlTemplate.Triggers>
         </ControlTemplate>
@@ -453,39 +441,9 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,120,0">
-                <ToggleButton x:Name="btnArrow" Margin="0" Template="{StaticResource btnArrow}" Click="btnArrow_Click" IsChecked="False" ToolTip="Allow the user to create temporary zone directly on the layout" Checked="btnArrow_Checked"/>
-                <ToggleButton x:Name="btnHand" Margin="0" Template="{StaticResource btnHand}" Click="btnMove_Click" IsChecked="False" ToolTip="Allow the user to move the layout using the mouse / touch"/>
-                <ToggleButton x:Name="btnBinocular" Margin="0" Template="{StaticResource btnBinocular}" Click="btnZoom_Click" IsChecked="False" ToolTip="Allow the user to make zoom on the layout"/>
+                <Button x:Name="btnBinocular" Margin="0" Template="{StaticResource btnBinocular}" Click="btnZoom_Click"  ToolTip="Allow the user to make zoom on the layout"/>
             </StackPanel>
 
-
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,-60,0,0">
-                <Image Height="100" Width="100" Source="{StaticResource Img_Cardinals_1}" RenderOptions.BitmapScalingMode="HighQuality">
-                    <Image.Style>
-                        <Style TargetType="Image">
-                            <Setter Property="Visibility" Value="Visible" />
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Path=IsInverted, Mode=OneTime}" Value="True">
-                                    <Setter Property="Visibility" Value="Collapsed" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Image.Style>
-                </Image>
-
-                <Image Height="100" Width="100" Source="{StaticResource Img_Cardinals_2}" RenderOptions.BitmapScalingMode="HighQuality">
-                    <Image.Style>
-                        <Style TargetType="Image">
-                            <Setter Property="Visibility" Value="Collapsed" />
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Path=IsInverted, Mode=OneTime}" Value="True">
-                                    <Setter Property="Visibility" Value="Visible" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Image.Style>
-                </Image>
-            </StackPanel>
 
         </Grid>
 
@@ -522,9 +480,13 @@
                 <Grid Style="{StaticResource grdBackground}" Margin="0">
 
                     <Grid >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1323*"/>
+                            <ColumnDefinition Width="197*"/>
+                        </Grid.ColumnDefinitions>
                         <Rectangle Margin="0,39,52,439" 
                        Stroke="White"  
-                       StrokeThickness="2">
+                       StrokeThickness="2" Grid.ColumnSpan="2">
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.001 0.01">
                                     <GradientStop Offset="0.5" Color="Black"/>
@@ -532,14 +494,18 @@
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
                         </Rectangle>
-                        
-                        <Button Margin="0,39,52,439" Width="Auto" Height="Auto" Opacity="0" Command="{Binding Path=DataContext.FooCommand , RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
-                        CommandParameter="EntryWest">
+
+                        <Button Margin="0,118,52,519" Width="Auto" Height="Auto" Opacity="0" Command="{Binding Path=DataContext.FooCommand , RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                        CommandParameter="EntryWest" Grid.ColumnSpan="2">
                         </Button>
 
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="202,114,1268,505"/>
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="709,114,761,505"/>
-                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1310,114,160,505"/>
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="202,114,1071,505"/>
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="709,114,564,505"/>
+                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1310,114,160,505" Grid.ColumnSpan="2"/>
+
+                        <Border x:Name="West" BorderThickness="2,2" BorderBrush="Red" Margin="2,41,922,441" Visibility="Hidden" />
+                        <Border x:Name="East" BorderThickness="2,2" BorderBrush="Red" Margin="1204,41,54,441" Visibility="Hidden"  Grid.ColumnSpan="2"/>
+
                     </Grid>
 
                     <Grid>
@@ -557,8 +523,8 @@
                                             CommandParameter="Queue" />
                             </Rectangle.InputBindings>
                         </Rectangle>
-                        
-                        
+
+
                         <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="202,324,1268,295"/>
                         <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="709,324,761,295" RenderTransformOrigin="-0.84,0.66"/>
                         <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1310,324,160,295"/>
@@ -583,6 +549,9 @@
                         <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="202,518,1268,101"/>
                         <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="709,518,761,101" RenderTransformOrigin="-0.26,0.52"/>
                         <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="1310,518,160,101" RenderTransformOrigin="-0.26,0.52"/>
+                        
+                        <Border x:Name="WestD" BorderThickness="2,2" BorderBrush="Red" Visibility="Hidden" Margin="52,433,1119,49" />
+                        <Border x:Name="EastD" BorderThickness="2,2" BorderBrush="Red" Visibility="Hidden" Margin="1140,433,2,49"/>
 
                     </Grid>
 

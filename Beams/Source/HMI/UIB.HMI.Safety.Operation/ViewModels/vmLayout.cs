@@ -665,49 +665,6 @@ namespace MSM.HMI.Safety.Operation.ViewModels
                     this._layoutElementSem.WaitOne();
 
                     RdTrace.Debug("Reset Layout Element");
-
-                    //for (int i = 0; i < this._sections.Length; i++)
-                    //{
-                    //    this._lstLayoutElements.Add(this._sections[i]);
-                    //}
-                   
-                    //for (int i = 0; i < this._machines.Length; i++)
-                    //{
-                    //    this._lstLayoutElements.Add(this._machines[i]);
-                    //}
-
-                                                          
-
-                    //this._lstLayoutElements.Add(this._temporary_drawing);
-
-                    //for (int i = 0; i < this._fences.Length; i++) 
-                    //{
-                    //    this._lstLayoutElements.Add(this._fences[i]);
-                    //}
-
-                    //for (int i = 0; i < this._requests.Length; i++)
-                    //{
-                    //    this._lstLayoutElements.Add(this._requests[i]);
-                    //}
-
-                    //for (int y = 0; y < this._machines.Length; y++) 
-                    //{
-                    //    for (int i = 0; i < this._machines[y].TransportOrder.Steps.Length; i++) 
-                    //    {
-                    //        this._lstLayoutElements.Add(this._machines[y].TransportOrder.Steps[i]);
-                    //    }
-                    //}
-
-                    //for (int i = 0; i < this._positions.Length; i++)
-                    //{
-                    //    this._lstLayoutElements.Add(this._positions[i]);
-                    //}
-
-                    //indexLocation = this._lstLayoutElements.Count;
-                    //for (int i = 0; i < this._locations.Length; i++)
-                    //{
-                    //    this._lstLayoutElements.Insert(i + indexLocation, this._locations[i]);
-                    //}
                 }
                 catch (Exception ex)
                 {
