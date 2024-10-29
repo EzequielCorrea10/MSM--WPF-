@@ -102,11 +102,11 @@
       <Project>{f086dbb2-7e1c-4d74-ba45-3b232268f147}</Project>
       <Name>HCM.Utility.Blend.Controls</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MSM.Utility.Common\HCM.Utility.Common.csproj">
+    <ProjectReference Include="..\MSM.Utility.Common\HSM.Utility.Common.csproj">
       <Project>{31883a40-bce4-4242-ae4e-2f627e7d6736}</Project>
       <Name>HCM.Utility.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MSM.Utility.Controls\HCM.Utility.Controls.csproj">
+    <ProjectReference Include="..\MSM.Utility.Controls\HSM.Utility.Controls.csproj">
       <Project>{b9e549e9-3d1f-423d-af0e-5ab0e1047fc3}</Project>
       <Name>HCM.Utility.Controls</Name>
     </ProjectReference>

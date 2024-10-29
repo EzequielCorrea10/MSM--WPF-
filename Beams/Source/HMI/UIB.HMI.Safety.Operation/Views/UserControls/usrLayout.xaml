@@ -480,32 +480,42 @@
 
                 <Grid Style="{StaticResource grdBackground}" Margin="0">
 
-                    <Grid >
+                    <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1323*"/>
                             <ColumnDefinition Width="197*"/>
                         </Grid.ColumnDefinitions>
-                        <Rectangle Margin="78,47,75,432" >
+
+                        <!-- Fondo principal con gradiente -->
+                        <Rectangle Margin="78,47,75,432" IsHitTestVisible="False">
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.001 0.01">
                                     <GradientStop Offset="0.5" Color="Black"/>
                                     <GradientStop Offset="0.5" Color="DimGray"/>
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
-                            <Rectangle.InputBindings>
-                                <MouseBinding Gesture="LeftClick" Command="{Binding Path=DataContext.FooCommand , RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
-                                            CommandParameter="EntryWest" />
-                            </Rectangle.InputBindings>
                         </Rectangle>
 
-
+                        <!-- Imágenes de flechas -->
                         <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="202,114,1256,505" Opacity="0.5"/>
                         <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="712,114,758,505" RenderTransformOrigin="-0.84,0.66" Opacity="0.5"/>
                         <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1268,114,202,505" Opacity="0.5"/>
 
-                        <Border x:Name="West" BorderThickness="5,5" BorderBrush="Red" Margin="79,47,1136,431" />
-                        <Border x:Name="East" BorderThickness="5,5" BorderBrush="Red" Margin="1139,47,75,433"/>
+                        <!-- Collecting BedEntry -->
+                        <Border x:Name="West" BorderThickness="5,5" BorderBrush="Red" Margin="79,47,1136,431"/>
+                        <Rectangle Margin="79,47,1136,431" IsHitTestVisible="True" Fill="Transparent">
+                            <Rectangle.InputBindings>
+                                <MouseBinding Gesture="LeftClick" Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="ExitWest"/>
+                            </Rectangle.InputBindings>
+                        </Rectangle>
 
+                        <!-- Collecting WestEntry -->
+                        <Border x:Name="East" BorderThickness="5,5" BorderBrush="Red" Margin="1139,47,75,433"/>
+                        <Rectangle Margin="1139,47,75,433" IsHitTestVisible="True" Fill="Transparent">
+                            <Rectangle.InputBindings>
+                                <MouseBinding Gesture="LeftClick" Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="ExitWest"/>
+                            </Rectangle.InputBindings>
+                        </Rectangle>
                     </Grid>
 
                     <Grid>
@@ -530,27 +540,37 @@
                     </Grid>
 
                     <Grid Margin="2,-6,-2,6">
-                        <Rectangle Margin="0,436,0,47" HorizontalAlignment="Center" Width="1368" >
+                        <Rectangle Margin="0,436,0,47" HorizontalAlignment="Center" Width="1368" IsHitTestVisible="False">
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.001 0.01">
                                     <GradientStop Offset="0.5" Color="Black"/>
                                     <GradientStop Offset="0.5" Color="DimGray"/>
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
+                        </Rectangle>
+
+                        <!-- Botones de flechas -->
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="202,518,1268,101" Opacity="0.5" />
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="710,518,760,101" RenderTransformOrigin="-0.26,0.52" Opacity="0.5" />
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="1268,518,202,101" RenderTransformOrigin="-0.26,0.52" Opacity="0.5" />
+
+                        <!-- Collecting BedExit -->
+                        <Border x:Name="WestD" BorderThickness="5,5" BorderBrush="Red" Margin="77,435,1136,47" />
+                        <Rectangle Margin="77,435,1136,47" IsHitTestVisible="True" Fill="Transparent">
                             <Rectangle.InputBindings>
-                                <MouseBinding Gesture="LeftClick" Command="{Binding Path=DataContext.FooCommand , RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
-                                            CommandParameter="ExitWest" />
+                                <MouseBinding Gesture="LeftClick" Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="ExitWest" />
                             </Rectangle.InputBindings>
                         </Rectangle>
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="202,518,1268,101" Opacity="0.5"/>
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="710,518,760,101" RenderTransformOrigin="-0.26,0.52" Opacity="0.5"/>
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="1268,518,202,101" RenderTransformOrigin="-0.26,0.52" Opacity="0.5"/>
 
-                        <Border x:Name="WestD" BorderThickness="5,5" BorderBrush="Red"  Margin="77,435,1136,47" />
-                        <Border x:Name="EastD" BorderThickness="5,5" BorderBrush="Red" Margin="1138,435,78,47"/>
-
+                        <!-- Collecting WestExit -->
+                        <Border x:Name="EastD" BorderThickness="5,5" BorderBrush="Red" Margin="1138,435,78,47" />
+                        <Rectangle Margin="1138,435,78,47" IsHitTestVisible="True" Fill="Transparent">
+                            <Rectangle.InputBindings>
+                                <MouseBinding Gesture="LeftClick" Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="ExitWest" />
+                            </Rectangle.InputBindings>
+                        </Rectangle>
                     </Grid>
-
+                    
                     <Grid Name="Outisde">
                         <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,616,76,0" />
                         <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,46,76,0" />

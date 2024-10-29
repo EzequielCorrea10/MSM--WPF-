@@ -1,2 +1,4 @@
 D:\Proyectos\MSM\Beams\Source\DBToXml\UIB.DBToXML.Server.Model\obj\Debug\UIB.DBToXML.Server.Model.csproj.AssemblyReference.cache
 D:\Proyectos\MSM\Beams\Source\DBToXml\UIB.DBToXML.Server.Model\obj\Debug\UIB.DBToXML.Server.Model.csproj.CoreCompileInputs.cache
+D:\Proyectos\HSM\Beams\Source\DBToXml\UIB.DBToXML.Server.Model\obj\Debug\UIB.DBToXML.Server.Model.csproj.AssemblyReference.cache
+D:\Proyectos\HSM\Beams\Source\DBToXml\UIB.DBToXML.Server.Model\obj\Debug\UIB.DBToXML.Server.Model.csproj.CoreCompileInputs.cache

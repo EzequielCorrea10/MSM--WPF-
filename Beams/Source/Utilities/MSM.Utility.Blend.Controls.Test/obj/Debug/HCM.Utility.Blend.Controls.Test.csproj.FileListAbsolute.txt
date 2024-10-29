@@ -44,3 +44,10 @@ D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Blend.Controls.Test\obj\Debu
 D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Blend.Controls.Test\obj\Debug\HCM.Util.14FF086D.Up2Date
 D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Blend.Controls.Test\obj\Debug\MSM.Utility.Blend.Controls.Test.exe
 D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Blend.Controls.Test\obj\Debug\MSM.Utility.Blend.Controls.Test.pdb
+D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls.Test\obj\Debug\HCM.Utility.Blend.Controls.Test.csproj.AssemblyReference.cache
+D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls.Test\obj\Debug\MainWindow.g.cs
+D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls.Test\obj\Debug\App.g.cs
+D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls.Test\obj\Debug\MSM.Utility.Blend.Controls.Test_MarkupCompile.cache
+D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls.Test\obj\Debug\MSM.Utility.Blend.Controls.Test_MarkupCompile.lref
+D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls.Test\obj\Debug\MSM.Utility.Blend.Controls.Test.exe
+D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Blend.Controls.Test\obj\Debug\MSM.Utility.Blend.Controls.Test.pdb

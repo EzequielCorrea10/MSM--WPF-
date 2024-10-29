@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Proyectos\HCM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\
+D:\Proyectos\HSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\
 HSM.HMI.Safety.Operation
 none
 false
 DEBUG;TRACE
-D:\Proyectos\HCM\Beams\Source\HMI\UIB.HMI.Safety.Operation\App.xaml
+D:\Proyectos\HSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\App.xaml
 31296922433
 
 41963164492
-242088381268
+24-20006604
 DesktopWindow.xaml;Views\UserControls\usrLayout.xaml;Views\Windows\ZoneDetail.xaml;
 
 True

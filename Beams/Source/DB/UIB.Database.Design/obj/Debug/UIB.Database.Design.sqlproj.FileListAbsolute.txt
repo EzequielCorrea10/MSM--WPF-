@@ -14,3 +14,9 @@ D:\Proyectos\MSM\Beams\Source\DB\UIB.Database.Design\bin\Debug\UIB.Database.Desi
 D:\Proyectos\MSM\Beams\Source\DB\UIB.Database.Design\obj\Debug\UIB.Database.Design.sqlproj.AssemblyReference.cache
 D:\Proyectos\MSM\Beams\Source\DB\UIB.Database.Design\obj\Debug\UIB.Database.Design.dll
 D:\Proyectos\MSM\Beams\Source\DB\UIB.Database.Design\obj\Debug\UIB.Database.Design.pdb
+D:\Proyectos\HSM\Beams\Source\DB\UIB.Database.Design\bin\Debug\UIB.Database.Design.dacpac
+D:\Proyectos\HSM\Beams\Source\DB\UIB.Database.Design\bin\Debug\UIB.Database.Design.dll
+D:\Proyectos\HSM\Beams\Source\DB\UIB.Database.Design\bin\Debug\UIB.Database.Design.pdb
+D:\Proyectos\HSM\Beams\Source\DB\UIB.Database.Design\obj\Debug\UIB.Database.Design.sqlproj.AssemblyReference.cache
+D:\Proyectos\HSM\Beams\Source\DB\UIB.Database.Design\obj\Debug\UIB.Database.Design.dll
+D:\Proyectos\HSM\Beams\Source\DB\UIB.Database.Design\obj\Debug\UIB.Database.Design.pdb

@@ -5,3 +5,10 @@ D:\Proyectos\MSM\Beams\Source\DBToXml\UIB.DBToXML.Server\obj\Debug\MainWindow.g.
 D:\Proyectos\MSM\Beams\Source\DBToXml\UIB.DBToXML.Server\obj\Debug\App.g.cs
 D:\Proyectos\MSM\Beams\Source\DBToXml\UIB.DBToXML.Server\obj\Debug\UIB.DBToXML.Server_MarkupCompile.cache
 D:\Proyectos\MSM\Beams\Source\DBToXml\UIB.DBToXML.Server\obj\Debug\UIB.DBToXML.Server.g.resources
+D:\Proyectos\HSM\Beams\Source\DBToXml\UIB.DBToXML.Server\obj\Debug\UIB.DBToXML.Server.csproj.AssemblyReference.cache
+D:\Proyectos\HSM\Beams\Source\DBToXml\UIB.DBToXML.Server\obj\Debug\MainWindow.baml
+D:\Proyectos\HSM\Beams\Source\DBToXml\UIB.DBToXML.Server\obj\Debug\App.baml
+D:\Proyectos\HSM\Beams\Source\DBToXml\UIB.DBToXML.Server\obj\Debug\MainWindow.g.cs
+D:\Proyectos\HSM\Beams\Source\DBToXml\UIB.DBToXML.Server\obj\Debug\App.g.cs
+D:\Proyectos\HSM\Beams\Source\DBToXml\UIB.DBToXML.Server\obj\Debug\UIB.DBToXML.Server_MarkupCompile.cache
+D:\Proyectos\HSM\Beams\Source\DBToXml\UIB.DBToXML.Server\obj\Debug\UIB.DBToXML.Server.g.resources
