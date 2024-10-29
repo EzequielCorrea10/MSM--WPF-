@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSM.Database
+namespace HCM.Database
 {
     /// <summary>
     /// types of actions for Database

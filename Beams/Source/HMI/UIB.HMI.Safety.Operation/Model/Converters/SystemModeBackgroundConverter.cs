@@ -7,7 +7,7 @@ using System.Windows;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace MSM.HMI.Safety.Operation.Converters
+namespace HCM.HMI.Safety.Operation.Converters
 {
     public class SystemModeBackgroundConverter : IValueConverter
     {
@@ -15,17 +15,17 @@ namespace MSM.HMI.Safety.Operation.Converters
         {
             Brush background = Brushes.Transparent;
 
-            if (value != null && value is MSM.HMI.Safety.Operation.Enumerations.SystemModes)
+            if (value != null && value is HCM.HMI.Safety.Operation.Enumerations.SystemModes)
             {
-                switch ((MSM.HMI.Safety.Operation.Enumerations.SystemModes)value)
+                switch ((HCM.HMI.Safety.Operation.Enumerations.SystemModes)value)
                 {
-                    case MSM.HMI.Safety.Operation.Enumerations.SystemModes.None:
+                    case HCM.HMI.Safety.Operation.Enumerations.SystemModes.None:
                         background = new SolidColorBrush(Color.FromRgb(0x36, 0x1a, 0x18));
                         break;
-                    case MSM.HMI.Safety.Operation.Enumerations.SystemModes.SomeOne:
+                    case HCM.HMI.Safety.Operation.Enumerations.SystemModes.SomeOne:
                         background = new SolidColorBrush(Color.FromRgb(0x34, 0x28, 0x14));
                         break;
-                    case MSM.HMI.Safety.Operation.Enumerations.SystemModes.All:
+                    case HCM.HMI.Safety.Operation.Enumerations.SystemModes.All:
                         background = new SolidColorBrush(Color.FromRgb(0x29, 0x18, 0x36));
                         break;
                 }

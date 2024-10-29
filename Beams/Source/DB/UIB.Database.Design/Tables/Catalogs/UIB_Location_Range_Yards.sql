@@ -1,8 +1,8 @@
-﻿CREATE TABLE [common].[MSM_Location_Range_Yards](
+﻿CREATE TABLE [common].[HCM_Location_Range_Yards](
 	[IdLocationRange] [int] NOT NULL,
 	[IdYard] [int] NOT NULL,
 	[Active] [bit] NOT NULL,
- CONSTRAINT [PK_MSM_Location_Range_Yards] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_HCM_Location_Range_Yards] PRIMARY KEY CLUSTERED 
 (
 	[IdLocationRange] ASC,
 	[IdYard] ASC
@@ -10,17 +10,17 @@
 ) ON [PRIMARY]
 GO
 
-ALTER TABLE [common].[MSM_Location_Range_Yards] ADD  CONSTRAINT [DF_MSM_Location_Range_Yards_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [common].[HCM_Location_Range_Yards] ADD  CONSTRAINT [DF_HCM_Location_Range_Yards_Active]  DEFAULT ((1)) FOR [Active]
 GO
 
-ALTER TABLE [common].[MSM_Location_Range_Yards]  WITH CHECK ADD  CONSTRAINT [FK_MSM_Location_Range_Yards_MSM_Location_Ranges] FOREIGN KEY([IdLocationRange]) REFERENCES [common].[MSM_Location_Ranges] ([IdLocationRange])
+ALTER TABLE [common].[HCM_Location_Range_Yards]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Location_Range_Yards_HCM_Location_Ranges] FOREIGN KEY([IdLocationRange]) REFERENCES [common].[HCM_Location_Ranges] ([IdLocationRange])
 GO
 
-ALTER TABLE [common].[MSM_Location_Range_Yards] CHECK CONSTRAINT [FK_MSM_Location_Range_Yards_MSM_Location_Ranges]
+ALTER TABLE [common].[HCM_Location_Range_Yards] CHECK CONSTRAINT [FK_HCM_Location_Range_Yards_HCM_Location_Ranges]
 GO
 
-ALTER TABLE [common].[MSM_Location_Range_Yards]  WITH CHECK ADD  CONSTRAINT [FK_MSM_Location_Range_Yards_Rodeo_Yards] FOREIGN KEY([IdYard]) REFERENCES [common].[Rodeo_Yards] ([IdYard])
+ALTER TABLE [common].[HCM_Location_Range_Yards]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Location_Range_Yards_Rodeo_Yards] FOREIGN KEY([IdYard]) REFERENCES [common].[Rodeo_Yards] ([IdYard])
 GO
 
-ALTER TABLE [common].[MSM_Location_Range_Yards] CHECK CONSTRAINT [FK_MSM_Location_Range_Yards_Rodeo_Yards]
+ALTER TABLE [common].[HCM_Location_Range_Yards] CHECK CONSTRAINT [FK_HCM_Location_Range_Yards_Rodeo_Yards]
 GO

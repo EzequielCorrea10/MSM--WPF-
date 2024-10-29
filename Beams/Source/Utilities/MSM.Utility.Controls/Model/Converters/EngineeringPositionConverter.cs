@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 
-namespace MSM.Utility.Controls.Converters
+namespace HCM.Utility.Controls.Converters
 {
-    using MSM.Utility.Common.Handlers;
+    using HCM.Utility.Common.Handlers;
 
     public class EngineeringPositionConverter : IMultiValueConverter
     {

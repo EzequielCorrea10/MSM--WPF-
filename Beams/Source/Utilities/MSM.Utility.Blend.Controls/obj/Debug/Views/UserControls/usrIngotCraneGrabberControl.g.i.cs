@@ -109,7 +109,7 @@ namespace MSM.Utility.Blend.Controls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MSM.Utility.Blend.Controls;component/views/usercontrols/usringotcranegrabbercont" +
+            System.Uri resourceLocater = new System.Uri("/HCM.Utility.Blend.Controls;component/views/usercontrols/usringotcranegrabbercont" +
                     "rol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\UserControls\usrIngotCraneGrabberControl.xaml"

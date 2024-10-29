@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-namespace MSM.Utility.Common.Handlers
+namespace HCM.Utility.Common.Handlers
 {
     using Janus.Rodeo.Windows.Library.Rd_Log;
     using Janus.Rodeo.Windows.Library.Rd_Common;

@@ -875,7 +875,7 @@ namespace MSM.Utility.Blend.Controls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MSM.Utility.Blend.Controls;component/views/usercontrols/usrcranegrabbercontrol.x" +
+            System.Uri resourceLocater = new System.Uri("/HCM.Utility.Blend.Controls;component/views/usercontrols/usrcranegrabbercontrol.x" +
                     "aml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\UserControls\usrCraneGrabberControl.xaml"

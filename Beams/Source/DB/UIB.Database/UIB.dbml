@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="NOVISAIMS" Class="MSMDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.\MSSQL2019;Initial Catalog=NOVISAIMS;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="MSM.Database.Properties.Settings" SettingsPropertyName="NOVISAIMSConnectionString2" Provider="System.Data.SqlClient" />
-  <Table Name="common.MSM_Drive_Control" Member="MSM_Drive_Controls">
-    <Type Name="MSM_Drive_Control">
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="NOVISAIMS" Class="HCMDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\MSSQL2019;Initial Catalog=NOVISAIMS;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="HCM.Database.Properties.Settings" SettingsPropertyName="NOVISAIMSConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="common.HCM_Drive_Control" Member="HCM_Drive_Controls">
+    <Type Name="HCM_Drive_Control">
       <Column Name="IdDriveControl" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdDriveType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -12,11 +12,11 @@
       <Column Name="AlertLevel" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Drive_Type_MSM_Drive_Control" Member="MSM_Drive_Type" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="MSM_Drive_Type" IsForeignKey="true" />
+      <Association Name="HCM_Drive_Type_HCM_Drive_Control" Member="HCM_Drive_Type" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="HCM_Drive_Type" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Drive_Failures" Member="MSM_Drive_Failures">
-    <Type Name="MSM_Drive_Failure">
+  <Table Name="common.HCM_Drive_Failures" Member="HCM_Drive_Failures">
+    <Type Name="HCM_Drive_Failure">
       <Column Name="IdDriveFailure" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdDriveType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -28,11 +28,11 @@
       <Column Name="TroubleshootingReference" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Drive_Type_MSM_Drive_Failure" Member="MSM_Drive_Type" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="MSM_Drive_Type" IsForeignKey="true" />
+      <Association Name="HCM_Drive_Type_HCM_Drive_Failure" Member="HCM_Drive_Type" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="HCM_Drive_Type" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Drive_Process" Member="MSM_Drive_Processes">
-    <Type Name="MSM_Drive_Process">
+  <Table Name="common.HCM_Drive_Process" Member="HCM_Drive_Processes">
+    <Type Name="HCM_Drive_Process">
       <Column Name="IdDriveProcess" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdDriveType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -41,11 +41,11 @@
       <Column Name="Unit" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Drive_Type_MSM_Drive_Process" Member="MSM_Drive_Type" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="MSM_Drive_Type" IsForeignKey="true" />
+      <Association Name="HCM_Drive_Type_HCM_Drive_Process" Member="HCM_Drive_Type" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="HCM_Drive_Type" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Drive_Statuses" Member="MSM_Drive_Statuses">
-    <Type Name="MSM_Drive_Statuse">
+  <Table Name="common.HCM_Drive_Statuses" Member="HCM_Drive_Statuses">
+    <Type Name="HCM_Drive_Statuse">
       <Column Name="IdDriveStatus" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdDriveType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -56,24 +56,24 @@
       <Column Name="AlertLevel" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Drive_Type_MSM_Drive_Statuse" Member="MSM_Drive_Type" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="MSM_Drive_Type" IsForeignKey="true" />
+      <Association Name="HCM_Drive_Type_HCM_Drive_Statuse" Member="HCM_Drive_Type" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="HCM_Drive_Type" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Drive_Types" Member="MSM_Drive_Types">
-    <Type Name="MSM_Drive_Type">
+  <Table Name="common.HCM_Drive_Types" Member="HCM_Drive_Types">
+    <Type Name="HCM_Drive_Type">
       <Column Name="IdDriveType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Drive_Type_MSM_Drive_Control" Member="MSM_Drive_Controls" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="MSM_Drive_Control" />
-      <Association Name="MSM_Drive_Type_MSM_Drive_Failure" Member="MSM_Drive_Failures" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="MSM_Drive_Failure" />
-      <Association Name="MSM_Drive_Type_MSM_Drive_Process" Member="MSM_Drive_Processes" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="MSM_Drive_Process" />
-      <Association Name="MSM_Drive_Type_MSM_Drive_Statuse" Member="MSM_Drive_Statuses" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="MSM_Drive_Statuse" />
-      <Association Name="MSM_Drive_Type_MSM_Machine_Drive" Member="MSM_Machine_Drives" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="MSM_Machine_Drive" />
+      <Association Name="HCM_Drive_Type_HCM_Drive_Control" Member="HCM_Drive_Controls" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="HCM_Drive_Control" />
+      <Association Name="HCM_Drive_Type_HCM_Drive_Failure" Member="HCM_Drive_Failures" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="HCM_Drive_Failure" />
+      <Association Name="HCM_Drive_Type_HCM_Drive_Process" Member="HCM_Drive_Processes" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="HCM_Drive_Process" />
+      <Association Name="HCM_Drive_Type_HCM_Drive_Statuse" Member="HCM_Drive_Statuses" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="HCM_Drive_Statuse" />
+      <Association Name="HCM_Drive_Type_HCM_Machine_Drive" Member="HCM_Machine_Drives" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="HCM_Machine_Drive" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Encoder_Control" Member="MSM_Encoder_Controls">
-    <Type Name="MSM_Encoder_Control">
+  <Table Name="common.HCM_Encoder_Control" Member="HCM_Encoder_Controls">
+    <Type Name="HCM_Encoder_Control">
       <Column Name="IdEncoderControl" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdEncoderType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -84,11 +84,11 @@
       <Column Name="AlertLevel" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Encoder_Type_MSM_Encoder_Control" Member="MSM_Encoder_Type" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="MSM_Encoder_Type" IsForeignKey="true" />
+      <Association Name="HCM_Encoder_Type_HCM_Encoder_Control" Member="HCM_Encoder_Type" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="HCM_Encoder_Type" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Encoder_Failures" Member="MSM_Encoder_Failures">
-    <Type Name="MSM_Encoder_Failure">
+  <Table Name="common.HCM_Encoder_Failures" Member="HCM_Encoder_Failures">
+    <Type Name="HCM_Encoder_Failure">
       <Column Name="IdEncoderFailure" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdEncoderType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -100,11 +100,11 @@
       <Column Name="TroubleshootingReference" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Encoder_Type_MSM_Encoder_Failure" Member="MSM_Encoder_Type" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="MSM_Encoder_Type" IsForeignKey="true" />
+      <Association Name="HCM_Encoder_Type_HCM_Encoder_Failure" Member="HCM_Encoder_Type" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="HCM_Encoder_Type" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Encoder_Process" Member="MSM_Encoder_Processes">
-    <Type Name="MSM_Encoder_Process">
+  <Table Name="common.HCM_Encoder_Process" Member="HCM_Encoder_Processes">
+    <Type Name="HCM_Encoder_Process">
       <Column Name="IdEncoderProcess" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdEncoderType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -113,11 +113,11 @@
       <Column Name="Unit" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Encoder_Type_MSM_Encoder_Process" Member="MSM_Encoder_Type" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="MSM_Encoder_Type" IsForeignKey="true" />
+      <Association Name="HCM_Encoder_Type_HCM_Encoder_Process" Member="HCM_Encoder_Type" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="HCM_Encoder_Type" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Encoder_Statuses" Member="MSM_Encoder_Statuses">
-    <Type Name="MSM_Encoder_Statuse">
+  <Table Name="common.HCM_Encoder_Statuses" Member="HCM_Encoder_Statuses">
+    <Type Name="HCM_Encoder_Statuse">
       <Column Name="IdEncoderStatus" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdEncoderType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -128,35 +128,35 @@
       <Column Name="AlertLevel" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Encoder_Type_MSM_Encoder_Statuse" Member="MSM_Encoder_Type" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="MSM_Encoder_Type" IsForeignKey="true" />
+      <Association Name="HCM_Encoder_Type_HCM_Encoder_Statuse" Member="HCM_Encoder_Type" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="HCM_Encoder_Type" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Encoder_Types" Member="MSM_Encoder_Types">
-    <Type Name="MSM_Encoder_Type">
+  <Table Name="common.HCM_Encoder_Types" Member="HCM_Encoder_Types">
+    <Type Name="HCM_Encoder_Type">
       <Column Name="IdEncoderType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Encoder_Type_MSM_Encoder_Control" Member="MSM_Encoder_Controls" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="MSM_Encoder_Control" />
-      <Association Name="MSM_Encoder_Type_MSM_Encoder_Failure" Member="MSM_Encoder_Failures" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="MSM_Encoder_Failure" />
-      <Association Name="MSM_Encoder_Type_MSM_Encoder_Process" Member="MSM_Encoder_Processes" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="MSM_Encoder_Process" />
-      <Association Name="MSM_Encoder_Type_MSM_Encoder_Statuse" Member="MSM_Encoder_Statuses" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="MSM_Encoder_Statuse" />
-      <Association Name="MSM_Encoder_Type_MSM_Machine_Encoder" Member="MSM_Machine_Encoders" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="MSM_Machine_Encoder" />
+      <Association Name="HCM_Encoder_Type_HCM_Encoder_Control" Member="HCM_Encoder_Controls" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="HCM_Encoder_Control" />
+      <Association Name="HCM_Encoder_Type_HCM_Encoder_Failure" Member="HCM_Encoder_Failures" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="HCM_Encoder_Failure" />
+      <Association Name="HCM_Encoder_Type_HCM_Encoder_Process" Member="HCM_Encoder_Processes" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="HCM_Encoder_Process" />
+      <Association Name="HCM_Encoder_Type_HCM_Encoder_Statuse" Member="HCM_Encoder_Statuses" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="HCM_Encoder_Statuse" />
+      <Association Name="HCM_Encoder_Type_HCM_Machine_Encoder" Member="HCM_Machine_Encoders" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="HCM_Machine_Encoder" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Layout_Section_Machines" Member="MSM_Layout_Section_Machines">
-    <Type Name="MSM_Layout_Section_Machine">
+  <Table Name="common.HCM_Layout_Section_Machines" Member="HCM_Layout_Section_Machines">
+    <Type Name="HCM_Layout_Section_Machine">
       <Column Name="IdLayoutSectionMachine" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdLayoutSection" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="IdMachine" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Layout_Section_MSM_Layout_Section_Machine" Member="MSM_Layout_Section" ThisKey="IdLayoutSection" OtherKey="IdLayoutSection" Type="MSM_Layout_Section" IsForeignKey="true" />
-      <Association Name="Rodeo_Machine_MSM_Layout_Section_Machine" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="HCM_Layout_Section_HCM_Layout_Section_Machine" Member="HCM_Layout_Section" ThisKey="IdLayoutSection" OtherKey="IdLayoutSection" Type="HCM_Layout_Section" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_HCM_Layout_Section_Machine" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Layout_Sections" Member="MSM_Layout_Sections">
-    <Type Name="MSM_Layout_Section">
+  <Table Name="common.HCM_Layout_Sections" Member="HCM_Layout_Sections">
+    <Type Name="HCM_Layout_Section">
       <Column Name="IdLayoutSection" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
@@ -166,11 +166,11 @@
       <Column Name="Y2AbsolutePos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="ColorShown" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Layout_Section_MSM_Layout_Section_Machine" Member="MSM_Layout_Section_Machines" ThisKey="IdLayoutSection" OtherKey="IdLayoutSection" Type="MSM_Layout_Section_Machine" />
+      <Association Name="HCM_Layout_Section_HCM_Layout_Section_Machine" Member="HCM_Layout_Section_Machines" ThisKey="IdLayoutSection" OtherKey="IdLayoutSection" Type="HCM_Layout_Section_Machine" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Location_Groups" Member="MSM_Location_Groups">
-    <Type Name="MSM_Location_Group">
+  <Table Name="common.HCM_Location_Groups" Member="HCM_Location_Groups">
+    <Type Name="HCM_Location_Group">
       <Column Name="IdLocationGroup" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
@@ -180,15 +180,15 @@
       <Column Name="AllowArrival" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="L3Value" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Location_Group_MSM_Job_Type" Member="MSM_Job_Types_Begin" ThisKey="IdLocationGroup" OtherKey="IdLocationGroupBeginDefault" Type="MSM_Job_Type" />
-      <Association Name="MSM_Location_Group_MSM_Job_Type1" Member="MSM_Job_Types_End" ThisKey="IdLocationGroup" OtherKey="IdLocationGroupEndDefault" Type="MSM_Job_Type" />
-      <Association Name="MSM_Location_Group_MSM_Job_Yard_Transfer_Step" Member="MSM_Job_Yard_Transfer_Steps_Begin" ThisKey="IdLocationGroup" OtherKey="IdLocationGroupBegin" Type="MSM_Job_Yard_Transfer_Step" />
-      <Association Name="MSM_Location_Group_MSM_Job_Yard_Transfer_Step1" Member="MSM_Job_Yard_Transfer_Steps_End" ThisKey="IdLocationGroup" OtherKey="IdLocationGroupEnd" Type="MSM_Job_Yard_Transfer_Step" />
-      <Association Name="MSM_Location_Group_Rodeo_Location" Member="Rodeo_Locations" ThisKey="IdLocationGroup" OtherKey="IdLocationGroup" Type="Rodeo_Location" />
+      <Association Name="HCM_Location_Group_HCM_Job_Type" Member="HCM_Job_Types_Begin" ThisKey="IdLocationGroup" OtherKey="IdLocationGroupBeginDefault" Type="HCM_Job_Type" />
+      <Association Name="HCM_Location_Group_HCM_Job_Type1" Member="HCM_Job_Types_End" ThisKey="IdLocationGroup" OtherKey="IdLocationGroupEndDefault" Type="HCM_Job_Type" />
+      <Association Name="HCM_Location_Group_HCM_Job_Yard_Transfer_Step" Member="HCM_Job_Yard_Transfer_Steps_Begin" ThisKey="IdLocationGroup" OtherKey="IdLocationGroupBegin" Type="HCM_Job_Yard_Transfer_Step" />
+      <Association Name="HCM_Location_Group_HCM_Job_Yard_Transfer_Step1" Member="HCM_Job_Yard_Transfer_Steps_End" ThisKey="IdLocationGroup" OtherKey="IdLocationGroupEnd" Type="HCM_Job_Yard_Transfer_Step" />
+      <Association Name="HCM_Location_Group_Rodeo_Location" Member="Rodeo_Locations" ThisKey="IdLocationGroup" OtherKey="IdLocationGroup" Type="Rodeo_Location" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Location_Ranges" Member="MSM_Location_Ranges">
-    <Type Name="MSM_Location_Range">
+  <Table Name="common.HCM_Location_Ranges" Member="HCM_Location_Ranges">
+    <Type Name="HCM_Location_Range">
       <Column Name="IdLocationRange" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
@@ -199,12 +199,12 @@
       <Column Name="Piece_Width_Min" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Piece_Width_Max" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Location_Range_MSM_Location_Range_Yard" Member="MSM_Location_Range_Yards" ThisKey="IdLocationRange" OtherKey="IdLocationRange" Type="MSM_Location_Range_Yard" />
-      <Association Name="MSM_Location_Range_Rodeo_Location" Member="Rodeo_Locations" ThisKey="IdLocationRange" OtherKey="IdLocationRange" Type="Rodeo_Location" />
+      <Association Name="HCM_Location_Range_HCM_Location_Range_Yard" Member="HCM_Location_Range_Yards" ThisKey="IdLocationRange" OtherKey="IdLocationRange" Type="HCM_Location_Range_Yard" />
+      <Association Name="HCM_Location_Range_Rodeo_Location" Member="Rodeo_Locations" ThisKey="IdLocationRange" OtherKey="IdLocationRange" Type="Rodeo_Location" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Machine_Drives" Member="MSM_Machine_Drives">
-    <Type Name="MSM_Machine_Drive">
+  <Table Name="common.HCM_Machine_Drives" Member="HCM_Machine_Drives">
+    <Type Name="HCM_Machine_Drive">
       <Column Name="IdMachineDrive" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdDriveType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="IdMachine" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -216,12 +216,12 @@
       <Column Name="SelectionPlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Drive_Type_MSM_Machine_Drive" Member="MSM_Drive_Type" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="MSM_Drive_Type" IsForeignKey="true" />
-      <Association Name="Rodeo_Machine_MSM_Machine_Drive" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="HCM_Drive_Type_HCM_Machine_Drive" Member="HCM_Drive_Type" ThisKey="IdDriveType" OtherKey="IdDriveType" Type="HCM_Drive_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_HCM_Machine_Drive" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Machine_Encoders" Member="MSM_Machine_Encoders">
-    <Type Name="MSM_Machine_Encoder">
+  <Table Name="common.HCM_Machine_Encoders" Member="HCM_Machine_Encoders">
+    <Type Name="HCM_Machine_Encoder">
       <Column Name="IdMachineEncoder" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdEncoderType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="IdMachine" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -233,8 +233,8 @@
       <Column Name="SelectionPlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Encoder_Type_MSM_Machine_Encoder" Member="MSM_Encoder_Type" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="MSM_Encoder_Type" IsForeignKey="true" />
-      <Association Name="Rodeo_Machine_MSM_Machine_Encoder" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="HCM_Encoder_Type_HCM_Machine_Encoder" Member="HCM_Encoder_Type" ThisKey="IdEncoderType" OtherKey="IdEncoderType" Type="HCM_Encoder_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_HCM_Machine_Encoder" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="common.Rodeo_Client_Types" Member="Rodeo_Client_Types">
@@ -258,7 +258,7 @@
       <Column Name="NAT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="ConnectivityAlarmname" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Rodeo_Client_MSM_Zone_Event" Member="MSM_Zone_Events" ThisKey="IdClient" OtherKey="IdClient" Type="MSM_Zone_Event" />
+      <Association Name="Rodeo_Client_HCM_Zone_Event" Member="HCM_Zone_Events" ThisKey="IdClient" OtherKey="IdClient" Type="HCM_Zone_Event" />
       <Association Name="Rodeo_Client_Rodeo_Event" Member="Rodeo_Events" ThisKey="IdClient" OtherKey="IdClient" Type="Rodeo_Event" />
       <Association Name="Rodeo_Client_Rodeo_Client_Credential" Member="Rodeo_Client_Credential" ThisKey="IdClient" OtherKey="IdClient" Type="Rodeo_Client_Credential" Cardinality="One" />
       <Association Name="Rodeo_Client_Type_Rodeo_Client" Member="Rodeo_Client_Type" ThisKey="IdClientType" OtherKey="IdClientType" Type="Rodeo_Client_Type" IsForeignKey="true" />
@@ -281,7 +281,7 @@
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Association Name="Rodeo_Machine_Group_Rodeo_Machine" Member="Rodeo_Machines" ThisKey="IdMachineGroup" OtherKey="IdMachineGroup" Type="Rodeo_Machine" />
-      <Association Name="Rodeo_Machine_Group_MSM_Zone_Machine" Member="MSM_Zone_Machines" ThisKey="IdMachineGroup" OtherKey="IdMachineGroup" Type="MSM_Zone_Machine" />
+      <Association Name="Rodeo_Machine_Group_HCM_Zone_Machine" Member="HCM_Zone_Machines" ThisKey="IdMachineGroup" OtherKey="IdMachineGroup" Type="HCM_Zone_Machine" />
     </Type>
   </Table>
   <Table Name="common.Rodeo_Machine_Sequencer" Member="Rodeo_Machine_Sequencers">
@@ -333,18 +333,18 @@
       <Association Name="Rodeo_Machine_Type_Rodeo_Machine_Statuse" Member="Rodeo_Machine_Statuses" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Statuse" />
       <Association Name="Rodeo_Machine_Type_Rodeo_Machine_Type_Position" Member="Rodeo_Machine_Type_Positions" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type_Position" />
       <Association Name="Rodeo_Machine_Type_Rodeo_Machine" Member="Rodeo_Machines" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine" />
-      <Association Name="Rodeo_Machine_Type_MSM_Machine_Interface" Member="MSM_Machine_Interfaces" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="MSM_Machine_Interface" />
+      <Association Name="Rodeo_Machine_Type_HCM_Machine_Interface" Member="HCM_Machine_Interfaces" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="HCM_Machine_Interface" />
       <Association Name="Rodeo_Machine_Type_Rodeo_Setting_Group_Machine_Type" Member="Rodeo_Setting_Group_Machine_Types" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Setting_Group_Machine_Type" />
       <Association Name="Rodeo_Machine_Type_Rodeo_TO_Action" Member="Rodeo_TO_Actions" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_TO_Action" />
       <Association Name="Rodeo_Machine_Type_Rodeo_TO_Direction" Member="Rodeo_TO_Directions" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_TO_Direction" />
       <Association Name="Rodeo_Machine_Type_Rodeo_TO_ErrorCode" Member="Rodeo_TO_ErrorCodes" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_TO_ErrorCode" />
       <Association Name="Rodeo_Machine_Type_Rodeo_TO_Step_ErrorCode" Member="Rodeo_TO_Step_ErrorCodes" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_TO_Step_ErrorCode" />
       <Association Name="Rodeo_Machine_Type_Rodeo_Setting_Tag" Member="Rodeo_Setting_Tags" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Setting_Tag" />
-      <Association Name="Rodeo_Machine_Type_MSM_Job_Yard_Transfer_Step" Member="MSM_Job_Yard_Transfer_Steps" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="MSM_Job_Yard_Transfer_Step" />
-      <Association Name="Rodeo_Machine_Type_MSM_Job_Type_Route" Member="MSM_Job_Type_Routes" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="MSM_Job_Type_Route" />
-      <Association Name="Rodeo_Machine_Type_MSM_Machine_Failure" Member="MSM_Machine_Failures" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="MSM_Machine_Failure" />
-      <Association Name="Rodeo_Machine_Type_MSM_Machine_Interlock" Member="MSM_Machine_Interlocks" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="MSM_Machine_Interlock" />
-      <Association Name="Rodeo_Machine_Type_MSM_File" Member="MSM_Files" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="MSM_File" />
+      <Association Name="Rodeo_Machine_Type_HCM_Job_Yard_Transfer_Step" Member="HCM_Job_Yard_Transfer_Steps" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="HCM_Job_Yard_Transfer_Step" />
+      <Association Name="Rodeo_Machine_Type_HCM_Job_Type_Route" Member="HCM_Job_Type_Routes" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="HCM_Job_Type_Route" />
+      <Association Name="Rodeo_Machine_Type_HCM_Machine_Failure" Member="HCM_Machine_Failures" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="HCM_Machine_Failure" />
+      <Association Name="Rodeo_Machine_Type_HCM_Machine_Interlock" Member="HCM_Machine_Interlocks" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="HCM_Machine_Interlock" />
+      <Association Name="Rodeo_Machine_Type_HCM_File" Member="HCM_Files" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="HCM_File" />
     </Type>
   </Table>
   <Table Name="common.Rodeo_Machines" Member="Rodeo_Machines">
@@ -380,25 +380,25 @@
       <Column Name="ColorShown" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Rodeo_Machine_MSM_Layout_Section_Machine" Member="MSM_Layout_Section_Machines" ThisKey="IdMachine" OtherKey="IdMachine" Type="MSM_Layout_Section_Machine" />
-      <Association Name="Rodeo_Machine_MSM_Machine_Drive" Member="MSM_Machine_Drives" ThisKey="IdMachine" OtherKey="IdMachine" Type="MSM_Machine_Drive" />
-      <Association Name="Rodeo_Machine_MSM_Machine_Encoder" Member="MSM_Machine_Encoders" ThisKey="IdMachine" OtherKey="IdMachine" Type="MSM_Machine_Encoder" />
-      <Association Name="Rodeo_Machine_MSM_Machine_Event" Member="MSM_Machine_Events" ThisKey="IdMachine" OtherKey="IdMachine" Type="MSM_Machine_Event" />
-      <Association Name="Rodeo_Machine_MSM_Piece_Event" Member="MSM_Piece_Events" ThisKey="IdMachine" OtherKey="IdMachine" Type="MSM_Piece_Event" />
-      <Association Name="Rodeo_Machine_MSM_Ground_EStop_Failure" Member="MSM_Ground_EStop_Failures" ThisKey="IdMachine" OtherKey="IdMachine" Type="MSM_Ground_EStop_Failure" />
-      <Association Name="Rodeo_Machine_MSM_Machine_Exit_Zone" Member="MSM_Machine_Exit_Zones" ThisKey="IdMachine" OtherKey="IdMachine" Type="MSM_Machine_Exit_Zone" />
-      <Association Name="Rodeo_Machine_MSM_Machine_Interface" Member="MSM_Machine_Interfaces" ThisKey="IdMachine" OtherKey="IdMachine" Type="MSM_Machine_Interface" />
-      <Association Name="Rodeo_Machine_MSM_Zone" Member="MSM_Zones" ThisKey="IdMachine" OtherKey="IdMachineRequiredOnDisable" Type="MSM_Zone" />
+      <Association Name="Rodeo_Machine_HCM_Layout_Section_Machine" Member="HCM_Layout_Section_Machines" ThisKey="IdMachine" OtherKey="IdMachine" Type="HCM_Layout_Section_Machine" />
+      <Association Name="Rodeo_Machine_HCM_Machine_Drive" Member="HCM_Machine_Drives" ThisKey="IdMachine" OtherKey="IdMachine" Type="HCM_Machine_Drive" />
+      <Association Name="Rodeo_Machine_HCM_Machine_Encoder" Member="HCM_Machine_Encoders" ThisKey="IdMachine" OtherKey="IdMachine" Type="HCM_Machine_Encoder" />
+      <Association Name="Rodeo_Machine_HCM_Machine_Event" Member="HCM_Machine_Events" ThisKey="IdMachine" OtherKey="IdMachine" Type="HCM_Machine_Event" />
+      <Association Name="Rodeo_Machine_HCM_Piece_Event" Member="HCM_Piece_Events" ThisKey="IdMachine" OtherKey="IdMachine" Type="HCM_Piece_Event" />
+      <Association Name="Rodeo_Machine_HCM_Ground_EStop_Failure" Member="HCM_Ground_EStop_Failures" ThisKey="IdMachine" OtherKey="IdMachine" Type="HCM_Ground_EStop_Failure" />
+      <Association Name="Rodeo_Machine_HCM_Machine_Exit_Zone" Member="HCM_Machine_Exit_Zones" ThisKey="IdMachine" OtherKey="IdMachine" Type="HCM_Machine_Exit_Zone" />
+      <Association Name="Rodeo_Machine_HCM_Machine_Interface" Member="HCM_Machine_Interfaces" ThisKey="IdMachine" OtherKey="IdMachine" Type="HCM_Machine_Interface" />
+      <Association Name="Rodeo_Machine_HCM_Zone" Member="HCM_Zones" ThisKey="IdMachine" OtherKey="IdMachineRequiredOnDisable" Type="HCM_Zone" />
       <Association Name="Rodeo_Machine_Rodeo_Network_Component_Alarm" Member="Rodeo_Network_Component_Alarms" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Network_Component_Alarm" />
       <Association Name="Rodeo_Machine_Rodeo_Network_Component" Member="Rodeo_Network_Components" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Network_Component" />
-      <Association Name="Rodeo_Machine_MSM_Machine_Exit_Location" Member="MSM_Machine_Exit_Locations" ThisKey="IdMachine" OtherKey="IdMachine" Type="MSM_Machine_Exit_Location" />
+      <Association Name="Rodeo_Machine_HCM_Machine_Exit_Location" Member="HCM_Machine_Exit_Locations" ThisKey="IdMachine" OtherKey="IdMachine" Type="HCM_Machine_Exit_Location" />
       <Association Name="Rodeo_Machine_Rodeo_TransportOrder" Member="Rodeo_TransportOrders" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_TransportOrder" />
       <Association Name="Rodeo_Machine_Rodeo_Setting_Tag" Member="Rodeo_Setting_Tags" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Setting_Tag" />
       <Association Name="Rodeo_Machine_Rodeo_TO_Route" Member="Rodeo_TO_Routes" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_TO_Route" />
-      <Association Name="Rodeo_Machine_MSM_Machine_Failure" Member="MSM_Machine_Failures" ThisKey="IdMachine" OtherKey="IdMachine" Type="MSM_Machine_Failure" />
-      <Association Name="Rodeo_Machine_MSM_Machine_Interlock" Member="MSM_Machine_Interlocks" ThisKey="IdMachine" OtherKey="IdMachine" Type="MSM_Machine_Interlock" />
+      <Association Name="Rodeo_Machine_HCM_Machine_Failure" Member="HCM_Machine_Failures" ThisKey="IdMachine" OtherKey="IdMachine" Type="HCM_Machine_Failure" />
+      <Association Name="Rodeo_Machine_HCM_Machine_Interlock" Member="HCM_Machine_Interlocks" ThisKey="IdMachine" OtherKey="IdMachine" Type="HCM_Machine_Interlock" />
       <Association Name="Rodeo_Machine_Rodeo_Piece" Member="Rodeo_Pieces" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Piece" />
-      <Association Name="Rodeo_Machine_MSM_File" Member="MSM_Files" ThisKey="IdMachine" OtherKey="IdMachine" Type="MSM_File" />
+      <Association Name="Rodeo_Machine_HCM_File" Member="HCM_Files" ThisKey="IdMachine" OtherKey="IdMachine" Type="HCM_File" />
       <Association Name="Rodeo_Machine_Group_Rodeo_Machine" Member="Rodeo_Machine_Group" ThisKey="IdMachineGroup" OtherKey="IdMachineGroup" Type="Rodeo_Machine_Group" IsForeignKey="true" />
       <Association Name="Rodeo_Machine_Type_Rodeo_Machine" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
       <Association Name="Rodeo_Yard_Rodeo_Machine" Member="Rodeo_Yard" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
@@ -416,8 +416,8 @@
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
-  <Table Name="report.MSM_Incoming_Messages" Member="MSM_Incoming_Messages">
-    <Type Name="MSM_Incoming_Message">
+  <Table Name="report.HCM_Incoming_Messages" Member="HCM_Incoming_Messages">
+    <Type Name="HCM_Incoming_Message">
       <Column Name="IdIncomingMessage" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="IdJob" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="IdMessageType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -431,21 +431,21 @@
       <Column Name="ResponseTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
       <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
       <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Message_Type_MSM_Incoming_Message" Member="MSM_Message_Type" ThisKey="IdMessageType" OtherKey="IdMessageType" Type="MSM_Message_Type" IsForeignKey="true" />
-      <Association Name="MSM_Job_MSM_Incoming_Message" Member="MSM_Job" ThisKey="IdJob" OtherKey="IdJob" Type="MSM_Job" IsForeignKey="true" />
+      <Association Name="HCM_Message_Type_HCM_Incoming_Message" Member="HCM_Message_Type" ThisKey="IdMessageType" OtherKey="IdMessageType" Type="HCM_Message_Type" IsForeignKey="true" />
+      <Association Name="HCM_Job_HCM_Incoming_Message" Member="HCM_Job" ThisKey="IdJob" OtherKey="IdJob" Type="HCM_Job" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="report.MSM_Machine_Event_Types" Member="MSM_Machine_Event_Types">
-    <Type Name="MSM_Machine_Event_Type">
+  <Table Name="report.HCM_Machine_Event_Types" Member="HCM_Machine_Event_Types">
+    <Type Name="HCM_Machine_Event_Type">
       <Column Name="IdMachineEventType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Machine_Event_Type_MSM_Machine_Event" Member="MSM_Machine_Events" ThisKey="IdMachineEventType" OtherKey="IdMachineEventType" Type="MSM_Machine_Event" />
+      <Association Name="HCM_Machine_Event_Type_HCM_Machine_Event" Member="HCM_Machine_Events" ThisKey="IdMachineEventType" OtherKey="IdMachineEventType" Type="HCM_Machine_Event" />
     </Type>
   </Table>
-  <Table Name="report.MSM_Machine_Events" Member="MSM_Machine_Events">
-    <Type Name="MSM_Machine_Event">
+  <Table Name="report.HCM_Machine_Events" Member="HCM_Machine_Events">
+    <Type Name="HCM_Machine_Event">
       <Column Name="IdMachineEvent" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="IdMachineEventType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="IdMachine" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -453,24 +453,24 @@
       <Column Name="Data" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
       <Column Name="EventTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
       <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Machine_Event_Type_MSM_Machine_Event" Member="MSM_Machine_Event_Type" ThisKey="IdMachineEventType" OtherKey="IdMachineEventType" Type="MSM_Machine_Event_Type" IsForeignKey="true" />
-      <Association Name="Rodeo_Machine_MSM_Machine_Event" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="HCM_Machine_Event_Type_HCM_Machine_Event" Member="HCM_Machine_Event_Type" ThisKey="IdMachineEventType" OtherKey="IdMachineEventType" Type="HCM_Machine_Event_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_HCM_Machine_Event" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="report.MSM_Message_Types" Member="MSM_Message_Types">
-    <Type Name="MSM_Message_Type">
+  <Table Name="report.HCM_Message_Types" Member="HCM_Message_Types">
+    <Type Name="HCM_Message_Type">
       <Column Name="IdMessageType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="Source" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="L3OrL2Value" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Message_Type_MSM_Incoming_Message" Member="MSM_Incoming_Messages" ThisKey="IdMessageType" OtherKey="IdMessageType" Type="MSM_Incoming_Message" />
-      <Association Name="MSM_Message_Type_MSM_Outgoing_Message" Member="MSM_Outgoing_Messages" ThisKey="IdMessageType" OtherKey="IdMessageType" Type="MSM_Outgoing_Message" />
+      <Association Name="HCM_Message_Type_HCM_Incoming_Message" Member="HCM_Incoming_Messages" ThisKey="IdMessageType" OtherKey="IdMessageType" Type="HCM_Incoming_Message" />
+      <Association Name="HCM_Message_Type_HCM_Outgoing_Message" Member="HCM_Outgoing_Messages" ThisKey="IdMessageType" OtherKey="IdMessageType" Type="HCM_Outgoing_Message" />
     </Type>
   </Table>
-  <Table Name="report.MSM_Outgoing_Messages" Member="MSM_Outgoing_Messages">
-    <Type Name="MSM_Outgoing_Message">
+  <Table Name="report.HCM_Outgoing_Messages" Member="HCM_Outgoing_Messages">
+    <Type Name="HCM_Outgoing_Message">
       <Column Name="IdOutgoingMessage" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="IdJob" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
       <Column Name="IdMessageType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -484,21 +484,21 @@
       <Column Name="ResponseTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
       <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
       <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Message_Type_MSM_Outgoing_Message" Member="MSM_Message_Type" ThisKey="IdMessageType" OtherKey="IdMessageType" Type="MSM_Message_Type" IsForeignKey="true" />
-      <Association Name="MSM_Job_MSM_Outgoing_Message" Member="MSM_Job" ThisKey="IdJob" OtherKey="IdJob" Type="MSM_Job" IsForeignKey="true" />
+      <Association Name="HCM_Message_Type_HCM_Outgoing_Message" Member="HCM_Message_Type" ThisKey="IdMessageType" OtherKey="IdMessageType" Type="HCM_Message_Type" IsForeignKey="true" />
+      <Association Name="HCM_Job_HCM_Outgoing_Message" Member="HCM_Job" ThisKey="IdJob" OtherKey="IdJob" Type="HCM_Job" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="report.MSM_Piece_Event_Types" Member="MSM_Piece_Event_Types">
-    <Type Name="MSM_Piece_Event_Type">
+  <Table Name="report.HCM_Piece_Event_Types" Member="HCM_Piece_Event_Types">
+    <Type Name="HCM_Piece_Event_Type">
       <Column Name="IdPieceEventType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Piece_Event_Type_MSM_Piece_Event" Member="MSM_Piece_Events" ThisKey="IdPieceEventType" OtherKey="IdPieceEventType" Type="MSM_Piece_Event" />
+      <Association Name="HCM_Piece_Event_Type_HCM_Piece_Event" Member="HCM_Piece_Events" ThisKey="IdPieceEventType" OtherKey="IdPieceEventType" Type="HCM_Piece_Event" />
     </Type>
   </Table>
-  <Table Name="report.MSM_Piece_Events" Member="MSM_Piece_Events">
-    <Type Name="MSM_Piece_Event">
+  <Table Name="report.HCM_Piece_Events" Member="HCM_Piece_Events">
+    <Type Name="HCM_Piece_Event">
       <Column Name="IdPieceEvent" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="IdPieceEventType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="PieceName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -506,22 +506,22 @@
       <Column Name="Data" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
       <Column Name="EventTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
       <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Piece_Event_Type_MSM_Piece_Event" Member="MSM_Piece_Event_Type" ThisKey="IdPieceEventType" OtherKey="IdPieceEventType" Type="MSM_Piece_Event_Type" IsForeignKey="true" />
-      <Association Name="Rodeo_Machine_MSM_Piece_Event" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="HCM_Piece_Event_Type_HCM_Piece_Event" Member="HCM_Piece_Event_Type" ThisKey="IdPieceEventType" OtherKey="IdPieceEventType" Type="HCM_Piece_Event_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_HCM_Piece_Event" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="report.MSM_Zone_Event_Types" Member="MSM_Zone_Event_Types">
-    <Type Name="MSM_Zone_Event_Type">
+  <Table Name="report.HCM_Zone_Event_Types" Member="HCM_Zone_Event_Types">
+    <Type Name="HCM_Zone_Event_Type">
       <Column Name="IdZoneEventType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Zone_Event_Type_MSM_Zone_Event" Member="MSM_Zone_Events" ThisKey="IdZoneEventType" OtherKey="IdZoneEventType" Type="MSM_Zone_Event" />
-      <Association Name="MSM_Zone_Event_Type_MSM_Request_Signal" Member="MSM_Request_Signals" ThisKey="IdZoneEventType" OtherKey="IdZoneEventType" Type="MSM_Request_Signal" />
+      <Association Name="HCM_Zone_Event_Type_HCM_Zone_Event" Member="HCM_Zone_Events" ThisKey="IdZoneEventType" OtherKey="IdZoneEventType" Type="HCM_Zone_Event" />
+      <Association Name="HCM_Zone_Event_Type_HCM_Request_Signal" Member="HCM_Request_Signals" ThisKey="IdZoneEventType" OtherKey="IdZoneEventType" Type="HCM_Request_Signal" />
     </Type>
   </Table>
-  <Table Name="report.MSM_Zone_Events" Member="MSM_Zone_Events">
-    <Type Name="MSM_Zone_Event">
+  <Table Name="report.HCM_Zone_Events" Member="HCM_Zone_Events">
+    <Type Name="HCM_Zone_Event">
       <Column Name="IdZoneEvent" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="IdZoneEventType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="IdZone" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -531,10 +531,10 @@
       <Column Name="Data" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
       <Column Name="EventTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
       <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Zone_Event_Type_MSM_Zone_Event" Member="MSM_Zone_Event_Type" ThisKey="IdZoneEventType" OtherKey="IdZoneEventType" Type="MSM_Zone_Event_Type" IsForeignKey="true" />
-      <Association Name="Rodeo_Client_MSM_Zone_Event" Member="Rodeo_Client" ThisKey="IdClient" OtherKey="IdClient" Type="Rodeo_Client" IsForeignKey="true" />
-      <Association Name="MSM_Request_MSM_Zone_Event" Member="MSM_Request" ThisKey="IdRequest" OtherKey="IdRequest" Type="MSM_Request" IsForeignKey="true" />
-      <Association Name="MSM_Zone_MSM_Zone_Event" Member="MSM_Zone" ThisKey="IdZone" OtherKey="IdZone" Type="MSM_Zone" IsForeignKey="true" />
+      <Association Name="HCM_Zone_Event_Type_HCM_Zone_Event" Member="HCM_Zone_Event_Type" ThisKey="IdZoneEventType" OtherKey="IdZoneEventType" Type="HCM_Zone_Event_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Client_HCM_Zone_Event" Member="Rodeo_Client" ThisKey="IdClient" OtherKey="IdClient" Type="Rodeo_Client" IsForeignKey="true" />
+      <Association Name="HCM_Request_HCM_Zone_Event" Member="HCM_Request" ThisKey="IdRequest" OtherKey="IdRequest" Type="HCM_Request" IsForeignKey="true" />
+      <Association Name="HCM_Zone_HCM_Zone_Event" Member="HCM_Zone" ThisKey="IdZone" OtherKey="IdZone" Type="HCM_Zone" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="report.Rodeo_Event_Types" Member="Rodeo_Event_Types">
@@ -564,11 +564,11 @@
       <Association Name="Rodeo_Client_Rodeo_Event" Member="Rodeo_Client" ThisKey="IdClient" OtherKey="IdClient" Type="Rodeo_Client" IsForeignKey="true" />
       <Association Name="Rodeo_Event_Type_Rodeo_Event" Member="Rodeo_Event_Type" ThisKey="IdEventType" OtherKey="IdEventType" Type="Rodeo_Event_Type" IsForeignKey="true" />
       <Association Name="Rodeo_TransportOrder_Rodeo_Event" Member="Rodeo_TransportOrder" ThisKey="IdTransportOrder" OtherKey="IdTransportOrder" Type="Rodeo_TransportOrder" IsForeignKey="true" />
-      <Association Name="MSM_Job_Rodeo_Event" Member="MSM_Job" ThisKey="IdJob" OtherKey="IdJob" Type="MSM_Job" IsForeignKey="true" />
+      <Association Name="HCM_Job_Rodeo_Event" Member="HCM_Job" ThisKey="IdJob" OtherKey="IdJob" Type="HCM_Job" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="rodeo.MSM_Failures_History" Member="MSM_Failures_Histories">
-    <Type Name="MSM_Failures_History">
+  <Table Name="rodeo.HCM_Failures_History" Member="HCM_Failures_Histories">
+    <Type Name="HCM_Failures_History">
       <Column Name="IdMachineFailureHistory" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="IdMachineFailure" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="TimeOn" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
@@ -576,7 +576,7 @@
       <Column Name="IsCloseForced" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
       <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Machine_Failure_MSM_Failures_History" Member="MSM_Machine_Failure" ThisKey="IdMachineFailure" OtherKey="IdMachineFailure" Type="MSM_Machine_Failure" IsForeignKey="true" />
+      <Association Name="HCM_Machine_Failure_HCM_Failures_History" Member="HCM_Machine_Failure" ThisKey="IdMachineFailure" OtherKey="IdMachineFailure" Type="HCM_Machine_Failure" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="rodeo.Rodeo_Alarms_History" Member="Rodeo_Alarms_Histories">
@@ -628,8 +628,8 @@
       <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Ground_EStop_Failures" Member="MSM_Ground_EStop_Failures">
-    <Type Name="MSM_Ground_EStop_Failure">
+  <Table Name="safety.HCM_Ground_EStop_Failures" Member="HCM_Ground_EStop_Failures">
+    <Type Name="HCM_Ground_EStop_Failure">
       <Column Name="IdGroundEStopFailure" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdGroundEStopGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
@@ -642,12 +642,12 @@
       <Column Name="TroubleshootingReference" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Rodeo_Machine_MSM_Ground_EStop_Failure" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
-      <Association Name="MSM_Ground_EStop_Group_MSM_Ground_EStop_Failure" Member="MSM_Ground_EStop_Group" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="MSM_Ground_EStop_Group" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_HCM_Ground_EStop_Failure" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="HCM_Ground_EStop_Group_HCM_Ground_EStop_Failure" Member="HCM_Ground_EStop_Group" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="HCM_Ground_EStop_Group" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Ground_EStop_Groups" Member="MSM_Ground_EStop_Groups">
-    <Type Name="MSM_Ground_EStop_Group">
+  <Table Name="safety.HCM_Ground_EStop_Groups" Member="HCM_Ground_EStop_Groups">
+    <Type Name="HCM_Ground_EStop_Group">
       <Column Name="IdGroundEStopGroup" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
       <Column Name="StatusTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
@@ -659,14 +659,14 @@
       <Column Name="ResetPlcValue" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Ground_EStop_Group_MSM_Ground_EStop_Failure" Member="MSM_Ground_EStop_Failures" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="MSM_Ground_EStop_Failure" />
-      <Association Name="MSM_Ground_EStop_Group_MSM_Ground_EStop_Interface" Member="MSM_Ground_EStop_Interfaces" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="MSM_Ground_EStop_Interface" />
-      <Association Name="MSM_Ground_EStop_Group_MSM_Ground_EStop_Panel" Member="MSM_Ground_EStop_Panels" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="MSM_Ground_EStop_Panel" />
-      <Association Name="MSM_Ground_EStop_Group_MSM_Ground_EStop_Request" Member="MSM_Ground_EStop_Requests" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="MSM_Ground_EStop_Request" />
+      <Association Name="HCM_Ground_EStop_Group_HCM_Ground_EStop_Failure" Member="HCM_Ground_EStop_Failures" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="HCM_Ground_EStop_Failure" />
+      <Association Name="HCM_Ground_EStop_Group_HCM_Ground_EStop_Interface" Member="HCM_Ground_EStop_Interfaces" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="HCM_Ground_EStop_Interface" />
+      <Association Name="HCM_Ground_EStop_Group_HCM_Ground_EStop_Panel" Member="HCM_Ground_EStop_Panels" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="HCM_Ground_EStop_Panel" />
+      <Association Name="HCM_Ground_EStop_Group_HCM_Ground_EStop_Request" Member="HCM_Ground_EStop_Requests" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="HCM_Ground_EStop_Request" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Ground_EStop_Interfaces" Member="MSM_Ground_EStop_Interfaces">
-    <Type Name="MSM_Ground_EStop_Interface">
+  <Table Name="safety.HCM_Ground_EStop_Interfaces" Member="HCM_Ground_EStop_Interfaces">
+    <Type Name="HCM_Ground_EStop_Interface">
       <Column Name="IdGroundEStopInterface" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdGroundEStopGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
@@ -677,11 +677,11 @@
       <Column Name="TextSizeDisplayed" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Ground_EStop_Group_MSM_Ground_EStop_Interface" Member="MSM_Ground_EStop_Group" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="MSM_Ground_EStop_Group" IsForeignKey="true" />
+      <Association Name="HCM_Ground_EStop_Group_HCM_Ground_EStop_Interface" Member="HCM_Ground_EStop_Group" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="HCM_Ground_EStop_Group" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Ground_EStop_Panels" Member="MSM_Ground_EStop_Panels">
-    <Type Name="MSM_Ground_EStop_Panel">
+  <Table Name="safety.HCM_Ground_EStop_Panels" Member="HCM_Ground_EStop_Panels">
+    <Type Name="HCM_Ground_EStop_Panel">
       <Column Name="IdGroundEStopPanel" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdGroundEStopGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
@@ -692,22 +692,22 @@
       <Column Name="TextSizeDisplayed" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Ground_EStop_Group_MSM_Ground_EStop_Panel" Member="MSM_Ground_EStop_Group" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="MSM_Ground_EStop_Group" IsForeignKey="true" />
+      <Association Name="HCM_Ground_EStop_Group_HCM_Ground_EStop_Panel" Member="HCM_Ground_EStop_Group" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="HCM_Ground_EStop_Group" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Ground_EStop_Requests" Member="MSM_Ground_EStop_Requests">
-    <Type Name="MSM_Ground_EStop_Request">
+  <Table Name="safety.HCM_Ground_EStop_Requests" Member="HCM_Ground_EStop_Requests">
+    <Type Name="HCM_Ground_EStop_Request">
       <Column Name="IdGroundEStopRequest" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdGroundEStopGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="IdRequest" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Ground_EStop_Group_MSM_Ground_EStop_Request" Member="MSM_Ground_EStop_Group" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="MSM_Ground_EStop_Group" IsForeignKey="true" />
-      <Association Name="MSM_Request_MSM_Ground_EStop_Request" Member="MSM_Request" ThisKey="IdRequest" OtherKey="IdRequest" Type="MSM_Request" IsForeignKey="true" />
+      <Association Name="HCM_Ground_EStop_Group_HCM_Ground_EStop_Request" Member="HCM_Ground_EStop_Group" ThisKey="IdGroundEStopGroup" OtherKey="IdGroundEStopGroup" Type="HCM_Ground_EStop_Group" IsForeignKey="true" />
+      <Association Name="HCM_Request_HCM_Ground_EStop_Request" Member="HCM_Request" ThisKey="IdRequest" OtherKey="IdRequest" Type="HCM_Request" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Machine_Exit_Zones" Member="MSM_Machine_Exit_Zones">
-    <Type Name="MSM_Machine_Exit_Zone">
+  <Table Name="safety.HCM_Machine_Exit_Zones" Member="HCM_Machine_Exit_Zones">
+    <Type Name="HCM_Machine_Exit_Zone">
       <Column Name="IdMachine" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdZone" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Move_IdYard" Type="System.Int32" DbType="Int" CanBeNull="true" />
@@ -716,14 +716,14 @@
       <Column Name="Move_IdLocation" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Priority" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Rodeo_Machine_MSM_Machine_Exit_Zone" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
-      <Association Name="MSM_Zone_MSM_Machine_Exit_Zone" Member="MSM_Zone" ThisKey="IdZone" OtherKey="IdZone" Type="MSM_Zone" IsForeignKey="true" />
-      <Association Name="Rodeo_Yard_MSM_Machine_Exit_Zone" Member="Rodeo_Yard" ThisKey="Move_IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
-      <Association Name="Rodeo_Location_MSM_Machine_Exit_Zone" Member="Rodeo_Location" ThisKey="Move_IdLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_HCM_Machine_Exit_Zone" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="HCM_Zone_HCM_Machine_Exit_Zone" Member="HCM_Zone" ThisKey="IdZone" OtherKey="IdZone" Type="HCM_Zone" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_HCM_Machine_Exit_Zone" Member="Rodeo_Yard" ThisKey="Move_IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Location_HCM_Machine_Exit_Zone" Member="Rodeo_Location" ThisKey="Move_IdLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Machine_Interfaces" Member="MSM_Machine_Interfaces">
-    <Type Name="MSM_Machine_Interface">
+  <Table Name="safety.HCM_Machine_Interfaces" Member="HCM_Machine_Interfaces">
+    <Type Name="HCM_Machine_Interface">
       <Column Name="IdMachineInterface" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="ParentIdMachineInterface" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -740,12 +740,12 @@
       <Column Name="TroubleshootingReference" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Rodeo_Machine_Type_MSM_Machine_Interface" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
-      <Association Name="Rodeo_Machine_MSM_Machine_Interface" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_Type_HCM_Machine_Interface" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_HCM_Machine_Interface" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Request_Interlocks" Member="MSM_Request_Interlocks">
-    <Type Name="MSM_Request_Interlock">
+  <Table Name="safety.HCM_Request_Interlocks" Member="HCM_Request_Interlocks">
+    <Type Name="HCM_Request_Interlock">
       <Column Name="IdRequest" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdRequestSignal" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="RequestSignalTrueOrFalse" Type="System.Boolean" DbType="Bit NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -761,15 +761,15 @@
       <Column Name="TextSizeDisplayed" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Request_Signal_MSM_Request_Interlock" Member="MSM_Request_Signal_ByID" ThisKey="ByIdRequestSignal" OtherKey="IdRequestSignal" Type="MSM_Request_Signal" IsForeignKey="true" />
-      <Association Name="MSM_Request_Signal_MSM_Request_Interlock1" Member="MSM_Request_Signal_ID" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="MSM_Request_Signal" IsForeignKey="true" />
-      <Association Name="MSM_Request_MSM_Request_Interlock" Member="MSM_Request_ByID" ThisKey="ByIdRequest" OtherKey="IdRequest" Type="MSM_Request" IsForeignKey="true" />
-      <Association Name="MSM_Request_MSM_Request_Interlock1" Member="MSM_Request_ID" ThisKey="IdRequest" OtherKey="IdRequest" Type="MSM_Request" IsForeignKey="true" />
-      <Association Name="MSM_Zone_MSM_Request_Interlock" Member="MSM_Zone" ThisKey="ByIdZone" OtherKey="IdZone" Type="MSM_Zone" IsForeignKey="true" />
+      <Association Name="HCM_Request_Signal_HCM_Request_Interlock" Member="HCM_Request_Signal_ByID" ThisKey="ByIdRequestSignal" OtherKey="IdRequestSignal" Type="HCM_Request_Signal" IsForeignKey="true" />
+      <Association Name="HCM_Request_Signal_HCM_Request_Interlock1" Member="HCM_Request_Signal_ID" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="HCM_Request_Signal" IsForeignKey="true" />
+      <Association Name="HCM_Request_HCM_Request_Interlock" Member="HCM_Request_ByID" ThisKey="ByIdRequest" OtherKey="IdRequest" Type="HCM_Request" IsForeignKey="true" />
+      <Association Name="HCM_Request_HCM_Request_Interlock1" Member="HCM_Request_ID" ThisKey="IdRequest" OtherKey="IdRequest" Type="HCM_Request" IsForeignKey="true" />
+      <Association Name="HCM_Zone_HCM_Request_Interlock" Member="HCM_Zone" ThisKey="ByIdZone" OtherKey="IdZone" Type="HCM_Zone" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Request_Signals" Member="MSM_Request_Signals">
-    <Type Name="MSM_Request_Signal">
+  <Table Name="safety.HCM_Request_Signals" Member="HCM_Request_Signals">
+    <Type Name="HCM_Request_Signal">
       <Column Name="IdRequestSignal" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdZoneEventType" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -790,28 +790,28 @@
       <Column Name="OtherwiseInterlock_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="OtherwiseInterlock_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Request_Signal_MSM_Request_Interlock" Member="MSM_Request_Interlocks_ByID" ThisKey="IdRequestSignal" OtherKey="ByIdRequestSignal" Type="MSM_Request_Interlock" />
-      <Association Name="MSM_Request_Signal_MSM_Request_Interlock1" Member="MSM_Request_Interlocks_ID" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="MSM_Request_Interlock" />
-      <Association Name="MSM_Request_Signal_MSM_Request_Transport_Dependency" Member="MSM_Request_Transport_Dependencies" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="MSM_Request_Transport_Dependency" />
-      <Association Name="MSM_Request_Signal_MSM_Request_Type_Signal" Member="MSM_Request_Type_Signals" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="MSM_Request_Type_Signal" />
-      <Association Name="MSM_Request_Signal_MSM_Zone_Interlock" Member="MSM_Zone_Interlocks" ThisKey="IdRequestSignal" OtherKey="ByIdRequestSignal" Type="MSM_Zone_Interlock" />
-      <Association Name="MSM_Request_Signal_MSM_Request_Signal_Request" Member="MSM_Request_Signal_Requests" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="MSM_Request_Signal_Request" />
-      <Association Name="MSM_Zone_Event_Type_MSM_Request_Signal" Member="MSM_Zone_Event_Type" ThisKey="IdZoneEventType" OtherKey="IdZoneEventType" Type="MSM_Zone_Event_Type" IsForeignKey="true" />
+      <Association Name="HCM_Request_Signal_HCM_Request_Interlock" Member="HCM_Request_Interlocks_ByID" ThisKey="IdRequestSignal" OtherKey="ByIdRequestSignal" Type="HCM_Request_Interlock" />
+      <Association Name="HCM_Request_Signal_HCM_Request_Interlock1" Member="HCM_Request_Interlocks_ID" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="HCM_Request_Interlock" />
+      <Association Name="HCM_Request_Signal_HCM_Request_Transport_Dependency" Member="HCM_Request_Transport_Dependencies" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="HCM_Request_Transport_Dependency" />
+      <Association Name="HCM_Request_Signal_HCM_Request_Type_Signal" Member="HCM_Request_Type_Signals" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="HCM_Request_Type_Signal" />
+      <Association Name="HCM_Request_Signal_HCM_Zone_Interlock" Member="HCM_Zone_Interlocks" ThisKey="IdRequestSignal" OtherKey="ByIdRequestSignal" Type="HCM_Zone_Interlock" />
+      <Association Name="HCM_Request_Signal_HCM_Request_Signal_Request" Member="HCM_Request_Signal_Requests" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="HCM_Request_Signal_Request" />
+      <Association Name="HCM_Zone_Event_Type_HCM_Request_Signal" Member="HCM_Zone_Event_Type" ThisKey="IdZoneEventType" OtherKey="IdZoneEventType" Type="HCM_Zone_Event_Type" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Request_Transport_Dependencies" Member="MSM_Request_Transport_Dependencies">
-    <Type Name="MSM_Request_Transport_Dependency">
+  <Table Name="safety.HCM_Request_Transport_Dependencies" Member="HCM_Request_Transport_Dependencies">
+    <Type Name="HCM_Request_Transport_Dependency">
       <Column Name="IdRequest" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdTransportLocation" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdRequestSignal" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="RequestSignalTrueOrFalse" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Request_Signal_MSM_Request_Transport_Dependency" Member="MSM_Request_Signal" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="MSM_Request_Signal" IsForeignKey="true" />
-      <Association Name="Rodeo_Location_MSM_Request_Transport_Dependency" Member="Rodeo_Location" ThisKey="IdTransportLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
+      <Association Name="HCM_Request_Signal_HCM_Request_Transport_Dependency" Member="HCM_Request_Signal" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="HCM_Request_Signal" IsForeignKey="true" />
+      <Association Name="Rodeo_Location_HCM_Request_Transport_Dependency" Member="Rodeo_Location" ThisKey="IdTransportLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Request_Type_Signals" Member="MSM_Request_Type_Signals">
-    <Type Name="MSM_Request_Type_Signal">
+  <Table Name="safety.HCM_Request_Type_Signals" Member="HCM_Request_Type_Signals">
+    <Type Name="HCM_Request_Type_Signal">
       <Column Name="IdRequestType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdRequestSignal" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="ShowOnBrief" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
@@ -821,24 +821,24 @@
       <Column Name="AutoActionReq" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Request_Signal_MSM_Request_Type_Signal" Member="MSM_Request_Signal" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="MSM_Request_Signal" IsForeignKey="true" />
-      <Association Name="MSM_Request_Type_MSM_Request_Type_Signal" Member="MSM_Request_Type" ThisKey="IdRequestType" OtherKey="IdRequestType" Type="MSM_Request_Type" IsForeignKey="true" />
+      <Association Name="HCM_Request_Signal_HCM_Request_Type_Signal" Member="HCM_Request_Signal" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="HCM_Request_Signal" IsForeignKey="true" />
+      <Association Name="HCM_Request_Type_HCM_Request_Type_Signal" Member="HCM_Request_Type" ThisKey="IdRequestType" OtherKey="IdRequestType" Type="HCM_Request_Type" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Request_Types" Member="MSM_Request_Types">
-    <Type Name="MSM_Request_Type">
+  <Table Name="safety.HCM_Request_Types" Member="HCM_Request_Types">
+    <Type Name="HCM_Request_Type">
       <Column Name="IdRequestType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="ShowOnLayout" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="ColorShown" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Request_Type_MSM_Request_Type_Signal" Member="MSM_Request_Type_Signals" ThisKey="IdRequestType" OtherKey="IdRequestType" Type="MSM_Request_Type_Signal" />
-      <Association Name="MSM_Request_Type_MSM_Request" Member="MSM_Requests" ThisKey="IdRequestType" OtherKey="IdRequestType" Type="MSM_Request" />
+      <Association Name="HCM_Request_Type_HCM_Request_Type_Signal" Member="HCM_Request_Type_Signals" ThisKey="IdRequestType" OtherKey="IdRequestType" Type="HCM_Request_Type_Signal" />
+      <Association Name="HCM_Request_Type_HCM_Request" Member="HCM_Requests" ThisKey="IdRequestType" OtherKey="IdRequestType" Type="HCM_Request" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Requests" Member="MSM_Requests">
-    <Type Name="MSM_Request">
+  <Table Name="safety.HCM_Requests" Member="HCM_Requests">
+    <Type Name="HCM_Request">
       <Column Name="IdRequest" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdRequestType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="IdZone" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -853,19 +853,19 @@
       <Column Name="TextDisplayed" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Request_MSM_Zone_Event" Member="MSM_Zone_Events" ThisKey="IdRequest" OtherKey="IdRequest" Type="MSM_Zone_Event" />
-      <Association Name="MSM_Request_MSM_Ground_EStop_Request" Member="MSM_Ground_EStop_Requests" ThisKey="IdRequest" OtherKey="IdRequest" Type="MSM_Ground_EStop_Request" />
-      <Association Name="MSM_Request_MSM_Request_Interlock" Member="MSM_Request_Interlocks_ByID" ThisKey="IdRequest" OtherKey="ByIdRequest" Type="MSM_Request_Interlock" />
-      <Association Name="MSM_Request_MSM_Request_Interlock1" Member="MSM_Request_Interlocks_ID" ThisKey="IdRequest" OtherKey="IdRequest" Type="MSM_Request_Interlock" />
-      <Association Name="MSM_Request_MSM_Zone_Interlock" Member="MSM_Zone_Interlocks" ThisKey="IdRequest" OtherKey="ByIdRequest" Type="MSM_Zone_Interlock" />
-      <Association Name="MSM_Request_MSM_Request_Signal_Request" Member="MSM_Request_Signal_Requests" ThisKey="IdRequest" OtherKey="IdRequest" Type="MSM_Request_Signal_Request" />
-      <Association Name="MSM_Request_Type_MSM_Request" Member="MSM_Request_Type" ThisKey="IdRequestType" OtherKey="IdRequestType" Type="MSM_Request_Type" IsForeignKey="true" />
-      <Association Name="MSM_Zone_MSM_Request" Member="MSM_Zone" ThisKey="IdZone" OtherKey="IdZone" Type="MSM_Zone" IsForeignKey="true" />
-      <Association Name="Rodeo_Yard_MSM_Request" Member="Rodeo_Yard" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="HCM_Request_HCM_Zone_Event" Member="HCM_Zone_Events" ThisKey="IdRequest" OtherKey="IdRequest" Type="HCM_Zone_Event" />
+      <Association Name="HCM_Request_HCM_Ground_EStop_Request" Member="HCM_Ground_EStop_Requests" ThisKey="IdRequest" OtherKey="IdRequest" Type="HCM_Ground_EStop_Request" />
+      <Association Name="HCM_Request_HCM_Request_Interlock" Member="HCM_Request_Interlocks_ByID" ThisKey="IdRequest" OtherKey="ByIdRequest" Type="HCM_Request_Interlock" />
+      <Association Name="HCM_Request_HCM_Request_Interlock1" Member="HCM_Request_Interlocks_ID" ThisKey="IdRequest" OtherKey="IdRequest" Type="HCM_Request_Interlock" />
+      <Association Name="HCM_Request_HCM_Zone_Interlock" Member="HCM_Zone_Interlocks" ThisKey="IdRequest" OtherKey="ByIdRequest" Type="HCM_Zone_Interlock" />
+      <Association Name="HCM_Request_HCM_Request_Signal_Request" Member="HCM_Request_Signal_Requests" ThisKey="IdRequest" OtherKey="IdRequest" Type="HCM_Request_Signal_Request" />
+      <Association Name="HCM_Request_Type_HCM_Request" Member="HCM_Request_Type" ThisKey="IdRequestType" OtherKey="IdRequestType" Type="HCM_Request_Type" IsForeignKey="true" />
+      <Association Name="HCM_Zone_HCM_Request" Member="HCM_Zone" ThisKey="IdZone" OtherKey="IdZone" Type="HCM_Zone" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_HCM_Request" Member="Rodeo_Yard" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Zone_Dependencies" Member="MSM_Zone_Dependencies">
-    <Type Name="MSM_Zone_Dependency">
+  <Table Name="safety.HCM_Zone_Dependencies" Member="HCM_Zone_Dependencies">
+    <Type Name="HCM_Zone_Dependency">
       <Column Name="IdZoneParent" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdZoneChild" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="ValidateAlwaysOnDisable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
@@ -873,12 +873,12 @@
       <Column Name="DisableOnCascade" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="EnableOnCascade" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Zone_MSM_Zone_Dependency" Member="MSM_Zone_Child" ThisKey="IdZoneChild" OtherKey="IdZone" Type="MSM_Zone" IsForeignKey="true" />
-      <Association Name="MSM_Zone_MSM_Zone_Dependency1" Member="MSM_Zone_Parent" ThisKey="IdZoneParent" OtherKey="IdZone" Type="MSM_Zone" IsForeignKey="true" />
+      <Association Name="HCM_Zone_HCM_Zone_Dependency" Member="HCM_Zone_Child" ThisKey="IdZoneChild" OtherKey="IdZone" Type="HCM_Zone" IsForeignKey="true" />
+      <Association Name="HCM_Zone_HCM_Zone_Dependency1" Member="HCM_Zone_Parent" ThisKey="IdZoneParent" OtherKey="IdZone" Type="HCM_Zone" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Zone_Fences" Member="MSM_Zone_Fences">
-    <Type Name="MSM_Zone_Fence">
+  <Table Name="safety.HCM_Zone_Fences" Member="HCM_Zone_Fences">
+    <Type Name="HCM_Zone_Fence">
       <Column Name="IdFence" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="X1Pos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Y1Pos" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -888,8 +888,8 @@
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Zone_Interlocks" Member="MSM_Zone_Interlocks">
-    <Type Name="MSM_Zone_Interlock">
+  <Table Name="safety.HCM_Zone_Interlocks" Member="HCM_Zone_Interlocks">
+    <Type Name="HCM_Zone_Interlock">
       <Column Name="IdZone" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="EnableOrDisable" Type="System.Boolean" DbType="Bit NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="ByIdZone" Type="System.Int32" DbType="Int" CanBeNull="true" />
@@ -904,14 +904,14 @@
       <Column Name="TextSizeDisplayed" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Request_Signal_MSM_Zone_Interlock" Member="MSM_Request_Signal" ThisKey="ByIdRequestSignal" OtherKey="IdRequestSignal" Type="MSM_Request_Signal" IsForeignKey="true" />
-      <Association Name="MSM_Request_MSM_Zone_Interlock" Member="MSM_Request" ThisKey="ByIdRequest" OtherKey="IdRequest" Type="MSM_Request" IsForeignKey="true" />
-      <Association Name="MSM_Zone_MSM_Zone_Interlock" Member="MSM_Zone_ByID" ThisKey="ByIdZone" OtherKey="IdZone" Type="MSM_Zone" IsForeignKey="true" />
-      <Association Name="MSM_Zone_MSM_Zone_Interlock1" Member="MSM_Zone_ID" ThisKey="IdZone" OtherKey="IdZone" Type="MSM_Zone" IsForeignKey="true" />
+      <Association Name="HCM_Request_Signal_HCM_Zone_Interlock" Member="HCM_Request_Signal" ThisKey="ByIdRequestSignal" OtherKey="IdRequestSignal" Type="HCM_Request_Signal" IsForeignKey="true" />
+      <Association Name="HCM_Request_HCM_Zone_Interlock" Member="HCM_Request" ThisKey="ByIdRequest" OtherKey="IdRequest" Type="HCM_Request" IsForeignKey="true" />
+      <Association Name="HCM_Zone_HCM_Zone_Interlock" Member="HCM_Zone_ByID" ThisKey="ByIdZone" OtherKey="IdZone" Type="HCM_Zone" IsForeignKey="true" />
+      <Association Name="HCM_Zone_HCM_Zone_Interlock1" Member="HCM_Zone_ID" ThisKey="IdZone" OtherKey="IdZone" Type="HCM_Zone" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Zone_Machines" Member="MSM_Zone_Machines">
-    <Type Name="MSM_Zone_Machine">
+  <Table Name="safety.HCM_Zone_Machines" Member="HCM_Zone_Machines">
+    <Type Name="HCM_Zone_Machine">
       <Column Name="IdZone" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdMachineGroup" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="CanBeAccessed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
@@ -919,12 +919,12 @@
       <Column Name="AllowTravelForParking" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="ForbiddenTravelAnytime" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Rodeo_Machine_Group_MSM_Zone_Machine" Member="Rodeo_Machine_Group" ThisKey="IdMachineGroup" OtherKey="IdMachineGroup" Type="Rodeo_Machine_Group" IsForeignKey="true" />
-      <Association Name="MSM_Zone_MSM_Zone_Machine" Member="MSM_Zone" ThisKey="IdZone" OtherKey="IdZone" Type="MSM_Zone" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_Group_HCM_Zone_Machine" Member="Rodeo_Machine_Group" ThisKey="IdMachineGroup" OtherKey="IdMachineGroup" Type="Rodeo_Machine_Group" IsForeignKey="true" />
+      <Association Name="HCM_Zone_HCM_Zone_Machine" Member="HCM_Zone" ThisKey="IdZone" OtherKey="IdZone" Type="HCM_Zone" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Zone_Sections" Member="MSM_Zone_Sections">
-    <Type Name="MSM_Zone_Section">
+  <Table Name="safety.HCM_Zone_Sections" Member="HCM_Zone_Sections">
+    <Type Name="HCM_Zone_Section">
       <Column Name="IdZone" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Section" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdYard" Type="System.Int32" DbType="Int" CanBeNull="true" />
@@ -946,22 +946,22 @@
       <Column Name="ColorShown" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Zone_MSM_Zone_Section" Member="MSM_Zone" ThisKey="IdZone" OtherKey="IdZone" Type="MSM_Zone" IsForeignKey="true" />
-      <Association Name="Rodeo_Yard_MSM_Zone_Section" Member="Rodeo_Yard" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="HCM_Zone_HCM_Zone_Section" Member="HCM_Zone" ThisKey="IdZone" OtherKey="IdZone" Type="HCM_Zone" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_HCM_Zone_Section" Member="Rodeo_Yard" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Zone_Types" Member="MSM_Zone_Types">
-    <Type Name="MSM_Zone_Type">
+  <Table Name="safety.HCM_Zone_Types" Member="HCM_Zone_Types">
+    <Type Name="HCM_Zone_Type">
       <Column Name="IdZoneType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="ColorShown" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Zone_Type_MSM_Zone" Member="MSM_Zones" ThisKey="IdZoneType" OtherKey="IdZoneType" Type="MSM_Zone" />
+      <Association Name="HCM_Zone_Type_HCM_Zone" Member="HCM_Zones" ThisKey="IdZoneType" OtherKey="IdZoneType" Type="HCM_Zone" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Zones" Member="MSM_Zones">
-    <Type Name="MSM_Zone">
+  <Table Name="safety.HCM_Zones" Member="HCM_Zones">
+    <Type Name="HCM_Zone">
       <Column Name="IdZone" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdZoneType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -1000,22 +1000,22 @@
       <Column Name="EnableInterlock_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="EnableInterlock_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Zone_MSM_Zone_Event" Member="MSM_Zone_Events" ThisKey="IdZone" OtherKey="IdZone" Type="MSM_Zone_Event" />
-      <Association Name="MSM_Zone_MSM_Machine_Exit_Zone" Member="MSM_Machine_Exit_Zones" ThisKey="IdZone" OtherKey="IdZone" Type="MSM_Machine_Exit_Zone" />
-      <Association Name="MSM_Zone_MSM_Request_Interlock" Member="MSM_Request_Interlocks" ThisKey="IdZone" OtherKey="ByIdZone" Type="MSM_Request_Interlock" />
-      <Association Name="MSM_Zone_MSM_Request" Member="MSM_Requests" ThisKey="IdZone" OtherKey="IdZone" Type="MSM_Request" />
-      <Association Name="MSM_Zone_MSM_Zone_Dependency" Member="MSM_Zone_Dependencies_Child" ThisKey="IdZone" OtherKey="IdZoneChild" Type="MSM_Zone_Dependency" />
-      <Association Name="MSM_Zone_MSM_Zone_Dependency1" Member="MSM_Zone_Dependencies_Parent" ThisKey="IdZone" OtherKey="IdZoneParent" Type="MSM_Zone_Dependency" />
-      <Association Name="MSM_Zone_MSM_Zone_Interlock" Member="MSM_Zone_Interlocks_ByID" ThisKey="IdZone" OtherKey="ByIdZone" Type="MSM_Zone_Interlock" />
-      <Association Name="MSM_Zone_MSM_Zone_Interlock1" Member="MSM_Zone_Interlocks_ID" ThisKey="IdZone" OtherKey="IdZone" Type="MSM_Zone_Interlock" />
-      <Association Name="MSM_Zone_MSM_Zone_Machine" Member="MSM_Zone_Machines" ThisKey="IdZone" OtherKey="IdZone" Type="MSM_Zone_Machine" />
-      <Association Name="MSM_Zone_MSM_Zone_Section" Member="MSM_Zone_Sections" ThisKey="IdZone" OtherKey="IdZone" Type="MSM_Zone_Section" />
-      <Association Name="Rodeo_Machine_MSM_Zone" Member="Rodeo_Machine" ThisKey="IdMachineRequiredOnDisable" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
-      <Association Name="MSM_Zone_Type_MSM_Zone" Member="MSM_Zone_Type" ThisKey="IdZoneType" OtherKey="IdZoneType" Type="MSM_Zone_Type" IsForeignKey="true" />
+      <Association Name="HCM_Zone_HCM_Zone_Event" Member="HCM_Zone_Events" ThisKey="IdZone" OtherKey="IdZone" Type="HCM_Zone_Event" />
+      <Association Name="HCM_Zone_HCM_Machine_Exit_Zone" Member="HCM_Machine_Exit_Zones" ThisKey="IdZone" OtherKey="IdZone" Type="HCM_Machine_Exit_Zone" />
+      <Association Name="HCM_Zone_HCM_Request_Interlock" Member="HCM_Request_Interlocks" ThisKey="IdZone" OtherKey="ByIdZone" Type="HCM_Request_Interlock" />
+      <Association Name="HCM_Zone_HCM_Request" Member="HCM_Requests" ThisKey="IdZone" OtherKey="IdZone" Type="HCM_Request" />
+      <Association Name="HCM_Zone_HCM_Zone_Dependency" Member="HCM_Zone_Dependencies_Child" ThisKey="IdZone" OtherKey="IdZoneChild" Type="HCM_Zone_Dependency" />
+      <Association Name="HCM_Zone_HCM_Zone_Dependency1" Member="HCM_Zone_Dependencies_Parent" ThisKey="IdZone" OtherKey="IdZoneParent" Type="HCM_Zone_Dependency" />
+      <Association Name="HCM_Zone_HCM_Zone_Interlock" Member="HCM_Zone_Interlocks_ByID" ThisKey="IdZone" OtherKey="ByIdZone" Type="HCM_Zone_Interlock" />
+      <Association Name="HCM_Zone_HCM_Zone_Interlock1" Member="HCM_Zone_Interlocks_ID" ThisKey="IdZone" OtherKey="IdZone" Type="HCM_Zone_Interlock" />
+      <Association Name="HCM_Zone_HCM_Zone_Machine" Member="HCM_Zone_Machines" ThisKey="IdZone" OtherKey="IdZone" Type="HCM_Zone_Machine" />
+      <Association Name="HCM_Zone_HCM_Zone_Section" Member="HCM_Zone_Sections" ThisKey="IdZone" OtherKey="IdZone" Type="HCM_Zone_Section" />
+      <Association Name="Rodeo_Machine_HCM_Zone" Member="Rodeo_Machine" ThisKey="IdMachineRequiredOnDisable" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="HCM_Zone_Type_HCM_Zone" Member="HCM_Zone_Type" ThisKey="IdZoneType" OtherKey="IdZoneType" Type="HCM_Zone_Type" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="system.MSM_PLC_Modules" Member="MSM_PLC_Modules">
-    <Type Name="MSM_PLC_Module">
+  <Table Name="system.HCM_PLC_Modules" Member="HCM_PLC_Modules">
+    <Type Name="HCM_PLC_Module">
       <Column Name="IdPLCModule" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdPLCRack" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Slot" Type="System.Int32" DbType="Int" CanBeNull="true" />
@@ -1026,12 +1026,12 @@
       <Column Name="ConnectivityAlarmname" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
       <Column Name="ImageWidth" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_PLC_Module_MSM_PLC_IO" Member="MSM_PLC_IOs" ThisKey="IdPLCModule" OtherKey="IdPLCModule" Type="MSM_PLC_IO" />
-      <Association Name="MSM_PLC_Rack_MSM_PLC_Module" Member="MSM_PLC_Rack" ThisKey="IdPLCRack" OtherKey="IdPLCRack" Type="MSM_PLC_Rack" IsForeignKey="true" />
+      <Association Name="HCM_PLC_Module_HCM_PLC_IO" Member="HCM_PLC_IOs" ThisKey="IdPLCModule" OtherKey="IdPLCModule" Type="HCM_PLC_IO" />
+      <Association Name="HCM_PLC_Rack_HCM_PLC_Module" Member="HCM_PLC_Rack" ThisKey="IdPLCRack" OtherKey="IdPLCRack" Type="HCM_PLC_Rack" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="system.MSM_PLC_Racks" Member="MSM_PLC_Racks">
-    <Type Name="MSM_PLC_Rack">
+  <Table Name="system.HCM_PLC_Racks" Member="HCM_PLC_Racks">
+    <Type Name="HCM_PLC_Rack">
       <Column Name="IdPLCRack" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdPLC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Rack" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -1043,12 +1043,12 @@
       <Column Name="ImageWidth" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="ImageHeight" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_PLC_Rack_MSM_PLC_Module" Member="MSM_PLC_Modules" ThisKey="IdPLCRack" OtherKey="IdPLCRack" Type="MSM_PLC_Module" />
-      <Association Name="MSM_PLC_MSM_PLC_Rack" Member="MSM_PLC" ThisKey="IdPLC" OtherKey="IdPLC" Type="MSM_PLC" IsForeignKey="true" />
+      <Association Name="HCM_PLC_Rack_HCM_PLC_Module" Member="HCM_PLC_Modules" ThisKey="IdPLCRack" OtherKey="IdPLCRack" Type="HCM_PLC_Module" />
+      <Association Name="HCM_PLC_HCM_PLC_Rack" Member="HCM_PLC" ThisKey="IdPLC" OtherKey="IdPLC" Type="HCM_PLC" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="system.MSM_PLC_VIOs" Member="MSM_PLC_VIOs">
-    <Type Name="MSM_PLC_VIO">
+  <Table Name="system.HCM_PLC_VIOs" Member="HCM_PLC_VIOs">
+    <Type Name="HCM_PLC_VIO">
       <Column Name="IdPLCVIO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdPLC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
@@ -1056,11 +1056,11 @@
       <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="[Order]" Member="Order" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_PLC_MSM_PLC_VIO" Member="MSM_PLC" ThisKey="IdPLC" OtherKey="IdPLC" Type="MSM_PLC" IsForeignKey="true" />
+      <Association Name="HCM_PLC_HCM_PLC_VIO" Member="HCM_PLC" ThisKey="IdPLC" OtherKey="IdPLC" Type="HCM_PLC" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="system.MSM_PLCs" Member="MSM_PLCs">
-    <Type Name="MSM_PLC">
+  <Table Name="system.HCM_PLCs" Member="HCM_PLCs">
+    <Type Name="HCM_PLC">
       <Column Name="IdPLC" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
@@ -1068,24 +1068,24 @@
       <Column Name="ImageWidth" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="ImageHeight" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_PLC_MSM_PLC_Rack" Member="MSM_PLC_Racks" ThisKey="IdPLC" OtherKey="IdPLC" Type="MSM_PLC_Rack" />
-      <Association Name="MSM_PLC_MSM_PLC_VIO" Member="MSM_PLC_VIOs" ThisKey="IdPLC" OtherKey="IdPLC" Type="MSM_PLC_VIO" />
+      <Association Name="HCM_PLC_HCM_PLC_Rack" Member="HCM_PLC_Racks" ThisKey="IdPLC" OtherKey="IdPLC" Type="HCM_PLC_Rack" />
+      <Association Name="HCM_PLC_HCM_PLC_VIO" Member="HCM_PLC_VIOs" ThisKey="IdPLC" OtherKey="IdPLC" Type="HCM_PLC_VIO" />
     </Type>
   </Table>
-  <Table Name="system.MSM_Setting_Values" Member="MSM_Setting_Values">
-    <Type Name="MSM_Setting_Value">
+  <Table Name="system.HCM_Setting_Values" Member="HCM_Setting_Values">
+    <Type Name="HCM_Setting_Value">
       <Column Name="Tagname" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Value" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
       <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
       <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
-  <Table Name="system.MSM_Troubleshooting_References" Member="MSM_Troubleshooting_References">
-    <Type Name="MSM_Troubleshooting_Reference">
+  <Table Name="system.HCM_Troubleshooting_References" Member="HCM_Troubleshooting_References">
+    <Type Name="HCM_Troubleshooting_Reference">
       <Column Name="Reference" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Title" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
       <Column Name="Description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Association Name="MSM_Troubleshooting_Reference_MSM_Troubleshooting_File" Member="MSM_Troubleshooting_Files" ThisKey="Reference" OtherKey="Reference" Type="MSM_Troubleshooting_File" />
+      <Association Name="HCM_Troubleshooting_Reference_HCM_Troubleshooting_File" Member="HCM_Troubleshooting_Files" ThisKey="Reference" OtherKey="Reference" Type="HCM_Troubleshooting_File" />
     </Type>
   </Table>
   <Table Name="system.Rodeo_Client_Credentials" Member="Rodeo_Client_Credentials">
@@ -1160,8 +1160,8 @@
       <Association Name="Rodeo_Setting_Group_Rodeo_Setting_Group_Machine_Type" Member="Rodeo_Setting_Group" ThisKey="IdSettingGroup" OtherKey="IdSettingGroup" Type="Rodeo_Setting_Group" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="[to].MSM_Destination_Next_Pieces" Member="MSM_Destination_Next_Pieces">
-    <Type Name="MSM_Destination_Next_Piece">
+  <Table Name="[to].HCM_Destination_Next_Pieces" Member="HCM_Destination_Next_Pieces">
+    <Type Name="HCM_Destination_Next_Piece">
       <Column Name="L2Destination" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Sequence" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="PieceName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -1169,8 +1169,8 @@
       <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
-  <Table Name="[to].MSM_Job_Forecasts" Member="MSM_Job_Forecasts">
-    <Type Name="MSM_Job_Forecast">
+  <Table Name="[to].HCM_Job_Forecasts" Member="HCM_Job_Forecasts">
+    <Type Name="HCM_Job_Forecast">
       <Column Name="IdJob" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Sequence" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="LocationNameBegin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
@@ -1193,13 +1193,13 @@
       <Column Name="Notes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
       <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
       <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset NOT NULL" CanBeNull="false" />
-      <Association Name="Rodeo_Yard_MSM_Job_Forecast" Member="Rodeo_Yard_Begin" ThisKey="IdYardBegin" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
-      <Association Name="Rodeo_Yard_MSM_Job_Forecast1" Member="Rodeo_Yard_End" ThisKey="IdYardEnd" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
-      <Association Name="MSM_Job_MSM_Job_Forecast" Member="MSM_Job" ThisKey="IdJob" OtherKey="IdJob" Type="MSM_Job" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_HCM_Job_Forecast" Member="Rodeo_Yard_Begin" ThisKey="IdYardBegin" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_HCM_Job_Forecast1" Member="Rodeo_Yard_End" ThisKey="IdYardEnd" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="HCM_Job_HCM_Job_Forecast" Member="HCM_Job" ThisKey="IdJob" OtherKey="IdJob" Type="HCM_Job" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="[to].MSM_Job_Types" Member="MSM_Job_Types">
-    <Type Name="MSM_Job_Type">
+  <Table Name="[to].HCM_Job_Types" Member="HCM_Job_Types">
+    <Type Name="HCM_Job_Type">
       <Column Name="IdJobType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
@@ -1208,27 +1208,27 @@
       <Column Name="IdLocationGroupEndDefault" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Job_Type_MSM_Job_Type_Route" Member="MSM_Job_Type_Routes" ThisKey="IdJobType" OtherKey="IdJobType" Type="MSM_Job_Type_Route" />
-      <Association Name="MSM_Job_Type_MSM_Job" Member="MSM_Jobs" ThisKey="IdJobType" OtherKey="IdJobType" Type="MSM_Job" />
-      <Association Name="MSM_Location_Group_MSM_Job_Type" Member="MSM_Location_Group_Begin" ThisKey="IdLocationGroupBeginDefault" OtherKey="IdLocationGroup" Type="MSM_Location_Group" IsForeignKey="true" />
-      <Association Name="MSM_Location_Group_MSM_Job_Type1" Member="MSM_Location_Group_End" ThisKey="IdLocationGroupEndDefault" OtherKey="IdLocationGroup" Type="MSM_Location_Group" IsForeignKey="true" />
+      <Association Name="HCM_Job_Type_HCM_Job_Type_Route" Member="HCM_Job_Type_Routes" ThisKey="IdJobType" OtherKey="IdJobType" Type="HCM_Job_Type_Route" />
+      <Association Name="HCM_Job_Type_HCM_Job" Member="HCM_Jobs" ThisKey="IdJobType" OtherKey="IdJobType" Type="HCM_Job" />
+      <Association Name="HCM_Location_Group_HCM_Job_Type" Member="HCM_Location_Group_Begin" ThisKey="IdLocationGroupBeginDefault" OtherKey="IdLocationGroup" Type="HCM_Location_Group" IsForeignKey="true" />
+      <Association Name="HCM_Location_Group_HCM_Job_Type1" Member="HCM_Location_Group_End" ThisKey="IdLocationGroupEndDefault" OtherKey="IdLocationGroup" Type="HCM_Location_Group" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="[to].MSM_Machine_Exit_Locations" Member="MSM_Machine_Exit_Locations">
-    <Type Name="MSM_Machine_Exit_Location">
+  <Table Name="[to].HCM_Machine_Exit_Locations" Member="HCM_Machine_Exit_Locations">
+    <Type Name="HCM_Machine_Exit_Location">
       <Column Name="IdMachine" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdLocation" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TimeoutMachineIdleInside" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Move_IdLocation" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Priority" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="Rodeo_Machine_MSM_Machine_Exit_Location" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
-      <Association Name="Rodeo_Location_MSM_Machine_Exit_Location" Member="Rodeo_Location" ThisKey="Move_IdLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
-      <Association Name="Rodeo_Location_MSM_Machine_Exit_Location1" Member="Rodeo_Location1" ThisKey="IdLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_HCM_Machine_Exit_Location" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="Rodeo_Location_HCM_Machine_Exit_Location" Member="Rodeo_Location" ThisKey="Move_IdLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
+      <Association Name="Rodeo_Location_HCM_Machine_Exit_Location1" Member="Rodeo_Location1" ThisKey="IdLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="[to].MSM_RCP_ErrorCodes" Member="MSM_RCP_ErrorCodes">
-    <Type Name="MSM_RCP_ErrorCode">
+  <Table Name="[to].HCM_RCP_ErrorCodes" Member="HCM_RCP_ErrorCodes">
+    <Type Name="HCM_RCP_ErrorCode">
       <Column Name="IdRCPErrorCode" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
@@ -1237,8 +1237,8 @@
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
-  <Table Name="[to].MSM_RCP_Flags" Member="MSM_RCP_Flags">
-    <Type Name="MSM_RCP_Flag">
+  <Table Name="[to].HCM_RCP_Flags" Member="HCM_RCP_Flags">
+    <Type Name="HCM_RCP_Flag">
       <Column Name="IdRCPFlag" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
@@ -1248,8 +1248,8 @@
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
-  <Table Name="[to].MSM_RCP_OperationModes" Member="MSM_RCP_OperationModes">
-    <Type Name="MSM_RCP_OperationMode">
+  <Table Name="[to].HCM_RCP_OperationModes" Member="HCM_RCP_OperationModes">
+    <Type Name="HCM_RCP_OperationMode">
       <Column Name="IdRCPOperationModes" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
@@ -1323,7 +1323,7 @@
       <Association Name="Rodeo_TransportOrder_Rodeo_TO_Piece" Member="Rodeo_TransportOrder" ThisKey="IdTransportOrder" OtherKey="IdTransportOrder" Type="Rodeo_TransportOrder" IsForeignKey="true" />
       <Association Name="Rodeo_Yard_Rodeo_TO_Piece" Member="Rodeo_Yard_Pickup" ThisKey="PickupIdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
       <Association Name="Rodeo_Yard_Rodeo_TO_Piece1" Member="Rodeo_Yard_Drop" ThisKey="DropIdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
-      <Association Name="MSM_Job_Rodeo_TO_Piece" Member="MSM_Job" ThisKey="IdJob" OtherKey="IdJob" Type="MSM_Job" IsForeignKey="true" />
+      <Association Name="HCM_Job_Rodeo_TO_Piece" Member="HCM_Job" ThisKey="IdJob" OtherKey="IdJob" Type="HCM_Job" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="[to].Rodeo_TO_Statuses" Member="Rodeo_TO_Statuses">
@@ -1337,7 +1337,7 @@
       <Association Name="Rodeo_TO_Statuse_Rodeo_TO_Step_History" Member="Rodeo_TO_Step_Histories" ThisKey="IdTOStatus" OtherKey="IdTOStatus" Type="Rodeo_TO_Step_History" />
       <Association Name="Rodeo_TO_Statuse_Rodeo_TO_Step" Member="Rodeo_TO_Steps" ThisKey="IdTOStatus" OtherKey="IdTOStatus" Type="Rodeo_TO_Step" />
       <Association Name="Rodeo_TO_Statuse_Rodeo_TransportOrder" Member="Rodeo_TransportOrders" ThisKey="IdTOStatus" OtherKey="IdTOStatus" Type="Rodeo_TransportOrder" />
-      <Association Name="Rodeo_TO_Statuse_MSM_Job" Member="MSM_Jobs" ThisKey="IdTOStatus" OtherKey="IdTOStatus" Type="MSM_Job" />
+      <Association Name="Rodeo_TO_Statuse_HCM_Job" Member="HCM_Jobs" ThisKey="IdTOStatus" OtherKey="IdTOStatus" Type="HCM_Job" />
     </Type>
   </Table>
   <Table Name="[to].Rodeo_TO_Step_ErrorCodes" Member="Rodeo_TO_Step_ErrorCodes">
@@ -1399,8 +1399,8 @@
       <Association Name="Rodeo_TO_Action_Rodeo_TO_Step" Member="Rodeo_TO_Action" ThisKey="IdTOAction" OtherKey="IdTOAction" Type="Rodeo_TO_Action" IsForeignKey="true" />
       <Association Name="Rodeo_TO_Statuse_Rodeo_TO_Step" Member="Rodeo_TO_Statuse" ThisKey="IdTOStatus" OtherKey="IdTOStatus" Type="Rodeo_TO_Statuse" IsForeignKey="true" />
       <Association Name="Rodeo_TransportOrder_Rodeo_TO_Step" Member="Rodeo_TransportOrder" ThisKey="IdTransportOrder" OtherKey="IdTransportOrder" Type="Rodeo_TransportOrder" IsForeignKey="true" />
-      <Association Name="MSM_Path_Rodeo_TO_Step" Member="MSM_Path_Begin" ThisKey="IdPathBegin" OtherKey="IdPath" Type="MSM_Path" IsForeignKey="true" />
-      <Association Name="MSM_Path_Rodeo_TO_Step1" Member="MSM_Path_End" ThisKey="IdPathEnd" OtherKey="IdPath" Type="MSM_Path" IsForeignKey="true" />
+      <Association Name="HCM_Path_Rodeo_TO_Step" Member="HCM_Path_Begin" ThisKey="IdPathBegin" OtherKey="IdPath" Type="HCM_Path" IsForeignKey="true" />
+      <Association Name="HCM_Path_Rodeo_TO_Step1" Member="HCM_Path_End" ThisKey="IdPathEnd" OtherKey="IdPath" Type="HCM_Path" IsForeignKey="true" />
       <Association Name="Rodeo_Yard_Rodeo_TO_Step" Member="Rodeo_Yard_Begin" ThisKey="IdYardBegin" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
       <Association Name="Rodeo_Yard_Rodeo_TO_Step1" Member="Rodeo_Yard_End" ThisKey="IdYardEnd" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
     </Type>
@@ -1458,8 +1458,8 @@
       <Association Name="Rodeo_Yard_Rodeo_TransportOrder1" Member="Rodeo_Yard_End" ThisKey="IdYardEnd" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="tracking.MSM_HoldOn_Reasons" Member="MSM_HoldOn_Reasons">
-    <Type Name="MSM_HoldOn_Reason">
+  <Table Name="tracking.HCM_HoldOn_Reasons" Member="HCM_HoldOn_Reasons">
+    <Type Name="HCM_HoldOn_Reason">
       <Column Name="IdHoldOnReason" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
@@ -1488,8 +1488,8 @@
       <Association Name="Rodeo_Piece_Type_Rodeo_Piece" Member="Rodeo_Pieces" ThisKey="IdPieceType" OtherKey="IdPieceType" Type="Rodeo_Piece" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Request_Signal_Requests" Member="MSM_Request_Signal_Requests">
-    <Type Name="MSM_Request_Signal_Request">
+  <Table Name="safety.HCM_Request_Signal_Requests" Member="HCM_Request_Signal_Requests">
+    <Type Name="HCM_Request_Signal_Request">
       <Column Name="IdRequest" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdRequestSignal" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="ReadTagname" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
@@ -1505,12 +1505,12 @@
       <Column Name="OtherwiseInterlock_Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="OtherwiseInterlock_PlcValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Request_Signal_MSM_Request_Signal_Request" Member="MSM_Request_Signal" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="MSM_Request_Signal" IsForeignKey="true" />
-      <Association Name="MSM_Request_MSM_Request_Signal_Request" Member="MSM_Request" ThisKey="IdRequest" OtherKey="IdRequest" Type="MSM_Request" IsForeignKey="true" />
+      <Association Name="HCM_Request_Signal_HCM_Request_Signal_Request" Member="HCM_Request_Signal" ThisKey="IdRequestSignal" OtherKey="IdRequestSignal" Type="HCM_Request_Signal" IsForeignKey="true" />
+      <Association Name="HCM_Request_HCM_Request_Signal_Request" Member="HCM_Request" ThisKey="IdRequest" OtherKey="IdRequest" Type="HCM_Request" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="tracking.MSM_Paths" Member="MSM_Paths">
-    <Type Name="MSM_Path">
+  <Table Name="tracking.HCM_Paths" Member="HCM_Paths">
+    <Type Name="HCM_Path">
       <Column Name="IdPath" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
@@ -1525,19 +1525,19 @@
       <Column Name="OrderByX" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Path_Rodeo_TO_Step" Member="Rodeo_TO_Steps_Begin" ThisKey="IdPath" OtherKey="IdPathBegin" Type="Rodeo_TO_Step" />
-      <Association Name="MSM_Path_Rodeo_TO_Step1" Member="Rodeo_TO_Steps_End" ThisKey="IdPath" OtherKey="IdPathEnd" Type="Rodeo_TO_Step" />
-      <Association Name="Rodeo_Yard_MSM_Path" Member="Rodeo_Yard_Begin" ThisKey="IdYardBegin" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
-      <Association Name="Rodeo_Yard_MSM_Path1" Member="Rodeo_Yard_End" ThisKey="IdYardEnd" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="HCM_Path_Rodeo_TO_Step" Member="Rodeo_TO_Steps_Begin" ThisKey="IdPath" OtherKey="IdPathBegin" Type="Rodeo_TO_Step" />
+      <Association Name="HCM_Path_Rodeo_TO_Step1" Member="Rodeo_TO_Steps_End" ThisKey="IdPath" OtherKey="IdPathEnd" Type="Rodeo_TO_Step" />
+      <Association Name="Rodeo_Yard_HCM_Path" Member="Rodeo_Yard_Begin" ThisKey="IdYardBegin" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_HCM_Path1" Member="Rodeo_Yard_End" ThisKey="IdYardEnd" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Location_Range_Yards" Member="MSM_Location_Range_Yards">
-    <Type Name="MSM_Location_Range_Yard">
+  <Table Name="common.HCM_Location_Range_Yards" Member="HCM_Location_Range_Yards">
+    <Type Name="HCM_Location_Range_Yard">
       <Column Name="IdLocationRange" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdYard" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Location_Range_MSM_Location_Range_Yard" Member="MSM_Location_Range" ThisKey="IdLocationRange" OtherKey="IdLocationRange" Type="MSM_Location_Range" IsForeignKey="true" />
-      <Association Name="Rodeo_Yard_MSM_Location_Range_Yard" Member="Rodeo_Yard" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="HCM_Location_Range_HCM_Location_Range_Yard" Member="HCM_Location_Range" ThisKey="IdLocationRange" OtherKey="IdLocationRange" Type="HCM_Location_Range" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_HCM_Location_Range_Yard" Member="Rodeo_Yard" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="system.Rodeo_Setting_Groups" Member="Rodeo_Setting_Groups">
@@ -1583,33 +1583,33 @@
       <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Association Name="Rodeo_Yard_Rodeo_Machine" Member="Rodeo_Machines" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Machine" />
-      <Association Name="Rodeo_Yard_MSM_Machine_Exit_Zone" Member="MSM_Machine_Exit_Zones" ThisKey="IdYard" OtherKey="Move_IdYard" Type="MSM_Machine_Exit_Zone" />
-      <Association Name="Rodeo_Yard_MSM_Request" Member="MSM_Requests" ThisKey="IdYard" OtherKey="IdYard" Type="MSM_Request" />
-      <Association Name="Rodeo_Yard_MSM_Zone_Section" Member="MSM_Zone_Sections" ThisKey="IdYard" OtherKey="IdYard" Type="MSM_Zone_Section" />
-      <Association Name="Rodeo_Yard_MSM_Job_Forecast" Member="MSM_Job_Forecasts_Begin" ThisKey="IdYard" OtherKey="IdYardBegin" Type="MSM_Job_Forecast" />
-      <Association Name="Rodeo_Yard_MSM_Job_Forecast1" Member="MSM_Job_Forecasts_End" ThisKey="IdYard" OtherKey="IdYardEnd" Type="MSM_Job_Forecast" />
+      <Association Name="Rodeo_Yard_HCM_Machine_Exit_Zone" Member="HCM_Machine_Exit_Zones" ThisKey="IdYard" OtherKey="Move_IdYard" Type="HCM_Machine_Exit_Zone" />
+      <Association Name="Rodeo_Yard_HCM_Request" Member="HCM_Requests" ThisKey="IdYard" OtherKey="IdYard" Type="HCM_Request" />
+      <Association Name="Rodeo_Yard_HCM_Zone_Section" Member="HCM_Zone_Sections" ThisKey="IdYard" OtherKey="IdYard" Type="HCM_Zone_Section" />
+      <Association Name="Rodeo_Yard_HCM_Job_Forecast" Member="HCM_Job_Forecasts_Begin" ThisKey="IdYard" OtherKey="IdYardBegin" Type="HCM_Job_Forecast" />
+      <Association Name="Rodeo_Yard_HCM_Job_Forecast1" Member="HCM_Job_Forecasts_End" ThisKey="IdYard" OtherKey="IdYardEnd" Type="HCM_Job_Forecast" />
       <Association Name="Rodeo_Yard_Rodeo_TO_Piece" Member="Rodeo_TO_Pieces_Pickup" ThisKey="IdYard" OtherKey="PickupIdYard" Type="Rodeo_TO_Piece" />
       <Association Name="Rodeo_Yard_Rodeo_TO_Piece1" Member="Rodeo_TO_Pieces_Drop" ThisKey="IdYard" OtherKey="DropIdYard" Type="Rodeo_TO_Piece" />
       <Association Name="Rodeo_Yard_Rodeo_TO_Step" Member="Rodeo_TO_Steps_Begin" ThisKey="IdYard" OtherKey="IdYardBegin" Type="Rodeo_TO_Step" />
       <Association Name="Rodeo_Yard_Rodeo_TO_Step1" Member="Rodeo_TO_Steps_End" ThisKey="IdYard" OtherKey="IdYardEnd" Type="Rodeo_TO_Step" />
       <Association Name="Rodeo_Yard_Rodeo_TransportOrder" Member="Rodeo_TransportOrders_Begin" ThisKey="IdYard" OtherKey="IdYardBegin" Type="Rodeo_TransportOrder" />
       <Association Name="Rodeo_Yard_Rodeo_TransportOrder1" Member="Rodeo_TransportOrders_End" ThisKey="IdYard" OtherKey="IdYardEnd" Type="Rodeo_TransportOrder" />
-      <Association Name="Rodeo_Yard_MSM_Path" Member="MSM_Paths_Begin" ThisKey="IdYard" OtherKey="IdYardBegin" Type="MSM_Path" />
-      <Association Name="Rodeo_Yard_MSM_Path1" Member="MSM_Paths_End" ThisKey="IdYard" OtherKey="IdYardEnd" Type="MSM_Path" />
-      <Association Name="Rodeo_Yard_MSM_Location_Range_Yard" Member="MSM_Location_Range_Yards" ThisKey="IdYard" OtherKey="IdYard" Type="MSM_Location_Range_Yard" />
-      <Association Name="Rodeo_Yard_MSM_Job_Yard_Transfer_Step" Member="MSM_Job_Yard_Transfer_Steps" ThisKey="IdYard" OtherKey="IdYardBeginOnlyApplicable" Type="MSM_Job_Yard_Transfer_Step" />
-      <Association Name="Rodeo_Yard_MSM_Job_Type_Route" Member="MSM_Job_Type_Routes" ThisKey="IdYard" OtherKey="IdYardOnlyApplicable" Type="MSM_Job_Type_Route" />
+      <Association Name="Rodeo_Yard_HCM_Path" Member="HCM_Paths_Begin" ThisKey="IdYard" OtherKey="IdYardBegin" Type="HCM_Path" />
+      <Association Name="Rodeo_Yard_HCM_Path1" Member="HCM_Paths_End" ThisKey="IdYard" OtherKey="IdYardEnd" Type="HCM_Path" />
+      <Association Name="Rodeo_Yard_HCM_Location_Range_Yard" Member="HCM_Location_Range_Yards" ThisKey="IdYard" OtherKey="IdYard" Type="HCM_Location_Range_Yard" />
+      <Association Name="Rodeo_Yard_HCM_Job_Yard_Transfer_Step" Member="HCM_Job_Yard_Transfer_Steps" ThisKey="IdYard" OtherKey="IdYardBeginOnlyApplicable" Type="HCM_Job_Yard_Transfer_Step" />
+      <Association Name="Rodeo_Yard_HCM_Job_Type_Route" Member="HCM_Job_Type_Routes" ThisKey="IdYard" OtherKey="IdYardOnlyApplicable" Type="HCM_Job_Type_Route" />
       <Association Name="Rodeo_Yard_Rodeo_Location" Member="Rodeo_Locations" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Location" />
-      <Association Name="Rodeo_Yard_MSM_Job" Member="MSM_Jobs" ThisKey="IdYard" OtherKey="IdYardBeginReq" Type="MSM_Job" />
-      <Association Name="Rodeo_Yard_MSM_Job1" Member="MSM_Jobs1" ThisKey="IdYard" OtherKey="IdYardBegin" Type="MSM_Job" />
-      <Association Name="Rodeo_Yard_MSM_Job2" Member="MSM_Jobs2" ThisKey="IdYard" OtherKey="IdYardEndReq" Type="MSM_Job" />
-      <Association Name="Rodeo_Yard_MSM_Job3" Member="MSM_Jobs3" ThisKey="IdYard" OtherKey="IdYardEnd" Type="MSM_Job" />
-      <Association Name="Rodeo_Yard_MSM_Job4" Member="MSM_Jobs4" ThisKey="IdYard" OtherKey="IdYardRedirect" Type="MSM_Job" />
+      <Association Name="Rodeo_Yard_HCM_Job" Member="HCM_Jobs" ThisKey="IdYard" OtherKey="IdYardBeginReq" Type="HCM_Job" />
+      <Association Name="Rodeo_Yard_HCM_Job1" Member="HCM_Jobs1" ThisKey="IdYard" OtherKey="IdYardBegin" Type="HCM_Job" />
+      <Association Name="Rodeo_Yard_HCM_Job2" Member="HCM_Jobs2" ThisKey="IdYard" OtherKey="IdYardEndReq" Type="HCM_Job" />
+      <Association Name="Rodeo_Yard_HCM_Job3" Member="HCM_Jobs3" ThisKey="IdYard" OtherKey="IdYardEnd" Type="HCM_Job" />
+      <Association Name="Rodeo_Yard_HCM_Job4" Member="HCM_Jobs4" ThisKey="IdYard" OtherKey="IdYardRedirect" Type="HCM_Job" />
       <Association Name="Rodeo_Yard_Rodeo_Piece" Member="Rodeo_Pieces" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Piece" />
     </Type>
   </Table>
-  <Table Name="[to].MSM_Job_Yard_Transfer_Steps" Member="MSM_Job_Yard_Transfer_Steps">
-    <Type Name="MSM_Job_Yard_Transfer_Step">
+  <Table Name="[to].HCM_Job_Yard_Transfer_Steps" Member="HCM_Job_Yard_Transfer_Steps">
+    <Type Name="HCM_Job_Yard_Transfer_Step">
       <Column Name="IdJobYardTransferStep" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IsYardBeginOnFinalDestination" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="IsYardEndOnFinalDestination" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
@@ -1618,14 +1618,14 @@
       <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="IdYardBeginOnlyApplicable" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Location_Group_MSM_Job_Yard_Transfer_Step" Member="MSM_Location_Group_Begin" ThisKey="IdLocationGroupBegin" OtherKey="IdLocationGroup" Type="MSM_Location_Group" IsForeignKey="true" />
-      <Association Name="MSM_Location_Group_MSM_Job_Yard_Transfer_Step1" Member="MSM_Location_Group_End" ThisKey="IdLocationGroupEnd" OtherKey="IdLocationGroup" Type="MSM_Location_Group" IsForeignKey="true" />
-      <Association Name="Rodeo_Machine_Type_MSM_Job_Yard_Transfer_Step" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
-      <Association Name="Rodeo_Yard_MSM_Job_Yard_Transfer_Step" Member="Rodeo_Yard" ThisKey="IdYardBeginOnlyApplicable" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="HCM_Location_Group_HCM_Job_Yard_Transfer_Step" Member="HCM_Location_Group_Begin" ThisKey="IdLocationGroupBegin" OtherKey="IdLocationGroup" Type="HCM_Location_Group" IsForeignKey="true" />
+      <Association Name="HCM_Location_Group_HCM_Job_Yard_Transfer_Step1" Member="HCM_Location_Group_End" ThisKey="IdLocationGroupEnd" OtherKey="IdLocationGroup" Type="HCM_Location_Group" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_Type_HCM_Job_Yard_Transfer_Step" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_HCM_Job_Yard_Transfer_Step" Member="Rodeo_Yard" ThisKey="IdYardBeginOnlyApplicable" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="[to].MSM_Job_Type_Routes" Member="MSM_Job_Type_Routes">
-    <Type Name="MSM_Job_Type_Route">
+  <Table Name="[to].HCM_Job_Type_Routes" Member="HCM_Job_Type_Routes">
+    <Type Name="HCM_Job_Type_Route">
       <Column Name="IdJobTypeRoute" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdJobType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="IdYardOnlyApplicable" Type="System.Int32" DbType="Int" CanBeNull="true" />
@@ -1633,11 +1633,11 @@
       <Column Name="IdLocationGroupEnd" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Job_Type_MSM_Job_Type_Route" Member="MSM_Job_Type" ThisKey="IdJobType" OtherKey="IdJobType" Type="MSM_Job_Type" IsForeignKey="true" />
-      <Association Name="MSM_Location_Group_MSM_Job_Type_Route" Member="MSM_Location_Group_Begin" ThisKey="IdLocationGroupBegin" OtherKey="IdLocationGroup" Type="MSM_Location_Group" IsForeignKey="true" />
-      <Association Name="MSM_Location_Group_MSM_Job_Type_Route1" Member="MSM_Location_Group_End" ThisKey="IdLocationGroupEnd" OtherKey="IdLocationGroup" Type="MSM_Location_Group" IsForeignKey="true" />
-      <Association Name="Rodeo_Machine_Type_MSM_Job_Type_Route" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
-      <Association Name="Rodeo_Yard_MSM_Job_Type_Route" Member="Rodeo_Yard" ThisKey="IdYardOnlyApplicable" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="HCM_Job_Type_HCM_Job_Type_Route" Member="HCM_Job_Type" ThisKey="IdJobType" OtherKey="IdJobType" Type="HCM_Job_Type" IsForeignKey="true" />
+      <Association Name="HCM_Location_Group_HCM_Job_Type_Route" Member="HCM_Location_Group_Begin" ThisKey="IdLocationGroupBegin" OtherKey="IdLocationGroup" Type="HCM_Location_Group" IsForeignKey="true" />
+      <Association Name="HCM_Location_Group_HCM_Job_Type_Route1" Member="HCM_Location_Group_End" ThisKey="IdLocationGroupEnd" OtherKey="IdLocationGroup" Type="HCM_Location_Group" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_Type_HCM_Job_Type_Route" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_HCM_Job_Type_Route" Member="Rodeo_Yard" ThisKey="IdYardOnlyApplicable" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="[to].Rodeo_TO_Notifications" Member="Rodeo_TO_Notifications">
@@ -1654,21 +1654,21 @@
       <Association Name="Rodeo_TransportOrder_Rodeo_TO_Notification" Member="Rodeo_TransportOrder" ThisKey="IdTransportOrder" OtherKey="IdTransportOrder" Type="Rodeo_TransportOrder" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="tracking.MSM_Pick_List_Groups" Member="MSM_Pick_List_Groups">
-    <Type Name="MSM_Pick_List_Groups">
+  <Table Name="tracking.HCM_Pick_List_Groups" Member="HCM_Pick_List_Groups">
+    <Type Name="HCM_Pick_List_Groups">
       <Column Name="IdPickListGroup" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="IdPickListGroupParent" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="MSM_Pick_List_Groups_MSM_Pick_List_Groups" Member="MSM_Pick_List_Groups2" ThisKey="IdPickListGroup" OtherKey="IdPickListGroupParent" Type="MSM_Pick_List_Groups" />
-      <Association Name="MSM_Pick_List_Groups_MSM_Pick_Lists" Member="MSM_Pick_Lists" ThisKey="IdPickListGroup" OtherKey="IdPickListGroup" Type="MSM_Pick_Lists" />
-      <Association Name="MSM_Pick_List_Groups_MSM_Pick_List_Groups" Member="MSM_Pick_List_Groups1" ThisKey="IdPickListGroupParent" OtherKey="IdPickListGroup" Type="MSM_Pick_List_Groups" IsForeignKey="true" />
+      <Association Name="HCM_Pick_List_Groups_HCM_Pick_List_Groups" Member="HCM_Pick_List_Groups2" ThisKey="IdPickListGroup" OtherKey="IdPickListGroupParent" Type="HCM_Pick_List_Groups" />
+      <Association Name="HCM_Pick_List_Groups_HCM_Pick_Lists" Member="HCM_Pick_Lists" ThisKey="IdPickListGroup" OtherKey="IdPickListGroup" Type="HCM_Pick_Lists" />
+      <Association Name="HCM_Pick_List_Groups_HCM_Pick_List_Groups" Member="HCM_Pick_List_Groups1" ThisKey="IdPickListGroupParent" OtherKey="IdPickListGroup" Type="HCM_Pick_List_Groups" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="tracking.MSM_Pick_Lists_Filters" Member="MSM_Pick_Lists_Filters">
-    <Type Name="MSM_Pick_Lists_Filters">
+  <Table Name="tracking.HCM_Pick_Lists_Filters" Member="HCM_Pick_Lists_Filters">
+    <Type Name="HCM_Pick_Lists_Filters">
       <Column Name="IdPickList" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdPickListGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -1678,24 +1678,24 @@
       <Column Name="ForegroundColor" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
       <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Pick_List_Groups_Filters_MSM_Pick_Lists_Filters" Member="MSM_Pick_List_Groups_Filters" ThisKey="IdPickListGroup" OtherKey="IdPickListGroup" Type="MSM_Pick_List_Groups_Filters" IsForeignKey="true" />
+      <Association Name="HCM_Pick_List_Groups_Filters_HCM_Pick_Lists_Filters" Member="HCM_Pick_List_Groups_Filters" ThisKey="IdPickListGroup" OtherKey="IdPickListGroup" Type="HCM_Pick_List_Groups_Filters" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="tracking.MSM_Pick_List_Groups_Filters" Member="MSM_Pick_List_Groups_Filters">
-    <Type Name="MSM_Pick_List_Groups_Filters">
+  <Table Name="tracking.HCM_Pick_List_Groups_Filters" Member="HCM_Pick_List_Groups_Filters">
+    <Type Name="HCM_Pick_List_Groups_Filters">
       <Column Name="IdPickListGroup" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="IdPickListGroupParent" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="MSM_Pick_List_Groups_Filters_MSM_Pick_Lists_Filters" Member="MSM_Pick_Lists_Filters" ThisKey="IdPickListGroup" OtherKey="IdPickListGroup" Type="MSM_Pick_Lists_Filters" />
-      <Association Name="MSM_Pick_List_Groups_Filters_MSM_Pick_List_Groups_Filters" Member="MSM_Pick_List_Groups_Filters2" ThisKey="IdPickListGroup" OtherKey="IdPickListGroupParent" Type="MSM_Pick_List_Groups_Filters" />
-      <Association Name="MSM_Pick_List_Groups_Filters_MSM_Pick_List_Groups_Filters" Member="MSM_Pick_List_Groups_Filters1" ThisKey="IdPickListGroupParent" OtherKey="IdPickListGroup" Type="MSM_Pick_List_Groups_Filters" IsForeignKey="true" />
+      <Association Name="HCM_Pick_List_Groups_Filters_HCM_Pick_Lists_Filters" Member="HCM_Pick_Lists_Filters" ThisKey="IdPickListGroup" OtherKey="IdPickListGroup" Type="HCM_Pick_Lists_Filters" />
+      <Association Name="HCM_Pick_List_Groups_Filters_HCM_Pick_List_Groups_Filters" Member="HCM_Pick_List_Groups_Filters2" ThisKey="IdPickListGroup" OtherKey="IdPickListGroupParent" Type="HCM_Pick_List_Groups_Filters" />
+      <Association Name="HCM_Pick_List_Groups_Filters_HCM_Pick_List_Groups_Filters" Member="HCM_Pick_List_Groups_Filters1" ThisKey="IdPickListGroupParent" OtherKey="IdPickListGroup" Type="HCM_Pick_List_Groups_Filters" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="tracking.MSM_Pick_Lists" Member="MSM_Pick_Lists">
-    <Type Name="MSM_Pick_Lists">
+  <Table Name="tracking.HCM_Pick_Lists" Member="HCM_Pick_Lists">
+    <Type Name="HCM_Pick_Lists">
       <Column Name="IdPickList" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdPickListGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -1705,12 +1705,12 @@
       <Column Name="ForegroundColor" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
       <Column Name="PlcValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Pick_Lists_Rodeo_Piece" Member="Rodeo_Pieces" ThisKey="IdPickList" OtherKey="IdPickList" Type="Rodeo_Piece" />
-      <Association Name="MSM_Pick_List_Groups_MSM_Pick_Lists" Member="MSM_Pick_List_Groups" ThisKey="IdPickListGroup" OtherKey="IdPickListGroup" Type="MSM_Pick_List_Groups" IsForeignKey="true" />
+      <Association Name="HCM_Pick_Lists_Rodeo_Piece" Member="Rodeo_Pieces" ThisKey="IdPickList" OtherKey="IdPickList" Type="Rodeo_Piece" />
+      <Association Name="HCM_Pick_List_Groups_HCM_Pick_Lists" Member="HCM_Pick_List_Groups" ThisKey="IdPickListGroup" OtherKey="IdPickListGroup" Type="HCM_Pick_List_Groups" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="tracking.MSM_Pick_List_Groups_All" Member="MSM_Pick_List_Groups_All">
-    <Type Name="MSM_Pick_List_Groups_All">
+  <Table Name="tracking.HCM_Pick_List_Groups_All" Member="HCM_Pick_List_Groups_All">
+    <Type Name="HCM_Pick_List_Groups_All">
       <Column Name="IdPickListGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
@@ -1719,8 +1719,8 @@
       <Column Name="IdPickListGroupParent" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="tracking.MSM_Pick_Lists_All" Member="MSM_Pick_Lists_All">
-    <Type Name="MSM_Pick_Lists_All">
+  <Table Name="tracking.HCM_Pick_Lists_All" Member="HCM_Pick_Lists_All">
+    <Type Name="HCM_Pick_Lists_All">
       <Column Name="IdPickList" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="IdPickListGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
@@ -1786,10 +1786,10 @@
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Association Name="Rodeo_Location_Rodeo_Machine" Member="Rodeo_Machines" ThisKey="IdLocation" OtherKey="IdParkingLocation" Type="Rodeo_Machine" />
       <Association Name="Rodeo_Location_Rodeo_Machine1" Member="Rodeo_Machines1" ThisKey="IdLocation" OtherKey="IdWorkingLocation" Type="Rodeo_Machine" />
-      <Association Name="Rodeo_Location_MSM_Machine_Exit_Zone" Member="MSM_Machine_Exit_Zones" ThisKey="IdLocation" OtherKey="Move_IdLocation" Type="MSM_Machine_Exit_Zone" />
-      <Association Name="Rodeo_Location_MSM_Request_Transport_Dependency" Member="MSM_Request_Transport_Dependencies" ThisKey="IdLocation" OtherKey="IdTransportLocation" Type="MSM_Request_Transport_Dependency" />
-      <Association Name="Rodeo_Location_MSM_Machine_Exit_Location" Member="MSM_Machine_Exit_Locations" ThisKey="IdLocation" OtherKey="Move_IdLocation" Type="MSM_Machine_Exit_Location" />
-      <Association Name="Rodeo_Location_MSM_Machine_Exit_Location1" Member="MSM_Machine_Exit_Locations1" ThisKey="IdLocation" OtherKey="IdLocation" Type="MSM_Machine_Exit_Location" />
+      <Association Name="Rodeo_Location_HCM_Machine_Exit_Zone" Member="HCM_Machine_Exit_Zones" ThisKey="IdLocation" OtherKey="Move_IdLocation" Type="HCM_Machine_Exit_Zone" />
+      <Association Name="Rodeo_Location_HCM_Request_Transport_Dependency" Member="HCM_Request_Transport_Dependencies" ThisKey="IdLocation" OtherKey="IdTransportLocation" Type="HCM_Request_Transport_Dependency" />
+      <Association Name="Rodeo_Location_HCM_Machine_Exit_Location" Member="HCM_Machine_Exit_Locations" ThisKey="IdLocation" OtherKey="Move_IdLocation" Type="HCM_Machine_Exit_Location" />
+      <Association Name="Rodeo_Location_HCM_Machine_Exit_Location1" Member="HCM_Machine_Exit_Locations1" ThisKey="IdLocation" OtherKey="IdLocation" Type="HCM_Machine_Exit_Location" />
       <Association Name="Rodeo_Location_Rodeo_Location" Member="Rodeo_Locations" ThisKey="IdLocation" OtherKey="TOLT" Type="Rodeo_Location" />
       <Association Name="Rodeo_Location_Rodeo_Position" Member="Rodeo_Position" ThisKey="IdLocation" OtherKey="IdLocation" Type="Rodeo_Position" Cardinality="One" />
       <Association Name="Rodeo_Location_Rodeo_TO_Route" Member="Rodeo_TO_Routes" ThisKey="IdLocation" OtherKey="IdLocationBegin" Type="Rodeo_TO_Route" />
@@ -1800,12 +1800,12 @@
       <Association Name="Rodeo_Location_Type_Rodeo_Location" Member="Rodeo_Location_Type" ThisKey="IdLocationType" OtherKey="IdLocationType" Type="Rodeo_Location_Type" IsForeignKey="true" />
       <Association Name="Rodeo_Location_Rodeo_Location" Member="Rodeo_Location1" ThisKey="TOLT" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
       <Association Name="Rodeo_Yard_Rodeo_Location" Member="Rodeo_Yard" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
-      <Association Name="MSM_Location_Group_Rodeo_Location" Member="MSM_Location_Group" ThisKey="IdLocationGroup" OtherKey="IdLocationGroup" Type="MSM_Location_Group" IsForeignKey="true" />
-      <Association Name="MSM_Location_Range_Rodeo_Location" Member="MSM_Location_Range" ThisKey="IdLocationRange" OtherKey="IdLocationRange" Type="MSM_Location_Range" IsForeignKey="true" />
+      <Association Name="HCM_Location_Group_Rodeo_Location" Member="HCM_Location_Group" ThisKey="IdLocationGroup" OtherKey="IdLocationGroup" Type="HCM_Location_Group" IsForeignKey="true" />
+      <Association Name="HCM_Location_Range_Rodeo_Location" Member="HCM_Location_Range" ThisKey="IdLocationRange" OtherKey="IdLocationRange" Type="HCM_Location_Range" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="system.MSM_PLC_IOs" Member="MSM_PLC_IOs">
-    <Type Name="MSM_PLC_IO">
+  <Table Name="system.HCM_PLC_IOs" Member="HCM_PLC_IOs">
+    <Type Name="HCM_PLC_IO">
       <Column Name="IdPLCIO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdPLCModule" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Position" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -1814,16 +1814,16 @@
       <Column Name="Bit" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="Size" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_PLC_Module_MSM_PLC_IO" Member="MSM_PLC_Module" ThisKey="IdPLCModule" OtherKey="IdPLCModule" Type="MSM_PLC_Module" IsForeignKey="true" />
+      <Association Name="HCM_PLC_Module_HCM_PLC_IO" Member="HCM_PLC_Module" ThisKey="IdPLCModule" OtherKey="IdPLCModule" Type="HCM_PLC_Module" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="common.MSM_File_Types" Member="MSM_File_Types">
-    <Type Name="MSM_File_Type">
+  <Table Name="common.HCM_File_Types" Member="HCM_File_Types">
+    <Type Name="HCM_File_Type">
       <Column Name="IdFileType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_File_Type_MSM_File" Member="MSM_Files" ThisKey="IdFileType" OtherKey="IdFileType" Type="MSM_File" />
+      <Association Name="HCM_File_Type_HCM_File" Member="HCM_Files" ThisKey="IdFileType" OtherKey="IdFileType" Type="HCM_File" />
     </Type>
   </Table>
   <Table Name="common.Rodeo_Positions" Member="Rodeo_Positions">
@@ -1839,8 +1839,8 @@
       <Association Name="Rodeo_Location_Rodeo_Position" Member="Rodeo_Location" ThisKey="IdLocation" OtherKey="IdLocation" Type="Rodeo_Location" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="[to].MSM_RCP_Configs" Member="MSM_RCP_Config">
-    <Type Name="MSM_RCP_Config">
+  <Table Name="[to].HCM_RCP_Configs" Member="HCM_RCP_Config">
+    <Type Name="HCM_RCP_Config">
       <Column Name="IdMachine" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MachineConfigName" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
       <Column Name="IP" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
@@ -1875,8 +1875,8 @@
       <Association Name="Rodeo_TO_Route_Rodeo_TO_Route_Step" Member="Rodeo_TO_Route" ThisKey="IdTORoute" OtherKey="IdTORoute" Type="Rodeo_TO_Route" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="[to].MSM_Jobs" Member="MSM_Jobs">
-    <Type Name="MSM_Job">
+  <Table Name="[to].HCM_Jobs" Member="HCM_Jobs">
+    <Type Name="HCM_Job">
       <Column Name="IdJob" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="IdJobType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="IdTOStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -1925,22 +1925,22 @@
       <Column Name="Notes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
       <Column Name="InsDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
       <Column Name="UpdDateTime" Type="System.DateTimeOffset" DbType="DateTimeOffset" CanBeNull="true" />
-      <Association Name="MSM_Job_MSM_Incoming_Message" Member="MSM_Incoming_Messages" ThisKey="IdJob" OtherKey="IdJob" Type="MSM_Incoming_Message" />
-      <Association Name="MSM_Job_MSM_Outgoing_Message" Member="MSM_Outgoing_Messages" ThisKey="IdJob" OtherKey="IdJob" Type="MSM_Outgoing_Message" />
-      <Association Name="MSM_Job_Rodeo_Event" Member="Rodeo_Events" ThisKey="IdJob" OtherKey="IdJob" Type="Rodeo_Event" />
-      <Association Name="MSM_Job_MSM_Job_Forecast" Member="MSM_Job_Forecasts" ThisKey="IdJob" OtherKey="IdJob" Type="MSM_Job_Forecast" />
-      <Association Name="MSM_Job_Rodeo_TO_Piece" Member="Rodeo_TO_Pieces" ThisKey="IdJob" OtherKey="IdJob" Type="Rodeo_TO_Piece" />
-      <Association Name="Rodeo_Yard_MSM_Job" Member="Rodeo_Yard" ThisKey="IdYardBeginReq" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
-      <Association Name="Rodeo_Yard_MSM_Job1" Member="Rodeo_Yard1" ThisKey="IdYardBegin" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
-      <Association Name="Rodeo_Yard_MSM_Job2" Member="Rodeo_Yard2" ThisKey="IdYardEndReq" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
-      <Association Name="Rodeo_Yard_MSM_Job3" Member="Rodeo_Yard3" ThisKey="IdYardEnd" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
-      <Association Name="Rodeo_Yard_MSM_Job4" Member="Rodeo_Yard4" ThisKey="IdYardRedirect" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
-      <Association Name="Rodeo_TO_Statuse_MSM_Job" Member="Rodeo_TO_Statuse" ThisKey="IdTOStatus" OtherKey="IdTOStatus" Type="Rodeo_TO_Statuse" IsForeignKey="true" />
-      <Association Name="MSM_Job_Type_MSM_Job" Member="MSM_Job_Type" ThisKey="IdJobType" OtherKey="IdJobType" Type="MSM_Job_Type" IsForeignKey="true" />
+      <Association Name="HCM_Job_HCM_Incoming_Message" Member="HCM_Incoming_Messages" ThisKey="IdJob" OtherKey="IdJob" Type="HCM_Incoming_Message" />
+      <Association Name="HCM_Job_HCM_Outgoing_Message" Member="HCM_Outgoing_Messages" ThisKey="IdJob" OtherKey="IdJob" Type="HCM_Outgoing_Message" />
+      <Association Name="HCM_Job_Rodeo_Event" Member="Rodeo_Events" ThisKey="IdJob" OtherKey="IdJob" Type="Rodeo_Event" />
+      <Association Name="HCM_Job_HCM_Job_Forecast" Member="HCM_Job_Forecasts" ThisKey="IdJob" OtherKey="IdJob" Type="HCM_Job_Forecast" />
+      <Association Name="HCM_Job_Rodeo_TO_Piece" Member="Rodeo_TO_Pieces" ThisKey="IdJob" OtherKey="IdJob" Type="Rodeo_TO_Piece" />
+      <Association Name="Rodeo_Yard_HCM_Job" Member="Rodeo_Yard" ThisKey="IdYardBeginReq" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_HCM_Job1" Member="Rodeo_Yard1" ThisKey="IdYardBegin" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_HCM_Job2" Member="Rodeo_Yard2" ThisKey="IdYardEndReq" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_HCM_Job3" Member="Rodeo_Yard3" ThisKey="IdYardEnd" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_Yard_HCM_Job4" Member="Rodeo_Yard4" ThisKey="IdYardRedirect" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
+      <Association Name="Rodeo_TO_Statuse_HCM_Job" Member="Rodeo_TO_Statuse" ThisKey="IdTOStatus" OtherKey="IdTOStatus" Type="Rodeo_TO_Statuse" IsForeignKey="true" />
+      <Association Name="HCM_Job_Type_HCM_Job" Member="HCM_Job_Type" ThisKey="IdJobType" OtherKey="IdJobType" Type="HCM_Job_Type" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Machine_Failures" Member="MSM_Machine_Failures">
-    <Type Name="MSM_Machine_Failure">
+  <Table Name="safety.HCM_Machine_Failures" Member="HCM_Machine_Failures">
+    <Type Name="HCM_Machine_Failure">
       <Column Name="IdMachineFailure" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="ParentIdMachineFailure" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -1958,15 +1958,15 @@
       <Column Name="TroubleshootingReference" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Machine_Failure_MSM_Failures_History" Member="MSM_Failures_Histories" ThisKey="IdMachineFailure" OtherKey="IdMachineFailure" Type="MSM_Failures_History" />
-      <Association Name="MSM_Machine_Failure_MSM_Machine_Failure" Member="MSM_Machine_Failures" ThisKey="IdMachineFailure" OtherKey="ParentIdMachineFailure" Type="MSM_Machine_Failure" />
-      <Association Name="Rodeo_Machine_Type_MSM_Machine_Failure" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
-      <Association Name="Rodeo_Machine_MSM_Machine_Failure" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
-      <Association Name="MSM_Machine_Failure_MSM_Machine_Failure" Member="MSM_Machine_Failure1" ThisKey="ParentIdMachineFailure" OtherKey="IdMachineFailure" Type="MSM_Machine_Failure" IsForeignKey="true" />
+      <Association Name="HCM_Machine_Failure_HCM_Failures_History" Member="HCM_Failures_Histories" ThisKey="IdMachineFailure" OtherKey="IdMachineFailure" Type="HCM_Failures_History" />
+      <Association Name="HCM_Machine_Failure_HCM_Machine_Failure" Member="HCM_Machine_Failures" ThisKey="IdMachineFailure" OtherKey="ParentIdMachineFailure" Type="HCM_Machine_Failure" />
+      <Association Name="Rodeo_Machine_Type_HCM_Machine_Failure" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_HCM_Machine_Failure" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="HCM_Machine_Failure_HCM_Machine_Failure" Member="HCM_Machine_Failure1" ThisKey="ParentIdMachineFailure" OtherKey="IdMachineFailure" Type="HCM_Machine_Failure" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Machine_Interlocks" Member="MSM_Machine_Interlocks">
-    <Type Name="MSM_Machine_Interlock">
+  <Table Name="safety.HCM_Machine_Interlocks" Member="HCM_Machine_Interlocks">
+    <Type Name="HCM_Machine_Interlock">
       <Column Name="IdMachineInterlock" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="ParentIdMachineInterlock" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -1983,14 +1983,14 @@
       <Column Name="TroubleshootingReference" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_Machine_Interlock_MSM_Machine_Interlock" Member="MSM_Machine_Interlocks" ThisKey="IdMachineInterlock" OtherKey="ParentIdMachineInterlock" Type="MSM_Machine_Interlock" />
-      <Association Name="Rodeo_Machine_Type_MSM_Machine_Interlock" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
-      <Association Name="Rodeo_Machine_MSM_Machine_Interlock" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
-      <Association Name="MSM_Machine_Interlock_MSM_Machine_Interlock" Member="MSM_Machine_Interlock1" ThisKey="ParentIdMachineInterlock" OtherKey="IdMachineInterlock" Type="MSM_Machine_Interlock" IsForeignKey="true" />
+      <Association Name="HCM_Machine_Interlock_HCM_Machine_Interlock" Member="HCM_Machine_Interlocks" ThisKey="IdMachineInterlock" OtherKey="ParentIdMachineInterlock" Type="HCM_Machine_Interlock" />
+      <Association Name="Rodeo_Machine_Type_HCM_Machine_Interlock" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_HCM_Machine_Interlock" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="HCM_Machine_Interlock_HCM_Machine_Interlock" Member="HCM_Machine_Interlock1" ThisKey="ParentIdMachineInterlock" OtherKey="IdMachineInterlock" Type="HCM_Machine_Interlock" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Hoist_WorkModes" Member="MSM_Hoist_WorkModes">
-    <Type Name="MSM_Hoist_WorkMode">
+  <Table Name="safety.HCM_Hoist_WorkModes" Member="HCM_Hoist_WorkModes">
+    <Type Name="HCM_Hoist_WorkMode">
       <Column Name="IdHoistWorkMode" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
@@ -1999,8 +1999,8 @@
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Trolley_WorkModes" Member="MSM_Trolley_WorkModes">
-    <Type Name="MSM_Trolley_WorkMode">
+  <Table Name="safety.HCM_Trolley_WorkModes" Member="HCM_Trolley_WorkModes">
+    <Type Name="HCM_Trolley_WorkMode">
       <Column Name="IdTrolleyWorkMode" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
@@ -2009,8 +2009,8 @@
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Grab_WorkModes" Member="MSM_Grab_WorkModes">
-    <Type Name="MSM_Grab_WorkMode">
+  <Table Name="safety.HCM_Grab_WorkModes" Member="HCM_Grab_WorkModes">
+    <Type Name="HCM_Grab_WorkMode">
       <Column Name="IdGrabWorkMode" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
@@ -2019,8 +2019,8 @@
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
-  <Table Name="safety.MSM_Bridge_WorkModes" Member="MSM_Bridge_WorkModes">
-    <Type Name="MSM_Bridge_WorkMode">
+  <Table Name="safety.HCM_Bridge_WorkModes" Member="HCM_Bridge_WorkModes">
+    <Type Name="HCM_Bridge_WorkMode">
       <Column Name="IdBridgeWorkMode" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
@@ -2089,11 +2089,11 @@
       <Association Name="Rodeo_Piece_Statuse_Rodeo_Piece" Member="Rodeo_Piece_Statuse" ThisKey="IdPieceStatus" OtherKey="IdPieceStatus" Type="Rodeo_Piece_Statuse" IsForeignKey="true" />
       <Association Name="Rodeo_Piece_Type_Rodeo_Piece" Member="Rodeo_Piece_Type" ThisKey="IdPieceType" OtherKey="IdPieceType" Type="Rodeo_Piece_Type" IsForeignKey="true" />
       <Association Name="Rodeo_Yard_Rodeo_Piece" Member="Rodeo_Yard" ThisKey="IdYard" OtherKey="IdYard" Type="Rodeo_Yard" IsForeignKey="true" />
-      <Association Name="MSM_Pick_Lists_Rodeo_Piece" Member="MSM_Pick_List" ThisKey="IdPickList" OtherKey="IdPickList" Type="MSM_Pick_Lists" IsForeignKey="true" />
+      <Association Name="HCM_Pick_Lists_Rodeo_Piece" Member="HCM_Pick_List" ThisKey="IdPickList" OtherKey="IdPickList" Type="HCM_Pick_Lists" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="common.MSM_Files" Member="MSM_Files">
-    <Type Name="MSM_File">
+  <Table Name="common.HCM_Files" Member="HCM_Files">
+    <Type Name="HCM_File">
       <Column Name="IdFile" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="IdFileType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="IdMachineType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -2102,19 +2102,19 @@
       <Column Name="FullDescription" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
       <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="MSM_File_Type_MSM_File" Member="MSM_File_Type" ThisKey="IdFileType" OtherKey="IdFileType" Type="MSM_File_Type" IsForeignKey="true" />
-      <Association Name="Rodeo_Machine_Type_MSM_File" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
-      <Association Name="Rodeo_Machine_MSM_File" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
+      <Association Name="HCM_File_Type_HCM_File" Member="HCM_File_Type" ThisKey="IdFileType" OtherKey="IdFileType" Type="HCM_File_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_Type_HCM_File" Member="Rodeo_Machine_Type" ThisKey="IdMachineType" OtherKey="IdMachineType" Type="Rodeo_Machine_Type" IsForeignKey="true" />
+      <Association Name="Rodeo_Machine_HCM_File" Member="Rodeo_Machine" ThisKey="IdMachine" OtherKey="IdMachine" Type="Rodeo_Machine" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="system.MSM_Troubleshooting_Files" Member="MSM_Troubleshooting_Files">
-    <Type Name="MSM_Troubleshooting_File">
+  <Table Name="system.HCM_Troubleshooting_Files" Member="HCM_Troubleshooting_Files">
+    <Type Name="HCM_Troubleshooting_File">
       <Column Name="Reference" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="LinkTitle" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
       <Column Name="LinkPDFFile" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
       <Column Name="PDFPage" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="[Order]" Member="Order" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Association Name="MSM_Troubleshooting_Reference_MSM_Troubleshooting_File" Member="MSM_Troubleshooting_Reference" ThisKey="Reference" OtherKey="Reference" Type="MSM_Troubleshooting_Reference" IsForeignKey="true" />
+      <Association Name="HCM_Troubleshooting_Reference_HCM_Troubleshooting_File" Member="HCM_Troubleshooting_Reference" ThisKey="Reference" OtherKey="Reference" Type="HCM_Troubleshooting_Reference" IsForeignKey="true" />
     </Type>
   </Table>
   <Function Name="tracking.GetAndUpdatePickList" Method="GetAndUpdatePickList">

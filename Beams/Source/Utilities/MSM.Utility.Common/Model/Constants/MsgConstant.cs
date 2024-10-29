@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSM.Utility.Common.Constants
+namespace HCM.Utility.Common.Constants
 {
     /// <summary>
     /// Constant of Message

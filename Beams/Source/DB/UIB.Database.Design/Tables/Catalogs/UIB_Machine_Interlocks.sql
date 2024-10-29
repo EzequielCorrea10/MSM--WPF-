@@ -1,4 +1,4 @@
-﻿CREATE TABLE [safety].[MSM_Machine_Interlocks](
+﻿CREATE TABLE [safety].[HCM_Machine_Interlocks](
 	[IdMachineInterlock] [int] NOT NULL,
 	[ParentIdMachineInterlock] [int] NULL,
 	[IdMachineType] [int] NOT NULL,
@@ -15,11 +15,11 @@
 	[TroubleshootingReference] [varchar](100) NULL,
 	[Order] [smallint] NOT NULL,
 	[Active] [bit] NOT NULL,
- CONSTRAINT [PK_MSM_Machine_Interlocks] PRIMARY KEY CLUSTERED
+ CONSTRAINT [PK_HCM_Machine_Interlocks] PRIMARY KEY CLUSTERED
 (
 	[IdMachineInterlock] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
- CONSTRAINT [UK_MSM_Machine_Interlocks] UNIQUE NONCLUSTERED 
+ CONSTRAINT [UK_HCM_Machine_Interlocks] UNIQUE NONCLUSTERED 
 (
 	[ParentIdMachineInterlock] ASC,
 	[IdMachineType] ASC,
@@ -29,24 +29,24 @@
 
 GO
 
-ALTER TABLE [safety].[MSM_Machine_Interlocks]  WITH CHECK ADD  CONSTRAINT [FK_MSM_Machine_Interlocks_MSM_Machine_Interlocks] FOREIGN KEY([ParentIdMachineInterlock]) REFERENCES [safety].[MSM_Machine_Interlocks] ([IdMachineInterlock])
+ALTER TABLE [safety].[HCM_Machine_Interlocks]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Machine_Interlocks_HCM_Machine_Interlocks] FOREIGN KEY([ParentIdMachineInterlock]) REFERENCES [safety].[HCM_Machine_Interlocks] ([IdMachineInterlock])
 GO
 
-ALTER TABLE [safety].[MSM_Machine_Interlocks] CHECK CONSTRAINT [FK_MSM_Machine_Interlocks_MSM_Machine_Interlocks]
+ALTER TABLE [safety].[HCM_Machine_Interlocks] CHECK CONSTRAINT [FK_HCM_Machine_Interlocks_HCM_Machine_Interlocks]
 GO
 
-ALTER TABLE [safety].[MSM_Machine_Interlocks] ADD  CONSTRAINT [DF_MSM_Machine_Interlocks_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [safety].[HCM_Machine_Interlocks] ADD  CONSTRAINT [DF_HCM_Machine_Interlocks_Active]  DEFAULT ((1)) FOR [Active]
 
 GO
 
-ALTER TABLE [safety].[MSM_Machine_Interlocks] WITH CHECK ADD  CONSTRAINT [FK_MSM_Machine_Interlocks_Rodeo_Machine_Types] FOREIGN KEY([IdMachineType]) REFERENCES [common].[Rodeo_Machine_Types] ([IdMachineType])
+ALTER TABLE [safety].[HCM_Machine_Interlocks] WITH CHECK ADD  CONSTRAINT [FK_HCM_Machine_Interlocks_Rodeo_Machine_Types] FOREIGN KEY([IdMachineType]) REFERENCES [common].[Rodeo_Machine_Types] ([IdMachineType])
 GO
 
-ALTER TABLE [safety].[MSM_Machine_Interlocks] CHECK CONSTRAINT [FK_MSM_Machine_Interlocks_Rodeo_Machine_Types]
+ALTER TABLE [safety].[HCM_Machine_Interlocks] CHECK CONSTRAINT [FK_HCM_Machine_Interlocks_Rodeo_Machine_Types]
 GO
 
-ALTER TABLE [safety].[MSM_Machine_Interlocks]  WITH CHECK ADD  CONSTRAINT [FK_MSM_Machine_Interlocks_Rodeo_Machines] FOREIGN KEY([IdMachine]) REFERENCES [common].[Rodeo_Machines] ([IdMachine])
+ALTER TABLE [safety].[HCM_Machine_Interlocks]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Machine_Interlocks_Rodeo_Machines] FOREIGN KEY([IdMachine]) REFERENCES [common].[Rodeo_Machines] ([IdMachine])
 GO
 
-ALTER TABLE [safety].[MSM_Machine_Interlocks] CHECK CONSTRAINT [FK_MSM_Machine_Interlocks_Rodeo_Machines]
+ALTER TABLE [safety].[HCM_Machine_Interlocks] CHECK CONSTRAINT [FK_HCM_Machine_Interlocks_Rodeo_Machines]
 GO

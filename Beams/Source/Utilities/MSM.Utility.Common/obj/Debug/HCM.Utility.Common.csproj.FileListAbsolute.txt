@@ -1,0 +1,14 @@
+D:\Proyectos\MSM\Beams\AppRelease\debug\MSM.Utility.Common.dll
+D:\Proyectos\MSM\Beams\AppRelease\debug\MSM.Utility.Common.pdb
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\HCM.Utility.Common.csproj.AssemblyReference.cache
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\HCM.Utility.Common.csproj.CoreCompileInputs.cache
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\HCM.Util.83E7B47A.Up2Date
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\MSM.Utility.Common.dll
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\MSM.Utility.Common.pdb
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\HCM.Utility.Common.csproj.AssemblyReference.cache
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\HCM.Utility.Common.csproj.CoreCompileInputs.cache
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\HCM.Util.83E7B47A.Up2Date
+D:\Proyectos\HCM\Beams\AppRelease\debug\HCM.Utility.Common.dll
+D:\Proyectos\HCM\Beams\AppRelease\debug\HCM.Utility.Common.pdb
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\HCM.Utility.Common.dll
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\HCM.Utility.Common.pdb

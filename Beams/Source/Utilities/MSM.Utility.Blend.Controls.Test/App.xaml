@@ -1,12 +1,12 @@
-﻿<Application x:Class="MSM.Utility.Blend.Controls.Test.App"
+﻿<Application x:Class="HCM.Utility.Blend.Controls.Test.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:MSM.Utility.Blend.Controls.Test"
+             xmlns:local="clr-namespace:HCM.Utility.Blend.Controls.Test"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/MSM.Utility.Controls;component/Themes/Generic.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/HCM.Utility.Controls;component/Themes/Generic.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/Janus.Rodeo.Windows.Library.UI.Controls;component/Themes/Generic.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

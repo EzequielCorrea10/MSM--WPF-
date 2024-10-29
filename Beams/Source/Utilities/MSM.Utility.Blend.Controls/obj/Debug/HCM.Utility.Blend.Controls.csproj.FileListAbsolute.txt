@@ -1,0 +1,9 @@
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\HCM.Utility.Blend.Controls.csproj.AssemblyReference.cache
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\Views\UserControls\usrCraneGrabberControl.baml
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\Views\UserControls\usrCGrabbControl.g.cs
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\Views\UserControls\usrCHookControl.g.cs
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\Views\UserControls\usrCraneGrabberControl.g.cs
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\Views\UserControls\usrIngotCraneGrabberControl.g.cs
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\HCM.Utility.Blend.Controls_MarkupCompile.cache
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Blend.Controls\obj\Debug\HCM.Utility.Blend.Controls_MarkupCompile.lref

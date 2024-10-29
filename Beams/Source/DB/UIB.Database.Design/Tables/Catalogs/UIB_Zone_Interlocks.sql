@@ -1,4 +1,4 @@
-﻿CREATE TABLE [safety].[MSM_Zone_Interlocks](
+﻿CREATE TABLE [safety].[HCM_Zone_Interlocks](
 	[IdZone] [int] NOT NULL,
 	[EnableOrDisable] [bit] NOT NULL,
 	[ByIdZone] [int] NULL,
@@ -13,13 +13,13 @@
 	[TextSizeDisplayed] [smallint] NOT NULL DEFAULT 1,
 	[Order] [smallint] NOT NULL,
 	[Active] [bit] NOT NULL,
- CONSTRAINT [PK_MSM_Zone_Interlocks] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_HCM_Zone_Interlocks] PRIMARY KEY CLUSTERED 
 (
 	[IdZone] ASC,
 	[EnableOrDisable] ASC,
 	[Order] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY], 
-    CONSTRAINT [CK_MSM_Zone_Interlocks] CHECK ((([ByIdRequest] IS NOT NULL AND 
+    CONSTRAINT [CK_HCM_Zone_Interlocks] CHECK ((([ByIdRequest] IS NOT NULL AND 
   [ByIdZone] IS NULL AND
   [ByOtherTagname] IS NULL) OR 
  ([ByIdRequest] IS NULL AND 
@@ -32,36 +32,36 @@
 
 GO 
 
-ALTER TABLE [safety].[MSM_Zone_Interlocks]  WITH CHECK ADD  CONSTRAINT [FK_MSM_Zone_Interlocks_MSM_Zones] FOREIGN KEY([IdZone]) REFERENCES [safety].[MSM_Zones] ([IdZone])
+ALTER TABLE [safety].[HCM_Zone_Interlocks]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Zone_Interlocks_HCM_Zones] FOREIGN KEY([IdZone]) REFERENCES [safety].[HCM_Zones] ([IdZone])
 
 GO
 
-ALTER TABLE [safety].[MSM_Zone_Interlocks] CHECK CONSTRAINT [FK_MSM_Zone_Interlocks_MSM_Zones]
+ALTER TABLE [safety].[HCM_Zone_Interlocks] CHECK CONSTRAINT [FK_HCM_Zone_Interlocks_HCM_Zones]
 
 GO
 
-ALTER TABLE [safety].[MSM_Zone_Interlocks]  WITH CHECK ADD  CONSTRAINT [FK_MSM_Zone_Interlocks_By_MSM_Zones] FOREIGN KEY([ByIdZone]) REFERENCES [safety].[MSM_Zones] ([IdZone])
+ALTER TABLE [safety].[HCM_Zone_Interlocks]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Zone_Interlocks_By_HCM_Zones] FOREIGN KEY([ByIdZone]) REFERENCES [safety].[HCM_Zones] ([IdZone])
 
 GO
 
-ALTER TABLE [safety].[MSM_Zone_Interlocks] CHECK CONSTRAINT [FK_MSM_Zone_Interlocks_By_MSM_Zones]
+ALTER TABLE [safety].[HCM_Zone_Interlocks] CHECK CONSTRAINT [FK_HCM_Zone_Interlocks_By_HCM_Zones]
 
 GO
 
-ALTER TABLE [safety].[MSM_Zone_Interlocks]  WITH CHECK ADD  CONSTRAINT [FK_MSM_Zone_Interlocks_By_MSM_Requests] FOREIGN KEY([ByIdRequest]) REFERENCES [safety].[MSM_Requests] ([IdRequest])
+ALTER TABLE [safety].[HCM_Zone_Interlocks]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Zone_Interlocks_By_HCM_Requests] FOREIGN KEY([ByIdRequest]) REFERENCES [safety].[HCM_Requests] ([IdRequest])
 
 GO
 
-ALTER TABLE [safety].[MSM_Zone_Interlocks] CHECK CONSTRAINT [FK_MSM_Zone_Interlocks_By_MSM_Requests]
+ALTER TABLE [safety].[HCM_Zone_Interlocks] CHECK CONSTRAINT [FK_HCM_Zone_Interlocks_By_HCM_Requests]
 
 GO
 
-ALTER TABLE [safety].[MSM_Zone_Interlocks]  WITH CHECK ADD  CONSTRAINT [FK_MSM_Zone_Interlocks_By_MSM_Request_Signals] FOREIGN KEY([ByIdRequestSignal]) REFERENCES [safety].[MSM_Request_Signals] ([IdRequestSignal])
+ALTER TABLE [safety].[HCM_Zone_Interlocks]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Zone_Interlocks_By_HCM_Request_Signals] FOREIGN KEY([ByIdRequestSignal]) REFERENCES [safety].[HCM_Request_Signals] ([IdRequestSignal])
 
 GO
 
-ALTER TABLE [safety].[MSM_Zone_Interlocks] CHECK CONSTRAINT [FK_MSM_Zone_Interlocks_By_MSM_Request_Signals]
+ALTER TABLE [safety].[HCM_Zone_Interlocks] CHECK CONSTRAINT [FK_HCM_Zone_Interlocks_By_HCM_Request_Signals]
 
 GO
 
-ALTER TABLE [safety].[MSM_Zone_Interlocks] ADD  CONSTRAINT [DF_MSM_Zone_Interlocks_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [safety].[HCM_Zone_Interlocks] ADD  CONSTRAINT [DF_HCM_Zone_Interlocks_Active]  DEFAULT ((1)) FOR [Active]

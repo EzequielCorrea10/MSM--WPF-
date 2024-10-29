@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MSM.Utility.Blend.Controls.Test.Properties {
+namespace HCM.Utility.Blend.Controls.Test.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace MSM.Utility.Blend.Controls.Test.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MSM.Utility.Blend.Controls.Test.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HCM.Utility.Blend.Controls.Test.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

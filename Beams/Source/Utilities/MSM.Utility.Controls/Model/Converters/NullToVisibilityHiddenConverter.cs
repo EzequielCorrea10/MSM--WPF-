@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
 
-namespace MSM.Utility.Controls.Converters
+namespace HCM.Utility.Controls.Converters
 {
     public class NullToVisibilityHiddenConverter : IValueConverter
     {

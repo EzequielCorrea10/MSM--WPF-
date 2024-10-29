@@ -5,13 +5,13 @@ using System.Data;
 using System.Linq;
 using System.Windows;
 
-namespace MSM.HMI.Safety.Operation
+namespace HCM.HMI.Safety.Operation
 {
     using Janus.Rodeo.Windows.Library.Rd_Log;
     using Janus.Rodeo.Windows.Library.UI.Common;
 
-    using MSM.Utility.Configuration;
-    using MSM.HMI.Safety.Operation.Enumerations;
+    using HCM.Utility.Configuration;
+    using HCM.HMI.Safety.Operation.Enumerations;
 
     /// <summary>
     /// Interaction logic for App.xaml
@@ -29,7 +29,7 @@ namespace MSM.HMI.Safety.Operation
 
 
 
-                ScreenPages activeScreen = (ScreenPages)Enum.Parse(typeof(ScreenPages), MSM.HMI.Safety.Operation.Properties.Settings.Default.SCREEN.ToString());
+                ScreenPages activeScreen = (ScreenPages)Enum.Parse(typeof(ScreenPages), HCM.HMI.Safety.Operation.Properties.Settings.Default.SCREEN.ToString());
 
 
                 DesktopWindow window = new DesktopWindow(true, activeScreen);

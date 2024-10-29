@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Xml.Serialization;
 
-namespace MSM.Utility.Configuration
+namespace HCM.Utility.Configuration
 {
  
     /// <summary>

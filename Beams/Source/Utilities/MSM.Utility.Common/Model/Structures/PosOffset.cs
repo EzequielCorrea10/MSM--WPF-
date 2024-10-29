@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSM.Utility.Common.Structures
+namespace HCM.Utility.Common.Structures
 {
-    using MSM.Utility.Common.Handlers;
-    using MSM.Utility.Common.Enumerations;
+    using HCM.Utility.Common.Handlers;
+    using HCM.Utility.Common.Enumerations;
 
     /// <summary>
     /// PosOffset

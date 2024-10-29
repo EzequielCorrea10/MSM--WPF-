@@ -8,16 +8,16 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace MSM.HMI.Safety.Operation.ViewModels
+namespace HCM.HMI.Safety.Operation.ViewModels
 {
     using Janus.Rodeo.Windows.Library.Rd_Common;
     using Janus.Rodeo.Windows.Library.UI.Controls;
     using Janus.Rodeo.Windows.Library.Rd_Log;
 
-    using MSM.Utility.Configuration;
-    using MSM.Utility.Common;
-    using MSM.Utility.Common.Catalogs;
-    using MSM.HMI.Safety.Operation.Enumerations;
+    using HCM.Utility.Configuration;
+    using HCM.Utility.Common;
+    using HCM.Utility.Common.Catalogs;
+    using HCM.HMI.Safety.Operation.Enumerations;
 
     internal class vmMainCommon : ModelViewBase, IDisposable
     {
@@ -98,8 +98,8 @@ namespace MSM.HMI.Safety.Operation.ViewModels
                     this._activePage = ScreenPages.Layout;
                    // this.OnPropertyChanged("LayoutActive");
 
-                    MSM.HMI.Safety.Operation.Properties.Settings.Default.SCREEN = (int)ScreenPages.Layout;
-                    MSM.HMI.Safety.Operation.Properties.Settings.Default.Save();
+                    HCM.HMI.Safety.Operation.Properties.Settings.Default.SCREEN = (int)ScreenPages.Layout;
+                    HCM.HMI.Safety.Operation.Properties.Settings.Default.Save();
                 }
             }
         }
@@ -170,7 +170,7 @@ namespace MSM.HMI.Safety.Operation.ViewModels
         //    {
         //        if (this._position_controller == null)
         //        {
-        //            this._position_controller = new vmPositionList(this.Positions.Where(p=>p.Properties.Reference == MSM.Safety.Server.Common.Enumerations.PositionTypes.Temporal).ToList());
+        //            this._position_controller = new vmPositionList(this.Positions.Where(p=>p.Properties.Reference == HCM.Safety.Server.Common.Enumerations.PositionTypes.Temporal).ToList());
         //        }
         //        return this._position_controller;
         //    }
@@ -332,7 +332,7 @@ namespace MSM.HMI.Safety.Operation.ViewModels
 
         //    for (int i = 0; i < Handlers.DBAccess.Catalogs._machines.Length; i++)
         //    {
-        //        if (Handlers.DBAccess.Catalogs._machines[i].Type.Reference == MSM.Tracking.Server.Common.Enumerations.MachineTypes.Crane || Handlers.DBAccess.Catalogs._machines[i].Type.Reference == MSM.Tracking.Server.Common.Enumerations.MachineTypes.SemiCrane)
+        //        if (Handlers.DBAccess.Catalogs._machines[i].Type.Reference == HCM.Tracking.Server.Common.Enumerations.MachineTypes.Crane || Handlers.DBAccess.Catalogs._machines[i].Type.Reference == HCM.Tracking.Server.Common.Enumerations.MachineTypes.SemiCrane)
         //        {
         //            vmCraneMachine operation = new vmCraneMachine(Handlers.DBAccess.Catalogs._machines[i]);
         //            lstMachine.Add(operation);
@@ -422,7 +422,7 @@ namespace MSM.HMI.Safety.Operation.ViewModels
         //            {
         //                for (int j = 0; j < this._yards.Length; j++)
         //                {
-        //                    if (MSM.Tracking.Server.Common.Handlers.LocationHandler.GetAllStatuses(this._yards[j], out status))
+        //                    if (HCM.Tracking.Server.Common.Handlers.LocationHandler.GetAllStatuses(this._yards[j], out status))
         //                    {
         //                        for (i = 0; i < this._locations.Length; i++)
         //                        {

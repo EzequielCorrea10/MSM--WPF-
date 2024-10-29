@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
-namespace MSM.Utility.Controls.Behaviours
+namespace HCM.Utility.Controls.Behaviours
 {
     public class TouchDeviceMouseOver : DependencyObject
     {

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using System.Windows.Data;
 using System.Windows.Media.Imaging;
 
-namespace MSM.Utility.Controls.Converters
+namespace HCM.Utility.Controls.Converters
 {
-    using MSM.Utility.Common.Enumerations;
-    using MSM.Utility.Common.Handlers;
+    using HCM.Utility.Common.Enumerations;
+    using HCM.Utility.Common.Handlers;
 
     public class EngineeringUnitConverter : IValueConverter
     {

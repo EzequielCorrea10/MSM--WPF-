@@ -14,14 +14,14 @@ using System.Threading;
 using System.Security.AccessControl;
 using System.Security.Principal;
 
-namespace MSM.Database
+namespace HCM.Database
 {
     using Janus.Rodeo.Windows.Library.Rd_Log;
 
     /// <summary>
     /// partial class
     /// </summary>
-    partial class MSMDataContext
+    partial class HCMDataContext
     {
         #region private structures
         private struct changes
@@ -337,7 +337,7 @@ namespace MSM.Database
                 if (property != null && !(property is string || property is DateTime || property is DateTimeOffset))
                 {
                     Type type = property.GetType();
-                    if (type.IsClass && type.Assembly.GetName().Name == typeof(MSMDataContext).Assembly.GetName().Name)
+                    if (type.IsClass && type.Assembly.GetName().Name == typeof(HCMDataContext).Assembly.GetName().Name)
                     {
                         string message_extended = LinqSerializer.GetString<object>(property);
                         string tablename;

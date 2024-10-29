@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MSM.Utility.Controls
+namespace HCM.Utility.Controls
 {
     /// <summary>
     /// Interaction logic for usrSelectorThreeButtons.xaml

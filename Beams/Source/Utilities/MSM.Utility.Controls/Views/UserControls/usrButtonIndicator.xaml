@@ -4,22 +4,22 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             x:Class="MSM.Utility.Controls.usrButtonIndicator" 
+             x:Class="HCM.Utility.Controls.usrButtonIndicator" 
              x:Name="this">
 
     <UserControl.Resources>
-        <BitmapImage x:Key="img_BrakesGray" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/BrakesGray55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
-        <BitmapImage x:Key="img_BrakesGreen"  UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/BrakesGreen55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
-        <BitmapImage x:Key="img_BrakesRed"    UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/BrakesRed55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
-        <BitmapImage x:Key="img_DrivesGray"   UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/DrivesGray55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
-        <BitmapImage x:Key="img_DrivesGreen"  UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/DrivesGreen55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
-        <BitmapImage x:Key="img_DrivesRed"    UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/DrivesRed55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
-        <BitmapImage x:Key="img_MotorGray"    UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/MotorsGray55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
-        <BitmapImage x:Key="img_MotorGreen"   UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/MotorsGreen55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
-        <BitmapImage x:Key="img_MotorRed"     UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/MotorsRed55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
-        <BitmapImage x:Key="img_SymeoGray"    UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/SymeoGray55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
-        <BitmapImage x:Key="img_SymeoGreen"   UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/SymeoGreen55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
-        <BitmapImage x:Key="img_SymeoRed"     UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Desktop/SymeoRed55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_BrakesGray" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/BrakesGray55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_BrakesGreen"  UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/BrakesGreen55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_BrakesRed"    UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/BrakesRed55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_DrivesGray"   UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/DrivesGray55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_DrivesGreen"  UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/DrivesGreen55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_DrivesRed"    UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/DrivesRed55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_MotorGray"    UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/MotorsGray55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_MotorGreen"   UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/MotorsGreen55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_MotorRed"     UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/MotorsRed55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_SymeoGray"    UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/SymeoGray55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_SymeoGreen"   UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/SymeoGreen55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
+        <BitmapImage x:Key="img_SymeoRed"     UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/SymeoRed55x55.png" RenderOptions.BitmapScalingMode="Unspecified" />
     </UserControl.Resources>
 
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">

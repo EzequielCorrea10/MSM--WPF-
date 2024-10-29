@@ -1,4 +1,4 @@
-﻿CREATE TABLE [safety].[MSM_Ground_EStop_Panels](
+﻿CREATE TABLE [safety].[HCM_Ground_EStop_Panels](
 	[IdGroundEStopPanel] [int] NOT NULL,
 	[IdGroundEStopGroup] [int] NOT NULL,
 	[Title] VARCHAR(250) NOT NULL,
@@ -9,11 +9,11 @@
 	[TextSizeDisplayed] [smallint] NOT NULL DEFAULT 1,
 	[Order] [smallint] NOT NULL,
 	[Active] [bit] NOT NULL,
- CONSTRAINT [PK_MSM_Ground_EStop_Panels] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_HCM_Ground_EStop_Panels] PRIMARY KEY CLUSTERED 
 (
 	[IdGroundEStopPanel] ASC
 ) WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
- CONSTRAINT [UK_MSM_Ground_EStop_Panels] UNIQUE NONCLUSTERED 
+ CONSTRAINT [UK_HCM_Ground_EStop_Panels] UNIQUE NONCLUSTERED 
 (
 	[IdGroundEStopGroup] ASC,
 	[Order] ASC
@@ -21,10 +21,10 @@
 ) ON [PRIMARY]
 GO 
 
-ALTER TABLE [safety].[MSM_Ground_EStop_Panels] WITH CHECK ADD  CONSTRAINT [FK_MSM_Ground_EStop_Panels_MSM_Ground_EStop_Groups] FOREIGN KEY([IdGroundEStopGroup]) REFERENCES [safety].[MSM_Ground_EStop_Groups] ([IdGroundEStopGroup])
+ALTER TABLE [safety].[HCM_Ground_EStop_Panels] WITH CHECK ADD  CONSTRAINT [FK_HCM_Ground_EStop_Panels_HCM_Ground_EStop_Groups] FOREIGN KEY([IdGroundEStopGroup]) REFERENCES [safety].[HCM_Ground_EStop_Groups] ([IdGroundEStopGroup])
 GO
 
-ALTER TABLE [safety].[MSM_Ground_EStop_Panels] CHECK CONSTRAINT [FK_MSM_Ground_EStop_Panels_MSM_Ground_EStop_Groups]
+ALTER TABLE [safety].[HCM_Ground_EStop_Panels] CHECK CONSTRAINT [FK_HCM_Ground_EStop_Panels_HCM_Ground_EStop_Groups]
 GO
 
-ALTER TABLE [safety].[MSM_Ground_EStop_Panels] ADD  CONSTRAINT [DF_MSM_Ground_EStop_Panels_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [safety].[HCM_Ground_EStop_Panels] ADD  CONSTRAINT [DF_HCM_Ground_EStop_Panels_Active]  DEFAULT ((1)) FOR [Active]

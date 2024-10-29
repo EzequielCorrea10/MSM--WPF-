@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MSM.Utility.Controls
+namespace HCM.Utility.Controls
 {
     using Janus.Rodeo.Windows.Library.UI.Controls;
     using Janus.Rodeo.Windows.Library.UI.Controls.Widgets;

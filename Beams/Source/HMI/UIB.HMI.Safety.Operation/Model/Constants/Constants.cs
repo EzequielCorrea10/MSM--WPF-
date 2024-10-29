@@ -7,7 +7,7 @@ using System.Windows;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace MSM.HMI.Safety.Operation.Constants
+namespace HCM.HMI.Safety.Operation.Constants
 {
 
     /// <summary>

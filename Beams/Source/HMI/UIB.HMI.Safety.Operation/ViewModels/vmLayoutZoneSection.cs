@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSM.HMI.Safety.Operation.ViewModels
+namespace HCM.HMI.Safety.Operation.ViewModels
 {
     using Janus.Rodeo.Windows.Library.Rd_Log;
     using Janus.Rodeo.Windows.Library.Rd_Common;
     using Janus.Rodeo.Windows.Library.UI.Common;
     using Janus.Rodeo.Windows.Library.UI.Controls.Widgets;
 
-    using MSM.Utility.Common;
-    using MSM.Utility.Configuration;
-    using MSM.Utility.Common.Catalogs;
+    using HCM.Utility.Common;
+    using HCM.Utility.Configuration;
+    using HCM.Utility.Common.Catalogs;
     using System.ComponentModel;
     using System.Windows.Media;
 
@@ -21,7 +21,7 @@ namespace MSM.HMI.Safety.Operation.ViewModels
     {
         #region private controllers
         private string _zone_name;
-        // private MSM.Safety.Server.Common.Structures.ZoneSection _section;
+        // private HCM.Safety.Server.Common.Structures.ZoneSection _section;
         #endregion
 
         #region Constructors

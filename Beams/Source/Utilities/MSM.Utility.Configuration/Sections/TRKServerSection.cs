@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace MSM.Utility.Configuration
+namespace HCM.Utility.Configuration
 {
-    using MSM.Utility.Configuration.Enumerations;
+    using HCM.Utility.Configuration.Enumerations;
 
     /// <summary>
     /// Configuration class of Tracking Server Section.

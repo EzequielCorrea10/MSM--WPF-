@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSM.Utility.Common.Enumerations
+namespace HCM.Utility.Common.Enumerations
 {
     /// <summary>
     /// type of piece orientation

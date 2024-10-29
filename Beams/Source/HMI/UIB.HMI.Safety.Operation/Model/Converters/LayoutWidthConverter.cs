@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 
-namespace MSM.HMI.Safety.Operation.Converters
+namespace HCM.HMI.Safety.Operation.Converters
 {
     using Janus.Rodeo.Windows.Library.Rd_Common;
 

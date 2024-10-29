@@ -1,10 +1,10 @@
-﻿CREATE TABLE [system].[MSM_Troubleshooting_Files](
+﻿CREATE TABLE [system].[HCM_Troubleshooting_Files](
 	[Reference] [varchar](100) NOT NULL,
 	[LinkTitle] [varchar](250) NOT NULL,
 	[LinkPDFFile] [varchar](100) NOT NULL,
 	[PDFPage] int NULL,
 	[Order] [smallint] NOT NULL
- CONSTRAINT [PK_MSM_Troubleshooting_Files] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_HCM_Troubleshooting_Files] PRIMARY KEY CLUSTERED 
 (
 	[Reference] ASC,
 	[Order] ASC
@@ -13,8 +13,8 @@
 
 GO
 
-ALTER TABLE [system].[MSM_Troubleshooting_Files]  WITH CHECK ADD CONSTRAINT [FK_MSM_Troubleshooting_Files_MSM_Troubleshooting_References] FOREIGN KEY([Reference]) REFERENCES [system].[MSM_Troubleshooting_References] ([Reference])
+ALTER TABLE [system].[HCM_Troubleshooting_Files]  WITH CHECK ADD CONSTRAINT [FK_HCM_Troubleshooting_Files_HCM_Troubleshooting_References] FOREIGN KEY([Reference]) REFERENCES [system].[HCM_Troubleshooting_References] ([Reference])
 
 GO
 
-ALTER TABLE [system].[MSM_Troubleshooting_Files] CHECK CONSTRAINT [FK_MSM_Troubleshooting_Files_MSM_Troubleshooting_References]
+ALTER TABLE [system].[HCM_Troubleshooting_Files] CHECK CONSTRAINT [FK_HCM_Troubleshooting_Files_HCM_Troubleshooting_References]

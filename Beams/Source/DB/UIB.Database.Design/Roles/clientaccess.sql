@@ -34,4 +34,4 @@ GRANT SELECT ON SCHEMA::[tracking] TO [clientaccess]
 
 GO
 
-GRANT INSERT, UPDATE, DELETE ON OBJECT::[system].[MSM_Setting_Values] TO [clientaccess] --AFTER THE TABLES ARE CREATED
+GRANT INSERT, UPDATE, DELETE ON OBJECT::[system].[HCM_Setting_Values] TO [clientaccess] --AFTER THE TABLES ARE CREATED

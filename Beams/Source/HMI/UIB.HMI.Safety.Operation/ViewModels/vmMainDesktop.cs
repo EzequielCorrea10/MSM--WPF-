@@ -8,13 +8,13 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace MSM.HMI.Safety.Operation.ViewModels
+namespace HCM.HMI.Safety.Operation.ViewModels
 {
     using Janus.Rodeo.Windows.Library.Rd_Common;
     using Janus.Rodeo.Windows.Library.Rd_Log;
 
-    using MSM.Utility.Configuration;
-    using MSM.Utility.Common;
+    using HCM.Utility.Configuration;
+    using HCM.Utility.Common;
 
     internal class vmMainDesktop : vmMainCommon
     {

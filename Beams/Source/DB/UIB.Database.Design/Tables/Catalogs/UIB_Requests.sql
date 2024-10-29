@@ -1,4 +1,4 @@
-﻿CREATE TABLE [safety].[MSM_Requests](
+﻿CREATE TABLE [safety].[HCM_Requests](
 	[IdRequest] [int] NOT NULL,
 	[IdRequestType] [int] NOT NULL,
 	[IdZone] [int] NOT NULL,
@@ -13,11 +13,11 @@
 	[TextDisplayed] [varchar](20) NULL,
 	[PlcValue] [int] NOT NULL,
 	[Active] [bit] NOT NULL,
- CONSTRAINT [PK_MSM_Requests] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_HCM_Requests] PRIMARY KEY CLUSTERED 
 (
 	[IdRequest] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
- CONSTRAINT [UK_MSM_Requests_PlcValue] UNIQUE NONCLUSTERED 
+ CONSTRAINT [UK_HCM_Requests_PlcValue] UNIQUE NONCLUSTERED 
 (
 	[PlcValue] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
@@ -25,33 +25,33 @@
 
 GO 
 
-CREATE UNIQUE NONCLUSTERED INDEX [IX_MSM_Requests_Name] ON [safety].[MSM_Requests]
+CREATE UNIQUE NONCLUSTERED INDEX [IX_HCM_Requests_Name] ON [safety].[HCM_Requests]
 (
 	[Name] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 
 GO
 
-ALTER TABLE [safety].[MSM_Requests]  WITH CHECK ADD  CONSTRAINT [FK_MSM_Requests_MSM_Request_Types] FOREIGN KEY([IdRequestType]) REFERENCES [safety].[MSM_Request_Types] ([IdRequestType])
+ALTER TABLE [safety].[HCM_Requests]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Requests_HCM_Request_Types] FOREIGN KEY([IdRequestType]) REFERENCES [safety].[HCM_Request_Types] ([IdRequestType])
 
 GO
 
-ALTER TABLE [safety].[MSM_Requests] CHECK CONSTRAINT [FK_MSM_Requests_MSM_Request_Types]
+ALTER TABLE [safety].[HCM_Requests] CHECK CONSTRAINT [FK_HCM_Requests_HCM_Request_Types]
 
 GO
 
-ALTER TABLE [safety].[MSM_Requests]  WITH CHECK ADD  CONSTRAINT [FK_MSM_Requests_MSM_Zones] FOREIGN KEY([IdZone]) REFERENCES [safety].[MSM_Zones] ([IdZone])
+ALTER TABLE [safety].[HCM_Requests]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Requests_HCM_Zones] FOREIGN KEY([IdZone]) REFERENCES [safety].[HCM_Zones] ([IdZone])
 
 GO
 
-ALTER TABLE [safety].[MSM_Requests] CHECK CONSTRAINT [FK_MSM_Requests_MSM_Zones]
+ALTER TABLE [safety].[HCM_Requests] CHECK CONSTRAINT [FK_HCM_Requests_HCM_Zones]
 
 GO
 
-ALTER TABLE [safety].[MSM_Requests]  WITH CHECK ADD  CONSTRAINT [FK_MSM_Requests_Rodeo_Yards] FOREIGN KEY([IdYard]) REFERENCES [common].[Rodeo_Yards] ([IdYard])
+ALTER TABLE [safety].[HCM_Requests]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Requests_Rodeo_Yards] FOREIGN KEY([IdYard]) REFERENCES [common].[Rodeo_Yards] ([IdYard])
 GO
 
-ALTER TABLE [safety].[MSM_Requests] CHECK CONSTRAINT [FK_MSM_Requests_Rodeo_Yards]
+ALTER TABLE [safety].[HCM_Requests] CHECK CONSTRAINT [FK_HCM_Requests_Rodeo_Yards]
 GO
 
-ALTER TABLE [safety].[MSM_Requests] ADD  CONSTRAINT [DF_MSM_Requests_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [safety].[HCM_Requests] ADD  CONSTRAINT [DF_HCM_Requests_Active]  DEFAULT ((1)) FOR [Active]

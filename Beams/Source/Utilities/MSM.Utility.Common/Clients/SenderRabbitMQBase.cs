@@ -8,7 +8,7 @@ using System.Threading;
 using System.Runtime.InteropServices;
 using RabbitMQ.Client;
 
-namespace MSM.Utility.Common.Clients
+namespace HCM.Utility.Common.Clients
 {
     using Janus.Rodeo.Windows.Library.Rd_Log;
     using Janus.Rodeo.Windows.Library.Rd_Common;

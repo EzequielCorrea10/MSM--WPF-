@@ -1,10 +1,10 @@
-﻿<Window x:Class="MSM.Utility.Blend.Controls.Test.MainWindow"
+﻿<Window x:Class="HCM.Utility.Blend.Controls.Test.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MSM.Utility.Blend.Controls.Test"
-        xmlns:blendcontrol="clr-namespace:MSM.Utility.Blend.Controls;assembly=MSM.Utility.Blend.Controls"
+        xmlns:local="clr-namespace:HCM.Utility.Blend.Controls.Test"
+        xmlns:blendcontrol="clr-namespace:HCM.Utility.Blend.Controls;assembly=HCM.Utility.Blend.Controls"
         mc:Ignorable="d"
         Title="MainWindow" Height="Auto" Width="Auto">
     <Grid Style="{StaticResource grdBackgroundTransparent}">

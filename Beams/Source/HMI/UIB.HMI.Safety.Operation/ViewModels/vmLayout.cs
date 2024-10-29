@@ -13,7 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 
 
-namespace MSM.HMI.Safety.Operation.ViewModels
+namespace HCM.HMI.Safety.Operation.ViewModels
 {
     using Janus.Rodeo.Windows.Library.Rd_Log;
     using Janus.Rodeo.Windows.Library.Rd_Common;
@@ -22,19 +22,19 @@ namespace MSM.HMI.Safety.Operation.ViewModels
     using Janus.Rodeo.Windows.Library.UI.Controls.Widgets;
     using Janus.Rodeo.Windows.Library.UI.Common;
 
-    using MSM.Database;
-    using MSM.HMI.Safety.Operation.Enumerations;
-    using MSM.HMI.Safety.Operation.Views;
-    using MSM.Utility.Common;
-    //using MSM.Database;
-    using MSM.Utility.Configuration;
-    using MSM.Utility.Common.Catalogs;
+    using HCM.Database;
+    using HCM.HMI.Safety.Operation.Enumerations;
+    using HCM.HMI.Safety.Operation.Views;
+    using HCM.Utility.Common;
+    //using HCM.Database;
+    using HCM.Utility.Configuration;
+    using HCM.Utility.Common.Catalogs;
     using System.Windows;
-    using MSM.HMI.Safety.Operation.Views.Windows;
+    using HCM.HMI.Safety.Operation.Views.Windows;
     using System.Reflection;
     using System.IO;
 
-    //using MSM.HMI.Safety.Operation.Enumerations;
+    //using HCM.HMI.Safety.Operation.Enumerations;
 
     public class vmLayout : ModelViewBase
     {
@@ -67,7 +67,7 @@ namespace MSM.HMI.Safety.Operation.ViewModels
 
         private Dictionary<string, object> _allMachine;
         private Dictionary<string, object> _machineSelected;
-        private MSM_Zone_Machine[] _zone_machine;
+        private HCM_Zone_Machine[] _zone_machine;
        // private vmYard[] _yards;
 
         private Dictionary<string, object> _allEnableComponents;
@@ -605,9 +605,9 @@ namespace MSM.HMI.Safety.Operation.ViewModels
 
         private void Main()
         {
+            this._cancelTask = new CancellationTokenSource();
             this._runningTask = new Task(() => DoProcess(this._cancelTask.Token), this._cancelTask.Token);
             this._runningTask.Start();
-            Thread.Sleep(250);
         }
 
         /// <summary>
@@ -630,7 +630,7 @@ namespace MSM.HMI.Safety.Operation.ViewModels
                     //List<int> lstZonesActives = new List<int>(); 
                     //foreach (string machine in this.MachineSelected.Select(oA => ((Tracking.Server.Common.Catalogs.CT_Machine)oA.Value).Group).ToList())
                     //{
-                    //    foreach( MSM_Zone_Machine zoneMachine in this._zone_machine.Where(p => p.Rodeo_Machine_Group.Name == machine && p.CanBeAccessed))  
+                    //    foreach( HCM_Zone_Machine zoneMachine in this._zone_machine.Where(p => p.Rodeo_Machine_Group.Name == machine && p.CanBeAccessed))  
                     //    {
                     //        lstZonesActives.Add(zoneMachine.IdZone);                        
                     //    }
@@ -696,33 +696,36 @@ namespace MSM.HMI.Safety.Operation.ViewModels
         {
             try
             {
-                if (!this.ThreadRunning)
+                if (this.ThreadRunning)
                 {
                     lock (this._lockInstance)
                     {
-                        if (!this.ThreadRunning)
+                        if (this.ThreadRunning)
                         {
                             bool cancelled = false;
 
                             try
                             {
-                                if (this._cancelTask != null)
+                                while (true)
                                 {
-                                    this._cancelTask.Cancel();
-                                }
-
-                                lock (this._lockTO)
-                                {
-                                    string value;
-                                    if (!RodeoHandler.Tag.GetText(string.Format("HCM.Zone_1_Beams", Configurations.General.RodeoSector), out value))
+                                    lock (this._lockTO)
                                     {
-                                        throw new Exception("Error");
+                                        string value;
+                                        if (!RodeoHandler.Tag.GetText(string.Format("HCM.Zone_1_Beams", Configurations.General.RodeoSector), out value))
+                                        {
+                                            throw new Exception("Error");
+                                        }
+
+                                    }
+
+                                    Thread.Sleep(250);
+
+                                    if (token.IsCancellationRequested)
+                                    {
+                                        break;
                                     }
 
                                 }
-
-                                Thread.Sleep(250);
-
                             }
                             catch (Exception ex)
                             {
@@ -735,6 +738,15 @@ namespace MSM.HMI.Safety.Operation.ViewModels
             catch (Exception ex)
             {
                 RdTrace.Exception(ex);
+            }
+
+            finally
+            {
+                if (!token.IsCancellationRequested)
+                {
+                    this._runningTask = new Task(() => DoProcess(token), token);
+                    this._runningTask.Start();
+                }
             }
         }
 

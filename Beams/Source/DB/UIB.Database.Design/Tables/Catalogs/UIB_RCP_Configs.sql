@@ -1,4 +1,4 @@
-﻿CREATE TABLE [to].[MSM_RCP_Configs] (
+﻿CREATE TABLE [to].[HCM_RCP_Configs] (
     [IdMachine]         INT           NOT NULL,
     [MachineConfigName] NVARCHAR (5)  NOT NULL,
     [IP]                NVARCHAR (50) NOT NULL,

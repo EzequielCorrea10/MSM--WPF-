@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSM.HMI.Safety.Operation.Enumerations
+namespace HCM.HMI.Safety.Operation.Enumerations
 {
     /// <summary>
     /// Description Types

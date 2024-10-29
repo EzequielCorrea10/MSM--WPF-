@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MSM.Utility.Blend.Controls.Test
+namespace HCM.Utility.Blend.Controls.Test
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

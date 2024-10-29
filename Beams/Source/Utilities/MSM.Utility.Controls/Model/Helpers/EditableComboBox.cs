@@ -7,7 +7,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace MSM.Utility.Controls
+namespace HCM.Utility.Controls
 {
     public class EditableComboBox
     {

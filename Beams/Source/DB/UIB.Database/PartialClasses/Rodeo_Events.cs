@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSM.Database
+namespace HCM.Database
 {
     /// <summary>
     /// partial class of events
@@ -41,12 +41,12 @@ namespace MSM.Database
 
         #region job / transport order / step adquisition methods
         private readonly object lockInstance = new object();
-        private MSM_Job _Job;
-        public MSM_Job Job
+        private HCM_Job _Job;
+        public HCM_Job Job
         {
             get
             {
-                if (string.IsNullOrEmpty(MSMDataContext.default_connection_string))
+                if (string.IsNullOrEmpty(HCMDataContext.default_connection_string))
                     return null;
 
                 if (this.IdJob == null)
@@ -71,7 +71,7 @@ namespace MSM.Database
         {
             get
             {
-                if (string.IsNullOrEmpty(MSMDataContext.default_connection_string))
+                if (string.IsNullOrEmpty(HCMDataContext.default_connection_string))
                     return null;
 
                 if (this.IdTransportOrder == null)
@@ -96,7 +96,7 @@ namespace MSM.Database
         {
             get
             {
-                if (string.IsNullOrEmpty(MSMDataContext.default_connection_string))
+                if (string.IsNullOrEmpty(HCMDataContext.default_connection_string))
                     return null;
 
                 if (this.Step == null)
@@ -118,18 +118,18 @@ namespace MSM.Database
 
         private void LoadData()
         {
-            using (MSMDataContext db = new MSMDataContext(MSMDataContext.default_connection_string))
+            using (HCMDataContext db = new HCMDataContext(HCMDataContext.default_connection_string))
             {
                 DataLoadOptions dlo = new DataLoadOptions();
 
-                dlo.LoadWith<MSM_Job>(o => o.Rodeo_TO_Statuse);
-                dlo.LoadWith<MSM_Job>(o => o.MSM_Job_Type);
-                dlo.LoadWith<MSM_Job>(o => o.Rodeo_Yard);
-                dlo.LoadWith<MSM_Job>(o => o.Rodeo_Yard1);
-                dlo.LoadWith<MSM_Job>(o => o.Rodeo_Yard2);
-                dlo.LoadWith<MSM_Job>(o => o.Rodeo_Yard3);
-                dlo.LoadWith<MSM_Job>(o => o.Rodeo_Yard4);
-                //dlo.LoadWith<MSM_Job>(o => o.Rodeo_Yard_DropRedirect);
+                dlo.LoadWith<HCM_Job>(o => o.Rodeo_TO_Statuse);
+                dlo.LoadWith<HCM_Job>(o => o.HCM_Job_Type);
+                dlo.LoadWith<HCM_Job>(o => o.Rodeo_Yard);
+                dlo.LoadWith<HCM_Job>(o => o.Rodeo_Yard1);
+                dlo.LoadWith<HCM_Job>(o => o.Rodeo_Yard2);
+                dlo.LoadWith<HCM_Job>(o => o.Rodeo_Yard3);
+                dlo.LoadWith<HCM_Job>(o => o.Rodeo_Yard4);
+                //dlo.LoadWith<HCM_Job>(o => o.Rodeo_Yard_DropRedirect);
 
                 dlo.LoadWith<Rodeo_TransportOrder>(o => o.Rodeo_TO_Statuse);
                 dlo.LoadWith<Rodeo_TransportOrder>(o => o.Rodeo_TO_Steps);
@@ -142,15 +142,15 @@ namespace MSM.Database
                 dlo.LoadWith<Rodeo_TO_Step>(o => o.Rodeo_TO_Statuse);
                 dlo.LoadWith<Rodeo_TO_Step>(o => o.Rodeo_Yard_Begin);
                 dlo.LoadWith<Rodeo_TO_Step>(o => o.Rodeo_Yard_End);
-                dlo.LoadWith<Rodeo_TO_Step>(o => o.MSM_Path_Begin);
-                dlo.LoadWith<Rodeo_TO_Step>(o => o.MSM_Path_End);
+                dlo.LoadWith<Rodeo_TO_Step>(o => o.HCM_Path_Begin);
+                dlo.LoadWith<Rodeo_TO_Step>(o => o.HCM_Path_End);
 
                 db.LoadOptions = dlo;
                 db.DeferredLoadingEnabled = false;
 
                 if (IdJob != null)
                 {
-                    this._Job = db.MSM_Jobs.FirstOrDefault(p => p.IdJob == IdJob);
+                    this._Job = db.HCM_Jobs.FirstOrDefault(p => p.IdJob == IdJob);
                 }
                 else
                 {

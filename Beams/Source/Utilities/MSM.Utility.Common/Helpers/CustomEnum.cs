@@ -8,7 +8,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSM.Utility.Common.Helpers
+namespace HCM.Utility.Common.Helpers
 {
     /// <summary>Base-class for custom enumerations.</summary>
     /// <typeparam name="TEnum">The type of your subclass</typeparam>

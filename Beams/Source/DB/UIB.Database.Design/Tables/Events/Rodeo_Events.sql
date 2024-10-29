@@ -50,11 +50,11 @@ CREATE NONCLUSTERED INDEX [IX_Rodeo_Events_IdClient] ON [report].[Rodeo_Events]
 
 GO
 
-ALTER TABLE [report].[Rodeo_Events]  WITH CHECK ADD  CONSTRAINT [FK_Rodeo_Events_MSM_Jobs] FOREIGN KEY([IdJob]) REFERENCES [to].[MSM_Jobs] ([IdJob])
+ALTER TABLE [report].[Rodeo_Events]  WITH CHECK ADD  CONSTRAINT [FK_Rodeo_Events_HCM_Jobs] FOREIGN KEY([IdJob]) REFERENCES [to].[HCM_Jobs] ([IdJob])
 
 GO
 
-ALTER TABLE [report].[Rodeo_Events] CHECK CONSTRAINT [FK_Rodeo_Events_MSM_Jobs]
+ALTER TABLE [report].[Rodeo_Events] CHECK CONSTRAINT [FK_Rodeo_Events_HCM_Jobs]
 
 GO
  

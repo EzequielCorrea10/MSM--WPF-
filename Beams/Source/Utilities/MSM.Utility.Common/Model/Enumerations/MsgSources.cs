@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSM.Utility.Common.Enumerations
+namespace HCM.Utility.Common.Enumerations
 {
-    using MSM.Utility.Common.Helpers;
+    using HCM.Utility.Common.Helpers;
 
     public class MsgSources : CustomEnum<MsgSources, string>
     {

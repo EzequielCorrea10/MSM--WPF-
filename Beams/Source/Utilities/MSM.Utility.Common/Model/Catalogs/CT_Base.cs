@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSM.Utility.Common.Catalogs
+namespace HCM.Utility.Common.Catalogs
 {
     /// <summary>
     /// Structures of Base

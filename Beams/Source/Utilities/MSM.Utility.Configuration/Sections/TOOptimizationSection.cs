@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace MSM.Utility.Configuration
+namespace HCM.Utility.Configuration
 {
     /// <summary>
     /// Configuration class of TO Server Section.

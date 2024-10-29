@@ -1,0 +1,16 @@
+D:\Proyectos\MSM\Beams\AppRelease\debug\Configurations.xml
+D:\Proyectos\MSM\Beams\AppRelease\debug\MSM.Utility.Configuration.dll
+D:\Proyectos\MSM\Beams\AppRelease\debug\MSM.Utility.Configuration.pdb
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\HCM.Utility.Configuration.csproj.AssemblyReference.cache
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\HCM.Utility.Configuration.csproj.CoreCompileInputs.cache
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\HCM.Util.A6C363A9.Up2Date
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\MSM.Utility.Configuration.dll
+D:\Proyectos\MSM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\MSM.Utility.Configuration.pdb
+D:\Proyectos\HCM\Beams\AppRelease\debug\Configurations.xml
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\HCM.Utility.Configuration.csproj.AssemblyReference.cache
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\HCM.Utility.Configuration.csproj.CoreCompileInputs.cache
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\HCM.Util.A6C363A9.Up2Date
+D:\Proyectos\HCM\Beams\AppRelease\debug\HCM.Utility.Configuration.dll
+D:\Proyectos\HCM\Beams\AppRelease\debug\HCM.Utility.Configuration.pdb
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\HCM.Utility.Configuration.dll
+D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Configuration\obj\Debug\HCM.Utility.Configuration.pdb

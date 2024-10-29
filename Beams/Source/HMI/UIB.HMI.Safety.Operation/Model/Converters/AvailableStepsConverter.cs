@@ -7,9 +7,9 @@ using System.Windows;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace MSM.HMI.Safety.Operation.Converters
+namespace HCM.HMI.Safety.Operation.Converters
 {
-    using MSM.HMI.Safety.Operation.ViewModels;
+    using HCM.HMI.Safety.Operation.ViewModels;
 
     public class AvailableStepsConverter : IValueConverter
     {

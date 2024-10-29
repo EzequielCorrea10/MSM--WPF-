@@ -13,17 +13,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MSM.HMI.Safety.Operation
+namespace HCM.HMI.Safety.Operation
 {
     using Janus.Rodeo.Windows.Library.Rd_Log;
     using Janus.Rodeo.Windows.Library.UI.Common;
     using Janus.Rodeo.Windows.Library.UI.Controls;
 
-    using MSM.Utility.Configuration;
-    using MSM.HMI.Safety.Operation.Enumerations;
-    using MSM.HMI.Safety.Operation.Views;
-    using MSM.HMI.Safety.Operation.ViewModels;
-    using MSM.HMI.Safety.Operation.Views.Windows;
+    using HCM.Utility.Configuration;
+    using HCM.HMI.Safety.Operation.Enumerations;
+    using HCM.HMI.Safety.Operation.Views;
+    using HCM.HMI.Safety.Operation.ViewModels;
+    using HCM.HMI.Safety.Operation.Views.Windows;
 
     /// <summary>
     /// Interaction logic for DesktopWindow.xaml
@@ -173,21 +173,21 @@ namespace MSM.HMI.Safety.Operation
 
         //private void OpenZoneWindow(vmZone zone)
         //{
-        //    if (zone.Properties.Type == MSM.Safety.Server.Common.Enumerations.ZoneTypes.Permanent ||
-        //        zone.Properties.Type == MSM.Safety.Server.Common.Enumerations.ZoneTypes.Fly)
+        //    if (zone.Properties.Type == HCM.Safety.Server.Common.Enumerations.ZoneTypes.Permanent ||
+        //        zone.Properties.Type == HCM.Safety.Server.Common.Enumerations.ZoneTypes.Fly)
         //    {
         //        winPZoneDetails zoneDetail = new winPZoneDetails(zone);
         //        zoneDetail.Owner = this;
         //        zoneDetail.Focus();
         //        zoneDetail.ShowDialog();
         //    }
-        //    else if (zone.Properties.Type == MSM.Safety.Server.Common.Enumerations.ZoneTypes.Dead)
+        //    else if (zone.Properties.Type == HCM.Safety.Server.Common.Enumerations.ZoneTypes.Dead)
         //    {
         //        winDZoneDetails zoneDetail = new winDZoneDetails(zone);
         //        zoneDetail.Owner = this;
         //        zoneDetail.ShowDialog();
         //    }
-        //    else if (zone.Properties.Type == MSM.Safety.Server.Common.Enumerations.ZoneTypes.Temporary)
+        //    else if (zone.Properties.Type == HCM.Safety.Server.Common.Enumerations.ZoneTypes.Temporary)
         //    {
         //        winTZoneDetails zoneDetail = new winTZoneDetails(zone);
         //        zoneDetail.Owner = this;

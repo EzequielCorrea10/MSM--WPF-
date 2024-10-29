@@ -7,7 +7,7 @@ using System.Windows;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace MSM.HMI.Safety.Operation.Converters
+namespace HCM.HMI.Safety.Operation.Converters
 {
     public class InterlockBackgroundConverter : IValueConverter
     {
@@ -15,14 +15,14 @@ namespace MSM.HMI.Safety.Operation.Converters
         {
             Brush background = Brushes.Transparent;
 
-            if (value != null && value is MSM.HMI.Safety.Operation.Enumerations.InterlockTypes)
+            if (value != null && value is HCM.HMI.Safety.Operation.Enumerations.InterlockTypes)
             {
-                switch ((MSM.HMI.Safety.Operation.Enumerations.InterlockTypes)value)
+                switch ((HCM.HMI.Safety.Operation.Enumerations.InterlockTypes)value)
                 {
-                    case MSM.HMI.Safety.Operation.Enumerations.InterlockTypes.Zones:
+                    case HCM.HMI.Safety.Operation.Enumerations.InterlockTypes.Zones:
                         background = new SolidColorBrush(Color.FromRgb(0x36, 0x1a, 0x18));
                         break;
-                    case MSM.HMI.Safety.Operation.Enumerations.InterlockTypes.Equipment:
+                    case HCM.HMI.Safety.Operation.Enumerations.InterlockTypes.Equipment:
                         background = new SolidColorBrush(Color.FromRgb(0x29, 0x18, 0x36));
                         break;
                 }

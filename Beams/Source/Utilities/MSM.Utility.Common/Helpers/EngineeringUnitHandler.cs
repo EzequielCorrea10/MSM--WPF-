@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSM.Utility.Common.Handlers
+namespace HCM.Utility.Common.Handlers
 {
     using Janus.Rodeo.Windows.Library.Rd_Common;
 
-    using MSM.Utility.Configuration;
-    using MSM.Utility.Common.Enumerations;
-    using MSM.Utility.Common.Structures;
+    using HCM.Utility.Configuration;
+    using HCM.Utility.Common.Enumerations;
+    using HCM.Utility.Common.Structures;
 
     /// <summary>
     /// Class to handler the piece

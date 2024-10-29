@@ -1,4 +1,4 @@
-﻿CREATE TABLE [common].[MSM_Encoder_Failures](
+﻿CREATE TABLE [common].[HCM_Encoder_Failures](
 	[IdEncoderFailure] [int] NOT NULL,
 	[IdEncoderType] [int] NOT NULL,
 	[Name] [varchar](50) NOT NULL,
@@ -10,11 +10,11 @@
 	[TroubleshootingReference] [varchar](100) NULL,
 	[Order] [smallint] NOT NULL,
 	[Active] [bit] NOT NULL,
- CONSTRAINT [PK_MSM_Encoder_Failures] PRIMARY KEY CLUSTERED
+ CONSTRAINT [PK_HCM_Encoder_Failures] PRIMARY KEY CLUSTERED
 (
 	[IdEncoderFailure] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
- CONSTRAINT [UK_MSM_Encoder_Failures_Name] UNIQUE NONCLUSTERED 
+ CONSTRAINT [UK_HCM_Encoder_Failures_Name] UNIQUE NONCLUSTERED 
 (
 	[Name] ASC,
 	[IdEncoderType] ASC
@@ -22,13 +22,13 @@
 ) ON [PRIMARY]
 GO
 
-ALTER TABLE [common].[MSM_Encoder_Failures]  WITH CHECK ADD CONSTRAINT [FK_MSM_Encoder_Failures_MSM_Encoder_Types] FOREIGN KEY([IdEncoderType]) REFERENCES [common].[MSM_Encoder_Types] ([IdEncoderType])
+ALTER TABLE [common].[HCM_Encoder_Failures]  WITH CHECK ADD CONSTRAINT [FK_HCM_Encoder_Failures_HCM_Encoder_Types] FOREIGN KEY([IdEncoderType]) REFERENCES [common].[HCM_Encoder_Types] ([IdEncoderType])
 
 GO
 
-ALTER TABLE [common].[MSM_Encoder_Failures] CHECK CONSTRAINT [FK_MSM_Encoder_Failures_MSM_Encoder_Types]
+ALTER TABLE [common].[HCM_Encoder_Failures] CHECK CONSTRAINT [FK_HCM_Encoder_Failures_HCM_Encoder_Types]
 
 GO
 
-ALTER TABLE [common].[MSM_Encoder_Failures] ADD  CONSTRAINT [DF_MSM_Encoder_Failures_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [common].[HCM_Encoder_Failures] ADD  CONSTRAINT [DF_HCM_Encoder_Failures_Active]  DEFAULT ((1)) FOR [Active]
 GO

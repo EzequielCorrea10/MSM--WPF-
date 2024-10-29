@@ -48,11 +48,11 @@ ALTER TABLE [to].[Rodeo_TO_Pieces] CHECK CONSTRAINT [FK_Rodeo_TO_Pieces_Rodeo_Tr
 
 GO
 
-ALTER TABLE [to].[Rodeo_TO_Pieces]  WITH CHECK ADD  CONSTRAINT [FK_Rodeo_TO_Pieces_MSM_Jobs] FOREIGN KEY([IdJob]) REFERENCES [to].[MSM_Jobs] ([IdJob])
+ALTER TABLE [to].[Rodeo_TO_Pieces]  WITH CHECK ADD  CONSTRAINT [FK_Rodeo_TO_Pieces_HCM_Jobs] FOREIGN KEY([IdJob]) REFERENCES [to].[HCM_Jobs] ([IdJob])
 
 GO
 
-ALTER TABLE [to].[Rodeo_TO_Pieces] CHECK CONSTRAINT [FK_Rodeo_TO_Pieces_MSM_Jobs]
+ALTER TABLE [to].[Rodeo_TO_Pieces] CHECK CONSTRAINT [FK_Rodeo_TO_Pieces_HCM_Jobs]
 
 GO
 

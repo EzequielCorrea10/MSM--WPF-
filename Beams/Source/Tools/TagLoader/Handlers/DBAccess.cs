@@ -9,9 +9,9 @@ using System.Data.Linq;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MSM.Database;
-using MSM.Utility.Configuration;
-using MSM.Utility.Common.Handlers;
+using HCM.Database;
+using HCM.Utility.Configuration;
+using HCM.Utility.Common.Handlers;
 
 namespace TagLoader.Handlers
 {
@@ -97,7 +97,7 @@ namespace TagLoader.Handlers
             else
                 this._catalogs._client_types = new Dictionary<int, Rodeo_Client_Type>();
 
-            using (MSMDataContext DB = new MSMDataContext(Configurations.General.ConnectionString))
+            using (HCMDataContext DB = new HCMDataContext(Configurations.General.ConnectionString))
             {
                 //DataLoadOptions dlo = new DataLoadOptions();
                 //dlo.LoadWith<CPL_Pick_List>(p => p.CPL_Pick_List_Group);
@@ -123,7 +123,7 @@ namespace TagLoader.Handlers
             else
                 this._catalogs._clients = new Dictionary<int, Rodeo_Client>();
 
-            using (MSMDataContext DB = new MSMDataContext(Configurations.General.ConnectionString))
+            using (HCMDataContext DB = new HCMDataContext(Configurations.General.ConnectionString))
             {
                 DataLoadOptions dlo = new DataLoadOptions();
                 dlo.LoadWith<Rodeo_Client>(p => p.Rodeo_Client_Type);

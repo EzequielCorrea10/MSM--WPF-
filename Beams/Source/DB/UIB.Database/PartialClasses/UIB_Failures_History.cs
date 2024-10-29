@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSM.Database
+namespace HCM.Database
 {
-    public partial class MSM_Failures_History
+    public partial class HCM_Failures_History
     {
         /// <summary>
         /// Gets is active

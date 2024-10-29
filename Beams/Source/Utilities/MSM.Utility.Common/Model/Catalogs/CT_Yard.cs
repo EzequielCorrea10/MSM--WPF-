@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSM.Utility.Common.Catalogs
+namespace HCM.Utility.Common.Catalogs
 {
-    using MSM.Utility.Common.Structures;
+    using HCM.Utility.Common.Structures;
 
     /// <summary>
     /// CT_Location

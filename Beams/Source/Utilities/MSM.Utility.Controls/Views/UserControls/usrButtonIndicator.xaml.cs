@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.ComponentModel;
 
-namespace MSM.Utility.Controls
+namespace HCM.Utility.Controls
 {
     /// <summary>
     /// Lógica de interacción para usrButtonIndicator.xaml

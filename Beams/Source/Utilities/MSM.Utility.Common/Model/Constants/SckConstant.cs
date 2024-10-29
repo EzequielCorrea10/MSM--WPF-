@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MSM.Utility.Common
+namespace HCM.Utility.Common
 {
     /// <summary>
     /// Constant of Socket

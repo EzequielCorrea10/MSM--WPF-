@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Windows.Data;
 using System.Windows.Media.Imaging;
 
-namespace MSM.HMI.Safety.Operation.Converters
+namespace HCM.HMI.Safety.Operation.Converters
 {
-    using MSM.HMI.Safety.Operation.Enumerations;
+    using HCM.HMI.Safety.Operation.Enumerations;
 
     internal class ScreenPageToStringConverter : IValueConverter
     {
