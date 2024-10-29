@@ -116,8 +116,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T14:07:42.934Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -169,8 +168,7 @@
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmLayout.cs",
               "ViewState": "AQIAAJwCAAAAAAAAAAAAAJoCAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:18:46.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T15:18:46.78Z"
             },
             {
               "$type": "Document",
@@ -182,8 +180,7 @@
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\App.xaml.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAASwCMAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T15:18:35.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T15:18:35.783Z"
             },
             {
               "$type": "Document",
@@ -219,8 +216,7 @@
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrLayout.xaml.cs",
               "ViewState": "AQIAAF0AAAAAAAAAAIAwwGMAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T13:50:15.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T13:50:15.478Z"
             },
             {
               "$type": "Document",

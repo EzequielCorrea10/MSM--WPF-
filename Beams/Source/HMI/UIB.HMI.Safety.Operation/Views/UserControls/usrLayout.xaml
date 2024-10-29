@@ -35,7 +35,7 @@
         <BitmapImage x:Key="DownArrow" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Icons/coilDrop.png" RenderOptions.BitmapScalingMode="HighQuality" />
         <BitmapImage x:Key="DownArrow2" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Icons/camera.png" RenderOptions.BitmapScalingMode="HighQuality" />
         <!-- Pixel  -->
-        <sys:Double x:Key="LWidth">1500</sys:Double>
+        <sys:Double x:Key="LWidth">3000</sys:Double>
         <sys:Double x:Key="LHeight">665</sys:Double>
 
         <!-- Millimeters  -->
@@ -440,9 +440,9 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
             </StackPanel>
 
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,120,0">
+            <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,120,0">
                 <Button x:Name="btnBinocular" Margin="0" Template="{StaticResource btnBinocular}" Click="btnZoom_Click"  ToolTip="Allow the user to make zoom on the layout"/>
-            </StackPanel>
+            </StackPanel>-->
 
 
         </Grid>
@@ -484,9 +484,7 @@
                             <ColumnDefinition Width="1323*"/>
                             <ColumnDefinition Width="197*"/>
                         </Grid.ColumnDefinitions>
-                        <Rectangle Margin="0,39,52,439" 
-                       Stroke="White"  
-                       StrokeThickness="2" Grid.ColumnSpan="2">
+                        <Rectangle Margin="78,47,75,432" >
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.001 0.01">
                                     <GradientStop Offset="0.5" Color="Black"/>
@@ -499,23 +497,21 @@
                         CommandParameter="EntryWest" Grid.ColumnSpan="2">
                         </Button>
 
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="202,114,1071,505"/>
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="709,114,564,505"/>
-                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1310,114,160,505" Grid.ColumnSpan="2"/>
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="202,114,1256,505" Opacity="0.5"/>
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="712,114,758,505" RenderTransformOrigin="-0.84,0.66" Opacity="0.5"/>
+                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1268,114,202,505" Opacity="0.5"/>
 
-                        <Border x:Name="West" BorderThickness="2,2" BorderBrush="Red" Margin="2,41,922,441" Visibility="Hidden" />
-                        <Border x:Name="East" BorderThickness="2,2" BorderBrush="Red" Margin="1204,41,54,441" Visibility="Hidden"  Grid.ColumnSpan="2"/>
+                        <Border x:Name="West" BorderThickness="5,5" BorderBrush="Red" Margin="79,47,1136,431" />
+                        <Border x:Name="East" BorderThickness="5,5" BorderBrush="Red" Margin="1139,47,75,433"/>
 
                     </Grid>
 
                     <Grid>
-                        <Rectangle Margin="50,235,52,243" 
-                       Stroke="White"  
-                       StrokeThickness="2">
+                        <Rectangle Margin="78,237,75,239" >
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.001 0.01">
                                     <GradientStop Offset="0.5" Color="Black"/>
-                                    <GradientStop Offset="0.5" Color="DarkSlateGray"/>
+                                    <GradientStop Offset="0.5" Color="#222222"/>
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
                             <Rectangle.InputBindings>
@@ -525,16 +521,14 @@
                         </Rectangle>
 
 
-                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="202,324,1268,295"/>
-                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="709,324,761,295" RenderTransformOrigin="-0.84,0.66"/>
-                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1310,324,160,295"/>
+                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="202,324,1268,295" Opacity="0.5"/>
+                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="712,324,758,295" RenderTransformOrigin="-0.84,0.66" Opacity="0.5"/>
+                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1268,324,202,295" Opacity="0.5"/>
 
                     </Grid>
 
-                    <Grid>
-                        <Rectangle Margin="50,431,0,47" 
-                       Stroke="White"  
-                       StrokeThickness="2">
+                    <Grid Margin="2,-6,-2,6">
+                        <Rectangle Margin="0,436,0,47" HorizontalAlignment="Center" Width="1368" >
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.001 0.01">
                                     <GradientStop Offset="0.5" Color="Black"/>
@@ -546,15 +540,34 @@
                                             CommandParameter="ExitWest" />
                             </Rectangle.InputBindings>
                         </Rectangle>
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="202,518,1268,101"/>
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="709,518,761,101" RenderTransformOrigin="-0.26,0.52"/>
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="1310,518,160,101" RenderTransformOrigin="-0.26,0.52"/>
-                        
-                        <Border x:Name="WestD" BorderThickness="2,2" BorderBrush="Red" Visibility="Hidden" Margin="52,433,1119,49" />
-                        <Border x:Name="EastD" BorderThickness="2,2" BorderBrush="Red" Visibility="Hidden" Margin="1140,433,2,49"/>
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="202,518,1268,101" Opacity="0.5"/>
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="710,518,760,101" RenderTransformOrigin="-0.26,0.52" Opacity="0.5"/>
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="1268,518,202,101" RenderTransformOrigin="-0.26,0.52" Opacity="0.5"/>
+
+                        <Border x:Name="WestD" BorderThickness="5,5" BorderBrush="Red"  Margin="77,435,1136,47" />
+                        <Border x:Name="EastD" BorderThickness="5,5" BorderBrush="Red" Margin="1138,435,78,47"/>
 
                     </Grid>
 
+                    <Grid Name="Outisde">
+                        <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,616,76,0" />
+                        <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,46,76,0" />
+                        <Line Stroke="White" Width="2" Stretch="Fill" Y2="1" StrokeDashArray="5 5" HorizontalAlignment="Left" Margin="78,47,0,53" />
+                        <Line Stroke="White" Width="2" Stretch="Fill" Y2="1" StrokeDashArray="5 5" HorizontalAlignment="Left" Margin="1444,47,0,53" />
+                        <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="55,447,0,35">
+                            <Image.RenderTransform>
+                                <ScaleTransform ScaleX="-1"/>
+                            </Image.RenderTransform>
+                        </Image>
+                        <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="58,73,0,426">
+                            <Image.RenderTransform>
+                                <ScaleTransform ScaleX="-1"/>
+                            </Image.RenderTransform>
+                        </Image>
+                        <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="1462,50,0,429" RenderTransformOrigin="0.523,0.498"/>
+                        <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="1462,428,0,60"/>
+
+                    </Grid>
                     <Border Name="zoomRectangle" BorderThickness="1" BorderBrush="WhiteSmoke" Margin="0,0,0,0" Width="0" Height="0" HorizontalAlignment="Left" VerticalAlignment="Top" />
                 </Grid>
             </ScrollViewer>
