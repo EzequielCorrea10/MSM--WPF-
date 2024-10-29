@@ -51,9 +51,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ClassLibrary2">
-      <HintPath>C:\Users\Janus\source\repos\ClassLibrary2\ClassLibrary2\bin\Debug\netstandard2.0\ClassLibrary2.dll</HintPath>
-    </Reference>
     <Reference Include="Janus.Rodeo.Windows.Library.Rd_Cfg, Version=1.0.8251.22719, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Rodeo\apps\dlls\Janus.Rodeo.Windows.Library.Rd_Cfg.dll</HintPath>
@@ -145,6 +142,7 @@
     <Compile Include="Model\Selectors\LayoutElementSelector.cs" />
     <Compile Include="Model\Structures\Fence.cs" />
     <Compile Include="Model\Structures\LayoutCfg.cs" />
+    <Compile Include="Model\Objects\Beam.cs" />
     <Compile Include="ViewModels\vmLayout.cs" />
     <Compile Include="ViewModels\vmLayoutZoneSection.cs" />
     <Compile Include="ViewModels\vmMainCommon.cs" />

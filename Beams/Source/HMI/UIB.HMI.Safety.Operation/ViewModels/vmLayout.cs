@@ -21,8 +21,6 @@ namespace MSM.HMI.Safety.Operation.ViewModels
     using Janus.Rodeo.Windows.Library.UI.Controls.Helpers;
     using Janus.Rodeo.Windows.Library.UI.Controls.Widgets;
     using Janus.Rodeo.Windows.Library.UI.Common;
-    using RodeoTagWrapper;
-
 
     using MSM.Database;
     using MSM.HMI.Safety.Operation.Enumerations;
@@ -77,6 +75,28 @@ namespace MSM.HMI.Safety.Operation.ViewModels
 
         #endregion
 
+        #region logical attributes
+        /// <summary>
+        /// use to lock the logical
+        /// </summary>
+        private readonly object _lockInstance = new object();
+
+        /// <summary>
+        /// use to lock the logical
+        /// </summary>
+        protected readonly object _lockTO = new object();
+
+        /// <summary>
+        /// nunning task
+        /// </summary>
+        private Task _runningTask;
+
+        /// <summary>
+        /// cancel task
+        /// </summary>
+        private CancellationTokenSource _cancelTask;
+        #endregion
+
         #region Constructors
         /// <summary>
         /// Initializes a new instance of the <see cref="vmLayout"/> class.
@@ -106,53 +126,36 @@ namespace MSM.HMI.Safety.Operation.ViewModels
             this._EnableFeaturesCommand = new RelayCommand(param => this.EnableFeaturesExecute(param));
             this._SelectYardCommand = new RelayCommand(param => this.SelectYardExecute(param));
             this._FooCommand = new RelayCommand(param => this.SendExecute(param));
+            Main();
+
         }
         #endregion
 
         #region Properties
-      
 
-        public ObservableCollection<object> LayoutElements
+        /// <summary>
+        /// Lock Instance
+        /// </summary>
+        public object LockInstance
         {
-            get 
-            {
-                return this._lstLayoutElements; 
-            }
+            get { return _lockInstance; }
         }
 
-
-        public bool IsInverted
+        /// <summary>
+        /// Indication the Machine is ThreadRunning
+        /// </summary>
+        public bool ThreadRunning
         {
-            get { return Configurations.HMIs.safety_layout_inverted; }
-        }
-
-        public bool IsFirstLineVisible
-        {
-            get { return this._first_line_visible; }
-            set
+            get
             {
-                if (this._first_line_visible != value)
+                if (this._runningTask == null)
                 {
-                    this._first_line_visible = value;
-
-                    OnPropertyChanged("IsFirstLineVisible");
+                    return false;
                 }
+                return this._runningTask.Status == TaskStatus.Running || this._runningTask.Status == TaskStatus.WaitingToRun;
             }
         }
 
-        public bool IsTemporaryZoneVisible
-        {
-            get { return this._temporary_zone_visible; }
-            set
-            {
-                if (this._temporary_zone_visible != value)
-                {
-                    this._temporary_zone_visible = value;
-
-                    OnPropertyChanged("IsTemporaryZoneVisible");
-                }
-            }
-        }
 
         public string ZoneName
         {
@@ -600,6 +603,13 @@ namespace MSM.HMI.Safety.Operation.ViewModels
 
         #region private methods
 
+        private void Main()
+        {
+            this._runningTask = new Task(() => DoProcess(this._cancelTask.Token), this._cancelTask.Token);
+            this._runningTask.Start();
+            Thread.Sleep(250);
+        }
+
         /// <summary>
         /// Show Zones
         /// </summary>
@@ -675,22 +685,60 @@ namespace MSM.HMI.Safety.Operation.ViewModels
 
         private void SendExecute(object parameter)
         {
-
-            var test = RodeoTagWrapper.WriteTextTag("MSM.CBED_COLLECTINGBEDENTRYEAST_BEAMS", "test");
-            var test2 = RodeoTagWrapper.ReadTextTag("MSM.CBED_COLLECTINGBEDENTRYEAST_BEAMS");
-
             ZoneName = parameter.ToString();
             Beams = parameter.ToString();
             vmZoneDetail generalDetail0s = new vmZoneDetail(parameter.ToString(), "test");
-
             ZoneDetail zoneDetail = new ZoneDetail(this);
-
             zoneDetail.ShowDialog();
+        }
 
+        private void DoProcess(CancellationToken token)
+        {
+            try
+            {
+                if (!this.ThreadRunning)
+                {
+                    lock (this._lockInstance)
+                    {
+                        if (!this.ThreadRunning)
+                        {
+                            bool cancelled = false;
+
+                            try
+                            {
+                                if (this._cancelTask != null)
+                                {
+                                    this._cancelTask.Cancel();
+                                }
+
+                                lock (this._lockTO)
+                                {
+                                    string value;
+                                    if (!RodeoHandler.Tag.GetText(string.Format("HCM.Zone_1_Beams", Configurations.General.RodeoSector), out value))
+                                    {
+                                        throw new Exception("Error");
+                                    }
+
+                                }
+
+                                Thread.Sleep(250);
+
+                            }
+                            catch (Exception ex)
+                            {
+                                RdTrace.Exception(ex);
+                            }
+                        }
+                    }
+                } 
+            }
+            catch (Exception ex)
+            {
+                RdTrace.Exception(ex);
+            }
         }
 
 
         #endregion
-
-    }
+        }
 }

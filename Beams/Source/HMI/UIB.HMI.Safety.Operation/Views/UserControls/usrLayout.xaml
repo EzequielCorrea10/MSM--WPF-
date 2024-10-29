@@ -34,6 +34,7 @@
         <BitmapImage x:Key="RightArrow" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Icons/rightArrow.png" RenderOptions.BitmapScalingMode="HighQuality" />
         <BitmapImage x:Key="DownArrow" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Icons/coilDrop.png" RenderOptions.BitmapScalingMode="HighQuality" />
         <BitmapImage x:Key="DownArrow2" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Icons/camera.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="Beam" UriSource="pack://application:,,,/MSM.Utility.Controls;component/Themes/Resources/Icons/Beam.png" RenderOptions.BitmapScalingMode="HighQuality" />
         <!-- Pixel  -->
         <sys:Double x:Key="LWidth">3000</sys:Double>
         <sys:Double x:Key="LHeight">665</sys:Double>
@@ -491,11 +492,12 @@
                                     <GradientStop Offset="0.5" Color="DimGray"/>
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
+                            <Rectangle.InputBindings>
+                                <MouseBinding Gesture="LeftClick" Command="{Binding Path=DataContext.FooCommand , RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                            CommandParameter="EntryWest" />
+                            </Rectangle.InputBindings>
                         </Rectangle>
 
-                        <Button Margin="0,118,52,519" Width="Auto" Height="Auto" Opacity="0" Command="{Binding Path=DataContext.FooCommand , RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
-                        CommandParameter="EntryWest" Grid.ColumnSpan="2">
-                        </Button>
 
                         <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="202,114,1256,505" Opacity="0.5"/>
                         <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="712,114,758,505" RenderTransformOrigin="-0.84,0.66" Opacity="0.5"/>
@@ -559,15 +561,20 @@
                                 <ScaleTransform ScaleX="-1"/>
                             </Image.RenderTransform>
                         </Image>
-                        <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="58,73,0,426">
+                        <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="58,44,0,455">
                             <Image.RenderTransform>
                                 <ScaleTransform ScaleX="-1"/>
                             </Image.RenderTransform>
                         </Image>
-                        <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="1462,50,0,429" RenderTransformOrigin="0.523,0.498"/>
+                        <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="1462,34,0,445" RenderTransformOrigin="0.523,0.498"/>
                         <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="1462,428,0,60"/>
-
                     </Grid>
+
+                    <Grid Name="Beams">
+
+                        
+                    </Grid>
+
                     <Border Name="zoomRectangle" BorderThickness="1" BorderBrush="WhiteSmoke" Margin="0,0,0,0" Width="0" Height="0" HorizontalAlignment="Left" VerticalAlignment="Top" />
                 </Grid>
             </ScrollViewer>

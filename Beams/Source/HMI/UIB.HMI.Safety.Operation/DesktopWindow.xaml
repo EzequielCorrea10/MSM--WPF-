@@ -9,7 +9,7 @@
         xmlns:view="clr-namespace:MSM.HMI.Safety.Operation.Views"              
         xmlns:converter="clr-namespace:MSM.HMI.Safety.Operation.Converters"                        
         AllowsTransparency="True" Effect="{StaticResource showEffectWindow}" BorderThickness="0"
-        Height="930" Width="1920" Top="0" Left="0" 
+        Height="870" Width="1920" Top="0" Left="0" 
         ResizeMode="NoResize" WindowStyle="None">
     <Window.Resources>
         <Style TargetType="ScrollBar">
@@ -42,9 +42,9 @@
                     </Grid.ColumnDefinitions>
 
                     <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
-                        <jctr:GridButton ImageSource="{StaticResource img_GreenLeftArrow}" Margin="10,0,0,5" Style="{StaticResource GridButtonHeader}"
+                        <!--<jctr:GridButton ImageSource="{StaticResource img_GreenLeftArrow}" Margin="10,0,0,5" Style="{StaticResource GridButtonHeader}"
                                          ToolTip="Close Window"
-                                         Visibility="{Binding Path=CanClose, Converter={StaticResource BooleanToVisibilityConverter}}" />
+                                         Visibility="{Binding Path=CanClose, Converter={StaticResource BooleanToVisibilityConverter}}" />-->
 
                         <TextBlock x:Name="txtTitle" Padding="60,0,0,0" Foreground="WhiteSmoke" FontSize="50" FontWeight="Bold" LineHeight="48" VerticalAlignment="Center" 
                                    Text="{Binding Path=ActivePage, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource screenPageToStringConverter}, ConverterParameter={StaticResource boolTrue}}" />
