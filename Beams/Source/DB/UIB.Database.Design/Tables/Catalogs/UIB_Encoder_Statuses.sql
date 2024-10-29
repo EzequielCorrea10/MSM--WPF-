@@ -1,4 +1,4 @@
-﻿CREATE TABLE [common].[HCM_Encoder_Statuses](
+﻿CREATE TABLE [common].[HSM_Encoder_Statuses](
 	[IdEncoderStatus] [int] NOT NULL,
 	[IdEncoderType] [int] NOT NULL,
 	[Name] [varchar](50) NOT NULL,
@@ -9,11 +9,11 @@
 	[AlertLevel] [tinyint] NOT NULL DEFAULT 0, -- 0 = Green, 1 = Yellow, 2 = Red
 	[Order] [smallint] NOT NULL,
 	[Active] [bit] NOT NULL,
- CONSTRAINT [PK_HCM_Encoder_Statuses] PRIMARY KEY CLUSTERED
+ CONSTRAINT [PK_HSM_Encoder_Statuses] PRIMARY KEY CLUSTERED
 (
 	[IdEncoderStatus] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
- CONSTRAINT [UK_HCM_Encoder_Statuses_Name] UNIQUE NONCLUSTERED 
+ CONSTRAINT [UK_HSM_Encoder_Statuses_Name] UNIQUE NONCLUSTERED 
 (
 	[Name] ASC,
 	[IdEncoderType] ASC
@@ -21,13 +21,13 @@
 ) ON [PRIMARY]
 GO
 
-ALTER TABLE [common].[HCM_Encoder_Statuses]  WITH CHECK ADD CONSTRAINT [FK_HCM_Encoder_Statuses_HCM_Encoder_Types] FOREIGN KEY([IdEncoderType]) REFERENCES [common].[HCM_Encoder_Types] ([IdEncoderType])
+ALTER TABLE [common].[HSM_Encoder_Statuses]  WITH CHECK ADD CONSTRAINT [FK_HSM_Encoder_Statuses_HSM_Encoder_Types] FOREIGN KEY([IdEncoderType]) REFERENCES [common].[HSM_Encoder_Types] ([IdEncoderType])
 
 GO
 
-ALTER TABLE [common].[HCM_Encoder_Statuses] CHECK CONSTRAINT [FK_HCM_Encoder_Statuses_HCM_Encoder_Types]
+ALTER TABLE [common].[HSM_Encoder_Statuses] CHECK CONSTRAINT [FK_HSM_Encoder_Statuses_HSM_Encoder_Types]
 
 GO
 
-ALTER TABLE [common].[HCM_Encoder_Statuses] ADD  CONSTRAINT [DF_HCM_Encoder_Statuses_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [common].[HSM_Encoder_Statuses] ADD  CONSTRAINT [DF_HSM_Encoder_Statuses_Active]  DEFAULT ((1)) FOR [Active]
 GO

@@ -1,4 +1,4 @@
-﻿CREATE SEQUENCE [tracking].[HCM_GHP_Reference]
+﻿CREATE SEQUENCE [tracking].[HSM_GHP_Reference]
  AS [int]
  START WITH 1
  INCREMENT BY 1

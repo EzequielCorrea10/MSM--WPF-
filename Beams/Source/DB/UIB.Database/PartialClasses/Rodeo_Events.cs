@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HCM.Database
+namespace HSM.Database
 {
     /// <summary>
     /// partial class of events
@@ -41,12 +41,12 @@ namespace HCM.Database
 
         #region job / transport order / step adquisition methods
         private readonly object lockInstance = new object();
-        private HCM_Job _Job;
-        public HCM_Job Job
+        private HSM_Job _Job;
+        public HSM_Job Job
         {
             get
             {
-                if (string.IsNullOrEmpty(HCMDataContext.default_connection_string))
+                if (string.IsNullOrEmpty(HSMDataContext.default_connection_string))
                     return null;
 
                 if (this.IdJob == null)
@@ -71,7 +71,7 @@ namespace HCM.Database
         {
             get
             {
-                if (string.IsNullOrEmpty(HCMDataContext.default_connection_string))
+                if (string.IsNullOrEmpty(HSMDataContext.default_connection_string))
                     return null;
 
                 if (this.IdTransportOrder == null)
@@ -96,7 +96,7 @@ namespace HCM.Database
         {
             get
             {
-                if (string.IsNullOrEmpty(HCMDataContext.default_connection_string))
+                if (string.IsNullOrEmpty(HSMDataContext.default_connection_string))
                     return null;
 
                 if (this.Step == null)
@@ -118,18 +118,18 @@ namespace HCM.Database
 
         private void LoadData()
         {
-            using (HCMDataContext db = new HCMDataContext(HCMDataContext.default_connection_string))
+            using (HSMDataContext db = new HSMDataContext(HSMDataContext.default_connection_string))
             {
                 DataLoadOptions dlo = new DataLoadOptions();
 
-                dlo.LoadWith<HCM_Job>(o => o.Rodeo_TO_Statuse);
-                dlo.LoadWith<HCM_Job>(o => o.HCM_Job_Type);
-                dlo.LoadWith<HCM_Job>(o => o.Rodeo_Yard);
-                dlo.LoadWith<HCM_Job>(o => o.Rodeo_Yard1);
-                dlo.LoadWith<HCM_Job>(o => o.Rodeo_Yard2);
-                dlo.LoadWith<HCM_Job>(o => o.Rodeo_Yard3);
-                dlo.LoadWith<HCM_Job>(o => o.Rodeo_Yard4);
-                //dlo.LoadWith<HCM_Job>(o => o.Rodeo_Yard_DropRedirect);
+                dlo.LoadWith<HSM_Job>(o => o.Rodeo_TO_Statuse);
+                dlo.LoadWith<HSM_Job>(o => o.HSM_Job_Type);
+                dlo.LoadWith<HSM_Job>(o => o.Rodeo_Yard);
+                dlo.LoadWith<HSM_Job>(o => o.Rodeo_Yard1);
+                dlo.LoadWith<HSM_Job>(o => o.Rodeo_Yard2);
+                dlo.LoadWith<HSM_Job>(o => o.Rodeo_Yard3);
+                dlo.LoadWith<HSM_Job>(o => o.Rodeo_Yard4);
+                //dlo.LoadWith<HSM_Job>(o => o.Rodeo_Yard_DropRedirect);
 
                 dlo.LoadWith<Rodeo_TransportOrder>(o => o.Rodeo_TO_Statuse);
                 dlo.LoadWith<Rodeo_TransportOrder>(o => o.Rodeo_TO_Steps);
@@ -142,15 +142,15 @@ namespace HCM.Database
                 dlo.LoadWith<Rodeo_TO_Step>(o => o.Rodeo_TO_Statuse);
                 dlo.LoadWith<Rodeo_TO_Step>(o => o.Rodeo_Yard_Begin);
                 dlo.LoadWith<Rodeo_TO_Step>(o => o.Rodeo_Yard_End);
-                dlo.LoadWith<Rodeo_TO_Step>(o => o.HCM_Path_Begin);
-                dlo.LoadWith<Rodeo_TO_Step>(o => o.HCM_Path_End);
+                dlo.LoadWith<Rodeo_TO_Step>(o => o.HSM_Path_Begin);
+                dlo.LoadWith<Rodeo_TO_Step>(o => o.HSM_Path_End);
 
                 db.LoadOptions = dlo;
                 db.DeferredLoadingEnabled = false;
 
                 if (IdJob != null)
                 {
-                    this._Job = db.HCM_Jobs.FirstOrDefault(p => p.IdJob == IdJob);
+                    this._Job = db.HSM_Jobs.FirstOrDefault(p => p.IdJob == IdJob);
                 }
                 else
                 {

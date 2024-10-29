@@ -5,16 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HCM.Utility.Common.Handlers
+namespace HSM.Utility.Common.Handlers
 {
     using Janus.Rodeo.Windows.Library.Rd_Log;
     using Janus.Rodeo.Windows.Library.UI.Common.Helpers;
 
-    using HCM.Database;
-    using HCM.Utility.Common.Enumerations;
-    using HCM.Utility.Common.Catalogs;
-    using HCM.Utility.Common.Structures;
-    using HCM.Utility.Configuration;
+    using HSM.Database;
+    using HSM.Utility.Common.Enumerations;
+    using HSM.Utility.Common.Catalogs;
+    using HSM.Utility.Common.Structures;
+    using HSM.Utility.Configuration;
     using Janus.Rodeo.Windows.Library.UI.Common;
     using System.IO;
 
@@ -52,7 +52,7 @@ namespace HCM.Utility.Common.Handlers
                         yards.Add(new CT_Yard(xmlYard.IdYard, xmlYard.Name, xmlYard.FullDescription, xmlYard.X1AbsolutePos, xmlYard.X2AbsolutePos, xmlYard.Y1AbsolutePos, xmlYard.Y2AbsolutePos, xmlYard.PlcValue));
                     }
 
-                    //List<HCM_Location_Group> location_groups = XmlDatabase.ReadXml<HCM_Location_Group>(Configurations.Catalogs.Folder).Where(p => p.Active == true).ToList();
+                    //List<HSM_Location_Group> location_groups = XmlDatabase.ReadXml<HSM_Location_Group>(Configurations.Catalogs.Folder).Where(p => p.Active == true).ToList();
                     //List<Rodeo_Machine_Type> machine_types = XmlDatabase.ReadXml<Rodeo_Machine_Type>(Configurations.Catalogs.Folder).Where(p => p.Active == true).ToList();
 
                     //Dictionary<int, List<Yard_Transfer>> yard_transfers = new Dictionary<int, List<Yard_Transfer>>();
@@ -72,14 +72,14 @@ namespace HCM.Utility.Common.Handlers
                     //        continue;
                     //    }
 
-                    //    HCM_Location_Group location_group_begin = location_groups.FirstOrDefault(p => p.IdLocationGroup == xmlYardTransfer.IdLocationGroupBegin);
+                    //    HSM_Location_Group location_group_begin = location_groups.FirstOrDefault(p => p.IdLocationGroup == xmlYardTransfer.IdLocationGroupBegin);
                     //    if (location_group_begin == null)
                     //    {
                     //        RdTrace.Message("Transfer is discarded because from location group {0} is not found", xmlYardTransfer.IdLocationGroupBegin);
                     //        continue;
                     //    }
 
-                    //    HCM_Location_Group location_group_end = location_groups.FirstOrDefault(p => p.IdLocationGroup == xmlYardTransfer.IdLocationGroupEnd);
+                    //    HSM_Location_Group location_group_end = location_groups.FirstOrDefault(p => p.IdLocationGroup == xmlYardTransfer.IdLocationGroupEnd);
                     //    if (location_group_end == null)
                     //    {
                     //        RdTrace.Message("Transfer is discarded because to location group {0} is not found", xmlYardTransfer.IdLocationGroupEnd);
@@ -105,13 +105,13 @@ namespace HCM.Utility.Common.Handlers
                 }
                 else
                 {
-                    using (HCMDataContext DB = new HCMDataContext(Configurations.General.ConnectionString))
+                    using (HSMDataContext DB = new HSMDataContext(Configurations.General.ConnectionString))
                     {
                         DataLoadOptions dlo = new DataLoadOptions();
                         //dlo.LoadWith<Rodeo_Yard>(p => p.Rodeo_Yard_Transfers_Begin);
                         //dlo.LoadWith<Rodeo_Yard>(p => p.Rodeo_Yard_Transfers_End);
-                        //dlo.LoadWith<Rodeo_Yard_Transfer>(p => p.HCM_Location_Group_Begin);
-                        //dlo.LoadWith<Rodeo_Yard_Transfer>(p => p.HCM_Location_Group_End);
+                        //dlo.LoadWith<Rodeo_Yard_Transfer>(p => p.HSM_Location_Group_Begin);
+                        //dlo.LoadWith<Rodeo_Yard_Transfer>(p => p.HSM_Location_Group_End);
                         //dlo.LoadWith<Rodeo_Yard_Transfer>(p => p.Rodeo_Machine_Type);
                         DB.LoadOptions = dlo;
                         DB.DeferredLoadingEnabled = false;
@@ -143,7 +143,7 @@ namespace HCM.Utility.Common.Handlers
                         //        yard_transfers.Add(yard_transfer.IdYardBegin, new List<Yard_Transfer>());
                         //    }
 
-                        //    yard_transfers[yard_transfer.IdYardBegin].Add(new Yard_Transfer(yard_begin, yard_end, yard_transfer.HCM_Location_Group_Begin.Name, yard_transfer.HCM_Location_Group_End.Name, yard_transfer.Rodeo_Machine_Type.Name));
+                        //    yard_transfers[yard_transfer.IdYardBegin].Add(new Yard_Transfer(yard_begin, yard_end, yard_transfer.HSM_Location_Group_Begin.Name, yard_transfer.HSM_Location_Group_End.Name, yard_transfer.Rodeo_Machine_Type.Name));
 
                         //    yard_begin.YardTransfers = yard_transfers[yard_transfer.IdYardBegin].ToArray();
                         //}
@@ -192,13 +192,13 @@ namespace HCM.Utility.Common.Handlers
             {
                 try
                 {
-                    if (string.IsNullOrEmpty(username) || username == HCM.Utility.Common.Constants.Configuration.SYSTEM_USERNAME)
+                    if (string.IsNullOrEmpty(username) || username == HSM.Utility.Common.Constants.Configuration.SYSTEM_USERNAME)
                     {
                         RdTrace.Message("Event Type {0} was not registered, Client={1}, User={2}, Data={3}", event_type, clientname, username, data);
                         return;
                     }
 
-                    using (HCMDataContext DB = new HCMDataContext(Configurations.General.ConnectionString))
+                    using (HSMDataContext DB = new HSMDataContext(Configurations.General.ConnectionString))
                     {
                         Rodeo_Event_Type dbEventType = DB.Rodeo_Event_Types.FirstOrDefault(p => p.Name == event_type);
                         if (dbEventType == null)
@@ -287,20 +287,20 @@ namespace HCM.Utility.Common.Handlers
             {
                 try
                 {
-                    using (HCMDataContext DB = new HCMDataContext(Configurations.General.ConnectionString))
+                    using (HSMDataContext DB = new HSMDataContext(Configurations.General.ConnectionString))
                     {
-                        HCM_Zone_Event_Type dbZoneEventType = DB.HCM_Zone_Event_Types.FirstOrDefault(p => p.Name == event_type);
+                        HSM_Zone_Event_Type dbZoneEventType = DB.HSM_Zone_Event_Types.FirstOrDefault(p => p.Name == event_type);
                         if (dbZoneEventType == null)
                         {
                             RdTrace.Message("Event Type {0} was not found, idZone={1}, Request Value={2}, Data={3}", event_type, id_zone, request_value, data);
                             return;
                         }
 
-                        HCM_Zone_Event dbZoneEvent = new HCM_Zone_Event();
+                        HSM_Zone_Event dbZoneEvent = new HSM_Zone_Event();
                         dbZoneEvent.IdZoneEventType = dbZoneEventType.IdZoneEventType;
                         dbZoneEvent.IdZone = id_zone;
 
-                        HCM_Request dbRequest = DB.HCM_Requests.FirstOrDefault(p => p.PlcValue == request_value);
+                        HSM_Request dbRequest = DB.HSM_Requests.FirstOrDefault(p => p.PlcValue == request_value);
                         if (dbRequest == null)
                         {
                             RdTrace.Message("Request Value {0} was not found, Event type={1}, idZone={2}, Data={3}", request_value, event_type, id_zone, data);
@@ -314,7 +314,7 @@ namespace HCM.Utility.Common.Handlers
                         dbZoneEvent.EventTime = event_time;
                         dbZoneEvent.InsDateTime = DateTimeOffset.Now;
 
-                        DB.HCM_Zone_Events.InsertOnSubmit(dbZoneEvent);
+                        DB.HSM_Zone_Events.InsertOnSubmit(dbZoneEvent);
                         DB.SubmitChanges(Configurations.General.ReplicationQueue);
                     }
                 }
@@ -339,19 +339,19 @@ namespace HCM.Utility.Common.Handlers
             {
                 try
                 {
-                    using (HCMDataContext DB = new HCMDataContext(Configurations.General.ConnectionString))
+                    using (HSMDataContext DB = new HSMDataContext(Configurations.General.ConnectionString))
                     {
-                        HCM_Zone_Event_Type dbZoneEventType = DB.HCM_Zone_Event_Types.FirstOrDefault(p => p.Name == event_type);
+                        HSM_Zone_Event_Type dbZoneEventType = DB.HSM_Zone_Event_Types.FirstOrDefault(p => p.Name == event_type);
                         if (dbZoneEventType == null)
                         {
                             RdTrace.Message("Event Type {0} was not found, Zone={1}, Request Value={2}, Data={3}", event_type, zonename, request_value, data);
                             return;
                         }
 
-                        HCM_Zone_Event dbZoneEvent = new HCM_Zone_Event();
+                        HSM_Zone_Event dbZoneEvent = new HSM_Zone_Event();
                         dbZoneEvent.IdZoneEventType = dbZoneEventType.IdZoneEventType;
 
-                        HCM_Zone dbZone = DB.HCM_Zones.FirstOrDefault(p => p.Name == zonename);
+                        HSM_Zone dbZone = DB.HSM_Zones.FirstOrDefault(p => p.Name == zonename);
                         if (dbZone == null)
                         {
                             RdTrace.Message("Zone {0} was not found, Event Type={1}, Request Value={2}, Data={3}", zonename, event_type, request_value, data);
@@ -359,7 +359,7 @@ namespace HCM.Utility.Common.Handlers
                         }
                         dbZoneEvent.IdZone = dbZone.IdZone;
 
-                        HCM_Request dbRequest = DB.HCM_Requests.FirstOrDefault(p => p.PlcValue == request_value);
+                        HSM_Request dbRequest = DB.HSM_Requests.FirstOrDefault(p => p.PlcValue == request_value);
                         if (dbRequest == null)
                         {
                             RdTrace.Message("Request Value {0} was not found, Event type={1}, Zone={2}, Data={3}", request_value, event_type, zonename, data);
@@ -373,7 +373,7 @@ namespace HCM.Utility.Common.Handlers
                         dbZoneEvent.EventTime = event_time;
                         dbZoneEvent.InsDateTime = DateTimeOffset.Now;
 
-                        DB.HCM_Zone_Events.InsertOnSubmit(dbZoneEvent);
+                        DB.HSM_Zone_Events.InsertOnSubmit(dbZoneEvent);
                         DB.SubmitChanges(Configurations.General.ReplicationQueue);
                     }
                 }
@@ -400,16 +400,16 @@ namespace HCM.Utility.Common.Handlers
             {
                 try
                 {
-                    using (HCMDataContext DB = new HCMDataContext(Configurations.General.ConnectionString))
+                    using (HSMDataContext DB = new HSMDataContext(Configurations.General.ConnectionString))
                     {
-                        HCM_Zone_Event_Type dbZoneEventType = DB.HCM_Zone_Event_Types.FirstOrDefault(p => p.Name == event_type);
+                        HSM_Zone_Event_Type dbZoneEventType = DB.HSM_Zone_Event_Types.FirstOrDefault(p => p.Name == event_type);
                         if (dbZoneEventType == null)
                         {
                             RdTrace.Message("Event Type {0} was not found, idZone={1}, idRequest={2}, Data={3}", event_type, id_zone, id_request, data);
                             return;
                         }
 
-                        HCM_Zone_Event dbZoneEvent = new HCM_Zone_Event();
+                        HSM_Zone_Event dbZoneEvent = new HSM_Zone_Event();
                         dbZoneEvent.IdZoneEventType = dbZoneEventType.IdZoneEventType;
                         dbZoneEvent.IdZone = id_zone;
 
@@ -440,7 +440,7 @@ namespace HCM.Utility.Common.Handlers
                         dbZoneEvent.EventTime = event_time;
                         dbZoneEvent.InsDateTime = DateTimeOffset.Now;
 
-                        DB.HCM_Zone_Events.InsertOnSubmit(dbZoneEvent);
+                        DB.HSM_Zone_Events.InsertOnSubmit(dbZoneEvent);
                         DB.SubmitChanges(Configurations.General.ReplicationQueue);
                     }
                 }
@@ -467,19 +467,19 @@ namespace HCM.Utility.Common.Handlers
             {
                 try
                 {
-                    using (HCMDataContext DB = new HCMDataContext(Configurations.General.ConnectionString))
+                    using (HSMDataContext DB = new HSMDataContext(Configurations.General.ConnectionString))
                     {
-                        HCM_Zone_Event_Type dbZoneEventType = DB.HCM_Zone_Event_Types.FirstOrDefault(p => p.Name == event_type);
+                        HSM_Zone_Event_Type dbZoneEventType = DB.HSM_Zone_Event_Types.FirstOrDefault(p => p.Name == event_type);
                         if (dbZoneEventType == null)
                         {
                             RdTrace.Message("Event Type {0} was not found, Zone={1}, idRequest={2}, Data={3}", event_type, zonename, id_request, data);
                             return;
                         }
 
-                        HCM_Zone_Event dbZoneEvent = new HCM_Zone_Event();
+                        HSM_Zone_Event dbZoneEvent = new HSM_Zone_Event();
                         dbZoneEvent.IdZoneEventType = dbZoneEventType.IdZoneEventType;
 
-                        HCM_Zone dbZone = DB.HCM_Zones.FirstOrDefault(p => p.Name == zonename);
+                        HSM_Zone dbZone = DB.HSM_Zones.FirstOrDefault(p => p.Name == zonename);
                         if (dbZone == null)
                         {
                             RdTrace.Message("Zone {0} was not found, Event Type={1}, idRequest={2}, Data={3}", zonename, event_type, id_request, data);
@@ -514,7 +514,7 @@ namespace HCM.Utility.Common.Handlers
                         dbZoneEvent.EventTime = event_time;
                         dbZoneEvent.InsDateTime = DateTimeOffset.Now;
 
-                        DB.HCM_Zone_Events.InsertOnSubmit(dbZoneEvent);
+                        DB.HSM_Zone_Events.InsertOnSubmit(dbZoneEvent);
                         DB.SubmitChanges(Configurations.General.ReplicationQueue);
                     }
                 }
@@ -539,9 +539,9 @@ namespace HCM.Utility.Common.Handlers
             {
                 try
                 {
-                    using (HCMDataContext DB = new HCMDataContext(Configurations.General.ConnectionString))
+                    using (HSMDataContext DB = new HSMDataContext(Configurations.General.ConnectionString))
                     {
-                        HCM_Piece_Event_Type dbPieceEventType = DB.HCM_Piece_Event_Types.FirstOrDefault(p => p.Name == event_type);
+                        HSM_Piece_Event_Type dbPieceEventType = DB.HSM_Piece_Event_Types.FirstOrDefault(p => p.Name == event_type);
                         if (dbPieceEventType == null)
                         {
                             RdTrace.Message("Event Type {0} was not found, Ingot={1}, idMachine={2}, Data={3}", event_type, piecename, id_machine, data);
@@ -555,7 +555,7 @@ namespace HCM.Utility.Common.Handlers
                             return;
                         }
 
-                        HCM_Piece_Event dbPieceEvent = new HCM_Piece_Event();
+                        HSM_Piece_Event dbPieceEvent = new HSM_Piece_Event();
                         dbPieceEvent.PieceName = piecename;
                         dbPieceEvent.IdPieceEventType = dbPieceEventType.IdPieceEventType;
 
@@ -568,7 +568,7 @@ namespace HCM.Utility.Common.Handlers
                         dbPieceEvent.EventTime = event_time;
                         dbPieceEvent.InsDateTime = DateTimeOffset.Now;
 
-                        DB.HCM_Piece_Events.InsertOnSubmit(dbPieceEvent);
+                        DB.HSM_Piece_Events.InsertOnSubmit(dbPieceEvent);
                         DB.SubmitChanges(Configurations.General.ReplicationQueue);
                     }
                 }
@@ -593,16 +593,16 @@ namespace HCM.Utility.Common.Handlers
             {
                 try
                 {
-                    using (HCMDataContext DB = new HCMDataContext(Configurations.General.ConnectionString))
+                    using (HSMDataContext DB = new HSMDataContext(Configurations.General.ConnectionString))
                     {
-                        HCM_Machine_Event_Type dbMachineEventType = DB.HCM_Machine_Event_Types.FirstOrDefault(p => p.Name == event_type);
+                        HSM_Machine_Event_Type dbMachineEventType = DB.HSM_Machine_Event_Types.FirstOrDefault(p => p.Name == event_type);
                         if (dbMachineEventType == null)
                         {
                             RdTrace.Message("Event Type {0} was not found, idMachine={1}, Ingot={2}, Data={3}", event_type, id_machine, piecename, data);
                             return;
                         }
 
-                        HCM_Machine_Event dbMachineEvent = new HCM_Machine_Event();
+                        HSM_Machine_Event dbMachineEvent = new HSM_Machine_Event();
                         dbMachineEvent.IdMachineEventType = dbMachineEventType.IdMachineEventType;
                         dbMachineEvent.IdMachine = id_machine;
 
@@ -624,7 +624,7 @@ namespace HCM.Utility.Common.Handlers
                         dbMachineEvent.EventTime = event_time;
                         dbMachineEvent.InsDateTime = DateTimeOffset.Now;
 
-                        DB.HCM_Machine_Events.InsertOnSubmit(dbMachineEvent);
+                        DB.HSM_Machine_Events.InsertOnSubmit(dbMachineEvent);
                         DB.SubmitChanges(Configurations.General.ReplicationQueue);
                     }
                 }
@@ -649,16 +649,16 @@ namespace HCM.Utility.Common.Handlers
             {
                 try
                 {
-                    using (HCMDataContext DB = new HCMDataContext(Configurations.General.ConnectionString))
+                    using (HSMDataContext DB = new HSMDataContext(Configurations.General.ConnectionString))
                     {
-                        HCM_Machine_Event_Type dbMachineEventType = DB.HCM_Machine_Event_Types.FirstOrDefault(p => p.Name == event_type);
+                        HSM_Machine_Event_Type dbMachineEventType = DB.HSM_Machine_Event_Types.FirstOrDefault(p => p.Name == event_type);
                         if (dbMachineEventType == null)
                         {
                             RdTrace.Message("Event Type {0} was not found, Machine={1}, Ingot={2}, Data={3}", event_type, machinename, piecename, data);
                             return;
                         }
 
-                        HCM_Machine_Event dbMachineEvent = new HCM_Machine_Event();
+                        HSM_Machine_Event dbMachineEvent = new HSM_Machine_Event();
                         dbMachineEvent.IdMachineEventType = dbMachineEventType.IdMachineEventType;
 
                         Rodeo_Machine dbMachine = DB.Rodeo_Machines.FirstOrDefault(p => p.Name == machinename);
@@ -687,7 +687,7 @@ namespace HCM.Utility.Common.Handlers
                         dbMachineEvent.EventTime = event_time;
                         dbMachineEvent.InsDateTime = DateTimeOffset.Now;
 
-                        DB.HCM_Machine_Events.InsertOnSubmit(dbMachineEvent);
+                        DB.HSM_Machine_Events.InsertOnSubmit(dbMachineEvent);
                         DB.SubmitChanges(Configurations.General.ReplicationQueue);
                     }
                 }
@@ -711,16 +711,16 @@ namespace HCM.Utility.Common.Handlers
             {
                 try
                 {
-                    using (HCMDataContext DB = new HCMDataContext(Configurations.General.ConnectionString))
+                    using (HSMDataContext DB = new HSMDataContext(Configurations.General.ConnectionString))
                     {
-                        /*HCM_Rail_Event_Type dbRailEventType = DB.HCM_Rail_Event_Types.FirstOrDefault(p => p.Name == event_type);
+                        /*HSM_Rail_Event_Type dbRailEventType = DB.HSM_Rail_Event_Types.FirstOrDefault(p => p.Name == event_type);
                         if (dbRailEventType == null)
                         {
                             RdTrace.Message("Event Type {0} was not found, Rail Car={1}, Data={2}", event_type, rail_car_name, data);
                             return;
                         }
 
-                        HCM_Rail_Event dbRailEvent = new HCM_Rail_Event();
+                        HSM_Rail_Event dbRailEvent = new HSM_Rail_Event();
                         dbRailEvent.IdRailEventType = dbRailEventType.IdRailEventType;
 
                         if (!string.IsNullOrEmpty(rail_car_name))
@@ -732,7 +732,7 @@ namespace HCM.Utility.Common.Handlers
                         dbRailEvent.EventTime = event_time;
                         dbRailEvent.InsDateTime = DateTimeOffset.Now;
 
-                        DB.HCM_Rail_Events.InsertOnSubmit(dbRailEvent);
+                        DB.HSM_Rail_Events.InsertOnSubmit(dbRailEvent);
                         DB.SubmitChanges(Configurations.General.ReplicationQueue);*/
                     }
                 }
@@ -757,16 +757,16 @@ namespace HCM.Utility.Common.Handlers
             {
                 try
                 {
-                    using (HCMDataContext DB = new HCMDataContext(Configurations.General.ConnectionString))
+                    using (HSMDataContext DB = new HSMDataContext(Configurations.General.ConnectionString))
                     {
-                        /*   HCM_Truck_Event_Type dbTruckEventType = DB.HCM_Truck_Event_Types.FirstOrDefault(p => p.Name == event_type);
+                        /*   HSM_Truck_Event_Type dbTruckEventType = DB.HSM_Truck_Event_Types.FirstOrDefault(p => p.Name == event_type);
                            if (dbTruckEventType == null)
                            {
                                RdTrace.Message("Event Type {0} was not found, Location={1}, Truck={2}, Data={3}", event_type, id_location, truck_name, data);
                                return;
                            }
 
-                           MSS_Truck_Event dbTruckEvent = new HCM_Truck_Event();
+                           MSS_Truck_Event dbTruckEvent = new HSM_Truck_Event();
                            dbTruckEvent.IdTruckEventType = dbTruckEventType.IdTruckEventType;
                            dbTruckEvent.IdLocation = id_location;
 
@@ -779,7 +779,7 @@ namespace HCM.Utility.Common.Handlers
                            dbTruckEvent.EventTime = event_time;
                            dbTruckEvent.InsDateTime = DateTimeOffset.Now;
 
-                           DB.HCM_Truck_Events.InsertOnSubmit(dbTruckEvent);
+                           DB.HSM_Truck_Events.InsertOnSubmit(dbTruckEvent);
                            DB.SubmitChanges(Configurations.General.ReplicationQueue);*/
                     }
                 }
@@ -852,7 +852,7 @@ namespace HCM.Utility.Common.Handlers
         protected string GetCatalogFolder()
         {
             //string value;
-            //if (!RodeoHandler.Tag.GetText(string.Format(HCM.Utility.Common.Constants.TagNames.CRANE_NAME, Configurations.General.RodeoSector), out value))
+            //if (!RodeoHandler.Tag.GetText(string.Format(HSM.Utility.Common.Constants.TagNames.CRANE_NAME, Configurations.General.RodeoSector), out value))
             //{
             //    throw new Exception("Crane name tag does not exist");
             //}

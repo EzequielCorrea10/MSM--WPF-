@@ -3,7 +3,7 @@
 AS
 BEGIN
 
-	SELECT @sequence = NEXT VALUE FOR [tracking].[HCM_GHP_Reference]
+	SELECT @sequence = NEXT VALUE FOR [tracking].[HSM_GHP_Reference]
 	RETURN @sequence
 
 END

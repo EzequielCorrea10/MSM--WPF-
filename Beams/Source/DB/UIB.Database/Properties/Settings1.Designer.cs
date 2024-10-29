@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HCM.Database.Properties {
+namespace HSM.Database.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -26,10 +26,10 @@ namespace HCM.Database.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=10.19.72.241;Initial Catalog=HCM;User ID=sa")]
-        public string HCMConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=10.19.72.241;Initial Catalog=HSM;User ID=sa")]
+        public string HSMConnectionString {
             get {
-                return ((string)(this["HCMConnectionString"]));
+                return ((string)(this["HSMConnectionString"]));
             }
         }
         

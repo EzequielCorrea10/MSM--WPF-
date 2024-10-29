@@ -73,13 +73,13 @@ GO
 ALTER TABLE [common].[Rodeo_Locations] CHECK CONSTRAINT [FK_Rodeo_Locations_Rodeo_Location_Types]
 GO
 
-ALTER TABLE [common].[Rodeo_Locations]  WITH CHECK ADD  CONSTRAINT [FK_Rodeo_Locations_HCM_Location_Groups] FOREIGN KEY([IdLocationGroup]) REFERENCES [common].[HCM_Location_Groups] ([IdLocationGroup])
+ALTER TABLE [common].[Rodeo_Locations]  WITH CHECK ADD  CONSTRAINT [FK_Rodeo_Locations_HSM_Location_Groups] FOREIGN KEY([IdLocationGroup]) REFERENCES [common].[HSM_Location_Groups] ([IdLocationGroup])
 GO
 
-ALTER TABLE [common].[Rodeo_Locations] CHECK CONSTRAINT [FK_Rodeo_Locations_HCM_Location_Groups]
+ALTER TABLE [common].[Rodeo_Locations] CHECK CONSTRAINT [FK_Rodeo_Locations_HSM_Location_Groups]
 GO
 
-ALTER TABLE [common].[Rodeo_Locations]  WITH CHECK ADD  CONSTRAINT [FK_Rodeo_Locations_HCM_Location_Ranges] FOREIGN KEY([IdLocationRange]) REFERENCES [common].[HCM_Location_Ranges] ([IdLocationRange])
+ALTER TABLE [common].[Rodeo_Locations]  WITH CHECK ADD  CONSTRAINT [FK_Rodeo_Locations_HSM_Location_Ranges] FOREIGN KEY([IdLocationRange]) REFERENCES [common].[HSM_Location_Ranges] ([IdLocationRange])
 GO
 
 ALTER TABLE [common].[Rodeo_Locations]  WITH CHECK ADD  CONSTRAINT [FK_Rodeo_Locations_Rodeo_Yards] FOREIGN KEY([IdYard]) REFERENCES [common].[Rodeo_Yards] ([IdYard])

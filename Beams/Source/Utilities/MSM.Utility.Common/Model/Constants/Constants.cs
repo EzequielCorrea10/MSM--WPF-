@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HCM.Utility.Common.Constants
+namespace HSM.Utility.Common.Constants
 {
     /// <summary>
     /// Constant of configuration

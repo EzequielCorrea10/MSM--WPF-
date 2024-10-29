@@ -13,7 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 
 
-namespace HCM.HMI.Safety.Operation.ViewModels
+namespace HSM.HMI.Safety.Operation.ViewModels
 {
     using Janus.Rodeo.Windows.Library.Rd_Log;
     using Janus.Rodeo.Windows.Library.Rd_Common;
@@ -22,19 +22,19 @@ namespace HCM.HMI.Safety.Operation.ViewModels
     using Janus.Rodeo.Windows.Library.UI.Controls.Widgets;
     using Janus.Rodeo.Windows.Library.UI.Common;
 
-    using HCM.Database;
-    using HCM.HMI.Safety.Operation.Enumerations;
-    using HCM.HMI.Safety.Operation.Views;
-    using HCM.Utility.Common;
-    //using HCM.Database;
-    using HCM.Utility.Configuration;
-    using HCM.Utility.Common.Catalogs;
+    using HSM.Database;
+    using HSM.HMI.Safety.Operation.Enumerations;
+    using HSM.HMI.Safety.Operation.Views;
+    using HSM.Utility.Common;
+    //using HSM.Database;
+    using HSM.Utility.Configuration;
+    using HSM.Utility.Common.Catalogs;
     using System.Windows;
-    using HCM.HMI.Safety.Operation.Views.Windows;
+    using HSM.HMI.Safety.Operation.Views.Windows;
     using System.Reflection;
     using System.IO;
 
-    //using HCM.HMI.Safety.Operation.Enumerations;
+    //using HSM.HMI.Safety.Operation.Enumerations;
 
     public class vmLayout : ModelViewBase
     {
@@ -67,7 +67,7 @@ namespace HCM.HMI.Safety.Operation.ViewModels
 
         private Dictionary<string, object> _allMachine;
         private Dictionary<string, object> _machineSelected;
-        private HCM_Zone_Machine[] _zone_machine;
+        private HSM_Zone_Machine[] _zone_machine;
        // private vmYard[] _yards;
 
         private Dictionary<string, object> _allEnableComponents;
@@ -630,7 +630,7 @@ namespace HCM.HMI.Safety.Operation.ViewModels
                     //List<int> lstZonesActives = new List<int>(); 
                     //foreach (string machine in this.MachineSelected.Select(oA => ((Tracking.Server.Common.Catalogs.CT_Machine)oA.Value).Group).ToList())
                     //{
-                    //    foreach( HCM_Zone_Machine zoneMachine in this._zone_machine.Where(p => p.Rodeo_Machine_Group.Name == machine && p.CanBeAccessed))  
+                    //    foreach( HSM_Zone_Machine zoneMachine in this._zone_machine.Where(p => p.Rodeo_Machine_Group.Name == machine && p.CanBeAccessed))  
                     //    {
                     //        lstZonesActives.Add(zoneMachine.IdZone);                        
                     //    }
@@ -711,9 +711,17 @@ namespace HCM.HMI.Safety.Operation.ViewModels
                                     lock (this._lockTO)
                                     {
                                         string value;
-                                        if (!RodeoHandler.Tag.GetText(string.Format("HCM.Zone_1_Beams", Configurations.General.RodeoSector), out value))
+                                        if (!RodeoHandler.Tag.GetText(string.Format("MSM.Zone_1_Beams", Configurations.General.RodeoSector), out value))
                                         {
                                             throw new Exception("Error");
+                                        }
+                                        string[] beamsName = value.Split(',');
+                                        Beam[] beams = new Beam[beamsName.Length];
+
+                                        // Ahora `parts` es un arreglo con cada segmento individual
+                                        for (int i = 0; i < beamsName.Length; i++)
+                                        {
+                                            beams[i] = new Beam(beamsName[i], beamsName[i]); 
                                         }
 
                                     }
@@ -752,5 +760,6 @@ namespace HCM.HMI.Safety.Operation.ViewModels
 
 
         #endregion
+
         }
 }

@@ -1,4 +1,4 @@
-﻿CREATE TABLE [safety].[HCM_Request_Signal_Requests](
+﻿CREATE TABLE [safety].[HSM_Request_Signal_Requests](
 	[IdRequest] [int] NOT NULL,
 	[IdRequestSignal] [int] NOT NULL,
 	[ReadTagname] [varchar](70) NULL,
@@ -14,7 +14,7 @@
 	[OtherwiseInterlock_Bit] [int] NULL,
 	[OtherwiseInterlock_PlcValue] [int] NULL,
 	[Active] [bit] NOT NULL,
- CONSTRAINT [PK_HCM_Request_Signal_Requests] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_HSM_Request_Signal_Requests] PRIMARY KEY CLUSTERED 
 (
 	[IdRequest] ASC,
 	[IdRequestSignal] ASC
@@ -23,26 +23,26 @@
 
 GO 
 
-ALTER TABLE [safety].[HCM_Request_Signal_Requests]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Request_Signal_Requests_HCM_Requests] FOREIGN KEY([IdRequest]) REFERENCES [safety].[HCM_Requests] ([IdRequest])
+ALTER TABLE [safety].[HSM_Request_Signal_Requests]  WITH CHECK ADD  CONSTRAINT [FK_HSM_Request_Signal_Requests_HSM_Requests] FOREIGN KEY([IdRequest]) REFERENCES [safety].[HSM_Requests] ([IdRequest])
 
 GO
 
-ALTER TABLE [safety].[HCM_Request_Signal_Requests] CHECK CONSTRAINT [FK_HCM_Request_Signal_Requests_HCM_Requests]
+ALTER TABLE [safety].[HSM_Request_Signal_Requests] CHECK CONSTRAINT [FK_HSM_Request_Signal_Requests_HSM_Requests]
 
 GO
 
-ALTER TABLE [safety].[HCM_Request_Signal_Requests]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Request_Signal_Requests_HCM_Request_Signals] FOREIGN KEY([IdRequestSignal]) REFERENCES [safety].[HCM_Request_Signals] ([IdRequestSignal])
+ALTER TABLE [safety].[HSM_Request_Signal_Requests]  WITH CHECK ADD  CONSTRAINT [FK_HSM_Request_Signal_Requests_HSM_Request_Signals] FOREIGN KEY([IdRequestSignal]) REFERENCES [safety].[HSM_Request_Signals] ([IdRequestSignal])
 
 GO
 
-ALTER TABLE [safety].[HCM_Request_Signal_Requests] CHECK CONSTRAINT [FK_HCM_Request_Signal_Requests_HCM_Request_Signals]
+ALTER TABLE [safety].[HSM_Request_Signal_Requests] CHECK CONSTRAINT [FK_HSM_Request_Signal_Requests_HSM_Request_Signals]
 
 GO
 
-ALTER TABLE [safety].[HCM_Request_Signal_Requests]  WITH CHECK ADD  CONSTRAINT [CK_HCM_Request_Signal_Requests] CHECK  (([ReadTagname] IS NOT NULL AND [PlcValue] IS NOT NULL) OR [Alarmname] IS NOT NULL)
+ALTER TABLE [safety].[HSM_Request_Signal_Requests]  WITH CHECK ADD  CONSTRAINT [CK_HSM_Request_Signal_Requests] CHECK  (([ReadTagname] IS NOT NULL AND [PlcValue] IS NOT NULL) OR [Alarmname] IS NOT NULL)
 
 GO
 
-ALTER TABLE [safety].[HCM_Request_Signal_Requests] ADD  CONSTRAINT [DF_HCM_Request_Signal_Requests_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [safety].[HSM_Request_Signal_Requests] ADD  CONSTRAINT [DF_HSM_Request_Signal_Requests_Active]  DEFAULT ((1)) FOR [Active]
 
 GO

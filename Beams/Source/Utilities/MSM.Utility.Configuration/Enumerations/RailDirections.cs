@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HCM.Utility.Configuration.Enumerations
+namespace HSM.Utility.Configuration.Enumerations
 {
     /// <summary>
     /// RailDirections

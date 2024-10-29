@@ -38,3 +38,11 @@ D:\Proyectos\MSM\Beams\Source\DB\UIB.Database\obj\Debug\UIB.Database.csproj.Core
 D:\Proyectos\MSM\Beams\Source\DB\UIB.Database\obj\Debug\UIB.Data.095D4DFF.Up2Date
 D:\Proyectos\MSM\Beams\Source\DB\UIB.Database\obj\Debug\UIB.Database.dll
 D:\Proyectos\MSM\Beams\Source\DB\UIB.Database\obj\Debug\UIB.Database.pdb
+D:\Proyectos\HCM\Beams\AppRelease\debug\UIB.Database.dll.config
+D:\Proyectos\HCM\Beams\AppRelease\debug\UIB.Database.dll
+D:\Proyectos\HCM\Beams\AppRelease\debug\UIB.Database.pdb
+D:\Proyectos\HCM\Beams\Source\DB\UIB.Database\obj\Debug\UIB.Database.csproj.AssemblyReference.cache
+D:\Proyectos\HCM\Beams\Source\DB\UIB.Database\obj\Debug\UIB.Database.csproj.CoreCompileInputs.cache
+D:\Proyectos\HCM\Beams\Source\DB\UIB.Database\obj\Debug\UIB.Data.095D4DFF.Up2Date
+D:\Proyectos\HCM\Beams\Source\DB\UIB.Database\obj\Debug\UIB.Database.dll
+D:\Proyectos\HCM\Beams\Source\DB\UIB.Database\obj\Debug\UIB.Database.pdb

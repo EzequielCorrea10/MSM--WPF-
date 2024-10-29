@@ -9,7 +9,7 @@ using System.Windows.Data;
 using System.Windows;
 
 
-namespace HCM.Utility.Controls.Converters
+namespace HSM.Utility.Controls.Converters
 {
     public class DisabledVisibilityConverter : IValueConverter
     {

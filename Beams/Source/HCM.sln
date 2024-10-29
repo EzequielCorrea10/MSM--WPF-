@@ -47,7 +47,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIB.HMI.Process.Mgmt", "HMI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIB.HMI.Rodeo.History", "HMI\UIB.HMI.Rodeo.History\UIB.HMI.Rodeo.History.csproj", "{B7496B92-B47A-4542-9547-1BB270F93665}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HCM.HMI.Safety.Operation", "HMI\UIB.HMI.Safety.Operation\HCM.HMI.Safety.Operation.csproj", "{D02EE36E-48F6-420C-9C0C-1E685BB816CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HSM.HMI.Safety.Operation", "HMI\UIB.HMI.Safety.Operation\HSM.HMI.Safety.Operation.csproj", "{D02EE36E-48F6-420C-9C0C-1E685BB816CC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Acquisition", "Acquisition", "{24E852A0-4454-48BC-AA73-E78B2EAD9F84}"
 EndProject
@@ -65,11 +65,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagTest", "Tools\TagTest\Ta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HCM.Utility.Blend.Controls", "Utilities\MSM.Utility.Blend.Controls\HCM.Utility.Blend.Controls.csproj", "{F086DBB2-7E1C-4D74-BA45-3B232268F147}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HCM.Utility.Common", "Utilities\MSM.Utility.Common\HCM.Utility.Common.csproj", "{31883A40-BCE4-4242-AE4E-2F627E7D6736}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HSM.Utility.Common", "Utilities\MSM.Utility.Common\HSM.Utility.Common.csproj", "{31883A40-BCE4-4242-AE4E-2F627E7D6736}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HCM.Utility.Configuration", "Utilities\MSM.Utility.Configuration\HCM.Utility.Configuration.csproj", "{38C953BB-DECF-4E2F-A243-2C16D992340C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HSM.Utility.Configuration", "Utilities\MSM.Utility.Configuration\HSM.Utility.Configuration.csproj", "{38C953BB-DECF-4E2F-A243-2C16D992340C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HCM.Utility.Controls", "Utilities\MSM.Utility.Controls\HCM.Utility.Controls.csproj", "{B9E549E9-3D1F-423D-AF0E-5AB0E1047FC3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HSM.Utility.Controls", "Utilities\MSM.Utility.Controls\HSM.Utility.Controls.csproj", "{B9E549E9-3D1F-423D-AF0E-5AB0E1047FC3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HCM.Utility.Blend.Controls.Test", "Utilities\MSM.Utility.Blend.Controls.Test\HCM.Utility.Blend.Controls.Test.csproj", "{6D935CC7-B574-4E71-9CC8-ABC07148D41C}"
 EndProject

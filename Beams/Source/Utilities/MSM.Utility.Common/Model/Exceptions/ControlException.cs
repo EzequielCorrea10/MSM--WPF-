@@ -1,6 +1,6 @@
 ﻿using System;
  
-namespace HCM.Utility.Common.Exceptions
+namespace HSM.Utility.Common.Exceptions
 {
     /// <summary>
     ///  Class to manage the custom exception of Crane control

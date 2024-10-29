@@ -1,4 +1,4 @@
-﻿CREATE TABLE [safety].[HCM_Zone_Sections](
+﻿CREATE TABLE [safety].[HSM_Zone_Sections](
 	[IdZone] [int] NOT NULL,
 	[Section] [smallint] NOT NULL,
 	[IdYard] [int] NULL,
@@ -20,7 +20,7 @@
 	[ColorShown] [varchar](20) NULL,
 	[Active] [bit] NOT NULL,
 	[UpdDateTime] [datetimeoffset](7) NOT NULL,
- CONSTRAINT [PK_HCM_Zone_Sections] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_HSM_Zone_Sections] PRIMARY KEY CLUSTERED 
 (
 	[IdZone] ASC,
 	[Section] ASC
@@ -29,22 +29,22 @@
 
 GO 
 
-ALTER TABLE [safety].[HCM_Zone_Sections]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Zone_Sections_Rodeo_Yards] FOREIGN KEY([IdYard]) REFERENCES [common].[Rodeo_Yards] ([IdYard])
+ALTER TABLE [safety].[HSM_Zone_Sections]  WITH CHECK ADD  CONSTRAINT [FK_HSM_Zone_Sections_Rodeo_Yards] FOREIGN KEY([IdYard]) REFERENCES [common].[Rodeo_Yards] ([IdYard])
 GO
 
-ALTER TABLE [safety].[HCM_Zone_Sections] CHECK CONSTRAINT [FK_HCM_Zone_Sections_Rodeo_Yards]
+ALTER TABLE [safety].[HSM_Zone_Sections] CHECK CONSTRAINT [FK_HSM_Zone_Sections_Rodeo_Yards]
 GO
 
-ALTER TABLE [safety].[HCM_Zone_Sections]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Zone_Sections_HCM_Zones] FOREIGN KEY([IdZone]) REFERENCES [safety].[HCM_Zones] ([IdZone])
-
-GO
-
-ALTER TABLE [safety].[HCM_Zone_Sections] CHECK CONSTRAINT [FK_HCM_Zone_Sections_HCM_Zones]
+ALTER TABLE [safety].[HSM_Zone_Sections]  WITH CHECK ADD  CONSTRAINT [FK_HSM_Zone_Sections_HSM_Zones] FOREIGN KEY([IdZone]) REFERENCES [safety].[HSM_Zones] ([IdZone])
 
 GO
 
-ALTER TABLE [safety].[HCM_Zone_Sections] ADD  CONSTRAINT [DF_HCM_Zone_Sections_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [safety].[HSM_Zone_Sections] CHECK CONSTRAINT [FK_HSM_Zone_Sections_HSM_Zones]
+
+GO
+
+ALTER TABLE [safety].[HSM_Zone_Sections] ADD  CONSTRAINT [DF_HSM_Zone_Sections_Active]  DEFAULT ((1)) FOR [Active]
 
 GO 
 
-ALTER TABLE [safety].[HCM_Zone_Sections] ADD  CONSTRAINT [DF_HCM_Zone_Sections_UpdDateTime]  DEFAULT (sysdatetimeoffset()) FOR [UpdDateTime]
+ALTER TABLE [safety].[HSM_Zone_Sections] ADD  CONSTRAINT [DF_HSM_Zone_Sections_UpdDateTime]  DEFAULT (sysdatetimeoffset()) FOR [UpdDateTime]

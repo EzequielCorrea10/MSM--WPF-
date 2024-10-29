@@ -1,4 +1,4 @@
-﻿CREATE TABLE [safety].[HCM_Zone_Fences](
+﻿CREATE TABLE [safety].[HSM_Zone_Fences](
 	[IdFence] [int] NOT NULL,
 	[X1Pos] [int] NOT NULL,
 	[Y1Pos] [int] NOT NULL,
@@ -6,7 +6,7 @@
 	[Y2Pos] [int] NOT NULL,
 	[ThicknessDrawn] [int] NOT NULL,
 	[Active] [bit] NOT NULL,
- CONSTRAINT [PK_HCM_Zone_Fences] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_HSM_Zone_Fences] PRIMARY KEY CLUSTERED 
 (
 	[IdFence] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
@@ -14,4 +14,4 @@
 
 GO 
 
-ALTER TABLE [safety].[HCM_Zone_Fences] ADD  CONSTRAINT [DF_HCM_Zone_Fences_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [safety].[HSM_Zone_Fences] ADD  CONSTRAINT [DF_HSM_Zone_Fences_Active]  DEFAULT ((1)) FOR [Active]

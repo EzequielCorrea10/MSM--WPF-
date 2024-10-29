@@ -7,12 +7,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 
-namespace HCM.Utility.Server.Common
+namespace HSM.Utility.Server.Common
 {
     using Janus.Rodeo.Windows.Library.Rd_Log;
     using Janus.Rodeo.Windows.Library.Rd_Common;
-    using HCM.Utility.Common;
-    using HCM.Utility.Common.Constants;
+    using HSM.Utility.Common;
+    using HSM.Utility.Common.Constants;
 
     /// <summary>
     /// Handler of Message

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
 
-namespace HCM.Utility.Controls.Converters
+namespace HSM.Utility.Controls.Converters
 {
     public class HalfSubstractionConverter : IValueConverter
     {

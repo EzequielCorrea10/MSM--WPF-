@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace HCM.HMI.Safety.Operation.ViewModels
+namespace HSM.HMI.Safety.Operation.ViewModels
 {
     public class Beam
     {

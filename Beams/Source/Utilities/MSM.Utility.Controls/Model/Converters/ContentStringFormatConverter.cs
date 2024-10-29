@@ -8,7 +8,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace HCM.Utility.Controls.Converters
+namespace HSM.Utility.Controls.Converters
 {
     public class ContentStringFormatConverter : IValueConverter
     {

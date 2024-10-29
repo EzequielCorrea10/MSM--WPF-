@@ -1,4 +1,4 @@
-﻿CREATE TABLE [common].[HCM_Machine_Encoders](
+﻿CREATE TABLE [common].[HSM_Machine_Encoders](
 	[IdMachineEncoder] [int] NOT NULL,
 	[IdEncoderType] [int] NOT NULL,
 	[IdMachine] [int] NOT NULL,
@@ -10,11 +10,11 @@
 	[SelectionPlcValue] [int] NULL,
 	[Order] [smallint] NOT NULL,
 	[Active] [bit] NOT NULL,
- CONSTRAINT [PK_HCM_Machine_Encoders] PRIMARY KEY CLUSTERED
+ CONSTRAINT [PK_HSM_Machine_Encoders] PRIMARY KEY CLUSTERED
 (
 	[IdMachineEncoder] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
- CONSTRAINT [UK_HCM_Machine_Encoders_Name] UNIQUE NONCLUSTERED 
+ CONSTRAINT [UK_HSM_Machine_Encoders_Name] UNIQUE NONCLUSTERED 
 (
 	[IdMachine] ASC,
 	[Name] ASC
@@ -22,21 +22,21 @@
 ) ON [PRIMARY]
 GO
 
-ALTER TABLE [common].[HCM_Machine_Encoders]  WITH CHECK ADD CONSTRAINT [FK_HCM_Machine_Encoders_HCM_Encoder_Types] FOREIGN KEY([IdEncoderType]) REFERENCES [common].[HCM_Encoder_Types] ([IdEncoderType])
+ALTER TABLE [common].[HSM_Machine_Encoders]  WITH CHECK ADD CONSTRAINT [FK_HSM_Machine_Encoders_HSM_Encoder_Types] FOREIGN KEY([IdEncoderType]) REFERENCES [common].[HSM_Encoder_Types] ([IdEncoderType])
 
 GO
 
-ALTER TABLE [common].[HCM_Machine_Encoders] CHECK CONSTRAINT [FK_HCM_Machine_Encoders_HCM_Encoder_Types]
+ALTER TABLE [common].[HSM_Machine_Encoders] CHECK CONSTRAINT [FK_HSM_Machine_Encoders_HSM_Encoder_Types]
 
 GO
 
-ALTER TABLE [common].[HCM_Machine_Encoders]  WITH CHECK ADD CONSTRAINT [FK_HCM_Machine_Encoders_Rodeo_Machines] FOREIGN KEY([IdMachine]) REFERENCES [common].[Rodeo_Machines] ([IdMachine])
+ALTER TABLE [common].[HSM_Machine_Encoders]  WITH CHECK ADD CONSTRAINT [FK_HSM_Machine_Encoders_Rodeo_Machines] FOREIGN KEY([IdMachine]) REFERENCES [common].[Rodeo_Machines] ([IdMachine])
 
 GO
 
-ALTER TABLE [common].[HCM_Machine_Encoders] CHECK CONSTRAINT [FK_HCM_Machine_Encoders_Rodeo_Machines]
+ALTER TABLE [common].[HSM_Machine_Encoders] CHECK CONSTRAINT [FK_HSM_Machine_Encoders_Rodeo_Machines]
 
 GO
 
-ALTER TABLE [common].[HCM_Machine_Encoders] ADD  CONSTRAINT [DF_HCM_Machine_Encoders_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [common].[HSM_Machine_Encoders] ADD  CONSTRAINT [DF_HSM_Machine_Encoders_Active]  DEFAULT ((1)) FOR [Active]
 GO

@@ -9,12 +9,12 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 
-namespace HCM.Utility.Common
+namespace HSM.Utility.Common
 {
     using Janus.Rodeo.Windows.Library.Rd_Log;
     using Janus.Rodeo.Windows.Library.Rd_Common;
-    using HCM.Utility.Common.Structures;
-    using HCM.Utility.Common.Constants;
+    using HSM.Utility.Common.Structures;
+    using HSM.Utility.Common.Constants;
 
     /// <summary>
     /// Handler of Message Queue

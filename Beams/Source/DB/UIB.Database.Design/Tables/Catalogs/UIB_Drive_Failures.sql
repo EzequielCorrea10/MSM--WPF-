@@ -1,4 +1,4 @@
-﻿CREATE TABLE [common].[HCM_Drive_Failures](
+﻿CREATE TABLE [common].[HSM_Drive_Failures](
 	[IdDriveFailure] [int] NOT NULL,
 	[IdDriveType] [int] NOT NULL,
 	[Name] [varchar](50) NOT NULL,
@@ -10,11 +10,11 @@
 	[TroubleshootingReference] [varchar](100) NULL,
 	[Order] [smallint] NOT NULL,
 	[Active] [bit] NOT NULL,
- CONSTRAINT [PK_HCM_Drive_Failures] PRIMARY KEY CLUSTERED
+ CONSTRAINT [PK_HSM_Drive_Failures] PRIMARY KEY CLUSTERED
 (
 	[IdDriveFailure] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
- CONSTRAINT [UK_HCM_Drive_Failures_Name] UNIQUE NONCLUSTERED 
+ CONSTRAINT [UK_HSM_Drive_Failures_Name] UNIQUE NONCLUSTERED 
 (
 	[Name] ASC,
 	[IdDriveType] ASC
@@ -22,13 +22,13 @@
 ) ON [PRIMARY]
 GO
 
-ALTER TABLE [common].[HCM_Drive_Failures]  WITH CHECK ADD CONSTRAINT [FK_HCM_Drive_Failures_HCM_Drive_Types] FOREIGN KEY([IdDriveType]) REFERENCES [common].[HCM_Drive_Types] ([IdDriveType])
+ALTER TABLE [common].[HSM_Drive_Failures]  WITH CHECK ADD CONSTRAINT [FK_HSM_Drive_Failures_HSM_Drive_Types] FOREIGN KEY([IdDriveType]) REFERENCES [common].[HSM_Drive_Types] ([IdDriveType])
 
 GO
 
-ALTER TABLE [common].[HCM_Drive_Failures] CHECK CONSTRAINT [FK_HCM_Drive_Failures_HCM_Drive_Types]
+ALTER TABLE [common].[HSM_Drive_Failures] CHECK CONSTRAINT [FK_HSM_Drive_Failures_HSM_Drive_Types]
 
 GO
 
-ALTER TABLE [common].[HCM_Drive_Failures] ADD  CONSTRAINT [DF_HCM_Drive_Failures_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [common].[HSM_Drive_Failures] ADD  CONSTRAINT [DF_HSM_Drive_Failures_Active]  DEFAULT ((1)) FOR [Active]
 GO

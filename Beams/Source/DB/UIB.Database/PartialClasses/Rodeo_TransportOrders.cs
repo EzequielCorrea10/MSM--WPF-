@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HCM.Database
+namespace HSM.Database
 {
     public partial class Rodeo_TransportOrder
     {
@@ -59,7 +59,7 @@ namespace HCM.Database
         {
             get
             {
-                if (string.IsNullOrEmpty(HCMDataContext.default_connection_string))
+                if (string.IsNullOrEmpty(HSMDataContext.default_connection_string))
                     return null;
 
                 if (this._Steps == null)
@@ -68,15 +68,15 @@ namespace HCM.Database
                     {
                         if (this._Steps == null)
                         {
-                            using (HCMDataContext db = new HCMDataContext(HCMDataContext.default_connection_string))
+                            using (HSMDataContext db = new HSMDataContext(HSMDataContext.default_connection_string))
                             {
                                 DataLoadOptions dlo = new DataLoadOptions();
                                 dlo.LoadWith<Rodeo_TO_Step>(o => o.Rodeo_TO_Action);
                                 dlo.LoadWith<Rodeo_TO_Step>(o => o.Rodeo_TO_Statuse);
                                 dlo.LoadWith<Rodeo_TO_Step>(o => o.Rodeo_Yard_Begin);
                                 dlo.LoadWith<Rodeo_TO_Step>(o => o.Rodeo_Yard_End);
-                                dlo.LoadWith<Rodeo_TO_Step>(o => o.HCM_Path_Begin);
-                                dlo.LoadWith<Rodeo_TO_Step>(o => o.HCM_Path_End);
+                                dlo.LoadWith<Rodeo_TO_Step>(o => o.HSM_Path_Begin);
+                                dlo.LoadWith<Rodeo_TO_Step>(o => o.HSM_Path_End);
 
                                 db.LoadOptions = dlo;
                                 db.DeferredLoadingEnabled = false;

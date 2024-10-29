@@ -83,7 +83,7 @@ ALTER TABLE [to].[Rodeo_TO_Steps] CHECK CONSTRAINT [FK_Rodeo_TO_Steps_Rodeo_Yard
 
 GO
 
---ALTER TABLE [to].[Rodeo_TO_Steps]  WITH CHECK ADD  CONSTRAINT [FK_Rodeo_TO_Steps_Rodeo_Paths_Begin] FOREIGN KEY([IdPathBegin]) REFERENCES [tracking].[HCM_Paths] ([IdPath])
+--ALTER TABLE [to].[Rodeo_TO_Steps]  WITH CHECK ADD  CONSTRAINT [FK_Rodeo_TO_Steps_Rodeo_Paths_Begin] FOREIGN KEY([IdPathBegin]) REFERENCES [tracking].[HSM_Paths] ([IdPath])
 
 --GO
 
@@ -91,7 +91,7 @@ GO
 
 --GO
 
---ALTER TABLE [to].[Rodeo_TO_Steps]  WITH CHECK ADD  CONSTRAINT [FK_Rodeo_TO_Steps_Rodeo_Paths_End] FOREIGN KEY([IdPathEnd]) REFERENCES [tracking].[HCM_Paths] ([IdPath])
+--ALTER TABLE [to].[Rodeo_TO_Steps]  WITH CHECK ADD  CONSTRAINT [FK_Rodeo_TO_Steps_Rodeo_Paths_End] FOREIGN KEY([IdPathEnd]) REFERENCES [tracking].[HSM_Paths] ([IdPath])
 
 --GO
 

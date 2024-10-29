@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HCM.Utility.Common.Structures
+namespace HSM.Utility.Common.Structures
 {
-    using HCM.Utility.Common.Catalogs;
+    using HSM.Utility.Common.Catalogs;
 
     /// <summary>
     /// PositionAndHeading
@@ -80,7 +80,7 @@ namespace HCM.Utility.Common.Structures
         /// PositionAndHeading
         /// </summary>
         /// <param name="source"></param>
-        public PositionAndHeading(HCM.Utility.Common.Messages.MsgPositionAndHeading source)
+        public PositionAndHeading(HSM.Utility.Common.Messages.MsgPositionAndHeading source)
             : this(string.Empty, source.yard_name, source.pos_x, source.pos_y, source.pos_z, source.heading_position)
         { }
         #endregion
@@ -111,7 +111,7 @@ namespace HCM.Utility.Common.Structures
         /// </summary>
         /// <param name="another"></param>
         /// <returns></returns>
-        public bool EqualValues(HCM.Utility.Common.Messages.MsgPositionAndHeading another)
+        public bool EqualValues(HSM.Utility.Common.Messages.MsgPositionAndHeading another)
         {
             if (another == null)
             {
@@ -123,7 +123,7 @@ namespace HCM.Utility.Common.Structures
                 return false;
             }
 
-            return base.EqualValues((HCM.Utility.Common.Messages.MsgPosition)another);
+            return base.EqualValues((HSM.Utility.Common.Messages.MsgPosition)another);
         }
         #endregion
 

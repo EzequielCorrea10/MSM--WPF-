@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace HCM.Utility.Common.Messages
+namespace HSM.Utility.Common.Messages
 {
     /// <summary>
     /// Configuration class of message to position.

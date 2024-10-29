@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HCM.HMI.Safety.Operation.ViewModels
+namespace HSM.HMI.Safety.Operation.ViewModels
 {
     public class vmZoneDetail : ModelViewBase
     {

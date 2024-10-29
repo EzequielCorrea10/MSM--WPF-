@@ -7,7 +7,7 @@ using System.Windows;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace HCM.HMI.Safety.Operation.Converters
+namespace HSM.HMI.Safety.Operation.Converters
 {
     using Janus.Rodeo.Windows.Library.Rd_Common;
     public class LayoutMachineYardConverter : IValueConverter
@@ -17,7 +17,7 @@ namespace HCM.HMI.Safety.Operation.Converters
             int result = 0;
             //int layout = 664;
 
-           // HCM.Tracking.Server.Common.Catalogs.CT_Machine machine = (HCM.Tracking.Server.Common.Catalogs.CT_Machine)value;
+           // HSM.Tracking.Server.Common.Catalogs.CT_Machine machine = (HSM.Tracking.Server.Common.Catalogs.CT_Machine)value;
 
             return result;
         }

@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HCM.Utility.Common.Handlers
+namespace HSM.Utility.Common.Handlers
 {
     using Janus.Rodeo.Windows.Library.Rd_Log;
     using Janus.Rodeo.Windows.Library.Rd_Common;
     using Janus.Rodeo.Windows.Library.UI.Common;
     using Janus.Rodeo.Windows.Library.Rd_Cfg;
 
-    using HCM.Utility.Common.Catalogs;
-    using HCM.Utility.Common.Structures;
+    using HSM.Utility.Common.Catalogs;
+    using HSM.Utility.Common.Structures;
 
     /// <summary>
     /// Class to include the rule of the process

@@ -5,21 +5,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HCM.Database
+namespace HSM.Database
 {
     /// <summary>
-    /// partial class of HCM_Outgoing_Messages
+    /// partial class of HSM_Outgoing_Messages
     /// </summary>
-    partial class HCM_Outgoing_Message
+    partial class HSM_Outgoing_Message
     {
         #region steps adquisition methods
         private readonly object lockInstance = new object();
-        private HCM_Job _Job;
-        public HCM_Job Temp_HCM_Job
+        private HSM_Job _Job;
+        public HSM_Job Temp_HSM_Job
         {
             get
             {
-                if (string.IsNullOrEmpty(HCMDataContext.default_connection_string))
+                if (string.IsNullOrEmpty(HSMDataContext.default_connection_string))
                     return null;
 
                 if (this.IdJob== null)
@@ -31,16 +31,16 @@ namespace HCM.Database
                     {
                         if (this._Job == null)
                         {
-                            using (HCMDataContext db = new HCMDataContext(HCMDataContext.default_connection_string))
+                            using (HSMDataContext db = new HSMDataContext(HSMDataContext.default_connection_string))
                             {
                                 DataLoadOptions dlo = new DataLoadOptions();
-                                dlo.LoadWith<HCM_Job>(o => o.HCM_Job_Type);
-                                dlo.LoadWith<HCM_Job>(o => o.Rodeo_TO_Statuse);
+                                dlo.LoadWith<HSM_Job>(o => o.HSM_Job_Type);
+                                dlo.LoadWith<HSM_Job>(o => o.Rodeo_TO_Statuse);
 
                                 db.LoadOptions = dlo;
                                 db.DeferredLoadingEnabled = false;
 
-                                this._Job = db.HCM_Jobs.FirstOrDefault(p => p.IdJob == this.IdJob);
+                                this._Job = db.HSM_Jobs.FirstOrDefault(p => p.IdJob == this.IdJob);
                             }
                         }
                     }

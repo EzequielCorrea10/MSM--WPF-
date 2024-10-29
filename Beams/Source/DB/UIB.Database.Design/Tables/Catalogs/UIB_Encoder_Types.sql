@@ -1,18 +1,18 @@
-﻿CREATE TABLE [common].[HCM_Encoder_Types](
+﻿CREATE TABLE [common].[HSM_Encoder_Types](
 	[IdEncoderType] [int] NOT NULL,
 	[Name] [varchar](50) NOT NULL,
 	[FullDescription] [varchar](100) NULL,
 	[Active] [bit] NOT NULL,
- CONSTRAINT [PK_HCM_Encoder_Types] PRIMARY KEY CLUSTERED
+ CONSTRAINT [PK_HSM_Encoder_Types] PRIMARY KEY CLUSTERED
 (
 	[IdEncoderType] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
- CONSTRAINT [UK_HCM_Encoder_Type_PlcValue] UNIQUE NONCLUSTERED 
+ CONSTRAINT [UK_HSM_Encoder_Type_PlcValue] UNIQUE NONCLUSTERED 
 (
 	[Name] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
 
-ALTER TABLE [common].[HCM_Encoder_Types] ADD  CONSTRAINT [DF_HCM_Encoder_Type_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [common].[HSM_Encoder_Types] ADD  CONSTRAINT [DF_HSM_Encoder_Type_Active]  DEFAULT ((1)) FOR [Active]
 GO

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HCM.Utility.Common.Enumerations
+namespace HSM.Utility.Common.Enumerations
 {
     /// <summary>
     /// Bypasses

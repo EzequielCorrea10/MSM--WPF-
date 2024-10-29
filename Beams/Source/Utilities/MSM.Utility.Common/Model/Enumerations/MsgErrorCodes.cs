@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HCM.Utility.Common.Enumerations
+namespace HSM.Utility.Common.Enumerations
 {
-    using HCM.Utility.Common.Helpers;
+    using HSM.Utility.Common.Helpers;
 
     public class MsgErrorCodes<T> : CustomEnum<MsgErrorCodes<T>, int> where T : MsgErrorCodes<T>
     {

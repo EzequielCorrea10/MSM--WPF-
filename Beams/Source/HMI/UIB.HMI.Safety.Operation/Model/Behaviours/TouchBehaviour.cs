@@ -7,9 +7,9 @@ using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media;
 
-namespace HCM.HMI.Safety.Operation.Behaviours
+namespace HSM.HMI.Safety.Operation.Behaviours
 {
-    using HCM.HMI.Safety.Operation.ViewModels;
+    using HSM.HMI.Safety.Operation.ViewModels;
 
     public class TouchConstants
     {
@@ -786,25 +786,25 @@ namespace HCM.HMI.Safety.Operation.Behaviours
 
                     //    if (scaleZoom.ScaleX < 1 || scaleZoom.ScaleY < 1)
                     //    {
-                    //        initial_pos_x = HCM.HMI.Safety.Operation.Converters.LayoutLeftConverter.GetRealPosition((capture.InitialPoint.X + scaleZoom.Value.OffsetX / (scaleZoom.ScaleX )), layout_width);
-                    //        initial_pos_y = HCM.HMI.Safety.Operation.Converters.LayoutTopConverter.GetRealPosition((capture.InitialPoint.Y + scaleZoom.Value.OffsetY  / (scaleZoom.ScaleY )) , layout_height);
-                    //        end_pos_x = HCM.HMI.Safety.Operation.Converters.LayoutLeftConverter.GetRealPosition((capture.EndPoint.X + scaleZoom.Value.OffsetX / (scaleZoom.ScaleX )) , layout_width);
-                    //        end_pos_y = HCM.HMI.Safety.Operation.Converters.LayoutTopConverter.GetRealPosition((capture.EndPoint.Y + scaleZoom.Value.OffsetY / (scaleZoom.ScaleY )) , layout_height);
+                    //        initial_pos_x = HSM.HMI.Safety.Operation.Converters.LayoutLeftConverter.GetRealPosition((capture.InitialPoint.X + scaleZoom.Value.OffsetX / (scaleZoom.ScaleX )), layout_width);
+                    //        initial_pos_y = HSM.HMI.Safety.Operation.Converters.LayoutTopConverter.GetRealPosition((capture.InitialPoint.Y + scaleZoom.Value.OffsetY  / (scaleZoom.ScaleY )) , layout_height);
+                    //        end_pos_x = HSM.HMI.Safety.Operation.Converters.LayoutLeftConverter.GetRealPosition((capture.EndPoint.X + scaleZoom.Value.OffsetX / (scaleZoom.ScaleX )) , layout_width);
+                    //        end_pos_y = HSM.HMI.Safety.Operation.Converters.LayoutTopConverter.GetRealPosition((capture.EndPoint.Y + scaleZoom.Value.OffsetY / (scaleZoom.ScaleY )) , layout_height);
 
                     //    }
                     //    else 
                     //    {
-                    //        initial_pos_x = HCM.HMI.Safety.Operation.Converters.LayoutLeftConverter.GetRealPosition((capture.InitialPoint.X + capture.HorizontalOffset) / scaleZoom.ScaleX, layout_width);
-                    //        initial_pos_y = HCM.HMI.Safety.Operation.Converters.LayoutTopConverter.GetRealPosition((capture.InitialPoint.Y + capture.VerticalOffset) / scaleZoom.ScaleY, layout_height);
-                    //        end_pos_x = HCM.HMI.Safety.Operation.Converters.LayoutLeftConverter.GetRealPosition((capture.EndPoint.X + capture.HorizontalOffset) / scaleZoom.ScaleX, layout_width);
-                    //        end_pos_y = HCM.HMI.Safety.Operation.Converters.LayoutTopConverter.GetRealPosition((capture.EndPoint.Y + capture.VerticalOffset) / scaleZoom.ScaleY, layout_height);
+                    //        initial_pos_x = HSM.HMI.Safety.Operation.Converters.LayoutLeftConverter.GetRealPosition((capture.InitialPoint.X + capture.HorizontalOffset) / scaleZoom.ScaleX, layout_width);
+                    //        initial_pos_y = HSM.HMI.Safety.Operation.Converters.LayoutTopConverter.GetRealPosition((capture.InitialPoint.Y + capture.VerticalOffset) / scaleZoom.ScaleY, layout_height);
+                    //        end_pos_x = HSM.HMI.Safety.Operation.Converters.LayoutLeftConverter.GetRealPosition((capture.EndPoint.X + capture.HorizontalOffset) / scaleZoom.ScaleX, layout_width);
+                    //        end_pos_y = HSM.HMI.Safety.Operation.Converters.LayoutTopConverter.GetRealPosition((capture.EndPoint.Y + capture.VerticalOffset) / scaleZoom.ScaleY, layout_height);
 
                     //    }
 
-                    //    //double initial_pos_x = HCM.HMI.Safety.Operation.Converters.LayoutLeftConverter.GetRealPosition((capture.InitialPoint.X + capture.HorizontalOffset) / scaleZoom.ScaleX, layout_width);
-                    //    //double initial_pos_y = HCM.HMI.Safety.Operation.Converters.LayoutTopConverter.GetRealPosition((capture.InitialPoint.Y + capture.VerticalOffset) / scaleZoom.ScaleY, layout_height);
-                    //    //double end_pos_x = HCM.HMI.Safety.Operation.Converters.LayoutLeftConverter.GetRealPosition((capture.EndPoint.X + capture.HorizontalOffset) / scaleZoom.ScaleX, layout_width);
-                    //    //double end_pos_y = HCM.HMI.Safety.Operation.Converters.LayoutTopConverter.GetRealPosition((capture.EndPoint.Y + capture.VerticalOffset) / scaleZoom.ScaleY, layout_height);
+                    //    //double initial_pos_x = HSM.HMI.Safety.Operation.Converters.LayoutLeftConverter.GetRealPosition((capture.InitialPoint.X + capture.HorizontalOffset) / scaleZoom.ScaleX, layout_width);
+                    //    //double initial_pos_y = HSM.HMI.Safety.Operation.Converters.LayoutTopConverter.GetRealPosition((capture.InitialPoint.Y + capture.VerticalOffset) / scaleZoom.ScaleY, layout_height);
+                    //    //double end_pos_x = HSM.HMI.Safety.Operation.Converters.LayoutLeftConverter.GetRealPosition((capture.EndPoint.X + capture.HorizontalOffset) / scaleZoom.ScaleX, layout_width);
+                    //    //double end_pos_y = HSM.HMI.Safety.Operation.Converters.LayoutTopConverter.GetRealPosition((capture.EndPoint.Y + capture.VerticalOffset) / scaleZoom.ScaleY, layout_height);
 
                     //    if (Math.Abs(initial_pos_x - end_pos_x) < 10 && Math.Abs(initial_pos_y - end_pos_y) < 10)
                     //    {

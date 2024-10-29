@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<HCM>
+<HSM>
   <General>
     <!--<ConnectionString>Data Source=10.10.10.56;Initial Catalog=MSSCSACMS;Persist Security Info=True;User ID=sa;Password=RODEO$PWD;MultipleActiveResultSets=True</ConnectionString>!-->
     <ConnectionString>Data Source=192.168.1.55\MSSQL2019;Initial Catalog=NOVISAIMS;Persist Security Info=True;User ID=sa;Password=Janus90;MultipleActiveResultSets=True</ConnectionString>
     <ReplicationQueue></ReplicationQueue>
-    <RodeoSector>HCM</RodeoSector>
+    <RodeoSector>HSM</RodeoSector>
     <ClientName>SERVER</ClientName>
     <TestMode>true</TestMode>
     <TestUser>Administrator</TestUser>
@@ -49,9 +49,9 @@
     </SHMMemory>
   </TOServer>
   <TOOptimization>
-    <Path_Rules>C:\Projects\HCM\AppRelease\rules\online</Path_Rules>
-    <Path_CSV>>C:\Projects\HCM\AppRelease\Priorities</Path_CSV>
-    <Current_Rule>HCM</Current_Rule>
+    <Path_Rules>C:\Projects\HSM\AppRelease\rules\online</Path_Rules>
+    <Path_CSV>>C:\Projects\HSM\AppRelease\Priorities</Path_CSV>
+    <Current_Rule>HSM</Current_Rule>
   </TOOptimization>
   <TrackingServer>
     <Instances>
@@ -76,10 +76,10 @@
   </SafetyServer>
   <SystemServer>
     <EventQueue>
-      <Host>HCM</Host>
+      <Host>HSM</Host>
       <Name>system_events</Name>
-      <Username>HCMuser</Username>
-      <Password>HCMmq@pwd</Password>
+      <Username>HSMuser</Username>
+      <Password>HSMmq@pwd</Password>
     </EventQueue>
     <Connectivity_timeout>5000</Connectivity_timeout>
     <Server_inactivity_timeout>5000</Server_inactivity_timeout>
@@ -96,7 +96,7 @@
     <RequestPort>50400</RequestPort>
     <RequestIPAddress>127.0.0.1</RequestIPAddress>
     <RequestLocalInterface></RequestLocalInterface>
-    <EventQueueName>HCM_schedule_events</EventQueueName>
+    <EventQueueName>HSM_schedule_events</EventQueueName>
     <DisableHouseKeeping>true</DisableHouseKeeping>
     <AutomaticCancelJob>false</AutomaticCancelJob>
     <SaveAutomaticJob>false</SaveAutomaticJob>
@@ -155,7 +155,7 @@
     <WriteQueuePath>MSI\private$\UIACS2SCALP</WriteQueuePath>
     <UserRequestName>Administrator</UserRequestName>
     <TimeoutToRetriesRequest>2000</TimeoutToRetriesRequest>
-    <EventQueueName>HCM_l3_events</EventQueueName>
+    <EventQueueName>HSM_l3_events</EventQueueName>
     <L4GhostPrefix>TMPI</L4GhostPrefix>
     <L4_Api>
       <PathGetPieceInformation>https://otews-qa.opentrac.com/MSSCrane.cfc?method=getMaterialInfo</PathGetPieceInformation>
@@ -199,31 +199,31 @@
     </Rodeo>
     <Processes>
       <!--
-      <L3Server>HCM.L3.Server.exe</L3Server>
-      <TOServer>HCM.TO.Server.exe</TOServer>
-      <TrackingServer>HCM.Tracking.Server.exe</TrackingServer>
-      <SafetyServer>HCM.Safety.Server.exe</SafetyServer>
-      <RSServer>HCM.RS.Server.exe</RSServer>
-      <SystemServer>HCM.Sys.Server.exe</SystemServer>
-      <DBToXmlServer>HCM.DBToXML.Server.exe</DBToXmlServer>
-      <DVRServer>HCM.DVR.Server.exe</DVRServer>
-	  <AcqServer>HCM.Acq.Server.exe</AcqServer>
+      <L3Server>HSM.L3.Server.exe</L3Server>
+      <TOServer>HSM.TO.Server.exe</TOServer>
+      <TrackingServer>HSM.Tracking.Server.exe</TrackingServer>
+      <SafetyServer>HSM.Safety.Server.exe</SafetyServer>
+      <RSServer>HSM.RS.Server.exe</RSServer>
+      <SystemServer>HSM.Sys.Server.exe</SystemServer>
+      <DBToXmlServer>HSM.DBToXML.Server.exe</DBToXmlServer>
+      <DVRServer>HSM.DVR.Server.exe</DVRServer>
+	  <AcqServer>HSM.Acq.Server.exe</AcqServer>
 	  <RCPService>ServerAcquisitionData.exe</RCPService>
 	  !-->
-      <Process name="L3" hb="{0}.HB_L3_Server">HCM.L3.Server.exe</Process>
-      <Process name="TO" hb="{0}.HB_TO_Server">HCM.TO.Server.exe all</Process>
-      <Process name="Tracking" hb="{0}.HB_TRK_Server">HCM.Tracking.Server.exe all</Process>
-      <Process name="Safety" hb="{0}.HB_SAFETY_Server">HCM.Safety.Server.exe</Process>
-      <Process name="PS" hb="{0}.HB_RS_Server">HCM.RS.Server.exe</Process>
-      <Process name="System" hb="{0}.HB_SYSTEM_Server">HCM.Sys.Server.exe</Process>
-      <Process name="DBtoXML" hb="{0}.HB_DBTOXML_Server">HCM.DBToXML.Server.exe</Process>
-      <Process name="DVR Server" hb="{0}.HB_DVR_Server">HCM.DVR.Server.exe</Process>
-      <Process name="Acq Server" hb="{0}.HB_Acq_Server">HCM.Acq.Server.exe</Process>
+      <Process name="L3" hb="{0}.HB_L3_Server">HSM.L3.Server.exe</Process>
+      <Process name="TO" hb="{0}.HB_TO_Server">HSM.TO.Server.exe all</Process>
+      <Process name="Tracking" hb="{0}.HB_TRK_Server">HSM.Tracking.Server.exe all</Process>
+      <Process name="Safety" hb="{0}.HB_SAFETY_Server">HSM.Safety.Server.exe</Process>
+      <Process name="PS" hb="{0}.HB_RS_Server">HSM.RS.Server.exe</Process>
+      <Process name="System" hb="{0}.HB_SYSTEM_Server">HSM.Sys.Server.exe</Process>
+      <Process name="DBtoXML" hb="{0}.HB_DBTOXML_Server">HSM.DBToXML.Server.exe</Process>
+      <Process name="DVR Server" hb="{0}.HB_DVR_Server">HSM.DVR.Server.exe</Process>
+      <Process name="Acq Server" hb="{0}.HB_Acq_Server">HSM.Acq.Server.exe</Process>
       <Process name="RCP Service" hb="{0}.HB_RCP_Server">ServerAcquisitionData.exe</Process>
     </Processes>
   </WDServer>
   <HMIs safety_layout_inverted="false" crane_operation_inverted="false" rails_operation_inverted="false">
-    <FFmpegDirectory>C:\Program Files (x86)\Janus Automation\HCM\3rd-party\ffmpeg\bin</FFmpegDirectory>
+    <FFmpegDirectory>C:\Program Files (x86)\Janus Automation\HSM\3rd-party\ffmpeg\bin</FFmpegDirectory>
     <FFmpegFrameRate>5</FFmpegFrameRate>
     <TransportOperationArrivalPermit>true</TransportOperationArrivalPermit>
     <transport_order_layout>
@@ -244,15 +244,15 @@
       <args></args>
     </RuleDesigner>
     <OperationCamera>
-      <Command>HCM.HMI.Machine.Camera.exe</Command>
+      <Command>HSM.HMI.Machine.Camera.exe</Command>
       <args>-HISTORICALTYPE=1 -Y</args>
     </OperationCamera>
     <OperationMachine>
-      <Command>HCM.HMI.Machine.Operation.exe</Command>
+      <Command>HSM.HMI.Machine.Operation.exe</Command>
       <args></args>
     </OperationMachine>
     <ProcessManagement>
-      <Command>HCM.HMI.Process.Mgmt.exe</Command>
+      <Command>HSM.HMI.Process.Mgmt.exe</Command>
       <args></args>
     </ProcessManagement>
     <Permissions>
@@ -321,5 +321,5 @@
       <UserLogHistory fromDays="-1" />
     </Reports>
   </HMIs>
-</HCM>
+</HSM>
 

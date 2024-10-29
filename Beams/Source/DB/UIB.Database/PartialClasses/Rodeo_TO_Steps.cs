@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HCM.Database
+namespace HSM.Database
 {
     /// <summary>
     /// partial class of step

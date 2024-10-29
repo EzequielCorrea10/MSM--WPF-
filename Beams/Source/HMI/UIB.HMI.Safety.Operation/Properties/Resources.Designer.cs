@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HCM.HMI.Safety.Operation.Properties {
+namespace HSM.HMI.Safety.Operation.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace HCM.HMI.Safety.Operation.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HCM.HMI.Safety.Operation.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HSM.HMI.Safety.Operation.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

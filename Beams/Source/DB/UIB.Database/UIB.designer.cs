@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HCM.Database
+namespace HSM.Database
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -24,61 +24,61 @@ namespace HCM.Database
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="NOVISAIMS")]
-	public partial class HCMDataContext : System.Data.Linq.DataContext
+	public partial class HSMDataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertHCM_Drive_Control(HCM_Drive_Control instance);
-    partial void UpdateHCM_Drive_Control(HCM_Drive_Control instance);
-    partial void DeleteHCM_Drive_Control(HCM_Drive_Control instance);
-    partial void InsertHCM_Drive_Failure(HCM_Drive_Failure instance);
-    partial void UpdateHCM_Drive_Failure(HCM_Drive_Failure instance);
-    partial void DeleteHCM_Drive_Failure(HCM_Drive_Failure instance);
-    partial void InsertHCM_Drive_Process(HCM_Drive_Process instance);
-    partial void UpdateHCM_Drive_Process(HCM_Drive_Process instance);
-    partial void DeleteHCM_Drive_Process(HCM_Drive_Process instance);
-    partial void InsertHCM_Drive_Statuse(HCM_Drive_Statuse instance);
-    partial void UpdateHCM_Drive_Statuse(HCM_Drive_Statuse instance);
-    partial void DeleteHCM_Drive_Statuse(HCM_Drive_Statuse instance);
-    partial void InsertHCM_Drive_Type(HCM_Drive_Type instance);
-    partial void UpdateHCM_Drive_Type(HCM_Drive_Type instance);
-    partial void DeleteHCM_Drive_Type(HCM_Drive_Type instance);
-    partial void InsertHCM_Encoder_Control(HCM_Encoder_Control instance);
-    partial void UpdateHCM_Encoder_Control(HCM_Encoder_Control instance);
-    partial void DeleteHCM_Encoder_Control(HCM_Encoder_Control instance);
-    partial void InsertHCM_Encoder_Failure(HCM_Encoder_Failure instance);
-    partial void UpdateHCM_Encoder_Failure(HCM_Encoder_Failure instance);
-    partial void DeleteHCM_Encoder_Failure(HCM_Encoder_Failure instance);
-    partial void InsertHCM_Encoder_Process(HCM_Encoder_Process instance);
-    partial void UpdateHCM_Encoder_Process(HCM_Encoder_Process instance);
-    partial void DeleteHCM_Encoder_Process(HCM_Encoder_Process instance);
-    partial void InsertHCM_Encoder_Statuse(HCM_Encoder_Statuse instance);
-    partial void UpdateHCM_Encoder_Statuse(HCM_Encoder_Statuse instance);
-    partial void DeleteHCM_Encoder_Statuse(HCM_Encoder_Statuse instance);
-    partial void InsertHCM_Encoder_Type(HCM_Encoder_Type instance);
-    partial void UpdateHCM_Encoder_Type(HCM_Encoder_Type instance);
-    partial void DeleteHCM_Encoder_Type(HCM_Encoder_Type instance);
-    partial void InsertHCM_Layout_Section_Machine(HCM_Layout_Section_Machine instance);
-    partial void UpdateHCM_Layout_Section_Machine(HCM_Layout_Section_Machine instance);
-    partial void DeleteHCM_Layout_Section_Machine(HCM_Layout_Section_Machine instance);
-    partial void InsertHCM_Layout_Section(HCM_Layout_Section instance);
-    partial void UpdateHCM_Layout_Section(HCM_Layout_Section instance);
-    partial void DeleteHCM_Layout_Section(HCM_Layout_Section instance);
-    partial void InsertHCM_Location_Group(HCM_Location_Group instance);
-    partial void UpdateHCM_Location_Group(HCM_Location_Group instance);
-    partial void DeleteHCM_Location_Group(HCM_Location_Group instance);
-    partial void InsertHCM_Location_Range(HCM_Location_Range instance);
-    partial void UpdateHCM_Location_Range(HCM_Location_Range instance);
-    partial void DeleteHCM_Location_Range(HCM_Location_Range instance);
-    partial void InsertHCM_Machine_Drive(HCM_Machine_Drive instance);
-    partial void UpdateHCM_Machine_Drive(HCM_Machine_Drive instance);
-    partial void DeleteHCM_Machine_Drive(HCM_Machine_Drive instance);
-    partial void InsertHCM_Machine_Encoder(HCM_Machine_Encoder instance);
-    partial void UpdateHCM_Machine_Encoder(HCM_Machine_Encoder instance);
-    partial void DeleteHCM_Machine_Encoder(HCM_Machine_Encoder instance);
+    partial void InsertHSM_Drive_Control(HSM_Drive_Control instance);
+    partial void UpdateHSM_Drive_Control(HSM_Drive_Control instance);
+    partial void DeleteHSM_Drive_Control(HSM_Drive_Control instance);
+    partial void InsertHSM_Drive_Failure(HSM_Drive_Failure instance);
+    partial void UpdateHSM_Drive_Failure(HSM_Drive_Failure instance);
+    partial void DeleteHSM_Drive_Failure(HSM_Drive_Failure instance);
+    partial void InsertHSM_Drive_Process(HSM_Drive_Process instance);
+    partial void UpdateHSM_Drive_Process(HSM_Drive_Process instance);
+    partial void DeleteHSM_Drive_Process(HSM_Drive_Process instance);
+    partial void InsertHSM_Drive_Statuse(HSM_Drive_Statuse instance);
+    partial void UpdateHSM_Drive_Statuse(HSM_Drive_Statuse instance);
+    partial void DeleteHSM_Drive_Statuse(HSM_Drive_Statuse instance);
+    partial void InsertHSM_Drive_Type(HSM_Drive_Type instance);
+    partial void UpdateHSM_Drive_Type(HSM_Drive_Type instance);
+    partial void DeleteHSM_Drive_Type(HSM_Drive_Type instance);
+    partial void InsertHSM_Encoder_Control(HSM_Encoder_Control instance);
+    partial void UpdateHSM_Encoder_Control(HSM_Encoder_Control instance);
+    partial void DeleteHSM_Encoder_Control(HSM_Encoder_Control instance);
+    partial void InsertHSM_Encoder_Failure(HSM_Encoder_Failure instance);
+    partial void UpdateHSM_Encoder_Failure(HSM_Encoder_Failure instance);
+    partial void DeleteHSM_Encoder_Failure(HSM_Encoder_Failure instance);
+    partial void InsertHSM_Encoder_Process(HSM_Encoder_Process instance);
+    partial void UpdateHSM_Encoder_Process(HSM_Encoder_Process instance);
+    partial void DeleteHSM_Encoder_Process(HSM_Encoder_Process instance);
+    partial void InsertHSM_Encoder_Statuse(HSM_Encoder_Statuse instance);
+    partial void UpdateHSM_Encoder_Statuse(HSM_Encoder_Statuse instance);
+    partial void DeleteHSM_Encoder_Statuse(HSM_Encoder_Statuse instance);
+    partial void InsertHSM_Encoder_Type(HSM_Encoder_Type instance);
+    partial void UpdateHSM_Encoder_Type(HSM_Encoder_Type instance);
+    partial void DeleteHSM_Encoder_Type(HSM_Encoder_Type instance);
+    partial void InsertHSM_Layout_Section_Machine(HSM_Layout_Section_Machine instance);
+    partial void UpdateHSM_Layout_Section_Machine(HSM_Layout_Section_Machine instance);
+    partial void DeleteHSM_Layout_Section_Machine(HSM_Layout_Section_Machine instance);
+    partial void InsertHSM_Layout_Section(HSM_Layout_Section instance);
+    partial void UpdateHSM_Layout_Section(HSM_Layout_Section instance);
+    partial void DeleteHSM_Layout_Section(HSM_Layout_Section instance);
+    partial void InsertHSM_Location_Group(HSM_Location_Group instance);
+    partial void UpdateHSM_Location_Group(HSM_Location_Group instance);
+    partial void DeleteHSM_Location_Group(HSM_Location_Group instance);
+    partial void InsertHSM_Location_Range(HSM_Location_Range instance);
+    partial void UpdateHSM_Location_Range(HSM_Location_Range instance);
+    partial void DeleteHSM_Location_Range(HSM_Location_Range instance);
+    partial void InsertHSM_Machine_Drive(HSM_Machine_Drive instance);
+    partial void UpdateHSM_Machine_Drive(HSM_Machine_Drive instance);
+    partial void DeleteHSM_Machine_Drive(HSM_Machine_Drive instance);
+    partial void InsertHSM_Machine_Encoder(HSM_Machine_Encoder instance);
+    partial void UpdateHSM_Machine_Encoder(HSM_Machine_Encoder instance);
+    partial void DeleteHSM_Machine_Encoder(HSM_Machine_Encoder instance);
     partial void InsertRodeo_Client_Type(Rodeo_Client_Type instance);
     partial void UpdateRodeo_Client_Type(Rodeo_Client_Type instance);
     partial void DeleteRodeo_Client_Type(Rodeo_Client_Type instance);
@@ -109,42 +109,42 @@ namespace HCM.Database
     partial void InsertRodeo_Transportation_Type(Rodeo_Transportation_Type instance);
     partial void UpdateRodeo_Transportation_Type(Rodeo_Transportation_Type instance);
     partial void DeleteRodeo_Transportation_Type(Rodeo_Transportation_Type instance);
-    partial void InsertHCM_Incoming_Message(HCM_Incoming_Message instance);
-    partial void UpdateHCM_Incoming_Message(HCM_Incoming_Message instance);
-    partial void DeleteHCM_Incoming_Message(HCM_Incoming_Message instance);
-    partial void InsertHCM_Machine_Event_Type(HCM_Machine_Event_Type instance);
-    partial void UpdateHCM_Machine_Event_Type(HCM_Machine_Event_Type instance);
-    partial void DeleteHCM_Machine_Event_Type(HCM_Machine_Event_Type instance);
-    partial void InsertHCM_Machine_Event(HCM_Machine_Event instance);
-    partial void UpdateHCM_Machine_Event(HCM_Machine_Event instance);
-    partial void DeleteHCM_Machine_Event(HCM_Machine_Event instance);
-    partial void InsertHCM_Message_Type(HCM_Message_Type instance);
-    partial void UpdateHCM_Message_Type(HCM_Message_Type instance);
-    partial void DeleteHCM_Message_Type(HCM_Message_Type instance);
-    partial void InsertHCM_Outgoing_Message(HCM_Outgoing_Message instance);
-    partial void UpdateHCM_Outgoing_Message(HCM_Outgoing_Message instance);
-    partial void DeleteHCM_Outgoing_Message(HCM_Outgoing_Message instance);
-    partial void InsertHCM_Piece_Event_Type(HCM_Piece_Event_Type instance);
-    partial void UpdateHCM_Piece_Event_Type(HCM_Piece_Event_Type instance);
-    partial void DeleteHCM_Piece_Event_Type(HCM_Piece_Event_Type instance);
-    partial void InsertHCM_Piece_Event(HCM_Piece_Event instance);
-    partial void UpdateHCM_Piece_Event(HCM_Piece_Event instance);
-    partial void DeleteHCM_Piece_Event(HCM_Piece_Event instance);
-    partial void InsertHCM_Zone_Event_Type(HCM_Zone_Event_Type instance);
-    partial void UpdateHCM_Zone_Event_Type(HCM_Zone_Event_Type instance);
-    partial void DeleteHCM_Zone_Event_Type(HCM_Zone_Event_Type instance);
-    partial void InsertHCM_Zone_Event(HCM_Zone_Event instance);
-    partial void UpdateHCM_Zone_Event(HCM_Zone_Event instance);
-    partial void DeleteHCM_Zone_Event(HCM_Zone_Event instance);
+    partial void InsertHSM_Incoming_Message(HSM_Incoming_Message instance);
+    partial void UpdateHSM_Incoming_Message(HSM_Incoming_Message instance);
+    partial void DeleteHSM_Incoming_Message(HSM_Incoming_Message instance);
+    partial void InsertHSM_Machine_Event_Type(HSM_Machine_Event_Type instance);
+    partial void UpdateHSM_Machine_Event_Type(HSM_Machine_Event_Type instance);
+    partial void DeleteHSM_Machine_Event_Type(HSM_Machine_Event_Type instance);
+    partial void InsertHSM_Machine_Event(HSM_Machine_Event instance);
+    partial void UpdateHSM_Machine_Event(HSM_Machine_Event instance);
+    partial void DeleteHSM_Machine_Event(HSM_Machine_Event instance);
+    partial void InsertHSM_Message_Type(HSM_Message_Type instance);
+    partial void UpdateHSM_Message_Type(HSM_Message_Type instance);
+    partial void DeleteHSM_Message_Type(HSM_Message_Type instance);
+    partial void InsertHSM_Outgoing_Message(HSM_Outgoing_Message instance);
+    partial void UpdateHSM_Outgoing_Message(HSM_Outgoing_Message instance);
+    partial void DeleteHSM_Outgoing_Message(HSM_Outgoing_Message instance);
+    partial void InsertHSM_Piece_Event_Type(HSM_Piece_Event_Type instance);
+    partial void UpdateHSM_Piece_Event_Type(HSM_Piece_Event_Type instance);
+    partial void DeleteHSM_Piece_Event_Type(HSM_Piece_Event_Type instance);
+    partial void InsertHSM_Piece_Event(HSM_Piece_Event instance);
+    partial void UpdateHSM_Piece_Event(HSM_Piece_Event instance);
+    partial void DeleteHSM_Piece_Event(HSM_Piece_Event instance);
+    partial void InsertHSM_Zone_Event_Type(HSM_Zone_Event_Type instance);
+    partial void UpdateHSM_Zone_Event_Type(HSM_Zone_Event_Type instance);
+    partial void DeleteHSM_Zone_Event_Type(HSM_Zone_Event_Type instance);
+    partial void InsertHSM_Zone_Event(HSM_Zone_Event instance);
+    partial void UpdateHSM_Zone_Event(HSM_Zone_Event instance);
+    partial void DeleteHSM_Zone_Event(HSM_Zone_Event instance);
     partial void InsertRodeo_Event_Type(Rodeo_Event_Type instance);
     partial void UpdateRodeo_Event_Type(Rodeo_Event_Type instance);
     partial void DeleteRodeo_Event_Type(Rodeo_Event_Type instance);
     partial void InsertRodeo_Event(Rodeo_Event instance);
     partial void UpdateRodeo_Event(Rodeo_Event instance);
     partial void DeleteRodeo_Event(Rodeo_Event instance);
-    partial void InsertHCM_Failures_History(HCM_Failures_History instance);
-    partial void UpdateHCM_Failures_History(HCM_Failures_History instance);
-    partial void DeleteHCM_Failures_History(HCM_Failures_History instance);
+    partial void InsertHSM_Failures_History(HSM_Failures_History instance);
+    partial void UpdateHSM_Failures_History(HSM_Failures_History instance);
+    partial void DeleteHSM_Failures_History(HSM_Failures_History instance);
     partial void InsertRodeo_Alarms_History(Rodeo_Alarms_History instance);
     partial void UpdateRodeo_Alarms_History(Rodeo_Alarms_History instance);
     partial void DeleteRodeo_Alarms_History(Rodeo_Alarms_History instance);
@@ -154,84 +154,84 @@ namespace HCM.Database
     partial void InsertRodeo_UserLogs_History(Rodeo_UserLogs_History instance);
     partial void UpdateRodeo_UserLogs_History(Rodeo_UserLogs_History instance);
     partial void DeleteRodeo_UserLogs_History(Rodeo_UserLogs_History instance);
-    partial void InsertHCM_Ground_EStop_Failure(HCM_Ground_EStop_Failure instance);
-    partial void UpdateHCM_Ground_EStop_Failure(HCM_Ground_EStop_Failure instance);
-    partial void DeleteHCM_Ground_EStop_Failure(HCM_Ground_EStop_Failure instance);
-    partial void InsertHCM_Ground_EStop_Group(HCM_Ground_EStop_Group instance);
-    partial void UpdateHCM_Ground_EStop_Group(HCM_Ground_EStop_Group instance);
-    partial void DeleteHCM_Ground_EStop_Group(HCM_Ground_EStop_Group instance);
-    partial void InsertHCM_Ground_EStop_Interface(HCM_Ground_EStop_Interface instance);
-    partial void UpdateHCM_Ground_EStop_Interface(HCM_Ground_EStop_Interface instance);
-    partial void DeleteHCM_Ground_EStop_Interface(HCM_Ground_EStop_Interface instance);
-    partial void InsertHCM_Ground_EStop_Panel(HCM_Ground_EStop_Panel instance);
-    partial void UpdateHCM_Ground_EStop_Panel(HCM_Ground_EStop_Panel instance);
-    partial void DeleteHCM_Ground_EStop_Panel(HCM_Ground_EStop_Panel instance);
-    partial void InsertHCM_Ground_EStop_Request(HCM_Ground_EStop_Request instance);
-    partial void UpdateHCM_Ground_EStop_Request(HCM_Ground_EStop_Request instance);
-    partial void DeleteHCM_Ground_EStop_Request(HCM_Ground_EStop_Request instance);
-    partial void InsertHCM_Machine_Exit_Zone(HCM_Machine_Exit_Zone instance);
-    partial void UpdateHCM_Machine_Exit_Zone(HCM_Machine_Exit_Zone instance);
-    partial void DeleteHCM_Machine_Exit_Zone(HCM_Machine_Exit_Zone instance);
-    partial void InsertHCM_Machine_Interface(HCM_Machine_Interface instance);
-    partial void UpdateHCM_Machine_Interface(HCM_Machine_Interface instance);
-    partial void DeleteHCM_Machine_Interface(HCM_Machine_Interface instance);
-    partial void InsertHCM_Request_Interlock(HCM_Request_Interlock instance);
-    partial void UpdateHCM_Request_Interlock(HCM_Request_Interlock instance);
-    partial void DeleteHCM_Request_Interlock(HCM_Request_Interlock instance);
-    partial void InsertHCM_Request_Signal(HCM_Request_Signal instance);
-    partial void UpdateHCM_Request_Signal(HCM_Request_Signal instance);
-    partial void DeleteHCM_Request_Signal(HCM_Request_Signal instance);
-    partial void InsertHCM_Request_Transport_Dependency(HCM_Request_Transport_Dependency instance);
-    partial void UpdateHCM_Request_Transport_Dependency(HCM_Request_Transport_Dependency instance);
-    partial void DeleteHCM_Request_Transport_Dependency(HCM_Request_Transport_Dependency instance);
-    partial void InsertHCM_Request_Type_Signal(HCM_Request_Type_Signal instance);
-    partial void UpdateHCM_Request_Type_Signal(HCM_Request_Type_Signal instance);
-    partial void DeleteHCM_Request_Type_Signal(HCM_Request_Type_Signal instance);
-    partial void InsertHCM_Request_Type(HCM_Request_Type instance);
-    partial void UpdateHCM_Request_Type(HCM_Request_Type instance);
-    partial void DeleteHCM_Request_Type(HCM_Request_Type instance);
-    partial void InsertHCM_Request(HCM_Request instance);
-    partial void UpdateHCM_Request(HCM_Request instance);
-    partial void DeleteHCM_Request(HCM_Request instance);
-    partial void InsertHCM_Zone_Dependency(HCM_Zone_Dependency instance);
-    partial void UpdateHCM_Zone_Dependency(HCM_Zone_Dependency instance);
-    partial void DeleteHCM_Zone_Dependency(HCM_Zone_Dependency instance);
-    partial void InsertHCM_Zone_Fence(HCM_Zone_Fence instance);
-    partial void UpdateHCM_Zone_Fence(HCM_Zone_Fence instance);
-    partial void DeleteHCM_Zone_Fence(HCM_Zone_Fence instance);
-    partial void InsertHCM_Zone_Interlock(HCM_Zone_Interlock instance);
-    partial void UpdateHCM_Zone_Interlock(HCM_Zone_Interlock instance);
-    partial void DeleteHCM_Zone_Interlock(HCM_Zone_Interlock instance);
-    partial void InsertHCM_Zone_Machine(HCM_Zone_Machine instance);
-    partial void UpdateHCM_Zone_Machine(HCM_Zone_Machine instance);
-    partial void DeleteHCM_Zone_Machine(HCM_Zone_Machine instance);
-    partial void InsertHCM_Zone_Section(HCM_Zone_Section instance);
-    partial void UpdateHCM_Zone_Section(HCM_Zone_Section instance);
-    partial void DeleteHCM_Zone_Section(HCM_Zone_Section instance);
-    partial void InsertHCM_Zone_Type(HCM_Zone_Type instance);
-    partial void UpdateHCM_Zone_Type(HCM_Zone_Type instance);
-    partial void DeleteHCM_Zone_Type(HCM_Zone_Type instance);
-    partial void InsertHCM_Zone(HCM_Zone instance);
-    partial void UpdateHCM_Zone(HCM_Zone instance);
-    partial void DeleteHCM_Zone(HCM_Zone instance);
-    partial void InsertHCM_PLC_Module(HCM_PLC_Module instance);
-    partial void UpdateHCM_PLC_Module(HCM_PLC_Module instance);
-    partial void DeleteHCM_PLC_Module(HCM_PLC_Module instance);
-    partial void InsertHCM_PLC_Rack(HCM_PLC_Rack instance);
-    partial void UpdateHCM_PLC_Rack(HCM_PLC_Rack instance);
-    partial void DeleteHCM_PLC_Rack(HCM_PLC_Rack instance);
-    partial void InsertHCM_PLC_VIO(HCM_PLC_VIO instance);
-    partial void UpdateHCM_PLC_VIO(HCM_PLC_VIO instance);
-    partial void DeleteHCM_PLC_VIO(HCM_PLC_VIO instance);
-    partial void InsertHCM_PLC(HCM_PLC instance);
-    partial void UpdateHCM_PLC(HCM_PLC instance);
-    partial void DeleteHCM_PLC(HCM_PLC instance);
-    partial void InsertHCM_Setting_Value(HCM_Setting_Value instance);
-    partial void UpdateHCM_Setting_Value(HCM_Setting_Value instance);
-    partial void DeleteHCM_Setting_Value(HCM_Setting_Value instance);
-    partial void InsertHCM_Troubleshooting_Reference(HCM_Troubleshooting_Reference instance);
-    partial void UpdateHCM_Troubleshooting_Reference(HCM_Troubleshooting_Reference instance);
-    partial void DeleteHCM_Troubleshooting_Reference(HCM_Troubleshooting_Reference instance);
+    partial void InsertHSM_Ground_EStop_Failure(HSM_Ground_EStop_Failure instance);
+    partial void UpdateHSM_Ground_EStop_Failure(HSM_Ground_EStop_Failure instance);
+    partial void DeleteHSM_Ground_EStop_Failure(HSM_Ground_EStop_Failure instance);
+    partial void InsertHSM_Ground_EStop_Group(HSM_Ground_EStop_Group instance);
+    partial void UpdateHSM_Ground_EStop_Group(HSM_Ground_EStop_Group instance);
+    partial void DeleteHSM_Ground_EStop_Group(HSM_Ground_EStop_Group instance);
+    partial void InsertHSM_Ground_EStop_Interface(HSM_Ground_EStop_Interface instance);
+    partial void UpdateHSM_Ground_EStop_Interface(HSM_Ground_EStop_Interface instance);
+    partial void DeleteHSM_Ground_EStop_Interface(HSM_Ground_EStop_Interface instance);
+    partial void InsertHSM_Ground_EStop_Panel(HSM_Ground_EStop_Panel instance);
+    partial void UpdateHSM_Ground_EStop_Panel(HSM_Ground_EStop_Panel instance);
+    partial void DeleteHSM_Ground_EStop_Panel(HSM_Ground_EStop_Panel instance);
+    partial void InsertHSM_Ground_EStop_Request(HSM_Ground_EStop_Request instance);
+    partial void UpdateHSM_Ground_EStop_Request(HSM_Ground_EStop_Request instance);
+    partial void DeleteHSM_Ground_EStop_Request(HSM_Ground_EStop_Request instance);
+    partial void InsertHSM_Machine_Exit_Zone(HSM_Machine_Exit_Zone instance);
+    partial void UpdateHSM_Machine_Exit_Zone(HSM_Machine_Exit_Zone instance);
+    partial void DeleteHSM_Machine_Exit_Zone(HSM_Machine_Exit_Zone instance);
+    partial void InsertHSM_Machine_Interface(HSM_Machine_Interface instance);
+    partial void UpdateHSM_Machine_Interface(HSM_Machine_Interface instance);
+    partial void DeleteHSM_Machine_Interface(HSM_Machine_Interface instance);
+    partial void InsertHSM_Request_Interlock(HSM_Request_Interlock instance);
+    partial void UpdateHSM_Request_Interlock(HSM_Request_Interlock instance);
+    partial void DeleteHSM_Request_Interlock(HSM_Request_Interlock instance);
+    partial void InsertHSM_Request_Signal(HSM_Request_Signal instance);
+    partial void UpdateHSM_Request_Signal(HSM_Request_Signal instance);
+    partial void DeleteHSM_Request_Signal(HSM_Request_Signal instance);
+    partial void InsertHSM_Request_Transport_Dependency(HSM_Request_Transport_Dependency instance);
+    partial void UpdateHSM_Request_Transport_Dependency(HSM_Request_Transport_Dependency instance);
+    partial void DeleteHSM_Request_Transport_Dependency(HSM_Request_Transport_Dependency instance);
+    partial void InsertHSM_Request_Type_Signal(HSM_Request_Type_Signal instance);
+    partial void UpdateHSM_Request_Type_Signal(HSM_Request_Type_Signal instance);
+    partial void DeleteHSM_Request_Type_Signal(HSM_Request_Type_Signal instance);
+    partial void InsertHSM_Request_Type(HSM_Request_Type instance);
+    partial void UpdateHSM_Request_Type(HSM_Request_Type instance);
+    partial void DeleteHSM_Request_Type(HSM_Request_Type instance);
+    partial void InsertHSM_Request(HSM_Request instance);
+    partial void UpdateHSM_Request(HSM_Request instance);
+    partial void DeleteHSM_Request(HSM_Request instance);
+    partial void InsertHSM_Zone_Dependency(HSM_Zone_Dependency instance);
+    partial void UpdateHSM_Zone_Dependency(HSM_Zone_Dependency instance);
+    partial void DeleteHSM_Zone_Dependency(HSM_Zone_Dependency instance);
+    partial void InsertHSM_Zone_Fence(HSM_Zone_Fence instance);
+    partial void UpdateHSM_Zone_Fence(HSM_Zone_Fence instance);
+    partial void DeleteHSM_Zone_Fence(HSM_Zone_Fence instance);
+    partial void InsertHSM_Zone_Interlock(HSM_Zone_Interlock instance);
+    partial void UpdateHSM_Zone_Interlock(HSM_Zone_Interlock instance);
+    partial void DeleteHSM_Zone_Interlock(HSM_Zone_Interlock instance);
+    partial void InsertHSM_Zone_Machine(HSM_Zone_Machine instance);
+    partial void UpdateHSM_Zone_Machine(HSM_Zone_Machine instance);
+    partial void DeleteHSM_Zone_Machine(HSM_Zone_Machine instance);
+    partial void InsertHSM_Zone_Section(HSM_Zone_Section instance);
+    partial void UpdateHSM_Zone_Section(HSM_Zone_Section instance);
+    partial void DeleteHSM_Zone_Section(HSM_Zone_Section instance);
+    partial void InsertHSM_Zone_Type(HSM_Zone_Type instance);
+    partial void UpdateHSM_Zone_Type(HSM_Zone_Type instance);
+    partial void DeleteHSM_Zone_Type(HSM_Zone_Type instance);
+    partial void InsertHSM_Zone(HSM_Zone instance);
+    partial void UpdateHSM_Zone(HSM_Zone instance);
+    partial void DeleteHSM_Zone(HSM_Zone instance);
+    partial void InsertHSM_PLC_Module(HSM_PLC_Module instance);
+    partial void UpdateHSM_PLC_Module(HSM_PLC_Module instance);
+    partial void DeleteHSM_PLC_Module(HSM_PLC_Module instance);
+    partial void InsertHSM_PLC_Rack(HSM_PLC_Rack instance);
+    partial void UpdateHSM_PLC_Rack(HSM_PLC_Rack instance);
+    partial void DeleteHSM_PLC_Rack(HSM_PLC_Rack instance);
+    partial void InsertHSM_PLC_VIO(HSM_PLC_VIO instance);
+    partial void UpdateHSM_PLC_VIO(HSM_PLC_VIO instance);
+    partial void DeleteHSM_PLC_VIO(HSM_PLC_VIO instance);
+    partial void InsertHSM_PLC(HSM_PLC instance);
+    partial void UpdateHSM_PLC(HSM_PLC instance);
+    partial void DeleteHSM_PLC(HSM_PLC instance);
+    partial void InsertHSM_Setting_Value(HSM_Setting_Value instance);
+    partial void UpdateHSM_Setting_Value(HSM_Setting_Value instance);
+    partial void DeleteHSM_Setting_Value(HSM_Setting_Value instance);
+    partial void InsertHSM_Troubleshooting_Reference(HSM_Troubleshooting_Reference instance);
+    partial void UpdateHSM_Troubleshooting_Reference(HSM_Troubleshooting_Reference instance);
+    partial void DeleteHSM_Troubleshooting_Reference(HSM_Troubleshooting_Reference instance);
     partial void InsertRodeo_Client_Credential(Rodeo_Client_Credential instance);
     partial void UpdateRodeo_Client_Credential(Rodeo_Client_Credential instance);
     partial void DeleteRodeo_Client_Credential(Rodeo_Client_Credential instance);
@@ -250,27 +250,27 @@ namespace HCM.Database
     partial void InsertRodeo_Setting_Group_Machine_Type(Rodeo_Setting_Group_Machine_Type instance);
     partial void UpdateRodeo_Setting_Group_Machine_Type(Rodeo_Setting_Group_Machine_Type instance);
     partial void DeleteRodeo_Setting_Group_Machine_Type(Rodeo_Setting_Group_Machine_Type instance);
-    partial void InsertHCM_Destination_Next_Piece(HCM_Destination_Next_Piece instance);
-    partial void UpdateHCM_Destination_Next_Piece(HCM_Destination_Next_Piece instance);
-    partial void DeleteHCM_Destination_Next_Piece(HCM_Destination_Next_Piece instance);
-    partial void InsertHCM_Job_Forecast(HCM_Job_Forecast instance);
-    partial void UpdateHCM_Job_Forecast(HCM_Job_Forecast instance);
-    partial void DeleteHCM_Job_Forecast(HCM_Job_Forecast instance);
-    partial void InsertHCM_Job_Type(HCM_Job_Type instance);
-    partial void UpdateHCM_Job_Type(HCM_Job_Type instance);
-    partial void DeleteHCM_Job_Type(HCM_Job_Type instance);
-    partial void InsertHCM_Machine_Exit_Location(HCM_Machine_Exit_Location instance);
-    partial void UpdateHCM_Machine_Exit_Location(HCM_Machine_Exit_Location instance);
-    partial void DeleteHCM_Machine_Exit_Location(HCM_Machine_Exit_Location instance);
-    partial void InsertHCM_RCP_ErrorCode(HCM_RCP_ErrorCode instance);
-    partial void UpdateHCM_RCP_ErrorCode(HCM_RCP_ErrorCode instance);
-    partial void DeleteHCM_RCP_ErrorCode(HCM_RCP_ErrorCode instance);
-    partial void InsertHCM_RCP_Flag(HCM_RCP_Flag instance);
-    partial void UpdateHCM_RCP_Flag(HCM_RCP_Flag instance);
-    partial void DeleteHCM_RCP_Flag(HCM_RCP_Flag instance);
-    partial void InsertHCM_RCP_OperationMode(HCM_RCP_OperationMode instance);
-    partial void UpdateHCM_RCP_OperationMode(HCM_RCP_OperationMode instance);
-    partial void DeleteHCM_RCP_OperationMode(HCM_RCP_OperationMode instance);
+    partial void InsertHSM_Destination_Next_Piece(HSM_Destination_Next_Piece instance);
+    partial void UpdateHSM_Destination_Next_Piece(HSM_Destination_Next_Piece instance);
+    partial void DeleteHSM_Destination_Next_Piece(HSM_Destination_Next_Piece instance);
+    partial void InsertHSM_Job_Forecast(HSM_Job_Forecast instance);
+    partial void UpdateHSM_Job_Forecast(HSM_Job_Forecast instance);
+    partial void DeleteHSM_Job_Forecast(HSM_Job_Forecast instance);
+    partial void InsertHSM_Job_Type(HSM_Job_Type instance);
+    partial void UpdateHSM_Job_Type(HSM_Job_Type instance);
+    partial void DeleteHSM_Job_Type(HSM_Job_Type instance);
+    partial void InsertHSM_Machine_Exit_Location(HSM_Machine_Exit_Location instance);
+    partial void UpdateHSM_Machine_Exit_Location(HSM_Machine_Exit_Location instance);
+    partial void DeleteHSM_Machine_Exit_Location(HSM_Machine_Exit_Location instance);
+    partial void InsertHSM_RCP_ErrorCode(HSM_RCP_ErrorCode instance);
+    partial void UpdateHSM_RCP_ErrorCode(HSM_RCP_ErrorCode instance);
+    partial void DeleteHSM_RCP_ErrorCode(HSM_RCP_ErrorCode instance);
+    partial void InsertHSM_RCP_Flag(HSM_RCP_Flag instance);
+    partial void UpdateHSM_RCP_Flag(HSM_RCP_Flag instance);
+    partial void DeleteHSM_RCP_Flag(HSM_RCP_Flag instance);
+    partial void InsertHSM_RCP_OperationMode(HSM_RCP_OperationMode instance);
+    partial void UpdateHSM_RCP_OperationMode(HSM_RCP_OperationMode instance);
+    partial void DeleteHSM_RCP_OperationMode(HSM_RCP_OperationMode instance);
     partial void InsertRodeo_TO_Action(Rodeo_TO_Action instance);
     partial void UpdateRodeo_TO_Action(Rodeo_TO_Action instance);
     partial void DeleteRodeo_TO_Action(Rodeo_TO_Action instance);
@@ -301,24 +301,24 @@ namespace HCM.Database
     partial void InsertRodeo_TransportOrder(Rodeo_TransportOrder instance);
     partial void UpdateRodeo_TransportOrder(Rodeo_TransportOrder instance);
     partial void DeleteRodeo_TransportOrder(Rodeo_TransportOrder instance);
-    partial void InsertHCM_HoldOn_Reason(HCM_HoldOn_Reason instance);
-    partial void UpdateHCM_HoldOn_Reason(HCM_HoldOn_Reason instance);
-    partial void DeleteHCM_HoldOn_Reason(HCM_HoldOn_Reason instance);
+    partial void InsertHSM_HoldOn_Reason(HSM_HoldOn_Reason instance);
+    partial void UpdateHSM_HoldOn_Reason(HSM_HoldOn_Reason instance);
+    partial void DeleteHSM_HoldOn_Reason(HSM_HoldOn_Reason instance);
     partial void InsertRodeo_Piece_Statuse(Rodeo_Piece_Statuse instance);
     partial void UpdateRodeo_Piece_Statuse(Rodeo_Piece_Statuse instance);
     partial void DeleteRodeo_Piece_Statuse(Rodeo_Piece_Statuse instance);
     partial void InsertRodeo_Piece_Type(Rodeo_Piece_Type instance);
     partial void UpdateRodeo_Piece_Type(Rodeo_Piece_Type instance);
     partial void DeleteRodeo_Piece_Type(Rodeo_Piece_Type instance);
-    partial void InsertHCM_Request_Signal_Request(HCM_Request_Signal_Request instance);
-    partial void UpdateHCM_Request_Signal_Request(HCM_Request_Signal_Request instance);
-    partial void DeleteHCM_Request_Signal_Request(HCM_Request_Signal_Request instance);
-    partial void InsertHCM_Path(HCM_Path instance);
-    partial void UpdateHCM_Path(HCM_Path instance);
-    partial void DeleteHCM_Path(HCM_Path instance);
-    partial void InsertHCM_Location_Range_Yard(HCM_Location_Range_Yard instance);
-    partial void UpdateHCM_Location_Range_Yard(HCM_Location_Range_Yard instance);
-    partial void DeleteHCM_Location_Range_Yard(HCM_Location_Range_Yard instance);
+    partial void InsertHSM_Request_Signal_Request(HSM_Request_Signal_Request instance);
+    partial void UpdateHSM_Request_Signal_Request(HSM_Request_Signal_Request instance);
+    partial void DeleteHSM_Request_Signal_Request(HSM_Request_Signal_Request instance);
+    partial void InsertHSM_Path(HSM_Path instance);
+    partial void UpdateHSM_Path(HSM_Path instance);
+    partial void DeleteHSM_Path(HSM_Path instance);
+    partial void InsertHSM_Location_Range_Yard(HSM_Location_Range_Yard instance);
+    partial void UpdateHSM_Location_Range_Yard(HSM_Location_Range_Yard instance);
+    partial void DeleteHSM_Location_Range_Yard(HSM_Location_Range_Yard instance);
     partial void InsertRodeo_Setting_Group(Rodeo_Setting_Group instance);
     partial void UpdateRodeo_Setting_Group(Rodeo_Setting_Group instance);
     partial void DeleteRodeo_Setting_Group(Rodeo_Setting_Group instance);
@@ -328,69 +328,69 @@ namespace HCM.Database
     partial void InsertRodeo_Yard(Rodeo_Yard instance);
     partial void UpdateRodeo_Yard(Rodeo_Yard instance);
     partial void DeleteRodeo_Yard(Rodeo_Yard instance);
-    partial void InsertHCM_Job_Yard_Transfer_Step(HCM_Job_Yard_Transfer_Step instance);
-    partial void UpdateHCM_Job_Yard_Transfer_Step(HCM_Job_Yard_Transfer_Step instance);
-    partial void DeleteHCM_Job_Yard_Transfer_Step(HCM_Job_Yard_Transfer_Step instance);
-    partial void InsertHCM_Job_Type_Route(HCM_Job_Type_Route instance);
-    partial void UpdateHCM_Job_Type_Route(HCM_Job_Type_Route instance);
-    partial void DeleteHCM_Job_Type_Route(HCM_Job_Type_Route instance);
+    partial void InsertHSM_Job_Yard_Transfer_Step(HSM_Job_Yard_Transfer_Step instance);
+    partial void UpdateHSM_Job_Yard_Transfer_Step(HSM_Job_Yard_Transfer_Step instance);
+    partial void DeleteHSM_Job_Yard_Transfer_Step(HSM_Job_Yard_Transfer_Step instance);
+    partial void InsertHSM_Job_Type_Route(HSM_Job_Type_Route instance);
+    partial void UpdateHSM_Job_Type_Route(HSM_Job_Type_Route instance);
+    partial void DeleteHSM_Job_Type_Route(HSM_Job_Type_Route instance);
     partial void InsertRodeo_TO_Notification(Rodeo_TO_Notification instance);
     partial void UpdateRodeo_TO_Notification(Rodeo_TO_Notification instance);
     partial void DeleteRodeo_TO_Notification(Rodeo_TO_Notification instance);
-    partial void InsertHCM_Pick_List_Groups(HCM_Pick_List_Groups instance);
-    partial void UpdateHCM_Pick_List_Groups(HCM_Pick_List_Groups instance);
-    partial void DeleteHCM_Pick_List_Groups(HCM_Pick_List_Groups instance);
-    partial void InsertHCM_Pick_Lists_Filters(HCM_Pick_Lists_Filters instance);
-    partial void UpdateHCM_Pick_Lists_Filters(HCM_Pick_Lists_Filters instance);
-    partial void DeleteHCM_Pick_Lists_Filters(HCM_Pick_Lists_Filters instance);
-    partial void InsertHCM_Pick_List_Groups_Filters(HCM_Pick_List_Groups_Filters instance);
-    partial void UpdateHCM_Pick_List_Groups_Filters(HCM_Pick_List_Groups_Filters instance);
-    partial void DeleteHCM_Pick_List_Groups_Filters(HCM_Pick_List_Groups_Filters instance);
-    partial void InsertHCM_Pick_Lists(HCM_Pick_Lists instance);
-    partial void UpdateHCM_Pick_Lists(HCM_Pick_Lists instance);
-    partial void DeleteHCM_Pick_Lists(HCM_Pick_Lists instance);
+    partial void InsertHSM_Pick_List_Groups(HSM_Pick_List_Groups instance);
+    partial void UpdateHSM_Pick_List_Groups(HSM_Pick_List_Groups instance);
+    partial void DeleteHSM_Pick_List_Groups(HSM_Pick_List_Groups instance);
+    partial void InsertHSM_Pick_Lists_Filters(HSM_Pick_Lists_Filters instance);
+    partial void UpdateHSM_Pick_Lists_Filters(HSM_Pick_Lists_Filters instance);
+    partial void DeleteHSM_Pick_Lists_Filters(HSM_Pick_Lists_Filters instance);
+    partial void InsertHSM_Pick_List_Groups_Filters(HSM_Pick_List_Groups_Filters instance);
+    partial void UpdateHSM_Pick_List_Groups_Filters(HSM_Pick_List_Groups_Filters instance);
+    partial void DeleteHSM_Pick_List_Groups_Filters(HSM_Pick_List_Groups_Filters instance);
+    partial void InsertHSM_Pick_Lists(HSM_Pick_Lists instance);
+    partial void UpdateHSM_Pick_Lists(HSM_Pick_Lists instance);
+    partial void DeleteHSM_Pick_Lists(HSM_Pick_Lists instance);
     partial void InsertRodeo_Location(Rodeo_Location instance);
     partial void UpdateRodeo_Location(Rodeo_Location instance);
     partial void DeleteRodeo_Location(Rodeo_Location instance);
-    partial void InsertHCM_PLC_IO(HCM_PLC_IO instance);
-    partial void UpdateHCM_PLC_IO(HCM_PLC_IO instance);
-    partial void DeleteHCM_PLC_IO(HCM_PLC_IO instance);
-    partial void InsertHCM_File_Type(HCM_File_Type instance);
-    partial void UpdateHCM_File_Type(HCM_File_Type instance);
-    partial void DeleteHCM_File_Type(HCM_File_Type instance);
+    partial void InsertHSM_PLC_IO(HSM_PLC_IO instance);
+    partial void UpdateHSM_PLC_IO(HSM_PLC_IO instance);
+    partial void DeleteHSM_PLC_IO(HSM_PLC_IO instance);
+    partial void InsertHSM_File_Type(HSM_File_Type instance);
+    partial void UpdateHSM_File_Type(HSM_File_Type instance);
+    partial void DeleteHSM_File_Type(HSM_File_Type instance);
     partial void InsertRodeo_Position(Rodeo_Position instance);
     partial void UpdateRodeo_Position(Rodeo_Position instance);
     partial void DeleteRodeo_Position(Rodeo_Position instance);
-    partial void InsertHCM_RCP_Config(HCM_RCP_Config instance);
-    partial void UpdateHCM_RCP_Config(HCM_RCP_Config instance);
-    partial void DeleteHCM_RCP_Config(HCM_RCP_Config instance);
+    partial void InsertHSM_RCP_Config(HSM_RCP_Config instance);
+    partial void UpdateHSM_RCP_Config(HSM_RCP_Config instance);
+    partial void DeleteHSM_RCP_Config(HSM_RCP_Config instance);
     partial void InsertRodeo_TO_Route(Rodeo_TO_Route instance);
     partial void UpdateRodeo_TO_Route(Rodeo_TO_Route instance);
     partial void DeleteRodeo_TO_Route(Rodeo_TO_Route instance);
     partial void InsertRodeo_TO_Route_Step(Rodeo_TO_Route_Step instance);
     partial void UpdateRodeo_TO_Route_Step(Rodeo_TO_Route_Step instance);
     partial void DeleteRodeo_TO_Route_Step(Rodeo_TO_Route_Step instance);
-    partial void InsertHCM_Job(HCM_Job instance);
-    partial void UpdateHCM_Job(HCM_Job instance);
-    partial void DeleteHCM_Job(HCM_Job instance);
-    partial void InsertHCM_Machine_Failure(HCM_Machine_Failure instance);
-    partial void UpdateHCM_Machine_Failure(HCM_Machine_Failure instance);
-    partial void DeleteHCM_Machine_Failure(HCM_Machine_Failure instance);
-    partial void InsertHCM_Machine_Interlock(HCM_Machine_Interlock instance);
-    partial void UpdateHCM_Machine_Interlock(HCM_Machine_Interlock instance);
-    partial void DeleteHCM_Machine_Interlock(HCM_Machine_Interlock instance);
-    partial void InsertHCM_Hoist_WorkMode(HCM_Hoist_WorkMode instance);
-    partial void UpdateHCM_Hoist_WorkMode(HCM_Hoist_WorkMode instance);
-    partial void DeleteHCM_Hoist_WorkMode(HCM_Hoist_WorkMode instance);
-    partial void InsertHCM_Trolley_WorkMode(HCM_Trolley_WorkMode instance);
-    partial void UpdateHCM_Trolley_WorkMode(HCM_Trolley_WorkMode instance);
-    partial void DeleteHCM_Trolley_WorkMode(HCM_Trolley_WorkMode instance);
-    partial void InsertHCM_Grab_WorkMode(HCM_Grab_WorkMode instance);
-    partial void UpdateHCM_Grab_WorkMode(HCM_Grab_WorkMode instance);
-    partial void DeleteHCM_Grab_WorkMode(HCM_Grab_WorkMode instance);
-    partial void InsertHCM_Bridge_WorkMode(HCM_Bridge_WorkMode instance);
-    partial void UpdateHCM_Bridge_WorkMode(HCM_Bridge_WorkMode instance);
-    partial void DeleteHCM_Bridge_WorkMode(HCM_Bridge_WorkMode instance);
+    partial void InsertHSM_Job(HSM_Job instance);
+    partial void UpdateHSM_Job(HSM_Job instance);
+    partial void DeleteHSM_Job(HSM_Job instance);
+    partial void InsertHSM_Machine_Failure(HSM_Machine_Failure instance);
+    partial void UpdateHSM_Machine_Failure(HSM_Machine_Failure instance);
+    partial void DeleteHSM_Machine_Failure(HSM_Machine_Failure instance);
+    partial void InsertHSM_Machine_Interlock(HSM_Machine_Interlock instance);
+    partial void UpdateHSM_Machine_Interlock(HSM_Machine_Interlock instance);
+    partial void DeleteHSM_Machine_Interlock(HSM_Machine_Interlock instance);
+    partial void InsertHSM_Hoist_WorkMode(HSM_Hoist_WorkMode instance);
+    partial void UpdateHSM_Hoist_WorkMode(HSM_Hoist_WorkMode instance);
+    partial void DeleteHSM_Hoist_WorkMode(HSM_Hoist_WorkMode instance);
+    partial void InsertHSM_Trolley_WorkMode(HSM_Trolley_WorkMode instance);
+    partial void UpdateHSM_Trolley_WorkMode(HSM_Trolley_WorkMode instance);
+    partial void DeleteHSM_Trolley_WorkMode(HSM_Trolley_WorkMode instance);
+    partial void InsertHSM_Grab_WorkMode(HSM_Grab_WorkMode instance);
+    partial void UpdateHSM_Grab_WorkMode(HSM_Grab_WorkMode instance);
+    partial void DeleteHSM_Grab_WorkMode(HSM_Grab_WorkMode instance);
+    partial void InsertHSM_Bridge_WorkMode(HSM_Bridge_WorkMode instance);
+    partial void UpdateHSM_Bridge_WorkMode(HSM_Bridge_WorkMode instance);
+    partial void DeleteHSM_Bridge_WorkMode(HSM_Bridge_WorkMode instance);
     partial void InsertRodeo_Piece_Alloy_Family(Rodeo_Piece_Alloy_Family instance);
     partial void UpdateRodeo_Piece_Alloy_Family(Rodeo_Piece_Alloy_Family instance);
     partial void DeleteRodeo_Piece_Alloy_Family(Rodeo_Piece_Alloy_Family instance);
@@ -400,169 +400,169 @@ namespace HCM.Database
     partial void InsertRodeo_Piece(Rodeo_Piece instance);
     partial void UpdateRodeo_Piece(Rodeo_Piece instance);
     partial void DeleteRodeo_Piece(Rodeo_Piece instance);
-    partial void InsertHCM_File(HCM_File instance);
-    partial void UpdateHCM_File(HCM_File instance);
-    partial void DeleteHCM_File(HCM_File instance);
-    partial void InsertHCM_Troubleshooting_File(HCM_Troubleshooting_File instance);
-    partial void UpdateHCM_Troubleshooting_File(HCM_Troubleshooting_File instance);
-    partial void DeleteHCM_Troubleshooting_File(HCM_Troubleshooting_File instance);
+    partial void InsertHSM_File(HSM_File instance);
+    partial void UpdateHSM_File(HSM_File instance);
+    partial void DeleteHSM_File(HSM_File instance);
+    partial void InsertHSM_Troubleshooting_File(HSM_Troubleshooting_File instance);
+    partial void UpdateHSM_Troubleshooting_File(HSM_Troubleshooting_File instance);
+    partial void DeleteHSM_Troubleshooting_File(HSM_Troubleshooting_File instance);
     #endregion
 		
-		public HCMDataContext() : 
-				base(global::HCM.Database.Properties.Settings.Default.NOVISAIMSConnectionString2, mappingSource)
+		public HSMDataContext() : 
+				base(global::HSM.Database.Properties.Settings.Default.NOVISAIMSConnectionString2, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public HCMDataContext(string connection) : 
+		public HSMDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public HCMDataContext(System.Data.IDbConnection connection) : 
+		public HSMDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public HCMDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public HSMDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public HCMDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public HSMDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<HCM_Drive_Control> HCM_Drive_Controls
+		public System.Data.Linq.Table<HSM_Drive_Control> HSM_Drive_Controls
 		{
 			get
 			{
-				return this.GetTable<HCM_Drive_Control>();
+				return this.GetTable<HSM_Drive_Control>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Drive_Failure> HCM_Drive_Failures
+		public System.Data.Linq.Table<HSM_Drive_Failure> HSM_Drive_Failures
 		{
 			get
 			{
-				return this.GetTable<HCM_Drive_Failure>();
+				return this.GetTable<HSM_Drive_Failure>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Drive_Process> HCM_Drive_Processes
+		public System.Data.Linq.Table<HSM_Drive_Process> HSM_Drive_Processes
 		{
 			get
 			{
-				return this.GetTable<HCM_Drive_Process>();
+				return this.GetTable<HSM_Drive_Process>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Drive_Statuse> HCM_Drive_Statuses
+		public System.Data.Linq.Table<HSM_Drive_Statuse> HSM_Drive_Statuses
 		{
 			get
 			{
-				return this.GetTable<HCM_Drive_Statuse>();
+				return this.GetTable<HSM_Drive_Statuse>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Drive_Type> HCM_Drive_Types
+		public System.Data.Linq.Table<HSM_Drive_Type> HSM_Drive_Types
 		{
 			get
 			{
-				return this.GetTable<HCM_Drive_Type>();
+				return this.GetTable<HSM_Drive_Type>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Encoder_Control> HCM_Encoder_Controls
+		public System.Data.Linq.Table<HSM_Encoder_Control> HSM_Encoder_Controls
 		{
 			get
 			{
-				return this.GetTable<HCM_Encoder_Control>();
+				return this.GetTable<HSM_Encoder_Control>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Encoder_Failure> HCM_Encoder_Failures
+		public System.Data.Linq.Table<HSM_Encoder_Failure> HSM_Encoder_Failures
 		{
 			get
 			{
-				return this.GetTable<HCM_Encoder_Failure>();
+				return this.GetTable<HSM_Encoder_Failure>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Encoder_Process> HCM_Encoder_Processes
+		public System.Data.Linq.Table<HSM_Encoder_Process> HSM_Encoder_Processes
 		{
 			get
 			{
-				return this.GetTable<HCM_Encoder_Process>();
+				return this.GetTable<HSM_Encoder_Process>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Encoder_Statuse> HCM_Encoder_Statuses
+		public System.Data.Linq.Table<HSM_Encoder_Statuse> HSM_Encoder_Statuses
 		{
 			get
 			{
-				return this.GetTable<HCM_Encoder_Statuse>();
+				return this.GetTable<HSM_Encoder_Statuse>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Encoder_Type> HCM_Encoder_Types
+		public System.Data.Linq.Table<HSM_Encoder_Type> HSM_Encoder_Types
 		{
 			get
 			{
-				return this.GetTable<HCM_Encoder_Type>();
+				return this.GetTable<HSM_Encoder_Type>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Layout_Section_Machine> HCM_Layout_Section_Machines
+		public System.Data.Linq.Table<HSM_Layout_Section_Machine> HSM_Layout_Section_Machines
 		{
 			get
 			{
-				return this.GetTable<HCM_Layout_Section_Machine>();
+				return this.GetTable<HSM_Layout_Section_Machine>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Layout_Section> HCM_Layout_Sections
+		public System.Data.Linq.Table<HSM_Layout_Section> HSM_Layout_Sections
 		{
 			get
 			{
-				return this.GetTable<HCM_Layout_Section>();
+				return this.GetTable<HSM_Layout_Section>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Location_Group> HCM_Location_Groups
+		public System.Data.Linq.Table<HSM_Location_Group> HSM_Location_Groups
 		{
 			get
 			{
-				return this.GetTable<HCM_Location_Group>();
+				return this.GetTable<HSM_Location_Group>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Location_Range> HCM_Location_Ranges
+		public System.Data.Linq.Table<HSM_Location_Range> HSM_Location_Ranges
 		{
 			get
 			{
-				return this.GetTable<HCM_Location_Range>();
+				return this.GetTable<HSM_Location_Range>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Machine_Drive> HCM_Machine_Drives
+		public System.Data.Linq.Table<HSM_Machine_Drive> HSM_Machine_Drives
 		{
 			get
 			{
-				return this.GetTable<HCM_Machine_Drive>();
+				return this.GetTable<HSM_Machine_Drive>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Machine_Encoder> HCM_Machine_Encoders
+		public System.Data.Linq.Table<HSM_Machine_Encoder> HSM_Machine_Encoders
 		{
 			get
 			{
-				return this.GetTable<HCM_Machine_Encoder>();
+				return this.GetTable<HSM_Machine_Encoder>();
 			}
 		}
 		
@@ -646,75 +646,75 @@ namespace HCM.Database
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Incoming_Message> HCM_Incoming_Messages
+		public System.Data.Linq.Table<HSM_Incoming_Message> HSM_Incoming_Messages
 		{
 			get
 			{
-				return this.GetTable<HCM_Incoming_Message>();
+				return this.GetTable<HSM_Incoming_Message>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Machine_Event_Type> HCM_Machine_Event_Types
+		public System.Data.Linq.Table<HSM_Machine_Event_Type> HSM_Machine_Event_Types
 		{
 			get
 			{
-				return this.GetTable<HCM_Machine_Event_Type>();
+				return this.GetTable<HSM_Machine_Event_Type>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Machine_Event> HCM_Machine_Events
+		public System.Data.Linq.Table<HSM_Machine_Event> HSM_Machine_Events
 		{
 			get
 			{
-				return this.GetTable<HCM_Machine_Event>();
+				return this.GetTable<HSM_Machine_Event>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Message_Type> HCM_Message_Types
+		public System.Data.Linq.Table<HSM_Message_Type> HSM_Message_Types
 		{
 			get
 			{
-				return this.GetTable<HCM_Message_Type>();
+				return this.GetTable<HSM_Message_Type>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Outgoing_Message> HCM_Outgoing_Messages
+		public System.Data.Linq.Table<HSM_Outgoing_Message> HSM_Outgoing_Messages
 		{
 			get
 			{
-				return this.GetTable<HCM_Outgoing_Message>();
+				return this.GetTable<HSM_Outgoing_Message>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Piece_Event_Type> HCM_Piece_Event_Types
+		public System.Data.Linq.Table<HSM_Piece_Event_Type> HSM_Piece_Event_Types
 		{
 			get
 			{
-				return this.GetTable<HCM_Piece_Event_Type>();
+				return this.GetTable<HSM_Piece_Event_Type>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Piece_Event> HCM_Piece_Events
+		public System.Data.Linq.Table<HSM_Piece_Event> HSM_Piece_Events
 		{
 			get
 			{
-				return this.GetTable<HCM_Piece_Event>();
+				return this.GetTable<HSM_Piece_Event>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Zone_Event_Type> HCM_Zone_Event_Types
+		public System.Data.Linq.Table<HSM_Zone_Event_Type> HSM_Zone_Event_Types
 		{
 			get
 			{
-				return this.GetTable<HCM_Zone_Event_Type>();
+				return this.GetTable<HSM_Zone_Event_Type>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Zone_Event> HCM_Zone_Events
+		public System.Data.Linq.Table<HSM_Zone_Event> HSM_Zone_Events
 		{
 			get
 			{
-				return this.GetTable<HCM_Zone_Event>();
+				return this.GetTable<HSM_Zone_Event>();
 			}
 		}
 		
@@ -734,11 +734,11 @@ namespace HCM.Database
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Failures_History> HCM_Failures_Histories
+		public System.Data.Linq.Table<HSM_Failures_History> HSM_Failures_Histories
 		{
 			get
 			{
-				return this.GetTable<HCM_Failures_History>();
+				return this.GetTable<HSM_Failures_History>();
 			}
 		}
 		
@@ -766,211 +766,211 @@ namespace HCM.Database
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Ground_EStop_Failure> HCM_Ground_EStop_Failures
+		public System.Data.Linq.Table<HSM_Ground_EStop_Failure> HSM_Ground_EStop_Failures
 		{
 			get
 			{
-				return this.GetTable<HCM_Ground_EStop_Failure>();
+				return this.GetTable<HSM_Ground_EStop_Failure>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Ground_EStop_Group> HCM_Ground_EStop_Groups
+		public System.Data.Linq.Table<HSM_Ground_EStop_Group> HSM_Ground_EStop_Groups
 		{
 			get
 			{
-				return this.GetTable<HCM_Ground_EStop_Group>();
+				return this.GetTable<HSM_Ground_EStop_Group>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Ground_EStop_Interface> HCM_Ground_EStop_Interfaces
+		public System.Data.Linq.Table<HSM_Ground_EStop_Interface> HSM_Ground_EStop_Interfaces
 		{
 			get
 			{
-				return this.GetTable<HCM_Ground_EStop_Interface>();
+				return this.GetTable<HSM_Ground_EStop_Interface>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Ground_EStop_Panel> HCM_Ground_EStop_Panels
+		public System.Data.Linq.Table<HSM_Ground_EStop_Panel> HSM_Ground_EStop_Panels
 		{
 			get
 			{
-				return this.GetTable<HCM_Ground_EStop_Panel>();
+				return this.GetTable<HSM_Ground_EStop_Panel>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Ground_EStop_Request> HCM_Ground_EStop_Requests
+		public System.Data.Linq.Table<HSM_Ground_EStop_Request> HSM_Ground_EStop_Requests
 		{
 			get
 			{
-				return this.GetTable<HCM_Ground_EStop_Request>();
+				return this.GetTable<HSM_Ground_EStop_Request>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Machine_Exit_Zone> HCM_Machine_Exit_Zones
+		public System.Data.Linq.Table<HSM_Machine_Exit_Zone> HSM_Machine_Exit_Zones
 		{
 			get
 			{
-				return this.GetTable<HCM_Machine_Exit_Zone>();
+				return this.GetTable<HSM_Machine_Exit_Zone>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Machine_Interface> HCM_Machine_Interfaces
+		public System.Data.Linq.Table<HSM_Machine_Interface> HSM_Machine_Interfaces
 		{
 			get
 			{
-				return this.GetTable<HCM_Machine_Interface>();
+				return this.GetTable<HSM_Machine_Interface>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Request_Interlock> HCM_Request_Interlocks
+		public System.Data.Linq.Table<HSM_Request_Interlock> HSM_Request_Interlocks
 		{
 			get
 			{
-				return this.GetTable<HCM_Request_Interlock>();
+				return this.GetTable<HSM_Request_Interlock>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Request_Signal> HCM_Request_Signals
+		public System.Data.Linq.Table<HSM_Request_Signal> HSM_Request_Signals
 		{
 			get
 			{
-				return this.GetTable<HCM_Request_Signal>();
+				return this.GetTable<HSM_Request_Signal>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Request_Transport_Dependency> HCM_Request_Transport_Dependencies
+		public System.Data.Linq.Table<HSM_Request_Transport_Dependency> HSM_Request_Transport_Dependencies
 		{
 			get
 			{
-				return this.GetTable<HCM_Request_Transport_Dependency>();
+				return this.GetTable<HSM_Request_Transport_Dependency>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Request_Type_Signal> HCM_Request_Type_Signals
+		public System.Data.Linq.Table<HSM_Request_Type_Signal> HSM_Request_Type_Signals
 		{
 			get
 			{
-				return this.GetTable<HCM_Request_Type_Signal>();
+				return this.GetTable<HSM_Request_Type_Signal>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Request_Type> HCM_Request_Types
+		public System.Data.Linq.Table<HSM_Request_Type> HSM_Request_Types
 		{
 			get
 			{
-				return this.GetTable<HCM_Request_Type>();
+				return this.GetTable<HSM_Request_Type>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Request> HCM_Requests
+		public System.Data.Linq.Table<HSM_Request> HSM_Requests
 		{
 			get
 			{
-				return this.GetTable<HCM_Request>();
+				return this.GetTable<HSM_Request>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Zone_Dependency> HCM_Zone_Dependencies
+		public System.Data.Linq.Table<HSM_Zone_Dependency> HSM_Zone_Dependencies
 		{
 			get
 			{
-				return this.GetTable<HCM_Zone_Dependency>();
+				return this.GetTable<HSM_Zone_Dependency>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Zone_Fence> HCM_Zone_Fences
+		public System.Data.Linq.Table<HSM_Zone_Fence> HSM_Zone_Fences
 		{
 			get
 			{
-				return this.GetTable<HCM_Zone_Fence>();
+				return this.GetTable<HSM_Zone_Fence>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Zone_Interlock> HCM_Zone_Interlocks
+		public System.Data.Linq.Table<HSM_Zone_Interlock> HSM_Zone_Interlocks
 		{
 			get
 			{
-				return this.GetTable<HCM_Zone_Interlock>();
+				return this.GetTable<HSM_Zone_Interlock>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Zone_Machine> HCM_Zone_Machines
+		public System.Data.Linq.Table<HSM_Zone_Machine> HSM_Zone_Machines
 		{
 			get
 			{
-				return this.GetTable<HCM_Zone_Machine>();
+				return this.GetTable<HSM_Zone_Machine>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Zone_Section> HCM_Zone_Sections
+		public System.Data.Linq.Table<HSM_Zone_Section> HSM_Zone_Sections
 		{
 			get
 			{
-				return this.GetTable<HCM_Zone_Section>();
+				return this.GetTable<HSM_Zone_Section>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Zone_Type> HCM_Zone_Types
+		public System.Data.Linq.Table<HSM_Zone_Type> HSM_Zone_Types
 		{
 			get
 			{
-				return this.GetTable<HCM_Zone_Type>();
+				return this.GetTable<HSM_Zone_Type>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Zone> HCM_Zones
+		public System.Data.Linq.Table<HSM_Zone> HSM_Zones
 		{
 			get
 			{
-				return this.GetTable<HCM_Zone>();
+				return this.GetTable<HSM_Zone>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_PLC_Module> HCM_PLC_Modules
+		public System.Data.Linq.Table<HSM_PLC_Module> HSM_PLC_Modules
 		{
 			get
 			{
-				return this.GetTable<HCM_PLC_Module>();
+				return this.GetTable<HSM_PLC_Module>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_PLC_Rack> HCM_PLC_Racks
+		public System.Data.Linq.Table<HSM_PLC_Rack> HSM_PLC_Racks
 		{
 			get
 			{
-				return this.GetTable<HCM_PLC_Rack>();
+				return this.GetTable<HSM_PLC_Rack>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_PLC_VIO> HCM_PLC_VIOs
+		public System.Data.Linq.Table<HSM_PLC_VIO> HSM_PLC_VIOs
 		{
 			get
 			{
-				return this.GetTable<HCM_PLC_VIO>();
+				return this.GetTable<HSM_PLC_VIO>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_PLC> HCM_PLCs
+		public System.Data.Linq.Table<HSM_PLC> HSM_PLCs
 		{
 			get
 			{
-				return this.GetTable<HCM_PLC>();
+				return this.GetTable<HSM_PLC>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Setting_Value> HCM_Setting_Values
+		public System.Data.Linq.Table<HSM_Setting_Value> HSM_Setting_Values
 		{
 			get
 			{
-				return this.GetTable<HCM_Setting_Value>();
+				return this.GetTable<HSM_Setting_Value>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Troubleshooting_Reference> HCM_Troubleshooting_References
+		public System.Data.Linq.Table<HSM_Troubleshooting_Reference> HSM_Troubleshooting_References
 		{
 			get
 			{
-				return this.GetTable<HCM_Troubleshooting_Reference>();
+				return this.GetTable<HSM_Troubleshooting_Reference>();
 			}
 		}
 		
@@ -1022,59 +1022,59 @@ namespace HCM.Database
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Destination_Next_Piece> HCM_Destination_Next_Pieces
+		public System.Data.Linq.Table<HSM_Destination_Next_Piece> HSM_Destination_Next_Pieces
 		{
 			get
 			{
-				return this.GetTable<HCM_Destination_Next_Piece>();
+				return this.GetTable<HSM_Destination_Next_Piece>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Job_Forecast> HCM_Job_Forecasts
+		public System.Data.Linq.Table<HSM_Job_Forecast> HSM_Job_Forecasts
 		{
 			get
 			{
-				return this.GetTable<HCM_Job_Forecast>();
+				return this.GetTable<HSM_Job_Forecast>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Job_Type> HCM_Job_Types
+		public System.Data.Linq.Table<HSM_Job_Type> HSM_Job_Types
 		{
 			get
 			{
-				return this.GetTable<HCM_Job_Type>();
+				return this.GetTable<HSM_Job_Type>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Machine_Exit_Location> HCM_Machine_Exit_Locations
+		public System.Data.Linq.Table<HSM_Machine_Exit_Location> HSM_Machine_Exit_Locations
 		{
 			get
 			{
-				return this.GetTable<HCM_Machine_Exit_Location>();
+				return this.GetTable<HSM_Machine_Exit_Location>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_RCP_ErrorCode> HCM_RCP_ErrorCodes
+		public System.Data.Linq.Table<HSM_RCP_ErrorCode> HSM_RCP_ErrorCodes
 		{
 			get
 			{
-				return this.GetTable<HCM_RCP_ErrorCode>();
+				return this.GetTable<HSM_RCP_ErrorCode>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_RCP_Flag> HCM_RCP_Flags
+		public System.Data.Linq.Table<HSM_RCP_Flag> HSM_RCP_Flags
 		{
 			get
 			{
-				return this.GetTable<HCM_RCP_Flag>();
+				return this.GetTable<HSM_RCP_Flag>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_RCP_OperationMode> HCM_RCP_OperationModes
+		public System.Data.Linq.Table<HSM_RCP_OperationMode> HSM_RCP_OperationModes
 		{
 			get
 			{
-				return this.GetTable<HCM_RCP_OperationMode>();
+				return this.GetTable<HSM_RCP_OperationMode>();
 			}
 		}
 		
@@ -1158,11 +1158,11 @@ namespace HCM.Database
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_HoldOn_Reason> HCM_HoldOn_Reasons
+		public System.Data.Linq.Table<HSM_HoldOn_Reason> HSM_HoldOn_Reasons
 		{
 			get
 			{
-				return this.GetTable<HCM_HoldOn_Reason>();
+				return this.GetTable<HSM_HoldOn_Reason>();
 			}
 		}
 		
@@ -1182,27 +1182,27 @@ namespace HCM.Database
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Request_Signal_Request> HCM_Request_Signal_Requests
+		public System.Data.Linq.Table<HSM_Request_Signal_Request> HSM_Request_Signal_Requests
 		{
 			get
 			{
-				return this.GetTable<HCM_Request_Signal_Request>();
+				return this.GetTable<HSM_Request_Signal_Request>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Path> HCM_Paths
+		public System.Data.Linq.Table<HSM_Path> HSM_Paths
 		{
 			get
 			{
-				return this.GetTable<HCM_Path>();
+				return this.GetTable<HSM_Path>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Location_Range_Yard> HCM_Location_Range_Yards
+		public System.Data.Linq.Table<HSM_Location_Range_Yard> HSM_Location_Range_Yards
 		{
 			get
 			{
-				return this.GetTable<HCM_Location_Range_Yard>();
+				return this.GetTable<HSM_Location_Range_Yard>();
 			}
 		}
 		
@@ -1230,19 +1230,19 @@ namespace HCM.Database
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Job_Yard_Transfer_Step> HCM_Job_Yard_Transfer_Steps
+		public System.Data.Linq.Table<HSM_Job_Yard_Transfer_Step> HSM_Job_Yard_Transfer_Steps
 		{
 			get
 			{
-				return this.GetTable<HCM_Job_Yard_Transfer_Step>();
+				return this.GetTable<HSM_Job_Yard_Transfer_Step>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Job_Type_Route> HCM_Job_Type_Routes
+		public System.Data.Linq.Table<HSM_Job_Type_Route> HSM_Job_Type_Routes
 		{
 			get
 			{
-				return this.GetTable<HCM_Job_Type_Route>();
+				return this.GetTable<HSM_Job_Type_Route>();
 			}
 		}
 		
@@ -1254,51 +1254,51 @@ namespace HCM.Database
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Pick_List_Groups> HCM_Pick_List_Groups
+		public System.Data.Linq.Table<HSM_Pick_List_Groups> HSM_Pick_List_Groups
 		{
 			get
 			{
-				return this.GetTable<HCM_Pick_List_Groups>();
+				return this.GetTable<HSM_Pick_List_Groups>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Pick_Lists_Filters> HCM_Pick_Lists_Filters
+		public System.Data.Linq.Table<HSM_Pick_Lists_Filters> HSM_Pick_Lists_Filters
 		{
 			get
 			{
-				return this.GetTable<HCM_Pick_Lists_Filters>();
+				return this.GetTable<HSM_Pick_Lists_Filters>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Pick_List_Groups_Filters> HCM_Pick_List_Groups_Filters
+		public System.Data.Linq.Table<HSM_Pick_List_Groups_Filters> HSM_Pick_List_Groups_Filters
 		{
 			get
 			{
-				return this.GetTable<HCM_Pick_List_Groups_Filters>();
+				return this.GetTable<HSM_Pick_List_Groups_Filters>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Pick_Lists> HCM_Pick_Lists
+		public System.Data.Linq.Table<HSM_Pick_Lists> HSM_Pick_Lists
 		{
 			get
 			{
-				return this.GetTable<HCM_Pick_Lists>();
+				return this.GetTable<HSM_Pick_Lists>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Pick_List_Groups_All> HCM_Pick_List_Groups_All
+		public System.Data.Linq.Table<HSM_Pick_List_Groups_All> HSM_Pick_List_Groups_All
 		{
 			get
 			{
-				return this.GetTable<HCM_Pick_List_Groups_All>();
+				return this.GetTable<HSM_Pick_List_Groups_All>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Pick_Lists_All> HCM_Pick_Lists_All
+		public System.Data.Linq.Table<HSM_Pick_Lists_All> HSM_Pick_Lists_All
 		{
 			get
 			{
-				return this.GetTable<HCM_Pick_Lists_All>();
+				return this.GetTable<HSM_Pick_Lists_All>();
 			}
 		}
 		
@@ -1310,19 +1310,19 @@ namespace HCM.Database
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_PLC_IO> HCM_PLC_IOs
+		public System.Data.Linq.Table<HSM_PLC_IO> HSM_PLC_IOs
 		{
 			get
 			{
-				return this.GetTable<HCM_PLC_IO>();
+				return this.GetTable<HSM_PLC_IO>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_File_Type> HCM_File_Types
+		public System.Data.Linq.Table<HSM_File_Type> HSM_File_Types
 		{
 			get
 			{
-				return this.GetTable<HCM_File_Type>();
+				return this.GetTable<HSM_File_Type>();
 			}
 		}
 		
@@ -1334,11 +1334,11 @@ namespace HCM.Database
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_RCP_Config> HCM_RCP_Config
+		public System.Data.Linq.Table<HSM_RCP_Config> HSM_RCP_Config
 		{
 			get
 			{
-				return this.GetTable<HCM_RCP_Config>();
+				return this.GetTable<HSM_RCP_Config>();
 			}
 		}
 		
@@ -1358,59 +1358,59 @@ namespace HCM.Database
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Job> HCM_Jobs
+		public System.Data.Linq.Table<HSM_Job> HSM_Jobs
 		{
 			get
 			{
-				return this.GetTable<HCM_Job>();
+				return this.GetTable<HSM_Job>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Machine_Failure> HCM_Machine_Failures
+		public System.Data.Linq.Table<HSM_Machine_Failure> HSM_Machine_Failures
 		{
 			get
 			{
-				return this.GetTable<HCM_Machine_Failure>();
+				return this.GetTable<HSM_Machine_Failure>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Machine_Interlock> HCM_Machine_Interlocks
+		public System.Data.Linq.Table<HSM_Machine_Interlock> HSM_Machine_Interlocks
 		{
 			get
 			{
-				return this.GetTable<HCM_Machine_Interlock>();
+				return this.GetTable<HSM_Machine_Interlock>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Hoist_WorkMode> HCM_Hoist_WorkModes
+		public System.Data.Linq.Table<HSM_Hoist_WorkMode> HSM_Hoist_WorkModes
 		{
 			get
 			{
-				return this.GetTable<HCM_Hoist_WorkMode>();
+				return this.GetTable<HSM_Hoist_WorkMode>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Trolley_WorkMode> HCM_Trolley_WorkModes
+		public System.Data.Linq.Table<HSM_Trolley_WorkMode> HSM_Trolley_WorkModes
 		{
 			get
 			{
-				return this.GetTable<HCM_Trolley_WorkMode>();
+				return this.GetTable<HSM_Trolley_WorkMode>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Grab_WorkMode> HCM_Grab_WorkModes
+		public System.Data.Linq.Table<HSM_Grab_WorkMode> HSM_Grab_WorkModes
 		{
 			get
 			{
-				return this.GetTable<HCM_Grab_WorkMode>();
+				return this.GetTable<HSM_Grab_WorkMode>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Bridge_WorkMode> HCM_Bridge_WorkModes
+		public System.Data.Linq.Table<HSM_Bridge_WorkMode> HSM_Bridge_WorkModes
 		{
 			get
 			{
-				return this.GetTable<HCM_Bridge_WorkMode>();
+				return this.GetTable<HSM_Bridge_WorkMode>();
 			}
 		}
 		
@@ -1438,19 +1438,19 @@ namespace HCM.Database
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_File> HCM_Files
+		public System.Data.Linq.Table<HSM_File> HSM_Files
 		{
 			get
 			{
-				return this.GetTable<HCM_File>();
+				return this.GetTable<HSM_File>();
 			}
 		}
 		
-		public System.Data.Linq.Table<HCM_Troubleshooting_File> HCM_Troubleshooting_Files
+		public System.Data.Linq.Table<HSM_Troubleshooting_File> HSM_Troubleshooting_Files
 		{
 			get
 			{
-				return this.GetTable<HCM_Troubleshooting_File>();
+				return this.GetTable<HSM_Troubleshooting_File>();
 			}
 		}
 		
@@ -1471,9 +1471,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Drive_Control")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Drive_Control")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Drive_Control : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Drive_Control : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -1498,7 +1498,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Drive_Type> _HCM_Drive_Type;
+		private EntityRef<HSM_Drive_Type> _HSM_Drive_Type;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -1526,7 +1526,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Drive_Control()
+		public HSM_Drive_Control()
 		{
 			this.Initialize();
 		}
@@ -1564,7 +1564,7 @@ namespace HCM.Database
 			{
 				if ((this._IdDriveType != value))
 				{
-					if (this._HCM_Drive_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Drive_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -1745,36 +1745,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Drive_Type_HCM_Drive_Control", Storage="_HCM_Drive_Type", ThisKey="IdDriveType", OtherKey="IdDriveType", IsForeignKey=true)]
-		public HCM_Drive_Type HCM_Drive_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Drive_Type_HSM_Drive_Control", Storage="_HSM_Drive_Type", ThisKey="IdDriveType", OtherKey="IdDriveType", IsForeignKey=true)]
+		public HSM_Drive_Type HSM_Drive_Type
 		{
 			get
 			{
-				return this._HCM_Drive_Type.Entity;
+				return this._HSM_Drive_Type.Entity;
 			}
 			set
 			{
-				HCM_Drive_Type previousValue = this._HCM_Drive_Type.Entity;
+				HSM_Drive_Type previousValue = this._HSM_Drive_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Drive_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Drive_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Drive_Type.Entity = null;
-						previousValue.HCM_Drive_Controls.Remove(this);
+						this._HSM_Drive_Type.Entity = null;
+						previousValue.HSM_Drive_Controls.Remove(this);
 					}
-					this._HCM_Drive_Type.Entity = value;
+					this._HSM_Drive_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Drive_Controls.Add(this);
+						value.HSM_Drive_Controls.Add(this);
 						this._IdDriveType = value.IdDriveType;
 					}
 					else
 					{
 						this._IdDriveType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Drive_Type");
+					this.SendPropertyChanged("HSM_Drive_Type");
 				}
 			}
 		}
@@ -1801,7 +1801,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Drive_Type = default(EntityRef<HCM_Drive_Type>);
+			this._HSM_Drive_Type = default(EntityRef<HSM_Drive_Type>);
 			OnCreated();
 		}
 		
@@ -1813,9 +1813,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Drive_Failures")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Drive_Failures")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Drive_Failure : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Drive_Failure : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -1842,7 +1842,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Drive_Type> _HCM_Drive_Type;
+		private EntityRef<HSM_Drive_Type> _HSM_Drive_Type;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -1872,7 +1872,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Drive_Failure()
+		public HSM_Drive_Failure()
 		{
 			this.Initialize();
 		}
@@ -1910,7 +1910,7 @@ namespace HCM.Database
 			{
 				if ((this._IdDriveType != value))
 				{
-					if (this._HCM_Drive_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Drive_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -2112,36 +2112,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Drive_Type_HCM_Drive_Failure", Storage="_HCM_Drive_Type", ThisKey="IdDriveType", OtherKey="IdDriveType", IsForeignKey=true)]
-		public HCM_Drive_Type HCM_Drive_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Drive_Type_HSM_Drive_Failure", Storage="_HSM_Drive_Type", ThisKey="IdDriveType", OtherKey="IdDriveType", IsForeignKey=true)]
+		public HSM_Drive_Type HSM_Drive_Type
 		{
 			get
 			{
-				return this._HCM_Drive_Type.Entity;
+				return this._HSM_Drive_Type.Entity;
 			}
 			set
 			{
-				HCM_Drive_Type previousValue = this._HCM_Drive_Type.Entity;
+				HSM_Drive_Type previousValue = this._HSM_Drive_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Drive_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Drive_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Drive_Type.Entity = null;
-						previousValue.HCM_Drive_Failures.Remove(this);
+						this._HSM_Drive_Type.Entity = null;
+						previousValue.HSM_Drive_Failures.Remove(this);
 					}
-					this._HCM_Drive_Type.Entity = value;
+					this._HSM_Drive_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Drive_Failures.Add(this);
+						value.HSM_Drive_Failures.Add(this);
 						this._IdDriveType = value.IdDriveType;
 					}
 					else
 					{
 						this._IdDriveType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Drive_Type");
+					this.SendPropertyChanged("HSM_Drive_Type");
 				}
 			}
 		}
@@ -2168,7 +2168,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Drive_Type = default(EntityRef<HCM_Drive_Type>);
+			this._HSM_Drive_Type = default(EntityRef<HSM_Drive_Type>);
 			OnCreated();
 		}
 		
@@ -2180,9 +2180,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Drive_Process")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Drive_Process")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Drive_Process : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Drive_Process : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -2203,7 +2203,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Drive_Type> _HCM_Drive_Type;
+		private EntityRef<HSM_Drive_Type> _HSM_Drive_Type;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -2227,7 +2227,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Drive_Process()
+		public HSM_Drive_Process()
 		{
 			this.Initialize();
 		}
@@ -2265,7 +2265,7 @@ namespace HCM.Database
 			{
 				if ((this._IdDriveType != value))
 				{
-					if (this._HCM_Drive_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Drive_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -2404,36 +2404,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Drive_Type_HCM_Drive_Process", Storage="_HCM_Drive_Type", ThisKey="IdDriveType", OtherKey="IdDriveType", IsForeignKey=true)]
-		public HCM_Drive_Type HCM_Drive_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Drive_Type_HSM_Drive_Process", Storage="_HSM_Drive_Type", ThisKey="IdDriveType", OtherKey="IdDriveType", IsForeignKey=true)]
+		public HSM_Drive_Type HSM_Drive_Type
 		{
 			get
 			{
-				return this._HCM_Drive_Type.Entity;
+				return this._HSM_Drive_Type.Entity;
 			}
 			set
 			{
-				HCM_Drive_Type previousValue = this._HCM_Drive_Type.Entity;
+				HSM_Drive_Type previousValue = this._HSM_Drive_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Drive_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Drive_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Drive_Type.Entity = null;
-						previousValue.HCM_Drive_Processes.Remove(this);
+						this._HSM_Drive_Type.Entity = null;
+						previousValue.HSM_Drive_Processes.Remove(this);
 					}
-					this._HCM_Drive_Type.Entity = value;
+					this._HSM_Drive_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Drive_Processes.Add(this);
+						value.HSM_Drive_Processes.Add(this);
 						this._IdDriveType = value.IdDriveType;
 					}
 					else
 					{
 						this._IdDriveType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Drive_Type");
+					this.SendPropertyChanged("HSM_Drive_Type");
 				}
 			}
 		}
@@ -2460,7 +2460,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Drive_Type = default(EntityRef<HCM_Drive_Type>);
+			this._HSM_Drive_Type = default(EntityRef<HSM_Drive_Type>);
 			OnCreated();
 		}
 		
@@ -2472,9 +2472,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Drive_Statuses")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Drive_Statuses")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Drive_Statuse : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Drive_Statuse : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -2499,7 +2499,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Drive_Type> _HCM_Drive_Type;
+		private EntityRef<HSM_Drive_Type> _HSM_Drive_Type;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -2527,7 +2527,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Drive_Statuse()
+		public HSM_Drive_Statuse()
 		{
 			this.Initialize();
 		}
@@ -2565,7 +2565,7 @@ namespace HCM.Database
 			{
 				if ((this._IdDriveType != value))
 				{
-					if (this._HCM_Drive_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Drive_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -2746,36 +2746,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Drive_Type_HCM_Drive_Statuse", Storage="_HCM_Drive_Type", ThisKey="IdDriveType", OtherKey="IdDriveType", IsForeignKey=true)]
-		public HCM_Drive_Type HCM_Drive_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Drive_Type_HSM_Drive_Statuse", Storage="_HSM_Drive_Type", ThisKey="IdDriveType", OtherKey="IdDriveType", IsForeignKey=true)]
+		public HSM_Drive_Type HSM_Drive_Type
 		{
 			get
 			{
-				return this._HCM_Drive_Type.Entity;
+				return this._HSM_Drive_Type.Entity;
 			}
 			set
 			{
-				HCM_Drive_Type previousValue = this._HCM_Drive_Type.Entity;
+				HSM_Drive_Type previousValue = this._HSM_Drive_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Drive_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Drive_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Drive_Type.Entity = null;
-						previousValue.HCM_Drive_Statuses.Remove(this);
+						this._HSM_Drive_Type.Entity = null;
+						previousValue.HSM_Drive_Statuses.Remove(this);
 					}
-					this._HCM_Drive_Type.Entity = value;
+					this._HSM_Drive_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Drive_Statuses.Add(this);
+						value.HSM_Drive_Statuses.Add(this);
 						this._IdDriveType = value.IdDriveType;
 					}
 					else
 					{
 						this._IdDriveType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Drive_Type");
+					this.SendPropertyChanged("HSM_Drive_Type");
 				}
 			}
 		}
@@ -2802,7 +2802,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Drive_Type = default(EntityRef<HCM_Drive_Type>);
+			this._HSM_Drive_Type = default(EntityRef<HSM_Drive_Type>);
 			OnCreated();
 		}
 		
@@ -2814,9 +2814,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Drive_Types")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Drive_Types")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Drive_Type : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Drive_Type : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -2829,15 +2829,15 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Drive_Control> _HCM_Drive_Controls;
+		private EntitySet<HSM_Drive_Control> _HSM_Drive_Controls;
 		
-		private EntitySet<HCM_Drive_Failure> _HCM_Drive_Failures;
+		private EntitySet<HSM_Drive_Failure> _HSM_Drive_Failures;
 		
-		private EntitySet<HCM_Drive_Process> _HCM_Drive_Processes;
+		private EntitySet<HSM_Drive_Process> _HSM_Drive_Processes;
 		
-		private EntitySet<HCM_Drive_Statuse> _HCM_Drive_Statuses;
+		private EntitySet<HSM_Drive_Statuse> _HSM_Drive_Statuses;
 		
-		private EntitySet<HCM_Machine_Drive> _HCM_Machine_Drives;
+		private EntitySet<HSM_Machine_Drive> _HSM_Machine_Drives;
 		
 		private bool serializing;
 		
@@ -2855,7 +2855,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Drive_Type()
+		public HSM_Drive_Type()
 		{
 			this.Initialize();
 		}
@@ -2944,98 +2944,98 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Drive_Type_HCM_Drive_Control", Storage="_HCM_Drive_Controls", ThisKey="IdDriveType", OtherKey="IdDriveType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Drive_Type_HSM_Drive_Control", Storage="_HSM_Drive_Controls", ThisKey="IdDriveType", OtherKey="IdDriveType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=5, EmitDefaultValue=false)]
-		public EntitySet<HCM_Drive_Control> HCM_Drive_Controls
+		public EntitySet<HSM_Drive_Control> HSM_Drive_Controls
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Drive_Controls.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Drive_Controls.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Drive_Controls;
+				return this._HSM_Drive_Controls;
 			}
 			set
 			{
-				this._HCM_Drive_Controls.Assign(value);
+				this._HSM_Drive_Controls.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Drive_Type_HCM_Drive_Failure", Storage="_HCM_Drive_Failures", ThisKey="IdDriveType", OtherKey="IdDriveType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Drive_Type_HSM_Drive_Failure", Storage="_HSM_Drive_Failures", ThisKey="IdDriveType", OtherKey="IdDriveType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=6, EmitDefaultValue=false)]
-		public EntitySet<HCM_Drive_Failure> HCM_Drive_Failures
+		public EntitySet<HSM_Drive_Failure> HSM_Drive_Failures
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Drive_Failures.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Drive_Failures.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Drive_Failures;
+				return this._HSM_Drive_Failures;
 			}
 			set
 			{
-				this._HCM_Drive_Failures.Assign(value);
+				this._HSM_Drive_Failures.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Drive_Type_HCM_Drive_Process", Storage="_HCM_Drive_Processes", ThisKey="IdDriveType", OtherKey="IdDriveType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Drive_Type_HSM_Drive_Process", Storage="_HSM_Drive_Processes", ThisKey="IdDriveType", OtherKey="IdDriveType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=7, EmitDefaultValue=false)]
-		public EntitySet<HCM_Drive_Process> HCM_Drive_Processes
+		public EntitySet<HSM_Drive_Process> HSM_Drive_Processes
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Drive_Processes.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Drive_Processes.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Drive_Processes;
+				return this._HSM_Drive_Processes;
 			}
 			set
 			{
-				this._HCM_Drive_Processes.Assign(value);
+				this._HSM_Drive_Processes.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Drive_Type_HCM_Drive_Statuse", Storage="_HCM_Drive_Statuses", ThisKey="IdDriveType", OtherKey="IdDriveType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Drive_Type_HSM_Drive_Statuse", Storage="_HSM_Drive_Statuses", ThisKey="IdDriveType", OtherKey="IdDriveType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=8, EmitDefaultValue=false)]
-		public EntitySet<HCM_Drive_Statuse> HCM_Drive_Statuses
+		public EntitySet<HSM_Drive_Statuse> HSM_Drive_Statuses
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Drive_Statuses.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Drive_Statuses.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Drive_Statuses;
+				return this._HSM_Drive_Statuses;
 			}
 			set
 			{
-				this._HCM_Drive_Statuses.Assign(value);
+				this._HSM_Drive_Statuses.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Drive_Type_HCM_Machine_Drive", Storage="_HCM_Machine_Drives", ThisKey="IdDriveType", OtherKey="IdDriveType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Drive_Type_HSM_Machine_Drive", Storage="_HSM_Machine_Drives", ThisKey="IdDriveType", OtherKey="IdDriveType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=9, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Drive> HCM_Machine_Drives
+		public EntitySet<HSM_Machine_Drive> HSM_Machine_Drives
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Drives.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Drives.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Drives;
+				return this._HSM_Machine_Drives;
 			}
 			set
 			{
-				this._HCM_Machine_Drives.Assign(value);
+				this._HSM_Machine_Drives.Assign(value);
 			}
 		}
 		
@@ -3059,73 +3059,73 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Drive_Controls(HCM_Drive_Control entity)
+		private void attach_HSM_Drive_Controls(HSM_Drive_Control entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Drive_Type = this;
+			entity.HSM_Drive_Type = this;
 		}
 		
-		private void detach_HCM_Drive_Controls(HCM_Drive_Control entity)
+		private void detach_HSM_Drive_Controls(HSM_Drive_Control entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Drive_Type = null;
+			entity.HSM_Drive_Type = null;
 		}
 		
-		private void attach_HCM_Drive_Failures(HCM_Drive_Failure entity)
+		private void attach_HSM_Drive_Failures(HSM_Drive_Failure entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Drive_Type = this;
+			entity.HSM_Drive_Type = this;
 		}
 		
-		private void detach_HCM_Drive_Failures(HCM_Drive_Failure entity)
+		private void detach_HSM_Drive_Failures(HSM_Drive_Failure entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Drive_Type = null;
+			entity.HSM_Drive_Type = null;
 		}
 		
-		private void attach_HCM_Drive_Processes(HCM_Drive_Process entity)
+		private void attach_HSM_Drive_Processes(HSM_Drive_Process entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Drive_Type = this;
+			entity.HSM_Drive_Type = this;
 		}
 		
-		private void detach_HCM_Drive_Processes(HCM_Drive_Process entity)
+		private void detach_HSM_Drive_Processes(HSM_Drive_Process entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Drive_Type = null;
+			entity.HSM_Drive_Type = null;
 		}
 		
-		private void attach_HCM_Drive_Statuses(HCM_Drive_Statuse entity)
+		private void attach_HSM_Drive_Statuses(HSM_Drive_Statuse entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Drive_Type = this;
+			entity.HSM_Drive_Type = this;
 		}
 		
-		private void detach_HCM_Drive_Statuses(HCM_Drive_Statuse entity)
+		private void detach_HSM_Drive_Statuses(HSM_Drive_Statuse entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Drive_Type = null;
+			entity.HSM_Drive_Type = null;
 		}
 		
-		private void attach_HCM_Machine_Drives(HCM_Machine_Drive entity)
+		private void attach_HSM_Machine_Drives(HSM_Machine_Drive entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Drive_Type = this;
+			entity.HSM_Drive_Type = this;
 		}
 		
-		private void detach_HCM_Machine_Drives(HCM_Machine_Drive entity)
+		private void detach_HSM_Machine_Drives(HSM_Machine_Drive entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Drive_Type = null;
+			entity.HSM_Drive_Type = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Drive_Controls = new EntitySet<HCM_Drive_Control>(new Action<HCM_Drive_Control>(this.attach_HCM_Drive_Controls), new Action<HCM_Drive_Control>(this.detach_HCM_Drive_Controls));
-			this._HCM_Drive_Failures = new EntitySet<HCM_Drive_Failure>(new Action<HCM_Drive_Failure>(this.attach_HCM_Drive_Failures), new Action<HCM_Drive_Failure>(this.detach_HCM_Drive_Failures));
-			this._HCM_Drive_Processes = new EntitySet<HCM_Drive_Process>(new Action<HCM_Drive_Process>(this.attach_HCM_Drive_Processes), new Action<HCM_Drive_Process>(this.detach_HCM_Drive_Processes));
-			this._HCM_Drive_Statuses = new EntitySet<HCM_Drive_Statuse>(new Action<HCM_Drive_Statuse>(this.attach_HCM_Drive_Statuses), new Action<HCM_Drive_Statuse>(this.detach_HCM_Drive_Statuses));
-			this._HCM_Machine_Drives = new EntitySet<HCM_Machine_Drive>(new Action<HCM_Machine_Drive>(this.attach_HCM_Machine_Drives), new Action<HCM_Machine_Drive>(this.detach_HCM_Machine_Drives));
+			this._HSM_Drive_Controls = new EntitySet<HSM_Drive_Control>(new Action<HSM_Drive_Control>(this.attach_HSM_Drive_Controls), new Action<HSM_Drive_Control>(this.detach_HSM_Drive_Controls));
+			this._HSM_Drive_Failures = new EntitySet<HSM_Drive_Failure>(new Action<HSM_Drive_Failure>(this.attach_HSM_Drive_Failures), new Action<HSM_Drive_Failure>(this.detach_HSM_Drive_Failures));
+			this._HSM_Drive_Processes = new EntitySet<HSM_Drive_Process>(new Action<HSM_Drive_Process>(this.attach_HSM_Drive_Processes), new Action<HSM_Drive_Process>(this.detach_HSM_Drive_Processes));
+			this._HSM_Drive_Statuses = new EntitySet<HSM_Drive_Statuse>(new Action<HSM_Drive_Statuse>(this.attach_HSM_Drive_Statuses), new Action<HSM_Drive_Statuse>(this.detach_HSM_Drive_Statuses));
+			this._HSM_Machine_Drives = new EntitySet<HSM_Machine_Drive>(new Action<HSM_Machine_Drive>(this.attach_HSM_Machine_Drives), new Action<HSM_Machine_Drive>(this.detach_HSM_Machine_Drives));
 			OnCreated();
 		}
 		
@@ -3151,9 +3151,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Encoder_Control")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Encoder_Control")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Encoder_Control : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Encoder_Control : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -3178,7 +3178,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Encoder_Type> _HCM_Encoder_Type;
+		private EntityRef<HSM_Encoder_Type> _HSM_Encoder_Type;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -3206,7 +3206,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Encoder_Control()
+		public HSM_Encoder_Control()
 		{
 			this.Initialize();
 		}
@@ -3244,7 +3244,7 @@ namespace HCM.Database
 			{
 				if ((this._IdEncoderType != value))
 				{
-					if (this._HCM_Encoder_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Encoder_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -3425,36 +3425,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Encoder_Type_HCM_Encoder_Control", Storage="_HCM_Encoder_Type", ThisKey="IdEncoderType", OtherKey="IdEncoderType", IsForeignKey=true)]
-		public HCM_Encoder_Type HCM_Encoder_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Encoder_Type_HSM_Encoder_Control", Storage="_HSM_Encoder_Type", ThisKey="IdEncoderType", OtherKey="IdEncoderType", IsForeignKey=true)]
+		public HSM_Encoder_Type HSM_Encoder_Type
 		{
 			get
 			{
-				return this._HCM_Encoder_Type.Entity;
+				return this._HSM_Encoder_Type.Entity;
 			}
 			set
 			{
-				HCM_Encoder_Type previousValue = this._HCM_Encoder_Type.Entity;
+				HSM_Encoder_Type previousValue = this._HSM_Encoder_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Encoder_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Encoder_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Encoder_Type.Entity = null;
-						previousValue.HCM_Encoder_Controls.Remove(this);
+						this._HSM_Encoder_Type.Entity = null;
+						previousValue.HSM_Encoder_Controls.Remove(this);
 					}
-					this._HCM_Encoder_Type.Entity = value;
+					this._HSM_Encoder_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Encoder_Controls.Add(this);
+						value.HSM_Encoder_Controls.Add(this);
 						this._IdEncoderType = value.IdEncoderType;
 					}
 					else
 					{
 						this._IdEncoderType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Encoder_Type");
+					this.SendPropertyChanged("HSM_Encoder_Type");
 				}
 			}
 		}
@@ -3481,7 +3481,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Encoder_Type = default(EntityRef<HCM_Encoder_Type>);
+			this._HSM_Encoder_Type = default(EntityRef<HSM_Encoder_Type>);
 			OnCreated();
 		}
 		
@@ -3493,9 +3493,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Encoder_Failures")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Encoder_Failures")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Encoder_Failure : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Encoder_Failure : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -3522,7 +3522,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Encoder_Type> _HCM_Encoder_Type;
+		private EntityRef<HSM_Encoder_Type> _HSM_Encoder_Type;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -3552,7 +3552,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Encoder_Failure()
+		public HSM_Encoder_Failure()
 		{
 			this.Initialize();
 		}
@@ -3590,7 +3590,7 @@ namespace HCM.Database
 			{
 				if ((this._IdEncoderType != value))
 				{
-					if (this._HCM_Encoder_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Encoder_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -3792,36 +3792,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Encoder_Type_HCM_Encoder_Failure", Storage="_HCM_Encoder_Type", ThisKey="IdEncoderType", OtherKey="IdEncoderType", IsForeignKey=true)]
-		public HCM_Encoder_Type HCM_Encoder_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Encoder_Type_HSM_Encoder_Failure", Storage="_HSM_Encoder_Type", ThisKey="IdEncoderType", OtherKey="IdEncoderType", IsForeignKey=true)]
+		public HSM_Encoder_Type HSM_Encoder_Type
 		{
 			get
 			{
-				return this._HCM_Encoder_Type.Entity;
+				return this._HSM_Encoder_Type.Entity;
 			}
 			set
 			{
-				HCM_Encoder_Type previousValue = this._HCM_Encoder_Type.Entity;
+				HSM_Encoder_Type previousValue = this._HSM_Encoder_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Encoder_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Encoder_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Encoder_Type.Entity = null;
-						previousValue.HCM_Encoder_Failures.Remove(this);
+						this._HSM_Encoder_Type.Entity = null;
+						previousValue.HSM_Encoder_Failures.Remove(this);
 					}
-					this._HCM_Encoder_Type.Entity = value;
+					this._HSM_Encoder_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Encoder_Failures.Add(this);
+						value.HSM_Encoder_Failures.Add(this);
 						this._IdEncoderType = value.IdEncoderType;
 					}
 					else
 					{
 						this._IdEncoderType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Encoder_Type");
+					this.SendPropertyChanged("HSM_Encoder_Type");
 				}
 			}
 		}
@@ -3848,7 +3848,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Encoder_Type = default(EntityRef<HCM_Encoder_Type>);
+			this._HSM_Encoder_Type = default(EntityRef<HSM_Encoder_Type>);
 			OnCreated();
 		}
 		
@@ -3860,9 +3860,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Encoder_Process")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Encoder_Process")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Encoder_Process : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Encoder_Process : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -3883,7 +3883,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Encoder_Type> _HCM_Encoder_Type;
+		private EntityRef<HSM_Encoder_Type> _HSM_Encoder_Type;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -3907,7 +3907,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Encoder_Process()
+		public HSM_Encoder_Process()
 		{
 			this.Initialize();
 		}
@@ -3945,7 +3945,7 @@ namespace HCM.Database
 			{
 				if ((this._IdEncoderType != value))
 				{
-					if (this._HCM_Encoder_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Encoder_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -4084,36 +4084,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Encoder_Type_HCM_Encoder_Process", Storage="_HCM_Encoder_Type", ThisKey="IdEncoderType", OtherKey="IdEncoderType", IsForeignKey=true)]
-		public HCM_Encoder_Type HCM_Encoder_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Encoder_Type_HSM_Encoder_Process", Storage="_HSM_Encoder_Type", ThisKey="IdEncoderType", OtherKey="IdEncoderType", IsForeignKey=true)]
+		public HSM_Encoder_Type HSM_Encoder_Type
 		{
 			get
 			{
-				return this._HCM_Encoder_Type.Entity;
+				return this._HSM_Encoder_Type.Entity;
 			}
 			set
 			{
-				HCM_Encoder_Type previousValue = this._HCM_Encoder_Type.Entity;
+				HSM_Encoder_Type previousValue = this._HSM_Encoder_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Encoder_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Encoder_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Encoder_Type.Entity = null;
-						previousValue.HCM_Encoder_Processes.Remove(this);
+						this._HSM_Encoder_Type.Entity = null;
+						previousValue.HSM_Encoder_Processes.Remove(this);
 					}
-					this._HCM_Encoder_Type.Entity = value;
+					this._HSM_Encoder_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Encoder_Processes.Add(this);
+						value.HSM_Encoder_Processes.Add(this);
 						this._IdEncoderType = value.IdEncoderType;
 					}
 					else
 					{
 						this._IdEncoderType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Encoder_Type");
+					this.SendPropertyChanged("HSM_Encoder_Type");
 				}
 			}
 		}
@@ -4140,7 +4140,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Encoder_Type = default(EntityRef<HCM_Encoder_Type>);
+			this._HSM_Encoder_Type = default(EntityRef<HSM_Encoder_Type>);
 			OnCreated();
 		}
 		
@@ -4152,9 +4152,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Encoder_Statuses")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Encoder_Statuses")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Encoder_Statuse : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Encoder_Statuse : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -4179,7 +4179,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Encoder_Type> _HCM_Encoder_Type;
+		private EntityRef<HSM_Encoder_Type> _HSM_Encoder_Type;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -4207,7 +4207,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Encoder_Statuse()
+		public HSM_Encoder_Statuse()
 		{
 			this.Initialize();
 		}
@@ -4245,7 +4245,7 @@ namespace HCM.Database
 			{
 				if ((this._IdEncoderType != value))
 				{
-					if (this._HCM_Encoder_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Encoder_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -4426,36 +4426,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Encoder_Type_HCM_Encoder_Statuse", Storage="_HCM_Encoder_Type", ThisKey="IdEncoderType", OtherKey="IdEncoderType", IsForeignKey=true)]
-		public HCM_Encoder_Type HCM_Encoder_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Encoder_Type_HSM_Encoder_Statuse", Storage="_HSM_Encoder_Type", ThisKey="IdEncoderType", OtherKey="IdEncoderType", IsForeignKey=true)]
+		public HSM_Encoder_Type HSM_Encoder_Type
 		{
 			get
 			{
-				return this._HCM_Encoder_Type.Entity;
+				return this._HSM_Encoder_Type.Entity;
 			}
 			set
 			{
-				HCM_Encoder_Type previousValue = this._HCM_Encoder_Type.Entity;
+				HSM_Encoder_Type previousValue = this._HSM_Encoder_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Encoder_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Encoder_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Encoder_Type.Entity = null;
-						previousValue.HCM_Encoder_Statuses.Remove(this);
+						this._HSM_Encoder_Type.Entity = null;
+						previousValue.HSM_Encoder_Statuses.Remove(this);
 					}
-					this._HCM_Encoder_Type.Entity = value;
+					this._HSM_Encoder_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Encoder_Statuses.Add(this);
+						value.HSM_Encoder_Statuses.Add(this);
 						this._IdEncoderType = value.IdEncoderType;
 					}
 					else
 					{
 						this._IdEncoderType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Encoder_Type");
+					this.SendPropertyChanged("HSM_Encoder_Type");
 				}
 			}
 		}
@@ -4482,7 +4482,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Encoder_Type = default(EntityRef<HCM_Encoder_Type>);
+			this._HSM_Encoder_Type = default(EntityRef<HSM_Encoder_Type>);
 			OnCreated();
 		}
 		
@@ -4494,9 +4494,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Encoder_Types")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Encoder_Types")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Encoder_Type : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Encoder_Type : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -4509,15 +4509,15 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Encoder_Control> _HCM_Encoder_Controls;
+		private EntitySet<HSM_Encoder_Control> _HSM_Encoder_Controls;
 		
-		private EntitySet<HCM_Encoder_Failure> _HCM_Encoder_Failures;
+		private EntitySet<HSM_Encoder_Failure> _HSM_Encoder_Failures;
 		
-		private EntitySet<HCM_Encoder_Process> _HCM_Encoder_Processes;
+		private EntitySet<HSM_Encoder_Process> _HSM_Encoder_Processes;
 		
-		private EntitySet<HCM_Encoder_Statuse> _HCM_Encoder_Statuses;
+		private EntitySet<HSM_Encoder_Statuse> _HSM_Encoder_Statuses;
 		
-		private EntitySet<HCM_Machine_Encoder> _HCM_Machine_Encoders;
+		private EntitySet<HSM_Machine_Encoder> _HSM_Machine_Encoders;
 		
 		private bool serializing;
 		
@@ -4535,7 +4535,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Encoder_Type()
+		public HSM_Encoder_Type()
 		{
 			this.Initialize();
 		}
@@ -4624,98 +4624,98 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Encoder_Type_HCM_Encoder_Control", Storage="_HCM_Encoder_Controls", ThisKey="IdEncoderType", OtherKey="IdEncoderType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Encoder_Type_HSM_Encoder_Control", Storage="_HSM_Encoder_Controls", ThisKey="IdEncoderType", OtherKey="IdEncoderType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=5, EmitDefaultValue=false)]
-		public EntitySet<HCM_Encoder_Control> HCM_Encoder_Controls
+		public EntitySet<HSM_Encoder_Control> HSM_Encoder_Controls
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Encoder_Controls.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Encoder_Controls.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Encoder_Controls;
+				return this._HSM_Encoder_Controls;
 			}
 			set
 			{
-				this._HCM_Encoder_Controls.Assign(value);
+				this._HSM_Encoder_Controls.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Encoder_Type_HCM_Encoder_Failure", Storage="_HCM_Encoder_Failures", ThisKey="IdEncoderType", OtherKey="IdEncoderType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Encoder_Type_HSM_Encoder_Failure", Storage="_HSM_Encoder_Failures", ThisKey="IdEncoderType", OtherKey="IdEncoderType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=6, EmitDefaultValue=false)]
-		public EntitySet<HCM_Encoder_Failure> HCM_Encoder_Failures
+		public EntitySet<HSM_Encoder_Failure> HSM_Encoder_Failures
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Encoder_Failures.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Encoder_Failures.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Encoder_Failures;
+				return this._HSM_Encoder_Failures;
 			}
 			set
 			{
-				this._HCM_Encoder_Failures.Assign(value);
+				this._HSM_Encoder_Failures.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Encoder_Type_HCM_Encoder_Process", Storage="_HCM_Encoder_Processes", ThisKey="IdEncoderType", OtherKey="IdEncoderType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Encoder_Type_HSM_Encoder_Process", Storage="_HSM_Encoder_Processes", ThisKey="IdEncoderType", OtherKey="IdEncoderType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=7, EmitDefaultValue=false)]
-		public EntitySet<HCM_Encoder_Process> HCM_Encoder_Processes
+		public EntitySet<HSM_Encoder_Process> HSM_Encoder_Processes
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Encoder_Processes.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Encoder_Processes.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Encoder_Processes;
+				return this._HSM_Encoder_Processes;
 			}
 			set
 			{
-				this._HCM_Encoder_Processes.Assign(value);
+				this._HSM_Encoder_Processes.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Encoder_Type_HCM_Encoder_Statuse", Storage="_HCM_Encoder_Statuses", ThisKey="IdEncoderType", OtherKey="IdEncoderType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Encoder_Type_HSM_Encoder_Statuse", Storage="_HSM_Encoder_Statuses", ThisKey="IdEncoderType", OtherKey="IdEncoderType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=8, EmitDefaultValue=false)]
-		public EntitySet<HCM_Encoder_Statuse> HCM_Encoder_Statuses
+		public EntitySet<HSM_Encoder_Statuse> HSM_Encoder_Statuses
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Encoder_Statuses.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Encoder_Statuses.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Encoder_Statuses;
+				return this._HSM_Encoder_Statuses;
 			}
 			set
 			{
-				this._HCM_Encoder_Statuses.Assign(value);
+				this._HSM_Encoder_Statuses.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Encoder_Type_HCM_Machine_Encoder", Storage="_HCM_Machine_Encoders", ThisKey="IdEncoderType", OtherKey="IdEncoderType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Encoder_Type_HSM_Machine_Encoder", Storage="_HSM_Machine_Encoders", ThisKey="IdEncoderType", OtherKey="IdEncoderType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=9, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Encoder> HCM_Machine_Encoders
+		public EntitySet<HSM_Machine_Encoder> HSM_Machine_Encoders
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Encoders.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Encoders.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Encoders;
+				return this._HSM_Machine_Encoders;
 			}
 			set
 			{
-				this._HCM_Machine_Encoders.Assign(value);
+				this._HSM_Machine_Encoders.Assign(value);
 			}
 		}
 		
@@ -4739,73 +4739,73 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Encoder_Controls(HCM_Encoder_Control entity)
+		private void attach_HSM_Encoder_Controls(HSM_Encoder_Control entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Encoder_Type = this;
+			entity.HSM_Encoder_Type = this;
 		}
 		
-		private void detach_HCM_Encoder_Controls(HCM_Encoder_Control entity)
+		private void detach_HSM_Encoder_Controls(HSM_Encoder_Control entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Encoder_Type = null;
+			entity.HSM_Encoder_Type = null;
 		}
 		
-		private void attach_HCM_Encoder_Failures(HCM_Encoder_Failure entity)
+		private void attach_HSM_Encoder_Failures(HSM_Encoder_Failure entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Encoder_Type = this;
+			entity.HSM_Encoder_Type = this;
 		}
 		
-		private void detach_HCM_Encoder_Failures(HCM_Encoder_Failure entity)
+		private void detach_HSM_Encoder_Failures(HSM_Encoder_Failure entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Encoder_Type = null;
+			entity.HSM_Encoder_Type = null;
 		}
 		
-		private void attach_HCM_Encoder_Processes(HCM_Encoder_Process entity)
+		private void attach_HSM_Encoder_Processes(HSM_Encoder_Process entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Encoder_Type = this;
+			entity.HSM_Encoder_Type = this;
 		}
 		
-		private void detach_HCM_Encoder_Processes(HCM_Encoder_Process entity)
+		private void detach_HSM_Encoder_Processes(HSM_Encoder_Process entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Encoder_Type = null;
+			entity.HSM_Encoder_Type = null;
 		}
 		
-		private void attach_HCM_Encoder_Statuses(HCM_Encoder_Statuse entity)
+		private void attach_HSM_Encoder_Statuses(HSM_Encoder_Statuse entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Encoder_Type = this;
+			entity.HSM_Encoder_Type = this;
 		}
 		
-		private void detach_HCM_Encoder_Statuses(HCM_Encoder_Statuse entity)
+		private void detach_HSM_Encoder_Statuses(HSM_Encoder_Statuse entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Encoder_Type = null;
+			entity.HSM_Encoder_Type = null;
 		}
 		
-		private void attach_HCM_Machine_Encoders(HCM_Machine_Encoder entity)
+		private void attach_HSM_Machine_Encoders(HSM_Machine_Encoder entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Encoder_Type = this;
+			entity.HSM_Encoder_Type = this;
 		}
 		
-		private void detach_HCM_Machine_Encoders(HCM_Machine_Encoder entity)
+		private void detach_HSM_Machine_Encoders(HSM_Machine_Encoder entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Encoder_Type = null;
+			entity.HSM_Encoder_Type = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Encoder_Controls = new EntitySet<HCM_Encoder_Control>(new Action<HCM_Encoder_Control>(this.attach_HCM_Encoder_Controls), new Action<HCM_Encoder_Control>(this.detach_HCM_Encoder_Controls));
-			this._HCM_Encoder_Failures = new EntitySet<HCM_Encoder_Failure>(new Action<HCM_Encoder_Failure>(this.attach_HCM_Encoder_Failures), new Action<HCM_Encoder_Failure>(this.detach_HCM_Encoder_Failures));
-			this._HCM_Encoder_Processes = new EntitySet<HCM_Encoder_Process>(new Action<HCM_Encoder_Process>(this.attach_HCM_Encoder_Processes), new Action<HCM_Encoder_Process>(this.detach_HCM_Encoder_Processes));
-			this._HCM_Encoder_Statuses = new EntitySet<HCM_Encoder_Statuse>(new Action<HCM_Encoder_Statuse>(this.attach_HCM_Encoder_Statuses), new Action<HCM_Encoder_Statuse>(this.detach_HCM_Encoder_Statuses));
-			this._HCM_Machine_Encoders = new EntitySet<HCM_Machine_Encoder>(new Action<HCM_Machine_Encoder>(this.attach_HCM_Machine_Encoders), new Action<HCM_Machine_Encoder>(this.detach_HCM_Machine_Encoders));
+			this._HSM_Encoder_Controls = new EntitySet<HSM_Encoder_Control>(new Action<HSM_Encoder_Control>(this.attach_HSM_Encoder_Controls), new Action<HSM_Encoder_Control>(this.detach_HSM_Encoder_Controls));
+			this._HSM_Encoder_Failures = new EntitySet<HSM_Encoder_Failure>(new Action<HSM_Encoder_Failure>(this.attach_HSM_Encoder_Failures), new Action<HSM_Encoder_Failure>(this.detach_HSM_Encoder_Failures));
+			this._HSM_Encoder_Processes = new EntitySet<HSM_Encoder_Process>(new Action<HSM_Encoder_Process>(this.attach_HSM_Encoder_Processes), new Action<HSM_Encoder_Process>(this.detach_HSM_Encoder_Processes));
+			this._HSM_Encoder_Statuses = new EntitySet<HSM_Encoder_Statuse>(new Action<HSM_Encoder_Statuse>(this.attach_HSM_Encoder_Statuses), new Action<HSM_Encoder_Statuse>(this.detach_HSM_Encoder_Statuses));
+			this._HSM_Machine_Encoders = new EntitySet<HSM_Machine_Encoder>(new Action<HSM_Machine_Encoder>(this.attach_HSM_Machine_Encoders), new Action<HSM_Machine_Encoder>(this.detach_HSM_Machine_Encoders));
 			OnCreated();
 		}
 		
@@ -4831,9 +4831,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Layout_Section_Machines")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Layout_Section_Machines")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Layout_Section_Machine : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Layout_Section_Machine : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -4848,7 +4848,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Layout_Section> _HCM_Layout_Section;
+		private EntityRef<HSM_Layout_Section> _HSM_Layout_Section;
 		
 		private EntityRef<Rodeo_Machine> _Rodeo_Machine;
 		
@@ -4868,7 +4868,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Layout_Section_Machine()
+		public HSM_Layout_Section_Machine()
 		{
 			this.Initialize();
 		}
@@ -4906,7 +4906,7 @@ namespace HCM.Database
 			{
 				if ((this._IdLayoutSection != value))
 				{
-					if (this._HCM_Layout_Section.HasLoadedOrAssignedValue)
+					if (this._HSM_Layout_Section.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -4986,41 +4986,41 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Layout_Section_HCM_Layout_Section_Machine", Storage="_HCM_Layout_Section", ThisKey="IdLayoutSection", OtherKey="IdLayoutSection", IsForeignKey=true)]
-		public HCM_Layout_Section HCM_Layout_Section
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Layout_Section_HSM_Layout_Section_Machine", Storage="_HSM_Layout_Section", ThisKey="IdLayoutSection", OtherKey="IdLayoutSection", IsForeignKey=true)]
+		public HSM_Layout_Section HSM_Layout_Section
 		{
 			get
 			{
-				return this._HCM_Layout_Section.Entity;
+				return this._HSM_Layout_Section.Entity;
 			}
 			set
 			{
-				HCM_Layout_Section previousValue = this._HCM_Layout_Section.Entity;
+				HSM_Layout_Section previousValue = this._HSM_Layout_Section.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Layout_Section.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Layout_Section.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Layout_Section.Entity = null;
-						previousValue.HCM_Layout_Section_Machines.Remove(this);
+						this._HSM_Layout_Section.Entity = null;
+						previousValue.HSM_Layout_Section_Machines.Remove(this);
 					}
-					this._HCM_Layout_Section.Entity = value;
+					this._HSM_Layout_Section.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Layout_Section_Machines.Add(this);
+						value.HSM_Layout_Section_Machines.Add(this);
 						this._IdLayoutSection = value.IdLayoutSection;
 					}
 					else
 					{
 						this._IdLayoutSection = default(int);
 					}
-					this.SendPropertyChanged("HCM_Layout_Section");
+					this.SendPropertyChanged("HSM_Layout_Section");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Layout_Section_Machine", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Layout_Section_Machine", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
 		public Rodeo_Machine Rodeo_Machine
 		{
 			get
@@ -5037,12 +5037,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine.Entity = null;
-						previousValue.HCM_Layout_Section_Machines.Remove(this);
+						previousValue.HSM_Layout_Section_Machines.Remove(this);
 					}
 					this._Rodeo_Machine.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Layout_Section_Machines.Add(this);
+						value.HSM_Layout_Section_Machines.Add(this);
 						this._IdMachine = value.IdMachine;
 					}
 					else
@@ -5076,7 +5076,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Layout_Section = default(EntityRef<HCM_Layout_Section>);
+			this._HSM_Layout_Section = default(EntityRef<HSM_Layout_Section>);
 			this._Rodeo_Machine = default(EntityRef<Rodeo_Machine>);
 			OnCreated();
 		}
@@ -5089,9 +5089,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Layout_Sections")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Layout_Sections")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Layout_Section : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Layout_Section : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -5114,7 +5114,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Layout_Section_Machine> _HCM_Layout_Section_Machines;
+		private EntitySet<HSM_Layout_Section_Machine> _HSM_Layout_Section_Machines;
 		
 		private bool serializing;
 		
@@ -5142,7 +5142,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Layout_Section()
+		public HSM_Layout_Section()
 		{
 			this.Initialize();
 		}
@@ -5336,22 +5336,22 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Layout_Section_HCM_Layout_Section_Machine", Storage="_HCM_Layout_Section_Machines", ThisKey="IdLayoutSection", OtherKey="IdLayoutSection")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Layout_Section_HSM_Layout_Section_Machine", Storage="_HSM_Layout_Section_Machines", ThisKey="IdLayoutSection", OtherKey="IdLayoutSection")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=10, EmitDefaultValue=false)]
-		public EntitySet<HCM_Layout_Section_Machine> HCM_Layout_Section_Machines
+		public EntitySet<HSM_Layout_Section_Machine> HSM_Layout_Section_Machines
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Layout_Section_Machines.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Layout_Section_Machines.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Layout_Section_Machines;
+				return this._HSM_Layout_Section_Machines;
 			}
 			set
 			{
-				this._HCM_Layout_Section_Machines.Assign(value);
+				this._HSM_Layout_Section_Machines.Assign(value);
 			}
 		}
 		
@@ -5375,21 +5375,21 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Layout_Section_Machines(HCM_Layout_Section_Machine entity)
+		private void attach_HSM_Layout_Section_Machines(HSM_Layout_Section_Machine entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Layout_Section = this;
+			entity.HSM_Layout_Section = this;
 		}
 		
-		private void detach_HCM_Layout_Section_Machines(HCM_Layout_Section_Machine entity)
+		private void detach_HSM_Layout_Section_Machines(HSM_Layout_Section_Machine entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Layout_Section = null;
+			entity.HSM_Layout_Section = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Layout_Section_Machines = new EntitySet<HCM_Layout_Section_Machine>(new Action<HCM_Layout_Section_Machine>(this.attach_HCM_Layout_Section_Machines), new Action<HCM_Layout_Section_Machine>(this.detach_HCM_Layout_Section_Machines));
+			this._HSM_Layout_Section_Machines = new EntitySet<HSM_Layout_Section_Machine>(new Action<HSM_Layout_Section_Machine>(this.attach_HSM_Layout_Section_Machines), new Action<HSM_Layout_Section_Machine>(this.detach_HSM_Layout_Section_Machines));
 			OnCreated();
 		}
 		
@@ -5415,9 +5415,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Location_Groups")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Location_Groups")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Location_Group : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Location_Group : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -5440,13 +5440,13 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Job_Type> _HCM_Job_Types_Begin;
+		private EntitySet<HSM_Job_Type> _HSM_Job_Types_Begin;
 		
-		private EntitySet<HCM_Job_Type> _HCM_Job_Types_End;
+		private EntitySet<HSM_Job_Type> _HSM_Job_Types_End;
 		
-		private EntitySet<HCM_Job_Yard_Transfer_Step> _HCM_Job_Yard_Transfer_Steps_Begin;
+		private EntitySet<HSM_Job_Yard_Transfer_Step> _HSM_Job_Yard_Transfer_Steps_Begin;
 		
-		private EntitySet<HCM_Job_Yard_Transfer_Step> _HCM_Job_Yard_Transfer_Steps_End;
+		private EntitySet<HSM_Job_Yard_Transfer_Step> _HSM_Job_Yard_Transfer_Steps_End;
 		
 		private EntitySet<Rodeo_Location> _Rodeo_Locations;
 		
@@ -5476,7 +5476,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Location_Group()
+		public HSM_Location_Group()
 		{
 			this.Initialize();
 		}
@@ -5670,83 +5670,83 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Location_Group_HCM_Job_Type", Storage="_HCM_Job_Types_Begin", ThisKey="IdLocationGroup", OtherKey="IdLocationGroupBeginDefault")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Location_Group_HSM_Job_Type", Storage="_HSM_Job_Types_Begin", ThisKey="IdLocationGroup", OtherKey="IdLocationGroupBeginDefault")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=10, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job_Type> HCM_Job_Types_Begin
+		public EntitySet<HSM_Job_Type> HSM_Job_Types_Begin
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Job_Types_Begin.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Job_Types_Begin.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Job_Types_Begin;
+				return this._HSM_Job_Types_Begin;
 			}
 			set
 			{
-				this._HCM_Job_Types_Begin.Assign(value);
+				this._HSM_Job_Types_Begin.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Location_Group_HCM_Job_Type1", Storage="_HCM_Job_Types_End", ThisKey="IdLocationGroup", OtherKey="IdLocationGroupEndDefault")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Location_Group_HSM_Job_Type1", Storage="_HSM_Job_Types_End", ThisKey="IdLocationGroup", OtherKey="IdLocationGroupEndDefault")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=11, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job_Type> HCM_Job_Types_End
+		public EntitySet<HSM_Job_Type> HSM_Job_Types_End
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Job_Types_End.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Job_Types_End.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Job_Types_End;
+				return this._HSM_Job_Types_End;
 			}
 			set
 			{
-				this._HCM_Job_Types_End.Assign(value);
+				this._HSM_Job_Types_End.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Location_Group_HCM_Job_Yard_Transfer_Step", Storage="_HCM_Job_Yard_Transfer_Steps_Begin", ThisKey="IdLocationGroup", OtherKey="IdLocationGroupBegin")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Location_Group_HSM_Job_Yard_Transfer_Step", Storage="_HSM_Job_Yard_Transfer_Steps_Begin", ThisKey="IdLocationGroup", OtherKey="IdLocationGroupBegin")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=12, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job_Yard_Transfer_Step> HCM_Job_Yard_Transfer_Steps_Begin
+		public EntitySet<HSM_Job_Yard_Transfer_Step> HSM_Job_Yard_Transfer_Steps_Begin
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Job_Yard_Transfer_Steps_Begin.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Job_Yard_Transfer_Steps_Begin.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Job_Yard_Transfer_Steps_Begin;
+				return this._HSM_Job_Yard_Transfer_Steps_Begin;
 			}
 			set
 			{
-				this._HCM_Job_Yard_Transfer_Steps_Begin.Assign(value);
+				this._HSM_Job_Yard_Transfer_Steps_Begin.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Location_Group_HCM_Job_Yard_Transfer_Step1", Storage="_HCM_Job_Yard_Transfer_Steps_End", ThisKey="IdLocationGroup", OtherKey="IdLocationGroupEnd")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Location_Group_HSM_Job_Yard_Transfer_Step1", Storage="_HSM_Job_Yard_Transfer_Steps_End", ThisKey="IdLocationGroup", OtherKey="IdLocationGroupEnd")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=13, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job_Yard_Transfer_Step> HCM_Job_Yard_Transfer_Steps_End
+		public EntitySet<HSM_Job_Yard_Transfer_Step> HSM_Job_Yard_Transfer_Steps_End
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Job_Yard_Transfer_Steps_End.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Job_Yard_Transfer_Steps_End.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Job_Yard_Transfer_Steps_End;
+				return this._HSM_Job_Yard_Transfer_Steps_End;
 			}
 			set
 			{
-				this._HCM_Job_Yard_Transfer_Steps_End.Assign(value);
+				this._HSM_Job_Yard_Transfer_Steps_End.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Location_Group_Rodeo_Location", Storage="_Rodeo_Locations", ThisKey="IdLocationGroup", OtherKey="IdLocationGroup")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Location_Group_Rodeo_Location", Storage="_Rodeo_Locations", ThisKey="IdLocationGroup", OtherKey="IdLocationGroup")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=14, EmitDefaultValue=false)]
 		public EntitySet<Rodeo_Location> Rodeo_Locations
 		{
@@ -5785,72 +5785,72 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Job_Types_Begin(HCM_Job_Type entity)
+		private void attach_HSM_Job_Types_Begin(HSM_Job_Type entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Location_Group_Begin = this;
+			entity.HSM_Location_Group_Begin = this;
 		}
 		
-		private void detach_HCM_Job_Types_Begin(HCM_Job_Type entity)
+		private void detach_HSM_Job_Types_Begin(HSM_Job_Type entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Location_Group_Begin = null;
+			entity.HSM_Location_Group_Begin = null;
 		}
 		
-		private void attach_HCM_Job_Types_End(HCM_Job_Type entity)
+		private void attach_HSM_Job_Types_End(HSM_Job_Type entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Location_Group_End = this;
+			entity.HSM_Location_Group_End = this;
 		}
 		
-		private void detach_HCM_Job_Types_End(HCM_Job_Type entity)
+		private void detach_HSM_Job_Types_End(HSM_Job_Type entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Location_Group_End = null;
+			entity.HSM_Location_Group_End = null;
 		}
 		
-		private void attach_HCM_Job_Yard_Transfer_Steps_Begin(HCM_Job_Yard_Transfer_Step entity)
+		private void attach_HSM_Job_Yard_Transfer_Steps_Begin(HSM_Job_Yard_Transfer_Step entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Location_Group_Begin = this;
+			entity.HSM_Location_Group_Begin = this;
 		}
 		
-		private void detach_HCM_Job_Yard_Transfer_Steps_Begin(HCM_Job_Yard_Transfer_Step entity)
+		private void detach_HSM_Job_Yard_Transfer_Steps_Begin(HSM_Job_Yard_Transfer_Step entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Location_Group_Begin = null;
+			entity.HSM_Location_Group_Begin = null;
 		}
 		
-		private void attach_HCM_Job_Yard_Transfer_Steps_End(HCM_Job_Yard_Transfer_Step entity)
+		private void attach_HSM_Job_Yard_Transfer_Steps_End(HSM_Job_Yard_Transfer_Step entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Location_Group_End = this;
+			entity.HSM_Location_Group_End = this;
 		}
 		
-		private void detach_HCM_Job_Yard_Transfer_Steps_End(HCM_Job_Yard_Transfer_Step entity)
+		private void detach_HSM_Job_Yard_Transfer_Steps_End(HSM_Job_Yard_Transfer_Step entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Location_Group_End = null;
+			entity.HSM_Location_Group_End = null;
 		}
 		
 		private void attach_Rodeo_Locations(Rodeo_Location entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Location_Group = this;
+			entity.HSM_Location_Group = this;
 		}
 		
 		private void detach_Rodeo_Locations(Rodeo_Location entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Location_Group = null;
+			entity.HSM_Location_Group = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Job_Types_Begin = new EntitySet<HCM_Job_Type>(new Action<HCM_Job_Type>(this.attach_HCM_Job_Types_Begin), new Action<HCM_Job_Type>(this.detach_HCM_Job_Types_Begin));
-			this._HCM_Job_Types_End = new EntitySet<HCM_Job_Type>(new Action<HCM_Job_Type>(this.attach_HCM_Job_Types_End), new Action<HCM_Job_Type>(this.detach_HCM_Job_Types_End));
-			this._HCM_Job_Yard_Transfer_Steps_Begin = new EntitySet<HCM_Job_Yard_Transfer_Step>(new Action<HCM_Job_Yard_Transfer_Step>(this.attach_HCM_Job_Yard_Transfer_Steps_Begin), new Action<HCM_Job_Yard_Transfer_Step>(this.detach_HCM_Job_Yard_Transfer_Steps_Begin));
-			this._HCM_Job_Yard_Transfer_Steps_End = new EntitySet<HCM_Job_Yard_Transfer_Step>(new Action<HCM_Job_Yard_Transfer_Step>(this.attach_HCM_Job_Yard_Transfer_Steps_End), new Action<HCM_Job_Yard_Transfer_Step>(this.detach_HCM_Job_Yard_Transfer_Steps_End));
+			this._HSM_Job_Types_Begin = new EntitySet<HSM_Job_Type>(new Action<HSM_Job_Type>(this.attach_HSM_Job_Types_Begin), new Action<HSM_Job_Type>(this.detach_HSM_Job_Types_Begin));
+			this._HSM_Job_Types_End = new EntitySet<HSM_Job_Type>(new Action<HSM_Job_Type>(this.attach_HSM_Job_Types_End), new Action<HSM_Job_Type>(this.detach_HSM_Job_Types_End));
+			this._HSM_Job_Yard_Transfer_Steps_Begin = new EntitySet<HSM_Job_Yard_Transfer_Step>(new Action<HSM_Job_Yard_Transfer_Step>(this.attach_HSM_Job_Yard_Transfer_Steps_Begin), new Action<HSM_Job_Yard_Transfer_Step>(this.detach_HSM_Job_Yard_Transfer_Steps_Begin));
+			this._HSM_Job_Yard_Transfer_Steps_End = new EntitySet<HSM_Job_Yard_Transfer_Step>(new Action<HSM_Job_Yard_Transfer_Step>(this.attach_HSM_Job_Yard_Transfer_Steps_End), new Action<HSM_Job_Yard_Transfer_Step>(this.detach_HSM_Job_Yard_Transfer_Steps_End));
 			this._Rodeo_Locations = new EntitySet<Rodeo_Location>(new Action<Rodeo_Location>(this.attach_Rodeo_Locations), new Action<Rodeo_Location>(this.detach_Rodeo_Locations));
 			OnCreated();
 		}
@@ -5877,9 +5877,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Location_Ranges")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Location_Ranges")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Location_Range : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Location_Range : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -5904,7 +5904,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Location_Range_Yard> _HCM_Location_Range_Yards;
+		private EntitySet<HSM_Location_Range_Yard> _HSM_Location_Range_Yards;
 		
 		private EntitySet<Rodeo_Location> _Rodeo_Locations;
 		
@@ -5936,7 +5936,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Location_Range()
+		public HSM_Location_Range()
 		{
 			this.Initialize();
 		}
@@ -6151,26 +6151,26 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Location_Range_HCM_Location_Range_Yard", Storage="_HCM_Location_Range_Yards", ThisKey="IdLocationRange", OtherKey="IdLocationRange")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Location_Range_HSM_Location_Range_Yard", Storage="_HSM_Location_Range_Yards", ThisKey="IdLocationRange", OtherKey="IdLocationRange")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=11, EmitDefaultValue=false)]
-		public EntitySet<HCM_Location_Range_Yard> HCM_Location_Range_Yards
+		public EntitySet<HSM_Location_Range_Yard> HSM_Location_Range_Yards
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Location_Range_Yards.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Location_Range_Yards.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Location_Range_Yards;
+				return this._HSM_Location_Range_Yards;
 			}
 			set
 			{
-				this._HCM_Location_Range_Yards.Assign(value);
+				this._HSM_Location_Range_Yards.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Location_Range_Rodeo_Location", Storage="_Rodeo_Locations", ThisKey="IdLocationRange", OtherKey="IdLocationRange")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Location_Range_Rodeo_Location", Storage="_Rodeo_Locations", ThisKey="IdLocationRange", OtherKey="IdLocationRange")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=12, EmitDefaultValue=false)]
 		public EntitySet<Rodeo_Location> Rodeo_Locations
 		{
@@ -6209,33 +6209,33 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Location_Range_Yards(HCM_Location_Range_Yard entity)
+		private void attach_HSM_Location_Range_Yards(HSM_Location_Range_Yard entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Location_Range = this;
+			entity.HSM_Location_Range = this;
 		}
 		
-		private void detach_HCM_Location_Range_Yards(HCM_Location_Range_Yard entity)
+		private void detach_HSM_Location_Range_Yards(HSM_Location_Range_Yard entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Location_Range = null;
+			entity.HSM_Location_Range = null;
 		}
 		
 		private void attach_Rodeo_Locations(Rodeo_Location entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Location_Range = this;
+			entity.HSM_Location_Range = this;
 		}
 		
 		private void detach_Rodeo_Locations(Rodeo_Location entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Location_Range = null;
+			entity.HSM_Location_Range = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Location_Range_Yards = new EntitySet<HCM_Location_Range_Yard>(new Action<HCM_Location_Range_Yard>(this.attach_HCM_Location_Range_Yards), new Action<HCM_Location_Range_Yard>(this.detach_HCM_Location_Range_Yards));
+			this._HSM_Location_Range_Yards = new EntitySet<HSM_Location_Range_Yard>(new Action<HSM_Location_Range_Yard>(this.attach_HSM_Location_Range_Yards), new Action<HSM_Location_Range_Yard>(this.detach_HSM_Location_Range_Yards));
 			this._Rodeo_Locations = new EntitySet<Rodeo_Location>(new Action<Rodeo_Location>(this.attach_Rodeo_Locations), new Action<Rodeo_Location>(this.detach_Rodeo_Locations));
 			OnCreated();
 		}
@@ -6262,9 +6262,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Machine_Drives")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Machine_Drives")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Machine_Drive : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Machine_Drive : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -6291,7 +6291,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Drive_Type> _HCM_Drive_Type;
+		private EntityRef<HSM_Drive_Type> _HSM_Drive_Type;
 		
 		private EntityRef<Rodeo_Machine> _Rodeo_Machine;
 		
@@ -6323,7 +6323,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Machine_Drive()
+		public HSM_Machine_Drive()
 		{
 			this.Initialize();
 		}
@@ -6361,7 +6361,7 @@ namespace HCM.Database
 			{
 				if ((this._IdDriveType != value))
 				{
-					if (this._HCM_Drive_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Drive_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -6567,41 +6567,41 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Drive_Type_HCM_Machine_Drive", Storage="_HCM_Drive_Type", ThisKey="IdDriveType", OtherKey="IdDriveType", IsForeignKey=true)]
-		public HCM_Drive_Type HCM_Drive_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Drive_Type_HSM_Machine_Drive", Storage="_HSM_Drive_Type", ThisKey="IdDriveType", OtherKey="IdDriveType", IsForeignKey=true)]
+		public HSM_Drive_Type HSM_Drive_Type
 		{
 			get
 			{
-				return this._HCM_Drive_Type.Entity;
+				return this._HSM_Drive_Type.Entity;
 			}
 			set
 			{
-				HCM_Drive_Type previousValue = this._HCM_Drive_Type.Entity;
+				HSM_Drive_Type previousValue = this._HSM_Drive_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Drive_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Drive_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Drive_Type.Entity = null;
-						previousValue.HCM_Machine_Drives.Remove(this);
+						this._HSM_Drive_Type.Entity = null;
+						previousValue.HSM_Machine_Drives.Remove(this);
 					}
-					this._HCM_Drive_Type.Entity = value;
+					this._HSM_Drive_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Drives.Add(this);
+						value.HSM_Machine_Drives.Add(this);
 						this._IdDriveType = value.IdDriveType;
 					}
 					else
 					{
 						this._IdDriveType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Drive_Type");
+					this.SendPropertyChanged("HSM_Drive_Type");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Machine_Drive", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Machine_Drive", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
 		public Rodeo_Machine Rodeo_Machine
 		{
 			get
@@ -6618,12 +6618,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine.Entity = null;
-						previousValue.HCM_Machine_Drives.Remove(this);
+						previousValue.HSM_Machine_Drives.Remove(this);
 					}
 					this._Rodeo_Machine.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Drives.Add(this);
+						value.HSM_Machine_Drives.Add(this);
 						this._IdMachine = value.IdMachine;
 					}
 					else
@@ -6657,7 +6657,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Drive_Type = default(EntityRef<HCM_Drive_Type>);
+			this._HSM_Drive_Type = default(EntityRef<HSM_Drive_Type>);
 			this._Rodeo_Machine = default(EntityRef<Rodeo_Machine>);
 			OnCreated();
 		}
@@ -6670,9 +6670,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Machine_Encoders")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Machine_Encoders")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Machine_Encoder : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Machine_Encoder : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -6699,7 +6699,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Encoder_Type> _HCM_Encoder_Type;
+		private EntityRef<HSM_Encoder_Type> _HSM_Encoder_Type;
 		
 		private EntityRef<Rodeo_Machine> _Rodeo_Machine;
 		
@@ -6731,7 +6731,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Machine_Encoder()
+		public HSM_Machine_Encoder()
 		{
 			this.Initialize();
 		}
@@ -6769,7 +6769,7 @@ namespace HCM.Database
 			{
 				if ((this._IdEncoderType != value))
 				{
-					if (this._HCM_Encoder_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Encoder_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -6975,41 +6975,41 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Encoder_Type_HCM_Machine_Encoder", Storage="_HCM_Encoder_Type", ThisKey="IdEncoderType", OtherKey="IdEncoderType", IsForeignKey=true)]
-		public HCM_Encoder_Type HCM_Encoder_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Encoder_Type_HSM_Machine_Encoder", Storage="_HSM_Encoder_Type", ThisKey="IdEncoderType", OtherKey="IdEncoderType", IsForeignKey=true)]
+		public HSM_Encoder_Type HSM_Encoder_Type
 		{
 			get
 			{
-				return this._HCM_Encoder_Type.Entity;
+				return this._HSM_Encoder_Type.Entity;
 			}
 			set
 			{
-				HCM_Encoder_Type previousValue = this._HCM_Encoder_Type.Entity;
+				HSM_Encoder_Type previousValue = this._HSM_Encoder_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Encoder_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Encoder_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Encoder_Type.Entity = null;
-						previousValue.HCM_Machine_Encoders.Remove(this);
+						this._HSM_Encoder_Type.Entity = null;
+						previousValue.HSM_Machine_Encoders.Remove(this);
 					}
-					this._HCM_Encoder_Type.Entity = value;
+					this._HSM_Encoder_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Encoders.Add(this);
+						value.HSM_Machine_Encoders.Add(this);
 						this._IdEncoderType = value.IdEncoderType;
 					}
 					else
 					{
 						this._IdEncoderType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Encoder_Type");
+					this.SendPropertyChanged("HSM_Encoder_Type");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Machine_Encoder", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Machine_Encoder", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
 		public Rodeo_Machine Rodeo_Machine
 		{
 			get
@@ -7026,12 +7026,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine.Entity = null;
-						previousValue.HCM_Machine_Encoders.Remove(this);
+						previousValue.HSM_Machine_Encoders.Remove(this);
 					}
 					this._Rodeo_Machine.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Encoders.Add(this);
+						value.HSM_Machine_Encoders.Add(this);
 						this._IdMachine = value.IdMachine;
 					}
 					else
@@ -7065,7 +7065,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Encoder_Type = default(EntityRef<HCM_Encoder_Type>);
+			this._HSM_Encoder_Type = default(EntityRef<HSM_Encoder_Type>);
 			this._Rodeo_Machine = default(EntityRef<Rodeo_Machine>);
 			OnCreated();
 		}
@@ -7352,7 +7352,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Zone_Event> _HCM_Zone_Events;
+		private EntitySet<HSM_Zone_Event> _HSM_Zone_Events;
 		
 		private EntitySet<Rodeo_Event> _Rodeo_Events;
 		
@@ -7561,22 +7561,22 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Client_HCM_Zone_Event", Storage="_HCM_Zone_Events", ThisKey="IdClient", OtherKey="IdClient")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Client_HSM_Zone_Event", Storage="_HSM_Zone_Events", ThisKey="IdClient", OtherKey="IdClient")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=9, EmitDefaultValue=false)]
-		public EntitySet<HCM_Zone_Event> HCM_Zone_Events
+		public EntitySet<HSM_Zone_Event> HSM_Zone_Events
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Zone_Events.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Zone_Events.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Zone_Events;
+				return this._HSM_Zone_Events;
 			}
 			set
 			{
-				this._HCM_Zone_Events.Assign(value);
+				this._HSM_Zone_Events.Assign(value);
 			}
 		}
 		
@@ -7688,13 +7688,13 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Zone_Events(HCM_Zone_Event entity)
+		private void attach_HSM_Zone_Events(HSM_Zone_Event entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Client = this;
 		}
 		
-		private void detach_HCM_Zone_Events(HCM_Zone_Event entity)
+		private void detach_HSM_Zone_Events(HSM_Zone_Event entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Client = null;
@@ -7714,7 +7714,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Zone_Events = new EntitySet<HCM_Zone_Event>(new Action<HCM_Zone_Event>(this.attach_HCM_Zone_Events), new Action<HCM_Zone_Event>(this.detach_HCM_Zone_Events));
+			this._HSM_Zone_Events = new EntitySet<HSM_Zone_Event>(new Action<HSM_Zone_Event>(this.attach_HSM_Zone_Events), new Action<HSM_Zone_Event>(this.detach_HSM_Zone_Events));
 			this._Rodeo_Events = new EntitySet<Rodeo_Event>(new Action<Rodeo_Event>(this.attach_Rodeo_Events), new Action<Rodeo_Event>(this.detach_Rodeo_Events));
 			this._Rodeo_Client_Credential = default(EntityRef<Rodeo_Client_Credential>);
 			this._Rodeo_Client_Type = default(EntityRef<Rodeo_Client_Type>);
@@ -7986,7 +7986,7 @@ namespace HCM.Database
 		
 		private EntitySet<Rodeo_Machine> _Rodeo_Machines;
 		
-		private EntitySet<HCM_Zone_Machine> _HCM_Zone_Machines;
+		private EntitySet<HSM_Zone_Machine> _HSM_Zone_Machines;
 		
 		private bool serializing;
 		
@@ -8112,22 +8112,22 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Group_HCM_Zone_Machine", Storage="_HCM_Zone_Machines", ThisKey="IdMachineGroup", OtherKey="IdMachineGroup")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Group_HSM_Zone_Machine", Storage="_HSM_Zone_Machines", ThisKey="IdMachineGroup", OtherKey="IdMachineGroup")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=6, EmitDefaultValue=false)]
-		public EntitySet<HCM_Zone_Machine> HCM_Zone_Machines
+		public EntitySet<HSM_Zone_Machine> HSM_Zone_Machines
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Zone_Machines.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Zone_Machines.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Zone_Machines;
+				return this._HSM_Zone_Machines;
 			}
 			set
 			{
-				this._HCM_Zone_Machines.Assign(value);
+				this._HSM_Zone_Machines.Assign(value);
 			}
 		}
 		
@@ -8163,13 +8163,13 @@ namespace HCM.Database
 			entity.Rodeo_Machine_Group = null;
 		}
 		
-		private void attach_HCM_Zone_Machines(HCM_Zone_Machine entity)
+		private void attach_HSM_Zone_Machines(HSM_Zone_Machine entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine_Group = this;
 		}
 		
-		private void detach_HCM_Zone_Machines(HCM_Zone_Machine entity)
+		private void detach_HSM_Zone_Machines(HSM_Zone_Machine entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine_Group = null;
@@ -8178,7 +8178,7 @@ namespace HCM.Database
 		private void Initialize()
 		{
 			this._Rodeo_Machines = new EntitySet<Rodeo_Machine>(new Action<Rodeo_Machine>(this.attach_Rodeo_Machines), new Action<Rodeo_Machine>(this.detach_Rodeo_Machines));
-			this._HCM_Zone_Machines = new EntitySet<HCM_Zone_Machine>(new Action<HCM_Zone_Machine>(this.attach_HCM_Zone_Machines), new Action<HCM_Zone_Machine>(this.detach_HCM_Zone_Machines));
+			this._HSM_Zone_Machines = new EntitySet<HSM_Zone_Machine>(new Action<HSM_Zone_Machine>(this.attach_HSM_Zone_Machines), new Action<HSM_Zone_Machine>(this.detach_HSM_Zone_Machines));
 			OnCreated();
 		}
 		
@@ -9034,7 +9034,7 @@ namespace HCM.Database
 		
 		private EntitySet<Rodeo_Machine> _Rodeo_Machines;
 		
-		private EntitySet<HCM_Machine_Interface> _HCM_Machine_Interfaces;
+		private EntitySet<HSM_Machine_Interface> _HSM_Machine_Interfaces;
 		
 		private EntitySet<Rodeo_Setting_Group_Machine_Type> _Rodeo_Setting_Group_Machine_Types;
 		
@@ -9048,15 +9048,15 @@ namespace HCM.Database
 		
 		private EntitySet<Rodeo_Setting_Tag> _Rodeo_Setting_Tags;
 		
-		private EntitySet<HCM_Job_Yard_Transfer_Step> _HCM_Job_Yard_Transfer_Steps;
+		private EntitySet<HSM_Job_Yard_Transfer_Step> _HSM_Job_Yard_Transfer_Steps;
 		
-		private EntitySet<HCM_Job_Type_Route> _HCM_Job_Type_Routes;
+		private EntitySet<HSM_Job_Type_Route> _HSM_Job_Type_Routes;
 		
-		private EntitySet<HCM_Machine_Failure> _HCM_Machine_Failures;
+		private EntitySet<HSM_Machine_Failure> _HSM_Machine_Failures;
 		
-		private EntitySet<HCM_Machine_Interlock> _HCM_Machine_Interlocks;
+		private EntitySet<HSM_Machine_Interlock> _HSM_Machine_Interlocks;
 		
-		private EntitySet<HCM_File> _HCM_Files;
+		private EntitySet<HSM_File> _HSM_Files;
 		
 		private bool serializing;
 		
@@ -9308,22 +9308,22 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HCM_Machine_Interface", Storage="_HCM_Machine_Interfaces", ThisKey="IdMachineType", OtherKey="IdMachineType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HSM_Machine_Interface", Storage="_HSM_Machine_Interfaces", ThisKey="IdMachineType", OtherKey="IdMachineType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=12, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Interface> HCM_Machine_Interfaces
+		public EntitySet<HSM_Machine_Interface> HSM_Machine_Interfaces
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Interfaces.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Interfaces.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Interfaces;
+				return this._HSM_Machine_Interfaces;
 			}
 			set
 			{
-				this._HCM_Machine_Interfaces.Assign(value);
+				this._HSM_Machine_Interfaces.Assign(value);
 			}
 		}
 		
@@ -9441,98 +9441,98 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HCM_Job_Yard_Transfer_Step", Storage="_HCM_Job_Yard_Transfer_Steps", ThisKey="IdMachineType", OtherKey="IdMachineType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HSM_Job_Yard_Transfer_Step", Storage="_HSM_Job_Yard_Transfer_Steps", ThisKey="IdMachineType", OtherKey="IdMachineType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=19, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job_Yard_Transfer_Step> HCM_Job_Yard_Transfer_Steps
+		public EntitySet<HSM_Job_Yard_Transfer_Step> HSM_Job_Yard_Transfer_Steps
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Job_Yard_Transfer_Steps.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Job_Yard_Transfer_Steps.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Job_Yard_Transfer_Steps;
+				return this._HSM_Job_Yard_Transfer_Steps;
 			}
 			set
 			{
-				this._HCM_Job_Yard_Transfer_Steps.Assign(value);
+				this._HSM_Job_Yard_Transfer_Steps.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HCM_Job_Type_Route", Storage="_HCM_Job_Type_Routes", ThisKey="IdMachineType", OtherKey="IdMachineType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HSM_Job_Type_Route", Storage="_HSM_Job_Type_Routes", ThisKey="IdMachineType", OtherKey="IdMachineType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=20, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job_Type_Route> HCM_Job_Type_Routes
+		public EntitySet<HSM_Job_Type_Route> HSM_Job_Type_Routes
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Job_Type_Routes.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Job_Type_Routes.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Job_Type_Routes;
+				return this._HSM_Job_Type_Routes;
 			}
 			set
 			{
-				this._HCM_Job_Type_Routes.Assign(value);
+				this._HSM_Job_Type_Routes.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HCM_Machine_Failure", Storage="_HCM_Machine_Failures", ThisKey="IdMachineType", OtherKey="IdMachineType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HSM_Machine_Failure", Storage="_HSM_Machine_Failures", ThisKey="IdMachineType", OtherKey="IdMachineType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=21, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Failure> HCM_Machine_Failures
+		public EntitySet<HSM_Machine_Failure> HSM_Machine_Failures
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Failures.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Failures.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Failures;
+				return this._HSM_Machine_Failures;
 			}
 			set
 			{
-				this._HCM_Machine_Failures.Assign(value);
+				this._HSM_Machine_Failures.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HCM_Machine_Interlock", Storage="_HCM_Machine_Interlocks", ThisKey="IdMachineType", OtherKey="IdMachineType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HSM_Machine_Interlock", Storage="_HSM_Machine_Interlocks", ThisKey="IdMachineType", OtherKey="IdMachineType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=22, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Interlock> HCM_Machine_Interlocks
+		public EntitySet<HSM_Machine_Interlock> HSM_Machine_Interlocks
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Interlocks.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Interlocks.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Interlocks;
+				return this._HSM_Machine_Interlocks;
 			}
 			set
 			{
-				this._HCM_Machine_Interlocks.Assign(value);
+				this._HSM_Machine_Interlocks.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HCM_File", Storage="_HCM_Files", ThisKey="IdMachineType", OtherKey="IdMachineType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HSM_File", Storage="_HSM_Files", ThisKey="IdMachineType", OtherKey="IdMachineType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=23, EmitDefaultValue=false)]
-		public EntitySet<HCM_File> HCM_Files
+		public EntitySet<HSM_File> HSM_Files
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Files.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Files.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Files;
+				return this._HSM_Files;
 			}
 			set
 			{
-				this._HCM_Files.Assign(value);
+				this._HSM_Files.Assign(value);
 			}
 		}
 		
@@ -9604,13 +9604,13 @@ namespace HCM.Database
 			entity.Rodeo_Machine_Type = null;
 		}
 		
-		private void attach_HCM_Machine_Interfaces(HCM_Machine_Interface entity)
+		private void attach_HSM_Machine_Interfaces(HSM_Machine_Interface entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine_Type = this;
 		}
 		
-		private void detach_HCM_Machine_Interfaces(HCM_Machine_Interface entity)
+		private void detach_HSM_Machine_Interfaces(HSM_Machine_Interface entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine_Type = null;
@@ -9688,61 +9688,61 @@ namespace HCM.Database
 			entity.Rodeo_Machine_Type = null;
 		}
 		
-		private void attach_HCM_Job_Yard_Transfer_Steps(HCM_Job_Yard_Transfer_Step entity)
+		private void attach_HSM_Job_Yard_Transfer_Steps(HSM_Job_Yard_Transfer_Step entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine_Type = this;
 		}
 		
-		private void detach_HCM_Job_Yard_Transfer_Steps(HCM_Job_Yard_Transfer_Step entity)
+		private void detach_HSM_Job_Yard_Transfer_Steps(HSM_Job_Yard_Transfer_Step entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine_Type = null;
 		}
 		
-		private void attach_HCM_Job_Type_Routes(HCM_Job_Type_Route entity)
+		private void attach_HSM_Job_Type_Routes(HSM_Job_Type_Route entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine_Type = this;
 		}
 		
-		private void detach_HCM_Job_Type_Routes(HCM_Job_Type_Route entity)
+		private void detach_HSM_Job_Type_Routes(HSM_Job_Type_Route entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine_Type = null;
 		}
 		
-		private void attach_HCM_Machine_Failures(HCM_Machine_Failure entity)
+		private void attach_HSM_Machine_Failures(HSM_Machine_Failure entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine_Type = this;
 		}
 		
-		private void detach_HCM_Machine_Failures(HCM_Machine_Failure entity)
+		private void detach_HSM_Machine_Failures(HSM_Machine_Failure entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine_Type = null;
 		}
 		
-		private void attach_HCM_Machine_Interlocks(HCM_Machine_Interlock entity)
+		private void attach_HSM_Machine_Interlocks(HSM_Machine_Interlock entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine_Type = this;
 		}
 		
-		private void detach_HCM_Machine_Interlocks(HCM_Machine_Interlock entity)
+		private void detach_HSM_Machine_Interlocks(HSM_Machine_Interlock entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine_Type = null;
 		}
 		
-		private void attach_HCM_Files(HCM_File entity)
+		private void attach_HSM_Files(HSM_File entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine_Type = this;
 		}
 		
-		private void detach_HCM_Files(HCM_File entity)
+		private void detach_HSM_Files(HSM_File entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine_Type = null;
@@ -9754,18 +9754,18 @@ namespace HCM.Database
 			this._Rodeo_Machine_Statuses = new EntitySet<Rodeo_Machine_Statuse>(new Action<Rodeo_Machine_Statuse>(this.attach_Rodeo_Machine_Statuses), new Action<Rodeo_Machine_Statuse>(this.detach_Rodeo_Machine_Statuses));
 			this._Rodeo_Machine_Type_Positions = new EntitySet<Rodeo_Machine_Type_Position>(new Action<Rodeo_Machine_Type_Position>(this.attach_Rodeo_Machine_Type_Positions), new Action<Rodeo_Machine_Type_Position>(this.detach_Rodeo_Machine_Type_Positions));
 			this._Rodeo_Machines = new EntitySet<Rodeo_Machine>(new Action<Rodeo_Machine>(this.attach_Rodeo_Machines), new Action<Rodeo_Machine>(this.detach_Rodeo_Machines));
-			this._HCM_Machine_Interfaces = new EntitySet<HCM_Machine_Interface>(new Action<HCM_Machine_Interface>(this.attach_HCM_Machine_Interfaces), new Action<HCM_Machine_Interface>(this.detach_HCM_Machine_Interfaces));
+			this._HSM_Machine_Interfaces = new EntitySet<HSM_Machine_Interface>(new Action<HSM_Machine_Interface>(this.attach_HSM_Machine_Interfaces), new Action<HSM_Machine_Interface>(this.detach_HSM_Machine_Interfaces));
 			this._Rodeo_Setting_Group_Machine_Types = new EntitySet<Rodeo_Setting_Group_Machine_Type>(new Action<Rodeo_Setting_Group_Machine_Type>(this.attach_Rodeo_Setting_Group_Machine_Types), new Action<Rodeo_Setting_Group_Machine_Type>(this.detach_Rodeo_Setting_Group_Machine_Types));
 			this._Rodeo_TO_Actions = new EntitySet<Rodeo_TO_Action>(new Action<Rodeo_TO_Action>(this.attach_Rodeo_TO_Actions), new Action<Rodeo_TO_Action>(this.detach_Rodeo_TO_Actions));
 			this._Rodeo_TO_Directions = new EntitySet<Rodeo_TO_Direction>(new Action<Rodeo_TO_Direction>(this.attach_Rodeo_TO_Directions), new Action<Rodeo_TO_Direction>(this.detach_Rodeo_TO_Directions));
 			this._Rodeo_TO_ErrorCodes = new EntitySet<Rodeo_TO_ErrorCode>(new Action<Rodeo_TO_ErrorCode>(this.attach_Rodeo_TO_ErrorCodes), new Action<Rodeo_TO_ErrorCode>(this.detach_Rodeo_TO_ErrorCodes));
 			this._Rodeo_TO_Step_ErrorCodes = new EntitySet<Rodeo_TO_Step_ErrorCode>(new Action<Rodeo_TO_Step_ErrorCode>(this.attach_Rodeo_TO_Step_ErrorCodes), new Action<Rodeo_TO_Step_ErrorCode>(this.detach_Rodeo_TO_Step_ErrorCodes));
 			this._Rodeo_Setting_Tags = new EntitySet<Rodeo_Setting_Tag>(new Action<Rodeo_Setting_Tag>(this.attach_Rodeo_Setting_Tags), new Action<Rodeo_Setting_Tag>(this.detach_Rodeo_Setting_Tags));
-			this._HCM_Job_Yard_Transfer_Steps = new EntitySet<HCM_Job_Yard_Transfer_Step>(new Action<HCM_Job_Yard_Transfer_Step>(this.attach_HCM_Job_Yard_Transfer_Steps), new Action<HCM_Job_Yard_Transfer_Step>(this.detach_HCM_Job_Yard_Transfer_Steps));
-			this._HCM_Job_Type_Routes = new EntitySet<HCM_Job_Type_Route>(new Action<HCM_Job_Type_Route>(this.attach_HCM_Job_Type_Routes), new Action<HCM_Job_Type_Route>(this.detach_HCM_Job_Type_Routes));
-			this._HCM_Machine_Failures = new EntitySet<HCM_Machine_Failure>(new Action<HCM_Machine_Failure>(this.attach_HCM_Machine_Failures), new Action<HCM_Machine_Failure>(this.detach_HCM_Machine_Failures));
-			this._HCM_Machine_Interlocks = new EntitySet<HCM_Machine_Interlock>(new Action<HCM_Machine_Interlock>(this.attach_HCM_Machine_Interlocks), new Action<HCM_Machine_Interlock>(this.detach_HCM_Machine_Interlocks));
-			this._HCM_Files = new EntitySet<HCM_File>(new Action<HCM_File>(this.attach_HCM_Files), new Action<HCM_File>(this.detach_HCM_Files));
+			this._HSM_Job_Yard_Transfer_Steps = new EntitySet<HSM_Job_Yard_Transfer_Step>(new Action<HSM_Job_Yard_Transfer_Step>(this.attach_HSM_Job_Yard_Transfer_Steps), new Action<HSM_Job_Yard_Transfer_Step>(this.detach_HSM_Job_Yard_Transfer_Steps));
+			this._HSM_Job_Type_Routes = new EntitySet<HSM_Job_Type_Route>(new Action<HSM_Job_Type_Route>(this.attach_HSM_Job_Type_Routes), new Action<HSM_Job_Type_Route>(this.detach_HSM_Job_Type_Routes));
+			this._HSM_Machine_Failures = new EntitySet<HSM_Machine_Failure>(new Action<HSM_Machine_Failure>(this.attach_HSM_Machine_Failures), new Action<HSM_Machine_Failure>(this.detach_HSM_Machine_Failures));
+			this._HSM_Machine_Interlocks = new EntitySet<HSM_Machine_Interlock>(new Action<HSM_Machine_Interlock>(this.attach_HSM_Machine_Interlocks), new Action<HSM_Machine_Interlock>(this.detach_HSM_Machine_Interlocks));
+			this._HSM_Files = new EntitySet<HSM_File>(new Action<HSM_File>(this.attach_HSM_Files), new Action<HSM_File>(this.detach_HSM_Files));
 			OnCreated();
 		}
 		
@@ -9860,29 +9860,29 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Layout_Section_Machine> _HCM_Layout_Section_Machines;
+		private EntitySet<HSM_Layout_Section_Machine> _HSM_Layout_Section_Machines;
 		
-		private EntitySet<HCM_Machine_Drive> _HCM_Machine_Drives;
+		private EntitySet<HSM_Machine_Drive> _HSM_Machine_Drives;
 		
-		private EntitySet<HCM_Machine_Encoder> _HCM_Machine_Encoders;
+		private EntitySet<HSM_Machine_Encoder> _HSM_Machine_Encoders;
 		
-		private EntitySet<HCM_Machine_Event> _HCM_Machine_Events;
+		private EntitySet<HSM_Machine_Event> _HSM_Machine_Events;
 		
-		private EntitySet<HCM_Piece_Event> _HCM_Piece_Events;
+		private EntitySet<HSM_Piece_Event> _HSM_Piece_Events;
 		
-		private EntitySet<HCM_Ground_EStop_Failure> _HCM_Ground_EStop_Failures;
+		private EntitySet<HSM_Ground_EStop_Failure> _HSM_Ground_EStop_Failures;
 		
-		private EntitySet<HCM_Machine_Exit_Zone> _HCM_Machine_Exit_Zones;
+		private EntitySet<HSM_Machine_Exit_Zone> _HSM_Machine_Exit_Zones;
 		
-		private EntitySet<HCM_Machine_Interface> _HCM_Machine_Interfaces;
+		private EntitySet<HSM_Machine_Interface> _HSM_Machine_Interfaces;
 		
-		private EntitySet<HCM_Zone> _HCM_Zones;
+		private EntitySet<HSM_Zone> _HSM_Zones;
 		
 		private EntitySet<Rodeo_Network_Component_Alarm> _Rodeo_Network_Component_Alarms;
 		
 		private EntitySet<Rodeo_Network_Component> _Rodeo_Network_Components;
 		
-		private EntitySet<HCM_Machine_Exit_Location> _HCM_Machine_Exit_Locations;
+		private EntitySet<HSM_Machine_Exit_Location> _HSM_Machine_Exit_Locations;
 		
 		private EntitySet<Rodeo_TransportOrder> _Rodeo_TransportOrders;
 		
@@ -9890,13 +9890,13 @@ namespace HCM.Database
 		
 		private EntitySet<Rodeo_TO_Route> _Rodeo_TO_Routes;
 		
-		private EntitySet<HCM_Machine_Failure> _HCM_Machine_Failures;
+		private EntitySet<HSM_Machine_Failure> _HSM_Machine_Failures;
 		
-		private EntitySet<HCM_Machine_Interlock> _HCM_Machine_Interlocks;
+		private EntitySet<HSM_Machine_Interlock> _HSM_Machine_Interlocks;
 		
 		private EntitySet<Rodeo_Piece> _Rodeo_Pieces;
 		
-		private EntitySet<HCM_File> _HCM_Files;
+		private EntitySet<HSM_File> _HSM_Files;
 		
 		private EntityRef<Rodeo_Machine_Group> _Rodeo_Machine_Group;
 		
@@ -10654,174 +10654,174 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Layout_Section_Machine", Storage="_HCM_Layout_Section_Machines", ThisKey="IdMachine", OtherKey="IdMachine")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Layout_Section_Machine", Storage="_HSM_Layout_Section_Machines", ThisKey="IdMachine", OtherKey="IdMachine")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=32, EmitDefaultValue=false)]
-		public EntitySet<HCM_Layout_Section_Machine> HCM_Layout_Section_Machines
+		public EntitySet<HSM_Layout_Section_Machine> HSM_Layout_Section_Machines
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Layout_Section_Machines.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Layout_Section_Machines.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Layout_Section_Machines;
+				return this._HSM_Layout_Section_Machines;
 			}
 			set
 			{
-				this._HCM_Layout_Section_Machines.Assign(value);
+				this._HSM_Layout_Section_Machines.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Machine_Drive", Storage="_HCM_Machine_Drives", ThisKey="IdMachine", OtherKey="IdMachine")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Machine_Drive", Storage="_HSM_Machine_Drives", ThisKey="IdMachine", OtherKey="IdMachine")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=33, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Drive> HCM_Machine_Drives
+		public EntitySet<HSM_Machine_Drive> HSM_Machine_Drives
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Drives.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Drives.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Drives;
+				return this._HSM_Machine_Drives;
 			}
 			set
 			{
-				this._HCM_Machine_Drives.Assign(value);
+				this._HSM_Machine_Drives.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Machine_Encoder", Storage="_HCM_Machine_Encoders", ThisKey="IdMachine", OtherKey="IdMachine")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Machine_Encoder", Storage="_HSM_Machine_Encoders", ThisKey="IdMachine", OtherKey="IdMachine")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=34, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Encoder> HCM_Machine_Encoders
+		public EntitySet<HSM_Machine_Encoder> HSM_Machine_Encoders
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Encoders.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Encoders.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Encoders;
+				return this._HSM_Machine_Encoders;
 			}
 			set
 			{
-				this._HCM_Machine_Encoders.Assign(value);
+				this._HSM_Machine_Encoders.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Machine_Event", Storage="_HCM_Machine_Events", ThisKey="IdMachine", OtherKey="IdMachine")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Machine_Event", Storage="_HSM_Machine_Events", ThisKey="IdMachine", OtherKey="IdMachine")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=35, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Event> HCM_Machine_Events
+		public EntitySet<HSM_Machine_Event> HSM_Machine_Events
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Events.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Events.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Events;
+				return this._HSM_Machine_Events;
 			}
 			set
 			{
-				this._HCM_Machine_Events.Assign(value);
+				this._HSM_Machine_Events.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Piece_Event", Storage="_HCM_Piece_Events", ThisKey="IdMachine", OtherKey="IdMachine")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Piece_Event", Storage="_HSM_Piece_Events", ThisKey="IdMachine", OtherKey="IdMachine")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=36, EmitDefaultValue=false)]
-		public EntitySet<HCM_Piece_Event> HCM_Piece_Events
+		public EntitySet<HSM_Piece_Event> HSM_Piece_Events
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Piece_Events.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Piece_Events.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Piece_Events;
+				return this._HSM_Piece_Events;
 			}
 			set
 			{
-				this._HCM_Piece_Events.Assign(value);
+				this._HSM_Piece_Events.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Ground_EStop_Failure", Storage="_HCM_Ground_EStop_Failures", ThisKey="IdMachine", OtherKey="IdMachine")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Ground_EStop_Failure", Storage="_HSM_Ground_EStop_Failures", ThisKey="IdMachine", OtherKey="IdMachine")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=37, EmitDefaultValue=false)]
-		public EntitySet<HCM_Ground_EStop_Failure> HCM_Ground_EStop_Failures
+		public EntitySet<HSM_Ground_EStop_Failure> HSM_Ground_EStop_Failures
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Ground_EStop_Failures.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Ground_EStop_Failures.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Ground_EStop_Failures;
+				return this._HSM_Ground_EStop_Failures;
 			}
 			set
 			{
-				this._HCM_Ground_EStop_Failures.Assign(value);
+				this._HSM_Ground_EStop_Failures.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Machine_Exit_Zone", Storage="_HCM_Machine_Exit_Zones", ThisKey="IdMachine", OtherKey="IdMachine")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Machine_Exit_Zone", Storage="_HSM_Machine_Exit_Zones", ThisKey="IdMachine", OtherKey="IdMachine")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=38, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Exit_Zone> HCM_Machine_Exit_Zones
+		public EntitySet<HSM_Machine_Exit_Zone> HSM_Machine_Exit_Zones
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Exit_Zones.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Exit_Zones.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Exit_Zones;
+				return this._HSM_Machine_Exit_Zones;
 			}
 			set
 			{
-				this._HCM_Machine_Exit_Zones.Assign(value);
+				this._HSM_Machine_Exit_Zones.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Machine_Interface", Storage="_HCM_Machine_Interfaces", ThisKey="IdMachine", OtherKey="IdMachine")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Machine_Interface", Storage="_HSM_Machine_Interfaces", ThisKey="IdMachine", OtherKey="IdMachine")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=39, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Interface> HCM_Machine_Interfaces
+		public EntitySet<HSM_Machine_Interface> HSM_Machine_Interfaces
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Interfaces.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Interfaces.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Interfaces;
+				return this._HSM_Machine_Interfaces;
 			}
 			set
 			{
-				this._HCM_Machine_Interfaces.Assign(value);
+				this._HSM_Machine_Interfaces.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Zone", Storage="_HCM_Zones", ThisKey="IdMachine", OtherKey="IdMachineRequiredOnDisable")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Zone", Storage="_HSM_Zones", ThisKey="IdMachine", OtherKey="IdMachineRequiredOnDisable")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=40, EmitDefaultValue=false)]
-		public EntitySet<HCM_Zone> HCM_Zones
+		public EntitySet<HSM_Zone> HSM_Zones
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Zones.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Zones.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Zones;
+				return this._HSM_Zones;
 			}
 			set
 			{
-				this._HCM_Zones.Assign(value);
+				this._HSM_Zones.Assign(value);
 			}
 		}
 		
@@ -10863,22 +10863,22 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Machine_Exit_Location", Storage="_HCM_Machine_Exit_Locations", ThisKey="IdMachine", OtherKey="IdMachine")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Machine_Exit_Location", Storage="_HSM_Machine_Exit_Locations", ThisKey="IdMachine", OtherKey="IdMachine")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=43, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Exit_Location> HCM_Machine_Exit_Locations
+		public EntitySet<HSM_Machine_Exit_Location> HSM_Machine_Exit_Locations
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Exit_Locations.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Exit_Locations.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Exit_Locations;
+				return this._HSM_Machine_Exit_Locations;
 			}
 			set
 			{
-				this._HCM_Machine_Exit_Locations.Assign(value);
+				this._HSM_Machine_Exit_Locations.Assign(value);
 			}
 		}
 		
@@ -10939,41 +10939,41 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Machine_Failure", Storage="_HCM_Machine_Failures", ThisKey="IdMachine", OtherKey="IdMachine")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Machine_Failure", Storage="_HSM_Machine_Failures", ThisKey="IdMachine", OtherKey="IdMachine")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=47, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Failure> HCM_Machine_Failures
+		public EntitySet<HSM_Machine_Failure> HSM_Machine_Failures
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Failures.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Failures.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Failures;
+				return this._HSM_Machine_Failures;
 			}
 			set
 			{
-				this._HCM_Machine_Failures.Assign(value);
+				this._HSM_Machine_Failures.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Machine_Interlock", Storage="_HCM_Machine_Interlocks", ThisKey="IdMachine", OtherKey="IdMachine")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Machine_Interlock", Storage="_HSM_Machine_Interlocks", ThisKey="IdMachine", OtherKey="IdMachine")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=48, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Interlock> HCM_Machine_Interlocks
+		public EntitySet<HSM_Machine_Interlock> HSM_Machine_Interlocks
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Interlocks.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Interlocks.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Interlocks;
+				return this._HSM_Machine_Interlocks;
 			}
 			set
 			{
-				this._HCM_Machine_Interlocks.Assign(value);
+				this._HSM_Machine_Interlocks.Assign(value);
 			}
 		}
 		
@@ -10996,22 +10996,22 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_File", Storage="_HCM_Files", ThisKey="IdMachine", OtherKey="IdMachine")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_File", Storage="_HSM_Files", ThisKey="IdMachine", OtherKey="IdMachine")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=50, EmitDefaultValue=false)]
-		public EntitySet<HCM_File> HCM_Files
+		public EntitySet<HSM_File> HSM_Files
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Files.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Files.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Files;
+				return this._HSM_Files;
 			}
 			set
 			{
-				this._HCM_Files.Assign(value);
+				this._HSM_Files.Assign(value);
 			}
 		}
 		
@@ -11205,109 +11205,109 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Layout_Section_Machines(HCM_Layout_Section_Machine entity)
+		private void attach_HSM_Layout_Section_Machines(HSM_Layout_Section_Machine entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = this;
 		}
 		
-		private void detach_HCM_Layout_Section_Machines(HCM_Layout_Section_Machine entity)
+		private void detach_HSM_Layout_Section_Machines(HSM_Layout_Section_Machine entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = null;
 		}
 		
-		private void attach_HCM_Machine_Drives(HCM_Machine_Drive entity)
+		private void attach_HSM_Machine_Drives(HSM_Machine_Drive entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = this;
 		}
 		
-		private void detach_HCM_Machine_Drives(HCM_Machine_Drive entity)
+		private void detach_HSM_Machine_Drives(HSM_Machine_Drive entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = null;
 		}
 		
-		private void attach_HCM_Machine_Encoders(HCM_Machine_Encoder entity)
+		private void attach_HSM_Machine_Encoders(HSM_Machine_Encoder entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = this;
 		}
 		
-		private void detach_HCM_Machine_Encoders(HCM_Machine_Encoder entity)
+		private void detach_HSM_Machine_Encoders(HSM_Machine_Encoder entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = null;
 		}
 		
-		private void attach_HCM_Machine_Events(HCM_Machine_Event entity)
+		private void attach_HSM_Machine_Events(HSM_Machine_Event entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = this;
 		}
 		
-		private void detach_HCM_Machine_Events(HCM_Machine_Event entity)
+		private void detach_HSM_Machine_Events(HSM_Machine_Event entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = null;
 		}
 		
-		private void attach_HCM_Piece_Events(HCM_Piece_Event entity)
+		private void attach_HSM_Piece_Events(HSM_Piece_Event entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = this;
 		}
 		
-		private void detach_HCM_Piece_Events(HCM_Piece_Event entity)
+		private void detach_HSM_Piece_Events(HSM_Piece_Event entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = null;
 		}
 		
-		private void attach_HCM_Ground_EStop_Failures(HCM_Ground_EStop_Failure entity)
+		private void attach_HSM_Ground_EStop_Failures(HSM_Ground_EStop_Failure entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = this;
 		}
 		
-		private void detach_HCM_Ground_EStop_Failures(HCM_Ground_EStop_Failure entity)
+		private void detach_HSM_Ground_EStop_Failures(HSM_Ground_EStop_Failure entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = null;
 		}
 		
-		private void attach_HCM_Machine_Exit_Zones(HCM_Machine_Exit_Zone entity)
+		private void attach_HSM_Machine_Exit_Zones(HSM_Machine_Exit_Zone entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = this;
 		}
 		
-		private void detach_HCM_Machine_Exit_Zones(HCM_Machine_Exit_Zone entity)
+		private void detach_HSM_Machine_Exit_Zones(HSM_Machine_Exit_Zone entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = null;
 		}
 		
-		private void attach_HCM_Machine_Interfaces(HCM_Machine_Interface entity)
+		private void attach_HSM_Machine_Interfaces(HSM_Machine_Interface entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = this;
 		}
 		
-		private void detach_HCM_Machine_Interfaces(HCM_Machine_Interface entity)
+		private void detach_HSM_Machine_Interfaces(HSM_Machine_Interface entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = null;
 		}
 		
-		private void attach_HCM_Zones(HCM_Zone entity)
+		private void attach_HSM_Zones(HSM_Zone entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = this;
 		}
 		
-		private void detach_HCM_Zones(HCM_Zone entity)
+		private void detach_HSM_Zones(HSM_Zone entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = null;
@@ -11337,13 +11337,13 @@ namespace HCM.Database
 			entity.Rodeo_Machine = null;
 		}
 		
-		private void attach_HCM_Machine_Exit_Locations(HCM_Machine_Exit_Location entity)
+		private void attach_HSM_Machine_Exit_Locations(HSM_Machine_Exit_Location entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = this;
 		}
 		
-		private void detach_HCM_Machine_Exit_Locations(HCM_Machine_Exit_Location entity)
+		private void detach_HSM_Machine_Exit_Locations(HSM_Machine_Exit_Location entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = null;
@@ -11385,25 +11385,25 @@ namespace HCM.Database
 			entity.Rodeo_Machine = null;
 		}
 		
-		private void attach_HCM_Machine_Failures(HCM_Machine_Failure entity)
+		private void attach_HSM_Machine_Failures(HSM_Machine_Failure entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = this;
 		}
 		
-		private void detach_HCM_Machine_Failures(HCM_Machine_Failure entity)
+		private void detach_HSM_Machine_Failures(HSM_Machine_Failure entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = null;
 		}
 		
-		private void attach_HCM_Machine_Interlocks(HCM_Machine_Interlock entity)
+		private void attach_HSM_Machine_Interlocks(HSM_Machine_Interlock entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = this;
 		}
 		
-		private void detach_HCM_Machine_Interlocks(HCM_Machine_Interlock entity)
+		private void detach_HSM_Machine_Interlocks(HSM_Machine_Interlock entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = null;
@@ -11421,13 +11421,13 @@ namespace HCM.Database
 			entity.Rodeo_Machine = null;
 		}
 		
-		private void attach_HCM_Files(HCM_File entity)
+		private void attach_HSM_Files(HSM_File entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = this;
 		}
 		
-		private void detach_HCM_Files(HCM_File entity)
+		private void detach_HSM_Files(HSM_File entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Machine = null;
@@ -11435,25 +11435,25 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Layout_Section_Machines = new EntitySet<HCM_Layout_Section_Machine>(new Action<HCM_Layout_Section_Machine>(this.attach_HCM_Layout_Section_Machines), new Action<HCM_Layout_Section_Machine>(this.detach_HCM_Layout_Section_Machines));
-			this._HCM_Machine_Drives = new EntitySet<HCM_Machine_Drive>(new Action<HCM_Machine_Drive>(this.attach_HCM_Machine_Drives), new Action<HCM_Machine_Drive>(this.detach_HCM_Machine_Drives));
-			this._HCM_Machine_Encoders = new EntitySet<HCM_Machine_Encoder>(new Action<HCM_Machine_Encoder>(this.attach_HCM_Machine_Encoders), new Action<HCM_Machine_Encoder>(this.detach_HCM_Machine_Encoders));
-			this._HCM_Machine_Events = new EntitySet<HCM_Machine_Event>(new Action<HCM_Machine_Event>(this.attach_HCM_Machine_Events), new Action<HCM_Machine_Event>(this.detach_HCM_Machine_Events));
-			this._HCM_Piece_Events = new EntitySet<HCM_Piece_Event>(new Action<HCM_Piece_Event>(this.attach_HCM_Piece_Events), new Action<HCM_Piece_Event>(this.detach_HCM_Piece_Events));
-			this._HCM_Ground_EStop_Failures = new EntitySet<HCM_Ground_EStop_Failure>(new Action<HCM_Ground_EStop_Failure>(this.attach_HCM_Ground_EStop_Failures), new Action<HCM_Ground_EStop_Failure>(this.detach_HCM_Ground_EStop_Failures));
-			this._HCM_Machine_Exit_Zones = new EntitySet<HCM_Machine_Exit_Zone>(new Action<HCM_Machine_Exit_Zone>(this.attach_HCM_Machine_Exit_Zones), new Action<HCM_Machine_Exit_Zone>(this.detach_HCM_Machine_Exit_Zones));
-			this._HCM_Machine_Interfaces = new EntitySet<HCM_Machine_Interface>(new Action<HCM_Machine_Interface>(this.attach_HCM_Machine_Interfaces), new Action<HCM_Machine_Interface>(this.detach_HCM_Machine_Interfaces));
-			this._HCM_Zones = new EntitySet<HCM_Zone>(new Action<HCM_Zone>(this.attach_HCM_Zones), new Action<HCM_Zone>(this.detach_HCM_Zones));
+			this._HSM_Layout_Section_Machines = new EntitySet<HSM_Layout_Section_Machine>(new Action<HSM_Layout_Section_Machine>(this.attach_HSM_Layout_Section_Machines), new Action<HSM_Layout_Section_Machine>(this.detach_HSM_Layout_Section_Machines));
+			this._HSM_Machine_Drives = new EntitySet<HSM_Machine_Drive>(new Action<HSM_Machine_Drive>(this.attach_HSM_Machine_Drives), new Action<HSM_Machine_Drive>(this.detach_HSM_Machine_Drives));
+			this._HSM_Machine_Encoders = new EntitySet<HSM_Machine_Encoder>(new Action<HSM_Machine_Encoder>(this.attach_HSM_Machine_Encoders), new Action<HSM_Machine_Encoder>(this.detach_HSM_Machine_Encoders));
+			this._HSM_Machine_Events = new EntitySet<HSM_Machine_Event>(new Action<HSM_Machine_Event>(this.attach_HSM_Machine_Events), new Action<HSM_Machine_Event>(this.detach_HSM_Machine_Events));
+			this._HSM_Piece_Events = new EntitySet<HSM_Piece_Event>(new Action<HSM_Piece_Event>(this.attach_HSM_Piece_Events), new Action<HSM_Piece_Event>(this.detach_HSM_Piece_Events));
+			this._HSM_Ground_EStop_Failures = new EntitySet<HSM_Ground_EStop_Failure>(new Action<HSM_Ground_EStop_Failure>(this.attach_HSM_Ground_EStop_Failures), new Action<HSM_Ground_EStop_Failure>(this.detach_HSM_Ground_EStop_Failures));
+			this._HSM_Machine_Exit_Zones = new EntitySet<HSM_Machine_Exit_Zone>(new Action<HSM_Machine_Exit_Zone>(this.attach_HSM_Machine_Exit_Zones), new Action<HSM_Machine_Exit_Zone>(this.detach_HSM_Machine_Exit_Zones));
+			this._HSM_Machine_Interfaces = new EntitySet<HSM_Machine_Interface>(new Action<HSM_Machine_Interface>(this.attach_HSM_Machine_Interfaces), new Action<HSM_Machine_Interface>(this.detach_HSM_Machine_Interfaces));
+			this._HSM_Zones = new EntitySet<HSM_Zone>(new Action<HSM_Zone>(this.attach_HSM_Zones), new Action<HSM_Zone>(this.detach_HSM_Zones));
 			this._Rodeo_Network_Component_Alarms = new EntitySet<Rodeo_Network_Component_Alarm>(new Action<Rodeo_Network_Component_Alarm>(this.attach_Rodeo_Network_Component_Alarms), new Action<Rodeo_Network_Component_Alarm>(this.detach_Rodeo_Network_Component_Alarms));
 			this._Rodeo_Network_Components = new EntitySet<Rodeo_Network_Component>(new Action<Rodeo_Network_Component>(this.attach_Rodeo_Network_Components), new Action<Rodeo_Network_Component>(this.detach_Rodeo_Network_Components));
-			this._HCM_Machine_Exit_Locations = new EntitySet<HCM_Machine_Exit_Location>(new Action<HCM_Machine_Exit_Location>(this.attach_HCM_Machine_Exit_Locations), new Action<HCM_Machine_Exit_Location>(this.detach_HCM_Machine_Exit_Locations));
+			this._HSM_Machine_Exit_Locations = new EntitySet<HSM_Machine_Exit_Location>(new Action<HSM_Machine_Exit_Location>(this.attach_HSM_Machine_Exit_Locations), new Action<HSM_Machine_Exit_Location>(this.detach_HSM_Machine_Exit_Locations));
 			this._Rodeo_TransportOrders = new EntitySet<Rodeo_TransportOrder>(new Action<Rodeo_TransportOrder>(this.attach_Rodeo_TransportOrders), new Action<Rodeo_TransportOrder>(this.detach_Rodeo_TransportOrders));
 			this._Rodeo_Setting_Tags = new EntitySet<Rodeo_Setting_Tag>(new Action<Rodeo_Setting_Tag>(this.attach_Rodeo_Setting_Tags), new Action<Rodeo_Setting_Tag>(this.detach_Rodeo_Setting_Tags));
 			this._Rodeo_TO_Routes = new EntitySet<Rodeo_TO_Route>(new Action<Rodeo_TO_Route>(this.attach_Rodeo_TO_Routes), new Action<Rodeo_TO_Route>(this.detach_Rodeo_TO_Routes));
-			this._HCM_Machine_Failures = new EntitySet<HCM_Machine_Failure>(new Action<HCM_Machine_Failure>(this.attach_HCM_Machine_Failures), new Action<HCM_Machine_Failure>(this.detach_HCM_Machine_Failures));
-			this._HCM_Machine_Interlocks = new EntitySet<HCM_Machine_Interlock>(new Action<HCM_Machine_Interlock>(this.attach_HCM_Machine_Interlocks), new Action<HCM_Machine_Interlock>(this.detach_HCM_Machine_Interlocks));
+			this._HSM_Machine_Failures = new EntitySet<HSM_Machine_Failure>(new Action<HSM_Machine_Failure>(this.attach_HSM_Machine_Failures), new Action<HSM_Machine_Failure>(this.detach_HSM_Machine_Failures));
+			this._HSM_Machine_Interlocks = new EntitySet<HSM_Machine_Interlock>(new Action<HSM_Machine_Interlock>(this.attach_HSM_Machine_Interlocks), new Action<HSM_Machine_Interlock>(this.detach_HSM_Machine_Interlocks));
 			this._Rodeo_Pieces = new EntitySet<Rodeo_Piece>(new Action<Rodeo_Piece>(this.attach_Rodeo_Pieces), new Action<Rodeo_Piece>(this.detach_Rodeo_Pieces));
-			this._HCM_Files = new EntitySet<HCM_File>(new Action<HCM_File>(this.attach_HCM_Files), new Action<HCM_File>(this.detach_HCM_Files));
+			this._HSM_Files = new EntitySet<HSM_File>(new Action<HSM_File>(this.attach_HSM_Files), new Action<HSM_File>(this.detach_HSM_Files));
 			this._Rodeo_Machine_Group = default(EntityRef<Rodeo_Machine_Group>);
 			this._Rodeo_Machine_Type = default(EntityRef<Rodeo_Machine_Type>);
 			this._Rodeo_Yard = default(EntityRef<Rodeo_Yard>);
@@ -11685,9 +11685,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HCM_Incoming_Messages")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HSM_Incoming_Messages")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Incoming_Message : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Incoming_Message : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -11718,9 +11718,9 @@ namespace HCM.Database
 		
 		private System.DateTimeOffset _UpdDateTime;
 		
-		private EntityRef<HCM_Message_Type> _HCM_Message_Type;
+		private EntityRef<HSM_Message_Type> _HSM_Message_Type;
 		
-		private EntityRef<HCM_Job> _HCM_Job;
+		private EntityRef<HSM_Job> _HSM_Job;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -11754,7 +11754,7 @@ namespace HCM.Database
     partial void OnUpdDateTimeChanged();
     #endregion
 		
-		public HCM_Incoming_Message()
+		public HSM_Incoming_Message()
 		{
 			this.Initialize();
 		}
@@ -11792,7 +11792,7 @@ namespace HCM.Database
 			{
 				if ((this._IdJob != value))
 				{
-					if (this._HCM_Job.HasLoadedOrAssignedValue)
+					if (this._HSM_Job.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -11817,7 +11817,7 @@ namespace HCM.Database
 			{
 				if ((this._IdMessageType != value))
 				{
-					if (this._HCM_Message_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Message_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -12040,70 +12040,70 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Message_Type_HCM_Incoming_Message", Storage="_HCM_Message_Type", ThisKey="IdMessageType", OtherKey="IdMessageType", IsForeignKey=true)]
-		public HCM_Message_Type HCM_Message_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Message_Type_HSM_Incoming_Message", Storage="_HSM_Message_Type", ThisKey="IdMessageType", OtherKey="IdMessageType", IsForeignKey=true)]
+		public HSM_Message_Type HSM_Message_Type
 		{
 			get
 			{
-				return this._HCM_Message_Type.Entity;
+				return this._HSM_Message_Type.Entity;
 			}
 			set
 			{
-				HCM_Message_Type previousValue = this._HCM_Message_Type.Entity;
+				HSM_Message_Type previousValue = this._HSM_Message_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Message_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Message_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Message_Type.Entity = null;
-						previousValue.HCM_Incoming_Messages.Remove(this);
+						this._HSM_Message_Type.Entity = null;
+						previousValue.HSM_Incoming_Messages.Remove(this);
 					}
-					this._HCM_Message_Type.Entity = value;
+					this._HSM_Message_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Incoming_Messages.Add(this);
+						value.HSM_Incoming_Messages.Add(this);
 						this._IdMessageType = value.IdMessageType;
 					}
 					else
 					{
 						this._IdMessageType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Message_Type");
+					this.SendPropertyChanged("HSM_Message_Type");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Job_HCM_Incoming_Message", Storage="_HCM_Job", ThisKey="IdJob", OtherKey="IdJob", IsForeignKey=true)]
-		public HCM_Job HCM_Job
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Job_HSM_Incoming_Message", Storage="_HSM_Job", ThisKey="IdJob", OtherKey="IdJob", IsForeignKey=true)]
+		public HSM_Job HSM_Job
 		{
 			get
 			{
-				return this._HCM_Job.Entity;
+				return this._HSM_Job.Entity;
 			}
 			set
 			{
-				HCM_Job previousValue = this._HCM_Job.Entity;
+				HSM_Job previousValue = this._HSM_Job.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Job.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Job.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Job.Entity = null;
-						previousValue.HCM_Incoming_Messages.Remove(this);
+						this._HSM_Job.Entity = null;
+						previousValue.HSM_Incoming_Messages.Remove(this);
 					}
-					this._HCM_Job.Entity = value;
+					this._HSM_Job.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Incoming_Messages.Add(this);
+						value.HSM_Incoming_Messages.Add(this);
 						this._IdJob = value.IdJob;
 					}
 					else
 					{
 						this._IdJob = default(Nullable<long>);
 					}
-					this.SendPropertyChanged("HCM_Job");
+					this.SendPropertyChanged("HSM_Job");
 				}
 			}
 		}
@@ -12130,8 +12130,8 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Message_Type = default(EntityRef<HCM_Message_Type>);
-			this._HCM_Job = default(EntityRef<HCM_Job>);
+			this._HSM_Message_Type = default(EntityRef<HSM_Message_Type>);
+			this._HSM_Job = default(EntityRef<HSM_Job>);
 			OnCreated();
 		}
 		
@@ -12143,9 +12143,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HCM_Machine_Event_Types")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HSM_Machine_Event_Types")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Machine_Event_Type : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Machine_Event_Type : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -12158,7 +12158,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Machine_Event> _HCM_Machine_Events;
+		private EntitySet<HSM_Machine_Event> _HSM_Machine_Events;
 		
 		private bool serializing;
 		
@@ -12176,7 +12176,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Machine_Event_Type()
+		public HSM_Machine_Event_Type()
 		{
 			this.Initialize();
 		}
@@ -12265,22 +12265,22 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Machine_Event_Type_HCM_Machine_Event", Storage="_HCM_Machine_Events", ThisKey="IdMachineEventType", OtherKey="IdMachineEventType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Machine_Event_Type_HSM_Machine_Event", Storage="_HSM_Machine_Events", ThisKey="IdMachineEventType", OtherKey="IdMachineEventType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=5, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Event> HCM_Machine_Events
+		public EntitySet<HSM_Machine_Event> HSM_Machine_Events
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Events.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Events.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Events;
+				return this._HSM_Machine_Events;
 			}
 			set
 			{
-				this._HCM_Machine_Events.Assign(value);
+				this._HSM_Machine_Events.Assign(value);
 			}
 		}
 		
@@ -12304,21 +12304,21 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Machine_Events(HCM_Machine_Event entity)
+		private void attach_HSM_Machine_Events(HSM_Machine_Event entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Machine_Event_Type = this;
+			entity.HSM_Machine_Event_Type = this;
 		}
 		
-		private void detach_HCM_Machine_Events(HCM_Machine_Event entity)
+		private void detach_HSM_Machine_Events(HSM_Machine_Event entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Machine_Event_Type = null;
+			entity.HSM_Machine_Event_Type = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Machine_Events = new EntitySet<HCM_Machine_Event>(new Action<HCM_Machine_Event>(this.attach_HCM_Machine_Events), new Action<HCM_Machine_Event>(this.detach_HCM_Machine_Events));
+			this._HSM_Machine_Events = new EntitySet<HSM_Machine_Event>(new Action<HSM_Machine_Event>(this.attach_HSM_Machine_Events), new Action<HSM_Machine_Event>(this.detach_HSM_Machine_Events));
 			OnCreated();
 		}
 		
@@ -12344,9 +12344,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HCM_Machine_Events")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HSM_Machine_Events")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Machine_Event : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Machine_Event : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -12365,7 +12365,7 @@ namespace HCM.Database
 		
 		private System.DateTimeOffset _InsDateTime;
 		
-		private EntityRef<HCM_Machine_Event_Type> _HCM_Machine_Event_Type;
+		private EntityRef<HSM_Machine_Event_Type> _HSM_Machine_Event_Type;
 		
 		private EntityRef<Rodeo_Machine> _Rodeo_Machine;
 		
@@ -12389,7 +12389,7 @@ namespace HCM.Database
     partial void OnInsDateTimeChanged();
     #endregion
 		
-		public HCM_Machine_Event()
+		public HSM_Machine_Event()
 		{
 			this.Initialize();
 		}
@@ -12427,7 +12427,7 @@ namespace HCM.Database
 			{
 				if ((this._IdMachineEventType != value))
 				{
-					if (this._HCM_Machine_Event_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Machine_Event_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -12549,41 +12549,41 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Machine_Event_Type_HCM_Machine_Event", Storage="_HCM_Machine_Event_Type", ThisKey="IdMachineEventType", OtherKey="IdMachineEventType", IsForeignKey=true)]
-		public HCM_Machine_Event_Type HCM_Machine_Event_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Machine_Event_Type_HSM_Machine_Event", Storage="_HSM_Machine_Event_Type", ThisKey="IdMachineEventType", OtherKey="IdMachineEventType", IsForeignKey=true)]
+		public HSM_Machine_Event_Type HSM_Machine_Event_Type
 		{
 			get
 			{
-				return this._HCM_Machine_Event_Type.Entity;
+				return this._HSM_Machine_Event_Type.Entity;
 			}
 			set
 			{
-				HCM_Machine_Event_Type previousValue = this._HCM_Machine_Event_Type.Entity;
+				HSM_Machine_Event_Type previousValue = this._HSM_Machine_Event_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Machine_Event_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Machine_Event_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Machine_Event_Type.Entity = null;
-						previousValue.HCM_Machine_Events.Remove(this);
+						this._HSM_Machine_Event_Type.Entity = null;
+						previousValue.HSM_Machine_Events.Remove(this);
 					}
-					this._HCM_Machine_Event_Type.Entity = value;
+					this._HSM_Machine_Event_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Events.Add(this);
+						value.HSM_Machine_Events.Add(this);
 						this._IdMachineEventType = value.IdMachineEventType;
 					}
 					else
 					{
 						this._IdMachineEventType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Machine_Event_Type");
+					this.SendPropertyChanged("HSM_Machine_Event_Type");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Machine_Event", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Machine_Event", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
 		public Rodeo_Machine Rodeo_Machine
 		{
 			get
@@ -12600,12 +12600,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine.Entity = null;
-						previousValue.HCM_Machine_Events.Remove(this);
+						previousValue.HSM_Machine_Events.Remove(this);
 					}
 					this._Rodeo_Machine.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Events.Add(this);
+						value.HSM_Machine_Events.Add(this);
 						this._IdMachine = value.IdMachine;
 					}
 					else
@@ -12639,7 +12639,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Machine_Event_Type = default(EntityRef<HCM_Machine_Event_Type>);
+			this._HSM_Machine_Event_Type = default(EntityRef<HSM_Machine_Event_Type>);
 			this._Rodeo_Machine = default(EntityRef<Rodeo_Machine>);
 			OnCreated();
 		}
@@ -12652,9 +12652,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HCM_Message_Types")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HSM_Message_Types")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Message_Type : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Message_Type : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -12671,9 +12671,9 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Incoming_Message> _HCM_Incoming_Messages;
+		private EntitySet<HSM_Incoming_Message> _HSM_Incoming_Messages;
 		
-		private EntitySet<HCM_Outgoing_Message> _HCM_Outgoing_Messages;
+		private EntitySet<HSM_Outgoing_Message> _HSM_Outgoing_Messages;
 		
 		private bool serializing;
 		
@@ -12695,7 +12695,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Message_Type()
+		public HSM_Message_Type()
 		{
 			this.Initialize();
 		}
@@ -12826,41 +12826,41 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Message_Type_HCM_Incoming_Message", Storage="_HCM_Incoming_Messages", ThisKey="IdMessageType", OtherKey="IdMessageType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Message_Type_HSM_Incoming_Message", Storage="_HSM_Incoming_Messages", ThisKey="IdMessageType", OtherKey="IdMessageType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=7, EmitDefaultValue=false)]
-		public EntitySet<HCM_Incoming_Message> HCM_Incoming_Messages
+		public EntitySet<HSM_Incoming_Message> HSM_Incoming_Messages
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Incoming_Messages.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Incoming_Messages.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Incoming_Messages;
+				return this._HSM_Incoming_Messages;
 			}
 			set
 			{
-				this._HCM_Incoming_Messages.Assign(value);
+				this._HSM_Incoming_Messages.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Message_Type_HCM_Outgoing_Message", Storage="_HCM_Outgoing_Messages", ThisKey="IdMessageType", OtherKey="IdMessageType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Message_Type_HSM_Outgoing_Message", Storage="_HSM_Outgoing_Messages", ThisKey="IdMessageType", OtherKey="IdMessageType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=8, EmitDefaultValue=false)]
-		public EntitySet<HCM_Outgoing_Message> HCM_Outgoing_Messages
+		public EntitySet<HSM_Outgoing_Message> HSM_Outgoing_Messages
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Outgoing_Messages.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Outgoing_Messages.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Outgoing_Messages;
+				return this._HSM_Outgoing_Messages;
 			}
 			set
 			{
-				this._HCM_Outgoing_Messages.Assign(value);
+				this._HSM_Outgoing_Messages.Assign(value);
 			}
 		}
 		
@@ -12884,34 +12884,34 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Incoming_Messages(HCM_Incoming_Message entity)
+		private void attach_HSM_Incoming_Messages(HSM_Incoming_Message entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Message_Type = this;
+			entity.HSM_Message_Type = this;
 		}
 		
-		private void detach_HCM_Incoming_Messages(HCM_Incoming_Message entity)
+		private void detach_HSM_Incoming_Messages(HSM_Incoming_Message entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Message_Type = null;
+			entity.HSM_Message_Type = null;
 		}
 		
-		private void attach_HCM_Outgoing_Messages(HCM_Outgoing_Message entity)
+		private void attach_HSM_Outgoing_Messages(HSM_Outgoing_Message entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Message_Type = this;
+			entity.HSM_Message_Type = this;
 		}
 		
-		private void detach_HCM_Outgoing_Messages(HCM_Outgoing_Message entity)
+		private void detach_HSM_Outgoing_Messages(HSM_Outgoing_Message entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Message_Type = null;
+			entity.HSM_Message_Type = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Incoming_Messages = new EntitySet<HCM_Incoming_Message>(new Action<HCM_Incoming_Message>(this.attach_HCM_Incoming_Messages), new Action<HCM_Incoming_Message>(this.detach_HCM_Incoming_Messages));
-			this._HCM_Outgoing_Messages = new EntitySet<HCM_Outgoing_Message>(new Action<HCM_Outgoing_Message>(this.attach_HCM_Outgoing_Messages), new Action<HCM_Outgoing_Message>(this.detach_HCM_Outgoing_Messages));
+			this._HSM_Incoming_Messages = new EntitySet<HSM_Incoming_Message>(new Action<HSM_Incoming_Message>(this.attach_HSM_Incoming_Messages), new Action<HSM_Incoming_Message>(this.detach_HSM_Incoming_Messages));
+			this._HSM_Outgoing_Messages = new EntitySet<HSM_Outgoing_Message>(new Action<HSM_Outgoing_Message>(this.attach_HSM_Outgoing_Messages), new Action<HSM_Outgoing_Message>(this.detach_HSM_Outgoing_Messages));
 			OnCreated();
 		}
 		
@@ -12937,9 +12937,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HCM_Outgoing_Messages")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HSM_Outgoing_Messages")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Outgoing_Message : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Outgoing_Message : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -12970,9 +12970,9 @@ namespace HCM.Database
 		
 		private System.DateTimeOffset _UpdDateTime;
 		
-		private EntityRef<HCM_Message_Type> _HCM_Message_Type;
+		private EntityRef<HSM_Message_Type> _HSM_Message_Type;
 		
-		private EntityRef<HCM_Job> _HCM_Job;
+		private EntityRef<HSM_Job> _HSM_Job;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -13006,7 +13006,7 @@ namespace HCM.Database
     partial void OnUpdDateTimeChanged();
     #endregion
 		
-		public HCM_Outgoing_Message()
+		public HSM_Outgoing_Message()
 		{
 			this.Initialize();
 		}
@@ -13044,7 +13044,7 @@ namespace HCM.Database
 			{
 				if ((this._IdJob != value))
 				{
-					if (this._HCM_Job.HasLoadedOrAssignedValue)
+					if (this._HSM_Job.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -13069,7 +13069,7 @@ namespace HCM.Database
 			{
 				if ((this._IdMessageType != value))
 				{
-					if (this._HCM_Message_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Message_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -13292,70 +13292,70 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Message_Type_HCM_Outgoing_Message", Storage="_HCM_Message_Type", ThisKey="IdMessageType", OtherKey="IdMessageType", IsForeignKey=true)]
-		public HCM_Message_Type HCM_Message_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Message_Type_HSM_Outgoing_Message", Storage="_HSM_Message_Type", ThisKey="IdMessageType", OtherKey="IdMessageType", IsForeignKey=true)]
+		public HSM_Message_Type HSM_Message_Type
 		{
 			get
 			{
-				return this._HCM_Message_Type.Entity;
+				return this._HSM_Message_Type.Entity;
 			}
 			set
 			{
-				HCM_Message_Type previousValue = this._HCM_Message_Type.Entity;
+				HSM_Message_Type previousValue = this._HSM_Message_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Message_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Message_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Message_Type.Entity = null;
-						previousValue.HCM_Outgoing_Messages.Remove(this);
+						this._HSM_Message_Type.Entity = null;
+						previousValue.HSM_Outgoing_Messages.Remove(this);
 					}
-					this._HCM_Message_Type.Entity = value;
+					this._HSM_Message_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Outgoing_Messages.Add(this);
+						value.HSM_Outgoing_Messages.Add(this);
 						this._IdMessageType = value.IdMessageType;
 					}
 					else
 					{
 						this._IdMessageType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Message_Type");
+					this.SendPropertyChanged("HSM_Message_Type");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Job_HCM_Outgoing_Message", Storage="_HCM_Job", ThisKey="IdJob", OtherKey="IdJob", IsForeignKey=true)]
-		public HCM_Job HCM_Job
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Job_HSM_Outgoing_Message", Storage="_HSM_Job", ThisKey="IdJob", OtherKey="IdJob", IsForeignKey=true)]
+		public HSM_Job HSM_Job
 		{
 			get
 			{
-				return this._HCM_Job.Entity;
+				return this._HSM_Job.Entity;
 			}
 			set
 			{
-				HCM_Job previousValue = this._HCM_Job.Entity;
+				HSM_Job previousValue = this._HSM_Job.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Job.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Job.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Job.Entity = null;
-						previousValue.HCM_Outgoing_Messages.Remove(this);
+						this._HSM_Job.Entity = null;
+						previousValue.HSM_Outgoing_Messages.Remove(this);
 					}
-					this._HCM_Job.Entity = value;
+					this._HSM_Job.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Outgoing_Messages.Add(this);
+						value.HSM_Outgoing_Messages.Add(this);
 						this._IdJob = value.IdJob;
 					}
 					else
 					{
 						this._IdJob = default(Nullable<long>);
 					}
-					this.SendPropertyChanged("HCM_Job");
+					this.SendPropertyChanged("HSM_Job");
 				}
 			}
 		}
@@ -13382,8 +13382,8 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Message_Type = default(EntityRef<HCM_Message_Type>);
-			this._HCM_Job = default(EntityRef<HCM_Job>);
+			this._HSM_Message_Type = default(EntityRef<HSM_Message_Type>);
+			this._HSM_Job = default(EntityRef<HSM_Job>);
 			OnCreated();
 		}
 		
@@ -13395,9 +13395,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HCM_Piece_Event_Types")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HSM_Piece_Event_Types")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Piece_Event_Type : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Piece_Event_Type : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -13410,7 +13410,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Piece_Event> _HCM_Piece_Events;
+		private EntitySet<HSM_Piece_Event> _HSM_Piece_Events;
 		
 		private bool serializing;
 		
@@ -13428,7 +13428,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Piece_Event_Type()
+		public HSM_Piece_Event_Type()
 		{
 			this.Initialize();
 		}
@@ -13517,22 +13517,22 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Piece_Event_Type_HCM_Piece_Event", Storage="_HCM_Piece_Events", ThisKey="IdPieceEventType", OtherKey="IdPieceEventType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Piece_Event_Type_HSM_Piece_Event", Storage="_HSM_Piece_Events", ThisKey="IdPieceEventType", OtherKey="IdPieceEventType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=5, EmitDefaultValue=false)]
-		public EntitySet<HCM_Piece_Event> HCM_Piece_Events
+		public EntitySet<HSM_Piece_Event> HSM_Piece_Events
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Piece_Events.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Piece_Events.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Piece_Events;
+				return this._HSM_Piece_Events;
 			}
 			set
 			{
-				this._HCM_Piece_Events.Assign(value);
+				this._HSM_Piece_Events.Assign(value);
 			}
 		}
 		
@@ -13556,21 +13556,21 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Piece_Events(HCM_Piece_Event entity)
+		private void attach_HSM_Piece_Events(HSM_Piece_Event entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Piece_Event_Type = this;
+			entity.HSM_Piece_Event_Type = this;
 		}
 		
-		private void detach_HCM_Piece_Events(HCM_Piece_Event entity)
+		private void detach_HSM_Piece_Events(HSM_Piece_Event entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Piece_Event_Type = null;
+			entity.HSM_Piece_Event_Type = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Piece_Events = new EntitySet<HCM_Piece_Event>(new Action<HCM_Piece_Event>(this.attach_HCM_Piece_Events), new Action<HCM_Piece_Event>(this.detach_HCM_Piece_Events));
+			this._HSM_Piece_Events = new EntitySet<HSM_Piece_Event>(new Action<HSM_Piece_Event>(this.attach_HSM_Piece_Events), new Action<HSM_Piece_Event>(this.detach_HSM_Piece_Events));
 			OnCreated();
 		}
 		
@@ -13596,9 +13596,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HCM_Piece_Events")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HSM_Piece_Events")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Piece_Event : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Piece_Event : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -13617,7 +13617,7 @@ namespace HCM.Database
 		
 		private System.DateTimeOffset _InsDateTime;
 		
-		private EntityRef<HCM_Piece_Event_Type> _HCM_Piece_Event_Type;
+		private EntityRef<HSM_Piece_Event_Type> _HSM_Piece_Event_Type;
 		
 		private EntityRef<Rodeo_Machine> _Rodeo_Machine;
 		
@@ -13641,7 +13641,7 @@ namespace HCM.Database
     partial void OnInsDateTimeChanged();
     #endregion
 		
-		public HCM_Piece_Event()
+		public HSM_Piece_Event()
 		{
 			this.Initialize();
 		}
@@ -13679,7 +13679,7 @@ namespace HCM.Database
 			{
 				if ((this._IdPieceEventType != value))
 				{
-					if (this._HCM_Piece_Event_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Piece_Event_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -13801,41 +13801,41 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Piece_Event_Type_HCM_Piece_Event", Storage="_HCM_Piece_Event_Type", ThisKey="IdPieceEventType", OtherKey="IdPieceEventType", IsForeignKey=true)]
-		public HCM_Piece_Event_Type HCM_Piece_Event_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Piece_Event_Type_HSM_Piece_Event", Storage="_HSM_Piece_Event_Type", ThisKey="IdPieceEventType", OtherKey="IdPieceEventType", IsForeignKey=true)]
+		public HSM_Piece_Event_Type HSM_Piece_Event_Type
 		{
 			get
 			{
-				return this._HCM_Piece_Event_Type.Entity;
+				return this._HSM_Piece_Event_Type.Entity;
 			}
 			set
 			{
-				HCM_Piece_Event_Type previousValue = this._HCM_Piece_Event_Type.Entity;
+				HSM_Piece_Event_Type previousValue = this._HSM_Piece_Event_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Piece_Event_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Piece_Event_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Piece_Event_Type.Entity = null;
-						previousValue.HCM_Piece_Events.Remove(this);
+						this._HSM_Piece_Event_Type.Entity = null;
+						previousValue.HSM_Piece_Events.Remove(this);
 					}
-					this._HCM_Piece_Event_Type.Entity = value;
+					this._HSM_Piece_Event_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Piece_Events.Add(this);
+						value.HSM_Piece_Events.Add(this);
 						this._IdPieceEventType = value.IdPieceEventType;
 					}
 					else
 					{
 						this._IdPieceEventType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Piece_Event_Type");
+					this.SendPropertyChanged("HSM_Piece_Event_Type");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Piece_Event", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Piece_Event", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
 		public Rodeo_Machine Rodeo_Machine
 		{
 			get
@@ -13852,12 +13852,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine.Entity = null;
-						previousValue.HCM_Piece_Events.Remove(this);
+						previousValue.HSM_Piece_Events.Remove(this);
 					}
 					this._Rodeo_Machine.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Piece_Events.Add(this);
+						value.HSM_Piece_Events.Add(this);
 						this._IdMachine = value.IdMachine;
 					}
 					else
@@ -13891,7 +13891,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Piece_Event_Type = default(EntityRef<HCM_Piece_Event_Type>);
+			this._HSM_Piece_Event_Type = default(EntityRef<HSM_Piece_Event_Type>);
 			this._Rodeo_Machine = default(EntityRef<Rodeo_Machine>);
 			OnCreated();
 		}
@@ -13904,9 +13904,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HCM_Zone_Event_Types")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HSM_Zone_Event_Types")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Zone_Event_Type : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Zone_Event_Type : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -13919,9 +13919,9 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Zone_Event> _HCM_Zone_Events;
+		private EntitySet<HSM_Zone_Event> _HSM_Zone_Events;
 		
-		private EntitySet<HCM_Request_Signal> _HCM_Request_Signals;
+		private EntitySet<HSM_Request_Signal> _HSM_Request_Signals;
 		
 		private bool serializing;
 		
@@ -13939,7 +13939,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Zone_Event_Type()
+		public HSM_Zone_Event_Type()
 		{
 			this.Initialize();
 		}
@@ -14028,41 +14028,41 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_Event_Type_HCM_Zone_Event", Storage="_HCM_Zone_Events", ThisKey="IdZoneEventType", OtherKey="IdZoneEventType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_Event_Type_HSM_Zone_Event", Storage="_HSM_Zone_Events", ThisKey="IdZoneEventType", OtherKey="IdZoneEventType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=5, EmitDefaultValue=false)]
-		public EntitySet<HCM_Zone_Event> HCM_Zone_Events
+		public EntitySet<HSM_Zone_Event> HSM_Zone_Events
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Zone_Events.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Zone_Events.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Zone_Events;
+				return this._HSM_Zone_Events;
 			}
 			set
 			{
-				this._HCM_Zone_Events.Assign(value);
+				this._HSM_Zone_Events.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_Event_Type_HCM_Request_Signal", Storage="_HCM_Request_Signals", ThisKey="IdZoneEventType", OtherKey="IdZoneEventType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_Event_Type_HSM_Request_Signal", Storage="_HSM_Request_Signals", ThisKey="IdZoneEventType", OtherKey="IdZoneEventType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=6, EmitDefaultValue=false)]
-		public EntitySet<HCM_Request_Signal> HCM_Request_Signals
+		public EntitySet<HSM_Request_Signal> HSM_Request_Signals
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Request_Signals.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Request_Signals.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Request_Signals;
+				return this._HSM_Request_Signals;
 			}
 			set
 			{
-				this._HCM_Request_Signals.Assign(value);
+				this._HSM_Request_Signals.Assign(value);
 			}
 		}
 		
@@ -14086,34 +14086,34 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Zone_Events(HCM_Zone_Event entity)
+		private void attach_HSM_Zone_Events(HSM_Zone_Event entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone_Event_Type = this;
+			entity.HSM_Zone_Event_Type = this;
 		}
 		
-		private void detach_HCM_Zone_Events(HCM_Zone_Event entity)
+		private void detach_HSM_Zone_Events(HSM_Zone_Event entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone_Event_Type = null;
+			entity.HSM_Zone_Event_Type = null;
 		}
 		
-		private void attach_HCM_Request_Signals(HCM_Request_Signal entity)
+		private void attach_HSM_Request_Signals(HSM_Request_Signal entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone_Event_Type = this;
+			entity.HSM_Zone_Event_Type = this;
 		}
 		
-		private void detach_HCM_Request_Signals(HCM_Request_Signal entity)
+		private void detach_HSM_Request_Signals(HSM_Request_Signal entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone_Event_Type = null;
+			entity.HSM_Zone_Event_Type = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Zone_Events = new EntitySet<HCM_Zone_Event>(new Action<HCM_Zone_Event>(this.attach_HCM_Zone_Events), new Action<HCM_Zone_Event>(this.detach_HCM_Zone_Events));
-			this._HCM_Request_Signals = new EntitySet<HCM_Request_Signal>(new Action<HCM_Request_Signal>(this.attach_HCM_Request_Signals), new Action<HCM_Request_Signal>(this.detach_HCM_Request_Signals));
+			this._HSM_Zone_Events = new EntitySet<HSM_Zone_Event>(new Action<HSM_Zone_Event>(this.attach_HSM_Zone_Events), new Action<HSM_Zone_Event>(this.detach_HSM_Zone_Events));
+			this._HSM_Request_Signals = new EntitySet<HSM_Request_Signal>(new Action<HSM_Request_Signal>(this.attach_HSM_Request_Signals), new Action<HSM_Request_Signal>(this.detach_HSM_Request_Signals));
 			OnCreated();
 		}
 		
@@ -14139,9 +14139,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HCM_Zone_Events")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="report.HSM_Zone_Events")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Zone_Event : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Zone_Event : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -14164,13 +14164,13 @@ namespace HCM.Database
 		
 		private System.DateTimeOffset _InsDateTime;
 		
-		private EntityRef<HCM_Zone_Event_Type> _HCM_Zone_Event_Type;
+		private EntityRef<HSM_Zone_Event_Type> _HSM_Zone_Event_Type;
 		
 		private EntityRef<Rodeo_Client> _Rodeo_Client;
 		
-		private EntityRef<HCM_Request> _HCM_Request;
+		private EntityRef<HSM_Request> _HSM_Request;
 		
-		private EntityRef<HCM_Zone> _HCM_Zone;
+		private EntityRef<HSM_Zone> _HSM_Zone;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -14196,7 +14196,7 @@ namespace HCM.Database
     partial void OnInsDateTimeChanged();
     #endregion
 		
-		public HCM_Zone_Event()
+		public HSM_Zone_Event()
 		{
 			this.Initialize();
 		}
@@ -14234,7 +14234,7 @@ namespace HCM.Database
 			{
 				if ((this._IdZoneEventType != value))
 				{
-					if (this._HCM_Zone_Event_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Zone_Event_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -14259,7 +14259,7 @@ namespace HCM.Database
 			{
 				if ((this._IdZone != value))
 				{
-					if (this._HCM_Zone.HasLoadedOrAssignedValue)
+					if (this._HSM_Zone.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -14284,7 +14284,7 @@ namespace HCM.Database
 			{
 				if ((this._IdRequest != value))
 				{
-					if (this._HCM_Request.HasLoadedOrAssignedValue)
+					if (this._HSM_Request.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -14406,41 +14406,41 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_Event_Type_HCM_Zone_Event", Storage="_HCM_Zone_Event_Type", ThisKey="IdZoneEventType", OtherKey="IdZoneEventType", IsForeignKey=true)]
-		public HCM_Zone_Event_Type HCM_Zone_Event_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_Event_Type_HSM_Zone_Event", Storage="_HSM_Zone_Event_Type", ThisKey="IdZoneEventType", OtherKey="IdZoneEventType", IsForeignKey=true)]
+		public HSM_Zone_Event_Type HSM_Zone_Event_Type
 		{
 			get
 			{
-				return this._HCM_Zone_Event_Type.Entity;
+				return this._HSM_Zone_Event_Type.Entity;
 			}
 			set
 			{
-				HCM_Zone_Event_Type previousValue = this._HCM_Zone_Event_Type.Entity;
+				HSM_Zone_Event_Type previousValue = this._HSM_Zone_Event_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Zone_Event_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Zone_Event_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Zone_Event_Type.Entity = null;
-						previousValue.HCM_Zone_Events.Remove(this);
+						this._HSM_Zone_Event_Type.Entity = null;
+						previousValue.HSM_Zone_Events.Remove(this);
 					}
-					this._HCM_Zone_Event_Type.Entity = value;
+					this._HSM_Zone_Event_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Zone_Events.Add(this);
+						value.HSM_Zone_Events.Add(this);
 						this._IdZoneEventType = value.IdZoneEventType;
 					}
 					else
 					{
 						this._IdZoneEventType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Zone_Event_Type");
+					this.SendPropertyChanged("HSM_Zone_Event_Type");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Client_HCM_Zone_Event", Storage="_Rodeo_Client", ThisKey="IdClient", OtherKey="IdClient", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Client_HSM_Zone_Event", Storage="_Rodeo_Client", ThisKey="IdClient", OtherKey="IdClient", IsForeignKey=true)]
 		public Rodeo_Client Rodeo_Client
 		{
 			get
@@ -14457,12 +14457,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Client.Entity = null;
-						previousValue.HCM_Zone_Events.Remove(this);
+						previousValue.HSM_Zone_Events.Remove(this);
 					}
 					this._Rodeo_Client.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Zone_Events.Add(this);
+						value.HSM_Zone_Events.Add(this);
 						this._IdClient = value.IdClient;
 					}
 					else
@@ -14474,70 +14474,70 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_HCM_Zone_Event", Storage="_HCM_Request", ThisKey="IdRequest", OtherKey="IdRequest", IsForeignKey=true)]
-		public HCM_Request HCM_Request
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_HSM_Zone_Event", Storage="_HSM_Request", ThisKey="IdRequest", OtherKey="IdRequest", IsForeignKey=true)]
+		public HSM_Request HSM_Request
 		{
 			get
 			{
-				return this._HCM_Request.Entity;
+				return this._HSM_Request.Entity;
 			}
 			set
 			{
-				HCM_Request previousValue = this._HCM_Request.Entity;
+				HSM_Request previousValue = this._HSM_Request.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Request.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Request.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Request.Entity = null;
-						previousValue.HCM_Zone_Events.Remove(this);
+						this._HSM_Request.Entity = null;
+						previousValue.HSM_Zone_Events.Remove(this);
 					}
-					this._HCM_Request.Entity = value;
+					this._HSM_Request.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Zone_Events.Add(this);
+						value.HSM_Zone_Events.Add(this);
 						this._IdRequest = value.IdRequest;
 					}
 					else
 					{
 						this._IdRequest = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("HCM_Request");
+					this.SendPropertyChanged("HSM_Request");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Zone_Event", Storage="_HCM_Zone", ThisKey="IdZone", OtherKey="IdZone", IsForeignKey=true)]
-		public HCM_Zone HCM_Zone
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Zone_Event", Storage="_HSM_Zone", ThisKey="IdZone", OtherKey="IdZone", IsForeignKey=true)]
+		public HSM_Zone HSM_Zone
 		{
 			get
 			{
-				return this._HCM_Zone.Entity;
+				return this._HSM_Zone.Entity;
 			}
 			set
 			{
-				HCM_Zone previousValue = this._HCM_Zone.Entity;
+				HSM_Zone previousValue = this._HSM_Zone.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Zone.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Zone.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Zone.Entity = null;
-						previousValue.HCM_Zone_Events.Remove(this);
+						this._HSM_Zone.Entity = null;
+						previousValue.HSM_Zone_Events.Remove(this);
 					}
-					this._HCM_Zone.Entity = value;
+					this._HSM_Zone.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Zone_Events.Add(this);
+						value.HSM_Zone_Events.Add(this);
 						this._IdZone = value.IdZone;
 					}
 					else
 					{
 						this._IdZone = default(int);
 					}
-					this.SendPropertyChanged("HCM_Zone");
+					this.SendPropertyChanged("HSM_Zone");
 				}
 			}
 		}
@@ -14564,10 +14564,10 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Zone_Event_Type = default(EntityRef<HCM_Zone_Event_Type>);
+			this._HSM_Zone_Event_Type = default(EntityRef<HSM_Zone_Event_Type>);
 			this._Rodeo_Client = default(EntityRef<Rodeo_Client>);
-			this._HCM_Request = default(EntityRef<HCM_Request>);
-			this._HCM_Zone = default(EntityRef<HCM_Zone>);
+			this._HSM_Request = default(EntityRef<HSM_Request>);
+			this._HSM_Zone = default(EntityRef<HSM_Zone>);
 			OnCreated();
 		}
 		
@@ -14819,7 +14819,7 @@ namespace HCM.Database
 		
 		private EntityRef<Rodeo_TransportOrder> _Rodeo_TransportOrder;
 		
-		private EntityRef<HCM_Job> _HCM_Job;
+		private EntityRef<HSM_Job> _HSM_Job;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -14983,7 +14983,7 @@ namespace HCM.Database
 			{
 				if ((this._IdJob != value))
 				{
-					if (this._HCM_Job.HasLoadedOrAssignedValue)
+					if (this._HSM_Job.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -15249,26 +15249,26 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Job_Rodeo_Event", Storage="_HCM_Job", ThisKey="IdJob", OtherKey="IdJob", IsForeignKey=true)]
-		public HCM_Job HCM_Job
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Job_Rodeo_Event", Storage="_HSM_Job", ThisKey="IdJob", OtherKey="IdJob", IsForeignKey=true)]
+		public HSM_Job HSM_Job
 		{
 			get
 			{
-				return this._HCM_Job.Entity;
+				return this._HSM_Job.Entity;
 			}
 			set
 			{
-				HCM_Job previousValue = this._HCM_Job.Entity;
+				HSM_Job previousValue = this._HSM_Job.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Job.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Job.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Job.Entity = null;
+						this._HSM_Job.Entity = null;
 						previousValue.Rodeo_Events.Remove(this);
 					}
-					this._HCM_Job.Entity = value;
+					this._HSM_Job.Entity = value;
 					if ((value != null))
 					{
 						value.Rodeo_Events.Add(this);
@@ -15278,7 +15278,7 @@ namespace HCM.Database
 					{
 						this._IdJob = default(Nullable<long>);
 					}
-					this.SendPropertyChanged("HCM_Job");
+					this.SendPropertyChanged("HSM_Job");
 				}
 			}
 		}
@@ -15308,7 +15308,7 @@ namespace HCM.Database
 			this._Rodeo_Client = default(EntityRef<Rodeo_Client>);
 			this._Rodeo_Event_Type = default(EntityRef<Rodeo_Event_Type>);
 			this._Rodeo_TransportOrder = default(EntityRef<Rodeo_TransportOrder>);
-			this._HCM_Job = default(EntityRef<HCM_Job>);
+			this._HSM_Job = default(EntityRef<HSM_Job>);
 			OnCreated();
 		}
 		
@@ -15320,9 +15320,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="rodeo.HCM_Failures_History")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="rodeo.HSM_Failures_History")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Failures_History : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Failures_History : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -15341,7 +15341,7 @@ namespace HCM.Database
 		
 		private System.DateTimeOffset _UpdDateTime;
 		
-		private EntityRef<HCM_Machine_Failure> _HCM_Machine_Failure;
+		private EntityRef<HSM_Machine_Failure> _HSM_Machine_Failure;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -15363,7 +15363,7 @@ namespace HCM.Database
     partial void OnUpdDateTimeChanged();
     #endregion
 		
-		public HCM_Failures_History()
+		public HSM_Failures_History()
 		{
 			this.Initialize();
 		}
@@ -15401,7 +15401,7 @@ namespace HCM.Database
 			{
 				if ((this._IdMachineFailure != value))
 				{
-					if (this._HCM_Machine_Failure.HasLoadedOrAssignedValue)
+					if (this._HSM_Machine_Failure.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -15519,36 +15519,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Machine_Failure_HCM_Failures_History", Storage="_HCM_Machine_Failure", ThisKey="IdMachineFailure", OtherKey="IdMachineFailure", IsForeignKey=true)]
-		public HCM_Machine_Failure HCM_Machine_Failure
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Machine_Failure_HSM_Failures_History", Storage="_HSM_Machine_Failure", ThisKey="IdMachineFailure", OtherKey="IdMachineFailure", IsForeignKey=true)]
+		public HSM_Machine_Failure HSM_Machine_Failure
 		{
 			get
 			{
-				return this._HCM_Machine_Failure.Entity;
+				return this._HSM_Machine_Failure.Entity;
 			}
 			set
 			{
-				HCM_Machine_Failure previousValue = this._HCM_Machine_Failure.Entity;
+				HSM_Machine_Failure previousValue = this._HSM_Machine_Failure.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Machine_Failure.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Machine_Failure.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Machine_Failure.Entity = null;
-						previousValue.HCM_Failures_Histories.Remove(this);
+						this._HSM_Machine_Failure.Entity = null;
+						previousValue.HSM_Failures_Histories.Remove(this);
 					}
-					this._HCM_Machine_Failure.Entity = value;
+					this._HSM_Machine_Failure.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Failures_Histories.Add(this);
+						value.HSM_Failures_Histories.Add(this);
 						this._IdMachineFailure = value.IdMachineFailure;
 					}
 					else
 					{
 						this._IdMachineFailure = default(int);
 					}
-					this.SendPropertyChanged("HCM_Machine_Failure");
+					this.SendPropertyChanged("HSM_Machine_Failure");
 				}
 			}
 		}
@@ -15575,7 +15575,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Machine_Failure = default(EntityRef<HCM_Machine_Failure>);
+			this._HSM_Machine_Failure = default(EntityRef<HSM_Machine_Failure>);
 			OnCreated();
 		}
 		
@@ -16665,9 +16665,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Ground_EStop_Failures")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Ground_EStop_Failures")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Ground_EStop_Failure : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Ground_EStop_Failure : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -16698,7 +16698,7 @@ namespace HCM.Database
 		
 		private EntityRef<Rodeo_Machine> _Rodeo_Machine;
 		
-		private EntityRef<HCM_Ground_EStop_Group> _HCM_Ground_EStop_Group;
+		private EntityRef<HSM_Ground_EStop_Group> _HSM_Ground_EStop_Group;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -16730,7 +16730,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Ground_EStop_Failure()
+		public HSM_Ground_EStop_Failure()
 		{
 			this.Initialize();
 		}
@@ -16768,7 +16768,7 @@ namespace HCM.Database
 			{
 				if ((this._IdGroundEStopGroup != value))
 				{
-					if (this._HCM_Ground_EStop_Group.HasLoadedOrAssignedValue)
+					if (this._HSM_Ground_EStop_Group.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -16995,7 +16995,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Ground_EStop_Failure", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Ground_EStop_Failure", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
 		public Rodeo_Machine Rodeo_Machine
 		{
 			get
@@ -17012,12 +17012,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine.Entity = null;
-						previousValue.HCM_Ground_EStop_Failures.Remove(this);
+						previousValue.HSM_Ground_EStop_Failures.Remove(this);
 					}
 					this._Rodeo_Machine.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Ground_EStop_Failures.Add(this);
+						value.HSM_Ground_EStop_Failures.Add(this);
 						this._IdMachine = value.IdMachine;
 					}
 					else
@@ -17029,36 +17029,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Ground_EStop_Group_HCM_Ground_EStop_Failure", Storage="_HCM_Ground_EStop_Group", ThisKey="IdGroundEStopGroup", OtherKey="IdGroundEStopGroup", IsForeignKey=true)]
-		public HCM_Ground_EStop_Group HCM_Ground_EStop_Group
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Ground_EStop_Group_HSM_Ground_EStop_Failure", Storage="_HSM_Ground_EStop_Group", ThisKey="IdGroundEStopGroup", OtherKey="IdGroundEStopGroup", IsForeignKey=true)]
+		public HSM_Ground_EStop_Group HSM_Ground_EStop_Group
 		{
 			get
 			{
-				return this._HCM_Ground_EStop_Group.Entity;
+				return this._HSM_Ground_EStop_Group.Entity;
 			}
 			set
 			{
-				HCM_Ground_EStop_Group previousValue = this._HCM_Ground_EStop_Group.Entity;
+				HSM_Ground_EStop_Group previousValue = this._HSM_Ground_EStop_Group.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Ground_EStop_Group.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Ground_EStop_Group.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Ground_EStop_Group.Entity = null;
-						previousValue.HCM_Ground_EStop_Failures.Remove(this);
+						this._HSM_Ground_EStop_Group.Entity = null;
+						previousValue.HSM_Ground_EStop_Failures.Remove(this);
 					}
-					this._HCM_Ground_EStop_Group.Entity = value;
+					this._HSM_Ground_EStop_Group.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Ground_EStop_Failures.Add(this);
+						value.HSM_Ground_EStop_Failures.Add(this);
 						this._IdGroundEStopGroup = value.IdGroundEStopGroup;
 					}
 					else
 					{
 						this._IdGroundEStopGroup = default(int);
 					}
-					this.SendPropertyChanged("HCM_Ground_EStop_Group");
+					this.SendPropertyChanged("HSM_Ground_EStop_Group");
 				}
 			}
 		}
@@ -17086,7 +17086,7 @@ namespace HCM.Database
 		private void Initialize()
 		{
 			this._Rodeo_Machine = default(EntityRef<Rodeo_Machine>);
-			this._HCM_Ground_EStop_Group = default(EntityRef<HCM_Ground_EStop_Group>);
+			this._HSM_Ground_EStop_Group = default(EntityRef<HSM_Ground_EStop_Group>);
 			OnCreated();
 		}
 		
@@ -17098,9 +17098,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Ground_EStop_Groups")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Ground_EStop_Groups")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Ground_EStop_Group : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Ground_EStop_Group : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -17127,13 +17127,13 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Ground_EStop_Failure> _HCM_Ground_EStop_Failures;
+		private EntitySet<HSM_Ground_EStop_Failure> _HSM_Ground_EStop_Failures;
 		
-		private EntitySet<HCM_Ground_EStop_Interface> _HCM_Ground_EStop_Interfaces;
+		private EntitySet<HSM_Ground_EStop_Interface> _HSM_Ground_EStop_Interfaces;
 		
-		private EntitySet<HCM_Ground_EStop_Panel> _HCM_Ground_EStop_Panels;
+		private EntitySet<HSM_Ground_EStop_Panel> _HSM_Ground_EStop_Panels;
 		
-		private EntitySet<HCM_Ground_EStop_Request> _HCM_Ground_EStop_Requests;
+		private EntitySet<HSM_Ground_EStop_Request> _HSM_Ground_EStop_Requests;
 		
 		private bool serializing;
 		
@@ -17165,7 +17165,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Ground_EStop_Group()
+		public HSM_Ground_EStop_Group()
 		{
 			this.Initialize();
 		}
@@ -17401,79 +17401,79 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Ground_EStop_Group_HCM_Ground_EStop_Failure", Storage="_HCM_Ground_EStop_Failures", ThisKey="IdGroundEStopGroup", OtherKey="IdGroundEStopGroup")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Ground_EStop_Group_HSM_Ground_EStop_Failure", Storage="_HSM_Ground_EStop_Failures", ThisKey="IdGroundEStopGroup", OtherKey="IdGroundEStopGroup")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=12, EmitDefaultValue=false)]
-		public EntitySet<HCM_Ground_EStop_Failure> HCM_Ground_EStop_Failures
+		public EntitySet<HSM_Ground_EStop_Failure> HSM_Ground_EStop_Failures
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Ground_EStop_Failures.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Ground_EStop_Failures.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Ground_EStop_Failures;
+				return this._HSM_Ground_EStop_Failures;
 			}
 			set
 			{
-				this._HCM_Ground_EStop_Failures.Assign(value);
+				this._HSM_Ground_EStop_Failures.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Ground_EStop_Group_HCM_Ground_EStop_Interface", Storage="_HCM_Ground_EStop_Interfaces", ThisKey="IdGroundEStopGroup", OtherKey="IdGroundEStopGroup")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Ground_EStop_Group_HSM_Ground_EStop_Interface", Storage="_HSM_Ground_EStop_Interfaces", ThisKey="IdGroundEStopGroup", OtherKey="IdGroundEStopGroup")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=13, EmitDefaultValue=false)]
-		public EntitySet<HCM_Ground_EStop_Interface> HCM_Ground_EStop_Interfaces
+		public EntitySet<HSM_Ground_EStop_Interface> HSM_Ground_EStop_Interfaces
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Ground_EStop_Interfaces.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Ground_EStop_Interfaces.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Ground_EStop_Interfaces;
+				return this._HSM_Ground_EStop_Interfaces;
 			}
 			set
 			{
-				this._HCM_Ground_EStop_Interfaces.Assign(value);
+				this._HSM_Ground_EStop_Interfaces.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Ground_EStop_Group_HCM_Ground_EStop_Panel", Storage="_HCM_Ground_EStop_Panels", ThisKey="IdGroundEStopGroup", OtherKey="IdGroundEStopGroup")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Ground_EStop_Group_HSM_Ground_EStop_Panel", Storage="_HSM_Ground_EStop_Panels", ThisKey="IdGroundEStopGroup", OtherKey="IdGroundEStopGroup")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=14, EmitDefaultValue=false)]
-		public EntitySet<HCM_Ground_EStop_Panel> HCM_Ground_EStop_Panels
+		public EntitySet<HSM_Ground_EStop_Panel> HSM_Ground_EStop_Panels
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Ground_EStop_Panels.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Ground_EStop_Panels.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Ground_EStop_Panels;
+				return this._HSM_Ground_EStop_Panels;
 			}
 			set
 			{
-				this._HCM_Ground_EStop_Panels.Assign(value);
+				this._HSM_Ground_EStop_Panels.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Ground_EStop_Group_HCM_Ground_EStop_Request", Storage="_HCM_Ground_EStop_Requests", ThisKey="IdGroundEStopGroup", OtherKey="IdGroundEStopGroup")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Ground_EStop_Group_HSM_Ground_EStop_Request", Storage="_HSM_Ground_EStop_Requests", ThisKey="IdGroundEStopGroup", OtherKey="IdGroundEStopGroup")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=15, EmitDefaultValue=false)]
-		public EntitySet<HCM_Ground_EStop_Request> HCM_Ground_EStop_Requests
+		public EntitySet<HSM_Ground_EStop_Request> HSM_Ground_EStop_Requests
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Ground_EStop_Requests.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Ground_EStop_Requests.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Ground_EStop_Requests;
+				return this._HSM_Ground_EStop_Requests;
 			}
 			set
 			{
-				this._HCM_Ground_EStop_Requests.Assign(value);
+				this._HSM_Ground_EStop_Requests.Assign(value);
 			}
 		}
 		
@@ -17497,60 +17497,60 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Ground_EStop_Failures(HCM_Ground_EStop_Failure entity)
+		private void attach_HSM_Ground_EStop_Failures(HSM_Ground_EStop_Failure entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Ground_EStop_Group = this;
+			entity.HSM_Ground_EStop_Group = this;
 		}
 		
-		private void detach_HCM_Ground_EStop_Failures(HCM_Ground_EStop_Failure entity)
+		private void detach_HSM_Ground_EStop_Failures(HSM_Ground_EStop_Failure entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Ground_EStop_Group = null;
+			entity.HSM_Ground_EStop_Group = null;
 		}
 		
-		private void attach_HCM_Ground_EStop_Interfaces(HCM_Ground_EStop_Interface entity)
+		private void attach_HSM_Ground_EStop_Interfaces(HSM_Ground_EStop_Interface entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Ground_EStop_Group = this;
+			entity.HSM_Ground_EStop_Group = this;
 		}
 		
-		private void detach_HCM_Ground_EStop_Interfaces(HCM_Ground_EStop_Interface entity)
+		private void detach_HSM_Ground_EStop_Interfaces(HSM_Ground_EStop_Interface entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Ground_EStop_Group = null;
+			entity.HSM_Ground_EStop_Group = null;
 		}
 		
-		private void attach_HCM_Ground_EStop_Panels(HCM_Ground_EStop_Panel entity)
+		private void attach_HSM_Ground_EStop_Panels(HSM_Ground_EStop_Panel entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Ground_EStop_Group = this;
+			entity.HSM_Ground_EStop_Group = this;
 		}
 		
-		private void detach_HCM_Ground_EStop_Panels(HCM_Ground_EStop_Panel entity)
+		private void detach_HSM_Ground_EStop_Panels(HSM_Ground_EStop_Panel entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Ground_EStop_Group = null;
+			entity.HSM_Ground_EStop_Group = null;
 		}
 		
-		private void attach_HCM_Ground_EStop_Requests(HCM_Ground_EStop_Request entity)
+		private void attach_HSM_Ground_EStop_Requests(HSM_Ground_EStop_Request entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Ground_EStop_Group = this;
+			entity.HSM_Ground_EStop_Group = this;
 		}
 		
-		private void detach_HCM_Ground_EStop_Requests(HCM_Ground_EStop_Request entity)
+		private void detach_HSM_Ground_EStop_Requests(HSM_Ground_EStop_Request entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Ground_EStop_Group = null;
+			entity.HSM_Ground_EStop_Group = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Ground_EStop_Failures = new EntitySet<HCM_Ground_EStop_Failure>(new Action<HCM_Ground_EStop_Failure>(this.attach_HCM_Ground_EStop_Failures), new Action<HCM_Ground_EStop_Failure>(this.detach_HCM_Ground_EStop_Failures));
-			this._HCM_Ground_EStop_Interfaces = new EntitySet<HCM_Ground_EStop_Interface>(new Action<HCM_Ground_EStop_Interface>(this.attach_HCM_Ground_EStop_Interfaces), new Action<HCM_Ground_EStop_Interface>(this.detach_HCM_Ground_EStop_Interfaces));
-			this._HCM_Ground_EStop_Panels = new EntitySet<HCM_Ground_EStop_Panel>(new Action<HCM_Ground_EStop_Panel>(this.attach_HCM_Ground_EStop_Panels), new Action<HCM_Ground_EStop_Panel>(this.detach_HCM_Ground_EStop_Panels));
-			this._HCM_Ground_EStop_Requests = new EntitySet<HCM_Ground_EStop_Request>(new Action<HCM_Ground_EStop_Request>(this.attach_HCM_Ground_EStop_Requests), new Action<HCM_Ground_EStop_Request>(this.detach_HCM_Ground_EStop_Requests));
+			this._HSM_Ground_EStop_Failures = new EntitySet<HSM_Ground_EStop_Failure>(new Action<HSM_Ground_EStop_Failure>(this.attach_HSM_Ground_EStop_Failures), new Action<HSM_Ground_EStop_Failure>(this.detach_HSM_Ground_EStop_Failures));
+			this._HSM_Ground_EStop_Interfaces = new EntitySet<HSM_Ground_EStop_Interface>(new Action<HSM_Ground_EStop_Interface>(this.attach_HSM_Ground_EStop_Interfaces), new Action<HSM_Ground_EStop_Interface>(this.detach_HSM_Ground_EStop_Interfaces));
+			this._HSM_Ground_EStop_Panels = new EntitySet<HSM_Ground_EStop_Panel>(new Action<HSM_Ground_EStop_Panel>(this.attach_HSM_Ground_EStop_Panels), new Action<HSM_Ground_EStop_Panel>(this.detach_HSM_Ground_EStop_Panels));
+			this._HSM_Ground_EStop_Requests = new EntitySet<HSM_Ground_EStop_Request>(new Action<HSM_Ground_EStop_Request>(this.attach_HSM_Ground_EStop_Requests), new Action<HSM_Ground_EStop_Request>(this.detach_HSM_Ground_EStop_Requests));
 			OnCreated();
 		}
 		
@@ -17576,9 +17576,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Ground_EStop_Interfaces")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Ground_EStop_Interfaces")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Ground_EStop_Interface : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Ground_EStop_Interface : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -17603,7 +17603,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Ground_EStop_Group> _HCM_Ground_EStop_Group;
+		private EntityRef<HSM_Ground_EStop_Group> _HSM_Ground_EStop_Group;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -17631,7 +17631,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Ground_EStop_Interface()
+		public HSM_Ground_EStop_Interface()
 		{
 			this.Initialize();
 		}
@@ -17669,7 +17669,7 @@ namespace HCM.Database
 			{
 				if ((this._IdGroundEStopGroup != value))
 				{
-					if (this._HCM_Ground_EStop_Group.HasLoadedOrAssignedValue)
+					if (this._HSM_Ground_EStop_Group.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -17850,36 +17850,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Ground_EStop_Group_HCM_Ground_EStop_Interface", Storage="_HCM_Ground_EStop_Group", ThisKey="IdGroundEStopGroup", OtherKey="IdGroundEStopGroup", IsForeignKey=true)]
-		public HCM_Ground_EStop_Group HCM_Ground_EStop_Group
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Ground_EStop_Group_HSM_Ground_EStop_Interface", Storage="_HSM_Ground_EStop_Group", ThisKey="IdGroundEStopGroup", OtherKey="IdGroundEStopGroup", IsForeignKey=true)]
+		public HSM_Ground_EStop_Group HSM_Ground_EStop_Group
 		{
 			get
 			{
-				return this._HCM_Ground_EStop_Group.Entity;
+				return this._HSM_Ground_EStop_Group.Entity;
 			}
 			set
 			{
-				HCM_Ground_EStop_Group previousValue = this._HCM_Ground_EStop_Group.Entity;
+				HSM_Ground_EStop_Group previousValue = this._HSM_Ground_EStop_Group.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Ground_EStop_Group.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Ground_EStop_Group.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Ground_EStop_Group.Entity = null;
-						previousValue.HCM_Ground_EStop_Interfaces.Remove(this);
+						this._HSM_Ground_EStop_Group.Entity = null;
+						previousValue.HSM_Ground_EStop_Interfaces.Remove(this);
 					}
-					this._HCM_Ground_EStop_Group.Entity = value;
+					this._HSM_Ground_EStop_Group.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Ground_EStop_Interfaces.Add(this);
+						value.HSM_Ground_EStop_Interfaces.Add(this);
 						this._IdGroundEStopGroup = value.IdGroundEStopGroup;
 					}
 					else
 					{
 						this._IdGroundEStopGroup = default(int);
 					}
-					this.SendPropertyChanged("HCM_Ground_EStop_Group");
+					this.SendPropertyChanged("HSM_Ground_EStop_Group");
 				}
 			}
 		}
@@ -17906,7 +17906,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Ground_EStop_Group = default(EntityRef<HCM_Ground_EStop_Group>);
+			this._HSM_Ground_EStop_Group = default(EntityRef<HSM_Ground_EStop_Group>);
 			OnCreated();
 		}
 		
@@ -17918,9 +17918,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Ground_EStop_Panels")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Ground_EStop_Panels")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Ground_EStop_Panel : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Ground_EStop_Panel : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -17945,7 +17945,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Ground_EStop_Group> _HCM_Ground_EStop_Group;
+		private EntityRef<HSM_Ground_EStop_Group> _HSM_Ground_EStop_Group;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -17973,7 +17973,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Ground_EStop_Panel()
+		public HSM_Ground_EStop_Panel()
 		{
 			this.Initialize();
 		}
@@ -18011,7 +18011,7 @@ namespace HCM.Database
 			{
 				if ((this._IdGroundEStopGroup != value))
 				{
-					if (this._HCM_Ground_EStop_Group.HasLoadedOrAssignedValue)
+					if (this._HSM_Ground_EStop_Group.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -18192,36 +18192,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Ground_EStop_Group_HCM_Ground_EStop_Panel", Storage="_HCM_Ground_EStop_Group", ThisKey="IdGroundEStopGroup", OtherKey="IdGroundEStopGroup", IsForeignKey=true)]
-		public HCM_Ground_EStop_Group HCM_Ground_EStop_Group
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Ground_EStop_Group_HSM_Ground_EStop_Panel", Storage="_HSM_Ground_EStop_Group", ThisKey="IdGroundEStopGroup", OtherKey="IdGroundEStopGroup", IsForeignKey=true)]
+		public HSM_Ground_EStop_Group HSM_Ground_EStop_Group
 		{
 			get
 			{
-				return this._HCM_Ground_EStop_Group.Entity;
+				return this._HSM_Ground_EStop_Group.Entity;
 			}
 			set
 			{
-				HCM_Ground_EStop_Group previousValue = this._HCM_Ground_EStop_Group.Entity;
+				HSM_Ground_EStop_Group previousValue = this._HSM_Ground_EStop_Group.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Ground_EStop_Group.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Ground_EStop_Group.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Ground_EStop_Group.Entity = null;
-						previousValue.HCM_Ground_EStop_Panels.Remove(this);
+						this._HSM_Ground_EStop_Group.Entity = null;
+						previousValue.HSM_Ground_EStop_Panels.Remove(this);
 					}
-					this._HCM_Ground_EStop_Group.Entity = value;
+					this._HSM_Ground_EStop_Group.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Ground_EStop_Panels.Add(this);
+						value.HSM_Ground_EStop_Panels.Add(this);
 						this._IdGroundEStopGroup = value.IdGroundEStopGroup;
 					}
 					else
 					{
 						this._IdGroundEStopGroup = default(int);
 					}
-					this.SendPropertyChanged("HCM_Ground_EStop_Group");
+					this.SendPropertyChanged("HSM_Ground_EStop_Group");
 				}
 			}
 		}
@@ -18248,7 +18248,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Ground_EStop_Group = default(EntityRef<HCM_Ground_EStop_Group>);
+			this._HSM_Ground_EStop_Group = default(EntityRef<HSM_Ground_EStop_Group>);
 			OnCreated();
 		}
 		
@@ -18260,9 +18260,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Ground_EStop_Requests")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Ground_EStop_Requests")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Ground_EStop_Request : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Ground_EStop_Request : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -18277,9 +18277,9 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Ground_EStop_Group> _HCM_Ground_EStop_Group;
+		private EntityRef<HSM_Ground_EStop_Group> _HSM_Ground_EStop_Group;
 		
-		private EntityRef<HCM_Request> _HCM_Request;
+		private EntityRef<HSM_Request> _HSM_Request;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -18297,7 +18297,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Ground_EStop_Request()
+		public HSM_Ground_EStop_Request()
 		{
 			this.Initialize();
 		}
@@ -18335,7 +18335,7 @@ namespace HCM.Database
 			{
 				if ((this._IdGroundEStopGroup != value))
 				{
-					if (this._HCM_Ground_EStop_Group.HasLoadedOrAssignedValue)
+					if (this._HSM_Ground_EStop_Group.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -18360,7 +18360,7 @@ namespace HCM.Database
 			{
 				if ((this._IdRequest != value))
 				{
-					if (this._HCM_Request.HasLoadedOrAssignedValue)
+					if (this._HSM_Request.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -18415,70 +18415,70 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Ground_EStop_Group_HCM_Ground_EStop_Request", Storage="_HCM_Ground_EStop_Group", ThisKey="IdGroundEStopGroup", OtherKey="IdGroundEStopGroup", IsForeignKey=true)]
-		public HCM_Ground_EStop_Group HCM_Ground_EStop_Group
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Ground_EStop_Group_HSM_Ground_EStop_Request", Storage="_HSM_Ground_EStop_Group", ThisKey="IdGroundEStopGroup", OtherKey="IdGroundEStopGroup", IsForeignKey=true)]
+		public HSM_Ground_EStop_Group HSM_Ground_EStop_Group
 		{
 			get
 			{
-				return this._HCM_Ground_EStop_Group.Entity;
+				return this._HSM_Ground_EStop_Group.Entity;
 			}
 			set
 			{
-				HCM_Ground_EStop_Group previousValue = this._HCM_Ground_EStop_Group.Entity;
+				HSM_Ground_EStop_Group previousValue = this._HSM_Ground_EStop_Group.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Ground_EStop_Group.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Ground_EStop_Group.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Ground_EStop_Group.Entity = null;
-						previousValue.HCM_Ground_EStop_Requests.Remove(this);
+						this._HSM_Ground_EStop_Group.Entity = null;
+						previousValue.HSM_Ground_EStop_Requests.Remove(this);
 					}
-					this._HCM_Ground_EStop_Group.Entity = value;
+					this._HSM_Ground_EStop_Group.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Ground_EStop_Requests.Add(this);
+						value.HSM_Ground_EStop_Requests.Add(this);
 						this._IdGroundEStopGroup = value.IdGroundEStopGroup;
 					}
 					else
 					{
 						this._IdGroundEStopGroup = default(int);
 					}
-					this.SendPropertyChanged("HCM_Ground_EStop_Group");
+					this.SendPropertyChanged("HSM_Ground_EStop_Group");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_HCM_Ground_EStop_Request", Storage="_HCM_Request", ThisKey="IdRequest", OtherKey="IdRequest", IsForeignKey=true)]
-		public HCM_Request HCM_Request
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_HSM_Ground_EStop_Request", Storage="_HSM_Request", ThisKey="IdRequest", OtherKey="IdRequest", IsForeignKey=true)]
+		public HSM_Request HSM_Request
 		{
 			get
 			{
-				return this._HCM_Request.Entity;
+				return this._HSM_Request.Entity;
 			}
 			set
 			{
-				HCM_Request previousValue = this._HCM_Request.Entity;
+				HSM_Request previousValue = this._HSM_Request.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Request.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Request.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Request.Entity = null;
-						previousValue.HCM_Ground_EStop_Requests.Remove(this);
+						this._HSM_Request.Entity = null;
+						previousValue.HSM_Ground_EStop_Requests.Remove(this);
 					}
-					this._HCM_Request.Entity = value;
+					this._HSM_Request.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Ground_EStop_Requests.Add(this);
+						value.HSM_Ground_EStop_Requests.Add(this);
 						this._IdRequest = value.IdRequest;
 					}
 					else
 					{
 						this._IdRequest = default(int);
 					}
-					this.SendPropertyChanged("HCM_Request");
+					this.SendPropertyChanged("HSM_Request");
 				}
 			}
 		}
@@ -18505,8 +18505,8 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Ground_EStop_Group = default(EntityRef<HCM_Ground_EStop_Group>);
-			this._HCM_Request = default(EntityRef<HCM_Request>);
+			this._HSM_Ground_EStop_Group = default(EntityRef<HSM_Ground_EStop_Group>);
+			this._HSM_Request = default(EntityRef<HSM_Request>);
 			OnCreated();
 		}
 		
@@ -18518,9 +18518,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Machine_Exit_Zones")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Machine_Exit_Zones")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Machine_Exit_Zone : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Machine_Exit_Zone : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -18543,7 +18543,7 @@ namespace HCM.Database
 		
 		private EntityRef<Rodeo_Machine> _Rodeo_Machine;
 		
-		private EntityRef<HCM_Zone> _HCM_Zone;
+		private EntityRef<HSM_Zone> _HSM_Zone;
 		
 		private EntityRef<Rodeo_Yard> _Rodeo_Yard;
 		
@@ -18571,7 +18571,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Machine_Exit_Zone()
+		public HSM_Machine_Exit_Zone()
 		{
 			this.Initialize();
 		}
@@ -18613,7 +18613,7 @@ namespace HCM.Database
 			{
 				if ((this._IdZone != value))
 				{
-					if (this._HCM_Zone.HasLoadedOrAssignedValue)
+					if (this._HSM_Zone.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -18760,7 +18760,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Machine_Exit_Zone", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Machine_Exit_Zone", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
 		public Rodeo_Machine Rodeo_Machine
 		{
 			get
@@ -18777,12 +18777,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine.Entity = null;
-						previousValue.HCM_Machine_Exit_Zones.Remove(this);
+						previousValue.HSM_Machine_Exit_Zones.Remove(this);
 					}
 					this._Rodeo_Machine.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Exit_Zones.Add(this);
+						value.HSM_Machine_Exit_Zones.Add(this);
 						this._IdMachine = value.IdMachine;
 					}
 					else
@@ -18794,41 +18794,41 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Machine_Exit_Zone", Storage="_HCM_Zone", ThisKey="IdZone", OtherKey="IdZone", IsForeignKey=true)]
-		public HCM_Zone HCM_Zone
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Machine_Exit_Zone", Storage="_HSM_Zone", ThisKey="IdZone", OtherKey="IdZone", IsForeignKey=true)]
+		public HSM_Zone HSM_Zone
 		{
 			get
 			{
-				return this._HCM_Zone.Entity;
+				return this._HSM_Zone.Entity;
 			}
 			set
 			{
-				HCM_Zone previousValue = this._HCM_Zone.Entity;
+				HSM_Zone previousValue = this._HSM_Zone.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Zone.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Zone.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Zone.Entity = null;
-						previousValue.HCM_Machine_Exit_Zones.Remove(this);
+						this._HSM_Zone.Entity = null;
+						previousValue.HSM_Machine_Exit_Zones.Remove(this);
 					}
-					this._HCM_Zone.Entity = value;
+					this._HSM_Zone.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Exit_Zones.Add(this);
+						value.HSM_Machine_Exit_Zones.Add(this);
 						this._IdZone = value.IdZone;
 					}
 					else
 					{
 						this._IdZone = default(int);
 					}
-					this.SendPropertyChanged("HCM_Zone");
+					this.SendPropertyChanged("HSM_Zone");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Machine_Exit_Zone", Storage="_Rodeo_Yard", ThisKey="Move_IdYard", OtherKey="IdYard", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Machine_Exit_Zone", Storage="_Rodeo_Yard", ThisKey="Move_IdYard", OtherKey="IdYard", IsForeignKey=true)]
 		public Rodeo_Yard Rodeo_Yard
 		{
 			get
@@ -18845,12 +18845,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Yard.Entity = null;
-						previousValue.HCM_Machine_Exit_Zones.Remove(this);
+						previousValue.HSM_Machine_Exit_Zones.Remove(this);
 					}
 					this._Rodeo_Yard.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Exit_Zones.Add(this);
+						value.HSM_Machine_Exit_Zones.Add(this);
 						this._Move_IdYard = value.IdYard;
 					}
 					else
@@ -18862,7 +18862,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Location_HCM_Machine_Exit_Zone", Storage="_Rodeo_Location", ThisKey="Move_IdLocation", OtherKey="IdLocation", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Location_HSM_Machine_Exit_Zone", Storage="_Rodeo_Location", ThisKey="Move_IdLocation", OtherKey="IdLocation", IsForeignKey=true)]
 		public Rodeo_Location Rodeo_Location
 		{
 			get
@@ -18879,12 +18879,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Location.Entity = null;
-						previousValue.HCM_Machine_Exit_Zones.Remove(this);
+						previousValue.HSM_Machine_Exit_Zones.Remove(this);
 					}
 					this._Rodeo_Location.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Exit_Zones.Add(this);
+						value.HSM_Machine_Exit_Zones.Add(this);
 						this._Move_IdLocation = value.IdLocation;
 					}
 					else
@@ -18919,7 +18919,7 @@ namespace HCM.Database
 		private void Initialize()
 		{
 			this._Rodeo_Machine = default(EntityRef<Rodeo_Machine>);
-			this._HCM_Zone = default(EntityRef<HCM_Zone>);
+			this._HSM_Zone = default(EntityRef<HSM_Zone>);
 			this._Rodeo_Yard = default(EntityRef<Rodeo_Yard>);
 			this._Rodeo_Location = default(EntityRef<Rodeo_Location>);
 			OnCreated();
@@ -18933,9 +18933,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Machine_Interfaces")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Machine_Interfaces")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Machine_Interface : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Machine_Interface : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -19014,7 +19014,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Machine_Interface()
+		public HSM_Machine_Interface()
 		{
 			this.Initialize();
 		}
@@ -19363,7 +19363,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HCM_Machine_Interface", Storage="_Rodeo_Machine_Type", ThisKey="IdMachineType", OtherKey="IdMachineType", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HSM_Machine_Interface", Storage="_Rodeo_Machine_Type", ThisKey="IdMachineType", OtherKey="IdMachineType", IsForeignKey=true)]
 		public Rodeo_Machine_Type Rodeo_Machine_Type
 		{
 			get
@@ -19380,12 +19380,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine_Type.Entity = null;
-						previousValue.HCM_Machine_Interfaces.Remove(this);
+						previousValue.HSM_Machine_Interfaces.Remove(this);
 					}
 					this._Rodeo_Machine_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Interfaces.Add(this);
+						value.HSM_Machine_Interfaces.Add(this);
 						this._IdMachineType = value.IdMachineType;
 					}
 					else
@@ -19397,7 +19397,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Machine_Interface", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Machine_Interface", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
 		public Rodeo_Machine Rodeo_Machine
 		{
 			get
@@ -19414,12 +19414,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine.Entity = null;
-						previousValue.HCM_Machine_Interfaces.Remove(this);
+						previousValue.HSM_Machine_Interfaces.Remove(this);
 					}
 					this._Rodeo_Machine.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Interfaces.Add(this);
+						value.HSM_Machine_Interfaces.Add(this);
 						this._IdMachine = value.IdMachine;
 					}
 					else
@@ -19466,9 +19466,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Request_Interlocks")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Request_Interlocks")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Request_Interlock : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Request_Interlock : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -19503,15 +19503,15 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Request_Signal> _HCM_Request_Signal_ByID;
+		private EntityRef<HSM_Request_Signal> _HSM_Request_Signal_ByID;
 		
-		private EntityRef<HCM_Request_Signal> _HCM_Request_Signal_ID;
+		private EntityRef<HSM_Request_Signal> _HSM_Request_Signal_ID;
 		
-		private EntityRef<HCM_Request> _HCM_Request_ByID;
+		private EntityRef<HSM_Request> _HSM_Request_ByID;
 		
-		private EntityRef<HCM_Request> _HCM_Request_ID;
+		private EntityRef<HSM_Request> _HSM_Request_ID;
 		
-		private EntityRef<HCM_Zone> _HCM_Zone;
+		private EntityRef<HSM_Zone> _HSM_Zone;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -19549,7 +19549,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Request_Interlock()
+		public HSM_Request_Interlock()
 		{
 			this.Initialize();
 		}
@@ -19566,7 +19566,7 @@ namespace HCM.Database
 			{
 				if ((this._IdRequest != value))
 				{
-					if (this._HCM_Request_ID.HasLoadedOrAssignedValue)
+					if (this._HSM_Request_ID.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -19591,7 +19591,7 @@ namespace HCM.Database
 			{
 				if ((this._IdRequestSignal != value))
 				{
-					if (this._HCM_Request_Signal_ID.HasLoadedOrAssignedValue)
+					if (this._HSM_Request_Signal_ID.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -19637,7 +19637,7 @@ namespace HCM.Database
 			{
 				if ((this._ByIdZone != value))
 				{
-					if (this._HCM_Zone.HasLoadedOrAssignedValue)
+					if (this._HSM_Zone.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -19683,7 +19683,7 @@ namespace HCM.Database
 			{
 				if ((this._ByIdRequest != value))
 				{
-					if (this._HCM_Request_ByID.HasLoadedOrAssignedValue)
+					if (this._HSM_Request_ByID.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -19708,7 +19708,7 @@ namespace HCM.Database
 			{
 				if ((this._ByIdRequestSignal != value))
 				{
-					if (this._HCM_Request_Signal_ByID.HasLoadedOrAssignedValue)
+					if (this._HSM_Request_Signal_ByID.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -19889,172 +19889,172 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_Signal_HCM_Request_Interlock", Storage="_HCM_Request_Signal_ByID", ThisKey="ByIdRequestSignal", OtherKey="IdRequestSignal", IsForeignKey=true)]
-		public HCM_Request_Signal HCM_Request_Signal_ByID
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_Signal_HSM_Request_Interlock", Storage="_HSM_Request_Signal_ByID", ThisKey="ByIdRequestSignal", OtherKey="IdRequestSignal", IsForeignKey=true)]
+		public HSM_Request_Signal HSM_Request_Signal_ByID
 		{
 			get
 			{
-				return this._HCM_Request_Signal_ByID.Entity;
+				return this._HSM_Request_Signal_ByID.Entity;
 			}
 			set
 			{
-				HCM_Request_Signal previousValue = this._HCM_Request_Signal_ByID.Entity;
+				HSM_Request_Signal previousValue = this._HSM_Request_Signal_ByID.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Request_Signal_ByID.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Request_Signal_ByID.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Request_Signal_ByID.Entity = null;
-						previousValue.HCM_Request_Interlocks_ByID.Remove(this);
+						this._HSM_Request_Signal_ByID.Entity = null;
+						previousValue.HSM_Request_Interlocks_ByID.Remove(this);
 					}
-					this._HCM_Request_Signal_ByID.Entity = value;
+					this._HSM_Request_Signal_ByID.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Request_Interlocks_ByID.Add(this);
+						value.HSM_Request_Interlocks_ByID.Add(this);
 						this._ByIdRequestSignal = value.IdRequestSignal;
 					}
 					else
 					{
 						this._ByIdRequestSignal = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("HCM_Request_Signal_ByID");
+					this.SendPropertyChanged("HSM_Request_Signal_ByID");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_Signal_HCM_Request_Interlock1", Storage="_HCM_Request_Signal_ID", ThisKey="IdRequestSignal", OtherKey="IdRequestSignal", IsForeignKey=true)]
-		public HCM_Request_Signal HCM_Request_Signal_ID
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_Signal_HSM_Request_Interlock1", Storage="_HSM_Request_Signal_ID", ThisKey="IdRequestSignal", OtherKey="IdRequestSignal", IsForeignKey=true)]
+		public HSM_Request_Signal HSM_Request_Signal_ID
 		{
 			get
 			{
-				return this._HCM_Request_Signal_ID.Entity;
+				return this._HSM_Request_Signal_ID.Entity;
 			}
 			set
 			{
-				HCM_Request_Signal previousValue = this._HCM_Request_Signal_ID.Entity;
+				HSM_Request_Signal previousValue = this._HSM_Request_Signal_ID.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Request_Signal_ID.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Request_Signal_ID.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Request_Signal_ID.Entity = null;
-						previousValue.HCM_Request_Interlocks_ID.Remove(this);
+						this._HSM_Request_Signal_ID.Entity = null;
+						previousValue.HSM_Request_Interlocks_ID.Remove(this);
 					}
-					this._HCM_Request_Signal_ID.Entity = value;
+					this._HSM_Request_Signal_ID.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Request_Interlocks_ID.Add(this);
+						value.HSM_Request_Interlocks_ID.Add(this);
 						this._IdRequestSignal = value.IdRequestSignal;
 					}
 					else
 					{
 						this._IdRequestSignal = default(int);
 					}
-					this.SendPropertyChanged("HCM_Request_Signal_ID");
+					this.SendPropertyChanged("HSM_Request_Signal_ID");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_HCM_Request_Interlock", Storage="_HCM_Request_ByID", ThisKey="ByIdRequest", OtherKey="IdRequest", IsForeignKey=true)]
-		public HCM_Request HCM_Request_ByID
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_HSM_Request_Interlock", Storage="_HSM_Request_ByID", ThisKey="ByIdRequest", OtherKey="IdRequest", IsForeignKey=true)]
+		public HSM_Request HSM_Request_ByID
 		{
 			get
 			{
-				return this._HCM_Request_ByID.Entity;
+				return this._HSM_Request_ByID.Entity;
 			}
 			set
 			{
-				HCM_Request previousValue = this._HCM_Request_ByID.Entity;
+				HSM_Request previousValue = this._HSM_Request_ByID.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Request_ByID.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Request_ByID.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Request_ByID.Entity = null;
-						previousValue.HCM_Request_Interlocks_ByID.Remove(this);
+						this._HSM_Request_ByID.Entity = null;
+						previousValue.HSM_Request_Interlocks_ByID.Remove(this);
 					}
-					this._HCM_Request_ByID.Entity = value;
+					this._HSM_Request_ByID.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Request_Interlocks_ByID.Add(this);
+						value.HSM_Request_Interlocks_ByID.Add(this);
 						this._ByIdRequest = value.IdRequest;
 					}
 					else
 					{
 						this._ByIdRequest = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("HCM_Request_ByID");
+					this.SendPropertyChanged("HSM_Request_ByID");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_HCM_Request_Interlock1", Storage="_HCM_Request_ID", ThisKey="IdRequest", OtherKey="IdRequest", IsForeignKey=true)]
-		public HCM_Request HCM_Request_ID
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_HSM_Request_Interlock1", Storage="_HSM_Request_ID", ThisKey="IdRequest", OtherKey="IdRequest", IsForeignKey=true)]
+		public HSM_Request HSM_Request_ID
 		{
 			get
 			{
-				return this._HCM_Request_ID.Entity;
+				return this._HSM_Request_ID.Entity;
 			}
 			set
 			{
-				HCM_Request previousValue = this._HCM_Request_ID.Entity;
+				HSM_Request previousValue = this._HSM_Request_ID.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Request_ID.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Request_ID.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Request_ID.Entity = null;
-						previousValue.HCM_Request_Interlocks_ID.Remove(this);
+						this._HSM_Request_ID.Entity = null;
+						previousValue.HSM_Request_Interlocks_ID.Remove(this);
 					}
-					this._HCM_Request_ID.Entity = value;
+					this._HSM_Request_ID.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Request_Interlocks_ID.Add(this);
+						value.HSM_Request_Interlocks_ID.Add(this);
 						this._IdRequest = value.IdRequest;
 					}
 					else
 					{
 						this._IdRequest = default(int);
 					}
-					this.SendPropertyChanged("HCM_Request_ID");
+					this.SendPropertyChanged("HSM_Request_ID");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Request_Interlock", Storage="_HCM_Zone", ThisKey="ByIdZone", OtherKey="IdZone", IsForeignKey=true)]
-		public HCM_Zone HCM_Zone
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Request_Interlock", Storage="_HSM_Zone", ThisKey="ByIdZone", OtherKey="IdZone", IsForeignKey=true)]
+		public HSM_Zone HSM_Zone
 		{
 			get
 			{
-				return this._HCM_Zone.Entity;
+				return this._HSM_Zone.Entity;
 			}
 			set
 			{
-				HCM_Zone previousValue = this._HCM_Zone.Entity;
+				HSM_Zone previousValue = this._HSM_Zone.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Zone.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Zone.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Zone.Entity = null;
-						previousValue.HCM_Request_Interlocks.Remove(this);
+						this._HSM_Zone.Entity = null;
+						previousValue.HSM_Request_Interlocks.Remove(this);
 					}
-					this._HCM_Zone.Entity = value;
+					this._HSM_Zone.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Request_Interlocks.Add(this);
+						value.HSM_Request_Interlocks.Add(this);
 						this._ByIdZone = value.IdZone;
 					}
 					else
 					{
 						this._ByIdZone = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("HCM_Zone");
+					this.SendPropertyChanged("HSM_Zone");
 				}
 			}
 		}
@@ -20081,11 +20081,11 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Request_Signal_ByID = default(EntityRef<HCM_Request_Signal>);
-			this._HCM_Request_Signal_ID = default(EntityRef<HCM_Request_Signal>);
-			this._HCM_Request_ByID = default(EntityRef<HCM_Request>);
-			this._HCM_Request_ID = default(EntityRef<HCM_Request>);
-			this._HCM_Zone = default(EntityRef<HCM_Zone>);
+			this._HSM_Request_Signal_ByID = default(EntityRef<HSM_Request_Signal>);
+			this._HSM_Request_Signal_ID = default(EntityRef<HSM_Request_Signal>);
+			this._HSM_Request_ByID = default(EntityRef<HSM_Request>);
+			this._HSM_Request_ID = default(EntityRef<HSM_Request>);
+			this._HSM_Zone = default(EntityRef<HSM_Zone>);
 			OnCreated();
 		}
 		
@@ -20097,9 +20097,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Request_Signals")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Request_Signals")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Request_Signal : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Request_Signal : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -20144,19 +20144,19 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Request_Interlock> _HCM_Request_Interlocks_ByID;
+		private EntitySet<HSM_Request_Interlock> _HSM_Request_Interlocks_ByID;
 		
-		private EntitySet<HCM_Request_Interlock> _HCM_Request_Interlocks_ID;
+		private EntitySet<HSM_Request_Interlock> _HSM_Request_Interlocks_ID;
 		
-		private EntitySet<HCM_Request_Transport_Dependency> _HCM_Request_Transport_Dependencies;
+		private EntitySet<HSM_Request_Transport_Dependency> _HSM_Request_Transport_Dependencies;
 		
-		private EntitySet<HCM_Request_Type_Signal> _HCM_Request_Type_Signals;
+		private EntitySet<HSM_Request_Type_Signal> _HSM_Request_Type_Signals;
 		
-		private EntitySet<HCM_Zone_Interlock> _HCM_Zone_Interlocks;
+		private EntitySet<HSM_Zone_Interlock> _HSM_Zone_Interlocks;
 		
-		private EntitySet<HCM_Request_Signal_Request> _HCM_Request_Signal_Requests;
+		private EntitySet<HSM_Request_Signal_Request> _HSM_Request_Signal_Requests;
 		
-		private EntityRef<HCM_Zone_Event_Type> _HCM_Zone_Event_Type;
+		private EntityRef<HSM_Zone_Event_Type> _HSM_Zone_Event_Type;
 		
 		private bool serializing;
 		
@@ -20206,7 +20206,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Request_Signal()
+		public HSM_Request_Signal()
 		{
 			this.Initialize();
 		}
@@ -20244,7 +20244,7 @@ namespace HCM.Database
 			{
 				if ((this._IdZoneEventType != value))
 				{
-					if (this._HCM_Zone_Event_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Zone_Event_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -20635,150 +20635,150 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_Signal_HCM_Request_Interlock", Storage="_HCM_Request_Interlocks_ByID", ThisKey="IdRequestSignal", OtherKey="ByIdRequestSignal")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_Signal_HSM_Request_Interlock", Storage="_HSM_Request_Interlocks_ByID", ThisKey="IdRequestSignal", OtherKey="ByIdRequestSignal")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=21, EmitDefaultValue=false)]
-		public EntitySet<HCM_Request_Interlock> HCM_Request_Interlocks_ByID
+		public EntitySet<HSM_Request_Interlock> HSM_Request_Interlocks_ByID
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Request_Interlocks_ByID.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Request_Interlocks_ByID.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Request_Interlocks_ByID;
+				return this._HSM_Request_Interlocks_ByID;
 			}
 			set
 			{
-				this._HCM_Request_Interlocks_ByID.Assign(value);
+				this._HSM_Request_Interlocks_ByID.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_Signal_HCM_Request_Interlock1", Storage="_HCM_Request_Interlocks_ID", ThisKey="IdRequestSignal", OtherKey="IdRequestSignal")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_Signal_HSM_Request_Interlock1", Storage="_HSM_Request_Interlocks_ID", ThisKey="IdRequestSignal", OtherKey="IdRequestSignal")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=22, EmitDefaultValue=false)]
-		public EntitySet<HCM_Request_Interlock> HCM_Request_Interlocks_ID
+		public EntitySet<HSM_Request_Interlock> HSM_Request_Interlocks_ID
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Request_Interlocks_ID.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Request_Interlocks_ID.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Request_Interlocks_ID;
+				return this._HSM_Request_Interlocks_ID;
 			}
 			set
 			{
-				this._HCM_Request_Interlocks_ID.Assign(value);
+				this._HSM_Request_Interlocks_ID.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_Signal_HCM_Request_Transport_Dependency", Storage="_HCM_Request_Transport_Dependencies", ThisKey="IdRequestSignal", OtherKey="IdRequestSignal")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_Signal_HSM_Request_Transport_Dependency", Storage="_HSM_Request_Transport_Dependencies", ThisKey="IdRequestSignal", OtherKey="IdRequestSignal")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=23, EmitDefaultValue=false)]
-		public EntitySet<HCM_Request_Transport_Dependency> HCM_Request_Transport_Dependencies
+		public EntitySet<HSM_Request_Transport_Dependency> HSM_Request_Transport_Dependencies
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Request_Transport_Dependencies.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Request_Transport_Dependencies.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Request_Transport_Dependencies;
+				return this._HSM_Request_Transport_Dependencies;
 			}
 			set
 			{
-				this._HCM_Request_Transport_Dependencies.Assign(value);
+				this._HSM_Request_Transport_Dependencies.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_Signal_HCM_Request_Type_Signal", Storage="_HCM_Request_Type_Signals", ThisKey="IdRequestSignal", OtherKey="IdRequestSignal")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_Signal_HSM_Request_Type_Signal", Storage="_HSM_Request_Type_Signals", ThisKey="IdRequestSignal", OtherKey="IdRequestSignal")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=24, EmitDefaultValue=false)]
-		public EntitySet<HCM_Request_Type_Signal> HCM_Request_Type_Signals
+		public EntitySet<HSM_Request_Type_Signal> HSM_Request_Type_Signals
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Request_Type_Signals.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Request_Type_Signals.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Request_Type_Signals;
+				return this._HSM_Request_Type_Signals;
 			}
 			set
 			{
-				this._HCM_Request_Type_Signals.Assign(value);
+				this._HSM_Request_Type_Signals.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_Signal_HCM_Zone_Interlock", Storage="_HCM_Zone_Interlocks", ThisKey="IdRequestSignal", OtherKey="ByIdRequestSignal")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_Signal_HSM_Zone_Interlock", Storage="_HSM_Zone_Interlocks", ThisKey="IdRequestSignal", OtherKey="ByIdRequestSignal")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=25, EmitDefaultValue=false)]
-		public EntitySet<HCM_Zone_Interlock> HCM_Zone_Interlocks
+		public EntitySet<HSM_Zone_Interlock> HSM_Zone_Interlocks
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Zone_Interlocks.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Zone_Interlocks.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Zone_Interlocks;
+				return this._HSM_Zone_Interlocks;
 			}
 			set
 			{
-				this._HCM_Zone_Interlocks.Assign(value);
+				this._HSM_Zone_Interlocks.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_Signal_HCM_Request_Signal_Request", Storage="_HCM_Request_Signal_Requests", ThisKey="IdRequestSignal", OtherKey="IdRequestSignal")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_Signal_HSM_Request_Signal_Request", Storage="_HSM_Request_Signal_Requests", ThisKey="IdRequestSignal", OtherKey="IdRequestSignal")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=26, EmitDefaultValue=false)]
-		public EntitySet<HCM_Request_Signal_Request> HCM_Request_Signal_Requests
+		public EntitySet<HSM_Request_Signal_Request> HSM_Request_Signal_Requests
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Request_Signal_Requests.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Request_Signal_Requests.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Request_Signal_Requests;
+				return this._HSM_Request_Signal_Requests;
 			}
 			set
 			{
-				this._HCM_Request_Signal_Requests.Assign(value);
+				this._HSM_Request_Signal_Requests.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_Event_Type_HCM_Request_Signal", Storage="_HCM_Zone_Event_Type", ThisKey="IdZoneEventType", OtherKey="IdZoneEventType", IsForeignKey=true)]
-		public HCM_Zone_Event_Type HCM_Zone_Event_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_Event_Type_HSM_Request_Signal", Storage="_HSM_Zone_Event_Type", ThisKey="IdZoneEventType", OtherKey="IdZoneEventType", IsForeignKey=true)]
+		public HSM_Zone_Event_Type HSM_Zone_Event_Type
 		{
 			get
 			{
-				return this._HCM_Zone_Event_Type.Entity;
+				return this._HSM_Zone_Event_Type.Entity;
 			}
 			set
 			{
-				HCM_Zone_Event_Type previousValue = this._HCM_Zone_Event_Type.Entity;
+				HSM_Zone_Event_Type previousValue = this._HSM_Zone_Event_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Zone_Event_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Zone_Event_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Zone_Event_Type.Entity = null;
-						previousValue.HCM_Request_Signals.Remove(this);
+						this._HSM_Zone_Event_Type.Entity = null;
+						previousValue.HSM_Request_Signals.Remove(this);
 					}
-					this._HCM_Zone_Event_Type.Entity = value;
+					this._HSM_Zone_Event_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Request_Signals.Add(this);
+						value.HSM_Request_Signals.Add(this);
 						this._IdZoneEventType = value.IdZoneEventType;
 					}
 					else
 					{
 						this._IdZoneEventType = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("HCM_Zone_Event_Type");
+					this.SendPropertyChanged("HSM_Zone_Event_Type");
 				}
 			}
 		}
@@ -20803,87 +20803,87 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Request_Interlocks_ByID(HCM_Request_Interlock entity)
+		private void attach_HSM_Request_Interlocks_ByID(HSM_Request_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_Signal_ByID = this;
+			entity.HSM_Request_Signal_ByID = this;
 		}
 		
-		private void detach_HCM_Request_Interlocks_ByID(HCM_Request_Interlock entity)
+		private void detach_HSM_Request_Interlocks_ByID(HSM_Request_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_Signal_ByID = null;
+			entity.HSM_Request_Signal_ByID = null;
 		}
 		
-		private void attach_HCM_Request_Interlocks_ID(HCM_Request_Interlock entity)
+		private void attach_HSM_Request_Interlocks_ID(HSM_Request_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_Signal_ID = this;
+			entity.HSM_Request_Signal_ID = this;
 		}
 		
-		private void detach_HCM_Request_Interlocks_ID(HCM_Request_Interlock entity)
+		private void detach_HSM_Request_Interlocks_ID(HSM_Request_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_Signal_ID = null;
+			entity.HSM_Request_Signal_ID = null;
 		}
 		
-		private void attach_HCM_Request_Transport_Dependencies(HCM_Request_Transport_Dependency entity)
+		private void attach_HSM_Request_Transport_Dependencies(HSM_Request_Transport_Dependency entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_Signal = this;
+			entity.HSM_Request_Signal = this;
 		}
 		
-		private void detach_HCM_Request_Transport_Dependencies(HCM_Request_Transport_Dependency entity)
+		private void detach_HSM_Request_Transport_Dependencies(HSM_Request_Transport_Dependency entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_Signal = null;
+			entity.HSM_Request_Signal = null;
 		}
 		
-		private void attach_HCM_Request_Type_Signals(HCM_Request_Type_Signal entity)
+		private void attach_HSM_Request_Type_Signals(HSM_Request_Type_Signal entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_Signal = this;
+			entity.HSM_Request_Signal = this;
 		}
 		
-		private void detach_HCM_Request_Type_Signals(HCM_Request_Type_Signal entity)
+		private void detach_HSM_Request_Type_Signals(HSM_Request_Type_Signal entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_Signal = null;
+			entity.HSM_Request_Signal = null;
 		}
 		
-		private void attach_HCM_Zone_Interlocks(HCM_Zone_Interlock entity)
+		private void attach_HSM_Zone_Interlocks(HSM_Zone_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_Signal = this;
+			entity.HSM_Request_Signal = this;
 		}
 		
-		private void detach_HCM_Zone_Interlocks(HCM_Zone_Interlock entity)
+		private void detach_HSM_Zone_Interlocks(HSM_Zone_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_Signal = null;
+			entity.HSM_Request_Signal = null;
 		}
 		
-		private void attach_HCM_Request_Signal_Requests(HCM_Request_Signal_Request entity)
+		private void attach_HSM_Request_Signal_Requests(HSM_Request_Signal_Request entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_Signal = this;
+			entity.HSM_Request_Signal = this;
 		}
 		
-		private void detach_HCM_Request_Signal_Requests(HCM_Request_Signal_Request entity)
+		private void detach_HSM_Request_Signal_Requests(HSM_Request_Signal_Request entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_Signal = null;
+			entity.HSM_Request_Signal = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Request_Interlocks_ByID = new EntitySet<HCM_Request_Interlock>(new Action<HCM_Request_Interlock>(this.attach_HCM_Request_Interlocks_ByID), new Action<HCM_Request_Interlock>(this.detach_HCM_Request_Interlocks_ByID));
-			this._HCM_Request_Interlocks_ID = new EntitySet<HCM_Request_Interlock>(new Action<HCM_Request_Interlock>(this.attach_HCM_Request_Interlocks_ID), new Action<HCM_Request_Interlock>(this.detach_HCM_Request_Interlocks_ID));
-			this._HCM_Request_Transport_Dependencies = new EntitySet<HCM_Request_Transport_Dependency>(new Action<HCM_Request_Transport_Dependency>(this.attach_HCM_Request_Transport_Dependencies), new Action<HCM_Request_Transport_Dependency>(this.detach_HCM_Request_Transport_Dependencies));
-			this._HCM_Request_Type_Signals = new EntitySet<HCM_Request_Type_Signal>(new Action<HCM_Request_Type_Signal>(this.attach_HCM_Request_Type_Signals), new Action<HCM_Request_Type_Signal>(this.detach_HCM_Request_Type_Signals));
-			this._HCM_Zone_Interlocks = new EntitySet<HCM_Zone_Interlock>(new Action<HCM_Zone_Interlock>(this.attach_HCM_Zone_Interlocks), new Action<HCM_Zone_Interlock>(this.detach_HCM_Zone_Interlocks));
-			this._HCM_Request_Signal_Requests = new EntitySet<HCM_Request_Signal_Request>(new Action<HCM_Request_Signal_Request>(this.attach_HCM_Request_Signal_Requests), new Action<HCM_Request_Signal_Request>(this.detach_HCM_Request_Signal_Requests));
-			this._HCM_Zone_Event_Type = default(EntityRef<HCM_Zone_Event_Type>);
+			this._HSM_Request_Interlocks_ByID = new EntitySet<HSM_Request_Interlock>(new Action<HSM_Request_Interlock>(this.attach_HSM_Request_Interlocks_ByID), new Action<HSM_Request_Interlock>(this.detach_HSM_Request_Interlocks_ByID));
+			this._HSM_Request_Interlocks_ID = new EntitySet<HSM_Request_Interlock>(new Action<HSM_Request_Interlock>(this.attach_HSM_Request_Interlocks_ID), new Action<HSM_Request_Interlock>(this.detach_HSM_Request_Interlocks_ID));
+			this._HSM_Request_Transport_Dependencies = new EntitySet<HSM_Request_Transport_Dependency>(new Action<HSM_Request_Transport_Dependency>(this.attach_HSM_Request_Transport_Dependencies), new Action<HSM_Request_Transport_Dependency>(this.detach_HSM_Request_Transport_Dependencies));
+			this._HSM_Request_Type_Signals = new EntitySet<HSM_Request_Type_Signal>(new Action<HSM_Request_Type_Signal>(this.attach_HSM_Request_Type_Signals), new Action<HSM_Request_Type_Signal>(this.detach_HSM_Request_Type_Signals));
+			this._HSM_Zone_Interlocks = new EntitySet<HSM_Zone_Interlock>(new Action<HSM_Zone_Interlock>(this.attach_HSM_Zone_Interlocks), new Action<HSM_Zone_Interlock>(this.detach_HSM_Zone_Interlocks));
+			this._HSM_Request_Signal_Requests = new EntitySet<HSM_Request_Signal_Request>(new Action<HSM_Request_Signal_Request>(this.attach_HSM_Request_Signal_Requests), new Action<HSM_Request_Signal_Request>(this.detach_HSM_Request_Signal_Requests));
+			this._HSM_Zone_Event_Type = default(EntityRef<HSM_Zone_Event_Type>);
 			OnCreated();
 		}
 		
@@ -20909,9 +20909,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Request_Transport_Dependencies")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Request_Transport_Dependencies")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Request_Transport_Dependency : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Request_Transport_Dependency : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -20926,7 +20926,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Request_Signal> _HCM_Request_Signal;
+		private EntityRef<HSM_Request_Signal> _HSM_Request_Signal;
 		
 		private EntityRef<Rodeo_Location> _Rodeo_Location;
 		
@@ -20946,7 +20946,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Request_Transport_Dependency()
+		public HSM_Request_Transport_Dependency()
 		{
 			this.Initialize();
 		}
@@ -21009,7 +21009,7 @@ namespace HCM.Database
 			{
 				if ((this._IdRequestSignal != value))
 				{
-					if (this._HCM_Request_Signal.HasLoadedOrAssignedValue)
+					if (this._HSM_Request_Signal.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -21064,41 +21064,41 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_Signal_HCM_Request_Transport_Dependency", Storage="_HCM_Request_Signal", ThisKey="IdRequestSignal", OtherKey="IdRequestSignal", IsForeignKey=true)]
-		public HCM_Request_Signal HCM_Request_Signal
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_Signal_HSM_Request_Transport_Dependency", Storage="_HSM_Request_Signal", ThisKey="IdRequestSignal", OtherKey="IdRequestSignal", IsForeignKey=true)]
+		public HSM_Request_Signal HSM_Request_Signal
 		{
 			get
 			{
-				return this._HCM_Request_Signal.Entity;
+				return this._HSM_Request_Signal.Entity;
 			}
 			set
 			{
-				HCM_Request_Signal previousValue = this._HCM_Request_Signal.Entity;
+				HSM_Request_Signal previousValue = this._HSM_Request_Signal.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Request_Signal.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Request_Signal.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Request_Signal.Entity = null;
-						previousValue.HCM_Request_Transport_Dependencies.Remove(this);
+						this._HSM_Request_Signal.Entity = null;
+						previousValue.HSM_Request_Transport_Dependencies.Remove(this);
 					}
-					this._HCM_Request_Signal.Entity = value;
+					this._HSM_Request_Signal.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Request_Transport_Dependencies.Add(this);
+						value.HSM_Request_Transport_Dependencies.Add(this);
 						this._IdRequestSignal = value.IdRequestSignal;
 					}
 					else
 					{
 						this._IdRequestSignal = default(int);
 					}
-					this.SendPropertyChanged("HCM_Request_Signal");
+					this.SendPropertyChanged("HSM_Request_Signal");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Location_HCM_Request_Transport_Dependency", Storage="_Rodeo_Location", ThisKey="IdTransportLocation", OtherKey="IdLocation", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Location_HSM_Request_Transport_Dependency", Storage="_Rodeo_Location", ThisKey="IdTransportLocation", OtherKey="IdLocation", IsForeignKey=true)]
 		public Rodeo_Location Rodeo_Location
 		{
 			get
@@ -21115,12 +21115,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Location.Entity = null;
-						previousValue.HCM_Request_Transport_Dependencies.Remove(this);
+						previousValue.HSM_Request_Transport_Dependencies.Remove(this);
 					}
 					this._Rodeo_Location.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Request_Transport_Dependencies.Add(this);
+						value.HSM_Request_Transport_Dependencies.Add(this);
 						this._IdTransportLocation = value.IdLocation;
 					}
 					else
@@ -21154,7 +21154,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Request_Signal = default(EntityRef<HCM_Request_Signal>);
+			this._HSM_Request_Signal = default(EntityRef<HSM_Request_Signal>);
 			this._Rodeo_Location = default(EntityRef<Rodeo_Location>);
 			OnCreated();
 		}
@@ -21167,9 +21167,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Request_Type_Signals")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Request_Type_Signals")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Request_Type_Signal : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Request_Type_Signal : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -21192,9 +21192,9 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Request_Signal> _HCM_Request_Signal;
+		private EntityRef<HSM_Request_Signal> _HSM_Request_Signal;
 		
-		private EntityRef<HCM_Request_Type> _HCM_Request_Type;
+		private EntityRef<HSM_Request_Type> _HSM_Request_Type;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -21220,7 +21220,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Request_Type_Signal()
+		public HSM_Request_Type_Signal()
 		{
 			this.Initialize();
 		}
@@ -21237,7 +21237,7 @@ namespace HCM.Database
 			{
 				if ((this._IdRequestType != value))
 				{
-					if (this._HCM_Request_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Request_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -21262,7 +21262,7 @@ namespace HCM.Database
 			{
 				if ((this._IdRequestSignal != value))
 				{
-					if (this._HCM_Request_Signal.HasLoadedOrAssignedValue)
+					if (this._HSM_Request_Signal.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -21422,70 +21422,70 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_Signal_HCM_Request_Type_Signal", Storage="_HCM_Request_Signal", ThisKey="IdRequestSignal", OtherKey="IdRequestSignal", IsForeignKey=true)]
-		public HCM_Request_Signal HCM_Request_Signal
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_Signal_HSM_Request_Type_Signal", Storage="_HSM_Request_Signal", ThisKey="IdRequestSignal", OtherKey="IdRequestSignal", IsForeignKey=true)]
+		public HSM_Request_Signal HSM_Request_Signal
 		{
 			get
 			{
-				return this._HCM_Request_Signal.Entity;
+				return this._HSM_Request_Signal.Entity;
 			}
 			set
 			{
-				HCM_Request_Signal previousValue = this._HCM_Request_Signal.Entity;
+				HSM_Request_Signal previousValue = this._HSM_Request_Signal.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Request_Signal.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Request_Signal.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Request_Signal.Entity = null;
-						previousValue.HCM_Request_Type_Signals.Remove(this);
+						this._HSM_Request_Signal.Entity = null;
+						previousValue.HSM_Request_Type_Signals.Remove(this);
 					}
-					this._HCM_Request_Signal.Entity = value;
+					this._HSM_Request_Signal.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Request_Type_Signals.Add(this);
+						value.HSM_Request_Type_Signals.Add(this);
 						this._IdRequestSignal = value.IdRequestSignal;
 					}
 					else
 					{
 						this._IdRequestSignal = default(int);
 					}
-					this.SendPropertyChanged("HCM_Request_Signal");
+					this.SendPropertyChanged("HSM_Request_Signal");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_Type_HCM_Request_Type_Signal", Storage="_HCM_Request_Type", ThisKey="IdRequestType", OtherKey="IdRequestType", IsForeignKey=true)]
-		public HCM_Request_Type HCM_Request_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_Type_HSM_Request_Type_Signal", Storage="_HSM_Request_Type", ThisKey="IdRequestType", OtherKey="IdRequestType", IsForeignKey=true)]
+		public HSM_Request_Type HSM_Request_Type
 		{
 			get
 			{
-				return this._HCM_Request_Type.Entity;
+				return this._HSM_Request_Type.Entity;
 			}
 			set
 			{
-				HCM_Request_Type previousValue = this._HCM_Request_Type.Entity;
+				HSM_Request_Type previousValue = this._HSM_Request_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Request_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Request_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Request_Type.Entity = null;
-						previousValue.HCM_Request_Type_Signals.Remove(this);
+						this._HSM_Request_Type.Entity = null;
+						previousValue.HSM_Request_Type_Signals.Remove(this);
 					}
-					this._HCM_Request_Type.Entity = value;
+					this._HSM_Request_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Request_Type_Signals.Add(this);
+						value.HSM_Request_Type_Signals.Add(this);
 						this._IdRequestType = value.IdRequestType;
 					}
 					else
 					{
 						this._IdRequestType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Request_Type");
+					this.SendPropertyChanged("HSM_Request_Type");
 				}
 			}
 		}
@@ -21512,8 +21512,8 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Request_Signal = default(EntityRef<HCM_Request_Signal>);
-			this._HCM_Request_Type = default(EntityRef<HCM_Request_Type>);
+			this._HSM_Request_Signal = default(EntityRef<HSM_Request_Signal>);
+			this._HSM_Request_Type = default(EntityRef<HSM_Request_Type>);
 			OnCreated();
 		}
 		
@@ -21525,9 +21525,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Request_Types")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Request_Types")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Request_Type : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Request_Type : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -21544,9 +21544,9 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Request_Type_Signal> _HCM_Request_Type_Signals;
+		private EntitySet<HSM_Request_Type_Signal> _HSM_Request_Type_Signals;
 		
-		private EntitySet<HCM_Request> _HCM_Requests;
+		private EntitySet<HSM_Request> _HSM_Requests;
 		
 		private bool serializing;
 		
@@ -21568,7 +21568,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Request_Type()
+		public HSM_Request_Type()
 		{
 			this.Initialize();
 		}
@@ -21699,41 +21699,41 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_Type_HCM_Request_Type_Signal", Storage="_HCM_Request_Type_Signals", ThisKey="IdRequestType", OtherKey="IdRequestType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_Type_HSM_Request_Type_Signal", Storage="_HSM_Request_Type_Signals", ThisKey="IdRequestType", OtherKey="IdRequestType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=7, EmitDefaultValue=false)]
-		public EntitySet<HCM_Request_Type_Signal> HCM_Request_Type_Signals
+		public EntitySet<HSM_Request_Type_Signal> HSM_Request_Type_Signals
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Request_Type_Signals.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Request_Type_Signals.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Request_Type_Signals;
+				return this._HSM_Request_Type_Signals;
 			}
 			set
 			{
-				this._HCM_Request_Type_Signals.Assign(value);
+				this._HSM_Request_Type_Signals.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_Type_HCM_Request", Storage="_HCM_Requests", ThisKey="IdRequestType", OtherKey="IdRequestType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_Type_HSM_Request", Storage="_HSM_Requests", ThisKey="IdRequestType", OtherKey="IdRequestType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=8, EmitDefaultValue=false)]
-		public EntitySet<HCM_Request> HCM_Requests
+		public EntitySet<HSM_Request> HSM_Requests
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Requests.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Requests.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Requests;
+				return this._HSM_Requests;
 			}
 			set
 			{
-				this._HCM_Requests.Assign(value);
+				this._HSM_Requests.Assign(value);
 			}
 		}
 		
@@ -21757,34 +21757,34 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Request_Type_Signals(HCM_Request_Type_Signal entity)
+		private void attach_HSM_Request_Type_Signals(HSM_Request_Type_Signal entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_Type = this;
+			entity.HSM_Request_Type = this;
 		}
 		
-		private void detach_HCM_Request_Type_Signals(HCM_Request_Type_Signal entity)
+		private void detach_HSM_Request_Type_Signals(HSM_Request_Type_Signal entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_Type = null;
+			entity.HSM_Request_Type = null;
 		}
 		
-		private void attach_HCM_Requests(HCM_Request entity)
+		private void attach_HSM_Requests(HSM_Request entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_Type = this;
+			entity.HSM_Request_Type = this;
 		}
 		
-		private void detach_HCM_Requests(HCM_Request entity)
+		private void detach_HSM_Requests(HSM_Request entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_Type = null;
+			entity.HSM_Request_Type = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Request_Type_Signals = new EntitySet<HCM_Request_Type_Signal>(new Action<HCM_Request_Type_Signal>(this.attach_HCM_Request_Type_Signals), new Action<HCM_Request_Type_Signal>(this.detach_HCM_Request_Type_Signals));
-			this._HCM_Requests = new EntitySet<HCM_Request>(new Action<HCM_Request>(this.attach_HCM_Requests), new Action<HCM_Request>(this.detach_HCM_Requests));
+			this._HSM_Request_Type_Signals = new EntitySet<HSM_Request_Type_Signal>(new Action<HSM_Request_Type_Signal>(this.attach_HSM_Request_Type_Signals), new Action<HSM_Request_Type_Signal>(this.detach_HSM_Request_Type_Signals));
+			this._HSM_Requests = new EntitySet<HSM_Request>(new Action<HSM_Request>(this.attach_HSM_Requests), new Action<HSM_Request>(this.detach_HSM_Requests));
 			OnCreated();
 		}
 		
@@ -21810,9 +21810,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Requests")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Requests")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Request : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Request : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -21845,21 +21845,21 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Zone_Event> _HCM_Zone_Events;
+		private EntitySet<HSM_Zone_Event> _HSM_Zone_Events;
 		
-		private EntitySet<HCM_Ground_EStop_Request> _HCM_Ground_EStop_Requests;
+		private EntitySet<HSM_Ground_EStop_Request> _HSM_Ground_EStop_Requests;
 		
-		private EntitySet<HCM_Request_Interlock> _HCM_Request_Interlocks_ByID;
+		private EntitySet<HSM_Request_Interlock> _HSM_Request_Interlocks_ByID;
 		
-		private EntitySet<HCM_Request_Interlock> _HCM_Request_Interlocks_ID;
+		private EntitySet<HSM_Request_Interlock> _HSM_Request_Interlocks_ID;
 		
-		private EntitySet<HCM_Zone_Interlock> _HCM_Zone_Interlocks;
+		private EntitySet<HSM_Zone_Interlock> _HSM_Zone_Interlocks;
 		
-		private EntitySet<HCM_Request_Signal_Request> _HCM_Request_Signal_Requests;
+		private EntitySet<HSM_Request_Signal_Request> _HSM_Request_Signal_Requests;
 		
-		private EntityRef<HCM_Request_Type> _HCM_Request_Type;
+		private EntityRef<HSM_Request_Type> _HSM_Request_Type;
 		
-		private EntityRef<HCM_Zone> _HCM_Zone;
+		private EntityRef<HSM_Zone> _HSM_Zone;
 		
 		private EntityRef<Rodeo_Yard> _Rodeo_Yard;
 		
@@ -21899,7 +21899,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Request()
+		public HSM_Request()
 		{
 			this.Initialize();
 		}
@@ -21937,7 +21937,7 @@ namespace HCM.Database
 			{
 				if ((this._IdRequestType != value))
 				{
-					if (this._HCM_Request_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Request_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -21962,7 +21962,7 @@ namespace HCM.Database
 			{
 				if ((this._IdZone != value))
 				{
-					if (this._HCM_Zone.HasLoadedOrAssignedValue)
+					if (this._HSM_Zone.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -22210,189 +22210,189 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_HCM_Zone_Event", Storage="_HCM_Zone_Events", ThisKey="IdRequest", OtherKey="IdRequest")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_HSM_Zone_Event", Storage="_HSM_Zone_Events", ThisKey="IdRequest", OtherKey="IdRequest")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=15, EmitDefaultValue=false)]
-		public EntitySet<HCM_Zone_Event> HCM_Zone_Events
+		public EntitySet<HSM_Zone_Event> HSM_Zone_Events
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Zone_Events.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Zone_Events.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Zone_Events;
+				return this._HSM_Zone_Events;
 			}
 			set
 			{
-				this._HCM_Zone_Events.Assign(value);
+				this._HSM_Zone_Events.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_HCM_Ground_EStop_Request", Storage="_HCM_Ground_EStop_Requests", ThisKey="IdRequest", OtherKey="IdRequest")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_HSM_Ground_EStop_Request", Storage="_HSM_Ground_EStop_Requests", ThisKey="IdRequest", OtherKey="IdRequest")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=16, EmitDefaultValue=false)]
-		public EntitySet<HCM_Ground_EStop_Request> HCM_Ground_EStop_Requests
+		public EntitySet<HSM_Ground_EStop_Request> HSM_Ground_EStop_Requests
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Ground_EStop_Requests.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Ground_EStop_Requests.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Ground_EStop_Requests;
+				return this._HSM_Ground_EStop_Requests;
 			}
 			set
 			{
-				this._HCM_Ground_EStop_Requests.Assign(value);
+				this._HSM_Ground_EStop_Requests.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_HCM_Request_Interlock", Storage="_HCM_Request_Interlocks_ByID", ThisKey="IdRequest", OtherKey="ByIdRequest")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_HSM_Request_Interlock", Storage="_HSM_Request_Interlocks_ByID", ThisKey="IdRequest", OtherKey="ByIdRequest")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=17, EmitDefaultValue=false)]
-		public EntitySet<HCM_Request_Interlock> HCM_Request_Interlocks_ByID
+		public EntitySet<HSM_Request_Interlock> HSM_Request_Interlocks_ByID
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Request_Interlocks_ByID.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Request_Interlocks_ByID.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Request_Interlocks_ByID;
+				return this._HSM_Request_Interlocks_ByID;
 			}
 			set
 			{
-				this._HCM_Request_Interlocks_ByID.Assign(value);
+				this._HSM_Request_Interlocks_ByID.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_HCM_Request_Interlock1", Storage="_HCM_Request_Interlocks_ID", ThisKey="IdRequest", OtherKey="IdRequest")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_HSM_Request_Interlock1", Storage="_HSM_Request_Interlocks_ID", ThisKey="IdRequest", OtherKey="IdRequest")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=18, EmitDefaultValue=false)]
-		public EntitySet<HCM_Request_Interlock> HCM_Request_Interlocks_ID
+		public EntitySet<HSM_Request_Interlock> HSM_Request_Interlocks_ID
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Request_Interlocks_ID.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Request_Interlocks_ID.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Request_Interlocks_ID;
+				return this._HSM_Request_Interlocks_ID;
 			}
 			set
 			{
-				this._HCM_Request_Interlocks_ID.Assign(value);
+				this._HSM_Request_Interlocks_ID.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_HCM_Zone_Interlock", Storage="_HCM_Zone_Interlocks", ThisKey="IdRequest", OtherKey="ByIdRequest")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_HSM_Zone_Interlock", Storage="_HSM_Zone_Interlocks", ThisKey="IdRequest", OtherKey="ByIdRequest")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=19, EmitDefaultValue=false)]
-		public EntitySet<HCM_Zone_Interlock> HCM_Zone_Interlocks
+		public EntitySet<HSM_Zone_Interlock> HSM_Zone_Interlocks
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Zone_Interlocks.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Zone_Interlocks.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Zone_Interlocks;
+				return this._HSM_Zone_Interlocks;
 			}
 			set
 			{
-				this._HCM_Zone_Interlocks.Assign(value);
+				this._HSM_Zone_Interlocks.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_HCM_Request_Signal_Request", Storage="_HCM_Request_Signal_Requests", ThisKey="IdRequest", OtherKey="IdRequest")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_HSM_Request_Signal_Request", Storage="_HSM_Request_Signal_Requests", ThisKey="IdRequest", OtherKey="IdRequest")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=20, EmitDefaultValue=false)]
-		public EntitySet<HCM_Request_Signal_Request> HCM_Request_Signal_Requests
+		public EntitySet<HSM_Request_Signal_Request> HSM_Request_Signal_Requests
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Request_Signal_Requests.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Request_Signal_Requests.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Request_Signal_Requests;
+				return this._HSM_Request_Signal_Requests;
 			}
 			set
 			{
-				this._HCM_Request_Signal_Requests.Assign(value);
+				this._HSM_Request_Signal_Requests.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_Type_HCM_Request", Storage="_HCM_Request_Type", ThisKey="IdRequestType", OtherKey="IdRequestType", IsForeignKey=true)]
-		public HCM_Request_Type HCM_Request_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_Type_HSM_Request", Storage="_HSM_Request_Type", ThisKey="IdRequestType", OtherKey="IdRequestType", IsForeignKey=true)]
+		public HSM_Request_Type HSM_Request_Type
 		{
 			get
 			{
-				return this._HCM_Request_Type.Entity;
+				return this._HSM_Request_Type.Entity;
 			}
 			set
 			{
-				HCM_Request_Type previousValue = this._HCM_Request_Type.Entity;
+				HSM_Request_Type previousValue = this._HSM_Request_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Request_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Request_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Request_Type.Entity = null;
-						previousValue.HCM_Requests.Remove(this);
+						this._HSM_Request_Type.Entity = null;
+						previousValue.HSM_Requests.Remove(this);
 					}
-					this._HCM_Request_Type.Entity = value;
+					this._HSM_Request_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Requests.Add(this);
+						value.HSM_Requests.Add(this);
 						this._IdRequestType = value.IdRequestType;
 					}
 					else
 					{
 						this._IdRequestType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Request_Type");
+					this.SendPropertyChanged("HSM_Request_Type");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Request", Storage="_HCM_Zone", ThisKey="IdZone", OtherKey="IdZone", IsForeignKey=true)]
-		public HCM_Zone HCM_Zone
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Request", Storage="_HSM_Zone", ThisKey="IdZone", OtherKey="IdZone", IsForeignKey=true)]
+		public HSM_Zone HSM_Zone
 		{
 			get
 			{
-				return this._HCM_Zone.Entity;
+				return this._HSM_Zone.Entity;
 			}
 			set
 			{
-				HCM_Zone previousValue = this._HCM_Zone.Entity;
+				HSM_Zone previousValue = this._HSM_Zone.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Zone.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Zone.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Zone.Entity = null;
-						previousValue.HCM_Requests.Remove(this);
+						this._HSM_Zone.Entity = null;
+						previousValue.HSM_Requests.Remove(this);
 					}
-					this._HCM_Zone.Entity = value;
+					this._HSM_Zone.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Requests.Add(this);
+						value.HSM_Requests.Add(this);
 						this._IdZone = value.IdZone;
 					}
 					else
 					{
 						this._IdZone = default(int);
 					}
-					this.SendPropertyChanged("HCM_Zone");
+					this.SendPropertyChanged("HSM_Zone");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Request", Storage="_Rodeo_Yard", ThisKey="IdYard", OtherKey="IdYard", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Request", Storage="_Rodeo_Yard", ThisKey="IdYard", OtherKey="IdYard", IsForeignKey=true)]
 		public Rodeo_Yard Rodeo_Yard
 		{
 			get
@@ -22409,12 +22409,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Yard.Entity = null;
-						previousValue.HCM_Requests.Remove(this);
+						previousValue.HSM_Requests.Remove(this);
 					}
 					this._Rodeo_Yard.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Requests.Add(this);
+						value.HSM_Requests.Add(this);
 						this._IdYard = value.IdYard;
 					}
 					else
@@ -22446,88 +22446,88 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Zone_Events(HCM_Zone_Event entity)
+		private void attach_HSM_Zone_Events(HSM_Zone_Event entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request = this;
+			entity.HSM_Request = this;
 		}
 		
-		private void detach_HCM_Zone_Events(HCM_Zone_Event entity)
+		private void detach_HSM_Zone_Events(HSM_Zone_Event entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request = null;
+			entity.HSM_Request = null;
 		}
 		
-		private void attach_HCM_Ground_EStop_Requests(HCM_Ground_EStop_Request entity)
+		private void attach_HSM_Ground_EStop_Requests(HSM_Ground_EStop_Request entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request = this;
+			entity.HSM_Request = this;
 		}
 		
-		private void detach_HCM_Ground_EStop_Requests(HCM_Ground_EStop_Request entity)
+		private void detach_HSM_Ground_EStop_Requests(HSM_Ground_EStop_Request entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request = null;
+			entity.HSM_Request = null;
 		}
 		
-		private void attach_HCM_Request_Interlocks_ByID(HCM_Request_Interlock entity)
+		private void attach_HSM_Request_Interlocks_ByID(HSM_Request_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_ByID = this;
+			entity.HSM_Request_ByID = this;
 		}
 		
-		private void detach_HCM_Request_Interlocks_ByID(HCM_Request_Interlock entity)
+		private void detach_HSM_Request_Interlocks_ByID(HSM_Request_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_ByID = null;
+			entity.HSM_Request_ByID = null;
 		}
 		
-		private void attach_HCM_Request_Interlocks_ID(HCM_Request_Interlock entity)
+		private void attach_HSM_Request_Interlocks_ID(HSM_Request_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_ID = this;
+			entity.HSM_Request_ID = this;
 		}
 		
-		private void detach_HCM_Request_Interlocks_ID(HCM_Request_Interlock entity)
+		private void detach_HSM_Request_Interlocks_ID(HSM_Request_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request_ID = null;
+			entity.HSM_Request_ID = null;
 		}
 		
-		private void attach_HCM_Zone_Interlocks(HCM_Zone_Interlock entity)
+		private void attach_HSM_Zone_Interlocks(HSM_Zone_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request = this;
+			entity.HSM_Request = this;
 		}
 		
-		private void detach_HCM_Zone_Interlocks(HCM_Zone_Interlock entity)
+		private void detach_HSM_Zone_Interlocks(HSM_Zone_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request = null;
+			entity.HSM_Request = null;
 		}
 		
-		private void attach_HCM_Request_Signal_Requests(HCM_Request_Signal_Request entity)
+		private void attach_HSM_Request_Signal_Requests(HSM_Request_Signal_Request entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request = this;
+			entity.HSM_Request = this;
 		}
 		
-		private void detach_HCM_Request_Signal_Requests(HCM_Request_Signal_Request entity)
+		private void detach_HSM_Request_Signal_Requests(HSM_Request_Signal_Request entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Request = null;
+			entity.HSM_Request = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Zone_Events = new EntitySet<HCM_Zone_Event>(new Action<HCM_Zone_Event>(this.attach_HCM_Zone_Events), new Action<HCM_Zone_Event>(this.detach_HCM_Zone_Events));
-			this._HCM_Ground_EStop_Requests = new EntitySet<HCM_Ground_EStop_Request>(new Action<HCM_Ground_EStop_Request>(this.attach_HCM_Ground_EStop_Requests), new Action<HCM_Ground_EStop_Request>(this.detach_HCM_Ground_EStop_Requests));
-			this._HCM_Request_Interlocks_ByID = new EntitySet<HCM_Request_Interlock>(new Action<HCM_Request_Interlock>(this.attach_HCM_Request_Interlocks_ByID), new Action<HCM_Request_Interlock>(this.detach_HCM_Request_Interlocks_ByID));
-			this._HCM_Request_Interlocks_ID = new EntitySet<HCM_Request_Interlock>(new Action<HCM_Request_Interlock>(this.attach_HCM_Request_Interlocks_ID), new Action<HCM_Request_Interlock>(this.detach_HCM_Request_Interlocks_ID));
-			this._HCM_Zone_Interlocks = new EntitySet<HCM_Zone_Interlock>(new Action<HCM_Zone_Interlock>(this.attach_HCM_Zone_Interlocks), new Action<HCM_Zone_Interlock>(this.detach_HCM_Zone_Interlocks));
-			this._HCM_Request_Signal_Requests = new EntitySet<HCM_Request_Signal_Request>(new Action<HCM_Request_Signal_Request>(this.attach_HCM_Request_Signal_Requests), new Action<HCM_Request_Signal_Request>(this.detach_HCM_Request_Signal_Requests));
-			this._HCM_Request_Type = default(EntityRef<HCM_Request_Type>);
-			this._HCM_Zone = default(EntityRef<HCM_Zone>);
+			this._HSM_Zone_Events = new EntitySet<HSM_Zone_Event>(new Action<HSM_Zone_Event>(this.attach_HSM_Zone_Events), new Action<HSM_Zone_Event>(this.detach_HSM_Zone_Events));
+			this._HSM_Ground_EStop_Requests = new EntitySet<HSM_Ground_EStop_Request>(new Action<HSM_Ground_EStop_Request>(this.attach_HSM_Ground_EStop_Requests), new Action<HSM_Ground_EStop_Request>(this.detach_HSM_Ground_EStop_Requests));
+			this._HSM_Request_Interlocks_ByID = new EntitySet<HSM_Request_Interlock>(new Action<HSM_Request_Interlock>(this.attach_HSM_Request_Interlocks_ByID), new Action<HSM_Request_Interlock>(this.detach_HSM_Request_Interlocks_ByID));
+			this._HSM_Request_Interlocks_ID = new EntitySet<HSM_Request_Interlock>(new Action<HSM_Request_Interlock>(this.attach_HSM_Request_Interlocks_ID), new Action<HSM_Request_Interlock>(this.detach_HSM_Request_Interlocks_ID));
+			this._HSM_Zone_Interlocks = new EntitySet<HSM_Zone_Interlock>(new Action<HSM_Zone_Interlock>(this.attach_HSM_Zone_Interlocks), new Action<HSM_Zone_Interlock>(this.detach_HSM_Zone_Interlocks));
+			this._HSM_Request_Signal_Requests = new EntitySet<HSM_Request_Signal_Request>(new Action<HSM_Request_Signal_Request>(this.attach_HSM_Request_Signal_Requests), new Action<HSM_Request_Signal_Request>(this.detach_HSM_Request_Signal_Requests));
+			this._HSM_Request_Type = default(EntityRef<HSM_Request_Type>);
+			this._HSM_Zone = default(EntityRef<HSM_Zone>);
 			this._Rodeo_Yard = default(EntityRef<Rodeo_Yard>);
 			OnCreated();
 		}
@@ -22554,9 +22554,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Zone_Dependencies")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Zone_Dependencies")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Zone_Dependency : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Zone_Dependency : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -22575,9 +22575,9 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Zone> _HCM_Zone_Child;
+		private EntityRef<HSM_Zone> _HSM_Zone_Child;
 		
-		private EntityRef<HCM_Zone> _HCM_Zone_Parent;
+		private EntityRef<HSM_Zone> _HSM_Zone_Parent;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -22599,7 +22599,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Zone_Dependency()
+		public HSM_Zone_Dependency()
 		{
 			this.Initialize();
 		}
@@ -22616,7 +22616,7 @@ namespace HCM.Database
 			{
 				if ((this._IdZoneParent != value))
 				{
-					if (this._HCM_Zone_Parent.HasLoadedOrAssignedValue)
+					if (this._HSM_Zone_Parent.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -22641,7 +22641,7 @@ namespace HCM.Database
 			{
 				if ((this._IdZoneChild != value))
 				{
-					if (this._HCM_Zone_Child.HasLoadedOrAssignedValue)
+					if (this._HSM_Zone_Child.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -22759,70 +22759,70 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Zone_Dependency", Storage="_HCM_Zone_Child", ThisKey="IdZoneChild", OtherKey="IdZone", IsForeignKey=true)]
-		public HCM_Zone HCM_Zone_Child
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Zone_Dependency", Storage="_HSM_Zone_Child", ThisKey="IdZoneChild", OtherKey="IdZone", IsForeignKey=true)]
+		public HSM_Zone HSM_Zone_Child
 		{
 			get
 			{
-				return this._HCM_Zone_Child.Entity;
+				return this._HSM_Zone_Child.Entity;
 			}
 			set
 			{
-				HCM_Zone previousValue = this._HCM_Zone_Child.Entity;
+				HSM_Zone previousValue = this._HSM_Zone_Child.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Zone_Child.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Zone_Child.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Zone_Child.Entity = null;
-						previousValue.HCM_Zone_Dependencies_Child.Remove(this);
+						this._HSM_Zone_Child.Entity = null;
+						previousValue.HSM_Zone_Dependencies_Child.Remove(this);
 					}
-					this._HCM_Zone_Child.Entity = value;
+					this._HSM_Zone_Child.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Zone_Dependencies_Child.Add(this);
+						value.HSM_Zone_Dependencies_Child.Add(this);
 						this._IdZoneChild = value.IdZone;
 					}
 					else
 					{
 						this._IdZoneChild = default(int);
 					}
-					this.SendPropertyChanged("HCM_Zone_Child");
+					this.SendPropertyChanged("HSM_Zone_Child");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Zone_Dependency1", Storage="_HCM_Zone_Parent", ThisKey="IdZoneParent", OtherKey="IdZone", IsForeignKey=true)]
-		public HCM_Zone HCM_Zone_Parent
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Zone_Dependency1", Storage="_HSM_Zone_Parent", ThisKey="IdZoneParent", OtherKey="IdZone", IsForeignKey=true)]
+		public HSM_Zone HSM_Zone_Parent
 		{
 			get
 			{
-				return this._HCM_Zone_Parent.Entity;
+				return this._HSM_Zone_Parent.Entity;
 			}
 			set
 			{
-				HCM_Zone previousValue = this._HCM_Zone_Parent.Entity;
+				HSM_Zone previousValue = this._HSM_Zone_Parent.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Zone_Parent.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Zone_Parent.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Zone_Parent.Entity = null;
-						previousValue.HCM_Zone_Dependencies_Parent.Remove(this);
+						this._HSM_Zone_Parent.Entity = null;
+						previousValue.HSM_Zone_Dependencies_Parent.Remove(this);
 					}
-					this._HCM_Zone_Parent.Entity = value;
+					this._HSM_Zone_Parent.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Zone_Dependencies_Parent.Add(this);
+						value.HSM_Zone_Dependencies_Parent.Add(this);
 						this._IdZoneParent = value.IdZone;
 					}
 					else
 					{
 						this._IdZoneParent = default(int);
 					}
-					this.SendPropertyChanged("HCM_Zone_Parent");
+					this.SendPropertyChanged("HSM_Zone_Parent");
 				}
 			}
 		}
@@ -22849,8 +22849,8 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Zone_Child = default(EntityRef<HCM_Zone>);
-			this._HCM_Zone_Parent = default(EntityRef<HCM_Zone>);
+			this._HSM_Zone_Child = default(EntityRef<HSM_Zone>);
+			this._HSM_Zone_Parent = default(EntityRef<HSM_Zone>);
 			OnCreated();
 		}
 		
@@ -22862,9 +22862,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Zone_Fences")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Zone_Fences")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Zone_Fence : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Zone_Fence : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -22903,7 +22903,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Zone_Fence()
+		public HSM_Zone_Fence()
 		{
 			this.Initialize();
 		}
@@ -23088,9 +23088,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Zone_Interlocks")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Zone_Interlocks")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Zone_Interlock : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Zone_Interlock : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -23123,13 +23123,13 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Request_Signal> _HCM_Request_Signal;
+		private EntityRef<HSM_Request_Signal> _HSM_Request_Signal;
 		
-		private EntityRef<HCM_Request> _HCM_Request;
+		private EntityRef<HSM_Request> _HSM_Request;
 		
-		private EntityRef<HCM_Zone> _HCM_Zone_ByID;
+		private EntityRef<HSM_Zone> _HSM_Zone_ByID;
 		
-		private EntityRef<HCM_Zone> _HCM_Zone_ID;
+		private EntityRef<HSM_Zone> _HSM_Zone_ID;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -23165,7 +23165,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Zone_Interlock()
+		public HSM_Zone_Interlock()
 		{
 			this.Initialize();
 		}
@@ -23182,7 +23182,7 @@ namespace HCM.Database
 			{
 				if ((this._IdZone != value))
 				{
-					if (this._HCM_Zone_ID.HasLoadedOrAssignedValue)
+					if (this._HSM_Zone_ID.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -23228,7 +23228,7 @@ namespace HCM.Database
 			{
 				if ((this._ByIdZone != value))
 				{
-					if (this._HCM_Zone_ByID.HasLoadedOrAssignedValue)
+					if (this._HSM_Zone_ByID.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -23274,7 +23274,7 @@ namespace HCM.Database
 			{
 				if ((this._ByIdRequest != value))
 				{
-					if (this._HCM_Request.HasLoadedOrAssignedValue)
+					if (this._HSM_Request.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -23299,7 +23299,7 @@ namespace HCM.Database
 			{
 				if ((this._ByIdRequestSignal != value))
 				{
-					if (this._HCM_Request_Signal.HasLoadedOrAssignedValue)
+					if (this._HSM_Request_Signal.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -23480,138 +23480,138 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_Signal_HCM_Zone_Interlock", Storage="_HCM_Request_Signal", ThisKey="ByIdRequestSignal", OtherKey="IdRequestSignal", IsForeignKey=true)]
-		public HCM_Request_Signal HCM_Request_Signal
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_Signal_HSM_Zone_Interlock", Storage="_HSM_Request_Signal", ThisKey="ByIdRequestSignal", OtherKey="IdRequestSignal", IsForeignKey=true)]
+		public HSM_Request_Signal HSM_Request_Signal
 		{
 			get
 			{
-				return this._HCM_Request_Signal.Entity;
+				return this._HSM_Request_Signal.Entity;
 			}
 			set
 			{
-				HCM_Request_Signal previousValue = this._HCM_Request_Signal.Entity;
+				HSM_Request_Signal previousValue = this._HSM_Request_Signal.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Request_Signal.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Request_Signal.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Request_Signal.Entity = null;
-						previousValue.HCM_Zone_Interlocks.Remove(this);
+						this._HSM_Request_Signal.Entity = null;
+						previousValue.HSM_Zone_Interlocks.Remove(this);
 					}
-					this._HCM_Request_Signal.Entity = value;
+					this._HSM_Request_Signal.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Zone_Interlocks.Add(this);
+						value.HSM_Zone_Interlocks.Add(this);
 						this._ByIdRequestSignal = value.IdRequestSignal;
 					}
 					else
 					{
 						this._ByIdRequestSignal = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("HCM_Request_Signal");
+					this.SendPropertyChanged("HSM_Request_Signal");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_HCM_Zone_Interlock", Storage="_HCM_Request", ThisKey="ByIdRequest", OtherKey="IdRequest", IsForeignKey=true)]
-		public HCM_Request HCM_Request
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_HSM_Zone_Interlock", Storage="_HSM_Request", ThisKey="ByIdRequest", OtherKey="IdRequest", IsForeignKey=true)]
+		public HSM_Request HSM_Request
 		{
 			get
 			{
-				return this._HCM_Request.Entity;
+				return this._HSM_Request.Entity;
 			}
 			set
 			{
-				HCM_Request previousValue = this._HCM_Request.Entity;
+				HSM_Request previousValue = this._HSM_Request.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Request.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Request.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Request.Entity = null;
-						previousValue.HCM_Zone_Interlocks.Remove(this);
+						this._HSM_Request.Entity = null;
+						previousValue.HSM_Zone_Interlocks.Remove(this);
 					}
-					this._HCM_Request.Entity = value;
+					this._HSM_Request.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Zone_Interlocks.Add(this);
+						value.HSM_Zone_Interlocks.Add(this);
 						this._ByIdRequest = value.IdRequest;
 					}
 					else
 					{
 						this._ByIdRequest = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("HCM_Request");
+					this.SendPropertyChanged("HSM_Request");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Zone_Interlock", Storage="_HCM_Zone_ByID", ThisKey="ByIdZone", OtherKey="IdZone", IsForeignKey=true)]
-		public HCM_Zone HCM_Zone_ByID
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Zone_Interlock", Storage="_HSM_Zone_ByID", ThisKey="ByIdZone", OtherKey="IdZone", IsForeignKey=true)]
+		public HSM_Zone HSM_Zone_ByID
 		{
 			get
 			{
-				return this._HCM_Zone_ByID.Entity;
+				return this._HSM_Zone_ByID.Entity;
 			}
 			set
 			{
-				HCM_Zone previousValue = this._HCM_Zone_ByID.Entity;
+				HSM_Zone previousValue = this._HSM_Zone_ByID.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Zone_ByID.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Zone_ByID.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Zone_ByID.Entity = null;
-						previousValue.HCM_Zone_Interlocks_ByID.Remove(this);
+						this._HSM_Zone_ByID.Entity = null;
+						previousValue.HSM_Zone_Interlocks_ByID.Remove(this);
 					}
-					this._HCM_Zone_ByID.Entity = value;
+					this._HSM_Zone_ByID.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Zone_Interlocks_ByID.Add(this);
+						value.HSM_Zone_Interlocks_ByID.Add(this);
 						this._ByIdZone = value.IdZone;
 					}
 					else
 					{
 						this._ByIdZone = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("HCM_Zone_ByID");
+					this.SendPropertyChanged("HSM_Zone_ByID");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Zone_Interlock1", Storage="_HCM_Zone_ID", ThisKey="IdZone", OtherKey="IdZone", IsForeignKey=true)]
-		public HCM_Zone HCM_Zone_ID
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Zone_Interlock1", Storage="_HSM_Zone_ID", ThisKey="IdZone", OtherKey="IdZone", IsForeignKey=true)]
+		public HSM_Zone HSM_Zone_ID
 		{
 			get
 			{
-				return this._HCM_Zone_ID.Entity;
+				return this._HSM_Zone_ID.Entity;
 			}
 			set
 			{
-				HCM_Zone previousValue = this._HCM_Zone_ID.Entity;
+				HSM_Zone previousValue = this._HSM_Zone_ID.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Zone_ID.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Zone_ID.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Zone_ID.Entity = null;
-						previousValue.HCM_Zone_Interlocks_ID.Remove(this);
+						this._HSM_Zone_ID.Entity = null;
+						previousValue.HSM_Zone_Interlocks_ID.Remove(this);
 					}
-					this._HCM_Zone_ID.Entity = value;
+					this._HSM_Zone_ID.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Zone_Interlocks_ID.Add(this);
+						value.HSM_Zone_Interlocks_ID.Add(this);
 						this._IdZone = value.IdZone;
 					}
 					else
 					{
 						this._IdZone = default(int);
 					}
-					this.SendPropertyChanged("HCM_Zone_ID");
+					this.SendPropertyChanged("HSM_Zone_ID");
 				}
 			}
 		}
@@ -23638,10 +23638,10 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Request_Signal = default(EntityRef<HCM_Request_Signal>);
-			this._HCM_Request = default(EntityRef<HCM_Request>);
-			this._HCM_Zone_ByID = default(EntityRef<HCM_Zone>);
-			this._HCM_Zone_ID = default(EntityRef<HCM_Zone>);
+			this._HSM_Request_Signal = default(EntityRef<HSM_Request_Signal>);
+			this._HSM_Request = default(EntityRef<HSM_Request>);
+			this._HSM_Zone_ByID = default(EntityRef<HSM_Zone>);
+			this._HSM_Zone_ID = default(EntityRef<HSM_Zone>);
 			OnCreated();
 		}
 		
@@ -23653,9 +23653,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Zone_Machines")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Zone_Machines")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Zone_Machine : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Zone_Machine : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -23676,7 +23676,7 @@ namespace HCM.Database
 		
 		private EntityRef<Rodeo_Machine_Group> _Rodeo_Machine_Group;
 		
-		private EntityRef<HCM_Zone> _HCM_Zone;
+		private EntityRef<HSM_Zone> _HSM_Zone;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -23698,7 +23698,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Zone_Machine()
+		public HSM_Zone_Machine()
 		{
 			this.Initialize();
 		}
@@ -23715,7 +23715,7 @@ namespace HCM.Database
 			{
 				if ((this._IdZone != value))
 				{
-					if (this._HCM_Zone.HasLoadedOrAssignedValue)
+					if (this._HSM_Zone.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -23858,7 +23858,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Group_HCM_Zone_Machine", Storage="_Rodeo_Machine_Group", ThisKey="IdMachineGroup", OtherKey="IdMachineGroup", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Group_HSM_Zone_Machine", Storage="_Rodeo_Machine_Group", ThisKey="IdMachineGroup", OtherKey="IdMachineGroup", IsForeignKey=true)]
 		public Rodeo_Machine_Group Rodeo_Machine_Group
 		{
 			get
@@ -23875,12 +23875,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine_Group.Entity = null;
-						previousValue.HCM_Zone_Machines.Remove(this);
+						previousValue.HSM_Zone_Machines.Remove(this);
 					}
 					this._Rodeo_Machine_Group.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Zone_Machines.Add(this);
+						value.HSM_Zone_Machines.Add(this);
 						this._IdMachineGroup = value.IdMachineGroup;
 					}
 					else
@@ -23892,36 +23892,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Zone_Machine", Storage="_HCM_Zone", ThisKey="IdZone", OtherKey="IdZone", IsForeignKey=true)]
-		public HCM_Zone HCM_Zone
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Zone_Machine", Storage="_HSM_Zone", ThisKey="IdZone", OtherKey="IdZone", IsForeignKey=true)]
+		public HSM_Zone HSM_Zone
 		{
 			get
 			{
-				return this._HCM_Zone.Entity;
+				return this._HSM_Zone.Entity;
 			}
 			set
 			{
-				HCM_Zone previousValue = this._HCM_Zone.Entity;
+				HSM_Zone previousValue = this._HSM_Zone.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Zone.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Zone.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Zone.Entity = null;
-						previousValue.HCM_Zone_Machines.Remove(this);
+						this._HSM_Zone.Entity = null;
+						previousValue.HSM_Zone_Machines.Remove(this);
 					}
-					this._HCM_Zone.Entity = value;
+					this._HSM_Zone.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Zone_Machines.Add(this);
+						value.HSM_Zone_Machines.Add(this);
 						this._IdZone = value.IdZone;
 					}
 					else
 					{
 						this._IdZone = default(int);
 					}
-					this.SendPropertyChanged("HCM_Zone");
+					this.SendPropertyChanged("HSM_Zone");
 				}
 			}
 		}
@@ -23949,7 +23949,7 @@ namespace HCM.Database
 		private void Initialize()
 		{
 			this._Rodeo_Machine_Group = default(EntityRef<Rodeo_Machine_Group>);
-			this._HCM_Zone = default(EntityRef<HCM_Zone>);
+			this._HSM_Zone = default(EntityRef<HSM_Zone>);
 			OnCreated();
 		}
 		
@@ -23961,9 +23961,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Zone_Sections")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Zone_Sections")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Zone_Section : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Zone_Section : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -24010,7 +24010,7 @@ namespace HCM.Database
 		
 		private System.DateTimeOffset _UpdDateTime;
 		
-		private EntityRef<HCM_Zone> _HCM_Zone;
+		private EntityRef<HSM_Zone> _HSM_Zone;
 		
 		private EntityRef<Rodeo_Yard> _Rodeo_Yard;
 		
@@ -24062,7 +24062,7 @@ namespace HCM.Database
     partial void OnUpdDateTimeChanged();
     #endregion
 		
-		public HCM_Zone_Section()
+		public HSM_Zone_Section()
 		{
 			this.Initialize();
 		}
@@ -24079,7 +24079,7 @@ namespace HCM.Database
 			{
 				if ((this._IdZone != value))
 				{
-					if (this._HCM_Zone.HasLoadedOrAssignedValue)
+					if (this._HSM_Zone.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -24516,41 +24516,41 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Zone_Section", Storage="_HCM_Zone", ThisKey="IdZone", OtherKey="IdZone", IsForeignKey=true)]
-		public HCM_Zone HCM_Zone
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Zone_Section", Storage="_HSM_Zone", ThisKey="IdZone", OtherKey="IdZone", IsForeignKey=true)]
+		public HSM_Zone HSM_Zone
 		{
 			get
 			{
-				return this._HCM_Zone.Entity;
+				return this._HSM_Zone.Entity;
 			}
 			set
 			{
-				HCM_Zone previousValue = this._HCM_Zone.Entity;
+				HSM_Zone previousValue = this._HSM_Zone.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Zone.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Zone.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Zone.Entity = null;
-						previousValue.HCM_Zone_Sections.Remove(this);
+						this._HSM_Zone.Entity = null;
+						previousValue.HSM_Zone_Sections.Remove(this);
 					}
-					this._HCM_Zone.Entity = value;
+					this._HSM_Zone.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Zone_Sections.Add(this);
+						value.HSM_Zone_Sections.Add(this);
 						this._IdZone = value.IdZone;
 					}
 					else
 					{
 						this._IdZone = default(int);
 					}
-					this.SendPropertyChanged("HCM_Zone");
+					this.SendPropertyChanged("HSM_Zone");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Zone_Section", Storage="_Rodeo_Yard", ThisKey="IdYard", OtherKey="IdYard", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Zone_Section", Storage="_Rodeo_Yard", ThisKey="IdYard", OtherKey="IdYard", IsForeignKey=true)]
 		public Rodeo_Yard Rodeo_Yard
 		{
 			get
@@ -24567,12 +24567,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Yard.Entity = null;
-						previousValue.HCM_Zone_Sections.Remove(this);
+						previousValue.HSM_Zone_Sections.Remove(this);
 					}
 					this._Rodeo_Yard.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Zone_Sections.Add(this);
+						value.HSM_Zone_Sections.Add(this);
 						this._IdYard = value.IdYard;
 					}
 					else
@@ -24606,7 +24606,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Zone = default(EntityRef<HCM_Zone>);
+			this._HSM_Zone = default(EntityRef<HSM_Zone>);
 			this._Rodeo_Yard = default(EntityRef<Rodeo_Yard>);
 			OnCreated();
 		}
@@ -24619,9 +24619,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Zone_Types")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Zone_Types")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Zone_Type : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Zone_Type : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -24636,7 +24636,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Zone> _HCM_Zones;
+		private EntitySet<HSM_Zone> _HSM_Zones;
 		
 		private bool serializing;
 		
@@ -24656,7 +24656,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Zone_Type()
+		public HSM_Zone_Type()
 		{
 			this.Initialize();
 		}
@@ -24766,22 +24766,22 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_Type_HCM_Zone", Storage="_HCM_Zones", ThisKey="IdZoneType", OtherKey="IdZoneType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_Type_HSM_Zone", Storage="_HSM_Zones", ThisKey="IdZoneType", OtherKey="IdZoneType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=6, EmitDefaultValue=false)]
-		public EntitySet<HCM_Zone> HCM_Zones
+		public EntitySet<HSM_Zone> HSM_Zones
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Zones.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Zones.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Zones;
+				return this._HSM_Zones;
 			}
 			set
 			{
-				this._HCM_Zones.Assign(value);
+				this._HSM_Zones.Assign(value);
 			}
 		}
 		
@@ -24805,21 +24805,21 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Zones(HCM_Zone entity)
+		private void attach_HSM_Zones(HSM_Zone entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone_Type = this;
+			entity.HSM_Zone_Type = this;
 		}
 		
-		private void detach_HCM_Zones(HCM_Zone entity)
+		private void detach_HSM_Zones(HSM_Zone entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone_Type = null;
+			entity.HSM_Zone_Type = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Zones = new EntitySet<HCM_Zone>(new Action<HCM_Zone>(this.attach_HCM_Zones), new Action<HCM_Zone>(this.detach_HCM_Zones));
+			this._HSM_Zones = new EntitySet<HSM_Zone>(new Action<HSM_Zone>(this.attach_HSM_Zones), new Action<HSM_Zone>(this.detach_HSM_Zones));
 			OnCreated();
 		}
 		
@@ -24845,9 +24845,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Zones")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Zones")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Zone : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Zone : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -24928,29 +24928,29 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Zone_Event> _HCM_Zone_Events;
+		private EntitySet<HSM_Zone_Event> _HSM_Zone_Events;
 		
-		private EntitySet<HCM_Machine_Exit_Zone> _HCM_Machine_Exit_Zones;
+		private EntitySet<HSM_Machine_Exit_Zone> _HSM_Machine_Exit_Zones;
 		
-		private EntitySet<HCM_Request_Interlock> _HCM_Request_Interlocks;
+		private EntitySet<HSM_Request_Interlock> _HSM_Request_Interlocks;
 		
-		private EntitySet<HCM_Request> _HCM_Requests;
+		private EntitySet<HSM_Request> _HSM_Requests;
 		
-		private EntitySet<HCM_Zone_Dependency> _HCM_Zone_Dependencies_Child;
+		private EntitySet<HSM_Zone_Dependency> _HSM_Zone_Dependencies_Child;
 		
-		private EntitySet<HCM_Zone_Dependency> _HCM_Zone_Dependencies_Parent;
+		private EntitySet<HSM_Zone_Dependency> _HSM_Zone_Dependencies_Parent;
 		
-		private EntitySet<HCM_Zone_Interlock> _HCM_Zone_Interlocks_ByID;
+		private EntitySet<HSM_Zone_Interlock> _HSM_Zone_Interlocks_ByID;
 		
-		private EntitySet<HCM_Zone_Interlock> _HCM_Zone_Interlocks_ID;
+		private EntitySet<HSM_Zone_Interlock> _HSM_Zone_Interlocks_ID;
 		
-		private EntitySet<HCM_Zone_Machine> _HCM_Zone_Machines;
+		private EntitySet<HSM_Zone_Machine> _HSM_Zone_Machines;
 		
-		private EntitySet<HCM_Zone_Section> _HCM_Zone_Sections;
+		private EntitySet<HSM_Zone_Section> _HSM_Zone_Sections;
 		
 		private EntityRef<Rodeo_Machine> _Rodeo_Machine;
 		
-		private EntityRef<HCM_Zone_Type> _HCM_Zone_Type;
+		private EntityRef<HSM_Zone_Type> _HSM_Zone_Type;
 		
 		private bool serializing;
 		
@@ -25036,7 +25036,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Zone()
+		public HSM_Zone()
 		{
 			this.Initialize();
 		}
@@ -25074,7 +25074,7 @@ namespace HCM.Database
 			{
 				if ((this._IdZoneType != value))
 				{
-					if (this._HCM_Zone_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Zone_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -25847,197 +25847,197 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Zone_Event", Storage="_HCM_Zone_Events", ThisKey="IdZone", OtherKey="IdZone")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Zone_Event", Storage="_HSM_Zone_Events", ThisKey="IdZone", OtherKey="IdZone")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=39, EmitDefaultValue=false)]
-		public EntitySet<HCM_Zone_Event> HCM_Zone_Events
+		public EntitySet<HSM_Zone_Event> HSM_Zone_Events
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Zone_Events.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Zone_Events.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Zone_Events;
+				return this._HSM_Zone_Events;
 			}
 			set
 			{
-				this._HCM_Zone_Events.Assign(value);
+				this._HSM_Zone_Events.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Machine_Exit_Zone", Storage="_HCM_Machine_Exit_Zones", ThisKey="IdZone", OtherKey="IdZone")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Machine_Exit_Zone", Storage="_HSM_Machine_Exit_Zones", ThisKey="IdZone", OtherKey="IdZone")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=40, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Exit_Zone> HCM_Machine_Exit_Zones
+		public EntitySet<HSM_Machine_Exit_Zone> HSM_Machine_Exit_Zones
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Exit_Zones.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Exit_Zones.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Exit_Zones;
+				return this._HSM_Machine_Exit_Zones;
 			}
 			set
 			{
-				this._HCM_Machine_Exit_Zones.Assign(value);
+				this._HSM_Machine_Exit_Zones.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Request_Interlock", Storage="_HCM_Request_Interlocks", ThisKey="IdZone", OtherKey="ByIdZone")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Request_Interlock", Storage="_HSM_Request_Interlocks", ThisKey="IdZone", OtherKey="ByIdZone")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=41, EmitDefaultValue=false)]
-		public EntitySet<HCM_Request_Interlock> HCM_Request_Interlocks
+		public EntitySet<HSM_Request_Interlock> HSM_Request_Interlocks
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Request_Interlocks.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Request_Interlocks.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Request_Interlocks;
+				return this._HSM_Request_Interlocks;
 			}
 			set
 			{
-				this._HCM_Request_Interlocks.Assign(value);
+				this._HSM_Request_Interlocks.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Request", Storage="_HCM_Requests", ThisKey="IdZone", OtherKey="IdZone")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Request", Storage="_HSM_Requests", ThisKey="IdZone", OtherKey="IdZone")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=42, EmitDefaultValue=false)]
-		public EntitySet<HCM_Request> HCM_Requests
+		public EntitySet<HSM_Request> HSM_Requests
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Requests.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Requests.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Requests;
+				return this._HSM_Requests;
 			}
 			set
 			{
-				this._HCM_Requests.Assign(value);
+				this._HSM_Requests.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Zone_Dependency", Storage="_HCM_Zone_Dependencies_Child", ThisKey="IdZone", OtherKey="IdZoneChild")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Zone_Dependency", Storage="_HSM_Zone_Dependencies_Child", ThisKey="IdZone", OtherKey="IdZoneChild")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=43, EmitDefaultValue=false)]
-		public EntitySet<HCM_Zone_Dependency> HCM_Zone_Dependencies_Child
+		public EntitySet<HSM_Zone_Dependency> HSM_Zone_Dependencies_Child
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Zone_Dependencies_Child.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Zone_Dependencies_Child.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Zone_Dependencies_Child;
+				return this._HSM_Zone_Dependencies_Child;
 			}
 			set
 			{
-				this._HCM_Zone_Dependencies_Child.Assign(value);
+				this._HSM_Zone_Dependencies_Child.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Zone_Dependency1", Storage="_HCM_Zone_Dependencies_Parent", ThisKey="IdZone", OtherKey="IdZoneParent")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Zone_Dependency1", Storage="_HSM_Zone_Dependencies_Parent", ThisKey="IdZone", OtherKey="IdZoneParent")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=44, EmitDefaultValue=false)]
-		public EntitySet<HCM_Zone_Dependency> HCM_Zone_Dependencies_Parent
+		public EntitySet<HSM_Zone_Dependency> HSM_Zone_Dependencies_Parent
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Zone_Dependencies_Parent.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Zone_Dependencies_Parent.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Zone_Dependencies_Parent;
+				return this._HSM_Zone_Dependencies_Parent;
 			}
 			set
 			{
-				this._HCM_Zone_Dependencies_Parent.Assign(value);
+				this._HSM_Zone_Dependencies_Parent.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Zone_Interlock", Storage="_HCM_Zone_Interlocks_ByID", ThisKey="IdZone", OtherKey="ByIdZone")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Zone_Interlock", Storage="_HSM_Zone_Interlocks_ByID", ThisKey="IdZone", OtherKey="ByIdZone")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=45, EmitDefaultValue=false)]
-		public EntitySet<HCM_Zone_Interlock> HCM_Zone_Interlocks_ByID
+		public EntitySet<HSM_Zone_Interlock> HSM_Zone_Interlocks_ByID
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Zone_Interlocks_ByID.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Zone_Interlocks_ByID.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Zone_Interlocks_ByID;
+				return this._HSM_Zone_Interlocks_ByID;
 			}
 			set
 			{
-				this._HCM_Zone_Interlocks_ByID.Assign(value);
+				this._HSM_Zone_Interlocks_ByID.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Zone_Interlock1", Storage="_HCM_Zone_Interlocks_ID", ThisKey="IdZone", OtherKey="IdZone")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Zone_Interlock1", Storage="_HSM_Zone_Interlocks_ID", ThisKey="IdZone", OtherKey="IdZone")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=46, EmitDefaultValue=false)]
-		public EntitySet<HCM_Zone_Interlock> HCM_Zone_Interlocks_ID
+		public EntitySet<HSM_Zone_Interlock> HSM_Zone_Interlocks_ID
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Zone_Interlocks_ID.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Zone_Interlocks_ID.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Zone_Interlocks_ID;
+				return this._HSM_Zone_Interlocks_ID;
 			}
 			set
 			{
-				this._HCM_Zone_Interlocks_ID.Assign(value);
+				this._HSM_Zone_Interlocks_ID.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Zone_Machine", Storage="_HCM_Zone_Machines", ThisKey="IdZone", OtherKey="IdZone")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Zone_Machine", Storage="_HSM_Zone_Machines", ThisKey="IdZone", OtherKey="IdZone")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=47, EmitDefaultValue=false)]
-		public EntitySet<HCM_Zone_Machine> HCM_Zone_Machines
+		public EntitySet<HSM_Zone_Machine> HSM_Zone_Machines
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Zone_Machines.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Zone_Machines.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Zone_Machines;
+				return this._HSM_Zone_Machines;
 			}
 			set
 			{
-				this._HCM_Zone_Machines.Assign(value);
+				this._HSM_Zone_Machines.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_HCM_Zone_Section", Storage="_HCM_Zone_Sections", ThisKey="IdZone", OtherKey="IdZone")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_HSM_Zone_Section", Storage="_HSM_Zone_Sections", ThisKey="IdZone", OtherKey="IdZone")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=48, EmitDefaultValue=false)]
-		public EntitySet<HCM_Zone_Section> HCM_Zone_Sections
+		public EntitySet<HSM_Zone_Section> HSM_Zone_Sections
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Zone_Sections.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Zone_Sections.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Zone_Sections;
+				return this._HSM_Zone_Sections;
 			}
 			set
 			{
-				this._HCM_Zone_Sections.Assign(value);
+				this._HSM_Zone_Sections.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Zone", Storage="_Rodeo_Machine", ThisKey="IdMachineRequiredOnDisable", OtherKey="IdMachine", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Zone", Storage="_Rodeo_Machine", ThisKey="IdMachineRequiredOnDisable", OtherKey="IdMachine", IsForeignKey=true)]
 		public Rodeo_Machine Rodeo_Machine
 		{
 			get
@@ -26054,12 +26054,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine.Entity = null;
-						previousValue.HCM_Zones.Remove(this);
+						previousValue.HSM_Zones.Remove(this);
 					}
 					this._Rodeo_Machine.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Zones.Add(this);
+						value.HSM_Zones.Add(this);
 						this._IdMachineRequiredOnDisable = value.IdMachine;
 					}
 					else
@@ -26071,36 +26071,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Zone_Type_HCM_Zone", Storage="_HCM_Zone_Type", ThisKey="IdZoneType", OtherKey="IdZoneType", IsForeignKey=true)]
-		public HCM_Zone_Type HCM_Zone_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Zone_Type_HSM_Zone", Storage="_HSM_Zone_Type", ThisKey="IdZoneType", OtherKey="IdZoneType", IsForeignKey=true)]
+		public HSM_Zone_Type HSM_Zone_Type
 		{
 			get
 			{
-				return this._HCM_Zone_Type.Entity;
+				return this._HSM_Zone_Type.Entity;
 			}
 			set
 			{
-				HCM_Zone_Type previousValue = this._HCM_Zone_Type.Entity;
+				HSM_Zone_Type previousValue = this._HSM_Zone_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Zone_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Zone_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Zone_Type.Entity = null;
-						previousValue.HCM_Zones.Remove(this);
+						this._HSM_Zone_Type.Entity = null;
+						previousValue.HSM_Zones.Remove(this);
 					}
-					this._HCM_Zone_Type.Entity = value;
+					this._HSM_Zone_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Zones.Add(this);
+						value.HSM_Zones.Add(this);
 						this._IdZoneType = value.IdZoneType;
 					}
 					else
 					{
 						this._IdZoneType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Zone_Type");
+					this.SendPropertyChanged("HSM_Zone_Type");
 				}
 			}
 		}
@@ -26125,140 +26125,140 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Zone_Events(HCM_Zone_Event entity)
+		private void attach_HSM_Zone_Events(HSM_Zone_Event entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone = this;
+			entity.HSM_Zone = this;
 		}
 		
-		private void detach_HCM_Zone_Events(HCM_Zone_Event entity)
+		private void detach_HSM_Zone_Events(HSM_Zone_Event entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone = null;
+			entity.HSM_Zone = null;
 		}
 		
-		private void attach_HCM_Machine_Exit_Zones(HCM_Machine_Exit_Zone entity)
+		private void attach_HSM_Machine_Exit_Zones(HSM_Machine_Exit_Zone entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone = this;
+			entity.HSM_Zone = this;
 		}
 		
-		private void detach_HCM_Machine_Exit_Zones(HCM_Machine_Exit_Zone entity)
+		private void detach_HSM_Machine_Exit_Zones(HSM_Machine_Exit_Zone entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone = null;
+			entity.HSM_Zone = null;
 		}
 		
-		private void attach_HCM_Request_Interlocks(HCM_Request_Interlock entity)
+		private void attach_HSM_Request_Interlocks(HSM_Request_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone = this;
+			entity.HSM_Zone = this;
 		}
 		
-		private void detach_HCM_Request_Interlocks(HCM_Request_Interlock entity)
+		private void detach_HSM_Request_Interlocks(HSM_Request_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone = null;
+			entity.HSM_Zone = null;
 		}
 		
-		private void attach_HCM_Requests(HCM_Request entity)
+		private void attach_HSM_Requests(HSM_Request entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone = this;
+			entity.HSM_Zone = this;
 		}
 		
-		private void detach_HCM_Requests(HCM_Request entity)
+		private void detach_HSM_Requests(HSM_Request entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone = null;
+			entity.HSM_Zone = null;
 		}
 		
-		private void attach_HCM_Zone_Dependencies_Child(HCM_Zone_Dependency entity)
+		private void attach_HSM_Zone_Dependencies_Child(HSM_Zone_Dependency entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone_Child = this;
+			entity.HSM_Zone_Child = this;
 		}
 		
-		private void detach_HCM_Zone_Dependencies_Child(HCM_Zone_Dependency entity)
+		private void detach_HSM_Zone_Dependencies_Child(HSM_Zone_Dependency entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone_Child = null;
+			entity.HSM_Zone_Child = null;
 		}
 		
-		private void attach_HCM_Zone_Dependencies_Parent(HCM_Zone_Dependency entity)
+		private void attach_HSM_Zone_Dependencies_Parent(HSM_Zone_Dependency entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone_Parent = this;
+			entity.HSM_Zone_Parent = this;
 		}
 		
-		private void detach_HCM_Zone_Dependencies_Parent(HCM_Zone_Dependency entity)
+		private void detach_HSM_Zone_Dependencies_Parent(HSM_Zone_Dependency entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone_Parent = null;
+			entity.HSM_Zone_Parent = null;
 		}
 		
-		private void attach_HCM_Zone_Interlocks_ByID(HCM_Zone_Interlock entity)
+		private void attach_HSM_Zone_Interlocks_ByID(HSM_Zone_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone_ByID = this;
+			entity.HSM_Zone_ByID = this;
 		}
 		
-		private void detach_HCM_Zone_Interlocks_ByID(HCM_Zone_Interlock entity)
+		private void detach_HSM_Zone_Interlocks_ByID(HSM_Zone_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone_ByID = null;
+			entity.HSM_Zone_ByID = null;
 		}
 		
-		private void attach_HCM_Zone_Interlocks_ID(HCM_Zone_Interlock entity)
+		private void attach_HSM_Zone_Interlocks_ID(HSM_Zone_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone_ID = this;
+			entity.HSM_Zone_ID = this;
 		}
 		
-		private void detach_HCM_Zone_Interlocks_ID(HCM_Zone_Interlock entity)
+		private void detach_HSM_Zone_Interlocks_ID(HSM_Zone_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone_ID = null;
+			entity.HSM_Zone_ID = null;
 		}
 		
-		private void attach_HCM_Zone_Machines(HCM_Zone_Machine entity)
+		private void attach_HSM_Zone_Machines(HSM_Zone_Machine entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone = this;
+			entity.HSM_Zone = this;
 		}
 		
-		private void detach_HCM_Zone_Machines(HCM_Zone_Machine entity)
+		private void detach_HSM_Zone_Machines(HSM_Zone_Machine entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone = null;
+			entity.HSM_Zone = null;
 		}
 		
-		private void attach_HCM_Zone_Sections(HCM_Zone_Section entity)
+		private void attach_HSM_Zone_Sections(HSM_Zone_Section entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone = this;
+			entity.HSM_Zone = this;
 		}
 		
-		private void detach_HCM_Zone_Sections(HCM_Zone_Section entity)
+		private void detach_HSM_Zone_Sections(HSM_Zone_Section entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Zone = null;
+			entity.HSM_Zone = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Zone_Events = new EntitySet<HCM_Zone_Event>(new Action<HCM_Zone_Event>(this.attach_HCM_Zone_Events), new Action<HCM_Zone_Event>(this.detach_HCM_Zone_Events));
-			this._HCM_Machine_Exit_Zones = new EntitySet<HCM_Machine_Exit_Zone>(new Action<HCM_Machine_Exit_Zone>(this.attach_HCM_Machine_Exit_Zones), new Action<HCM_Machine_Exit_Zone>(this.detach_HCM_Machine_Exit_Zones));
-			this._HCM_Request_Interlocks = new EntitySet<HCM_Request_Interlock>(new Action<HCM_Request_Interlock>(this.attach_HCM_Request_Interlocks), new Action<HCM_Request_Interlock>(this.detach_HCM_Request_Interlocks));
-			this._HCM_Requests = new EntitySet<HCM_Request>(new Action<HCM_Request>(this.attach_HCM_Requests), new Action<HCM_Request>(this.detach_HCM_Requests));
-			this._HCM_Zone_Dependencies_Child = new EntitySet<HCM_Zone_Dependency>(new Action<HCM_Zone_Dependency>(this.attach_HCM_Zone_Dependencies_Child), new Action<HCM_Zone_Dependency>(this.detach_HCM_Zone_Dependencies_Child));
-			this._HCM_Zone_Dependencies_Parent = new EntitySet<HCM_Zone_Dependency>(new Action<HCM_Zone_Dependency>(this.attach_HCM_Zone_Dependencies_Parent), new Action<HCM_Zone_Dependency>(this.detach_HCM_Zone_Dependencies_Parent));
-			this._HCM_Zone_Interlocks_ByID = new EntitySet<HCM_Zone_Interlock>(new Action<HCM_Zone_Interlock>(this.attach_HCM_Zone_Interlocks_ByID), new Action<HCM_Zone_Interlock>(this.detach_HCM_Zone_Interlocks_ByID));
-			this._HCM_Zone_Interlocks_ID = new EntitySet<HCM_Zone_Interlock>(new Action<HCM_Zone_Interlock>(this.attach_HCM_Zone_Interlocks_ID), new Action<HCM_Zone_Interlock>(this.detach_HCM_Zone_Interlocks_ID));
-			this._HCM_Zone_Machines = new EntitySet<HCM_Zone_Machine>(new Action<HCM_Zone_Machine>(this.attach_HCM_Zone_Machines), new Action<HCM_Zone_Machine>(this.detach_HCM_Zone_Machines));
-			this._HCM_Zone_Sections = new EntitySet<HCM_Zone_Section>(new Action<HCM_Zone_Section>(this.attach_HCM_Zone_Sections), new Action<HCM_Zone_Section>(this.detach_HCM_Zone_Sections));
+			this._HSM_Zone_Events = new EntitySet<HSM_Zone_Event>(new Action<HSM_Zone_Event>(this.attach_HSM_Zone_Events), new Action<HSM_Zone_Event>(this.detach_HSM_Zone_Events));
+			this._HSM_Machine_Exit_Zones = new EntitySet<HSM_Machine_Exit_Zone>(new Action<HSM_Machine_Exit_Zone>(this.attach_HSM_Machine_Exit_Zones), new Action<HSM_Machine_Exit_Zone>(this.detach_HSM_Machine_Exit_Zones));
+			this._HSM_Request_Interlocks = new EntitySet<HSM_Request_Interlock>(new Action<HSM_Request_Interlock>(this.attach_HSM_Request_Interlocks), new Action<HSM_Request_Interlock>(this.detach_HSM_Request_Interlocks));
+			this._HSM_Requests = new EntitySet<HSM_Request>(new Action<HSM_Request>(this.attach_HSM_Requests), new Action<HSM_Request>(this.detach_HSM_Requests));
+			this._HSM_Zone_Dependencies_Child = new EntitySet<HSM_Zone_Dependency>(new Action<HSM_Zone_Dependency>(this.attach_HSM_Zone_Dependencies_Child), new Action<HSM_Zone_Dependency>(this.detach_HSM_Zone_Dependencies_Child));
+			this._HSM_Zone_Dependencies_Parent = new EntitySet<HSM_Zone_Dependency>(new Action<HSM_Zone_Dependency>(this.attach_HSM_Zone_Dependencies_Parent), new Action<HSM_Zone_Dependency>(this.detach_HSM_Zone_Dependencies_Parent));
+			this._HSM_Zone_Interlocks_ByID = new EntitySet<HSM_Zone_Interlock>(new Action<HSM_Zone_Interlock>(this.attach_HSM_Zone_Interlocks_ByID), new Action<HSM_Zone_Interlock>(this.detach_HSM_Zone_Interlocks_ByID));
+			this._HSM_Zone_Interlocks_ID = new EntitySet<HSM_Zone_Interlock>(new Action<HSM_Zone_Interlock>(this.attach_HSM_Zone_Interlocks_ID), new Action<HSM_Zone_Interlock>(this.detach_HSM_Zone_Interlocks_ID));
+			this._HSM_Zone_Machines = new EntitySet<HSM_Zone_Machine>(new Action<HSM_Zone_Machine>(this.attach_HSM_Zone_Machines), new Action<HSM_Zone_Machine>(this.detach_HSM_Zone_Machines));
+			this._HSM_Zone_Sections = new EntitySet<HSM_Zone_Section>(new Action<HSM_Zone_Section>(this.attach_HSM_Zone_Sections), new Action<HSM_Zone_Section>(this.detach_HSM_Zone_Sections));
 			this._Rodeo_Machine = default(EntityRef<Rodeo_Machine>);
-			this._HCM_Zone_Type = default(EntityRef<HCM_Zone_Type>);
+			this._HSM_Zone_Type = default(EntityRef<HSM_Zone_Type>);
 			OnCreated();
 		}
 		
@@ -26284,9 +26284,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="system.HCM_PLC_Modules")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="system.HSM_PLC_Modules")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_PLC_Module : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_PLC_Module : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -26311,9 +26311,9 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_PLC_IO> _HCM_PLC_IOs;
+		private EntitySet<HSM_PLC_IO> _HSM_PLC_IOs;
 		
-		private EntityRef<HCM_PLC_Rack> _HCM_PLC_Rack;
+		private EntityRef<HSM_PLC_Rack> _HSM_PLC_Rack;
 		
 		private bool serializing;
 		
@@ -26343,7 +26343,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_PLC_Module()
+		public HSM_PLC_Module()
 		{
 			this.Initialize();
 		}
@@ -26381,7 +26381,7 @@ namespace HCM.Database
 			{
 				if ((this._IdPLCRack != value))
 				{
-					if (this._HCM_PLC_Rack.HasLoadedOrAssignedValue)
+					if (this._HSM_PLC_Rack.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -26562,55 +26562,55 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_PLC_Module_HCM_PLC_IO", Storage="_HCM_PLC_IOs", ThisKey="IdPLCModule", OtherKey="IdPLCModule")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_PLC_Module_HSM_PLC_IO", Storage="_HSM_PLC_IOs", ThisKey="IdPLCModule", OtherKey="IdPLCModule")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=11, EmitDefaultValue=false)]
-		public EntitySet<HCM_PLC_IO> HCM_PLC_IOs
+		public EntitySet<HSM_PLC_IO> HSM_PLC_IOs
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_PLC_IOs.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_PLC_IOs.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_PLC_IOs;
+				return this._HSM_PLC_IOs;
 			}
 			set
 			{
-				this._HCM_PLC_IOs.Assign(value);
+				this._HSM_PLC_IOs.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_PLC_Rack_HCM_PLC_Module", Storage="_HCM_PLC_Rack", ThisKey="IdPLCRack", OtherKey="IdPLCRack", IsForeignKey=true)]
-		public HCM_PLC_Rack HCM_PLC_Rack
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_PLC_Rack_HSM_PLC_Module", Storage="_HSM_PLC_Rack", ThisKey="IdPLCRack", OtherKey="IdPLCRack", IsForeignKey=true)]
+		public HSM_PLC_Rack HSM_PLC_Rack
 		{
 			get
 			{
-				return this._HCM_PLC_Rack.Entity;
+				return this._HSM_PLC_Rack.Entity;
 			}
 			set
 			{
-				HCM_PLC_Rack previousValue = this._HCM_PLC_Rack.Entity;
+				HSM_PLC_Rack previousValue = this._HSM_PLC_Rack.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_PLC_Rack.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_PLC_Rack.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_PLC_Rack.Entity = null;
-						previousValue.HCM_PLC_Modules.Remove(this);
+						this._HSM_PLC_Rack.Entity = null;
+						previousValue.HSM_PLC_Modules.Remove(this);
 					}
-					this._HCM_PLC_Rack.Entity = value;
+					this._HSM_PLC_Rack.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_PLC_Modules.Add(this);
+						value.HSM_PLC_Modules.Add(this);
 						this._IdPLCRack = value.IdPLCRack;
 					}
 					else
 					{
 						this._IdPLCRack = default(int);
 					}
-					this.SendPropertyChanged("HCM_PLC_Rack");
+					this.SendPropertyChanged("HSM_PLC_Rack");
 				}
 			}
 		}
@@ -26635,22 +26635,22 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_PLC_IOs(HCM_PLC_IO entity)
+		private void attach_HSM_PLC_IOs(HSM_PLC_IO entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_PLC_Module = this;
+			entity.HSM_PLC_Module = this;
 		}
 		
-		private void detach_HCM_PLC_IOs(HCM_PLC_IO entity)
+		private void detach_HSM_PLC_IOs(HSM_PLC_IO entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_PLC_Module = null;
+			entity.HSM_PLC_Module = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_PLC_IOs = new EntitySet<HCM_PLC_IO>(new Action<HCM_PLC_IO>(this.attach_HCM_PLC_IOs), new Action<HCM_PLC_IO>(this.detach_HCM_PLC_IOs));
-			this._HCM_PLC_Rack = default(EntityRef<HCM_PLC_Rack>);
+			this._HSM_PLC_IOs = new EntitySet<HSM_PLC_IO>(new Action<HSM_PLC_IO>(this.attach_HSM_PLC_IOs), new Action<HSM_PLC_IO>(this.detach_HSM_PLC_IOs));
+			this._HSM_PLC_Rack = default(EntityRef<HSM_PLC_Rack>);
 			OnCreated();
 		}
 		
@@ -26676,9 +26676,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="system.HCM_PLC_Racks")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="system.HSM_PLC_Racks")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_PLC_Rack : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_PLC_Rack : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -26705,9 +26705,9 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_PLC_Module> _HCM_PLC_Modules;
+		private EntitySet<HSM_PLC_Module> _HSM_PLC_Modules;
 		
-		private EntityRef<HCM_PLC> _HCM_PLC;
+		private EntityRef<HSM_PLC> _HSM_PLC;
 		
 		private bool serializing;
 		
@@ -26739,7 +26739,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_PLC_Rack()
+		public HSM_PLC_Rack()
 		{
 			this.Initialize();
 		}
@@ -26777,7 +26777,7 @@ namespace HCM.Database
 			{
 				if ((this._IdPLC != value))
 				{
-					if (this._HCM_PLC.HasLoadedOrAssignedValue)
+					if (this._HSM_PLC.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -26979,55 +26979,55 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_PLC_Rack_HCM_PLC_Module", Storage="_HCM_PLC_Modules", ThisKey="IdPLCRack", OtherKey="IdPLCRack")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_PLC_Rack_HSM_PLC_Module", Storage="_HSM_PLC_Modules", ThisKey="IdPLCRack", OtherKey="IdPLCRack")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=12, EmitDefaultValue=false)]
-		public EntitySet<HCM_PLC_Module> HCM_PLC_Modules
+		public EntitySet<HSM_PLC_Module> HSM_PLC_Modules
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_PLC_Modules.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_PLC_Modules.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_PLC_Modules;
+				return this._HSM_PLC_Modules;
 			}
 			set
 			{
-				this._HCM_PLC_Modules.Assign(value);
+				this._HSM_PLC_Modules.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_PLC_HCM_PLC_Rack", Storage="_HCM_PLC", ThisKey="IdPLC", OtherKey="IdPLC", IsForeignKey=true)]
-		public HCM_PLC HCM_PLC
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_PLC_HSM_PLC_Rack", Storage="_HSM_PLC", ThisKey="IdPLC", OtherKey="IdPLC", IsForeignKey=true)]
+		public HSM_PLC HSM_PLC
 		{
 			get
 			{
-				return this._HCM_PLC.Entity;
+				return this._HSM_PLC.Entity;
 			}
 			set
 			{
-				HCM_PLC previousValue = this._HCM_PLC.Entity;
+				HSM_PLC previousValue = this._HSM_PLC.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_PLC.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_PLC.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_PLC.Entity = null;
-						previousValue.HCM_PLC_Racks.Remove(this);
+						this._HSM_PLC.Entity = null;
+						previousValue.HSM_PLC_Racks.Remove(this);
 					}
-					this._HCM_PLC.Entity = value;
+					this._HSM_PLC.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_PLC_Racks.Add(this);
+						value.HSM_PLC_Racks.Add(this);
 						this._IdPLC = value.IdPLC;
 					}
 					else
 					{
 						this._IdPLC = default(int);
 					}
-					this.SendPropertyChanged("HCM_PLC");
+					this.SendPropertyChanged("HSM_PLC");
 				}
 			}
 		}
@@ -27052,22 +27052,22 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_PLC_Modules(HCM_PLC_Module entity)
+		private void attach_HSM_PLC_Modules(HSM_PLC_Module entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_PLC_Rack = this;
+			entity.HSM_PLC_Rack = this;
 		}
 		
-		private void detach_HCM_PLC_Modules(HCM_PLC_Module entity)
+		private void detach_HSM_PLC_Modules(HSM_PLC_Module entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_PLC_Rack = null;
+			entity.HSM_PLC_Rack = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_PLC_Modules = new EntitySet<HCM_PLC_Module>(new Action<HCM_PLC_Module>(this.attach_HCM_PLC_Modules), new Action<HCM_PLC_Module>(this.detach_HCM_PLC_Modules));
-			this._HCM_PLC = default(EntityRef<HCM_PLC>);
+			this._HSM_PLC_Modules = new EntitySet<HSM_PLC_Module>(new Action<HSM_PLC_Module>(this.attach_HSM_PLC_Modules), new Action<HSM_PLC_Module>(this.detach_HSM_PLC_Modules));
+			this._HSM_PLC = default(EntityRef<HSM_PLC>);
 			OnCreated();
 		}
 		
@@ -27093,9 +27093,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="system.HCM_PLC_VIOs")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="system.HSM_PLC_VIOs")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_PLC_VIO : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_PLC_VIO : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -27114,7 +27114,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_PLC> _HCM_PLC;
+		private EntityRef<HSM_PLC> _HSM_PLC;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -27136,7 +27136,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_PLC_VIO()
+		public HSM_PLC_VIO()
 		{
 			this.Initialize();
 		}
@@ -27174,7 +27174,7 @@ namespace HCM.Database
 			{
 				if ((this._IdPLC != value))
 				{
-					if (this._HCM_PLC.HasLoadedOrAssignedValue)
+					if (this._HSM_PLC.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -27292,36 +27292,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_PLC_HCM_PLC_VIO", Storage="_HCM_PLC", ThisKey="IdPLC", OtherKey="IdPLC", IsForeignKey=true)]
-		public HCM_PLC HCM_PLC
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_PLC_HSM_PLC_VIO", Storage="_HSM_PLC", ThisKey="IdPLC", OtherKey="IdPLC", IsForeignKey=true)]
+		public HSM_PLC HSM_PLC
 		{
 			get
 			{
-				return this._HCM_PLC.Entity;
+				return this._HSM_PLC.Entity;
 			}
 			set
 			{
-				HCM_PLC previousValue = this._HCM_PLC.Entity;
+				HSM_PLC previousValue = this._HSM_PLC.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_PLC.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_PLC.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_PLC.Entity = null;
-						previousValue.HCM_PLC_VIOs.Remove(this);
+						this._HSM_PLC.Entity = null;
+						previousValue.HSM_PLC_VIOs.Remove(this);
 					}
-					this._HCM_PLC.Entity = value;
+					this._HSM_PLC.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_PLC_VIOs.Add(this);
+						value.HSM_PLC_VIOs.Add(this);
 						this._IdPLC = value.IdPLC;
 					}
 					else
 					{
 						this._IdPLC = default(int);
 					}
-					this.SendPropertyChanged("HCM_PLC");
+					this.SendPropertyChanged("HSM_PLC");
 				}
 			}
 		}
@@ -27348,7 +27348,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_PLC = default(EntityRef<HCM_PLC>);
+			this._HSM_PLC = default(EntityRef<HSM_PLC>);
 			OnCreated();
 		}
 		
@@ -27360,9 +27360,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="system.HCM_PLCs")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="system.HSM_PLCs")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_PLC : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_PLC : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -27381,9 +27381,9 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_PLC_Rack> _HCM_PLC_Racks;
+		private EntitySet<HSM_PLC_Rack> _HSM_PLC_Racks;
 		
-		private EntitySet<HCM_PLC_VIO> _HCM_PLC_VIOs;
+		private EntitySet<HSM_PLC_VIO> _HSM_PLC_VIOs;
 		
 		private bool serializing;
 		
@@ -27407,7 +27407,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_PLC()
+		public HSM_PLC()
 		{
 			this.Initialize();
 		}
@@ -27559,41 +27559,41 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_PLC_HCM_PLC_Rack", Storage="_HCM_PLC_Racks", ThisKey="IdPLC", OtherKey="IdPLC")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_PLC_HSM_PLC_Rack", Storage="_HSM_PLC_Racks", ThisKey="IdPLC", OtherKey="IdPLC")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=8, EmitDefaultValue=false)]
-		public EntitySet<HCM_PLC_Rack> HCM_PLC_Racks
+		public EntitySet<HSM_PLC_Rack> HSM_PLC_Racks
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_PLC_Racks.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_PLC_Racks.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_PLC_Racks;
+				return this._HSM_PLC_Racks;
 			}
 			set
 			{
-				this._HCM_PLC_Racks.Assign(value);
+				this._HSM_PLC_Racks.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_PLC_HCM_PLC_VIO", Storage="_HCM_PLC_VIOs", ThisKey="IdPLC", OtherKey="IdPLC")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_PLC_HSM_PLC_VIO", Storage="_HSM_PLC_VIOs", ThisKey="IdPLC", OtherKey="IdPLC")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=9, EmitDefaultValue=false)]
-		public EntitySet<HCM_PLC_VIO> HCM_PLC_VIOs
+		public EntitySet<HSM_PLC_VIO> HSM_PLC_VIOs
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_PLC_VIOs.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_PLC_VIOs.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_PLC_VIOs;
+				return this._HSM_PLC_VIOs;
 			}
 			set
 			{
-				this._HCM_PLC_VIOs.Assign(value);
+				this._HSM_PLC_VIOs.Assign(value);
 			}
 		}
 		
@@ -27617,34 +27617,34 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_PLC_Racks(HCM_PLC_Rack entity)
+		private void attach_HSM_PLC_Racks(HSM_PLC_Rack entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_PLC = this;
+			entity.HSM_PLC = this;
 		}
 		
-		private void detach_HCM_PLC_Racks(HCM_PLC_Rack entity)
+		private void detach_HSM_PLC_Racks(HSM_PLC_Rack entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_PLC = null;
+			entity.HSM_PLC = null;
 		}
 		
-		private void attach_HCM_PLC_VIOs(HCM_PLC_VIO entity)
+		private void attach_HSM_PLC_VIOs(HSM_PLC_VIO entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_PLC = this;
+			entity.HSM_PLC = this;
 		}
 		
-		private void detach_HCM_PLC_VIOs(HCM_PLC_VIO entity)
+		private void detach_HSM_PLC_VIOs(HSM_PLC_VIO entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_PLC = null;
+			entity.HSM_PLC = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_PLC_Racks = new EntitySet<HCM_PLC_Rack>(new Action<HCM_PLC_Rack>(this.attach_HCM_PLC_Racks), new Action<HCM_PLC_Rack>(this.detach_HCM_PLC_Racks));
-			this._HCM_PLC_VIOs = new EntitySet<HCM_PLC_VIO>(new Action<HCM_PLC_VIO>(this.attach_HCM_PLC_VIOs), new Action<HCM_PLC_VIO>(this.detach_HCM_PLC_VIOs));
+			this._HSM_PLC_Racks = new EntitySet<HSM_PLC_Rack>(new Action<HSM_PLC_Rack>(this.attach_HSM_PLC_Racks), new Action<HSM_PLC_Rack>(this.detach_HSM_PLC_Racks));
+			this._HSM_PLC_VIOs = new EntitySet<HSM_PLC_VIO>(new Action<HSM_PLC_VIO>(this.attach_HSM_PLC_VIOs), new Action<HSM_PLC_VIO>(this.detach_HSM_PLC_VIOs));
 			OnCreated();
 		}
 		
@@ -27670,9 +27670,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="system.HCM_Setting_Values")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="system.HSM_Setting_Values")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Setting_Value : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Setting_Value : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -27699,7 +27699,7 @@ namespace HCM.Database
     partial void OnUpdDateTimeChanged();
     #endregion
 		
-		public HCM_Setting_Value()
+		public HSM_Setting_Value()
 		{
 			this.Initialize();
 		}
@@ -27821,9 +27821,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="system.HCM_Troubleshooting_References")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="system.HSM_Troubleshooting_References")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Troubleshooting_Reference : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Troubleshooting_Reference : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -27834,7 +27834,7 @@ namespace HCM.Database
 		
 		private string _Description;
 		
-		private EntitySet<HCM_Troubleshooting_File> _HCM_Troubleshooting_Files;
+		private EntitySet<HSM_Troubleshooting_File> _HSM_Troubleshooting_Files;
 		
 		private bool serializing;
 		
@@ -27850,7 +27850,7 @@ namespace HCM.Database
     partial void OnDescriptionChanged();
     #endregion
 		
-		public HCM_Troubleshooting_Reference()
+		public HSM_Troubleshooting_Reference()
 		{
 			this.Initialize();
 		}
@@ -27918,22 +27918,22 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Troubleshooting_Reference_HCM_Troubleshooting_File", Storage="_HCM_Troubleshooting_Files", ThisKey="Reference", OtherKey="Reference")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Troubleshooting_Reference_HSM_Troubleshooting_File", Storage="_HSM_Troubleshooting_Files", ThisKey="Reference", OtherKey="Reference")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=4, EmitDefaultValue=false)]
-		public EntitySet<HCM_Troubleshooting_File> HCM_Troubleshooting_Files
+		public EntitySet<HSM_Troubleshooting_File> HSM_Troubleshooting_Files
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Troubleshooting_Files.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Troubleshooting_Files.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Troubleshooting_Files;
+				return this._HSM_Troubleshooting_Files;
 			}
 			set
 			{
-				this._HCM_Troubleshooting_Files.Assign(value);
+				this._HSM_Troubleshooting_Files.Assign(value);
 			}
 		}
 		
@@ -27957,21 +27957,21 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Troubleshooting_Files(HCM_Troubleshooting_File entity)
+		private void attach_HSM_Troubleshooting_Files(HSM_Troubleshooting_File entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Troubleshooting_Reference = this;
+			entity.HSM_Troubleshooting_Reference = this;
 		}
 		
-		private void detach_HCM_Troubleshooting_Files(HCM_Troubleshooting_File entity)
+		private void detach_HSM_Troubleshooting_Files(HSM_Troubleshooting_File entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Troubleshooting_Reference = null;
+			entity.HSM_Troubleshooting_Reference = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Troubleshooting_Files = new EntitySet<HCM_Troubleshooting_File>(new Action<HCM_Troubleshooting_File>(this.attach_HCM_Troubleshooting_Files), new Action<HCM_Troubleshooting_File>(this.detach_HCM_Troubleshooting_Files));
+			this._HSM_Troubleshooting_Files = new EntitySet<HSM_Troubleshooting_File>(new Action<HSM_Troubleshooting_File>(this.attach_HSM_Troubleshooting_Files), new Action<HSM_Troubleshooting_File>(this.detach_HSM_Troubleshooting_Files));
 			OnCreated();
 		}
 		
@@ -29706,9 +29706,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HCM_Destination_Next_Pieces")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HSM_Destination_Next_Pieces")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Destination_Next_Piece : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Destination_Next_Piece : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -29739,7 +29739,7 @@ namespace HCM.Database
     partial void OnUpdDateTimeChanged();
     #endregion
 		
-		public HCM_Destination_Next_Piece()
+		public HSM_Destination_Next_Piece()
 		{
 			this.Initialize();
 		}
@@ -29882,9 +29882,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HCM_Job_Forecasts")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HSM_Job_Forecasts")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Job_Forecast : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Job_Forecast : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -29937,7 +29937,7 @@ namespace HCM.Database
 		
 		private EntityRef<Rodeo_Yard> _Rodeo_Yard_End;
 		
-		private EntityRef<HCM_Job> _HCM_Job;
+		private EntityRef<HSM_Job> _HSM_Job;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -29989,7 +29989,7 @@ namespace HCM.Database
     partial void OnUpdDateTimeChanged();
     #endregion
 		
-		public HCM_Job_Forecast()
+		public HSM_Job_Forecast()
 		{
 			this.Initialize();
 		}
@@ -30006,7 +30006,7 @@ namespace HCM.Database
 			{
 				if ((this._IdJob != value))
 				{
-					if (this._HCM_Job.HasLoadedOrAssignedValue)
+					if (this._HSM_Job.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -30468,7 +30468,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job_Forecast", Storage="_Rodeo_Yard_Begin", ThisKey="IdYardBegin", OtherKey="IdYard", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job_Forecast", Storage="_Rodeo_Yard_Begin", ThisKey="IdYardBegin", OtherKey="IdYard", IsForeignKey=true)]
 		public Rodeo_Yard Rodeo_Yard_Begin
 		{
 			get
@@ -30485,12 +30485,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Yard_Begin.Entity = null;
-						previousValue.HCM_Job_Forecasts_Begin.Remove(this);
+						previousValue.HSM_Job_Forecasts_Begin.Remove(this);
 					}
 					this._Rodeo_Yard_Begin.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Job_Forecasts_Begin.Add(this);
+						value.HSM_Job_Forecasts_Begin.Add(this);
 						this._IdYardBegin = value.IdYard;
 					}
 					else
@@ -30502,7 +30502,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job_Forecast1", Storage="_Rodeo_Yard_End", ThisKey="IdYardEnd", OtherKey="IdYard", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job_Forecast1", Storage="_Rodeo_Yard_End", ThisKey="IdYardEnd", OtherKey="IdYard", IsForeignKey=true)]
 		public Rodeo_Yard Rodeo_Yard_End
 		{
 			get
@@ -30519,12 +30519,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Yard_End.Entity = null;
-						previousValue.HCM_Job_Forecasts_End.Remove(this);
+						previousValue.HSM_Job_Forecasts_End.Remove(this);
 					}
 					this._Rodeo_Yard_End.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Job_Forecasts_End.Add(this);
+						value.HSM_Job_Forecasts_End.Add(this);
 						this._IdYardEnd = value.IdYard;
 					}
 					else
@@ -30536,36 +30536,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Job_HCM_Job_Forecast", Storage="_HCM_Job", ThisKey="IdJob", OtherKey="IdJob", IsForeignKey=true)]
-		public HCM_Job HCM_Job
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Job_HSM_Job_Forecast", Storage="_HSM_Job", ThisKey="IdJob", OtherKey="IdJob", IsForeignKey=true)]
+		public HSM_Job HSM_Job
 		{
 			get
 			{
-				return this._HCM_Job.Entity;
+				return this._HSM_Job.Entity;
 			}
 			set
 			{
-				HCM_Job previousValue = this._HCM_Job.Entity;
+				HSM_Job previousValue = this._HSM_Job.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Job.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Job.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Job.Entity = null;
-						previousValue.HCM_Job_Forecasts.Remove(this);
+						this._HSM_Job.Entity = null;
+						previousValue.HSM_Job_Forecasts.Remove(this);
 					}
-					this._HCM_Job.Entity = value;
+					this._HSM_Job.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Job_Forecasts.Add(this);
+						value.HSM_Job_Forecasts.Add(this);
 						this._IdJob = value.IdJob;
 					}
 					else
 					{
 						this._IdJob = default(long);
 					}
-					this.SendPropertyChanged("HCM_Job");
+					this.SendPropertyChanged("HSM_Job");
 				}
 			}
 		}
@@ -30594,7 +30594,7 @@ namespace HCM.Database
 		{
 			this._Rodeo_Yard_Begin = default(EntityRef<Rodeo_Yard>);
 			this._Rodeo_Yard_End = default(EntityRef<Rodeo_Yard>);
-			this._HCM_Job = default(EntityRef<HCM_Job>);
+			this._HSM_Job = default(EntityRef<HSM_Job>);
 			OnCreated();
 		}
 		
@@ -30606,9 +30606,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HCM_Job_Types")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HSM_Job_Types")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Job_Type : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Job_Type : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -30629,13 +30629,13 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Job_Type_Route> _HCM_Job_Type_Routes;
+		private EntitySet<HSM_Job_Type_Route> _HSM_Job_Type_Routes;
 		
-		private EntitySet<HCM_Job> _HCM_Jobs;
+		private EntitySet<HSM_Job> _HSM_Jobs;
 		
-		private EntityRef<HCM_Location_Group> _HCM_Location_Group_Begin;
+		private EntityRef<HSM_Location_Group> _HSM_Location_Group_Begin;
 		
-		private EntityRef<HCM_Location_Group> _HCM_Location_Group_End;
+		private EntityRef<HSM_Location_Group> _HSM_Location_Group_End;
 		
 		private bool serializing;
 		
@@ -30661,7 +30661,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Job_Type()
+		public HSM_Job_Type()
 		{
 			this.Initialize();
 		}
@@ -30762,7 +30762,7 @@ namespace HCM.Database
 			{
 				if ((this._IdLocationGroupBeginDefault != value))
 				{
-					if (this._HCM_Location_Group_Begin.HasLoadedOrAssignedValue)
+					if (this._HSM_Location_Group_Begin.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -30787,7 +30787,7 @@ namespace HCM.Database
 			{
 				if ((this._IdLocationGroupEndDefault != value))
 				{
-					if (this._HCM_Location_Group_End.HasLoadedOrAssignedValue)
+					if (this._HSM_Location_Group_End.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -30842,108 +30842,108 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Job_Type_HCM_Job_Type_Route", Storage="_HCM_Job_Type_Routes", ThisKey="IdJobType", OtherKey="IdJobType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Job_Type_HSM_Job_Type_Route", Storage="_HSM_Job_Type_Routes", ThisKey="IdJobType", OtherKey="IdJobType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=9, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job_Type_Route> HCM_Job_Type_Routes
+		public EntitySet<HSM_Job_Type_Route> HSM_Job_Type_Routes
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Job_Type_Routes.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Job_Type_Routes.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Job_Type_Routes;
+				return this._HSM_Job_Type_Routes;
 			}
 			set
 			{
-				this._HCM_Job_Type_Routes.Assign(value);
+				this._HSM_Job_Type_Routes.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Job_Type_HCM_Job", Storage="_HCM_Jobs", ThisKey="IdJobType", OtherKey="IdJobType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Job_Type_HSM_Job", Storage="_HSM_Jobs", ThisKey="IdJobType", OtherKey="IdJobType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=10, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job> HCM_Jobs
+		public EntitySet<HSM_Job> HSM_Jobs
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Jobs.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Jobs.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Jobs;
+				return this._HSM_Jobs;
 			}
 			set
 			{
-				this._HCM_Jobs.Assign(value);
+				this._HSM_Jobs.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Location_Group_HCM_Job_Type", Storage="_HCM_Location_Group_Begin", ThisKey="IdLocationGroupBeginDefault", OtherKey="IdLocationGroup", IsForeignKey=true)]
-		public HCM_Location_Group HCM_Location_Group_Begin
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Location_Group_HSM_Job_Type", Storage="_HSM_Location_Group_Begin", ThisKey="IdLocationGroupBeginDefault", OtherKey="IdLocationGroup", IsForeignKey=true)]
+		public HSM_Location_Group HSM_Location_Group_Begin
 		{
 			get
 			{
-				return this._HCM_Location_Group_Begin.Entity;
+				return this._HSM_Location_Group_Begin.Entity;
 			}
 			set
 			{
-				HCM_Location_Group previousValue = this._HCM_Location_Group_Begin.Entity;
+				HSM_Location_Group previousValue = this._HSM_Location_Group_Begin.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Location_Group_Begin.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Location_Group_Begin.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Location_Group_Begin.Entity = null;
-						previousValue.HCM_Job_Types_Begin.Remove(this);
+						this._HSM_Location_Group_Begin.Entity = null;
+						previousValue.HSM_Job_Types_Begin.Remove(this);
 					}
-					this._HCM_Location_Group_Begin.Entity = value;
+					this._HSM_Location_Group_Begin.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Job_Types_Begin.Add(this);
+						value.HSM_Job_Types_Begin.Add(this);
 						this._IdLocationGroupBeginDefault = value.IdLocationGroup;
 					}
 					else
 					{
 						this._IdLocationGroupBeginDefault = default(int);
 					}
-					this.SendPropertyChanged("HCM_Location_Group_Begin");
+					this.SendPropertyChanged("HSM_Location_Group_Begin");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Location_Group_HCM_Job_Type1", Storage="_HCM_Location_Group_End", ThisKey="IdLocationGroupEndDefault", OtherKey="IdLocationGroup", IsForeignKey=true)]
-		public HCM_Location_Group HCM_Location_Group_End
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Location_Group_HSM_Job_Type1", Storage="_HSM_Location_Group_End", ThisKey="IdLocationGroupEndDefault", OtherKey="IdLocationGroup", IsForeignKey=true)]
+		public HSM_Location_Group HSM_Location_Group_End
 		{
 			get
 			{
-				return this._HCM_Location_Group_End.Entity;
+				return this._HSM_Location_Group_End.Entity;
 			}
 			set
 			{
-				HCM_Location_Group previousValue = this._HCM_Location_Group_End.Entity;
+				HSM_Location_Group previousValue = this._HSM_Location_Group_End.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Location_Group_End.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Location_Group_End.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Location_Group_End.Entity = null;
-						previousValue.HCM_Job_Types_End.Remove(this);
+						this._HSM_Location_Group_End.Entity = null;
+						previousValue.HSM_Job_Types_End.Remove(this);
 					}
-					this._HCM_Location_Group_End.Entity = value;
+					this._HSM_Location_Group_End.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Job_Types_End.Add(this);
+						value.HSM_Job_Types_End.Add(this);
 						this._IdLocationGroupEndDefault = value.IdLocationGroup;
 					}
 					else
 					{
 						this._IdLocationGroupEndDefault = default(int);
 					}
-					this.SendPropertyChanged("HCM_Location_Group_End");
+					this.SendPropertyChanged("HSM_Location_Group_End");
 				}
 			}
 		}
@@ -30968,36 +30968,36 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Job_Type_Routes(HCM_Job_Type_Route entity)
+		private void attach_HSM_Job_Type_Routes(HSM_Job_Type_Route entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Job_Type = this;
+			entity.HSM_Job_Type = this;
 		}
 		
-		private void detach_HCM_Job_Type_Routes(HCM_Job_Type_Route entity)
+		private void detach_HSM_Job_Type_Routes(HSM_Job_Type_Route entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Job_Type = null;
+			entity.HSM_Job_Type = null;
 		}
 		
-		private void attach_HCM_Jobs(HCM_Job entity)
+		private void attach_HSM_Jobs(HSM_Job entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Job_Type = this;
+			entity.HSM_Job_Type = this;
 		}
 		
-		private void detach_HCM_Jobs(HCM_Job entity)
+		private void detach_HSM_Jobs(HSM_Job entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Job_Type = null;
+			entity.HSM_Job_Type = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Job_Type_Routes = new EntitySet<HCM_Job_Type_Route>(new Action<HCM_Job_Type_Route>(this.attach_HCM_Job_Type_Routes), new Action<HCM_Job_Type_Route>(this.detach_HCM_Job_Type_Routes));
-			this._HCM_Jobs = new EntitySet<HCM_Job>(new Action<HCM_Job>(this.attach_HCM_Jobs), new Action<HCM_Job>(this.detach_HCM_Jobs));
-			this._HCM_Location_Group_Begin = default(EntityRef<HCM_Location_Group>);
-			this._HCM_Location_Group_End = default(EntityRef<HCM_Location_Group>);
+			this._HSM_Job_Type_Routes = new EntitySet<HSM_Job_Type_Route>(new Action<HSM_Job_Type_Route>(this.attach_HSM_Job_Type_Routes), new Action<HSM_Job_Type_Route>(this.detach_HSM_Job_Type_Routes));
+			this._HSM_Jobs = new EntitySet<HSM_Job>(new Action<HSM_Job>(this.attach_HSM_Jobs), new Action<HSM_Job>(this.detach_HSM_Jobs));
+			this._HSM_Location_Group_Begin = default(EntityRef<HSM_Location_Group>);
+			this._HSM_Location_Group_End = default(EntityRef<HSM_Location_Group>);
 			OnCreated();
 		}
 		
@@ -31023,9 +31023,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HCM_Machine_Exit_Locations")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HSM_Machine_Exit_Locations")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Machine_Exit_Location : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Machine_Exit_Location : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -31066,7 +31066,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Machine_Exit_Location()
+		public HSM_Machine_Exit_Location()
 		{
 			this.Initialize();
 		}
@@ -31209,7 +31209,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Machine_Exit_Location", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Machine_Exit_Location", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
 		public Rodeo_Machine Rodeo_Machine
 		{
 			get
@@ -31226,12 +31226,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine.Entity = null;
-						previousValue.HCM_Machine_Exit_Locations.Remove(this);
+						previousValue.HSM_Machine_Exit_Locations.Remove(this);
 					}
 					this._Rodeo_Machine.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Exit_Locations.Add(this);
+						value.HSM_Machine_Exit_Locations.Add(this);
 						this._IdMachine = value.IdMachine;
 					}
 					else
@@ -31243,7 +31243,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Location_HCM_Machine_Exit_Location", Storage="_Rodeo_Location", ThisKey="Move_IdLocation", OtherKey="IdLocation", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Location_HSM_Machine_Exit_Location", Storage="_Rodeo_Location", ThisKey="Move_IdLocation", OtherKey="IdLocation", IsForeignKey=true)]
 		public Rodeo_Location Rodeo_Location
 		{
 			get
@@ -31260,12 +31260,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Location.Entity = null;
-						previousValue.HCM_Machine_Exit_Locations.Remove(this);
+						previousValue.HSM_Machine_Exit_Locations.Remove(this);
 					}
 					this._Rodeo_Location.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Exit_Locations.Add(this);
+						value.HSM_Machine_Exit_Locations.Add(this);
 						this._Move_IdLocation = value.IdLocation;
 					}
 					else
@@ -31277,7 +31277,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Location_HCM_Machine_Exit_Location1", Storage="_Rodeo_Location1", ThisKey="IdLocation", OtherKey="IdLocation", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Location_HSM_Machine_Exit_Location1", Storage="_Rodeo_Location1", ThisKey="IdLocation", OtherKey="IdLocation", IsForeignKey=true)]
 		public Rodeo_Location Rodeo_Location1
 		{
 			get
@@ -31294,12 +31294,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Location1.Entity = null;
-						previousValue.HCM_Machine_Exit_Locations1.Remove(this);
+						previousValue.HSM_Machine_Exit_Locations1.Remove(this);
 					}
 					this._Rodeo_Location1.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Exit_Locations1.Add(this);
+						value.HSM_Machine_Exit_Locations1.Add(this);
 						this._IdLocation = value.IdLocation;
 					}
 					else
@@ -31347,9 +31347,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HCM_RCP_ErrorCodes")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HSM_RCP_ErrorCodes")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_RCP_ErrorCode : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_RCP_ErrorCode : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -31384,7 +31384,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_RCP_ErrorCode()
+		public HSM_RCP_ErrorCode()
 		{
 			this.Initialize();
 		}
@@ -31548,9 +31548,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HCM_RCP_Flags")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HSM_RCP_Flags")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_RCP_Flag : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_RCP_Flag : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -31589,7 +31589,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_RCP_Flag()
+		public HSM_RCP_Flag()
 		{
 			this.Initialize();
 		}
@@ -31774,9 +31774,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HCM_RCP_OperationModes")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HSM_RCP_OperationModes")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_RCP_OperationMode : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_RCP_OperationMode : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -31807,7 +31807,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_RCP_OperationMode()
+		public HSM_RCP_OperationMode()
 		{
 			this.Initialize();
 		}
@@ -32862,7 +32862,7 @@ namespace HCM.Database
 		
 		private EntityRef<Rodeo_Yard> _Rodeo_Yard_Drop;
 		
-		private EntityRef<HCM_Job> _HCM_Job;
+		private EntityRef<HSM_Job> _HSM_Job;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -33002,7 +33002,7 @@ namespace HCM.Database
 			{
 				if ((this._IdJob != value))
 				{
-					if (this._HCM_Job.HasLoadedOrAssignedValue)
+					if (this._HSM_Job.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -33545,26 +33545,26 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Job_Rodeo_TO_Piece", Storage="_HCM_Job", ThisKey="IdJob", OtherKey="IdJob", IsForeignKey=true)]
-		public HCM_Job HCM_Job
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Job_Rodeo_TO_Piece", Storage="_HSM_Job", ThisKey="IdJob", OtherKey="IdJob", IsForeignKey=true)]
+		public HSM_Job HSM_Job
 		{
 			get
 			{
-				return this._HCM_Job.Entity;
+				return this._HSM_Job.Entity;
 			}
 			set
 			{
-				HCM_Job previousValue = this._HCM_Job.Entity;
+				HSM_Job previousValue = this._HSM_Job.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Job.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Job.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Job.Entity = null;
+						this._HSM_Job.Entity = null;
 						previousValue.Rodeo_TO_Pieces.Remove(this);
 					}
-					this._HCM_Job.Entity = value;
+					this._HSM_Job.Entity = value;
 					if ((value != null))
 					{
 						value.Rodeo_TO_Pieces.Add(this);
@@ -33574,7 +33574,7 @@ namespace HCM.Database
 					{
 						this._IdJob = default(Nullable<long>);
 					}
-					this.SendPropertyChanged("HCM_Job");
+					this.SendPropertyChanged("HSM_Job");
 				}
 			}
 		}
@@ -33604,7 +33604,7 @@ namespace HCM.Database
 			this._Rodeo_TransportOrder = default(EntityRef<Rodeo_TransportOrder>);
 			this._Rodeo_Yard_Pickup = default(EntityRef<Rodeo_Yard>);
 			this._Rodeo_Yard_Drop = default(EntityRef<Rodeo_Yard>);
-			this._HCM_Job = default(EntityRef<HCM_Job>);
+			this._HSM_Job = default(EntityRef<HSM_Job>);
 			OnCreated();
 		}
 		
@@ -33641,7 +33641,7 @@ namespace HCM.Database
 		
 		private EntitySet<Rodeo_TransportOrder> _Rodeo_TransportOrders;
 		
-		private EntitySet<HCM_Job> _HCM_Jobs;
+		private EntitySet<HSM_Job> _HSM_Jobs;
 		
 		private bool serializing;
 		
@@ -33851,22 +33851,22 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_TO_Statuse_HCM_Job", Storage="_HCM_Jobs", ThisKey="IdTOStatus", OtherKey="IdTOStatus")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_TO_Statuse_HSM_Job", Storage="_HSM_Jobs", ThisKey="IdTOStatus", OtherKey="IdTOStatus")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=10, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job> HCM_Jobs
+		public EntitySet<HSM_Job> HSM_Jobs
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Jobs.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Jobs.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Jobs;
+				return this._HSM_Jobs;
 			}
 			set
 			{
-				this._HCM_Jobs.Assign(value);
+				this._HSM_Jobs.Assign(value);
 			}
 		}
 		
@@ -33926,13 +33926,13 @@ namespace HCM.Database
 			entity.Rodeo_TO_Statuse = null;
 		}
 		
-		private void attach_HCM_Jobs(HCM_Job entity)
+		private void attach_HSM_Jobs(HSM_Job entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_TO_Statuse = this;
 		}
 		
-		private void detach_HCM_Jobs(HCM_Job entity)
+		private void detach_HSM_Jobs(HSM_Job entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_TO_Statuse = null;
@@ -33943,7 +33943,7 @@ namespace HCM.Database
 			this._Rodeo_TO_Step_Histories = new EntitySet<Rodeo_TO_Step_History>(new Action<Rodeo_TO_Step_History>(this.attach_Rodeo_TO_Step_Histories), new Action<Rodeo_TO_Step_History>(this.detach_Rodeo_TO_Step_Histories));
 			this._Rodeo_TO_Steps = new EntitySet<Rodeo_TO_Step>(new Action<Rodeo_TO_Step>(this.attach_Rodeo_TO_Steps), new Action<Rodeo_TO_Step>(this.detach_Rodeo_TO_Steps));
 			this._Rodeo_TransportOrders = new EntitySet<Rodeo_TransportOrder>(new Action<Rodeo_TransportOrder>(this.attach_Rodeo_TransportOrders), new Action<Rodeo_TransportOrder>(this.detach_Rodeo_TransportOrders));
-			this._HCM_Jobs = new EntitySet<HCM_Job>(new Action<HCM_Job>(this.attach_HCM_Jobs), new Action<HCM_Job>(this.detach_HCM_Jobs));
+			this._HSM_Jobs = new EntitySet<HSM_Job>(new Action<HSM_Job>(this.attach_HSM_Jobs), new Action<HSM_Job>(this.detach_HSM_Jobs));
 			OnCreated();
 		}
 		
@@ -34592,9 +34592,9 @@ namespace HCM.Database
 		
 		private EntityRef<Rodeo_TransportOrder> _Rodeo_TransportOrder;
 		
-		private EntityRef<HCM_Path> _HCM_Path_Begin;
+		private EntityRef<HSM_Path> _HSM_Path_Begin;
 		
-		private EntityRef<HCM_Path> _HCM_Path_End;
+		private EntityRef<HSM_Path> _HSM_Path_End;
 		
 		private EntityRef<Rodeo_Yard> _Rodeo_Yard_Begin;
 		
@@ -35123,7 +35123,7 @@ namespace HCM.Database
 			{
 				if ((this._IdPathBegin != value))
 				{
-					if (this._HCM_Path_Begin.HasLoadedOrAssignedValue)
+					if (this._HSM_Path_Begin.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -35169,7 +35169,7 @@ namespace HCM.Database
 			{
 				if ((this._IdPathEnd != value))
 				{
-					if (this._HCM_Path_End.HasLoadedOrAssignedValue)
+					if (this._HSM_Path_End.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -35431,26 +35431,26 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Path_Rodeo_TO_Step", Storage="_HCM_Path_Begin", ThisKey="IdPathBegin", OtherKey="IdPath", IsForeignKey=true)]
-		public HCM_Path HCM_Path_Begin
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Path_Rodeo_TO_Step", Storage="_HSM_Path_Begin", ThisKey="IdPathBegin", OtherKey="IdPath", IsForeignKey=true)]
+		public HSM_Path HSM_Path_Begin
 		{
 			get
 			{
-				return this._HCM_Path_Begin.Entity;
+				return this._HSM_Path_Begin.Entity;
 			}
 			set
 			{
-				HCM_Path previousValue = this._HCM_Path_Begin.Entity;
+				HSM_Path previousValue = this._HSM_Path_Begin.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Path_Begin.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Path_Begin.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Path_Begin.Entity = null;
+						this._HSM_Path_Begin.Entity = null;
 						previousValue.Rodeo_TO_Steps_Begin.Remove(this);
 					}
-					this._HCM_Path_Begin.Entity = value;
+					this._HSM_Path_Begin.Entity = value;
 					if ((value != null))
 					{
 						value.Rodeo_TO_Steps_Begin.Add(this);
@@ -35460,31 +35460,31 @@ namespace HCM.Database
 					{
 						this._IdPathBegin = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("HCM_Path_Begin");
+					this.SendPropertyChanged("HSM_Path_Begin");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Path_Rodeo_TO_Step1", Storage="_HCM_Path_End", ThisKey="IdPathEnd", OtherKey="IdPath", IsForeignKey=true)]
-		public HCM_Path HCM_Path_End
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Path_Rodeo_TO_Step1", Storage="_HSM_Path_End", ThisKey="IdPathEnd", OtherKey="IdPath", IsForeignKey=true)]
+		public HSM_Path HSM_Path_End
 		{
 			get
 			{
-				return this._HCM_Path_End.Entity;
+				return this._HSM_Path_End.Entity;
 			}
 			set
 			{
-				HCM_Path previousValue = this._HCM_Path_End.Entity;
+				HSM_Path previousValue = this._HSM_Path_End.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Path_End.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Path_End.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Path_End.Entity = null;
+						this._HSM_Path_End.Entity = null;
 						previousValue.Rodeo_TO_Steps_End.Remove(this);
 					}
-					this._HCM_Path_End.Entity = value;
+					this._HSM_Path_End.Entity = value;
 					if ((value != null))
 					{
 						value.Rodeo_TO_Steps_End.Add(this);
@@ -35494,7 +35494,7 @@ namespace HCM.Database
 					{
 						this._IdPathEnd = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("HCM_Path_End");
+					this.SendPropertyChanged("HSM_Path_End");
 				}
 			}
 		}
@@ -35592,8 +35592,8 @@ namespace HCM.Database
 			this._Rodeo_TO_Action = default(EntityRef<Rodeo_TO_Action>);
 			this._Rodeo_TO_Statuse = default(EntityRef<Rodeo_TO_Statuse>);
 			this._Rodeo_TransportOrder = default(EntityRef<Rodeo_TransportOrder>);
-			this._HCM_Path_Begin = default(EntityRef<HCM_Path>);
-			this._HCM_Path_End = default(EntityRef<HCM_Path>);
+			this._HSM_Path_Begin = default(EntityRef<HSM_Path>);
+			this._HSM_Path_End = default(EntityRef<HSM_Path>);
 			this._Rodeo_Yard_Begin = default(EntityRef<Rodeo_Yard>);
 			this._Rodeo_Yard_End = default(EntityRef<Rodeo_Yard>);
 			OnCreated();
@@ -37004,9 +37004,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="tracking.HCM_HoldOn_Reasons")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="tracking.HSM_HoldOn_Reasons")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_HoldOn_Reason : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_HoldOn_Reason : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -37045,7 +37045,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_HoldOn_Reason()
+		public HSM_HoldOn_Reason()
 		{
 			this.Initialize();
 		}
@@ -37657,9 +37657,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Request_Signal_Requests")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Request_Signal_Requests")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Request_Signal_Request : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Request_Signal_Request : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -37694,9 +37694,9 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Request_Signal> _HCM_Request_Signal;
+		private EntityRef<HSM_Request_Signal> _HSM_Request_Signal;
 		
-		private EntityRef<HCM_Request> _HCM_Request;
+		private EntityRef<HSM_Request> _HSM_Request;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -37734,7 +37734,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Request_Signal_Request()
+		public HSM_Request_Signal_Request()
 		{
 			this.Initialize();
 		}
@@ -37751,7 +37751,7 @@ namespace HCM.Database
 			{
 				if ((this._IdRequest != value))
 				{
-					if (this._HCM_Request.HasLoadedOrAssignedValue)
+					if (this._HSM_Request.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -37776,7 +37776,7 @@ namespace HCM.Database
 			{
 				if ((this._IdRequestSignal != value))
 				{
-					if (this._HCM_Request_Signal.HasLoadedOrAssignedValue)
+					if (this._HSM_Request_Signal.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -38062,70 +38062,70 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_Signal_HCM_Request_Signal_Request", Storage="_HCM_Request_Signal", ThisKey="IdRequestSignal", OtherKey="IdRequestSignal", IsForeignKey=true)]
-		public HCM_Request_Signal HCM_Request_Signal
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_Signal_HSM_Request_Signal_Request", Storage="_HSM_Request_Signal", ThisKey="IdRequestSignal", OtherKey="IdRequestSignal", IsForeignKey=true)]
+		public HSM_Request_Signal HSM_Request_Signal
 		{
 			get
 			{
-				return this._HCM_Request_Signal.Entity;
+				return this._HSM_Request_Signal.Entity;
 			}
 			set
 			{
-				HCM_Request_Signal previousValue = this._HCM_Request_Signal.Entity;
+				HSM_Request_Signal previousValue = this._HSM_Request_Signal.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Request_Signal.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Request_Signal.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Request_Signal.Entity = null;
-						previousValue.HCM_Request_Signal_Requests.Remove(this);
+						this._HSM_Request_Signal.Entity = null;
+						previousValue.HSM_Request_Signal_Requests.Remove(this);
 					}
-					this._HCM_Request_Signal.Entity = value;
+					this._HSM_Request_Signal.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Request_Signal_Requests.Add(this);
+						value.HSM_Request_Signal_Requests.Add(this);
 						this._IdRequestSignal = value.IdRequestSignal;
 					}
 					else
 					{
 						this._IdRequestSignal = default(int);
 					}
-					this.SendPropertyChanged("HCM_Request_Signal");
+					this.SendPropertyChanged("HSM_Request_Signal");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Request_HCM_Request_Signal_Request", Storage="_HCM_Request", ThisKey="IdRequest", OtherKey="IdRequest", IsForeignKey=true)]
-		public HCM_Request HCM_Request
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Request_HSM_Request_Signal_Request", Storage="_HSM_Request", ThisKey="IdRequest", OtherKey="IdRequest", IsForeignKey=true)]
+		public HSM_Request HSM_Request
 		{
 			get
 			{
-				return this._HCM_Request.Entity;
+				return this._HSM_Request.Entity;
 			}
 			set
 			{
-				HCM_Request previousValue = this._HCM_Request.Entity;
+				HSM_Request previousValue = this._HSM_Request.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Request.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Request.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Request.Entity = null;
-						previousValue.HCM_Request_Signal_Requests.Remove(this);
+						this._HSM_Request.Entity = null;
+						previousValue.HSM_Request_Signal_Requests.Remove(this);
 					}
-					this._HCM_Request.Entity = value;
+					this._HSM_Request.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Request_Signal_Requests.Add(this);
+						value.HSM_Request_Signal_Requests.Add(this);
 						this._IdRequest = value.IdRequest;
 					}
 					else
 					{
 						this._IdRequest = default(int);
 					}
-					this.SendPropertyChanged("HCM_Request");
+					this.SendPropertyChanged("HSM_Request");
 				}
 			}
 		}
@@ -38152,8 +38152,8 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Request_Signal = default(EntityRef<HCM_Request_Signal>);
-			this._HCM_Request = default(EntityRef<HCM_Request>);
+			this._HSM_Request_Signal = default(EntityRef<HSM_Request_Signal>);
+			this._HSM_Request = default(EntityRef<HSM_Request>);
 			OnCreated();
 		}
 		
@@ -38165,9 +38165,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="tracking.HCM_Paths")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="tracking.HSM_Paths")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Path : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Path : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -38244,7 +38244,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Path()
+		public HSM_Path()
 		{
 			this.Initialize();
 		}
@@ -38551,7 +38551,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Path_Rodeo_TO_Step", Storage="_Rodeo_TO_Steps_Begin", ThisKey="IdPath", OtherKey="IdPathBegin")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Path_Rodeo_TO_Step", Storage="_Rodeo_TO_Steps_Begin", ThisKey="IdPath", OtherKey="IdPathBegin")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=15, EmitDefaultValue=false)]
 		public EntitySet<Rodeo_TO_Step> Rodeo_TO_Steps_Begin
 		{
@@ -38570,7 +38570,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Path_Rodeo_TO_Step1", Storage="_Rodeo_TO_Steps_End", ThisKey="IdPath", OtherKey="IdPathEnd")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Path_Rodeo_TO_Step1", Storage="_Rodeo_TO_Steps_End", ThisKey="IdPath", OtherKey="IdPathEnd")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=16, EmitDefaultValue=false)]
 		public EntitySet<Rodeo_TO_Step> Rodeo_TO_Steps_End
 		{
@@ -38589,7 +38589,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Path", Storage="_Rodeo_Yard_Begin", ThisKey="IdYardBegin", OtherKey="IdYard", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Path", Storage="_Rodeo_Yard_Begin", ThisKey="IdYardBegin", OtherKey="IdYard", IsForeignKey=true)]
 		public Rodeo_Yard Rodeo_Yard_Begin
 		{
 			get
@@ -38606,12 +38606,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Yard_Begin.Entity = null;
-						previousValue.HCM_Paths_Begin.Remove(this);
+						previousValue.HSM_Paths_Begin.Remove(this);
 					}
 					this._Rodeo_Yard_Begin.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Paths_Begin.Add(this);
+						value.HSM_Paths_Begin.Add(this);
 						this._IdYardBegin = value.IdYard;
 					}
 					else
@@ -38623,7 +38623,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Path1", Storage="_Rodeo_Yard_End", ThisKey="IdYardEnd", OtherKey="IdYard", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Path1", Storage="_Rodeo_Yard_End", ThisKey="IdYardEnd", OtherKey="IdYard", IsForeignKey=true)]
 		public Rodeo_Yard Rodeo_Yard_End
 		{
 			get
@@ -38640,12 +38640,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Yard_End.Entity = null;
-						previousValue.HCM_Paths_End.Remove(this);
+						previousValue.HSM_Paths_End.Remove(this);
 					}
 					this._Rodeo_Yard_End.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Paths_End.Add(this);
+						value.HSM_Paths_End.Add(this);
 						this._IdYardEnd = value.IdYard;
 					}
 					else
@@ -38680,25 +38680,25 @@ namespace HCM.Database
 		private void attach_Rodeo_TO_Steps_Begin(Rodeo_TO_Step entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Path_Begin = this;
+			entity.HSM_Path_Begin = this;
 		}
 		
 		private void detach_Rodeo_TO_Steps_Begin(Rodeo_TO_Step entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Path_Begin = null;
+			entity.HSM_Path_Begin = null;
 		}
 		
 		private void attach_Rodeo_TO_Steps_End(Rodeo_TO_Step entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Path_End = this;
+			entity.HSM_Path_End = this;
 		}
 		
 		private void detach_Rodeo_TO_Steps_End(Rodeo_TO_Step entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Path_End = null;
+			entity.HSM_Path_End = null;
 		}
 		
 		private void Initialize()
@@ -38732,9 +38732,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Location_Range_Yards")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Location_Range_Yards")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Location_Range_Yard : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Location_Range_Yard : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -38745,7 +38745,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Location_Range> _HCM_Location_Range;
+		private EntityRef<HSM_Location_Range> _HSM_Location_Range;
 		
 		private EntityRef<Rodeo_Yard> _Rodeo_Yard;
 		
@@ -38761,7 +38761,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Location_Range_Yard()
+		public HSM_Location_Range_Yard()
 		{
 			this.Initialize();
 		}
@@ -38778,7 +38778,7 @@ namespace HCM.Database
 			{
 				if ((this._IdLocationRange != value))
 				{
-					if (this._HCM_Location_Range.HasLoadedOrAssignedValue)
+					if (this._HSM_Location_Range.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -38837,41 +38837,41 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Location_Range_HCM_Location_Range_Yard", Storage="_HCM_Location_Range", ThisKey="IdLocationRange", OtherKey="IdLocationRange", IsForeignKey=true)]
-		public HCM_Location_Range HCM_Location_Range
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Location_Range_HSM_Location_Range_Yard", Storage="_HSM_Location_Range", ThisKey="IdLocationRange", OtherKey="IdLocationRange", IsForeignKey=true)]
+		public HSM_Location_Range HSM_Location_Range
 		{
 			get
 			{
-				return this._HCM_Location_Range.Entity;
+				return this._HSM_Location_Range.Entity;
 			}
 			set
 			{
-				HCM_Location_Range previousValue = this._HCM_Location_Range.Entity;
+				HSM_Location_Range previousValue = this._HSM_Location_Range.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Location_Range.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Location_Range.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Location_Range.Entity = null;
-						previousValue.HCM_Location_Range_Yards.Remove(this);
+						this._HSM_Location_Range.Entity = null;
+						previousValue.HSM_Location_Range_Yards.Remove(this);
 					}
-					this._HCM_Location_Range.Entity = value;
+					this._HSM_Location_Range.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Location_Range_Yards.Add(this);
+						value.HSM_Location_Range_Yards.Add(this);
 						this._IdLocationRange = value.IdLocationRange;
 					}
 					else
 					{
 						this._IdLocationRange = default(int);
 					}
-					this.SendPropertyChanged("HCM_Location_Range");
+					this.SendPropertyChanged("HSM_Location_Range");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Location_Range_Yard", Storage="_Rodeo_Yard", ThisKey="IdYard", OtherKey="IdYard", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Location_Range_Yard", Storage="_Rodeo_Yard", ThisKey="IdYard", OtherKey="IdYard", IsForeignKey=true)]
 		public Rodeo_Yard Rodeo_Yard
 		{
 			get
@@ -38888,12 +38888,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Yard.Entity = null;
-						previousValue.HCM_Location_Range_Yards.Remove(this);
+						previousValue.HSM_Location_Range_Yards.Remove(this);
 					}
 					this._Rodeo_Yard.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Location_Range_Yards.Add(this);
+						value.HSM_Location_Range_Yards.Add(this);
 						this._IdYard = value.IdYard;
 					}
 					else
@@ -38927,7 +38927,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Location_Range = default(EntityRef<HCM_Location_Range>);
+			this._HSM_Location_Range = default(EntityRef<HSM_Location_Range>);
 			this._Rodeo_Yard = default(EntityRef<Rodeo_Yard>);
 			OnCreated();
 		}
@@ -39657,15 +39657,15 @@ namespace HCM.Database
 		
 		private EntitySet<Rodeo_Machine> _Rodeo_Machines;
 		
-		private EntitySet<HCM_Machine_Exit_Zone> _HCM_Machine_Exit_Zones;
+		private EntitySet<HSM_Machine_Exit_Zone> _HSM_Machine_Exit_Zones;
 		
-		private EntitySet<HCM_Request> _HCM_Requests;
+		private EntitySet<HSM_Request> _HSM_Requests;
 		
-		private EntitySet<HCM_Zone_Section> _HCM_Zone_Sections;
+		private EntitySet<HSM_Zone_Section> _HSM_Zone_Sections;
 		
-		private EntitySet<HCM_Job_Forecast> _HCM_Job_Forecasts_Begin;
+		private EntitySet<HSM_Job_Forecast> _HSM_Job_Forecasts_Begin;
 		
-		private EntitySet<HCM_Job_Forecast> _HCM_Job_Forecasts_End;
+		private EntitySet<HSM_Job_Forecast> _HSM_Job_Forecasts_End;
 		
 		private EntitySet<Rodeo_TO_Piece> _Rodeo_TO_Pieces_Pickup;
 		
@@ -39679,27 +39679,27 @@ namespace HCM.Database
 		
 		private EntitySet<Rodeo_TransportOrder> _Rodeo_TransportOrders_End;
 		
-		private EntitySet<HCM_Path> _HCM_Paths_Begin;
+		private EntitySet<HSM_Path> _HSM_Paths_Begin;
 		
-		private EntitySet<HCM_Path> _HCM_Paths_End;
+		private EntitySet<HSM_Path> _HSM_Paths_End;
 		
-		private EntitySet<HCM_Location_Range_Yard> _HCM_Location_Range_Yards;
+		private EntitySet<HSM_Location_Range_Yard> _HSM_Location_Range_Yards;
 		
-		private EntitySet<HCM_Job_Yard_Transfer_Step> _HCM_Job_Yard_Transfer_Steps;
+		private EntitySet<HSM_Job_Yard_Transfer_Step> _HSM_Job_Yard_Transfer_Steps;
 		
-		private EntitySet<HCM_Job_Type_Route> _HCM_Job_Type_Routes;
+		private EntitySet<HSM_Job_Type_Route> _HSM_Job_Type_Routes;
 		
 		private EntitySet<Rodeo_Location> _Rodeo_Locations;
 		
-		private EntitySet<HCM_Job> _HCM_Jobs;
+		private EntitySet<HSM_Job> _HSM_Jobs;
 		
-		private EntitySet<HCM_Job> _HCM_Jobs1;
+		private EntitySet<HSM_Job> _HSM_Jobs1;
 		
-		private EntitySet<HCM_Job> _HCM_Jobs2;
+		private EntitySet<HSM_Job> _HSM_Jobs2;
 		
-		private EntitySet<HCM_Job> _HCM_Jobs3;
+		private EntitySet<HSM_Job> _HSM_Jobs3;
 		
-		private EntitySet<HCM_Job> _HCM_Jobs4;
+		private EntitySet<HSM_Job> _HSM_Jobs4;
 		
 		private EntitySet<Rodeo_Piece> _Rodeo_Pieces;
 		
@@ -40011,98 +40011,98 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Machine_Exit_Zone", Storage="_HCM_Machine_Exit_Zones", ThisKey="IdYard", OtherKey="Move_IdYard")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Machine_Exit_Zone", Storage="_HSM_Machine_Exit_Zones", ThisKey="IdYard", OtherKey="Move_IdYard")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=14, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Exit_Zone> HCM_Machine_Exit_Zones
+		public EntitySet<HSM_Machine_Exit_Zone> HSM_Machine_Exit_Zones
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Exit_Zones.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Exit_Zones.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Exit_Zones;
+				return this._HSM_Machine_Exit_Zones;
 			}
 			set
 			{
-				this._HCM_Machine_Exit_Zones.Assign(value);
+				this._HSM_Machine_Exit_Zones.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Request", Storage="_HCM_Requests", ThisKey="IdYard", OtherKey="IdYard")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Request", Storage="_HSM_Requests", ThisKey="IdYard", OtherKey="IdYard")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=15, EmitDefaultValue=false)]
-		public EntitySet<HCM_Request> HCM_Requests
+		public EntitySet<HSM_Request> HSM_Requests
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Requests.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Requests.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Requests;
+				return this._HSM_Requests;
 			}
 			set
 			{
-				this._HCM_Requests.Assign(value);
+				this._HSM_Requests.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Zone_Section", Storage="_HCM_Zone_Sections", ThisKey="IdYard", OtherKey="IdYard")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Zone_Section", Storage="_HSM_Zone_Sections", ThisKey="IdYard", OtherKey="IdYard")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=16, EmitDefaultValue=false)]
-		public EntitySet<HCM_Zone_Section> HCM_Zone_Sections
+		public EntitySet<HSM_Zone_Section> HSM_Zone_Sections
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Zone_Sections.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Zone_Sections.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Zone_Sections;
+				return this._HSM_Zone_Sections;
 			}
 			set
 			{
-				this._HCM_Zone_Sections.Assign(value);
+				this._HSM_Zone_Sections.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job_Forecast", Storage="_HCM_Job_Forecasts_Begin", ThisKey="IdYard", OtherKey="IdYardBegin")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job_Forecast", Storage="_HSM_Job_Forecasts_Begin", ThisKey="IdYard", OtherKey="IdYardBegin")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=17, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job_Forecast> HCM_Job_Forecasts_Begin
+		public EntitySet<HSM_Job_Forecast> HSM_Job_Forecasts_Begin
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Job_Forecasts_Begin.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Job_Forecasts_Begin.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Job_Forecasts_Begin;
+				return this._HSM_Job_Forecasts_Begin;
 			}
 			set
 			{
-				this._HCM_Job_Forecasts_Begin.Assign(value);
+				this._HSM_Job_Forecasts_Begin.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job_Forecast1", Storage="_HCM_Job_Forecasts_End", ThisKey="IdYard", OtherKey="IdYardEnd")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job_Forecast1", Storage="_HSM_Job_Forecasts_End", ThisKey="IdYard", OtherKey="IdYardEnd")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=18, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job_Forecast> HCM_Job_Forecasts_End
+		public EntitySet<HSM_Job_Forecast> HSM_Job_Forecasts_End
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Job_Forecasts_End.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Job_Forecasts_End.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Job_Forecasts_End;
+				return this._HSM_Job_Forecasts_End;
 			}
 			set
 			{
-				this._HCM_Job_Forecasts_End.Assign(value);
+				this._HSM_Job_Forecasts_End.Assign(value);
 			}
 		}
 		
@@ -40220,98 +40220,98 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Path", Storage="_HCM_Paths_Begin", ThisKey="IdYard", OtherKey="IdYardBegin")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Path", Storage="_HSM_Paths_Begin", ThisKey="IdYard", OtherKey="IdYardBegin")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=25, EmitDefaultValue=false)]
-		public EntitySet<HCM_Path> HCM_Paths_Begin
+		public EntitySet<HSM_Path> HSM_Paths_Begin
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Paths_Begin.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Paths_Begin.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Paths_Begin;
+				return this._HSM_Paths_Begin;
 			}
 			set
 			{
-				this._HCM_Paths_Begin.Assign(value);
+				this._HSM_Paths_Begin.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Path1", Storage="_HCM_Paths_End", ThisKey="IdYard", OtherKey="IdYardEnd")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Path1", Storage="_HSM_Paths_End", ThisKey="IdYard", OtherKey="IdYardEnd")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=26, EmitDefaultValue=false)]
-		public EntitySet<HCM_Path> HCM_Paths_End
+		public EntitySet<HSM_Path> HSM_Paths_End
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Paths_End.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Paths_End.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Paths_End;
+				return this._HSM_Paths_End;
 			}
 			set
 			{
-				this._HCM_Paths_End.Assign(value);
+				this._HSM_Paths_End.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Location_Range_Yard", Storage="_HCM_Location_Range_Yards", ThisKey="IdYard", OtherKey="IdYard")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Location_Range_Yard", Storage="_HSM_Location_Range_Yards", ThisKey="IdYard", OtherKey="IdYard")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=27, EmitDefaultValue=false)]
-		public EntitySet<HCM_Location_Range_Yard> HCM_Location_Range_Yards
+		public EntitySet<HSM_Location_Range_Yard> HSM_Location_Range_Yards
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Location_Range_Yards.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Location_Range_Yards.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Location_Range_Yards;
+				return this._HSM_Location_Range_Yards;
 			}
 			set
 			{
-				this._HCM_Location_Range_Yards.Assign(value);
+				this._HSM_Location_Range_Yards.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job_Yard_Transfer_Step", Storage="_HCM_Job_Yard_Transfer_Steps", ThisKey="IdYard", OtherKey="IdYardBeginOnlyApplicable")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job_Yard_Transfer_Step", Storage="_HSM_Job_Yard_Transfer_Steps", ThisKey="IdYard", OtherKey="IdYardBeginOnlyApplicable")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=28, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job_Yard_Transfer_Step> HCM_Job_Yard_Transfer_Steps
+		public EntitySet<HSM_Job_Yard_Transfer_Step> HSM_Job_Yard_Transfer_Steps
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Job_Yard_Transfer_Steps.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Job_Yard_Transfer_Steps.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Job_Yard_Transfer_Steps;
+				return this._HSM_Job_Yard_Transfer_Steps;
 			}
 			set
 			{
-				this._HCM_Job_Yard_Transfer_Steps.Assign(value);
+				this._HSM_Job_Yard_Transfer_Steps.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job_Type_Route", Storage="_HCM_Job_Type_Routes", ThisKey="IdYard", OtherKey="IdYardOnlyApplicable")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job_Type_Route", Storage="_HSM_Job_Type_Routes", ThisKey="IdYard", OtherKey="IdYardOnlyApplicable")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=29, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job_Type_Route> HCM_Job_Type_Routes
+		public EntitySet<HSM_Job_Type_Route> HSM_Job_Type_Routes
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Job_Type_Routes.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Job_Type_Routes.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Job_Type_Routes;
+				return this._HSM_Job_Type_Routes;
 			}
 			set
 			{
-				this._HCM_Job_Type_Routes.Assign(value);
+				this._HSM_Job_Type_Routes.Assign(value);
 			}
 		}
 		
@@ -40334,98 +40334,98 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job", Storage="_HCM_Jobs", ThisKey="IdYard", OtherKey="IdYardBeginReq")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job", Storage="_HSM_Jobs", ThisKey="IdYard", OtherKey="IdYardBeginReq")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=31, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job> HCM_Jobs
+		public EntitySet<HSM_Job> HSM_Jobs
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Jobs.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Jobs.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Jobs;
+				return this._HSM_Jobs;
 			}
 			set
 			{
-				this._HCM_Jobs.Assign(value);
+				this._HSM_Jobs.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job1", Storage="_HCM_Jobs1", ThisKey="IdYard", OtherKey="IdYardBegin")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job1", Storage="_HSM_Jobs1", ThisKey="IdYard", OtherKey="IdYardBegin")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=32, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job> HCM_Jobs1
+		public EntitySet<HSM_Job> HSM_Jobs1
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Jobs1.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Jobs1.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Jobs1;
+				return this._HSM_Jobs1;
 			}
 			set
 			{
-				this._HCM_Jobs1.Assign(value);
+				this._HSM_Jobs1.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job2", Storage="_HCM_Jobs2", ThisKey="IdYard", OtherKey="IdYardEndReq")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job2", Storage="_HSM_Jobs2", ThisKey="IdYard", OtherKey="IdYardEndReq")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=33, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job> HCM_Jobs2
+		public EntitySet<HSM_Job> HSM_Jobs2
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Jobs2.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Jobs2.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Jobs2;
+				return this._HSM_Jobs2;
 			}
 			set
 			{
-				this._HCM_Jobs2.Assign(value);
+				this._HSM_Jobs2.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job3", Storage="_HCM_Jobs3", ThisKey="IdYard", OtherKey="IdYardEnd")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job3", Storage="_HSM_Jobs3", ThisKey="IdYard", OtherKey="IdYardEnd")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=34, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job> HCM_Jobs3
+		public EntitySet<HSM_Job> HSM_Jobs3
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Jobs3.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Jobs3.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Jobs3;
+				return this._HSM_Jobs3;
 			}
 			set
 			{
-				this._HCM_Jobs3.Assign(value);
+				this._HSM_Jobs3.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job4", Storage="_HCM_Jobs4", ThisKey="IdYard", OtherKey="IdYardRedirect")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job4", Storage="_HSM_Jobs4", ThisKey="IdYard", OtherKey="IdYardRedirect")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=35, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job> HCM_Jobs4
+		public EntitySet<HSM_Job> HSM_Jobs4
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Jobs4.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Jobs4.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Jobs4;
+				return this._HSM_Jobs4;
 			}
 			set
 			{
-				this._HCM_Jobs4.Assign(value);
+				this._HSM_Jobs4.Assign(value);
 			}
 		}
 		
@@ -40480,61 +40480,61 @@ namespace HCM.Database
 			entity.Rodeo_Yard = null;
 		}
 		
-		private void attach_HCM_Machine_Exit_Zones(HCM_Machine_Exit_Zone entity)
+		private void attach_HSM_Machine_Exit_Zones(HSM_Machine_Exit_Zone entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard = this;
 		}
 		
-		private void detach_HCM_Machine_Exit_Zones(HCM_Machine_Exit_Zone entity)
+		private void detach_HSM_Machine_Exit_Zones(HSM_Machine_Exit_Zone entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard = null;
 		}
 		
-		private void attach_HCM_Requests(HCM_Request entity)
+		private void attach_HSM_Requests(HSM_Request entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard = this;
 		}
 		
-		private void detach_HCM_Requests(HCM_Request entity)
+		private void detach_HSM_Requests(HSM_Request entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard = null;
 		}
 		
-		private void attach_HCM_Zone_Sections(HCM_Zone_Section entity)
+		private void attach_HSM_Zone_Sections(HSM_Zone_Section entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard = this;
 		}
 		
-		private void detach_HCM_Zone_Sections(HCM_Zone_Section entity)
+		private void detach_HSM_Zone_Sections(HSM_Zone_Section entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard = null;
 		}
 		
-		private void attach_HCM_Job_Forecasts_Begin(HCM_Job_Forecast entity)
+		private void attach_HSM_Job_Forecasts_Begin(HSM_Job_Forecast entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard_Begin = this;
 		}
 		
-		private void detach_HCM_Job_Forecasts_Begin(HCM_Job_Forecast entity)
+		private void detach_HSM_Job_Forecasts_Begin(HSM_Job_Forecast entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard_Begin = null;
 		}
 		
-		private void attach_HCM_Job_Forecasts_End(HCM_Job_Forecast entity)
+		private void attach_HSM_Job_Forecasts_End(HSM_Job_Forecast entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard_End = this;
 		}
 		
-		private void detach_HCM_Job_Forecasts_End(HCM_Job_Forecast entity)
+		private void detach_HSM_Job_Forecasts_End(HSM_Job_Forecast entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard_End = null;
@@ -40612,61 +40612,61 @@ namespace HCM.Database
 			entity.Rodeo_Yard_End = null;
 		}
 		
-		private void attach_HCM_Paths_Begin(HCM_Path entity)
+		private void attach_HSM_Paths_Begin(HSM_Path entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard_Begin = this;
 		}
 		
-		private void detach_HCM_Paths_Begin(HCM_Path entity)
+		private void detach_HSM_Paths_Begin(HSM_Path entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard_Begin = null;
 		}
 		
-		private void attach_HCM_Paths_End(HCM_Path entity)
+		private void attach_HSM_Paths_End(HSM_Path entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard_End = this;
 		}
 		
-		private void detach_HCM_Paths_End(HCM_Path entity)
+		private void detach_HSM_Paths_End(HSM_Path entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard_End = null;
 		}
 		
-		private void attach_HCM_Location_Range_Yards(HCM_Location_Range_Yard entity)
+		private void attach_HSM_Location_Range_Yards(HSM_Location_Range_Yard entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard = this;
 		}
 		
-		private void detach_HCM_Location_Range_Yards(HCM_Location_Range_Yard entity)
+		private void detach_HSM_Location_Range_Yards(HSM_Location_Range_Yard entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard = null;
 		}
 		
-		private void attach_HCM_Job_Yard_Transfer_Steps(HCM_Job_Yard_Transfer_Step entity)
+		private void attach_HSM_Job_Yard_Transfer_Steps(HSM_Job_Yard_Transfer_Step entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard = this;
 		}
 		
-		private void detach_HCM_Job_Yard_Transfer_Steps(HCM_Job_Yard_Transfer_Step entity)
+		private void detach_HSM_Job_Yard_Transfer_Steps(HSM_Job_Yard_Transfer_Step entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard = null;
 		}
 		
-		private void attach_HCM_Job_Type_Routes(HCM_Job_Type_Route entity)
+		private void attach_HSM_Job_Type_Routes(HSM_Job_Type_Route entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard = this;
 		}
 		
-		private void detach_HCM_Job_Type_Routes(HCM_Job_Type_Route entity)
+		private void detach_HSM_Job_Type_Routes(HSM_Job_Type_Route entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard = null;
@@ -40684,61 +40684,61 @@ namespace HCM.Database
 			entity.Rodeo_Yard = null;
 		}
 		
-		private void attach_HCM_Jobs(HCM_Job entity)
+		private void attach_HSM_Jobs(HSM_Job entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard = this;
 		}
 		
-		private void detach_HCM_Jobs(HCM_Job entity)
+		private void detach_HSM_Jobs(HSM_Job entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard = null;
 		}
 		
-		private void attach_HCM_Jobs1(HCM_Job entity)
+		private void attach_HSM_Jobs1(HSM_Job entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard1 = this;
 		}
 		
-		private void detach_HCM_Jobs1(HCM_Job entity)
+		private void detach_HSM_Jobs1(HSM_Job entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard1 = null;
 		}
 		
-		private void attach_HCM_Jobs2(HCM_Job entity)
+		private void attach_HSM_Jobs2(HSM_Job entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard2 = this;
 		}
 		
-		private void detach_HCM_Jobs2(HCM_Job entity)
+		private void detach_HSM_Jobs2(HSM_Job entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard2 = null;
 		}
 		
-		private void attach_HCM_Jobs3(HCM_Job entity)
+		private void attach_HSM_Jobs3(HSM_Job entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard3 = this;
 		}
 		
-		private void detach_HCM_Jobs3(HCM_Job entity)
+		private void detach_HSM_Jobs3(HSM_Job entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard3 = null;
 		}
 		
-		private void attach_HCM_Jobs4(HCM_Job entity)
+		private void attach_HSM_Jobs4(HSM_Job entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard4 = this;
 		}
 		
-		private void detach_HCM_Jobs4(HCM_Job entity)
+		private void detach_HSM_Jobs4(HSM_Job entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Yard4 = null;
@@ -40759,28 +40759,28 @@ namespace HCM.Database
 		private void Initialize()
 		{
 			this._Rodeo_Machines = new EntitySet<Rodeo_Machine>(new Action<Rodeo_Machine>(this.attach_Rodeo_Machines), new Action<Rodeo_Machine>(this.detach_Rodeo_Machines));
-			this._HCM_Machine_Exit_Zones = new EntitySet<HCM_Machine_Exit_Zone>(new Action<HCM_Machine_Exit_Zone>(this.attach_HCM_Machine_Exit_Zones), new Action<HCM_Machine_Exit_Zone>(this.detach_HCM_Machine_Exit_Zones));
-			this._HCM_Requests = new EntitySet<HCM_Request>(new Action<HCM_Request>(this.attach_HCM_Requests), new Action<HCM_Request>(this.detach_HCM_Requests));
-			this._HCM_Zone_Sections = new EntitySet<HCM_Zone_Section>(new Action<HCM_Zone_Section>(this.attach_HCM_Zone_Sections), new Action<HCM_Zone_Section>(this.detach_HCM_Zone_Sections));
-			this._HCM_Job_Forecasts_Begin = new EntitySet<HCM_Job_Forecast>(new Action<HCM_Job_Forecast>(this.attach_HCM_Job_Forecasts_Begin), new Action<HCM_Job_Forecast>(this.detach_HCM_Job_Forecasts_Begin));
-			this._HCM_Job_Forecasts_End = new EntitySet<HCM_Job_Forecast>(new Action<HCM_Job_Forecast>(this.attach_HCM_Job_Forecasts_End), new Action<HCM_Job_Forecast>(this.detach_HCM_Job_Forecasts_End));
+			this._HSM_Machine_Exit_Zones = new EntitySet<HSM_Machine_Exit_Zone>(new Action<HSM_Machine_Exit_Zone>(this.attach_HSM_Machine_Exit_Zones), new Action<HSM_Machine_Exit_Zone>(this.detach_HSM_Machine_Exit_Zones));
+			this._HSM_Requests = new EntitySet<HSM_Request>(new Action<HSM_Request>(this.attach_HSM_Requests), new Action<HSM_Request>(this.detach_HSM_Requests));
+			this._HSM_Zone_Sections = new EntitySet<HSM_Zone_Section>(new Action<HSM_Zone_Section>(this.attach_HSM_Zone_Sections), new Action<HSM_Zone_Section>(this.detach_HSM_Zone_Sections));
+			this._HSM_Job_Forecasts_Begin = new EntitySet<HSM_Job_Forecast>(new Action<HSM_Job_Forecast>(this.attach_HSM_Job_Forecasts_Begin), new Action<HSM_Job_Forecast>(this.detach_HSM_Job_Forecasts_Begin));
+			this._HSM_Job_Forecasts_End = new EntitySet<HSM_Job_Forecast>(new Action<HSM_Job_Forecast>(this.attach_HSM_Job_Forecasts_End), new Action<HSM_Job_Forecast>(this.detach_HSM_Job_Forecasts_End));
 			this._Rodeo_TO_Pieces_Pickup = new EntitySet<Rodeo_TO_Piece>(new Action<Rodeo_TO_Piece>(this.attach_Rodeo_TO_Pieces_Pickup), new Action<Rodeo_TO_Piece>(this.detach_Rodeo_TO_Pieces_Pickup));
 			this._Rodeo_TO_Pieces_Drop = new EntitySet<Rodeo_TO_Piece>(new Action<Rodeo_TO_Piece>(this.attach_Rodeo_TO_Pieces_Drop), new Action<Rodeo_TO_Piece>(this.detach_Rodeo_TO_Pieces_Drop));
 			this._Rodeo_TO_Steps_Begin = new EntitySet<Rodeo_TO_Step>(new Action<Rodeo_TO_Step>(this.attach_Rodeo_TO_Steps_Begin), new Action<Rodeo_TO_Step>(this.detach_Rodeo_TO_Steps_Begin));
 			this._Rodeo_TO_Steps_End = new EntitySet<Rodeo_TO_Step>(new Action<Rodeo_TO_Step>(this.attach_Rodeo_TO_Steps_End), new Action<Rodeo_TO_Step>(this.detach_Rodeo_TO_Steps_End));
 			this._Rodeo_TransportOrders_Begin = new EntitySet<Rodeo_TransportOrder>(new Action<Rodeo_TransportOrder>(this.attach_Rodeo_TransportOrders_Begin), new Action<Rodeo_TransportOrder>(this.detach_Rodeo_TransportOrders_Begin));
 			this._Rodeo_TransportOrders_End = new EntitySet<Rodeo_TransportOrder>(new Action<Rodeo_TransportOrder>(this.attach_Rodeo_TransportOrders_End), new Action<Rodeo_TransportOrder>(this.detach_Rodeo_TransportOrders_End));
-			this._HCM_Paths_Begin = new EntitySet<HCM_Path>(new Action<HCM_Path>(this.attach_HCM_Paths_Begin), new Action<HCM_Path>(this.detach_HCM_Paths_Begin));
-			this._HCM_Paths_End = new EntitySet<HCM_Path>(new Action<HCM_Path>(this.attach_HCM_Paths_End), new Action<HCM_Path>(this.detach_HCM_Paths_End));
-			this._HCM_Location_Range_Yards = new EntitySet<HCM_Location_Range_Yard>(new Action<HCM_Location_Range_Yard>(this.attach_HCM_Location_Range_Yards), new Action<HCM_Location_Range_Yard>(this.detach_HCM_Location_Range_Yards));
-			this._HCM_Job_Yard_Transfer_Steps = new EntitySet<HCM_Job_Yard_Transfer_Step>(new Action<HCM_Job_Yard_Transfer_Step>(this.attach_HCM_Job_Yard_Transfer_Steps), new Action<HCM_Job_Yard_Transfer_Step>(this.detach_HCM_Job_Yard_Transfer_Steps));
-			this._HCM_Job_Type_Routes = new EntitySet<HCM_Job_Type_Route>(new Action<HCM_Job_Type_Route>(this.attach_HCM_Job_Type_Routes), new Action<HCM_Job_Type_Route>(this.detach_HCM_Job_Type_Routes));
+			this._HSM_Paths_Begin = new EntitySet<HSM_Path>(new Action<HSM_Path>(this.attach_HSM_Paths_Begin), new Action<HSM_Path>(this.detach_HSM_Paths_Begin));
+			this._HSM_Paths_End = new EntitySet<HSM_Path>(new Action<HSM_Path>(this.attach_HSM_Paths_End), new Action<HSM_Path>(this.detach_HSM_Paths_End));
+			this._HSM_Location_Range_Yards = new EntitySet<HSM_Location_Range_Yard>(new Action<HSM_Location_Range_Yard>(this.attach_HSM_Location_Range_Yards), new Action<HSM_Location_Range_Yard>(this.detach_HSM_Location_Range_Yards));
+			this._HSM_Job_Yard_Transfer_Steps = new EntitySet<HSM_Job_Yard_Transfer_Step>(new Action<HSM_Job_Yard_Transfer_Step>(this.attach_HSM_Job_Yard_Transfer_Steps), new Action<HSM_Job_Yard_Transfer_Step>(this.detach_HSM_Job_Yard_Transfer_Steps));
+			this._HSM_Job_Type_Routes = new EntitySet<HSM_Job_Type_Route>(new Action<HSM_Job_Type_Route>(this.attach_HSM_Job_Type_Routes), new Action<HSM_Job_Type_Route>(this.detach_HSM_Job_Type_Routes));
 			this._Rodeo_Locations = new EntitySet<Rodeo_Location>(new Action<Rodeo_Location>(this.attach_Rodeo_Locations), new Action<Rodeo_Location>(this.detach_Rodeo_Locations));
-			this._HCM_Jobs = new EntitySet<HCM_Job>(new Action<HCM_Job>(this.attach_HCM_Jobs), new Action<HCM_Job>(this.detach_HCM_Jobs));
-			this._HCM_Jobs1 = new EntitySet<HCM_Job>(new Action<HCM_Job>(this.attach_HCM_Jobs1), new Action<HCM_Job>(this.detach_HCM_Jobs1));
-			this._HCM_Jobs2 = new EntitySet<HCM_Job>(new Action<HCM_Job>(this.attach_HCM_Jobs2), new Action<HCM_Job>(this.detach_HCM_Jobs2));
-			this._HCM_Jobs3 = new EntitySet<HCM_Job>(new Action<HCM_Job>(this.attach_HCM_Jobs3), new Action<HCM_Job>(this.detach_HCM_Jobs3));
-			this._HCM_Jobs4 = new EntitySet<HCM_Job>(new Action<HCM_Job>(this.attach_HCM_Jobs4), new Action<HCM_Job>(this.detach_HCM_Jobs4));
+			this._HSM_Jobs = new EntitySet<HSM_Job>(new Action<HSM_Job>(this.attach_HSM_Jobs), new Action<HSM_Job>(this.detach_HSM_Jobs));
+			this._HSM_Jobs1 = new EntitySet<HSM_Job>(new Action<HSM_Job>(this.attach_HSM_Jobs1), new Action<HSM_Job>(this.detach_HSM_Jobs1));
+			this._HSM_Jobs2 = new EntitySet<HSM_Job>(new Action<HSM_Job>(this.attach_HSM_Jobs2), new Action<HSM_Job>(this.detach_HSM_Jobs2));
+			this._HSM_Jobs3 = new EntitySet<HSM_Job>(new Action<HSM_Job>(this.attach_HSM_Jobs3), new Action<HSM_Job>(this.detach_HSM_Jobs3));
+			this._HSM_Jobs4 = new EntitySet<HSM_Job>(new Action<HSM_Job>(this.attach_HSM_Jobs4), new Action<HSM_Job>(this.detach_HSM_Jobs4));
 			this._Rodeo_Pieces = new EntitySet<Rodeo_Piece>(new Action<Rodeo_Piece>(this.attach_Rodeo_Pieces), new Action<Rodeo_Piece>(this.detach_Rodeo_Pieces));
 			OnCreated();
 		}
@@ -40807,9 +40807,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HCM_Job_Yard_Transfer_Steps")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HSM_Job_Yard_Transfer_Steps")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Job_Yard_Transfer_Step : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Job_Yard_Transfer_Step : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -40830,9 +40830,9 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Location_Group> _HCM_Location_Group_Begin;
+		private EntityRef<HSM_Location_Group> _HSM_Location_Group_Begin;
 		
-		private EntityRef<HCM_Location_Group> _HCM_Location_Group_End;
+		private EntityRef<HSM_Location_Group> _HSM_Location_Group_End;
 		
 		private EntityRef<Rodeo_Machine_Type> _Rodeo_Machine_Type;
 		
@@ -40860,7 +40860,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Job_Yard_Transfer_Step()
+		public HSM_Job_Yard_Transfer_Step()
 		{
 			this.Initialize();
 		}
@@ -40940,7 +40940,7 @@ namespace HCM.Database
 			{
 				if ((this._IdLocationGroupBegin != value))
 				{
-					if (this._HCM_Location_Group_Begin.HasLoadedOrAssignedValue)
+					if (this._HSM_Location_Group_Begin.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -40965,7 +40965,7 @@ namespace HCM.Database
 			{
 				if ((this._IdLocationGroupEnd != value))
 				{
-					if (this._HCM_Location_Group_End.HasLoadedOrAssignedValue)
+					if (this._HSM_Location_Group_End.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -41049,75 +41049,75 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Location_Group_HCM_Job_Yard_Transfer_Step", Storage="_HCM_Location_Group_Begin", ThisKey="IdLocationGroupBegin", OtherKey="IdLocationGroup", IsForeignKey=true)]
-		public HCM_Location_Group HCM_Location_Group_Begin
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Location_Group_HSM_Job_Yard_Transfer_Step", Storage="_HSM_Location_Group_Begin", ThisKey="IdLocationGroupBegin", OtherKey="IdLocationGroup", IsForeignKey=true)]
+		public HSM_Location_Group HSM_Location_Group_Begin
 		{
 			get
 			{
-				return this._HCM_Location_Group_Begin.Entity;
+				return this._HSM_Location_Group_Begin.Entity;
 			}
 			set
 			{
-				HCM_Location_Group previousValue = this._HCM_Location_Group_Begin.Entity;
+				HSM_Location_Group previousValue = this._HSM_Location_Group_Begin.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Location_Group_Begin.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Location_Group_Begin.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Location_Group_Begin.Entity = null;
-						previousValue.HCM_Job_Yard_Transfer_Steps_Begin.Remove(this);
+						this._HSM_Location_Group_Begin.Entity = null;
+						previousValue.HSM_Job_Yard_Transfer_Steps_Begin.Remove(this);
 					}
-					this._HCM_Location_Group_Begin.Entity = value;
+					this._HSM_Location_Group_Begin.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Job_Yard_Transfer_Steps_Begin.Add(this);
+						value.HSM_Job_Yard_Transfer_Steps_Begin.Add(this);
 						this._IdLocationGroupBegin = value.IdLocationGroup;
 					}
 					else
 					{
 						this._IdLocationGroupBegin = default(int);
 					}
-					this.SendPropertyChanged("HCM_Location_Group_Begin");
+					this.SendPropertyChanged("HSM_Location_Group_Begin");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Location_Group_HCM_Job_Yard_Transfer_Step1", Storage="_HCM_Location_Group_End", ThisKey="IdLocationGroupEnd", OtherKey="IdLocationGroup", IsForeignKey=true)]
-		public HCM_Location_Group HCM_Location_Group_End
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Location_Group_HSM_Job_Yard_Transfer_Step1", Storage="_HSM_Location_Group_End", ThisKey="IdLocationGroupEnd", OtherKey="IdLocationGroup", IsForeignKey=true)]
+		public HSM_Location_Group HSM_Location_Group_End
 		{
 			get
 			{
-				return this._HCM_Location_Group_End.Entity;
+				return this._HSM_Location_Group_End.Entity;
 			}
 			set
 			{
-				HCM_Location_Group previousValue = this._HCM_Location_Group_End.Entity;
+				HSM_Location_Group previousValue = this._HSM_Location_Group_End.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Location_Group_End.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Location_Group_End.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Location_Group_End.Entity = null;
-						previousValue.HCM_Job_Yard_Transfer_Steps_End.Remove(this);
+						this._HSM_Location_Group_End.Entity = null;
+						previousValue.HSM_Job_Yard_Transfer_Steps_End.Remove(this);
 					}
-					this._HCM_Location_Group_End.Entity = value;
+					this._HSM_Location_Group_End.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Job_Yard_Transfer_Steps_End.Add(this);
+						value.HSM_Job_Yard_Transfer_Steps_End.Add(this);
 						this._IdLocationGroupEnd = value.IdLocationGroup;
 					}
 					else
 					{
 						this._IdLocationGroupEnd = default(int);
 					}
-					this.SendPropertyChanged("HCM_Location_Group_End");
+					this.SendPropertyChanged("HSM_Location_Group_End");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HCM_Job_Yard_Transfer_Step", Storage="_Rodeo_Machine_Type", ThisKey="IdMachineType", OtherKey="IdMachineType", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HSM_Job_Yard_Transfer_Step", Storage="_Rodeo_Machine_Type", ThisKey="IdMachineType", OtherKey="IdMachineType", IsForeignKey=true)]
 		public Rodeo_Machine_Type Rodeo_Machine_Type
 		{
 			get
@@ -41134,12 +41134,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine_Type.Entity = null;
-						previousValue.HCM_Job_Yard_Transfer_Steps.Remove(this);
+						previousValue.HSM_Job_Yard_Transfer_Steps.Remove(this);
 					}
 					this._Rodeo_Machine_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Job_Yard_Transfer_Steps.Add(this);
+						value.HSM_Job_Yard_Transfer_Steps.Add(this);
 						this._IdMachineType = value.IdMachineType;
 					}
 					else
@@ -41151,7 +41151,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job_Yard_Transfer_Step", Storage="_Rodeo_Yard", ThisKey="IdYardBeginOnlyApplicable", OtherKey="IdYard", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job_Yard_Transfer_Step", Storage="_Rodeo_Yard", ThisKey="IdYardBeginOnlyApplicable", OtherKey="IdYard", IsForeignKey=true)]
 		public Rodeo_Yard Rodeo_Yard
 		{
 			get
@@ -41168,12 +41168,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Yard.Entity = null;
-						previousValue.HCM_Job_Yard_Transfer_Steps.Remove(this);
+						previousValue.HSM_Job_Yard_Transfer_Steps.Remove(this);
 					}
 					this._Rodeo_Yard.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Job_Yard_Transfer_Steps.Add(this);
+						value.HSM_Job_Yard_Transfer_Steps.Add(this);
 						this._IdYardBeginOnlyApplicable = value.IdYard;
 					}
 					else
@@ -41207,8 +41207,8 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Location_Group_Begin = default(EntityRef<HCM_Location_Group>);
-			this._HCM_Location_Group_End = default(EntityRef<HCM_Location_Group>);
+			this._HSM_Location_Group_Begin = default(EntityRef<HSM_Location_Group>);
+			this._HSM_Location_Group_End = default(EntityRef<HSM_Location_Group>);
 			this._Rodeo_Machine_Type = default(EntityRef<Rodeo_Machine_Type>);
 			this._Rodeo_Yard = default(EntityRef<Rodeo_Yard>);
 			OnCreated();
@@ -41222,9 +41222,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HCM_Job_Type_Routes")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HSM_Job_Type_Routes")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Job_Type_Route : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Job_Type_Route : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -41243,11 +41243,11 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Job_Type> _HCM_Job_Type;
+		private EntityRef<HSM_Job_Type> _HSM_Job_Type;
 		
-		private EntityRef<HCM_Location_Group> _HCM_Location_Group_Begin;
+		private EntityRef<HSM_Location_Group> _HSM_Location_Group_Begin;
 		
-		private EntityRef<HCM_Location_Group> _HCM_Location_Group_End;
+		private EntityRef<HSM_Location_Group> _HSM_Location_Group_End;
 		
 		private EntityRef<Rodeo_Machine_Type> _Rodeo_Machine_Type;
 		
@@ -41275,7 +41275,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Job_Type_Route()
+		public HSM_Job_Type_Route()
 		{
 			this.Initialize();
 		}
@@ -41313,7 +41313,7 @@ namespace HCM.Database
 			{
 				if ((this._IdJobType != value))
 				{
-					if (this._HCM_Job_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Job_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -41363,7 +41363,7 @@ namespace HCM.Database
 			{
 				if ((this._IdLocationGroupBegin != value))
 				{
-					if (this._HCM_Location_Group_Begin.HasLoadedOrAssignedValue)
+					if (this._HSM_Location_Group_Begin.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -41388,7 +41388,7 @@ namespace HCM.Database
 			{
 				if ((this._IdLocationGroupEnd != value))
 				{
-					if (this._HCM_Location_Group_End.HasLoadedOrAssignedValue)
+					if (this._HSM_Location_Group_End.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -41447,89 +41447,89 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Job_Type_HCM_Job_Type_Route", Storage="_HCM_Job_Type", ThisKey="IdJobType", OtherKey="IdJobType", IsForeignKey=true)]
-		public HCM_Job_Type HCM_Job_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Job_Type_HSM_Job_Type_Route", Storage="_HSM_Job_Type", ThisKey="IdJobType", OtherKey="IdJobType", IsForeignKey=true)]
+		public HSM_Job_Type HSM_Job_Type
 		{
 			get
 			{
-				return this._HCM_Job_Type.Entity;
+				return this._HSM_Job_Type.Entity;
 			}
 			set
 			{
-				HCM_Job_Type previousValue = this._HCM_Job_Type.Entity;
+				HSM_Job_Type previousValue = this._HSM_Job_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Job_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Job_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Job_Type.Entity = null;
-						previousValue.HCM_Job_Type_Routes.Remove(this);
+						this._HSM_Job_Type.Entity = null;
+						previousValue.HSM_Job_Type_Routes.Remove(this);
 					}
-					this._HCM_Job_Type.Entity = value;
+					this._HSM_Job_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Job_Type_Routes.Add(this);
+						value.HSM_Job_Type_Routes.Add(this);
 						this._IdJobType = value.IdJobType;
 					}
 					else
 					{
 						this._IdJobType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Job_Type");
+					this.SendPropertyChanged("HSM_Job_Type");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Location_Group_HCM_Job_Type_Route", Storage="_HCM_Location_Group_Begin", ThisKey="IdLocationGroupBegin", OtherKey="IdLocationGroup", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Location_Group_HSM_Job_Type_Route", Storage="_HSM_Location_Group_Begin", ThisKey="IdLocationGroupBegin", OtherKey="IdLocationGroup", IsForeignKey=true)]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=8, EmitDefaultValue=false)]
-		public HCM_Location_Group HCM_Location_Group_Begin
+		public HSM_Location_Group HSM_Location_Group_Begin
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Location_Group_Begin.HasLoadedOrAssignedValue == false)))
+							&& (this._HSM_Location_Group_Begin.HasLoadedOrAssignedValue == false)))
 				{
 					return null;
 				}
-				return this._HCM_Location_Group_Begin.Entity;
+				return this._HSM_Location_Group_Begin.Entity;
 			}
 			set
 			{
-				if ((this._HCM_Location_Group_Begin.Entity != value))
+				if ((this._HSM_Location_Group_Begin.Entity != value))
 				{
 					this.SendPropertyChanging();
-					this._HCM_Location_Group_Begin.Entity = value;
-					this.SendPropertyChanged("HCM_Location_Group_Begin");
+					this._HSM_Location_Group_Begin.Entity = value;
+					this.SendPropertyChanged("HSM_Location_Group_Begin");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Location_Group_HCM_Job_Type_Route1", Storage="_HCM_Location_Group_End", ThisKey="IdLocationGroupEnd", OtherKey="IdLocationGroup", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Location_Group_HSM_Job_Type_Route1", Storage="_HSM_Location_Group_End", ThisKey="IdLocationGroupEnd", OtherKey="IdLocationGroup", IsForeignKey=true)]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=9, EmitDefaultValue=false)]
-		public HCM_Location_Group HCM_Location_Group_End
+		public HSM_Location_Group HSM_Location_Group_End
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Location_Group_End.HasLoadedOrAssignedValue == false)))
+							&& (this._HSM_Location_Group_End.HasLoadedOrAssignedValue == false)))
 				{
 					return null;
 				}
-				return this._HCM_Location_Group_End.Entity;
+				return this._HSM_Location_Group_End.Entity;
 			}
 			set
 			{
-				if ((this._HCM_Location_Group_End.Entity != value))
+				if ((this._HSM_Location_Group_End.Entity != value))
 				{
 					this.SendPropertyChanging();
-					this._HCM_Location_Group_End.Entity = value;
-					this.SendPropertyChanged("HCM_Location_Group_End");
+					this._HSM_Location_Group_End.Entity = value;
+					this.SendPropertyChanged("HSM_Location_Group_End");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HCM_Job_Type_Route", Storage="_Rodeo_Machine_Type", ThisKey="IdMachineType", OtherKey="IdMachineType", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HSM_Job_Type_Route", Storage="_Rodeo_Machine_Type", ThisKey="IdMachineType", OtherKey="IdMachineType", IsForeignKey=true)]
 		public Rodeo_Machine_Type Rodeo_Machine_Type
 		{
 			get
@@ -41546,12 +41546,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine_Type.Entity = null;
-						previousValue.HCM_Job_Type_Routes.Remove(this);
+						previousValue.HSM_Job_Type_Routes.Remove(this);
 					}
 					this._Rodeo_Machine_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Job_Type_Routes.Add(this);
+						value.HSM_Job_Type_Routes.Add(this);
 						this._IdMachineType = value.IdMachineType;
 					}
 					else
@@ -41563,7 +41563,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job_Type_Route", Storage="_Rodeo_Yard", ThisKey="IdYardOnlyApplicable", OtherKey="IdYard", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job_Type_Route", Storage="_Rodeo_Yard", ThisKey="IdYardOnlyApplicable", OtherKey="IdYard", IsForeignKey=true)]
 		public Rodeo_Yard Rodeo_Yard
 		{
 			get
@@ -41580,12 +41580,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Yard.Entity = null;
-						previousValue.HCM_Job_Type_Routes.Remove(this);
+						previousValue.HSM_Job_Type_Routes.Remove(this);
 					}
 					this._Rodeo_Yard.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Job_Type_Routes.Add(this);
+						value.HSM_Job_Type_Routes.Add(this);
 						this._IdYardOnlyApplicable = value.IdYard;
 					}
 					else
@@ -41619,9 +41619,9 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Job_Type = default(EntityRef<HCM_Job_Type>);
-			this._HCM_Location_Group_Begin = default(EntityRef<HCM_Location_Group>);
-			this._HCM_Location_Group_End = default(EntityRef<HCM_Location_Group>);
+			this._HSM_Job_Type = default(EntityRef<HSM_Job_Type>);
+			this._HSM_Location_Group_Begin = default(EntityRef<HSM_Location_Group>);
+			this._HSM_Location_Group_End = default(EntityRef<HSM_Location_Group>);
 			this._Rodeo_Machine_Type = default(EntityRef<Rodeo_Machine_Type>);
 			this._Rodeo_Yard = default(EntityRef<Rodeo_Yard>);
 			OnCreated();
@@ -41966,9 +41966,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="tracking.HCM_Pick_List_Groups")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="tracking.HSM_Pick_List_Groups")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Pick_List_Groups : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Pick_List_Groups : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -41985,11 +41985,11 @@ namespace HCM.Database
 		
 		private System.Nullable<int> _IdPickListGroupParent;
 		
-		private EntitySet<HCM_Pick_List_Groups> _HCM_Pick_List_Groups2;
+		private EntitySet<HSM_Pick_List_Groups> _HSM_Pick_List_Groups2;
 		
-		private EntitySet<HCM_Pick_Lists> _HCM_Pick_Lists;
+		private EntitySet<HSM_Pick_Lists> _HSM_Pick_Lists;
 		
-		private EntityRef<HCM_Pick_List_Groups> _HCM_Pick_List_Groups1;
+		private EntityRef<HSM_Pick_List_Groups> _HSM_Pick_List_Groups1;
 		
 		private bool serializing;
 		
@@ -42011,7 +42011,7 @@ namespace HCM.Database
     partial void OnIdPickListGroupParentChanged();
     #endregion
 		
-		public HCM_Pick_List_Groups()
+		public HSM_Pick_List_Groups()
 		{
 			this.Initialize();
 		}
@@ -42133,7 +42133,7 @@ namespace HCM.Database
 			{
 				if ((this._IdPickListGroupParent != value))
 				{
-					if (this._HCM_Pick_List_Groups1.HasLoadedOrAssignedValue)
+					if (this._HSM_Pick_List_Groups1.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -42146,74 +42146,74 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Pick_List_Groups_HCM_Pick_List_Groups", Storage="_HCM_Pick_List_Groups2", ThisKey="IdPickListGroup", OtherKey="IdPickListGroupParent")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Pick_List_Groups_HSM_Pick_List_Groups", Storage="_HSM_Pick_List_Groups2", ThisKey="IdPickListGroup", OtherKey="IdPickListGroupParent")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=7, EmitDefaultValue=false)]
-		public EntitySet<HCM_Pick_List_Groups> HCM_Pick_List_Groups2
+		public EntitySet<HSM_Pick_List_Groups> HSM_Pick_List_Groups2
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Pick_List_Groups2.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Pick_List_Groups2.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Pick_List_Groups2;
+				return this._HSM_Pick_List_Groups2;
 			}
 			set
 			{
-				this._HCM_Pick_List_Groups2.Assign(value);
+				this._HSM_Pick_List_Groups2.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Pick_List_Groups_HCM_Pick_Lists", Storage="_HCM_Pick_Lists", ThisKey="IdPickListGroup", OtherKey="IdPickListGroup")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Pick_List_Groups_HSM_Pick_Lists", Storage="_HSM_Pick_Lists", ThisKey="IdPickListGroup", OtherKey="IdPickListGroup")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=8, EmitDefaultValue=false)]
-		public EntitySet<HCM_Pick_Lists> HCM_Pick_Lists
+		public EntitySet<HSM_Pick_Lists> HSM_Pick_Lists
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Pick_Lists.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Pick_Lists.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Pick_Lists;
+				return this._HSM_Pick_Lists;
 			}
 			set
 			{
-				this._HCM_Pick_Lists.Assign(value);
+				this._HSM_Pick_Lists.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Pick_List_Groups_HCM_Pick_List_Groups", Storage="_HCM_Pick_List_Groups1", ThisKey="IdPickListGroupParent", OtherKey="IdPickListGroup", IsForeignKey=true)]
-		public HCM_Pick_List_Groups HCM_Pick_List_Groups1
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Pick_List_Groups_HSM_Pick_List_Groups", Storage="_HSM_Pick_List_Groups1", ThisKey="IdPickListGroupParent", OtherKey="IdPickListGroup", IsForeignKey=true)]
+		public HSM_Pick_List_Groups HSM_Pick_List_Groups1
 		{
 			get
 			{
-				return this._HCM_Pick_List_Groups1.Entity;
+				return this._HSM_Pick_List_Groups1.Entity;
 			}
 			set
 			{
-				HCM_Pick_List_Groups previousValue = this._HCM_Pick_List_Groups1.Entity;
+				HSM_Pick_List_Groups previousValue = this._HSM_Pick_List_Groups1.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Pick_List_Groups1.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Pick_List_Groups1.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Pick_List_Groups1.Entity = null;
-						previousValue.HCM_Pick_List_Groups2.Remove(this);
+						this._HSM_Pick_List_Groups1.Entity = null;
+						previousValue.HSM_Pick_List_Groups2.Remove(this);
 					}
-					this._HCM_Pick_List_Groups1.Entity = value;
+					this._HSM_Pick_List_Groups1.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Pick_List_Groups2.Add(this);
+						value.HSM_Pick_List_Groups2.Add(this);
 						this._IdPickListGroupParent = value.IdPickListGroup;
 					}
 					else
 					{
 						this._IdPickListGroupParent = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("HCM_Pick_List_Groups1");
+					this.SendPropertyChanged("HSM_Pick_List_Groups1");
 				}
 			}
 		}
@@ -42238,35 +42238,35 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Pick_List_Groups2(HCM_Pick_List_Groups entity)
+		private void attach_HSM_Pick_List_Groups2(HSM_Pick_List_Groups entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Pick_List_Groups1 = this;
+			entity.HSM_Pick_List_Groups1 = this;
 		}
 		
-		private void detach_HCM_Pick_List_Groups2(HCM_Pick_List_Groups entity)
+		private void detach_HSM_Pick_List_Groups2(HSM_Pick_List_Groups entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Pick_List_Groups1 = null;
+			entity.HSM_Pick_List_Groups1 = null;
 		}
 		
-		private void attach_HCM_Pick_Lists(HCM_Pick_Lists entity)
+		private void attach_HSM_Pick_Lists(HSM_Pick_Lists entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Pick_List_Groups = this;
+			entity.HSM_Pick_List_Groups = this;
 		}
 		
-		private void detach_HCM_Pick_Lists(HCM_Pick_Lists entity)
+		private void detach_HSM_Pick_Lists(HSM_Pick_Lists entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Pick_List_Groups = null;
+			entity.HSM_Pick_List_Groups = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Pick_List_Groups2 = new EntitySet<HCM_Pick_List_Groups>(new Action<HCM_Pick_List_Groups>(this.attach_HCM_Pick_List_Groups2), new Action<HCM_Pick_List_Groups>(this.detach_HCM_Pick_List_Groups2));
-			this._HCM_Pick_Lists = new EntitySet<HCM_Pick_Lists>(new Action<HCM_Pick_Lists>(this.attach_HCM_Pick_Lists), new Action<HCM_Pick_Lists>(this.detach_HCM_Pick_Lists));
-			this._HCM_Pick_List_Groups1 = default(EntityRef<HCM_Pick_List_Groups>);
+			this._HSM_Pick_List_Groups2 = new EntitySet<HSM_Pick_List_Groups>(new Action<HSM_Pick_List_Groups>(this.attach_HSM_Pick_List_Groups2), new Action<HSM_Pick_List_Groups>(this.detach_HSM_Pick_List_Groups2));
+			this._HSM_Pick_Lists = new EntitySet<HSM_Pick_Lists>(new Action<HSM_Pick_Lists>(this.attach_HSM_Pick_Lists), new Action<HSM_Pick_Lists>(this.detach_HSM_Pick_Lists));
+			this._HSM_Pick_List_Groups1 = default(EntityRef<HSM_Pick_List_Groups>);
 			OnCreated();
 		}
 		
@@ -42292,9 +42292,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="tracking.HCM_Pick_Lists_Filters")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="tracking.HSM_Pick_Lists_Filters")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Pick_Lists_Filters : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Pick_Lists_Filters : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -42317,7 +42317,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_Pick_List_Groups_Filters> _HCM_Pick_List_Groups_Filters;
+		private EntityRef<HSM_Pick_List_Groups_Filters> _HSM_Pick_List_Groups_Filters;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -42343,7 +42343,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Pick_Lists_Filters()
+		public HSM_Pick_Lists_Filters()
 		{
 			this.Initialize();
 		}
@@ -42381,7 +42381,7 @@ namespace HCM.Database
 			{
 				if ((this._IdPickListGroup != value))
 				{
-					if (this._HCM_Pick_List_Groups_Filters.HasLoadedOrAssignedValue)
+					if (this._HSM_Pick_List_Groups_Filters.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -42541,36 +42541,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Pick_List_Groups_Filters_HCM_Pick_Lists_Filters", Storage="_HCM_Pick_List_Groups_Filters", ThisKey="IdPickListGroup", OtherKey="IdPickListGroup", IsForeignKey=true)]
-		public HCM_Pick_List_Groups_Filters HCM_Pick_List_Groups_Filters
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Pick_List_Groups_Filters_HSM_Pick_Lists_Filters", Storage="_HSM_Pick_List_Groups_Filters", ThisKey="IdPickListGroup", OtherKey="IdPickListGroup", IsForeignKey=true)]
+		public HSM_Pick_List_Groups_Filters HSM_Pick_List_Groups_Filters
 		{
 			get
 			{
-				return this._HCM_Pick_List_Groups_Filters.Entity;
+				return this._HSM_Pick_List_Groups_Filters.Entity;
 			}
 			set
 			{
-				HCM_Pick_List_Groups_Filters previousValue = this._HCM_Pick_List_Groups_Filters.Entity;
+				HSM_Pick_List_Groups_Filters previousValue = this._HSM_Pick_List_Groups_Filters.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Pick_List_Groups_Filters.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Pick_List_Groups_Filters.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Pick_List_Groups_Filters.Entity = null;
-						previousValue.HCM_Pick_Lists_Filters.Remove(this);
+						this._HSM_Pick_List_Groups_Filters.Entity = null;
+						previousValue.HSM_Pick_Lists_Filters.Remove(this);
 					}
-					this._HCM_Pick_List_Groups_Filters.Entity = value;
+					this._HSM_Pick_List_Groups_Filters.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Pick_Lists_Filters.Add(this);
+						value.HSM_Pick_Lists_Filters.Add(this);
 						this._IdPickListGroup = value.IdPickListGroup;
 					}
 					else
 					{
 						this._IdPickListGroup = default(int);
 					}
-					this.SendPropertyChanged("HCM_Pick_List_Groups_Filters");
+					this.SendPropertyChanged("HSM_Pick_List_Groups_Filters");
 				}
 			}
 		}
@@ -42597,7 +42597,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Pick_List_Groups_Filters = default(EntityRef<HCM_Pick_List_Groups_Filters>);
+			this._HSM_Pick_List_Groups_Filters = default(EntityRef<HSM_Pick_List_Groups_Filters>);
 			OnCreated();
 		}
 		
@@ -42609,9 +42609,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="tracking.HCM_Pick_List_Groups_Filters")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="tracking.HSM_Pick_List_Groups_Filters")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Pick_List_Groups_Filters : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Pick_List_Groups_Filters : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -42628,11 +42628,11 @@ namespace HCM.Database
 		
 		private System.Nullable<int> _IdPickListGroupParent;
 		
-		private EntitySet<HCM_Pick_Lists_Filters> _HCM_Pick_Lists_Filters;
+		private EntitySet<HSM_Pick_Lists_Filters> _HSM_Pick_Lists_Filters;
 		
-		private EntitySet<HCM_Pick_List_Groups_Filters> _HCM_Pick_List_Groups_Filters2;
+		private EntitySet<HSM_Pick_List_Groups_Filters> _HSM_Pick_List_Groups_Filters2;
 		
-		private EntityRef<HCM_Pick_List_Groups_Filters> _HCM_Pick_List_Groups_Filters1;
+		private EntityRef<HSM_Pick_List_Groups_Filters> _HSM_Pick_List_Groups_Filters1;
 		
 		private bool serializing;
 		
@@ -42654,7 +42654,7 @@ namespace HCM.Database
     partial void OnIdPickListGroupParentChanged();
     #endregion
 		
-		public HCM_Pick_List_Groups_Filters()
+		public HSM_Pick_List_Groups_Filters()
 		{
 			this.Initialize();
 		}
@@ -42776,7 +42776,7 @@ namespace HCM.Database
 			{
 				if ((this._IdPickListGroupParent != value))
 				{
-					if (this._HCM_Pick_List_Groups_Filters1.HasLoadedOrAssignedValue)
+					if (this._HSM_Pick_List_Groups_Filters1.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -42789,74 +42789,74 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Pick_List_Groups_Filters_HCM_Pick_Lists_Filters", Storage="_HCM_Pick_Lists_Filters", ThisKey="IdPickListGroup", OtherKey="IdPickListGroup")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Pick_List_Groups_Filters_HSM_Pick_Lists_Filters", Storage="_HSM_Pick_Lists_Filters", ThisKey="IdPickListGroup", OtherKey="IdPickListGroup")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=7, EmitDefaultValue=false)]
-		public EntitySet<HCM_Pick_Lists_Filters> HCM_Pick_Lists_Filters
+		public EntitySet<HSM_Pick_Lists_Filters> HSM_Pick_Lists_Filters
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Pick_Lists_Filters.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Pick_Lists_Filters.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Pick_Lists_Filters;
+				return this._HSM_Pick_Lists_Filters;
 			}
 			set
 			{
-				this._HCM_Pick_Lists_Filters.Assign(value);
+				this._HSM_Pick_Lists_Filters.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Pick_List_Groups_Filters_HCM_Pick_List_Groups_Filters", Storage="_HCM_Pick_List_Groups_Filters2", ThisKey="IdPickListGroup", OtherKey="IdPickListGroupParent")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Pick_List_Groups_Filters_HSM_Pick_List_Groups_Filters", Storage="_HSM_Pick_List_Groups_Filters2", ThisKey="IdPickListGroup", OtherKey="IdPickListGroupParent")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=8, EmitDefaultValue=false)]
-		public EntitySet<HCM_Pick_List_Groups_Filters> HCM_Pick_List_Groups_Filters2
+		public EntitySet<HSM_Pick_List_Groups_Filters> HSM_Pick_List_Groups_Filters2
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Pick_List_Groups_Filters2.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Pick_List_Groups_Filters2.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Pick_List_Groups_Filters2;
+				return this._HSM_Pick_List_Groups_Filters2;
 			}
 			set
 			{
-				this._HCM_Pick_List_Groups_Filters2.Assign(value);
+				this._HSM_Pick_List_Groups_Filters2.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Pick_List_Groups_Filters_HCM_Pick_List_Groups_Filters", Storage="_HCM_Pick_List_Groups_Filters1", ThisKey="IdPickListGroupParent", OtherKey="IdPickListGroup", IsForeignKey=true)]
-		public HCM_Pick_List_Groups_Filters HCM_Pick_List_Groups_Filters1
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Pick_List_Groups_Filters_HSM_Pick_List_Groups_Filters", Storage="_HSM_Pick_List_Groups_Filters1", ThisKey="IdPickListGroupParent", OtherKey="IdPickListGroup", IsForeignKey=true)]
+		public HSM_Pick_List_Groups_Filters HSM_Pick_List_Groups_Filters1
 		{
 			get
 			{
-				return this._HCM_Pick_List_Groups_Filters1.Entity;
+				return this._HSM_Pick_List_Groups_Filters1.Entity;
 			}
 			set
 			{
-				HCM_Pick_List_Groups_Filters previousValue = this._HCM_Pick_List_Groups_Filters1.Entity;
+				HSM_Pick_List_Groups_Filters previousValue = this._HSM_Pick_List_Groups_Filters1.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Pick_List_Groups_Filters1.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Pick_List_Groups_Filters1.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Pick_List_Groups_Filters1.Entity = null;
-						previousValue.HCM_Pick_List_Groups_Filters2.Remove(this);
+						this._HSM_Pick_List_Groups_Filters1.Entity = null;
+						previousValue.HSM_Pick_List_Groups_Filters2.Remove(this);
 					}
-					this._HCM_Pick_List_Groups_Filters1.Entity = value;
+					this._HSM_Pick_List_Groups_Filters1.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Pick_List_Groups_Filters2.Add(this);
+						value.HSM_Pick_List_Groups_Filters2.Add(this);
 						this._IdPickListGroupParent = value.IdPickListGroup;
 					}
 					else
 					{
 						this._IdPickListGroupParent = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("HCM_Pick_List_Groups_Filters1");
+					this.SendPropertyChanged("HSM_Pick_List_Groups_Filters1");
 				}
 			}
 		}
@@ -42881,35 +42881,35 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Pick_Lists_Filters(HCM_Pick_Lists_Filters entity)
+		private void attach_HSM_Pick_Lists_Filters(HSM_Pick_Lists_Filters entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Pick_List_Groups_Filters = this;
+			entity.HSM_Pick_List_Groups_Filters = this;
 		}
 		
-		private void detach_HCM_Pick_Lists_Filters(HCM_Pick_Lists_Filters entity)
+		private void detach_HSM_Pick_Lists_Filters(HSM_Pick_Lists_Filters entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Pick_List_Groups_Filters = null;
+			entity.HSM_Pick_List_Groups_Filters = null;
 		}
 		
-		private void attach_HCM_Pick_List_Groups_Filters2(HCM_Pick_List_Groups_Filters entity)
+		private void attach_HSM_Pick_List_Groups_Filters2(HSM_Pick_List_Groups_Filters entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Pick_List_Groups_Filters1 = this;
+			entity.HSM_Pick_List_Groups_Filters1 = this;
 		}
 		
-		private void detach_HCM_Pick_List_Groups_Filters2(HCM_Pick_List_Groups_Filters entity)
+		private void detach_HSM_Pick_List_Groups_Filters2(HSM_Pick_List_Groups_Filters entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Pick_List_Groups_Filters1 = null;
+			entity.HSM_Pick_List_Groups_Filters1 = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Pick_Lists_Filters = new EntitySet<HCM_Pick_Lists_Filters>(new Action<HCM_Pick_Lists_Filters>(this.attach_HCM_Pick_Lists_Filters), new Action<HCM_Pick_Lists_Filters>(this.detach_HCM_Pick_Lists_Filters));
-			this._HCM_Pick_List_Groups_Filters2 = new EntitySet<HCM_Pick_List_Groups_Filters>(new Action<HCM_Pick_List_Groups_Filters>(this.attach_HCM_Pick_List_Groups_Filters2), new Action<HCM_Pick_List_Groups_Filters>(this.detach_HCM_Pick_List_Groups_Filters2));
-			this._HCM_Pick_List_Groups_Filters1 = default(EntityRef<HCM_Pick_List_Groups_Filters>);
+			this._HSM_Pick_Lists_Filters = new EntitySet<HSM_Pick_Lists_Filters>(new Action<HSM_Pick_Lists_Filters>(this.attach_HSM_Pick_Lists_Filters), new Action<HSM_Pick_Lists_Filters>(this.detach_HSM_Pick_Lists_Filters));
+			this._HSM_Pick_List_Groups_Filters2 = new EntitySet<HSM_Pick_List_Groups_Filters>(new Action<HSM_Pick_List_Groups_Filters>(this.attach_HSM_Pick_List_Groups_Filters2), new Action<HSM_Pick_List_Groups_Filters>(this.detach_HSM_Pick_List_Groups_Filters2));
+			this._HSM_Pick_List_Groups_Filters1 = default(EntityRef<HSM_Pick_List_Groups_Filters>);
 			OnCreated();
 		}
 		
@@ -42935,9 +42935,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="tracking.HCM_Pick_Lists")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="tracking.HSM_Pick_Lists")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Pick_Lists : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Pick_Lists : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -42962,7 +42962,7 @@ namespace HCM.Database
 		
 		private EntitySet<Rodeo_Piece> _Rodeo_Pieces;
 		
-		private EntityRef<HCM_Pick_List_Groups> _HCM_Pick_List_Groups;
+		private EntityRef<HSM_Pick_List_Groups> _HSM_Pick_List_Groups;
 		
 		private bool serializing;
 		
@@ -42990,7 +42990,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Pick_Lists()
+		public HSM_Pick_Lists()
 		{
 			this.Initialize();
 		}
@@ -43028,7 +43028,7 @@ namespace HCM.Database
 			{
 				if ((this._IdPickListGroup != value))
 				{
-					if (this._HCM_Pick_List_Groups.HasLoadedOrAssignedValue)
+					if (this._HSM_Pick_List_Groups.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -43188,7 +43188,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Pick_Lists_Rodeo_Piece", Storage="_Rodeo_Pieces", ThisKey="IdPickList", OtherKey="IdPickList")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Pick_Lists_Rodeo_Piece", Storage="_Rodeo_Pieces", ThisKey="IdPickList", OtherKey="IdPickList")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=10, EmitDefaultValue=false)]
 		public EntitySet<Rodeo_Piece> Rodeo_Pieces
 		{
@@ -43207,36 +43207,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Pick_List_Groups_HCM_Pick_Lists", Storage="_HCM_Pick_List_Groups", ThisKey="IdPickListGroup", OtherKey="IdPickListGroup", IsForeignKey=true)]
-		public HCM_Pick_List_Groups HCM_Pick_List_Groups
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Pick_List_Groups_HSM_Pick_Lists", Storage="_HSM_Pick_List_Groups", ThisKey="IdPickListGroup", OtherKey="IdPickListGroup", IsForeignKey=true)]
+		public HSM_Pick_List_Groups HSM_Pick_List_Groups
 		{
 			get
 			{
-				return this._HCM_Pick_List_Groups.Entity;
+				return this._HSM_Pick_List_Groups.Entity;
 			}
 			set
 			{
-				HCM_Pick_List_Groups previousValue = this._HCM_Pick_List_Groups.Entity;
+				HSM_Pick_List_Groups previousValue = this._HSM_Pick_List_Groups.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Pick_List_Groups.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Pick_List_Groups.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Pick_List_Groups.Entity = null;
-						previousValue.HCM_Pick_Lists.Remove(this);
+						this._HSM_Pick_List_Groups.Entity = null;
+						previousValue.HSM_Pick_Lists.Remove(this);
 					}
-					this._HCM_Pick_List_Groups.Entity = value;
+					this._HSM_Pick_List_Groups.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Pick_Lists.Add(this);
+						value.HSM_Pick_Lists.Add(this);
 						this._IdPickListGroup = value.IdPickListGroup;
 					}
 					else
 					{
 						this._IdPickListGroup = default(int);
 					}
-					this.SendPropertyChanged("HCM_Pick_List_Groups");
+					this.SendPropertyChanged("HSM_Pick_List_Groups");
 				}
 			}
 		}
@@ -43264,19 +43264,19 @@ namespace HCM.Database
 		private void attach_Rodeo_Pieces(Rodeo_Piece entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Pick_List = this;
+			entity.HSM_Pick_List = this;
 		}
 		
 		private void detach_Rodeo_Pieces(Rodeo_Piece entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Pick_List = null;
+			entity.HSM_Pick_List = null;
 		}
 		
 		private void Initialize()
 		{
 			this._Rodeo_Pieces = new EntitySet<Rodeo_Piece>(new Action<Rodeo_Piece>(this.attach_Rodeo_Pieces), new Action<Rodeo_Piece>(this.detach_Rodeo_Pieces));
-			this._HCM_Pick_List_Groups = default(EntityRef<HCM_Pick_List_Groups>);
+			this._HSM_Pick_List_Groups = default(EntityRef<HSM_Pick_List_Groups>);
 			OnCreated();
 		}
 		
@@ -43302,9 +43302,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="tracking.HCM_Pick_List_Groups_All")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="tracking.HSM_Pick_List_Groups_All")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Pick_List_Groups_All
+	public partial class HSM_Pick_List_Groups_All
 	{
 		
 		private int _IdPickListGroup;
@@ -43319,7 +43319,7 @@ namespace HCM.Database
 		
 		private System.Nullable<int> _IdPickListGroupParent;
 		
-		public HCM_Pick_List_Groups_All()
+		public HSM_Pick_List_Groups_All()
 		{
 		}
 		
@@ -43426,9 +43426,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="tracking.HCM_Pick_Lists_All")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="tracking.HSM_Pick_Lists_All")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Pick_Lists_All
+	public partial class HSM_Pick_Lists_All
 	{
 		
 		private int _IdPickList;
@@ -43449,7 +43449,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		public HCM_Pick_Lists_All()
+		public HSM_Pick_Lists_All()
 		{
 		}
 		
@@ -43718,13 +43718,13 @@ namespace HCM.Database
 		
 		private EntitySet<Rodeo_Machine> _Rodeo_Machines1;
 		
-		private EntitySet<HCM_Machine_Exit_Zone> _HCM_Machine_Exit_Zones;
+		private EntitySet<HSM_Machine_Exit_Zone> _HSM_Machine_Exit_Zones;
 		
-		private EntitySet<HCM_Request_Transport_Dependency> _HCM_Request_Transport_Dependencies;
+		private EntitySet<HSM_Request_Transport_Dependency> _HSM_Request_Transport_Dependencies;
 		
-		private EntitySet<HCM_Machine_Exit_Location> _HCM_Machine_Exit_Locations;
+		private EntitySet<HSM_Machine_Exit_Location> _HSM_Machine_Exit_Locations;
 		
-		private EntitySet<HCM_Machine_Exit_Location> _HCM_Machine_Exit_Locations1;
+		private EntitySet<HSM_Machine_Exit_Location> _HSM_Machine_Exit_Locations1;
 		
 		private EntitySet<Rodeo_Location> _Rodeo_Locations;
 		
@@ -43746,9 +43746,9 @@ namespace HCM.Database
 		
 		private EntityRef<Rodeo_Yard> _Rodeo_Yard;
 		
-		private EntityRef<HCM_Location_Group> _HCM_Location_Group;
+		private EntityRef<HSM_Location_Group> _HSM_Location_Group;
 		
-		private EntityRef<HCM_Location_Range> _HCM_Location_Range;
+		private EntityRef<HSM_Location_Range> _HSM_Location_Range;
 		
 		private bool serializing;
 		
@@ -43921,7 +43921,7 @@ namespace HCM.Database
 			{
 				if ((this._IdLocationGroup != value))
 				{
-					if (this._HCM_Location_Group.HasLoadedOrAssignedValue)
+					if (this._HSM_Location_Group.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -43946,7 +43946,7 @@ namespace HCM.Database
 			{
 				if ((this._IdLocationRange != value))
 				{
-					if (this._HCM_Location_Range.HasLoadedOrAssignedValue)
+					if (this._HSM_Location_Range.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -44971,79 +44971,79 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Location_HCM_Machine_Exit_Zone", Storage="_HCM_Machine_Exit_Zones", ThisKey="IdLocation", OtherKey="Move_IdLocation")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Location_HSM_Machine_Exit_Zone", Storage="_HSM_Machine_Exit_Zones", ThisKey="IdLocation", OtherKey="Move_IdLocation")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=53, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Exit_Zone> HCM_Machine_Exit_Zones
+		public EntitySet<HSM_Machine_Exit_Zone> HSM_Machine_Exit_Zones
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Exit_Zones.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Exit_Zones.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Exit_Zones;
+				return this._HSM_Machine_Exit_Zones;
 			}
 			set
 			{
-				this._HCM_Machine_Exit_Zones.Assign(value);
+				this._HSM_Machine_Exit_Zones.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Location_HCM_Request_Transport_Dependency", Storage="_HCM_Request_Transport_Dependencies", ThisKey="IdLocation", OtherKey="IdTransportLocation")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Location_HSM_Request_Transport_Dependency", Storage="_HSM_Request_Transport_Dependencies", ThisKey="IdLocation", OtherKey="IdTransportLocation")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=54, EmitDefaultValue=false)]
-		public EntitySet<HCM_Request_Transport_Dependency> HCM_Request_Transport_Dependencies
+		public EntitySet<HSM_Request_Transport_Dependency> HSM_Request_Transport_Dependencies
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Request_Transport_Dependencies.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Request_Transport_Dependencies.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Request_Transport_Dependencies;
+				return this._HSM_Request_Transport_Dependencies;
 			}
 			set
 			{
-				this._HCM_Request_Transport_Dependencies.Assign(value);
+				this._HSM_Request_Transport_Dependencies.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Location_HCM_Machine_Exit_Location", Storage="_HCM_Machine_Exit_Locations", ThisKey="IdLocation", OtherKey="Move_IdLocation")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Location_HSM_Machine_Exit_Location", Storage="_HSM_Machine_Exit_Locations", ThisKey="IdLocation", OtherKey="Move_IdLocation")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=55, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Exit_Location> HCM_Machine_Exit_Locations
+		public EntitySet<HSM_Machine_Exit_Location> HSM_Machine_Exit_Locations
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Exit_Locations.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Exit_Locations.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Exit_Locations;
+				return this._HSM_Machine_Exit_Locations;
 			}
 			set
 			{
-				this._HCM_Machine_Exit_Locations.Assign(value);
+				this._HSM_Machine_Exit_Locations.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Location_HCM_Machine_Exit_Location1", Storage="_HCM_Machine_Exit_Locations1", ThisKey="IdLocation", OtherKey="IdLocation")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Location_HSM_Machine_Exit_Location1", Storage="_HSM_Machine_Exit_Locations1", ThisKey="IdLocation", OtherKey="IdLocation")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=56, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Exit_Location> HCM_Machine_Exit_Locations1
+		public EntitySet<HSM_Machine_Exit_Location> HSM_Machine_Exit_Locations1
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Exit_Locations1.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Exit_Locations1.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Exit_Locations1;
+				return this._HSM_Machine_Exit_Locations1;
 			}
 			set
 			{
-				this._HCM_Machine_Exit_Locations1.Assign(value);
+				this._HSM_Machine_Exit_Locations1.Assign(value);
 			}
 		}
 		
@@ -45298,26 +45298,26 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Location_Group_Rodeo_Location", Storage="_HCM_Location_Group", ThisKey="IdLocationGroup", OtherKey="IdLocationGroup", IsForeignKey=true)]
-		public HCM_Location_Group HCM_Location_Group
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Location_Group_Rodeo_Location", Storage="_HSM_Location_Group", ThisKey="IdLocationGroup", OtherKey="IdLocationGroup", IsForeignKey=true)]
+		public HSM_Location_Group HSM_Location_Group
 		{
 			get
 			{
-				return this._HCM_Location_Group.Entity;
+				return this._HSM_Location_Group.Entity;
 			}
 			set
 			{
-				HCM_Location_Group previousValue = this._HCM_Location_Group.Entity;
+				HSM_Location_Group previousValue = this._HSM_Location_Group.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Location_Group.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Location_Group.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Location_Group.Entity = null;
+						this._HSM_Location_Group.Entity = null;
 						previousValue.Rodeo_Locations.Remove(this);
 					}
-					this._HCM_Location_Group.Entity = value;
+					this._HSM_Location_Group.Entity = value;
 					if ((value != null))
 					{
 						value.Rodeo_Locations.Add(this);
@@ -45327,31 +45327,31 @@ namespace HCM.Database
 					{
 						this._IdLocationGroup = default(int);
 					}
-					this.SendPropertyChanged("HCM_Location_Group");
+					this.SendPropertyChanged("HSM_Location_Group");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Location_Range_Rodeo_Location", Storage="_HCM_Location_Range", ThisKey="IdLocationRange", OtherKey="IdLocationRange", IsForeignKey=true)]
-		public HCM_Location_Range HCM_Location_Range
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Location_Range_Rodeo_Location", Storage="_HSM_Location_Range", ThisKey="IdLocationRange", OtherKey="IdLocationRange", IsForeignKey=true)]
+		public HSM_Location_Range HSM_Location_Range
 		{
 			get
 			{
-				return this._HCM_Location_Range.Entity;
+				return this._HSM_Location_Range.Entity;
 			}
 			set
 			{
-				HCM_Location_Range previousValue = this._HCM_Location_Range.Entity;
+				HSM_Location_Range previousValue = this._HSM_Location_Range.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Location_Range.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Location_Range.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Location_Range.Entity = null;
+						this._HSM_Location_Range.Entity = null;
 						previousValue.Rodeo_Locations.Remove(this);
 					}
-					this._HCM_Location_Range.Entity = value;
+					this._HSM_Location_Range.Entity = value;
 					if ((value != null))
 					{
 						value.Rodeo_Locations.Add(this);
@@ -45361,7 +45361,7 @@ namespace HCM.Database
 					{
 						this._IdLocationRange = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("HCM_Location_Range");
+					this.SendPropertyChanged("HSM_Location_Range");
 				}
 			}
 		}
@@ -45410,49 +45410,49 @@ namespace HCM.Database
 			entity.Rodeo_Location1 = null;
 		}
 		
-		private void attach_HCM_Machine_Exit_Zones(HCM_Machine_Exit_Zone entity)
+		private void attach_HSM_Machine_Exit_Zones(HSM_Machine_Exit_Zone entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Location = this;
 		}
 		
-		private void detach_HCM_Machine_Exit_Zones(HCM_Machine_Exit_Zone entity)
+		private void detach_HSM_Machine_Exit_Zones(HSM_Machine_Exit_Zone entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Location = null;
 		}
 		
-		private void attach_HCM_Request_Transport_Dependencies(HCM_Request_Transport_Dependency entity)
+		private void attach_HSM_Request_Transport_Dependencies(HSM_Request_Transport_Dependency entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Location = this;
 		}
 		
-		private void detach_HCM_Request_Transport_Dependencies(HCM_Request_Transport_Dependency entity)
+		private void detach_HSM_Request_Transport_Dependencies(HSM_Request_Transport_Dependency entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Location = null;
 		}
 		
-		private void attach_HCM_Machine_Exit_Locations(HCM_Machine_Exit_Location entity)
+		private void attach_HSM_Machine_Exit_Locations(HSM_Machine_Exit_Location entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Location = this;
 		}
 		
-		private void detach_HCM_Machine_Exit_Locations(HCM_Machine_Exit_Location entity)
+		private void detach_HSM_Machine_Exit_Locations(HSM_Machine_Exit_Location entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Location = null;
 		}
 		
-		private void attach_HCM_Machine_Exit_Locations1(HCM_Machine_Exit_Location entity)
+		private void attach_HSM_Machine_Exit_Locations1(HSM_Machine_Exit_Location entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Location1 = this;
 		}
 		
-		private void detach_HCM_Machine_Exit_Locations1(HCM_Machine_Exit_Location entity)
+		private void detach_HSM_Machine_Exit_Locations1(HSM_Machine_Exit_Location entity)
 		{
 			this.SendPropertyChanging();
 			entity.Rodeo_Location1 = null;
@@ -45534,10 +45534,10 @@ namespace HCM.Database
 		{
 			this._Rodeo_Machines = new EntitySet<Rodeo_Machine>(new Action<Rodeo_Machine>(this.attach_Rodeo_Machines), new Action<Rodeo_Machine>(this.detach_Rodeo_Machines));
 			this._Rodeo_Machines1 = new EntitySet<Rodeo_Machine>(new Action<Rodeo_Machine>(this.attach_Rodeo_Machines1), new Action<Rodeo_Machine>(this.detach_Rodeo_Machines1));
-			this._HCM_Machine_Exit_Zones = new EntitySet<HCM_Machine_Exit_Zone>(new Action<HCM_Machine_Exit_Zone>(this.attach_HCM_Machine_Exit_Zones), new Action<HCM_Machine_Exit_Zone>(this.detach_HCM_Machine_Exit_Zones));
-			this._HCM_Request_Transport_Dependencies = new EntitySet<HCM_Request_Transport_Dependency>(new Action<HCM_Request_Transport_Dependency>(this.attach_HCM_Request_Transport_Dependencies), new Action<HCM_Request_Transport_Dependency>(this.detach_HCM_Request_Transport_Dependencies));
-			this._HCM_Machine_Exit_Locations = new EntitySet<HCM_Machine_Exit_Location>(new Action<HCM_Machine_Exit_Location>(this.attach_HCM_Machine_Exit_Locations), new Action<HCM_Machine_Exit_Location>(this.detach_HCM_Machine_Exit_Locations));
-			this._HCM_Machine_Exit_Locations1 = new EntitySet<HCM_Machine_Exit_Location>(new Action<HCM_Machine_Exit_Location>(this.attach_HCM_Machine_Exit_Locations1), new Action<HCM_Machine_Exit_Location>(this.detach_HCM_Machine_Exit_Locations1));
+			this._HSM_Machine_Exit_Zones = new EntitySet<HSM_Machine_Exit_Zone>(new Action<HSM_Machine_Exit_Zone>(this.attach_HSM_Machine_Exit_Zones), new Action<HSM_Machine_Exit_Zone>(this.detach_HSM_Machine_Exit_Zones));
+			this._HSM_Request_Transport_Dependencies = new EntitySet<HSM_Request_Transport_Dependency>(new Action<HSM_Request_Transport_Dependency>(this.attach_HSM_Request_Transport_Dependencies), new Action<HSM_Request_Transport_Dependency>(this.detach_HSM_Request_Transport_Dependencies));
+			this._HSM_Machine_Exit_Locations = new EntitySet<HSM_Machine_Exit_Location>(new Action<HSM_Machine_Exit_Location>(this.attach_HSM_Machine_Exit_Locations), new Action<HSM_Machine_Exit_Location>(this.detach_HSM_Machine_Exit_Locations));
+			this._HSM_Machine_Exit_Locations1 = new EntitySet<HSM_Machine_Exit_Location>(new Action<HSM_Machine_Exit_Location>(this.attach_HSM_Machine_Exit_Locations1), new Action<HSM_Machine_Exit_Location>(this.detach_HSM_Machine_Exit_Locations1));
 			this._Rodeo_Locations = new EntitySet<Rodeo_Location>(new Action<Rodeo_Location>(this.attach_Rodeo_Locations), new Action<Rodeo_Location>(this.detach_Rodeo_Locations));
 			this._Rodeo_Position = default(EntityRef<Rodeo_Position>);
 			this._Rodeo_TO_Routes = new EntitySet<Rodeo_TO_Route>(new Action<Rodeo_TO_Route>(this.attach_Rodeo_TO_Routes), new Action<Rodeo_TO_Route>(this.detach_Rodeo_TO_Routes));
@@ -45548,8 +45548,8 @@ namespace HCM.Database
 			this._Rodeo_Location_Type = default(EntityRef<Rodeo_Location_Type>);
 			this._Rodeo_Location1 = default(EntityRef<Rodeo_Location>);
 			this._Rodeo_Yard = default(EntityRef<Rodeo_Yard>);
-			this._HCM_Location_Group = default(EntityRef<HCM_Location_Group>);
-			this._HCM_Location_Range = default(EntityRef<HCM_Location_Range>);
+			this._HSM_Location_Group = default(EntityRef<HSM_Location_Group>);
+			this._HSM_Location_Range = default(EntityRef<HSM_Location_Range>);
 			OnCreated();
 		}
 		
@@ -45575,9 +45575,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="system.HCM_PLC_IOs")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="system.HSM_PLC_IOs")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_PLC_IO : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_PLC_IO : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -45598,7 +45598,7 @@ namespace HCM.Database
 		
 		private int _Size;
 		
-		private EntityRef<HCM_PLC_Module> _HCM_PLC_Module;
+		private EntityRef<HSM_PLC_Module> _HSM_PLC_Module;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -45622,7 +45622,7 @@ namespace HCM.Database
     partial void OnSizeChanged();
     #endregion
 		
-		public HCM_PLC_IO()
+		public HSM_PLC_IO()
 		{
 			this.Initialize();
 		}
@@ -45660,7 +45660,7 @@ namespace HCM.Database
 			{
 				if ((this._IdPLCModule != value))
 				{
-					if (this._HCM_PLC_Module.HasLoadedOrAssignedValue)
+					if (this._HSM_PLC_Module.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -45799,36 +45799,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_PLC_Module_HCM_PLC_IO", Storage="_HCM_PLC_Module", ThisKey="IdPLCModule", OtherKey="IdPLCModule", IsForeignKey=true)]
-		public HCM_PLC_Module HCM_PLC_Module
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_PLC_Module_HSM_PLC_IO", Storage="_HSM_PLC_Module", ThisKey="IdPLCModule", OtherKey="IdPLCModule", IsForeignKey=true)]
+		public HSM_PLC_Module HSM_PLC_Module
 		{
 			get
 			{
-				return this._HCM_PLC_Module.Entity;
+				return this._HSM_PLC_Module.Entity;
 			}
 			set
 			{
-				HCM_PLC_Module previousValue = this._HCM_PLC_Module.Entity;
+				HSM_PLC_Module previousValue = this._HSM_PLC_Module.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_PLC_Module.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_PLC_Module.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_PLC_Module.Entity = null;
-						previousValue.HCM_PLC_IOs.Remove(this);
+						this._HSM_PLC_Module.Entity = null;
+						previousValue.HSM_PLC_IOs.Remove(this);
 					}
-					this._HCM_PLC_Module.Entity = value;
+					this._HSM_PLC_Module.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_PLC_IOs.Add(this);
+						value.HSM_PLC_IOs.Add(this);
 						this._IdPLCModule = value.IdPLCModule;
 					}
 					else
 					{
 						this._IdPLCModule = default(int);
 					}
-					this.SendPropertyChanged("HCM_PLC_Module");
+					this.SendPropertyChanged("HSM_PLC_Module");
 				}
 			}
 		}
@@ -45855,7 +45855,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_PLC_Module = default(EntityRef<HCM_PLC_Module>);
+			this._HSM_PLC_Module = default(EntityRef<HSM_PLC_Module>);
 			OnCreated();
 		}
 		
@@ -45867,9 +45867,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_File_Types")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_File_Types")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_File_Type : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_File_Type : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -45882,7 +45882,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_File> _HCM_Files;
+		private EntitySet<HSM_File> _HSM_Files;
 		
 		private bool serializing;
 		
@@ -45900,7 +45900,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_File_Type()
+		public HSM_File_Type()
 		{
 			this.Initialize();
 		}
@@ -45989,22 +45989,22 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_File_Type_HCM_File", Storage="_HCM_Files", ThisKey="IdFileType", OtherKey="IdFileType")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_File_Type_HSM_File", Storage="_HSM_Files", ThisKey="IdFileType", OtherKey="IdFileType")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=5, EmitDefaultValue=false)]
-		public EntitySet<HCM_File> HCM_Files
+		public EntitySet<HSM_File> HSM_Files
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Files.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Files.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Files;
+				return this._HSM_Files;
 			}
 			set
 			{
-				this._HCM_Files.Assign(value);
+				this._HSM_Files.Assign(value);
 			}
 		}
 		
@@ -46028,21 +46028,21 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Files(HCM_File entity)
+		private void attach_HSM_Files(HSM_File entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_File_Type = this;
+			entity.HSM_File_Type = this;
 		}
 		
-		private void detach_HCM_Files(HCM_File entity)
+		private void detach_HSM_Files(HSM_File entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_File_Type = null;
+			entity.HSM_File_Type = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Files = new EntitySet<HCM_File>(new Action<HCM_File>(this.attach_HCM_Files), new Action<HCM_File>(this.detach_HCM_Files));
+			this._HSM_Files = new EntitySet<HSM_File>(new Action<HSM_File>(this.attach_HSM_Files), new Action<HSM_File>(this.detach_HSM_Files));
 			OnCreated();
 		}
 		
@@ -46360,9 +46360,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HCM_RCP_Configs")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HSM_RCP_Configs")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_RCP_Config : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_RCP_Config : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -46405,7 +46405,7 @@ namespace HCM.Database
     partial void OnConnectWatchdogChanged();
     #endregion
 		
-		public HCM_RCP_Config()
+		public HSM_RCP_Config()
 		{
 			this.Initialize();
 		}
@@ -47234,9 +47234,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HCM_Jobs")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="[to].HSM_Jobs")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Job : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Job : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -47337,13 +47337,13 @@ namespace HCM.Database
 		
 		private System.Nullable<System.DateTimeOffset> _UpdDateTime;
 		
-		private EntitySet<HCM_Incoming_Message> _HCM_Incoming_Messages;
+		private EntitySet<HSM_Incoming_Message> _HSM_Incoming_Messages;
 		
-		private EntitySet<HCM_Outgoing_Message> _HCM_Outgoing_Messages;
+		private EntitySet<HSM_Outgoing_Message> _HSM_Outgoing_Messages;
 		
 		private EntitySet<Rodeo_Event> _Rodeo_Events;
 		
-		private EntitySet<HCM_Job_Forecast> _HCM_Job_Forecasts;
+		private EntitySet<HSM_Job_Forecast> _HSM_Job_Forecasts;
 		
 		private EntitySet<Rodeo_TO_Piece> _Rodeo_TO_Pieces;
 		
@@ -47359,7 +47359,7 @@ namespace HCM.Database
 		
 		private EntityRef<Rodeo_TO_Statuse> _Rodeo_TO_Statuse;
 		
-		private EntityRef<HCM_Job_Type> _HCM_Job_Type;
+		private EntityRef<HSM_Job_Type> _HSM_Job_Type;
 		
 		private bool serializing;
 		
@@ -47465,7 +47465,7 @@ namespace HCM.Database
     partial void OnUpdDateTimeChanged();
     #endregion
 		
-		public HCM_Job()
+		public HSM_Job()
 		{
 			this.Initialize();
 		}
@@ -47503,7 +47503,7 @@ namespace HCM.Database
 			{
 				if ((this._IdJobType != value))
 				{
-					if (this._HCM_Job_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_Job_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -48506,45 +48506,45 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Job_HCM_Incoming_Message", Storage="_HCM_Incoming_Messages", ThisKey="IdJob", OtherKey="IdJob")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Job_HSM_Incoming_Message", Storage="_HSM_Incoming_Messages", ThisKey="IdJob", OtherKey="IdJob")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=49, EmitDefaultValue=false)]
-		public EntitySet<HCM_Incoming_Message> HCM_Incoming_Messages
+		public EntitySet<HSM_Incoming_Message> HSM_Incoming_Messages
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Incoming_Messages.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Incoming_Messages.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Incoming_Messages;
+				return this._HSM_Incoming_Messages;
 			}
 			set
 			{
-				this._HCM_Incoming_Messages.Assign(value);
+				this._HSM_Incoming_Messages.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Job_HCM_Outgoing_Message", Storage="_HCM_Outgoing_Messages", ThisKey="IdJob", OtherKey="IdJob")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Job_HSM_Outgoing_Message", Storage="_HSM_Outgoing_Messages", ThisKey="IdJob", OtherKey="IdJob")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=50, EmitDefaultValue=false)]
-		public EntitySet<HCM_Outgoing_Message> HCM_Outgoing_Messages
+		public EntitySet<HSM_Outgoing_Message> HSM_Outgoing_Messages
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Outgoing_Messages.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Outgoing_Messages.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Outgoing_Messages;
+				return this._HSM_Outgoing_Messages;
 			}
 			set
 			{
-				this._HCM_Outgoing_Messages.Assign(value);
+				this._HSM_Outgoing_Messages.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Job_Rodeo_Event", Storage="_Rodeo_Events", ThisKey="IdJob", OtherKey="IdJob")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Job_Rodeo_Event", Storage="_Rodeo_Events", ThisKey="IdJob", OtherKey="IdJob")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=51, EmitDefaultValue=false)]
 		public EntitySet<Rodeo_Event> Rodeo_Events
 		{
@@ -48563,26 +48563,26 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Job_HCM_Job_Forecast", Storage="_HCM_Job_Forecasts", ThisKey="IdJob", OtherKey="IdJob")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Job_HSM_Job_Forecast", Storage="_HSM_Job_Forecasts", ThisKey="IdJob", OtherKey="IdJob")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=52, EmitDefaultValue=false)]
-		public EntitySet<HCM_Job_Forecast> HCM_Job_Forecasts
+		public EntitySet<HSM_Job_Forecast> HSM_Job_Forecasts
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Job_Forecasts.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Job_Forecasts.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Job_Forecasts;
+				return this._HSM_Job_Forecasts;
 			}
 			set
 			{
-				this._HCM_Job_Forecasts.Assign(value);
+				this._HSM_Job_Forecasts.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Job_Rodeo_TO_Piece", Storage="_Rodeo_TO_Pieces", ThisKey="IdJob", OtherKey="IdJob")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Job_Rodeo_TO_Piece", Storage="_Rodeo_TO_Pieces", ThisKey="IdJob", OtherKey="IdJob")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=53, EmitDefaultValue=false)]
 		public EntitySet<Rodeo_TO_Piece> Rodeo_TO_Pieces
 		{
@@ -48601,7 +48601,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job", Storage="_Rodeo_Yard", ThisKey="IdYardBeginReq", OtherKey="IdYard", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job", Storage="_Rodeo_Yard", ThisKey="IdYardBeginReq", OtherKey="IdYard", IsForeignKey=true)]
 		public Rodeo_Yard Rodeo_Yard
 		{
 			get
@@ -48618,12 +48618,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Yard.Entity = null;
-						previousValue.HCM_Jobs.Remove(this);
+						previousValue.HSM_Jobs.Remove(this);
 					}
 					this._Rodeo_Yard.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Jobs.Add(this);
+						value.HSM_Jobs.Add(this);
 						this._IdYardBeginReq = value.IdYard;
 					}
 					else
@@ -48635,7 +48635,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job1", Storage="_Rodeo_Yard1", ThisKey="IdYardBegin", OtherKey="IdYard", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job1", Storage="_Rodeo_Yard1", ThisKey="IdYardBegin", OtherKey="IdYard", IsForeignKey=true)]
 		public Rodeo_Yard Rodeo_Yard1
 		{
 			get
@@ -48652,12 +48652,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Yard1.Entity = null;
-						previousValue.HCM_Jobs1.Remove(this);
+						previousValue.HSM_Jobs1.Remove(this);
 					}
 					this._Rodeo_Yard1.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Jobs1.Add(this);
+						value.HSM_Jobs1.Add(this);
 						this._IdYardBegin = value.IdYard;
 					}
 					else
@@ -48669,7 +48669,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job2", Storage="_Rodeo_Yard2", ThisKey="IdYardEndReq", OtherKey="IdYard", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job2", Storage="_Rodeo_Yard2", ThisKey="IdYardEndReq", OtherKey="IdYard", IsForeignKey=true)]
 		public Rodeo_Yard Rodeo_Yard2
 		{
 			get
@@ -48686,12 +48686,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Yard2.Entity = null;
-						previousValue.HCM_Jobs2.Remove(this);
+						previousValue.HSM_Jobs2.Remove(this);
 					}
 					this._Rodeo_Yard2.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Jobs2.Add(this);
+						value.HSM_Jobs2.Add(this);
 						this._IdYardEndReq = value.IdYard;
 					}
 					else
@@ -48703,7 +48703,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job3", Storage="_Rodeo_Yard3", ThisKey="IdYardEnd", OtherKey="IdYard", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job3", Storage="_Rodeo_Yard3", ThisKey="IdYardEnd", OtherKey="IdYard", IsForeignKey=true)]
 		public Rodeo_Yard Rodeo_Yard3
 		{
 			get
@@ -48720,12 +48720,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Yard3.Entity = null;
-						previousValue.HCM_Jobs3.Remove(this);
+						previousValue.HSM_Jobs3.Remove(this);
 					}
 					this._Rodeo_Yard3.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Jobs3.Add(this);
+						value.HSM_Jobs3.Add(this);
 						this._IdYardEnd = value.IdYard;
 					}
 					else
@@ -48737,7 +48737,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HCM_Job4", Storage="_Rodeo_Yard4", ThisKey="IdYardRedirect", OtherKey="IdYard", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Yard_HSM_Job4", Storage="_Rodeo_Yard4", ThisKey="IdYardRedirect", OtherKey="IdYard", IsForeignKey=true)]
 		public Rodeo_Yard Rodeo_Yard4
 		{
 			get
@@ -48754,12 +48754,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Yard4.Entity = null;
-						previousValue.HCM_Jobs4.Remove(this);
+						previousValue.HSM_Jobs4.Remove(this);
 					}
 					this._Rodeo_Yard4.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Jobs4.Add(this);
+						value.HSM_Jobs4.Add(this);
 						this._IdYardRedirect = value.IdYard;
 					}
 					else
@@ -48771,7 +48771,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_TO_Statuse_HCM_Job", Storage="_Rodeo_TO_Statuse", ThisKey="IdTOStatus", OtherKey="IdTOStatus", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_TO_Statuse_HSM_Job", Storage="_Rodeo_TO_Statuse", ThisKey="IdTOStatus", OtherKey="IdTOStatus", IsForeignKey=true)]
 		public Rodeo_TO_Statuse Rodeo_TO_Statuse
 		{
 			get
@@ -48788,12 +48788,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_TO_Statuse.Entity = null;
-						previousValue.HCM_Jobs.Remove(this);
+						previousValue.HSM_Jobs.Remove(this);
 					}
 					this._Rodeo_TO_Statuse.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Jobs.Add(this);
+						value.HSM_Jobs.Add(this);
 						this._IdTOStatus = value.IdTOStatus;
 					}
 					else
@@ -48805,36 +48805,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Job_Type_HCM_Job", Storage="_HCM_Job_Type", ThisKey="IdJobType", OtherKey="IdJobType", IsForeignKey=true)]
-		public HCM_Job_Type HCM_Job_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Job_Type_HSM_Job", Storage="_HSM_Job_Type", ThisKey="IdJobType", OtherKey="IdJobType", IsForeignKey=true)]
+		public HSM_Job_Type HSM_Job_Type
 		{
 			get
 			{
-				return this._HCM_Job_Type.Entity;
+				return this._HSM_Job_Type.Entity;
 			}
 			set
 			{
-				HCM_Job_Type previousValue = this._HCM_Job_Type.Entity;
+				HSM_Job_Type previousValue = this._HSM_Job_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Job_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Job_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Job_Type.Entity = null;
-						previousValue.HCM_Jobs.Remove(this);
+						this._HSM_Job_Type.Entity = null;
+						previousValue.HSM_Jobs.Remove(this);
 					}
-					this._HCM_Job_Type.Entity = value;
+					this._HSM_Job_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Jobs.Add(this);
+						value.HSM_Jobs.Add(this);
 						this._IdJobType = value.IdJobType;
 					}
 					else
 					{
 						this._IdJobType = default(int);
 					}
-					this.SendPropertyChanged("HCM_Job_Type");
+					this.SendPropertyChanged("HSM_Job_Type");
 				}
 			}
 		}
@@ -48859,72 +48859,72 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Incoming_Messages(HCM_Incoming_Message entity)
+		private void attach_HSM_Incoming_Messages(HSM_Incoming_Message entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Job = this;
+			entity.HSM_Job = this;
 		}
 		
-		private void detach_HCM_Incoming_Messages(HCM_Incoming_Message entity)
+		private void detach_HSM_Incoming_Messages(HSM_Incoming_Message entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Job = null;
+			entity.HSM_Job = null;
 		}
 		
-		private void attach_HCM_Outgoing_Messages(HCM_Outgoing_Message entity)
+		private void attach_HSM_Outgoing_Messages(HSM_Outgoing_Message entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Job = this;
+			entity.HSM_Job = this;
 		}
 		
-		private void detach_HCM_Outgoing_Messages(HCM_Outgoing_Message entity)
+		private void detach_HSM_Outgoing_Messages(HSM_Outgoing_Message entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Job = null;
+			entity.HSM_Job = null;
 		}
 		
 		private void attach_Rodeo_Events(Rodeo_Event entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Job = this;
+			entity.HSM_Job = this;
 		}
 		
 		private void detach_Rodeo_Events(Rodeo_Event entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Job = null;
+			entity.HSM_Job = null;
 		}
 		
-		private void attach_HCM_Job_Forecasts(HCM_Job_Forecast entity)
+		private void attach_HSM_Job_Forecasts(HSM_Job_Forecast entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Job = this;
+			entity.HSM_Job = this;
 		}
 		
-		private void detach_HCM_Job_Forecasts(HCM_Job_Forecast entity)
+		private void detach_HSM_Job_Forecasts(HSM_Job_Forecast entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Job = null;
+			entity.HSM_Job = null;
 		}
 		
 		private void attach_Rodeo_TO_Pieces(Rodeo_TO_Piece entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Job = this;
+			entity.HSM_Job = this;
 		}
 		
 		private void detach_Rodeo_TO_Pieces(Rodeo_TO_Piece entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Job = null;
+			entity.HSM_Job = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Incoming_Messages = new EntitySet<HCM_Incoming_Message>(new Action<HCM_Incoming_Message>(this.attach_HCM_Incoming_Messages), new Action<HCM_Incoming_Message>(this.detach_HCM_Incoming_Messages));
-			this._HCM_Outgoing_Messages = new EntitySet<HCM_Outgoing_Message>(new Action<HCM_Outgoing_Message>(this.attach_HCM_Outgoing_Messages), new Action<HCM_Outgoing_Message>(this.detach_HCM_Outgoing_Messages));
+			this._HSM_Incoming_Messages = new EntitySet<HSM_Incoming_Message>(new Action<HSM_Incoming_Message>(this.attach_HSM_Incoming_Messages), new Action<HSM_Incoming_Message>(this.detach_HSM_Incoming_Messages));
+			this._HSM_Outgoing_Messages = new EntitySet<HSM_Outgoing_Message>(new Action<HSM_Outgoing_Message>(this.attach_HSM_Outgoing_Messages), new Action<HSM_Outgoing_Message>(this.detach_HSM_Outgoing_Messages));
 			this._Rodeo_Events = new EntitySet<Rodeo_Event>(new Action<Rodeo_Event>(this.attach_Rodeo_Events), new Action<Rodeo_Event>(this.detach_Rodeo_Events));
-			this._HCM_Job_Forecasts = new EntitySet<HCM_Job_Forecast>(new Action<HCM_Job_Forecast>(this.attach_HCM_Job_Forecasts), new Action<HCM_Job_Forecast>(this.detach_HCM_Job_Forecasts));
+			this._HSM_Job_Forecasts = new EntitySet<HSM_Job_Forecast>(new Action<HSM_Job_Forecast>(this.attach_HSM_Job_Forecasts), new Action<HSM_Job_Forecast>(this.detach_HSM_Job_Forecasts));
 			this._Rodeo_TO_Pieces = new EntitySet<Rodeo_TO_Piece>(new Action<Rodeo_TO_Piece>(this.attach_Rodeo_TO_Pieces), new Action<Rodeo_TO_Piece>(this.detach_Rodeo_TO_Pieces));
 			this._Rodeo_Yard = default(EntityRef<Rodeo_Yard>);
 			this._Rodeo_Yard1 = default(EntityRef<Rodeo_Yard>);
@@ -48932,7 +48932,7 @@ namespace HCM.Database
 			this._Rodeo_Yard3 = default(EntityRef<Rodeo_Yard>);
 			this._Rodeo_Yard4 = default(EntityRef<Rodeo_Yard>);
 			this._Rodeo_TO_Statuse = default(EntityRef<Rodeo_TO_Statuse>);
-			this._HCM_Job_Type = default(EntityRef<HCM_Job_Type>);
+			this._HSM_Job_Type = default(EntityRef<HSM_Job_Type>);
 			OnCreated();
 		}
 		
@@ -48958,9 +48958,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Machine_Failures")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Machine_Failures")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Machine_Failure : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Machine_Failure : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -48999,15 +48999,15 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Failures_History> _HCM_Failures_Histories;
+		private EntitySet<HSM_Failures_History> _HSM_Failures_Histories;
 		
-		private EntitySet<HCM_Machine_Failure> _HCM_Machine_Failures;
+		private EntitySet<HSM_Machine_Failure> _HSM_Machine_Failures;
 		
 		private EntityRef<Rodeo_Machine_Type> _Rodeo_Machine_Type;
 		
 		private EntityRef<Rodeo_Machine> _Rodeo_Machine;
 		
-		private EntityRef<HCM_Machine_Failure> _HCM_Machine_Failure1;
+		private EntityRef<HSM_Machine_Failure> _HSM_Machine_Failure1;
 		
 		private bool serializing;
 		
@@ -49051,7 +49051,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Machine_Failure()
+		public HSM_Machine_Failure()
 		{
 			this.Initialize();
 		}
@@ -49089,7 +49089,7 @@ namespace HCM.Database
 			{
 				if ((this._ParentIdMachineFailure != value))
 				{
-					if (this._HCM_Machine_Failure1.HasLoadedOrAssignedValue)
+					if (this._HSM_Machine_Failure1.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -49425,45 +49425,45 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Machine_Failure_HCM_Failures_History", Storage="_HCM_Failures_Histories", ThisKey="IdMachineFailure", OtherKey="IdMachineFailure")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Machine_Failure_HSM_Failures_History", Storage="_HSM_Failures_Histories", ThisKey="IdMachineFailure", OtherKey="IdMachineFailure")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=18, EmitDefaultValue=false)]
-		public EntitySet<HCM_Failures_History> HCM_Failures_Histories
+		public EntitySet<HSM_Failures_History> HSM_Failures_Histories
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Failures_Histories.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Failures_Histories.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Failures_Histories;
+				return this._HSM_Failures_Histories;
 			}
 			set
 			{
-				this._HCM_Failures_Histories.Assign(value);
+				this._HSM_Failures_Histories.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Machine_Failure_HCM_Machine_Failure", Storage="_HCM_Machine_Failures", ThisKey="IdMachineFailure", OtherKey="ParentIdMachineFailure")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Machine_Failure_HSM_Machine_Failure", Storage="_HSM_Machine_Failures", ThisKey="IdMachineFailure", OtherKey="ParentIdMachineFailure")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=19, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Failure> HCM_Machine_Failures
+		public EntitySet<HSM_Machine_Failure> HSM_Machine_Failures
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Failures.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Failures.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Failures;
+				return this._HSM_Machine_Failures;
 			}
 			set
 			{
-				this._HCM_Machine_Failures.Assign(value);
+				this._HSM_Machine_Failures.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HCM_Machine_Failure", Storage="_Rodeo_Machine_Type", ThisKey="IdMachineType", OtherKey="IdMachineType", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HSM_Machine_Failure", Storage="_Rodeo_Machine_Type", ThisKey="IdMachineType", OtherKey="IdMachineType", IsForeignKey=true)]
 		public Rodeo_Machine_Type Rodeo_Machine_Type
 		{
 			get
@@ -49480,12 +49480,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine_Type.Entity = null;
-						previousValue.HCM_Machine_Failures.Remove(this);
+						previousValue.HSM_Machine_Failures.Remove(this);
 					}
 					this._Rodeo_Machine_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Failures.Add(this);
+						value.HSM_Machine_Failures.Add(this);
 						this._IdMachineType = value.IdMachineType;
 					}
 					else
@@ -49497,7 +49497,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Machine_Failure", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Machine_Failure", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
 		public Rodeo_Machine Rodeo_Machine
 		{
 			get
@@ -49514,12 +49514,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine.Entity = null;
-						previousValue.HCM_Machine_Failures.Remove(this);
+						previousValue.HSM_Machine_Failures.Remove(this);
 					}
 					this._Rodeo_Machine.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Failures.Add(this);
+						value.HSM_Machine_Failures.Add(this);
 						this._IdMachine = value.IdMachine;
 					}
 					else
@@ -49531,36 +49531,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Machine_Failure_HCM_Machine_Failure", Storage="_HCM_Machine_Failure1", ThisKey="ParentIdMachineFailure", OtherKey="IdMachineFailure", IsForeignKey=true)]
-		public HCM_Machine_Failure HCM_Machine_Failure1
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Machine_Failure_HSM_Machine_Failure", Storage="_HSM_Machine_Failure1", ThisKey="ParentIdMachineFailure", OtherKey="IdMachineFailure", IsForeignKey=true)]
+		public HSM_Machine_Failure HSM_Machine_Failure1
 		{
 			get
 			{
-				return this._HCM_Machine_Failure1.Entity;
+				return this._HSM_Machine_Failure1.Entity;
 			}
 			set
 			{
-				HCM_Machine_Failure previousValue = this._HCM_Machine_Failure1.Entity;
+				HSM_Machine_Failure previousValue = this._HSM_Machine_Failure1.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Machine_Failure1.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Machine_Failure1.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Machine_Failure1.Entity = null;
-						previousValue.HCM_Machine_Failures.Remove(this);
+						this._HSM_Machine_Failure1.Entity = null;
+						previousValue.HSM_Machine_Failures.Remove(this);
 					}
-					this._HCM_Machine_Failure1.Entity = value;
+					this._HSM_Machine_Failure1.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Failures.Add(this);
+						value.HSM_Machine_Failures.Add(this);
 						this._ParentIdMachineFailure = value.IdMachineFailure;
 					}
 					else
 					{
 						this._ParentIdMachineFailure = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("HCM_Machine_Failure1");
+					this.SendPropertyChanged("HSM_Machine_Failure1");
 				}
 			}
 		}
@@ -49585,37 +49585,37 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Failures_Histories(HCM_Failures_History entity)
+		private void attach_HSM_Failures_Histories(HSM_Failures_History entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Machine_Failure = this;
+			entity.HSM_Machine_Failure = this;
 		}
 		
-		private void detach_HCM_Failures_Histories(HCM_Failures_History entity)
+		private void detach_HSM_Failures_Histories(HSM_Failures_History entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Machine_Failure = null;
+			entity.HSM_Machine_Failure = null;
 		}
 		
-		private void attach_HCM_Machine_Failures(HCM_Machine_Failure entity)
+		private void attach_HSM_Machine_Failures(HSM_Machine_Failure entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Machine_Failure1 = this;
+			entity.HSM_Machine_Failure1 = this;
 		}
 		
-		private void detach_HCM_Machine_Failures(HCM_Machine_Failure entity)
+		private void detach_HSM_Machine_Failures(HSM_Machine_Failure entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Machine_Failure1 = null;
+			entity.HSM_Machine_Failure1 = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Failures_Histories = new EntitySet<HCM_Failures_History>(new Action<HCM_Failures_History>(this.attach_HCM_Failures_Histories), new Action<HCM_Failures_History>(this.detach_HCM_Failures_Histories));
-			this._HCM_Machine_Failures = new EntitySet<HCM_Machine_Failure>(new Action<HCM_Machine_Failure>(this.attach_HCM_Machine_Failures), new Action<HCM_Machine_Failure>(this.detach_HCM_Machine_Failures));
+			this._HSM_Failures_Histories = new EntitySet<HSM_Failures_History>(new Action<HSM_Failures_History>(this.attach_HSM_Failures_Histories), new Action<HSM_Failures_History>(this.detach_HSM_Failures_Histories));
+			this._HSM_Machine_Failures = new EntitySet<HSM_Machine_Failure>(new Action<HSM_Machine_Failure>(this.attach_HSM_Machine_Failures), new Action<HSM_Machine_Failure>(this.detach_HSM_Machine_Failures));
 			this._Rodeo_Machine_Type = default(EntityRef<Rodeo_Machine_Type>);
 			this._Rodeo_Machine = default(EntityRef<Rodeo_Machine>);
-			this._HCM_Machine_Failure1 = default(EntityRef<HCM_Machine_Failure>);
+			this._HSM_Machine_Failure1 = default(EntityRef<HSM_Machine_Failure>);
 			OnCreated();
 		}
 		
@@ -49641,9 +49641,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Machine_Interlocks")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Machine_Interlocks")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Machine_Interlock : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Machine_Interlock : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -49680,13 +49680,13 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntitySet<HCM_Machine_Interlock> _HCM_Machine_Interlocks;
+		private EntitySet<HSM_Machine_Interlock> _HSM_Machine_Interlocks;
 		
 		private EntityRef<Rodeo_Machine_Type> _Rodeo_Machine_Type;
 		
 		private EntityRef<Rodeo_Machine> _Rodeo_Machine;
 		
-		private EntityRef<HCM_Machine_Interlock> _HCM_Machine_Interlock1;
+		private EntityRef<HSM_Machine_Interlock> _HSM_Machine_Interlock1;
 		
 		private bool serializing;
 		
@@ -49728,7 +49728,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Machine_Interlock()
+		public HSM_Machine_Interlock()
 		{
 			this.Initialize();
 		}
@@ -49766,7 +49766,7 @@ namespace HCM.Database
 			{
 				if ((this._ParentIdMachineInterlock != value))
 				{
-					if (this._HCM_Machine_Interlock1.HasLoadedOrAssignedValue)
+					if (this._HSM_Machine_Interlock1.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -50081,26 +50081,26 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Machine_Interlock_HCM_Machine_Interlock", Storage="_HCM_Machine_Interlocks", ThisKey="IdMachineInterlock", OtherKey="ParentIdMachineInterlock")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Machine_Interlock_HSM_Machine_Interlock", Storage="_HSM_Machine_Interlocks", ThisKey="IdMachineInterlock", OtherKey="ParentIdMachineInterlock")]
 		[global::System.Runtime.Serialization.DataMemberAttribute(Order=17, EmitDefaultValue=false)]
-		public EntitySet<HCM_Machine_Interlock> HCM_Machine_Interlocks
+		public EntitySet<HSM_Machine_Interlock> HSM_Machine_Interlocks
 		{
 			get
 			{
 				if ((this.serializing 
-							&& (this._HCM_Machine_Interlocks.HasLoadedOrAssignedValues == false)))
+							&& (this._HSM_Machine_Interlocks.HasLoadedOrAssignedValues == false)))
 				{
 					return null;
 				}
-				return this._HCM_Machine_Interlocks;
+				return this._HSM_Machine_Interlocks;
 			}
 			set
 			{
-				this._HCM_Machine_Interlocks.Assign(value);
+				this._HSM_Machine_Interlocks.Assign(value);
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HCM_Machine_Interlock", Storage="_Rodeo_Machine_Type", ThisKey="IdMachineType", OtherKey="IdMachineType", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HSM_Machine_Interlock", Storage="_Rodeo_Machine_Type", ThisKey="IdMachineType", OtherKey="IdMachineType", IsForeignKey=true)]
 		public Rodeo_Machine_Type Rodeo_Machine_Type
 		{
 			get
@@ -50117,12 +50117,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine_Type.Entity = null;
-						previousValue.HCM_Machine_Interlocks.Remove(this);
+						previousValue.HSM_Machine_Interlocks.Remove(this);
 					}
 					this._Rodeo_Machine_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Interlocks.Add(this);
+						value.HSM_Machine_Interlocks.Add(this);
 						this._IdMachineType = value.IdMachineType;
 					}
 					else
@@ -50134,7 +50134,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_Machine_Interlock", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_Machine_Interlock", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
 		public Rodeo_Machine Rodeo_Machine
 		{
 			get
@@ -50151,12 +50151,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine.Entity = null;
-						previousValue.HCM_Machine_Interlocks.Remove(this);
+						previousValue.HSM_Machine_Interlocks.Remove(this);
 					}
 					this._Rodeo_Machine.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Interlocks.Add(this);
+						value.HSM_Machine_Interlocks.Add(this);
 						this._IdMachine = value.IdMachine;
 					}
 					else
@@ -50168,36 +50168,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Machine_Interlock_HCM_Machine_Interlock", Storage="_HCM_Machine_Interlock1", ThisKey="ParentIdMachineInterlock", OtherKey="IdMachineInterlock", IsForeignKey=true)]
-		public HCM_Machine_Interlock HCM_Machine_Interlock1
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Machine_Interlock_HSM_Machine_Interlock", Storage="_HSM_Machine_Interlock1", ThisKey="ParentIdMachineInterlock", OtherKey="IdMachineInterlock", IsForeignKey=true)]
+		public HSM_Machine_Interlock HSM_Machine_Interlock1
 		{
 			get
 			{
-				return this._HCM_Machine_Interlock1.Entity;
+				return this._HSM_Machine_Interlock1.Entity;
 			}
 			set
 			{
-				HCM_Machine_Interlock previousValue = this._HCM_Machine_Interlock1.Entity;
+				HSM_Machine_Interlock previousValue = this._HSM_Machine_Interlock1.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Machine_Interlock1.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Machine_Interlock1.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Machine_Interlock1.Entity = null;
-						previousValue.HCM_Machine_Interlocks.Remove(this);
+						this._HSM_Machine_Interlock1.Entity = null;
+						previousValue.HSM_Machine_Interlocks.Remove(this);
 					}
-					this._HCM_Machine_Interlock1.Entity = value;
+					this._HSM_Machine_Interlock1.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Machine_Interlocks.Add(this);
+						value.HSM_Machine_Interlocks.Add(this);
 						this._ParentIdMachineInterlock = value.IdMachineInterlock;
 					}
 					else
 					{
 						this._ParentIdMachineInterlock = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("HCM_Machine_Interlock1");
+					this.SendPropertyChanged("HSM_Machine_Interlock1");
 				}
 			}
 		}
@@ -50222,24 +50222,24 @@ namespace HCM.Database
 			}
 		}
 		
-		private void attach_HCM_Machine_Interlocks(HCM_Machine_Interlock entity)
+		private void attach_HSM_Machine_Interlocks(HSM_Machine_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Machine_Interlock1 = this;
+			entity.HSM_Machine_Interlock1 = this;
 		}
 		
-		private void detach_HCM_Machine_Interlocks(HCM_Machine_Interlock entity)
+		private void detach_HSM_Machine_Interlocks(HSM_Machine_Interlock entity)
 		{
 			this.SendPropertyChanging();
-			entity.HCM_Machine_Interlock1 = null;
+			entity.HSM_Machine_Interlock1 = null;
 		}
 		
 		private void Initialize()
 		{
-			this._HCM_Machine_Interlocks = new EntitySet<HCM_Machine_Interlock>(new Action<HCM_Machine_Interlock>(this.attach_HCM_Machine_Interlocks), new Action<HCM_Machine_Interlock>(this.detach_HCM_Machine_Interlocks));
+			this._HSM_Machine_Interlocks = new EntitySet<HSM_Machine_Interlock>(new Action<HSM_Machine_Interlock>(this.attach_HSM_Machine_Interlocks), new Action<HSM_Machine_Interlock>(this.detach_HSM_Machine_Interlocks));
 			this._Rodeo_Machine_Type = default(EntityRef<Rodeo_Machine_Type>);
 			this._Rodeo_Machine = default(EntityRef<Rodeo_Machine>);
-			this._HCM_Machine_Interlock1 = default(EntityRef<HCM_Machine_Interlock>);
+			this._HSM_Machine_Interlock1 = default(EntityRef<HSM_Machine_Interlock>);
 			OnCreated();
 		}
 		
@@ -50265,9 +50265,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Hoist_WorkModes")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Hoist_WorkModes")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Hoist_WorkMode : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Hoist_WorkMode : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -50302,7 +50302,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Hoist_WorkMode()
+		public HSM_Hoist_WorkMode()
 		{
 			this.Initialize();
 		}
@@ -50466,9 +50466,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Trolley_WorkModes")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Trolley_WorkModes")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Trolley_WorkMode : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Trolley_WorkMode : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -50503,7 +50503,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Trolley_WorkMode()
+		public HSM_Trolley_WorkMode()
 		{
 			this.Initialize();
 		}
@@ -50667,9 +50667,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Grab_WorkModes")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Grab_WorkModes")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Grab_WorkMode : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Grab_WorkMode : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -50704,7 +50704,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Grab_WorkMode()
+		public HSM_Grab_WorkMode()
 		{
 			this.Initialize();
 		}
@@ -50868,9 +50868,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HCM_Bridge_WorkModes")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="safety.HSM_Bridge_WorkModes")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Bridge_WorkMode : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Bridge_WorkMode : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -50905,7 +50905,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_Bridge_WorkMode()
+		public HSM_Bridge_WorkMode()
 		{
 			this.Initialize();
 		}
@@ -51689,7 +51689,7 @@ namespace HCM.Database
 		
 		private EntityRef<Rodeo_Yard> _Rodeo_Yard;
 		
-		private EntityRef<HCM_Pick_Lists> _HCM_Pick_List;
+		private EntityRef<HSM_Pick_Lists> _HSM_Pick_List;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -51868,7 +51868,7 @@ namespace HCM.Database
 			{
 				if ((this._IdPickList != value))
 				{
-					if (this._HCM_Pick_List.HasLoadedOrAssignedValue)
+					if (this._HSM_Pick_List.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -52601,26 +52601,26 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Pick_Lists_Rodeo_Piece", Storage="_HCM_Pick_List", ThisKey="IdPickList", OtherKey="IdPickList", IsForeignKey=true)]
-		public HCM_Pick_Lists HCM_Pick_List
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Pick_Lists_Rodeo_Piece", Storage="_HSM_Pick_List", ThisKey="IdPickList", OtherKey="IdPickList", IsForeignKey=true)]
+		public HSM_Pick_Lists HSM_Pick_List
 		{
 			get
 			{
-				return this._HCM_Pick_List.Entity;
+				return this._HSM_Pick_List.Entity;
 			}
 			set
 			{
-				HCM_Pick_Lists previousValue = this._HCM_Pick_List.Entity;
+				HSM_Pick_Lists previousValue = this._HSM_Pick_List.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Pick_List.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Pick_List.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Pick_List.Entity = null;
+						this._HSM_Pick_List.Entity = null;
 						previousValue.Rodeo_Pieces.Remove(this);
 					}
-					this._HCM_Pick_List.Entity = value;
+					this._HSM_Pick_List.Entity = value;
 					if ((value != null))
 					{
 						value.Rodeo_Pieces.Add(this);
@@ -52630,7 +52630,7 @@ namespace HCM.Database
 					{
 						this._IdPickList = default(Nullable<int>);
 					}
-					this.SendPropertyChanged("HCM_Pick_List");
+					this.SendPropertyChanged("HSM_Pick_List");
 				}
 			}
 		}
@@ -52663,7 +52663,7 @@ namespace HCM.Database
 			this._Rodeo_Piece_Statuse = default(EntityRef<Rodeo_Piece_Statuse>);
 			this._Rodeo_Piece_Type = default(EntityRef<Rodeo_Piece_Type>);
 			this._Rodeo_Yard = default(EntityRef<Rodeo_Yard>);
-			this._HCM_Pick_List = default(EntityRef<HCM_Pick_Lists>);
+			this._HSM_Pick_List = default(EntityRef<HSM_Pick_Lists>);
 			OnCreated();
 		}
 		
@@ -52675,9 +52675,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HCM_Files")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="common.HSM_Files")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_File : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_File : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -52698,7 +52698,7 @@ namespace HCM.Database
 		
 		private bool _Active;
 		
-		private EntityRef<HCM_File_Type> _HCM_File_Type;
+		private EntityRef<HSM_File_Type> _HSM_File_Type;
 		
 		private EntityRef<Rodeo_Machine_Type> _Rodeo_Machine_Type;
 		
@@ -52726,7 +52726,7 @@ namespace HCM.Database
     partial void OnActiveChanged();
     #endregion
 		
-		public HCM_File()
+		public HSM_File()
 		{
 			this.Initialize();
 		}
@@ -52764,7 +52764,7 @@ namespace HCM.Database
 			{
 				if ((this._IdFileType != value))
 				{
-					if (this._HCM_File_Type.HasLoadedOrAssignedValue)
+					if (this._HSM_File_Type.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -52911,41 +52911,41 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_File_Type_HCM_File", Storage="_HCM_File_Type", ThisKey="IdFileType", OtherKey="IdFileType", IsForeignKey=true)]
-		public HCM_File_Type HCM_File_Type
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_File_Type_HSM_File", Storage="_HSM_File_Type", ThisKey="IdFileType", OtherKey="IdFileType", IsForeignKey=true)]
+		public HSM_File_Type HSM_File_Type
 		{
 			get
 			{
-				return this._HCM_File_Type.Entity;
+				return this._HSM_File_Type.Entity;
 			}
 			set
 			{
-				HCM_File_Type previousValue = this._HCM_File_Type.Entity;
+				HSM_File_Type previousValue = this._HSM_File_Type.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_File_Type.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_File_Type.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_File_Type.Entity = null;
-						previousValue.HCM_Files.Remove(this);
+						this._HSM_File_Type.Entity = null;
+						previousValue.HSM_Files.Remove(this);
 					}
-					this._HCM_File_Type.Entity = value;
+					this._HSM_File_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Files.Add(this);
+						value.HSM_Files.Add(this);
 						this._IdFileType = value.IdFileType;
 					}
 					else
 					{
 						this._IdFileType = default(int);
 					}
-					this.SendPropertyChanged("HCM_File_Type");
+					this.SendPropertyChanged("HSM_File_Type");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HCM_File", Storage="_Rodeo_Machine_Type", ThisKey="IdMachineType", OtherKey="IdMachineType", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_Type_HSM_File", Storage="_Rodeo_Machine_Type", ThisKey="IdMachineType", OtherKey="IdMachineType", IsForeignKey=true)]
 		public Rodeo_Machine_Type Rodeo_Machine_Type
 		{
 			get
@@ -52962,12 +52962,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine_Type.Entity = null;
-						previousValue.HCM_Files.Remove(this);
+						previousValue.HSM_Files.Remove(this);
 					}
 					this._Rodeo_Machine_Type.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Files.Add(this);
+						value.HSM_Files.Add(this);
 						this._IdMachineType = value.IdMachineType;
 					}
 					else
@@ -52979,7 +52979,7 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HCM_File", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Rodeo_Machine_HSM_File", Storage="_Rodeo_Machine", ThisKey="IdMachine", OtherKey="IdMachine", IsForeignKey=true)]
 		public Rodeo_Machine Rodeo_Machine
 		{
 			get
@@ -52996,12 +52996,12 @@ namespace HCM.Database
 					if ((previousValue != null))
 					{
 						this._Rodeo_Machine.Entity = null;
-						previousValue.HCM_Files.Remove(this);
+						previousValue.HSM_Files.Remove(this);
 					}
 					this._Rodeo_Machine.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Files.Add(this);
+						value.HSM_Files.Add(this);
 						this._IdMachine = value.IdMachine;
 					}
 					else
@@ -53035,7 +53035,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_File_Type = default(EntityRef<HCM_File_Type>);
+			this._HSM_File_Type = default(EntityRef<HSM_File_Type>);
 			this._Rodeo_Machine_Type = default(EntityRef<Rodeo_Machine_Type>);
 			this._Rodeo_Machine = default(EntityRef<Rodeo_Machine>);
 			OnCreated();
@@ -53049,9 +53049,9 @@ namespace HCM.Database
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="system.HCM_Troubleshooting_Files")]
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="system.HSM_Troubleshooting_Files")]
 	[global::System.Runtime.Serialization.DataContractAttribute()]
-	public partial class HCM_Troubleshooting_File : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HSM_Troubleshooting_File : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -53066,7 +53066,7 @@ namespace HCM.Database
 		
 		private short _Order;
 		
-		private EntityRef<HCM_Troubleshooting_Reference> _HCM_Troubleshooting_Reference;
+		private EntityRef<HSM_Troubleshooting_Reference> _HSM_Troubleshooting_Reference;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -53084,7 +53084,7 @@ namespace HCM.Database
     partial void OnOrderChanged();
     #endregion
 		
-		public HCM_Troubleshooting_File()
+		public HSM_Troubleshooting_File()
 		{
 			this.Initialize();
 		}
@@ -53101,7 +53101,7 @@ namespace HCM.Database
 			{
 				if ((this._Reference != value))
 				{
-					if (this._HCM_Troubleshooting_Reference.HasLoadedOrAssignedValue)
+					if (this._HSM_Troubleshooting_Reference.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
@@ -53198,36 +53198,36 @@ namespace HCM.Database
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HCM_Troubleshooting_Reference_HCM_Troubleshooting_File", Storage="_HCM_Troubleshooting_Reference", ThisKey="Reference", OtherKey="Reference", IsForeignKey=true)]
-		public HCM_Troubleshooting_Reference HCM_Troubleshooting_Reference
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HSM_Troubleshooting_Reference_HSM_Troubleshooting_File", Storage="_HSM_Troubleshooting_Reference", ThisKey="Reference", OtherKey="Reference", IsForeignKey=true)]
+		public HSM_Troubleshooting_Reference HSM_Troubleshooting_Reference
 		{
 			get
 			{
-				return this._HCM_Troubleshooting_Reference.Entity;
+				return this._HSM_Troubleshooting_Reference.Entity;
 			}
 			set
 			{
-				HCM_Troubleshooting_Reference previousValue = this._HCM_Troubleshooting_Reference.Entity;
+				HSM_Troubleshooting_Reference previousValue = this._HSM_Troubleshooting_Reference.Entity;
 				if (((previousValue != value) 
-							|| (this._HCM_Troubleshooting_Reference.HasLoadedOrAssignedValue == false)))
+							|| (this._HSM_Troubleshooting_Reference.HasLoadedOrAssignedValue == false)))
 				{
 					this.SendPropertyChanging();
 					if ((previousValue != null))
 					{
-						this._HCM_Troubleshooting_Reference.Entity = null;
-						previousValue.HCM_Troubleshooting_Files.Remove(this);
+						this._HSM_Troubleshooting_Reference.Entity = null;
+						previousValue.HSM_Troubleshooting_Files.Remove(this);
 					}
-					this._HCM_Troubleshooting_Reference.Entity = value;
+					this._HSM_Troubleshooting_Reference.Entity = value;
 					if ((value != null))
 					{
-						value.HCM_Troubleshooting_Files.Add(this);
+						value.HSM_Troubleshooting_Files.Add(this);
 						this._Reference = value.Reference;
 					}
 					else
 					{
 						this._Reference = default(string);
 					}
-					this.SendPropertyChanged("HCM_Troubleshooting_Reference");
+					this.SendPropertyChanged("HSM_Troubleshooting_Reference");
 				}
 			}
 		}
@@ -53254,7 +53254,7 @@ namespace HCM.Database
 		
 		private void Initialize()
 		{
-			this._HCM_Troubleshooting_Reference = default(EntityRef<HCM_Troubleshooting_Reference>);
+			this._HSM_Troubleshooting_Reference = default(EntityRef<HSM_Troubleshooting_Reference>);
 			OnCreated();
 		}
 		

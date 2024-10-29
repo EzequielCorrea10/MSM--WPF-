@@ -28,7 +28,7 @@ BEGIN
 			@IsHold = CASE WHEN A.HoldOnReasonStatus > 0 THEN 1 ELSE 0 END
 	FROM [tracking].[Rodeo_Pieces] A
 	INNER JOIN [tracking].[Rodeo_Piece_Statuses] C ON A.IdPieceStatus = C.IdPieceStatus
-	LEFT JOIN [tracking].[HCM_Pick_Lists] D ON A.IdPickList = D.IdPickList
+	LEFT JOIN [tracking].[HSM_Pick_Lists] D ON A.IdPickList = D.IdPickList
 	WHERE A.[PieceName] = @piece_name
 
 	IF @@ROWCOUNT = 1
@@ -38,7 +38,7 @@ BEGIN
 		IF @PieceStatusName <> 'Obsolete' AND @IsGhost = 0
 		BEGIN
 			SELECT TOP 1 @L2Destination = L2Destination
-			FROM [to].[HCM_Destination_Next_Pieces]
+			FROM [to].[HSM_Destination_Next_Pieces]
 			WHERE [PieceName] = @piece_name
 
 			IF @L2Destination IS NOT NULL
@@ -71,7 +71,7 @@ BEGIN
 			BEGIN
 				SELECT	@IdPickList = [IdPickList],
 						@picklist = [PlcValue]
-				FROM [tracking].[HCM_Pick_Lists] 
+				FROM [tracking].[HSM_Pick_Lists] 
 				WHERE [Name] = @NewPickListName
 
 				UPDATE [tracking].[Rodeo_Pieces]

@@ -41,10 +41,10 @@ GO
 ALTER TABLE [tracking].[Rodeo_Pieces] ADD  CONSTRAINT [DF_Rodeo_Pieces_UpdDateTime]  DEFAULT (sysdatetimeoffset()) FOR [UpdDateTime]
 GO
 
-ALTER TABLE [tracking].[Rodeo_Pieces]  WITH CHECK ADD  CONSTRAINT [FK_Rodeo_Pieces_HCM_Pick_Lists] FOREIGN KEY([IdPickList]) REFERENCES [tracking].[HCM_Pick_Lists] ([IdPickList])
+ALTER TABLE [tracking].[Rodeo_Pieces]  WITH CHECK ADD  CONSTRAINT [FK_Rodeo_Pieces_HSM_Pick_Lists] FOREIGN KEY([IdPickList]) REFERENCES [tracking].[HSM_Pick_Lists] ([IdPickList])
 GO
 
-ALTER TABLE [tracking].[Rodeo_Pieces] CHECK CONSTRAINT [FK_Rodeo_Pieces_HCM_Pick_Lists]
+ALTER TABLE [tracking].[Rodeo_Pieces] CHECK CONSTRAINT [FK_Rodeo_Pieces_HSM_Pick_Lists]
 GO
 
 ALTER TABLE [tracking].[Rodeo_Pieces]  WITH CHECK ADD  CONSTRAINT [FK_Rodeo_Pieces_Rodeo_Yards] FOREIGN KEY([IdYard]) REFERENCES [common].[Rodeo_Yards] ([IdYard])

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HCM.HMI.Safety.Operation.Structures
+namespace HSM.HMI.Safety.Operation.Structures
 {
     /// <summary>
     /// Layoutcfg

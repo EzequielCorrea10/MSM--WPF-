@@ -7,7 +7,7 @@ using System.Windows;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace HCM.HMI.Safety.Operation.Converters
+namespace HSM.HMI.Safety.Operation.Converters
 {
     public class RequestBackgroundConverter : IValueConverter
     {

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HCM.Database
+namespace HSM.Database
 {
-    public partial class HCM_Job_Forecast
+    public partial class HSM_Job_Forecast
     {
         #region attributes
         /// <summary>
@@ -28,12 +28,12 @@ namespace HCM.Database
 
         #region steps adquisition methods       
         private readonly object lockInstance = new object();
-        private IEnumerable<HCM_Job> _Job;
-        public IEnumerable<HCM_Job> Temp_HCM_Job
+        private IEnumerable<HSM_Job> _Job;
+        public IEnumerable<HSM_Job> Temp_HSM_Job
         {
             get
             {
-                if (string.IsNullOrEmpty(HCMDataContext.default_connection_string))
+                if (string.IsNullOrEmpty(HSMDataContext.default_connection_string))
                     return null;
 
                 if (this._Job == null)
@@ -42,16 +42,16 @@ namespace HCM.Database
                     {
                         if (this._Job == null)
                         {
-                            using (HCMDataContext db = new HCMDataContext(HCMDataContext.default_connection_string))
+                            using (HSMDataContext db = new HSMDataContext(HSMDataContext.default_connection_string))
                             {
                                 DataLoadOptions dlo = new DataLoadOptions();
-                                dlo.LoadWith<HCM_Job>(o => o.HCM_Job_Forecasts);
-                                dlo.LoadWith<HCM_Job>(o => o.HCM_Job_Type);
-                                dlo.LoadWith<HCM_Job>(o => o.Rodeo_TO_Pieces);
+                                dlo.LoadWith<HSM_Job>(o => o.HSM_Job_Forecasts);
+                                dlo.LoadWith<HSM_Job>(o => o.HSM_Job_Type);
+                                dlo.LoadWith<HSM_Job>(o => o.Rodeo_TO_Pieces);
                                 db.LoadOptions = dlo;
                                 db.DeferredLoadingEnabled = false;
 
-                                this._Job = db.HCM_Jobs.Where(p => p.IdJob == this.IdJob).ToList();
+                                this._Job = db.HSM_Jobs.Where(p => p.IdJob == this.IdJob).ToList();
                             }
                         }
                     }

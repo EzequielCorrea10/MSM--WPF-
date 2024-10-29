@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Data;
 using System.Windows.Media.Imaging;
 
-namespace HCM.Utility.Controls.Converters
+namespace HSM.Utility.Controls.Converters
 {
     public class StringToImageConverter : IValueConverter
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 
-namespace HCM.HMI.Safety.Operation.Converters
+namespace HSM.HMI.Safety.Operation.Converters
 {
     public class LayoutLeftConverter : IValueConverter
     {

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HCM.Utility.Common.Structures
+namespace HSM.Utility.Common.Structures
 {
-    using HCM.Utility.Common.Catalogs;
-    using HCM.Utility.Common.Handlers;
+    using HSM.Utility.Common.Catalogs;
+    using HSM.Utility.Common.Handlers;
 
     /// <summary>
     /// Yard_Transfer

@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HCM.Utility.Common.Structures
+namespace HSM.Utility.Common.Structures
 {
-    using HCM.Utility.Common.Handlers;
-    using HCM.Utility.Common.Enumerations;
-    using HCM.Utility.Common.Catalogs;
+    using HSM.Utility.Common.Handlers;
+    using HSM.Utility.Common.Enumerations;
+    using HSM.Utility.Common.Catalogs;
 
     /// <summary>
     /// Position
@@ -181,7 +181,7 @@ namespace HCM.Utility.Common.Structures
         /// <param name="z"></param>
         /// <param name="heading"></param>
         /// <param name="yard_name"></param>
-        public Position(int x, int y, int? z, short heading, string yard_name = HCM.Utility.Common.Constants.Configuration.Y_SEMIAUTOMATIC)
+        public Position(int x, int y, int? z, short heading, string yard_name = HSM.Utility.Common.Constants.Configuration.Y_SEMIAUTOMATIC)
         {
             this._pos_x = x;
             this._pos_y = y;
@@ -202,7 +202,7 @@ namespace HCM.Utility.Common.Structures
         /// Position
         /// </summary>
         /// <param name="source"></param>
-        public Position(HCM.Utility.Common.Messages.MsgPosition source)
+        public Position(HSM.Utility.Common.Messages.MsgPosition source)
             : this(source.name, source.yard_name, source.pos_x, source.pos_y, source.pos_z)
         { }
         #endregion
@@ -248,7 +248,7 @@ namespace HCM.Utility.Common.Structures
         /// </summary>
         /// <param name="another"></param>
         /// <returns></returns>
-        public bool EqualValues(HCM.Utility.Common.Messages.MsgPosition another)
+        public bool EqualValues(HSM.Utility.Common.Messages.MsgPosition another)
         {
             if (another == null)
             {

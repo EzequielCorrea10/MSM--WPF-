@@ -7,12 +7,12 @@ using System.Text;
 using System.Threading;
 using System.Runtime.InteropServices;
 
-namespace HCM.Utility.Common
+namespace HSM.Utility.Common
 {
     using Janus.Rodeo.Windows.Library.Rd_Log;
     using Janus.Rodeo.Windows.Library.Rd_Common;
-    using HCM.Utility.Common.Constants;
-    using HCM.Utility.Common.Structures;
+    using HSM.Utility.Common.Constants;
+    using HSM.Utility.Common.Structures;
 
     /// <summary>
     /// Sender of Response

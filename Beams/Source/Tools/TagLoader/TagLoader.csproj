@@ -38,6 +38,14 @@
     <ApplicationIcon>tagLoader.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HSM.Utility.Common, Version=1.0.9068.29829, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\AppRelease\debug\HSM.Utility.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="HSM.Utility.Configuration, Version=1.0.9068.29727, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\AppRelease\debug\HSM.Utility.Configuration.dll</HintPath>
+    </Reference>
     <Reference Include="Janus.Rodeo.Windows.Library.DBConnection.Data">
       <HintPath>..\..\..\AppRelease\executables\rodeo_dlls\Janus.Rodeo.Windows.Library.DBConnection.Data.dll</HintPath>
     </Reference>
@@ -155,14 +163,6 @@
     </Reference>
     <Reference Include="Janus.Rodeo.Windows.Library.UI.Controls">
       <HintPath>..\..\..\Rodeo\apps\uis\Janus.Rodeo.Windows.Library.UI.Controls.dll</HintPath>
-    </Reference>
-    <Reference Include="MSM.Utility.Common, Version=1.0.9063.23870, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\AppRelease\executables\uib_dlls\MSM.Utility.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="MSM.Utility.Configuration, Version=1.0.9063.23506, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\AppRelease\executables\uib_dlls\MSM.Utility.Configuration.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

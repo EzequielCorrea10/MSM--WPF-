@@ -6353,3 +6353,24 @@
 2024-10-29 15:48:17.604: LoadClientTypes, Debug: 6 Rows defined for Client types
 2024-10-29 15:48:17.792: LoadClients, Debug: 8 Rows defined for Clients
 2024-10-29 15:48:21.729: Init, Debug: RTS Driver counter: 1
+2024-10-29 15:51:12.276: InitializeRegister, Message: ********** Start the application **********
+2024-10-29 15:51:12.295: InitializeRegister, Message: Information of PID=79088, Process=TagLoader, Arguments=
+2024-10-29 15:51:12.266: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-10-29 15:51:12.457: LoadClients, Debug: 8 Rows defined for Clients
+2024-10-29 15:51:16.315: Init, Debug: RTS Driver counter: 1
+2024-10-29 15:53:40.690: InitializeRegister, Message: ********** Start the application **********
+2024-10-29 15:53:40.711: InitializeRegister, Message: Information of PID=73752, Process=TagLoader, Arguments=
+2024-10-29 15:53:40.681: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-10-29 15:53:40.877: LoadClients, Debug: 8 Rows defined for Clients
+2024-10-29 16:00:11.170: Init, Debug: RTS Driver counter: 1
+2024-10-29 16:03:45.834: InitializeRegister, Message: ********** Start the application **********
+2024-10-29 16:03:45.851: InitializeRegister, Message: Information of PID=29012, Process=TagLoader, Arguments=
+2024-10-29 16:03:45.793: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-10-29 16:11:22.127: InitializeRegister, Message: ********** Start the application **********
+2024-10-29 16:11:22.750: InitializeRegister, Message: Information of PID=19648, Process=TagLoader, Arguments=
+2024-10-29 16:11:21.419: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-10-29 16:36:29.860: InitializeRegister, Message: ********** Start the application **********
+2024-10-29 16:36:29.880: InitializeRegister, Message: Information of PID=59160, Process=TagLoader, Arguments=
+2024-10-29 16:36:29.850: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-10-29 16:36:30.024: LoadClients, Debug: 8 Rows defined for Clients
+2024-10-29 16:36:32.270: Init, Debug: RTS Driver counter: 1

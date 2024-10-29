@@ -14,11 +14,11 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Collections.Concurrent;
 
-namespace HCM.HMI.Safety.Operation.Views
+namespace HSM.HMI.Safety.Operation.Views
 {
-    using HCM.HMI.Safety.Operation.ViewModels;
-    using HCM.Utility.Configuration;
-    using HCM.Utility.Common.Catalogs;
+    using HSM.HMI.Safety.Operation.ViewModels;
+    using HSM.Utility.Configuration;
+    using HSM.Utility.Common.Catalogs;
 
     /// <summary>
     /// Interaction logic for usrLayout.xaml
@@ -105,7 +105,7 @@ namespace HCM.HMI.Safety.Operation.Views
         {            
             //Button _button = (Button)sender;
             //vmYard y = (vmYard)_button.Tag;        
-            //HCM.HMI.Safety.Operation.Behaviours.ClickZoom.ZoomYard(this.scrollXY, this.zoomScale, y.Properties.Id);      
+            //HSM.HMI.Safety.Operation.Behaviours.ClickZoom.ZoomYard(this.scrollXY, this.zoomScale, y.Properties.Id);      
         }
         #endregion
 

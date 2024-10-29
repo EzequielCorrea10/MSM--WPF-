@@ -1,4 +1,4 @@
-﻿CREATE TABLE [safety].[HCM_Zones](
+﻿CREATE TABLE [safety].[HSM_Zones](
 	[IdZone] [int] NOT NULL,
 	[IdZoneType] [int] NOT NULL,
 	[Name] [varchar](50) NOT NULL,
@@ -37,11 +37,11 @@
 	[EnableInterlock_Bit] [int] NULL,
 	[EnableInterlock_PlcValue] [int] NULL,
 	[Active] [bit] NOT NULL,
- CONSTRAINT [PK_HCM_Zones] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_HSM_Zones] PRIMARY KEY CLUSTERED 
 (
 	[IdZone] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
- CONSTRAINT [UK_HCM_Zones_PlcValue] UNIQUE NONCLUSTERED 
+ CONSTRAINT [UK_HSM_Zones_PlcValue] UNIQUE NONCLUSTERED 
 (
 	[PlcValue] ASC,
 	[IdZoneType] ASC
@@ -49,39 +49,39 @@
 ) ON [PRIMARY]
 GO
 
-CREATE UNIQUE NONCLUSTERED INDEX [IX_HCM_Zones_Name] ON [safety].[HCM_Zones]
+CREATE UNIQUE NONCLUSTERED INDEX [IX_HSM_Zones_Name] ON [safety].[HSM_Zones]
 (
 	[Name] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 
 GO
 
-ALTER TABLE [safety].[HCM_Zones] ADD  CONSTRAINT [DF_HCM_Zones_IsFirstLine]  DEFAULT ((0)) FOR [IsFirstLine]
+ALTER TABLE [safety].[HSM_Zones] ADD  CONSTRAINT [DF_HSM_Zones_IsFirstLine]  DEFAULT ((0)) FOR [IsFirstLine]
 GO
 
-ALTER TABLE [safety].[HCM_Zones] ADD  CONSTRAINT [DF_HCM_Zones_AllowFieldOperation]  DEFAULT ((1)) FOR [AllowFieldOperation]
+ALTER TABLE [safety].[HSM_Zones] ADD  CONSTRAINT [DF_HSM_Zones_AllowFieldOperation]  DEFAULT ((1)) FOR [AllowFieldOperation]
 GO
 
-ALTER TABLE [safety].[HCM_Zones] ADD  CONSTRAINT [DF_HCM_Zones_AllowManualOperation]  DEFAULT ((1)) FOR [AllowManualOperation]
+ALTER TABLE [safety].[HSM_Zones] ADD  CONSTRAINT [DF_HSM_Zones_AllowManualOperation]  DEFAULT ((1)) FOR [AllowManualOperation]
 GO
 
-ALTER TABLE [safety].[HCM_Zones] ADD  CONSTRAINT [DF_HCM_Zones_AllowManualAuthorization]  DEFAULT ((0)) FOR [AllowManualAuthorization]
+ALTER TABLE [safety].[HSM_Zones] ADD  CONSTRAINT [DF_HSM_Zones_AllowManualAuthorization]  DEFAULT ((0)) FOR [AllowManualAuthorization]
 GO
 
-ALTER TABLE [safety].[HCM_Zones] ADD  CONSTRAINT [DF_HCM_Zones_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [safety].[HSM_Zones] ADD  CONSTRAINT [DF_HSM_Zones_Active]  DEFAULT ((1)) FOR [Active]
 GO
 
-ALTER TABLE [safety].[HCM_Zones]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Zones_HCM_Zone_Types] FOREIGN KEY([IdZoneType])
-REFERENCES [safety].[HCM_Zone_Types] ([IdZoneType])
+ALTER TABLE [safety].[HSM_Zones]  WITH CHECK ADD  CONSTRAINT [FK_HSM_Zones_HSM_Zone_Types] FOREIGN KEY([IdZoneType])
+REFERENCES [safety].[HSM_Zone_Types] ([IdZoneType])
 GO
 
-ALTER TABLE [safety].[HCM_Zones] CHECK CONSTRAINT [FK_HCM_Zones_HCM_Zone_Types]
+ALTER TABLE [safety].[HSM_Zones] CHECK CONSTRAINT [FK_HSM_Zones_HSM_Zone_Types]
 GO
 
-ALTER TABLE [safety].[HCM_Zones]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Zone_Machines_Rodeo_Machines] FOREIGN KEY([IdMachineRequiredOnDisable]) REFERENCES [common].[Rodeo_Machines] ([IdMachine])
+ALTER TABLE [safety].[HSM_Zones]  WITH CHECK ADD  CONSTRAINT [FK_HSM_Zone_Machines_Rodeo_Machines] FOREIGN KEY([IdMachineRequiredOnDisable]) REFERENCES [common].[Rodeo_Machines] ([IdMachine])
 
 GO
 
-ALTER TABLE [safety].[HCM_Zones] CHECK CONSTRAINT [FK_HCM_Zone_Machines_Rodeo_Machines]
+ALTER TABLE [safety].[HSM_Zones] CHECK CONSTRAINT [FK_HSM_Zone_Machines_Rodeo_Machines]
 
 GO

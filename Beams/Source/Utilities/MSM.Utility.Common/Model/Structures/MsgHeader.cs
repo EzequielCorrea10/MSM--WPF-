@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Runtime.InteropServices;
 
-namespace HCM.Utility.Common
+namespace HSM.Utility.Common
 {
     /// <summary>
     /// Structures of the Header between Server

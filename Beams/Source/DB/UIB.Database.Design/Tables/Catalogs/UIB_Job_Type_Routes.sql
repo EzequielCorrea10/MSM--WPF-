@@ -1,4 +1,4 @@
-﻿CREATE TABLE [to].[HCM_Job_Type_Routes](
+﻿CREATE TABLE [to].[HSM_Job_Type_Routes](
 	[IdJobTypeRoute] [int] NOT NULL,
 	[IdJobType] [int] NOT NULL,
 	[IdYardOnlyApplicable] [int] NULL,
@@ -6,7 +6,7 @@
 	[IdLocationGroupEnd] [int] NOT NULL,
 	[IdMachineType] [int] NOT NULL,
 	[Active] [bit] NOT NULL,
- CONSTRAINT [PK_HCM_Job_Type_Routes] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_HSM_Job_Type_Routes] PRIMARY KEY CLUSTERED 
 (
 	[IdJobTypeRoute] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
@@ -14,7 +14,7 @@
 
 GO
  
-CREATE UNIQUE NONCLUSTERED INDEX [IX_HCM_Job_Type_Routes] ON [to].[HCM_Job_Type_Routes]
+CREATE UNIQUE NONCLUSTERED INDEX [IX_HSM_Job_Type_Routes] ON [to].[HSM_Job_Type_Routes]
 (
 	[IdJobType] ASC,
 	[IdYardOnlyApplicable] ASC,
@@ -23,44 +23,44 @@ CREATE UNIQUE NONCLUSTERED INDEX [IX_HCM_Job_Type_Routes] ON [to].[HCM_Job_Type_
 
 GO
 
-ALTER TABLE [to].[HCM_Job_Type_Routes]  WITH CHECK ADD CONSTRAINT [FK_HCM_Job_Type_Routes_HCM_Job_Types] FOREIGN KEY([IdJobType]) REFERENCES [to].[HCM_Job_Types] ([IdJobType])
+ALTER TABLE [to].[HSM_Job_Type_Routes]  WITH CHECK ADD CONSTRAINT [FK_HSM_Job_Type_Routes_HSM_Job_Types] FOREIGN KEY([IdJobType]) REFERENCES [to].[HSM_Job_Types] ([IdJobType])
 
 GO
 
-ALTER TABLE [to].[HCM_Job_Type_Routes] CHECK CONSTRAINT [FK_HCM_Job_Type_Routes_HCM_Job_Types]
+ALTER TABLE [to].[HSM_Job_Type_Routes] CHECK CONSTRAINT [FK_HSM_Job_Type_Routes_HSM_Job_Types]
 
 GO
 
-ALTER TABLE [to].[HCM_Job_Type_Routes] WITH CHECK ADD  CONSTRAINT [FK_HCM_Job_Type_Routes_Rodeo_Yards] FOREIGN KEY([IdYardOnlyApplicable]) REFERENCES [common].[Rodeo_Yards] ([IdYard])
+ALTER TABLE [to].[HSM_Job_Type_Routes] WITH CHECK ADD  CONSTRAINT [FK_HSM_Job_Type_Routes_Rodeo_Yards] FOREIGN KEY([IdYardOnlyApplicable]) REFERENCES [common].[Rodeo_Yards] ([IdYard])
 GO
 
-ALTER TABLE [to].[HCM_Job_Type_Routes] CHECK CONSTRAINT [FK_HCM_Job_Type_Routes_Rodeo_Yards]
+ALTER TABLE [to].[HSM_Job_Type_Routes] CHECK CONSTRAINT [FK_HSM_Job_Type_Routes_Rodeo_Yards]
 GO
 
-ALTER TABLE [to].[HCM_Job_Type_Routes]  WITH CHECK ADD CONSTRAINT [FK_HCM_Job_Type_Routes_HCM_Location_Groups_Begin] FOREIGN KEY([IdLocationGroupBegin]) REFERENCES [common].[HCM_Location_Groups] ([IdLocationGroup])
-
-GO
-
-ALTER TABLE [to].[HCM_Job_Type_Routes] CHECK CONSTRAINT [FK_HCM_Job_Type_Routes_HCM_Location_Groups_Begin]
+ALTER TABLE [to].[HSM_Job_Type_Routes]  WITH CHECK ADD CONSTRAINT [FK_HSM_Job_Type_Routes_HSM_Location_Groups_Begin] FOREIGN KEY([IdLocationGroupBegin]) REFERENCES [common].[HSM_Location_Groups] ([IdLocationGroup])
 
 GO
 
-ALTER TABLE [to].[HCM_Job_Type_Routes]  WITH CHECK ADD CONSTRAINT [FK_HCM_Job_Type_Routes_HCM_Location_Groups_End] FOREIGN KEY([IdLocationGroupEnd]) REFERENCES [common].[HCM_Location_Groups] ([IdLocationGroup])
+ALTER TABLE [to].[HSM_Job_Type_Routes] CHECK CONSTRAINT [FK_HSM_Job_Type_Routes_HSM_Location_Groups_Begin]
 
 GO
 
-ALTER TABLE [to].[HCM_Job_Type_Routes] CHECK CONSTRAINT [FK_HCM_Job_Type_Routes_HCM_Location_Groups_End]
+ALTER TABLE [to].[HSM_Job_Type_Routes]  WITH CHECK ADD CONSTRAINT [FK_HSM_Job_Type_Routes_HSM_Location_Groups_End] FOREIGN KEY([IdLocationGroupEnd]) REFERENCES [common].[HSM_Location_Groups] ([IdLocationGroup])
 
 GO
 
-ALTER TABLE [to].[HCM_Job_Type_Routes]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Job_Type_Routes_Rodeo_Machine_Types] FOREIGN KEY([IdMachineType]) REFERENCES [common].[Rodeo_Machine_Types] ([IdMachineType])
+ALTER TABLE [to].[HSM_Job_Type_Routes] CHECK CONSTRAINT [FK_HSM_Job_Type_Routes_HSM_Location_Groups_End]
 
 GO
 
-ALTER TABLE [to].[HCM_Job_Type_Routes] CHECK CONSTRAINT [FK_HCM_Job_Type_Routes_Rodeo_Machine_Types]
+ALTER TABLE [to].[HSM_Job_Type_Routes]  WITH CHECK ADD  CONSTRAINT [FK_HSM_Job_Type_Routes_Rodeo_Machine_Types] FOREIGN KEY([IdMachineType]) REFERENCES [common].[Rodeo_Machine_Types] ([IdMachineType])
 
 GO
 
-ALTER TABLE [to].[HCM_Job_Type_Routes] ADD  CONSTRAINT [DF_HCM_Job_Type_Routes_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [to].[HSM_Job_Type_Routes] CHECK CONSTRAINT [FK_HSM_Job_Type_Routes_Rodeo_Machine_Types]
+
+GO
+
+ALTER TABLE [to].[HSM_Job_Type_Routes] ADD  CONSTRAINT [DF_HSM_Job_Type_Routes_Active]  DEFAULT ((1)) FOR [Active]
 
 GO

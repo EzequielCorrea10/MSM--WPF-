@@ -1,4 +1,4 @@
-﻿CREATE TABLE [to].[HCM_Job_Forecasts](
+﻿CREATE TABLE [to].[HSM_Job_Forecasts](
 	[IdJob] [bigint] NOT NULL,
 	[Sequence] [smallint] NOT NULL,
 	[LocationNameBegin] [varchar](50) NULL,
@@ -21,7 +21,7 @@
 	[Notes] [varchar](max) NULL,
 	[InsDateTime] [datetimeoffset](7) NOT NULL,
 	[UpdDateTime] [datetimeoffset](7) NOT NULL,
- CONSTRAINT [PK_HCM_Job_Forecasts] PRIMARY KEY CLUSTERED
+ CONSTRAINT [PK_HSM_Job_Forecasts] PRIMARY KEY CLUSTERED
 (
 	[IdJob] ASC,
 	[Sequence] ASC
@@ -29,35 +29,35 @@
 ) ON [PROCESS] TEXTIMAGE_ON [PROCESS]
 GO
 
-ALTER TABLE [to].[HCM_Job_Forecasts] ADD  CONSTRAINT [DF_HCM_Job_Forecasts_InsDateTime]  DEFAULT (sysdatetimeoffset()) FOR [InsDateTime]
+ALTER TABLE [to].[HSM_Job_Forecasts] ADD  CONSTRAINT [DF_HSM_Job_Forecasts_InsDateTime]  DEFAULT (sysdatetimeoffset()) FOR [InsDateTime]
 GO
 
-ALTER TABLE [to].[HCM_Job_Forecasts] ADD  CONSTRAINT [DF_HCM_Job_Forecasts_UpdDateTime]  DEFAULT (sysdatetimeoffset()) FOR [UpdDateTime]
+ALTER TABLE [to].[HSM_Job_Forecasts] ADD  CONSTRAINT [DF_HSM_Job_Forecasts_UpdDateTime]  DEFAULT (sysdatetimeoffset()) FOR [UpdDateTime]
 GO
 
-CREATE NONCLUSTERED INDEX [IX_HCM_Job_Forecasts_IdJob] ON [to].[HCM_Job_Forecasts]
+CREATE NONCLUSTERED INDEX [IX_HSM_Job_Forecasts_IdJob] ON [to].[HSM_Job_Forecasts]
 (
 	[IdJob] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PROCESS]
 
 GO
 
-ALTER TABLE [to].[HCM_Job_Forecasts]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Job_Forecasts_Rodeo_Yards_Begin] FOREIGN KEY([IdYardBegin]) REFERENCES [common].[Rodeo_Yards] ([IdYard])
+ALTER TABLE [to].[HSM_Job_Forecasts]  WITH CHECK ADD  CONSTRAINT [FK_HSM_Job_Forecasts_Rodeo_Yards_Begin] FOREIGN KEY([IdYardBegin]) REFERENCES [common].[Rodeo_Yards] ([IdYard])
 
 GO
 
-ALTER TABLE [to].[HCM_Job_Forecasts] CHECK CONSTRAINT [FK_HCM_Job_Forecasts_Rodeo_Yards_Begin]
+ALTER TABLE [to].[HSM_Job_Forecasts] CHECK CONSTRAINT [FK_HSM_Job_Forecasts_Rodeo_Yards_Begin]
 
 GO
 
-ALTER TABLE [to].[HCM_Job_Forecasts]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Job_Forecasts_Rodeo_Yards_End] FOREIGN KEY([IdYardEnd]) REFERENCES [common].[Rodeo_Yards] ([IdYard])
+ALTER TABLE [to].[HSM_Job_Forecasts]  WITH CHECK ADD  CONSTRAINT [FK_HSM_Job_Forecasts_Rodeo_Yards_End] FOREIGN KEY([IdYardEnd]) REFERENCES [common].[Rodeo_Yards] ([IdYard])
 
 GO
 
-ALTER TABLE [to].[HCM_Job_Forecasts] CHECK CONSTRAINT [FK_HCM_Job_Forecasts_Rodeo_Yards_End]
+ALTER TABLE [to].[HSM_Job_Forecasts] CHECK CONSTRAINT [FK_HSM_Job_Forecasts_Rodeo_Yards_End]
 
 GO
 
-ALTER TABLE [to].[HCM_Job_Forecasts]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Job_Forecasts_HCM_Jobs] FOREIGN KEY([IdJob]) REFERENCES [to].[HCM_Jobs] ([IdJob])
+ALTER TABLE [to].[HSM_Job_Forecasts]  WITH CHECK ADD  CONSTRAINT [FK_HSM_Job_Forecasts_HSM_Jobs] FOREIGN KEY([IdJob]) REFERENCES [to].[HSM_Jobs] ([IdJob])
 
 GO

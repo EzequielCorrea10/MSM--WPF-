@@ -1,11 +1,11 @@
 ﻿
-CREATE TABLE [to].[HCM_Destination_Next_Pieces](
+CREATE TABLE [to].[HSM_Destination_Next_Pieces](
 	[L2Destination] [varchar](50) NOT NULL,
 	[Sequence] [int] NOT NULL,
 	[PieceName] [varchar](50) NOT NULL,
 	[InsDateTime] [datetimeoffset](7) NOT NULL,
 	[UpdDateTime] [datetimeoffset](7) NOT NULL,
- CONSTRAINT [PK_HCM_Destination_Next_Pieces] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_HSM_Destination_Next_Pieces] PRIMARY KEY CLUSTERED 
 (
 	[L2Destination] ASC,
 	[Sequence] ASC
@@ -13,8 +13,8 @@ CREATE TABLE [to].[HCM_Destination_Next_Pieces](
 ) ON [PROCESS]
 GO
 
-ALTER TABLE [to].[HCM_Destination_Next_Pieces] ADD  CONSTRAINT [DF_HCM_Destination_Next_Pieces_InsDateTime]  DEFAULT (sysdatetimeoffset()) FOR [InsDateTime]
+ALTER TABLE [to].[HSM_Destination_Next_Pieces] ADD  CONSTRAINT [DF_HSM_Destination_Next_Pieces_InsDateTime]  DEFAULT (sysdatetimeoffset()) FOR [InsDateTime]
 GO
 
-ALTER TABLE [to].[HCM_Destination_Next_Pieces] ADD  CONSTRAINT [DF_HCM_Destination_Next_Pieces_UpdDateTime]  DEFAULT (sysdatetimeoffset()) FOR [UpdDateTime]
+ALTER TABLE [to].[HSM_Destination_Next_Pieces] ADD  CONSTRAINT [DF_HSM_Destination_Next_Pieces_UpdDateTime]  DEFAULT (sysdatetimeoffset()) FOR [UpdDateTime]
 GO

@@ -1,4 +1,4 @@
-﻿CREATE TABLE [to].[HCM_Jobs] (
+﻿CREATE TABLE [to].[HSM_Jobs] (
     [IdJob]                 BIGINT             IDENTITY (1, 1) NOT NULL,
     [IdJobType]             INT                NOT NULL,
     [IdTOStatus]            INT                NOT NULL,
@@ -45,26 +45,26 @@
     [UsernameRequest]       VARCHAR (40)       NULL,
     [UsernameCancel]        VARCHAR (40)       NULL,
     [Notes]                 VARCHAR (MAX)      NULL,
-    [InsDateTime]           DATETIMEOFFSET (7) CONSTRAINT [DF_HCM_Jobs_InsDateTime] DEFAULT (sysdatetimeoffset()) NULL,
-    [UpdDateTime]           DATETIMEOFFSET (7) CONSTRAINT [DF_HCM_Jobs_UpdDateTime] DEFAULT (sysdatetimeoffset()) NULL,
-    CONSTRAINT [PK_HCM_Jobs] PRIMARY KEY CLUSTERED ([IdJob] ASC) ON [PROCESS],
-    CONSTRAINT [FK_Rodeo_Yards_Begin_Req_HCM_Jobs] FOREIGN KEY ([IdYardBeginReq]) REFERENCES [common].[Rodeo_Yards] ([IdYard]),
-    CONSTRAINT [FK_Rodeo_Yards_Begin_HCM_Jobs] FOREIGN KEY ([IdYardBegin]) REFERENCES [common].[Rodeo_Yards] ([IdYard]),
-    CONSTRAINT [FK_Rodeo_Yards_End_Req_HCM_Jobs] FOREIGN KEY ([IdYardEndReq]) REFERENCES [common].[Rodeo_Yards] ([IdYard]),
-    CONSTRAINT [FK_Rodeo_Yards_End_HCM_Jobs] FOREIGN KEY ([IdYardEnd]) REFERENCES [common].[Rodeo_Yards] ([IdYard]),
-    CONSTRAINT [FK_Rodeo_Yards_Redirect_HCM_Jobs] FOREIGN KEY ([IdYardRedirect]) REFERENCES [common].[Rodeo_Yards] ([IdYard]),
-    CONSTRAINT [FK_HCM_Jobs_Rodeo_TO_Statuses] FOREIGN KEY ([IdTOStatus]) REFERENCES [to].[Rodeo_TO_Statuses] ([IdTOStatus]),
-    CONSTRAINT [FK_HCM_Jobs_HCM_Job_Types] FOREIGN KEY ([IdJobType]) REFERENCES [to].[HCM_Job_Types] ([IdJobType])
+    [InsDateTime]           DATETIMEOFFSET (7) CONSTRAINT [DF_HSM_Jobs_InsDateTime] DEFAULT (sysdatetimeoffset()) NULL,
+    [UpdDateTime]           DATETIMEOFFSET (7) CONSTRAINT [DF_HSM_Jobs_UpdDateTime] DEFAULT (sysdatetimeoffset()) NULL,
+    CONSTRAINT [PK_HSM_Jobs] PRIMARY KEY CLUSTERED ([IdJob] ASC) ON [PROCESS],
+    CONSTRAINT [FK_Rodeo_Yards_Begin_Req_HSM_Jobs] FOREIGN KEY ([IdYardBeginReq]) REFERENCES [common].[Rodeo_Yards] ([IdYard]),
+    CONSTRAINT [FK_Rodeo_Yards_Begin_HSM_Jobs] FOREIGN KEY ([IdYardBegin]) REFERENCES [common].[Rodeo_Yards] ([IdYard]),
+    CONSTRAINT [FK_Rodeo_Yards_End_Req_HSM_Jobs] FOREIGN KEY ([IdYardEndReq]) REFERENCES [common].[Rodeo_Yards] ([IdYard]),
+    CONSTRAINT [FK_Rodeo_Yards_End_HSM_Jobs] FOREIGN KEY ([IdYardEnd]) REFERENCES [common].[Rodeo_Yards] ([IdYard]),
+    CONSTRAINT [FK_Rodeo_Yards_Redirect_HSM_Jobs] FOREIGN KEY ([IdYardRedirect]) REFERENCES [common].[Rodeo_Yards] ([IdYard]),
+    CONSTRAINT [FK_HSM_Jobs_Rodeo_TO_Statuses] FOREIGN KEY ([IdTOStatus]) REFERENCES [to].[Rodeo_TO_Statuses] ([IdTOStatus]),
+    CONSTRAINT [FK_HSM_Jobs_HSM_Job_Types] FOREIGN KEY ([IdJobType]) REFERENCES [to].[HSM_Job_Types] ([IdJobType])
 ) ON [PROCESS] TEXTIMAGE_ON [PROCESS];
 GO
 
-CREATE NONCLUSTERED INDEX [IX_HCM_Jobs_IdJobType]
-    ON [to].[HCM_Jobs]([IdJobType] ASC)
+CREATE NONCLUSTERED INDEX [IX_HSM_Jobs_IdJobType]
+    ON [to].[HSM_Jobs]([IdJobType] ASC)
     ON [PROCESS];
 GO
 
-CREATE NONCLUSTERED INDEX [IX_HCM_Jobs_IdTOStatus]
-    ON [to].[HCM_Jobs]([IdTOStatus] ASC)
+CREATE NONCLUSTERED INDEX [IX_HSM_Jobs_IdTOStatus]
+    ON [to].[HSM_Jobs]([IdTOStatus] ASC)
     ON [PROCESS];
 GO
 

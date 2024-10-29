@@ -7,9 +7,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 
-namespace HCM.HMI.Safety.Operation.Selectors
+namespace HSM.HMI.Safety.Operation.Selectors
 {
-    using HCM.HMI.Safety.Operation.ViewModels;
+    using HSM.HMI.Safety.Operation.ViewModels;
 
     public class LayoutElementSelector : DataTemplateSelector
     {

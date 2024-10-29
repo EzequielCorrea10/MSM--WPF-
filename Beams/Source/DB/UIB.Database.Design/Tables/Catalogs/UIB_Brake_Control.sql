@@ -1,4 +1,4 @@
-﻿CREATE TABLE [common].[HCM_Brake_Control](
+﻿CREATE TABLE [common].[HSM_Brake_Control](
 	[IdBrakeControl] [int] NOT NULL,
 	[IdBrakeType] [int] NOT NULL,
 	[Name] [varchar](50) NOT NULL,
@@ -9,11 +9,11 @@
 	[AlertLevel] [tinyint] NOT NULL DEFAULT 0, -- 0 = Green, 1 = Yellow, 2 = Red
 	[Order] [smallint] NOT NULL,
 	[Active] [bit] NOT NULL,
- CONSTRAINT [PK_HCM_Brake_Control] PRIMARY KEY CLUSTERED
+ CONSTRAINT [PK_HSM_Brake_Control] PRIMARY KEY CLUSTERED
 (
 	[IdBrakeControl] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
- CONSTRAINT [UK_HCM_Brake_Control_Name] UNIQUE NONCLUSTERED 
+ CONSTRAINT [UK_HSM_Brake_Control_Name] UNIQUE NONCLUSTERED 
 (
 	[Name] ASC,
 	[IdBrakeType] ASC
@@ -21,13 +21,13 @@
 ) ON [PRIMARY]
 GO
 
-ALTER TABLE [common].[HCM_Brake_Control]  WITH CHECK ADD CONSTRAINT [FK_HCM_Brake_Control_HCM_Brake_Types] FOREIGN KEY([IdBrakeType]) REFERENCES [common].[HCM_Brake_Types] ([IdBrakeType])
+ALTER TABLE [common].[HSM_Brake_Control]  WITH CHECK ADD CONSTRAINT [FK_HSM_Brake_Control_HSM_Brake_Types] FOREIGN KEY([IdBrakeType]) REFERENCES [common].[HSM_Brake_Types] ([IdBrakeType])
 
 GO
 
-ALTER TABLE [common].[HCM_Brake_Control] CHECK CONSTRAINT [FK_HCM_Brake_Control_HCM_Brake_Types]
+ALTER TABLE [common].[HSM_Brake_Control] CHECK CONSTRAINT [FK_HSM_Brake_Control_HSM_Brake_Types]
 
 GO
 
-ALTER TABLE [common].[HCM_Brake_Control] ADD  CONSTRAINT [DF_HCM_Brake_Control_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [common].[HSM_Brake_Control] ADD  CONSTRAINT [DF_HSM_Brake_Control_Active]  DEFAULT ((1)) FOR [Active]
 GO

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace HCM.Utility.Configuration
+namespace HSM.Utility.Configuration
 {
     /// <summary>
     /// Configuration class of Root Section.
     /// </summary>
-    [XmlRoot("HCM", Namespace = "", IsNullable = false)]
+    [XmlRoot("HSM", Namespace = "", IsNullable = false)]
     public class RootSection
     {
         /// <summary>

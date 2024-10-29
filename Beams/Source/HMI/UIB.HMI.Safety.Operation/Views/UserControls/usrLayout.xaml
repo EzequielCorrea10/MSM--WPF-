@@ -1,18 +1,18 @@
-﻿<UserControl x:Class="HCM.HMI.Safety.Operation.Views.usrLayout"
+﻿<UserControl x:Class="HSM.HMI.Safety.Operation.Views.usrLayout"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:sys="clr-namespace:System;assembly=mscorlib"
              xmlns:jctr="clr-namespace:Janus.Rodeo.Windows.Library.UI.Controls;assembly=Janus.Rodeo.Windows.Library.UI.Controls"
              xmlns:jwidgets="clr-namespace:Janus.Rodeo.Windows.Library.UI.Controls.Widgets;assembly=Janus.Rodeo.Windows.Library.UI.Controls"
-             xmlns:lctr="clr-namespace:HCM.Utility.Controls;assembly=HCM.Utility.Controls"
-             xmlns:lenum="clr-namespace:HCM.Utility.Common.Enumerations;assembly=HCM.Utility.Common"
-             xmlns:venum="clr-namespace:HCM.HMI.Safety.Operation.Enumerations"
-             xmlns:converter="clr-namespace:HCM.HMI.Safety.Operation.Converters"
-             xmlns:selector="clr-namespace:HCM.HMI.Safety.Operation.Selectors"
-             xmlns:behaviour="clr-namespace:HCM.HMI.Safety.Operation.Behaviours"
+             xmlns:lctr="clr-namespace:HSM.Utility.Controls;assembly=HSM.Utility.Controls"
+             xmlns:lenum="clr-namespace:HSM.Utility.Common.Enumerations;assembly=HSM.Utility.Common"
+             xmlns:venum="clr-namespace:HSM.HMI.Safety.Operation.Enumerations"
+             xmlns:converter="clr-namespace:HSM.HMI.Safety.Operation.Converters"
+             xmlns:selector="clr-namespace:HSM.HMI.Safety.Operation.Selectors"
+             xmlns:behaviour="clr-namespace:HSM.HMI.Safety.Operation.Behaviours"
              xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-             xmlns:view="clr-namespace:HCM.HMI.Safety.Operation.Views"              
+             xmlns:view="clr-namespace:HSM.HMI.Safety.Operation.Views"              
              BorderThickness="0">
     <UserControl.Resources>
         <converter:LayoutLeftMarginConverter x:Key="layoutLeftMarginConverter" />
@@ -23,18 +23,18 @@
         <converter:LayoutLeftConverter x:Key="layoutLeftConverter" />
         <selector:LayoutElementSelector x:Key="layoutElementSelector" />
         <converter:LayoutMachineYardConverter x:Key="layoutMachineYardConverter"/>
-        <BitmapImage x:Key="img_GridLEFT" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Images/LeftArrowGrid.png" RenderOptions.BitmapScalingMode="HighQuality" />
-        <BitmapImage x:Key="img_GridRIGHT" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Images/RightArrowGrid.png" RenderOptions.BitmapScalingMode="HighQuality" />
-        <BitmapImage x:Key="img_Binocular" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Icons/binocular.png" RenderOptions.BitmapScalingMode="HighQuality" />
-        <BitmapImage x:Key="img_ZoomOut" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Icons/ZoomOut.png" RenderOptions.BitmapScalingMode="HighQuality" />
-        <BitmapImage x:Key="img_ZoomIn" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Icons/ZoomIn.png" RenderOptions.BitmapScalingMode="HighQuality" />
-        <BitmapImage x:Key="img_Show" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Icons/Show.png" RenderOptions.BitmapScalingMode="HighQuality" />
-        <BitmapImage x:Key="Img_Cardinals_1" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Images/cardinals_1.png" RenderOptions.BitmapScalingMode="HighQuality" />
-        <BitmapImage x:Key="Img_Cardinals_2" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Images/cardinals_2.png" RenderOptions.BitmapScalingMode="HighQuality" />
-        <BitmapImage x:Key="RightArrow" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Icons/rightArrow.png" RenderOptions.BitmapScalingMode="HighQuality" />
-        <BitmapImage x:Key="DownArrow" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Icons/coilDrop.png" RenderOptions.BitmapScalingMode="HighQuality" />
-        <BitmapImage x:Key="DownArrow2" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Icons/camera.png" RenderOptions.BitmapScalingMode="HighQuality" />
-        <BitmapImage x:Key="Beam" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Icons/Beam.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="img_GridLEFT" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Images/LeftArrowGrid.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="img_GridRIGHT" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Images/RightArrowGrid.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="img_Binocular" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Icons/binocular.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="img_ZoomOut" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Icons/ZoomOut.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="img_ZoomIn" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Icons/ZoomIn.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="img_Show" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Icons/Show.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="Img_Cardinals_1" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Images/cardinals_1.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="Img_Cardinals_2" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Images/cardinals_2.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="RightArrow" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Icons/rightArrow.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="DownArrow" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Icons/coilDrop.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="DownArrow2" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Icons/camera.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="Beam" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Icons/Beam.png" RenderOptions.BitmapScalingMode="HighQuality" />
         <!-- Pixel  -->
         <sys:Double x:Key="LWidth">3000</sys:Double>
         <sys:Double x:Key="LHeight">665</sys:Double>
@@ -571,7 +571,7 @@
                     </Grid>
 
                     <Grid Name="Beams">
-
+                        
                         
                     </Grid>
 

@@ -1,0 +1,7 @@
+2024-10-29 16:35:35.833: InitializeRegister, Message: ********** Start the application **********
+2024-10-29 16:35:35.845: InitializeRegister, Message: Information of PID=14440, Process=HSM.HMI.Safety.Operation, Arguments=
+2024-10-29 16:35:35.798: .ctor, Debug: Begin Layout
+2024-10-29 16:36:28.936: InitializeRegister, Message: ********** Start the application **********
+2024-10-29 16:36:28.961: InitializeRegister, Message: Information of PID=51016, Process=HSM.HMI.Safety.Operation, Arguments=
+2024-10-29 16:36:28.890: .ctor, Debug: Begin Layout
+2024-10-29 16:36:29.171: Init, Debug: RTS Driver counter: 1

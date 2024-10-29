@@ -1,4 +1,4 @@
-﻿CREATE TABLE [tracking].[HCM_Display_Piece_Groups](
+﻿CREATE TABLE [tracking].[HSM_Display_Piece_Groups](
 	[IdDisplayPieceGroup] [int] NOT NULL,
 	[IdDisplayPieceGroupParent] [int] NULL,
 	[Name] [varchar](50) NOT NULL,
@@ -7,20 +7,20 @@
 	[BackgroundColor] [varchar](10) NOT NULL,
 	[ForegroundColor] [varchar](10) NOT NULL,
 	[Active] [bit] NOT NULL,
- CONSTRAINT [PK_HCM_Display_Piece_Groups] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_HSM_Display_Piece_Groups] PRIMARY KEY CLUSTERED 
 (
 	[IdDisplayPieceGroup] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
 
-ALTER TABLE [tracking].[HCM_Display_Piece_Groups]  WITH CHECK ADD  CONSTRAINT [FK_HCM_Display_Piece_Groups_HCM_Display_Piece_Groups] FOREIGN KEY([IdDisplayPieceGroupParent])
-REFERENCES [tracking].[HCM_Display_Piece_Groups] ([IdDisplayPieceGroup])
+ALTER TABLE [tracking].[HSM_Display_Piece_Groups]  WITH CHECK ADD  CONSTRAINT [FK_HSM_Display_Piece_Groups_HSM_Display_Piece_Groups] FOREIGN KEY([IdDisplayPieceGroupParent])
+REFERENCES [tracking].[HSM_Display_Piece_Groups] ([IdDisplayPieceGroup])
 GO
 
-ALTER TABLE [tracking].[HCM_Display_Piece_Groups] CHECK CONSTRAINT [FK_HCM_Display_Piece_Groups_HCM_Display_Piece_Groups]
+ALTER TABLE [tracking].[HSM_Display_Piece_Groups] CHECK CONSTRAINT [FK_HSM_Display_Piece_Groups_HSM_Display_Piece_Groups]
 GO
 
-ALTER TABLE [tracking].[HCM_Display_Piece_Groups] ADD  CONSTRAINT [DF_HCM_Display_Piece_Groups_Active]  DEFAULT ((1)) FOR [Active]
+ALTER TABLE [tracking].[HSM_Display_Piece_Groups] ADD  CONSTRAINT [DF_HSM_Display_Piece_Groups_Active]  DEFAULT ((1)) FOR [Active]
 GO
 

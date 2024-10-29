@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace HCM.Utility.Configuration
+namespace HSM.Utility.Configuration
 {
     using Janus.Rodeo.Windows.Process.Rd_WatchDog;
 

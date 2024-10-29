@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace HCM.Database
+namespace HSM.Database
 {
     /// <summary>
     /// Class to make functions specifically of Linq

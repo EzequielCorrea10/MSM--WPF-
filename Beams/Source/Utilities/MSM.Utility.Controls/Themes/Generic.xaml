@@ -4,9 +4,9 @@
     xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
     xmlns:System="clr-namespace:System;assembly=mscorlib"
     xmlns:jctr="clr-namespace:Janus.Rodeo.Windows.Library.UI.Controls;assembly=Janus.Rodeo.Windows.Library.UI.Controls"
-    xmlns:lctr="clr-namespace:HCM.Utility.Controls"
-    xmlns:lconv="clr-namespace:HCM.Utility.Controls.Converters"
-    xmlns:lenum="clr-namespace:HCM.Utility.Common.Enumerations;assembly=HCM.Utility.Common">
+    xmlns:lctr="clr-namespace:HSM.Utility.Controls"
+    xmlns:lconv="clr-namespace:HSM.Utility.Controls.Converters"
+    xmlns:lenum="clr-namespace:HSM.Utility.Common.Enumerations;assembly=HSM.Utility.Common">
 
     <SolidColorBrush x:Key="AlternativeRowColor" Color="#FF475D49"/>
 
@@ -81,19 +81,19 @@
     <BitmapImage x:Key="img_OnIndicator" UriSource="../Themes/Resources/Images/IndicatorOn.png" RenderOptions.BitmapScalingMode="HighQuality" />
     <BitmapImage x:Key="img_OnGreenIndicator" UriSource="../Themes/Resources/Images/IndicatorGreen.png" RenderOptions.BitmapScalingMode="HighQuality" />
 
-    <BitmapImage x:Key="img_TO" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/TO.png" RenderOptions.BitmapScalingMode="HighQuality" />
-    <BitmapImage x:Key="img_Interlocks" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/interlocks.png" RenderOptions.BitmapScalingMode="HighQuality" />
-    <BitmapImage x:Key="img_Failure" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/Troubleshooting.png" RenderOptions.BitmapScalingMode="HighQuality" />
-    <BitmapImage x:Key="img_LimitSwitches" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/LS.png" RenderOptions.BitmapScalingMode="HighQuality" />
-    <BitmapImage x:Key="img_Drives" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/drives.png" RenderOptions.BitmapScalingMode="HighQuality" />
-    <BitmapImage x:Key="img_Scanner" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/scanner.png" RenderOptions.BitmapScalingMode="HighQuality" />
-    <BitmapImage x:Key="img_Camera" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/camera.png" RenderOptions.BitmapScalingMode="HighQuality" />
-    <BitmapImage x:Key="img_Alarms" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/alarms.png" RenderOptions.BitmapScalingMode="HighQuality" />
-    <BitmapImage x:Key="img_Saddle" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/Desktop/restrictlayout.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_TO" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Desktop/TO.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Interlocks" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Desktop/interlocks.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Failure" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Desktop/Troubleshooting.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_LimitSwitches" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Desktop/LS.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Drives" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Desktop/drives.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Scanner" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Desktop/scanner.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Camera" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Desktop/camera.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Alarms" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Desktop/alarms.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Saddle" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Desktop/restrictlayout.png" RenderOptions.BitmapScalingMode="HighQuality" />
 
-    <BitmapImage x:Key="img_ParkingLocation" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/CarLocation/unknownPattern.jpg" RenderOptions.BitmapScalingMode="HighQuality" />
-    <BitmapImage x:Key="img_Saddle_No_Piece" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/CarLocation/no_piece_small.png" RenderOptions.BitmapScalingMode="HighQuality" />
-    <BitmapImage x:Key="img_Saddle_Piece_Present" UriSource="pack://application:,,,/HCM.Utility.Controls;component/Themes/Resources/CarLocation/piece_present_small.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_ParkingLocation" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/CarLocation/unknownPattern.jpg" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Saddle_No_Piece" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/CarLocation/no_piece_small.png" RenderOptions.BitmapScalingMode="HighQuality" />
+    <BitmapImage x:Key="img_Saddle_Piece_Present" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/CarLocation/piece_present_small.png" RenderOptions.BitmapScalingMode="HighQuality" />
 
     <BitmapImage x:Key="img_Departure_Saddles" UriSource="../Themes/Resources/Desktop/daparture_saddles.png" RenderOptions.BitmapScalingMode="HighQuality" />
     <BitmapImage x:Key="img_Arrival_Saddles" UriSource="../Themes/Resources/Desktop/arrival_saddles.png" RenderOptions.BitmapScalingMode="HighQuality" />

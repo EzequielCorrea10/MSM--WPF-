@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("HCM Controls Utility")]
+[assembly: AssemblyTitle("HSM Controls Utility")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Janus Automation")]
-[assembly: AssemblyProduct("HCM.Utility.Controls")]
+[assembly: AssemblyProduct("HSM.Utility.Controls")]
 [assembly: AssemblyCopyright("Copyright © JA 2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

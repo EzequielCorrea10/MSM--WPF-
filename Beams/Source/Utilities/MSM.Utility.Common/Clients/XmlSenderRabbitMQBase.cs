@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Runtime.InteropServices;
 
-namespace HCM.Utility.Common.Clients
+namespace HSM.Utility.Common.Clients
 {
     using Janus.Rodeo.Windows.Library.Rd_Log;
     using Janus.Rodeo.Windows.Library.Rd_Common;

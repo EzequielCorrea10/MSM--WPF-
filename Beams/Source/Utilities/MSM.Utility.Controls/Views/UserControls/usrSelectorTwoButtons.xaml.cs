@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace HCM.Utility.Controls
+namespace HSM.Utility.Controls
 {
     /// <summary>
     /// Interaction logic for usrSelectorTwoButtons.xaml

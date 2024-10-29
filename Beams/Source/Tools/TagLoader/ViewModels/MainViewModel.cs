@@ -8,7 +8,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HCM.Database;
+using HSM.Database;
 using TagLoader.Handlers;
 
 namespace TagLoader.ViewModels
