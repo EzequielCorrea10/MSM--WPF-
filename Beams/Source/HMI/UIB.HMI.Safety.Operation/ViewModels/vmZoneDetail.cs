@@ -13,11 +13,10 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         string _zone_name;
         string _beams;
 
-        public vmZoneDetail(string zone_name, string beams)
+        public vmZoneDetail(string zone_name)
     : base()
         {
             ZoneName = zone_name;
-            Beams = beams;
         }
         #endregion
 

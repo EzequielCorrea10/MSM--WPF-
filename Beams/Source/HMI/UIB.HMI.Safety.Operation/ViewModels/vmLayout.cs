@@ -33,6 +33,9 @@ namespace HSM.HMI.Safety.Operation.ViewModels
     using HSM.HMI.Safety.Operation.Views.Windows;
     using System.Reflection;
     using System.IO;
+    using System.Text.RegularExpressions;
+    using System.Security.Policy;
+    using System.Windows.Shell;
 
     //using HSM.HMI.Safety.Operation.Enumerations;
 
@@ -64,6 +67,8 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         private bool _requests_visible;
         private bool _general_layout;
         private string _zone_name;
+        private List<string> _zones;
+        private List<Beam> _beams;
 
         private Dictionary<string, object> _allMachine;
         private Dictionary<string, object> _machineSelected;
@@ -172,16 +177,31 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             }
         }
 
-        public string Beams
+        public List<string> Zones
         {
-            get { return this._zone_name; }
+            get { return this._zones; }
             set
             {
-                if (this._zone_name != value)
+                if (this._zones != value)
                 {
-                    this._zone_name = value;
+                    this._zones = value;
 
-                    this.OnPropertyChanged("ZoneName");
+                    this.OnPropertyChanged("Zones");
+
+                }
+            }
+        }
+
+        public List<Beam> Beams
+        {
+            get { return this._beams; }
+            set
+            {
+                if (this._beams != value)
+                {
+                    this._beams = value;
+
+                    this.OnPropertyChanged("Beams");
 
                 }
             }
@@ -605,6 +625,15 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
         private void Main()
         {
+            //Inicializo las zonas
+            _zones = new List<string>();
+            _beams = new List<Beam>();
+
+            _zones.Add("Straightener");
+            _zones.Add("CollectingBedEntryWest");
+            _zones.Add("CollectingBedExitQueueWest");
+            _zones.Add("CollectingBedExitWest");
+
             this._cancelTask = new CancellationTokenSource();
             this._runningTask = new Task(() => DoProcess(this._cancelTask.Token), this._cancelTask.Token);
             this._runningTask.Start();
@@ -685,11 +714,38 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
         private void SendExecute(object parameter)
         {
-            ZoneName = parameter.ToString();
-            Beams = parameter.ToString();
-            vmZoneDetail generalDetail0s = new vmZoneDetail(parameter.ToString(), "test");
+            ZoneName = Regex.Replace(parameter.ToString(), "(?<!^)([A-Z])", " $1");
+            vmZoneDetail generalDetail0s = new vmZoneDetail(ZoneName);
             ZoneDetail zoneDetail = new ZoneDetail(this);
             zoneDetail.ShowDialog();
+        }
+
+        private void BeamsInZone( List<string>zones)
+        {
+            for (int i = 0; i < zones.Count; i++)
+            {
+                string zoneBeam;
+                if (!RodeoHandler.Tag.GetText(string.Format("MSM." + zones[i], Configurations.General.RodeoSector), out zoneBeam))
+                {
+                    throw new Exception("Error");
+                }
+                string[] beamsInZoneName = zoneBeam.Split(',');
+                
+                for (int j = 0; j < beamsInZoneName.Length; j++)
+                {
+                    var beam = new Beam(beamsInZoneName[j], zones[i]);
+                    var beamExist = Beams.Where(x => x.Name == beam.Name && x.Zone == beam.Zone).FirstOrDefault();
+
+                    if (beamExist == null)
+                    {
+                        Beams.Add(beam);
+                    }
+                }
+            }
+            var dupes = Beams.GroupBy(x => x)
+                    .Where(x => x.Skip(1).Any())
+                   .Select(x => x).ToArray();
+
         }
 
         private void DoProcess(CancellationToken token)
@@ -710,20 +766,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                 {
                                     lock (this._lockTO)
                                     {
-                                        string value;
-                                        if (!RodeoHandler.Tag.GetText(string.Format("MSM.Zone_1_Beams", Configurations.General.RodeoSector), out value))
-                                        {
-                                            throw new Exception("Error");
-                                        }
-                                        string[] beamsName = value.Split(',');
-                                        Beam[] beams = new Beam[beamsName.Length];
-
-                                        // Ahora `parts` es un arreglo con cada segmento individual
-                                        for (int i = 0; i < beamsName.Length; i++)
-                                        {
-                                            beams[i] = new Beam(beamsName[i], beamsName[i]); 
-                                        }
-
+                                        BeamsInZone(Zones);
                                     }
 
                                     Thread.Sleep(250);

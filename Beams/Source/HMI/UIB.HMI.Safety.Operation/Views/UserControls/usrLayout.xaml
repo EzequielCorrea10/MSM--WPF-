@@ -497,25 +497,17 @@
                         </Rectangle>
 
                         <!-- Imágenes de flechas -->
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="202,114,1256,505" Opacity="0.5"/>
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="712,114,758,505" RenderTransformOrigin="-0.84,0.66" Opacity="0.5"/>
-                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1268,114,202,505" Opacity="0.5"/>
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="736,118,734,501" RenderTransformOrigin="-0.84,0.66" Opacity="0.5"/>
 
                         <!-- Collecting BedEntry -->
                         <Border x:Name="West" BorderThickness="5,5" BorderBrush="Red" Margin="79,47,1136,431"/>
-                        <Rectangle Margin="79,47,1136,431" IsHitTestVisible="True" Fill="Transparent">
-                            <Rectangle.InputBindings>
-                                <MouseBinding Gesture="LeftClick" Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="ExitWest"/>
-                            </Rectangle.InputBindings>
-                        </Rectangle>
+                        <TextBlock HorizontalAlignment="Left" Text="Collecting Bed Entry" FontSize="15" Height="50" Margin="165,130,0,489" />
 
                         <!-- Collecting WestEntry -->
                         <Border x:Name="East" BorderThickness="5,5" BorderBrush="Red" Margin="1139,47,75,433"/>
-                        <Rectangle Margin="1139,47,75,433" IsHitTestVisible="True" Fill="Transparent">
-                            <Rectangle.InputBindings>
-                                <MouseBinding Gesture="LeftClick" Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="ExitWest"/>
-                            </Rectangle.InputBindings>
-                        </Rectangle>
+                        <TextBlock HorizontalAlignment="Left" Text="Collecting Bed Entry West" FontSize="15" Height="50" Margin="1207,130,0,489" RenderTransformOrigin="0.5,0.75" />
+
+
                     </Grid>
 
                     <Grid>
@@ -526,16 +518,12 @@
                                     <GradientStop Offset="0.5" Color="#222222"/>
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
-                            <Rectangle.InputBindings>
-                                <MouseBinding Gesture="LeftClick" Command="{Binding Path=DataContext.FooCommand , RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
-                                            CommandParameter="Queue" />
-                            </Rectangle.InputBindings>
                         </Rectangle>
 
 
                         <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="202,324,1268,295" Opacity="0.5"/>
-                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="712,324,758,295" RenderTransformOrigin="-0.84,0.66" Opacity="0.5"/>
                         <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1268,324,202,295" Opacity="0.5"/>
+                        <TextBlock HorizontalAlignment="Center" Text="Collecting Bed Exit Queue West" FontSize="15" Height="50" Margin="0,324,0,295" />
 
                     </Grid>
 
@@ -550,27 +538,19 @@
                         </Rectangle>
 
                         <!-- Botones de flechas -->
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="202,518,1268,101" Opacity="0.5" />
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="710,518,760,101" RenderTransformOrigin="-0.26,0.52" Opacity="0.5" />
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="1268,518,202,101" RenderTransformOrigin="-0.26,0.52" Opacity="0.5" />
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="735,504,735,115" RenderTransformOrigin="-0.26,0.52" Opacity="0.5" />
 
                         <!-- Collecting BedExit -->
                         <Border x:Name="WestD" BorderThickness="5,5" BorderBrush="Red" Margin="77,435,1136,47" />
-                        <Rectangle Margin="77,435,1136,47" IsHitTestVisible="True" Fill="Transparent">
-                            <Rectangle.InputBindings>
-                                <MouseBinding Gesture="LeftClick" Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="ExitWest" />
-                            </Rectangle.InputBindings>
-                        </Rectangle>
+                        <TextBlock HorizontalAlignment="Left" Text="Collecting Bed Exit" FontSize="15" Height="50" Margin="169,516,0,103" />
+
 
                         <!-- Collecting WestExit -->
                         <Border x:Name="EastD" BorderThickness="5,5" BorderBrush="Red" Margin="1138,435,78,47" />
-                        <Rectangle Margin="1138,435,78,47" IsHitTestVisible="True" Fill="Transparent">
-                            <Rectangle.InputBindings>
-                                <MouseBinding Gesture="LeftClick" Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="ExitWest" />
-                            </Rectangle.InputBindings>
-                        </Rectangle>
+                        <TextBlock HorizontalAlignment="Left" Text="Collecting Bed Exit West" FontSize="15" Height="50" Margin="1210,516,0,103" />
+
                     </Grid>
-                    
+
                     <Grid Name="Outisde">
                         <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,616,76,0" />
                         <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,46,76,0" />
@@ -591,8 +571,8 @@
                     </Grid>
 
                     <Grid Name="Beams">
-                        
-                        
+
+
                     </Grid>
 
                     <Border Name="zoomRectangle" BorderThickness="1" BorderBrush="WhiteSmoke" Margin="0,0,0,0" Width="0" Height="0" HorizontalAlignment="Left" VerticalAlignment="Top" />

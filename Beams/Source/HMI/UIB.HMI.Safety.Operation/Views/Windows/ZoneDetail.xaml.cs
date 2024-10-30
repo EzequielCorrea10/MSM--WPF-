@@ -27,7 +27,7 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
         {
             InitializeComponent();
 
-            this.controller = new vmZoneDetail(layout.ZoneName, layout.Beams);
+            this.controller = new vmZoneDetail(layout.ZoneName);
 
             this.Loaded += winEStopDetails_Loaded;
             this.Closing += winEStopDetails_Closing;
