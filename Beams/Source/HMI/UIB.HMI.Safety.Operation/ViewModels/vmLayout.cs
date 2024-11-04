@@ -42,29 +42,16 @@ namespace HSM.HMI.Safety.Operation.ViewModels
     public class vmLayout : ModelViewBase
     {
         #region private attributes
-      //  private vmZoneSection[] _sections;
-      // // private vmLocation[] _locations;
-      ////  private vmPosition[] _positions;
-      //  private vmFence[] _fences;
-      //  private vmRequest[] _requests;
-      //  private vmZone _fly_zone;
-      // // private vmMachine[] _machines;
-      //  //private vmMaint _maint;
-      //  private vmZoneTemporaryDrawing _temporary_drawing;
 
         private EventWaitHandle _layoutElementSem;
         private readonly object _layoutElementLock;
-        private ObservableCollection<object> _lstLayoutElements;
+        private List<object> _lstLayoutElements;
 
-        private bool _first_line_visible;
-        private bool _temporary_zone_visible;
-        private bool _layer1_visible;
-        private bool _layer2_visible;
-        private bool _fence_visible;
-        private bool _position_visible;
-        private bool _transport_order_visible;
-        private bool _machine_visible;
-        private bool _requests_visible;
+        private ObservableCollection<Beam> _beamsBedExit;
+        private ObservableCollection<Beam> _beamsInQueue;
+        private ObservableCollection<Beam> _beamsBedEntry;
+
+
         private bool _general_layout;
         private string _zone_name;
         private List<string> _zones;
@@ -111,24 +98,13 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         /// <param name="machines"></param>
         /// <param name="maint"></param>
         /// <param name="locations"></param>
-        public vmLayout(CT_Yard[] yards)
+        public vmLayout()
             : base()
         {
 
             RdTrace.Debug("Begin Layout");
-            this._first_line_visible = true;
-            this._temporary_zone_visible = true;
-            this._fence_visible = false;
-            this._layer1_visible = false;
-            this._layer2_visible = false;
-            this._transport_order_visible = false;
-            this._machine_visible = true;
-            this._requests_visible = true;
-            this._fence_visible = true;
-            this._position_visible = true;
             this._CreateTemporaryZoneCommand = new RelayCommand(param => this.CreateTemporaryZoneExecute(param));
             this._ShowCommand = new RelayCommand(param => this.ShowExecute(param));
-            this._EnableFeaturesCommand = new RelayCommand(param => this.EnableFeaturesExecute(param));
             this._SelectYardCommand = new RelayCommand(param => this.SelectYardExecute(param));
             this._FooCommand = new RelayCommand(param => this.SendExecute(param));
             Main();
@@ -192,6 +168,44 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             }
         }
 
+        public ObservableCollection<Beam> BeamsBedEntry
+        {
+            get { return this._beamsBedEntry; }
+            set
+            {
+                if (this._beamsBedEntry != value)
+                {
+                    this._beamsBedEntry = value;
+                    OnPropertyChanged("BeamsBedEntry");
+                }
+            }
+        }
+        public ObservableCollection<Beam> BeamsInQueue
+        {
+            get { return this._beamsInQueue; }
+            set
+            {
+                if (this._beamsInQueue != value)
+                {
+                    this._beamsInQueue = value;
+                    OnPropertyChanged("BeamsInQueue");
+                }
+            }
+        }
+
+        public ObservableCollection<Beam> BeamsBedExit
+        {
+            get { return this._beamsBedExit; }
+            set
+            {
+                if (this._beamsBedExit != value)
+                {
+                    this._beamsBedExit = value;
+                    OnPropertyChanged("BeamsBedExit");
+                }
+            }
+        }
+
         public List<Beam> Beams
         {
             get { return this._beams; }
@@ -207,104 +221,6 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             }
         }
 
-        public bool IsLayer1Visible
-        {
-            get { return this._layer1_visible; }
-            set
-            {
-                if (this._layer1_visible != value)
-                {
-                    this._layer1_visible = value;
-
-                    OnPropertyChanged("IsLayer1Visible");
-                   
-                }
-            }
-        }
-
-        public bool IsLayer2Visible
-        {
-            get { return this._layer2_visible; }
-            set
-            {
-                if (this._layer2_visible != value)
-                {
-                    this._layer2_visible = value;
-
-                    OnPropertyChanged("IsLayer2Visible");                    
-                }
-            }
-        }
-
-        public bool IsFenceVisible
-        {
-            get { return this._fence_visible; }
-            set
-            {
-                if (this._fence_visible != value)
-                {
-                    this._fence_visible = value;
-
-                    OnPropertyChanged("IsFenceVisible");
-                }
-            }
-        }
-
-        public bool IsPositionVisible
-        {
-            get { return this._position_visible; }
-            set
-            {
-                if (this._position_visible != value)
-                {
-                    this._position_visible = value;
-
-                    OnPropertyChanged("IsPositionVisible");
-                }
-            }
-        }
-
-        public bool IsRequestVisible
-        {
-            get { return this._requests_visible; }
-            set
-            {
-                if (this._requests_visible != value)
-                {
-                    this._requests_visible = value;
-
-                    OnPropertyChanged("IsRequestVisible");
-                }
-            }
-        }
-
-        public bool IsTransportOrderVisible
-        {
-            get { return this._transport_order_visible; }
-            set
-            {
-                if (this._transport_order_visible != value)
-                {
-                    this._transport_order_visible = value;
-
-                    OnPropertyChanged("IsTransportOrderVisible");
-                }
-            }
-        }
-
-        public bool IsMachineVisible
-        {
-            get { return this._machine_visible; }
-            set
-            {
-                if (this._machine_visible != value)
-                {
-                    this._machine_visible = value;
-
-                    OnPropertyChanged("IsMachineVisible");
-                }
-            }
-        }
 
         public bool GeneralLayout
         {
@@ -491,62 +407,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             }
         }
 
-        private void EnableFeaturesExecute(object parameter)
-        {
-            if (this.AllEnableComponentsSelected.Count > 0)
-            {
-                var a = this.AllEnableComponentsSelected;
-
-                foreach (var feature in this.AllEnableComponents)
-                {
-
-                    if (this.AllEnableComponentsSelected.ContainsKey(feature.Key))
-                    {
-                        switch (feature.Value)
-                        {
-                            case FeatureLayoutTypes.IsRequestVisible:
-                                this.IsRequestVisible = true;
-                                break;
-                            case FeatureLayoutTypes.IsLayerVisible:
-                                this.IsLayer1Visible = true;
-                                break;
-                            case FeatureLayoutTypes.IsFenceVisible:
-                                this.IsFenceVisible = true;
-                                break;
-                            case FeatureLayoutTypes.IsPositionVisible:
-                                this.IsPositionVisible = true;
-                                break;
-                        }
-                    }
-                    else
-                    {
-                        switch (feature.Value)
-                        {
-                            case FeatureLayoutTypes.IsRequestVisible:
-                                this.IsRequestVisible = false;
-                                break;
-                            case FeatureLayoutTypes.IsLayerVisible:
-                                this.IsLayer1Visible = false;
-                                break;
-                            case FeatureLayoutTypes.IsFenceVisible:
-                                this.IsFenceVisible = false;
-                                break;
-                            case FeatureLayoutTypes.IsPositionVisible:
-                                this.IsPositionVisible = false;
-                                break;
-                        }
-                    }
-                }
-            }
-            else 
-            {
-                this.IsRequestVisible = false;
-                this.IsLayer1Visible = false;
-                this.IsLayer2Visible = false;
-                this.IsFenceVisible = false;
-                this.IsPositionVisible = false;
-            }      
-        }
+       
         #endregion
 
         #region Select yard command
@@ -628,7 +489,9 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             //Inicializo las zonas
             _zones = new List<string>();
             _beams = new List<Beam>();
-
+           _beamsBedEntry = new ObservableCollection<Beam>();
+           _beamsInQueue = new ObservableCollection<Beam>();
+           _beamsBedExit = new ObservableCollection<Beam>();
             _zones.Add("Straightener");
             _zones.Add("CollectingBedEntryWest");
             _zones.Add("CollectingBedExitQueueWest");
@@ -722,6 +585,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
         private void BeamsInZone( List<string>zones)
         {
+            List<Beam> beams = new List<Beam>();
             for (int i = 0; i < zones.Count; i++)
             {
                 string zoneBeam;
@@ -734,17 +598,87 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                 for (int j = 0; j < beamsInZoneName.Length; j++)
                 {
                     var beam = new Beam(beamsInZoneName[j], zones[i]);
-                    var beamExist = Beams.Where(x => x.Name == beam.Name && x.Zone == beam.Zone).FirstOrDefault();
+                    var beamExist = Beams.Where(x => x.Name == beam.Name && x.Zone == beam.Zone).Any();
 
-                    if (beamExist == null)
+                    if (!beamExist)
                     {
-                        Beams.Add(beam);
+                        _beams.Add(beam);
                     }
+                    beams.Add(beam);
                 }
             }
-            var dupes = Beams.GroupBy(x => x)
-                    .Where(x => x.Skip(1).Any())
-                   .Select(x => x).ToArray();
+            //Limpio la lista de los beams que ya no existan o se hayan modificado
+            if(beams.Count != Beams.Count)
+            {
+                var result = Beams.Where(p => !beams.Any(l => p.Name == l.Name && p.Zone == l.Zone)).ToList();
+                Beams.RemoveAll(x => result.Contains(x));
+            }
+        }
+
+        private void PaintBeamsInLayout()
+        {
+            foreach (var beam in Beams) {
+
+                switch (beam.Zone) {
+                case "Straightener":
+                        var beamExist = BeamsBedEntry.Where(x => x.Name == beam.Name && x.Zone == beam.Zone).Any();
+                        if (!beamExist) {
+                            beam.PositionX = 100;
+                            beam.PositionY = 65;
+                            _beamsBedEntry.Add(beam);
+                        }
+                        break;
+
+                case "CollectingBedEntryWest":
+                        var beamExistInEntryWest = BeamsBedEntry.Where(x => x.Name == beam.Name && x.Zone == beam.Zone).Any();
+                        if (!beamExistInEntryWest) {
+                            beam.PositionX = 1035;
+                            beam.PositionY = 65;
+                            _beamsBedEntry.Add(beam);
+                        }
+                        break;
+                    case "CollectingBedExitQueueWest":
+                        var beamExistInQueue = BeamsInQueue.Where(x => x.Name == beam.Name && x.Zone == beam.Zone).Any();
+                        if(!beamExistInQueue) {
+                            if (_beamsInQueue.Count > 0)
+                            {
+                                beam.PositionX = _beamsInQueue.LastOrDefault().PositionX;
+                                beam.PositionY = _beamsInQueue.LastOrDefault().PositionY - 35;
+                            }
+                            else
+                            {
+                                beam.PositionX = 1035;
+                                beam.PositionY = 435;
+                            }
+                            _beamsInQueue.Add(beam);
+                        }
+                        break;
+
+                case "CollectingBedExitWest":
+                        var beamBedExitWest = BeamsBedExit.Where(x => x.Name == beam.Name && x.Zone == beam.Zone).Any();
+                        if (!beamBedExitWest) {
+                            beam.PositionX = 1035;
+                            _beamsBedExit.Add(beam);
+                        }
+
+                        break;
+                }
+            }
+        }
+
+        void BeamPosYAlign()
+        {
+            int LayoutHeight = 180;
+            int height_beams = 35;
+
+            var space = LayoutHeight - _beamsBedExit.Count * height_beams;
+
+            var result = space / (_beamsBedExit.Count + 1);
+
+            for (int i = 0; i < _beamsBedExit.Count; i++)
+            {
+                _beamsBedExit[i].PositionY = (625 - LayoutHeight) + (i+1)* (result+height_beams);
+            }
 
         }
 
@@ -766,10 +700,15 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                 {
                                     lock (this._lockTO)
                                     {
+                                        //Carga la lista con los Beams cargados en los tags
                                         BeamsInZone(Zones);
+
+                                        PaintBeamsInLayout();
+
+                                        BeamPosYAlign();
                                     }
 
-                                    Thread.Sleep(250);
+                                    Thread.Sleep(1000);
 
                                     if (token.IsCancellationRequested)
                                     {

@@ -1,7 +1,9 @@
 ﻿using Janus.Rodeo.Windows.Library.Rd_Log;
 using Janus.Rodeo.Windows.Library.UI.Common;
+using Janus.Rodeo.Windows.Library.UI.Controls;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -10,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace HSM.HMI.Safety.Operation.ViewModels
 {
-    public class Beam
+    public class Beam : ModelViewBase
     {
 
         #region private attribute
@@ -25,6 +27,15 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         /// </summary>
         private string _zone;
 
+        /// <summary>
+        /// _name
+        /// </summary>
+        private int? _positionX;
+
+        /// <summary>
+        /// _name
+        /// </summary>
+        private int? _positionY;
         #endregion
 
         #region public properties
@@ -48,6 +59,40 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             set { _zone = value; }
         }
 
+        /// <summary>
+        /// Length
+        /// </summary>
+        public int? PositionX
+        {
+            get { return _positionX; }
+            set
+            {
+                if (this._positionX != value)
+                {
+                    this._positionX = value;
+
+                    OnPropertyChanged("PositionX");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Length
+        /// </summary>
+        public int? PositionY
+        {
+            get { return _positionY; }
+            set
+            {
+                if (this._positionY != value)
+                {
+                    this._positionY = value;
+
+                    OnPropertyChanged("PositionY");
+                }
+            }
+        }
+
 
         #endregion
 
@@ -60,6 +105,18 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         {
             _name = name;
             _zone = zone;
+        }
+
+        /// <summary>
+        /// Initializes a machine
+        /// </summary>
+        /// <param name="machine"></param>
+        public Beam(string name, string zone, int? positionX, int? positionY)
+        {
+            _name = name;
+            _zone = zone;
+            _positionX = positionX;
+            _positionY = positionY;
         }
         #endregion
 

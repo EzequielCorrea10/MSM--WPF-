@@ -31,6 +31,7 @@ namespace HSM.HMI.Safety.Operation.Views
         /// </summary>
         public usrLayout()
         {
+            this.DataContext = new vmLayout();
             InitializeComponent();
 
 
@@ -132,7 +133,6 @@ namespace HSM.HMI.Safety.Operation.Views
         {
             West.Visibility = (West.Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
             East.Visibility = (East.Visibility == Visibility.Visible) ? Visibility.Hidden : Visibility.Visible;
-        }
-
+        }        
     }
 }

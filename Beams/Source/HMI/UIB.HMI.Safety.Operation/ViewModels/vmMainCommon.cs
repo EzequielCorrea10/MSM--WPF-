@@ -122,7 +122,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             {
                 if (this._layout_controller == null)
                 {
-                    this._layout_controller = new vmLayout( this._yards);
+                    this._layout_controller = new vmLayout();
                 }
                 return this._layout_controller;
             }

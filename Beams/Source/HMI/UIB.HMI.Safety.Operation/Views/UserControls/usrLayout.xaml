@@ -423,18 +423,6 @@
 
         </Style>
 
-
-
-
-        <DataTemplate x:Key="maintDataTemplate">
-
-        </DataTemplate>
-
-
-
-
-
-
     </UserControl.Resources>
     <DockPanel LastChildFill="False" HorizontalAlignment="Center">
         <Grid DockPanel.Dock="Top">
@@ -487,7 +475,7 @@
                         </Grid.ColumnDefinitions>
 
                         <!-- Fondo principal con gradiente -->
-                        <Rectangle Margin="78,47,75,432" IsHitTestVisible="False">
+                        <Rectangle Margin="79,21,74,559" x:Name="BedEntry">
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.001 0.01">
                                     <GradientStop Offset="0.5" Color="Black"/>
@@ -496,22 +484,42 @@
                             </Rectangle.Fill>
                         </Rectangle>
 
+                        <ItemsControl ItemsSource="{Binding BeamsBedEntry, Mode=OneWay,UpdateSourceTrigger=PropertyChanged}">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <Canvas />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <!-- Representación visual de cada Beam como botón con imagen -->
+                                    <Button Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"  CommandParameter="{Binding Name}" Width="400" Height="35" Background="Transparent">
+                                        <Image Source="{StaticResource Beam}" Width="400" Height="50"/>
+                                        <!-- Posicionamiento dentro del Canvas -->
+                                        <Button.RenderTransform>
+                                            <TranslateTransform X="{Binding PositionX}" Y="{Binding PositionY}" />
+                                        </Button.RenderTransform>
+                                    </Button>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+
                         <!-- Imágenes de flechas -->
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="736,118,734,501" RenderTransformOrigin="-0.84,0.66" Opacity="0.5"/>
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="735,40,735,579" RenderTransformOrigin="-0.84,0.66" Opacity="0.5"/>
 
                         <!-- Collecting BedEntry -->
-                        <Border x:Name="West" BorderThickness="5,5" BorderBrush="Red" Margin="79,47,1136,431"/>
-                        <TextBlock HorizontalAlignment="Left" Text="Collecting Bed Entry" FontSize="15" Height="50" Margin="165,130,0,489" />
+                        <Border x:Name="West" BorderThickness="5,5" BorderBrush="Red" Margin="79,21,1136,559"/>
+                        <TextBlock HorizontalAlignment="Left" Text="Collecting Bed Entry" FontSize="15" Height="50" Margin="165,36,0,583" />
 
                         <!-- Collecting WestEntry -->
-                        <Border x:Name="East" BorderThickness="5,5" BorderBrush="Red" Margin="1139,47,75,433"/>
-                        <TextBlock HorizontalAlignment="Left" Text="Collecting Bed Entry West" FontSize="15" Height="50" Margin="1207,130,0,489" RenderTransformOrigin="0.5,0.75" />
+                        <Border x:Name="East" BorderThickness="5,5" BorderBrush="Red" Margin="1139,21,75,559"/>
+                        <TextBlock HorizontalAlignment="Left" Text="Collecting Bed Entry West" FontSize="15" Height="50" Margin="1207,40,0,579" RenderTransformOrigin="0.5,0.75" />
 
 
                     </Grid>
 
                     <Grid>
-                        <Rectangle Margin="78,237,75,239" >
+                        <Rectangle Margin="78,110,75,195" x:Name="Queue">
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.001 0.01">
                                     <GradientStop Offset="0.5" Color="Black"/>
@@ -520,15 +528,35 @@
                             </Rectangle.Fill>
                         </Rectangle>
 
-
+                        <Canvas>
+                            <ItemsControl ItemsSource="{Binding BeamsInQueue, Mode=OneWay ,UpdateSourceTrigger=PropertyChanged}">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <Canvas />
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <!-- Representación visual de cada Beam como botón con imagen -->
+                                        <Button Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding Name}"  Width="400" Height="35" Background="Transparent">
+                                            <Image Source="{StaticResource Beam}" Width="400" Height="50"/>
+                                            <!-- Posicionamiento dentro del Canvas -->
+                                            <Button.RenderTransform>
+                                                <TranslateTransform X="{Binding PositionX}" Y="{Binding PositionY}" />
+                                            </Button.RenderTransform>
+                                        </Button>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </Canvas>
                         <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="202,324,1268,295" Opacity="0.5"/>
                         <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1268,324,202,295" Opacity="0.5"/>
-                        <TextBlock HorizontalAlignment="Center" Text="Collecting Bed Exit Queue West" FontSize="15" Height="50" Margin="0,324,0,295" />
+                        <TextBlock HorizontalAlignment="Center" Text="Collecting Bed Exit Queue West" FontSize="15" Height="50" Margin="0,238,0,381" />
 
                     </Grid>
 
                     <Grid Margin="2,-6,-2,6">
-                        <Rectangle Margin="0,436,0,47" HorizontalAlignment="Center" Width="1368" IsHitTestVisible="False">
+                        <Rectangle x:Name="BedExit" Margin="0,480,0,10" HorizontalAlignment="Center" Width="1368" IsHitTestVisible="False">
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.001 0.01">
                                     <GradientStop Offset="0.5" Color="Black"/>
@@ -537,23 +565,44 @@
                             </Rectangle.Fill>
                         </Rectangle>
 
+                        <Canvas>
+                            <ItemsControl ItemsSource="{Binding BeamsBedExit , Mode=OneWay,UpdateSourceTrigger=PropertyChanged}"  >
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <Canvas />
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <!-- Representación visual de cada Beam como botón con imagen -->
+                                        <Button Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding Name}"   Width="400" Height="35" Background="Transparent">
+                                            <Image Source="{StaticResource Beam}" Width="400" Height="50"/>
+                                            <!-- Posicionamiento dentro del Canvas -->
+                                            <Button.RenderTransform>
+                                                <TranslateTransform X="{Binding PositionX}" Y="{Binding PositionY}" />
+                                            </Button.RenderTransform>
+                                        </Button>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </Canvas>
                         <!-- Botones de flechas -->
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="735,504,735,115" RenderTransformOrigin="-0.26,0.52" Opacity="0.5" />
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="735,560,735,59" RenderTransformOrigin="-0.26,0.52" Opacity="0.5" />
 
                         <!-- Collecting BedExit -->
-                        <Border x:Name="WestD" BorderThickness="5,5" BorderBrush="Red" Margin="77,435,1136,47" />
-                        <TextBlock HorizontalAlignment="Left" Text="Collecting Bed Exit" FontSize="15" Height="50" Margin="169,516,0,103" />
+                        <Border x:Name="WestD" BorderThickness="5,5" BorderBrush="Red" Margin="77,482,1136,10" />
+                        <TextBlock HorizontalAlignment="Left" Text="Collecting Bed Exit" FontSize="15" Margin="169,501,0,126" />
 
 
                         <!-- Collecting WestExit -->
-                        <Border x:Name="EastD" BorderThickness="5,5" BorderBrush="Red" Margin="1138,435,78,47" />
-                        <TextBlock HorizontalAlignment="Left" Text="Collecting Bed Exit West" FontSize="15" Height="50" Margin="1210,516,0,103" />
+                        <Border x:Name="EastD" BorderThickness="5,5" BorderBrush="Red" Margin="1138,480,78,10" />
+                        <TextBlock HorizontalAlignment="Left" Text="Collecting Bed Exit West" FontSize="15" Margin="1210,493,0,133" />
 
                     </Grid>
 
                     <Grid Name="Outisde">
-                        <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,616,76,0" />
-                        <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,46,76,0" />
+                        <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,653,76,0" />
+                        <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,19,76,0" />
                         <Line Stroke="White" Width="2" Stretch="Fill" Y2="1" StrokeDashArray="5 5" HorizontalAlignment="Left" Margin="78,47,0,53" />
                         <Line Stroke="White" Width="2" Stretch="Fill" Y2="1" StrokeDashArray="5 5" HorizontalAlignment="Left" Margin="1444,47,0,53" />
                         <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="55,447,0,35">
