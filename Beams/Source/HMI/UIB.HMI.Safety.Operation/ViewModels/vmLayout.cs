@@ -53,7 +53,6 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
 
         private bool _general_layout;
-        private string _zone_name;
         private List<string> _zones;
         private List<Beam> _beams;
 
@@ -106,7 +105,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             this._CreateTemporaryZoneCommand = new RelayCommand(param => this.CreateTemporaryZoneExecute(param));
             this._ShowCommand = new RelayCommand(param => this.ShowExecute(param));
             this._SelectYardCommand = new RelayCommand(param => this.SelectYardExecute(param));
-            this._FooCommand = new RelayCommand(param => this.SendExecute(param));
+            this._FooCommand = new RelayCommand(param => this.SendExecute((Beam)param));
             Main();
 
         }
@@ -138,20 +137,6 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         }
 
 
-        public string ZoneName
-        {
-            get { return this._zone_name; }
-            set
-            {
-                if (this._zone_name != value)
-                {
-                    this._zone_name = value;
-
-                   this.OnPropertyChanged("ZoneName");
-
-                }
-            }
-        }
 
         public List<string> Zones
         {
@@ -176,7 +161,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                 if (this._beamsBedEntry != value)
                 {
                     this._beamsBedEntry = value;
-                    OnPropertyChanged("BeamsBedEntry");
+                    OnPropertyChanged(nameof(BeamsBedEntry));
                 }
             }
         }
@@ -188,7 +173,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                 if (this._beamsInQueue != value)
                 {
                     this._beamsInQueue = value;
-                    OnPropertyChanged("BeamsInQueue");
+                    OnPropertyChanged(nameof(BeamsInQueue));
                 }
             }
         }
@@ -201,7 +186,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                 if (this._beamsBedExit != value)
                 {
                     this._beamsBedExit = value;
-                    OnPropertyChanged("BeamsBedExit");
+                    OnPropertyChanged(nameof(BeamsBedExit));
                 }
             }
         }
@@ -550,36 +535,10 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         }
 
 
-
-        /// <summary>
-        /// Paint Layout Elements
-        /// </summary>
-        private async void PaintLayoutElement()
-        {
-            await Task.Run(() =>
-            {
-                try
-                {
-                    int indexLocation = 0;
-
-                    RdTrace.Debug("Waiting Layout Element");
-
-                    this._layoutElementSem.WaitOne();
-
-                    RdTrace.Debug("Reset Layout Element");
-                }
-                catch (Exception ex)
-                {
-                    RdTrace.Exception(ex);
-                }
-            });
-        }
-
-        private void SendExecute(object parameter)
-        {
-            ZoneName = Regex.Replace(parameter.ToString(), "(?<!^)([A-Z])", " $1");
-            vmZoneDetail generalDetail0s = new vmZoneDetail(ZoneName);
-            ZoneDetail zoneDetail = new ZoneDetail(this);
+        private void SendExecute(Beam beam)
+        {    
+            vmZoneDetail generalDetails = new vmZoneDetail(beam);
+            ZoneDetail zoneDetail = new ZoneDetail(beam);
             zoneDetail.ShowDialog();
         }
 
@@ -589,7 +548,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             for (int i = 0; i < zones.Count; i++)
             {
                 string zoneBeam;
-                if (!RodeoHandler.Tag.GetText(string.Format("MSM." + zones[i], Configurations.General.RodeoSector), out zoneBeam))
+                if (!RodeoHandler.Tag.GetText(string.Format("HSM." + zones[i], Configurations.General.RodeoSector), out zoneBeam))
                 {
                     throw new Exception("Error");
                 }
@@ -597,6 +556,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                 
                 for (int j = 0; j < beamsInZoneName.Length; j++)
                 {
+                    if (!String.IsNullOrEmpty(beamsInZoneName[j])) { 
                     var beam = new Beam(beamsInZoneName[j], zones[i]);
                     var beamExist = Beams.Where(x => x.Name == beam.Name && x.Zone == beam.Zone).Any();
 
@@ -605,6 +565,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                         _beams.Add(beam);
                     }
                     beams.Add(beam);
+                    }
                 }
             }
             //Limpio la lista de los beams que ya no existan o se hayan modificado
@@ -617,53 +578,85 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
         private void PaintBeamsInLayout()
         {
-            foreach (var beam in Beams) {
-
-                switch (beam.Zone) {
-                case "Straightener":
-                        var beamExist = BeamsBedEntry.Where(x => x.Name == beam.Name && x.Zone == beam.Zone).Any();
-                        if (!beamExist) {
-                            beam.PositionX = 100;
-                            beam.PositionY = 65;
-                            _beamsBedEntry.Add(beam);
-                        }
-                        break;
-
-                case "CollectingBedEntryWest":
-                        var beamExistInEntryWest = BeamsBedEntry.Where(x => x.Name == beam.Name && x.Zone == beam.Zone).Any();
-                        if (!beamExistInEntryWest) {
-                            beam.PositionX = 1035;
-                            beam.PositionY = 65;
-                            _beamsBedEntry.Add(beam);
-                        }
-                        break;
-                    case "CollectingBedExitQueueWest":
-                        var beamExistInQueue = BeamsInQueue.Where(x => x.Name == beam.Name && x.Zone == beam.Zone).Any();
-                        if(!beamExistInQueue) {
-                            if (_beamsInQueue.Count > 0)
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                foreach (var beam in Beams)
+                {
+                    switch (beam.Zone)
+                    {
+                        case "Straightener":
+                            if (!BeamsBedEntry.Any(x => x.Name == beam.Name && x.Zone == beam.Zone))
                             {
-                                beam.PositionX = _beamsInQueue.LastOrDefault().PositionX;
-                                beam.PositionY = _beamsInQueue.LastOrDefault().PositionY - 35;
+                                beam.PositionX = 100;
+                                beam.PositionY = 65;
+                                _beamsBedEntry.Add(beam);
+                                OnPropertyChanged(nameof(BeamsBedEntry));
                             }
-                            else
+                            break;
+
+                        case "CollectingBedEntryWest":
+                            if (!BeamsBedEntry.Any(x => x.Name == beam.Name && x.Zone == beam.Zone))
                             {
                                 beam.PositionX = 1035;
-                                beam.PositionY = 435;
+                                beam.PositionY = 65;
+                                _beamsBedEntry.Add(beam);
+                                OnPropertyChanged(nameof(BeamsBedEntry));
                             }
-                            _beamsInQueue.Add(beam);
-                        }
-                        break;
+                            break;
 
-                case "CollectingBedExitWest":
-                        var beamBedExitWest = BeamsBedExit.Where(x => x.Name == beam.Name && x.Zone == beam.Zone).Any();
-                        if (!beamBedExitWest) {
-                            beam.PositionX = 1035;
-                            _beamsBedExit.Add(beam);
-                        }
+                        case "CollectingBedExitQueueWest":
+                            if (!BeamsInQueue.Any(x => x.Name == beam.Name && x.Zone == beam.Zone))
+                            {
+                                if (_beamsInQueue.Count > 0)
+                                {
+                                    beam.PositionX = _beamsInQueue.LastOrDefault().PositionX;
+                                    beam.PositionY = _beamsInQueue.LastOrDefault().PositionY - 35;
+                                }
+                                else
+                                {
+                                    beam.PositionX = 535;
+                                    beam.PositionY = 410;
+                                }
+                                _beamsInQueue.Add(beam);
+                                OnPropertyChanged(nameof(BeamsInQueue));
+                            }
+                            break;
 
-                        break;
+                        case "CollectingBedExitWest":
+                            if (!BeamsBedExit.Any(x => x.Name == beam.Name && x.Zone == beam.Zone))
+                            {
+                                beam.PositionX = 535;
+                                _beamsBedExit.Add(beam);
+                                OnPropertyChanged(nameof(BeamsBedExit));
+                            }
+                            break;
+                    }
                 }
-            }
+
+                if (Beams.Count != _beamsBedExit.Count + _beamsInQueue.Count + _beamsBedEntry.Count)
+                {
+                    var resultExit = _beamsBedExit.Where(p => !Beams.Any(l => p.Name == l.Name && p.Zone == l.Zone)).ToList();
+                    foreach (var item in resultExit)
+                    {
+                        _beamsBedExit.Remove(item);
+                        OnPropertyChanged(nameof(BeamsBedExit));
+                    }
+
+                    var resultQueue = _beamsInQueue.Where(p => !Beams.Any(l => p.Name == l.Name && p.Zone == l.Zone)).ToList();
+                    foreach (var item in resultQueue)
+                    {
+                        _beamsInQueue.Remove(item);
+                        OnPropertyChanged(nameof(BeamsInQueue));
+                    }
+
+                    var resultEntry = _beamsBedEntry.Where(p => !Beams.Any(l => p.Name == l.Name && p.Zone == l.Zone)).ToList();
+                    foreach (var item in resultEntry)
+                    {
+                        _beamsBedEntry.Remove(item);
+                        OnPropertyChanged(nameof(BeamsBedEntry));
+                    }
+                }
+            });
         }
 
         void BeamPosYAlign()
@@ -678,6 +671,29 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             for (int i = 0; i < _beamsBedExit.Count; i++)
             {
                 _beamsBedExit[i].PositionY = (625 - LayoutHeight) + (i+1)* (result+height_beams);
+            }
+
+        }
+
+        void AdjustQueue()
+        {
+            var queueAlign = BeamsInQueue.Where(p => p.PositionY == 410 && p.PositionX == 535).Any();
+
+            if (!queueAlign)
+            {
+                var last = BeamsInQueue.OrderByDescending(p => p.PositionY).ToList();
+
+                for (int i = 0; i < last.Count; i++)
+                {
+                    if (i == 0)
+                    {
+                        last[i].PositionY = 410;
+                    }
+                    else
+                    {
+                        last[i].PositionY = last[i-1].PositionY-35;
+                    }
+                }
             }
 
         }
@@ -706,9 +722,11 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                         PaintBeamsInLayout();
 
                                         BeamPosYAlign();
+
+                                        AdjustQueue();
                                     }
 
-                                    Thread.Sleep(1000);
+                                    Thread.Sleep(2500);
 
                                     if (token.IsCancellationRequested)
                                     {

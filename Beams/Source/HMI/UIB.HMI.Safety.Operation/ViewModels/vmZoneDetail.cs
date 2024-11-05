@@ -10,44 +10,43 @@ namespace HSM.HMI.Safety.Operation.ViewModels
     public class vmZoneDetail : ModelViewBase
     {
         #region Constructors
-        string _zone_name;
-        string _beams;
+        string _name;
+        int? _posY;
 
-        public vmZoneDetail(string zone_name)
+        public vmZoneDetail(Beam beam)
     : base()
         {
-            ZoneName = zone_name;
+            Name = beam.Name;
+            PosY = beam.PositionY;
         }
         #endregion
 
         #region Properties
 
-        public string ZoneName
+        public string Name
         {
-            get { return this._zone_name; }
+            get { return this._name; }
             set
             {
-                if (this._zone_name != value)
+                if (this._name != value)
                 {
-                    this._zone_name = value;
+                    this._name = value;
 
-                    this.OnPropertyChanged("ZoneName");
-
+                    this.OnPropertyChanged("Name");
                 }
             }
         }
 
-        public string Beams
+        public int? PosY
         {
-            get { return this._beams; }
+            get { return this._posY; }
             set
             {
-                if (this._beams != value)
+                if (this._posY != value)
                 {
-                    this._beams = value;
+                    this._posY = value;
 
-                    OnPropertyChanged("Beams");
-
+                    OnPropertyChanged("PosY");
                 }
             }
         }

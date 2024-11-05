@@ -662,6 +662,9 @@
   <ItemGroup>
     <Resource Include="Themes\Resources\Icons\Beam.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Themes\Resources\Icons\Beam%281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>SET AppDir=$(SolutionDir)..\

@@ -301,7 +301,7 @@
                                         <DataTrigger Binding="{Binding Path=DataContext.GeneralLayout , Mode=OneWay, UpdateSourceTrigger=PropertyChanged , RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" Value="True">
                                             <Setter Property="Height" Value="50" />
                                             <Setter Property="Width" Value="50" />
-                                            <Setter Property="Margin" Value="-231,-405,30,-150"/>
+                                            <Setter Property="Margin" Value="-231,-410,30,-150"/>
                                             <Setter Property="FontSize" Value="16" />
                                         </DataTrigger>
                                     </Style.Triggers>
@@ -484,7 +484,7 @@
                             </Rectangle.Fill>
                         </Rectangle>
 
-                        <ItemsControl ItemsSource="{Binding BeamsBedEntry, Mode=OneWay,UpdateSourceTrigger=PropertyChanged}">
+                        <ItemsControl ItemsSource="{Binding BeamsBedEntry, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
                             <ItemsControl.ItemsPanel>
                                 <ItemsPanelTemplate>
                                     <Canvas />
@@ -493,8 +493,18 @@
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
                                     <!-- Representación visual de cada Beam como botón con imagen -->
-                                    <Button Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"  CommandParameter="{Binding Name}" Width="400" Height="35" Background="Transparent">
-                                        <Image Source="{StaticResource Beam}" Width="400" Height="50"/>
+                                    <Button  Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}"   Width="900" Height="35" Background="Transparent">
+                                        <Grid>
+                                            <!-- Imagen de fondo -->
+                                            <Image Source="{StaticResource Beam}" Width="900" Height="200"/>
+                                            <!-- Texto centrado sobre la imagen -->
+                                            <Label Content="{Binding Name}" 
+                                                   HorizontalAlignment="Center" 
+                                                   VerticalAlignment="Center" 
+                                                   Foreground="White" 
+                                                   FontSize="20" 
+                                                   Margin="150,3,0,0"/>
+                                        </Grid>
                                         <!-- Posicionamiento dentro del Canvas -->
                                         <Button.RenderTransform>
                                             <TranslateTransform X="{Binding PositionX}" Y="{Binding PositionY}" />
@@ -509,11 +519,11 @@
 
                         <!-- Collecting BedEntry -->
                         <Border x:Name="West" BorderThickness="5,5" BorderBrush="Red" Margin="79,21,1136,559"/>
-                        <TextBlock HorizontalAlignment="Left" Text="Collecting Bed Entry" FontSize="15" Height="50" Margin="165,36,0,583" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Entry" FontSize="15" Height="50" Margin="165,36,0,583" />
 
                         <!-- Collecting WestEntry -->
                         <Border x:Name="East" BorderThickness="5,5" BorderBrush="Red" Margin="1139,21,75,559"/>
-                        <TextBlock HorizontalAlignment="Left" Text="Collecting Bed Entry West" FontSize="15" Height="50" Margin="1207,40,0,579" RenderTransformOrigin="0.5,0.75" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Entry West" FontSize="15" Height="50" Margin="1207,40,0,579" RenderTransformOrigin="0.5,0.75" />
 
 
                     </Grid>
@@ -529,7 +539,7 @@
                         </Rectangle>
 
                         <Canvas>
-                            <ItemsControl ItemsSource="{Binding BeamsInQueue, Mode=OneWay ,UpdateSourceTrigger=PropertyChanged}">
+                            <ItemsControl ItemsSource="{Binding BeamsInQueue, Mode=TwoWay ,UpdateSourceTrigger=PropertyChanged}">
                                 <ItemsControl.ItemsPanel>
                                     <ItemsPanelTemplate>
                                         <Canvas />
@@ -538,8 +548,18 @@
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate>
                                         <!-- Representación visual de cada Beam como botón con imagen -->
-                                        <Button Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding Name}"  Width="400" Height="35" Background="Transparent">
-                                            <Image Source="{StaticResource Beam}" Width="400" Height="50"/>
+                                        <Button  Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}"   Width="900" Height="35" Background="Transparent">
+                                            <Grid>
+                                                <!-- Imagen de fondo -->
+                                                <Image Source="{StaticResource Beam}" Width="900" Height="200"/>
+                                                <!-- Texto centrado sobre la imagen -->
+                                                <Label Content="{Binding Name}" 
+                                                   HorizontalAlignment="Center" 
+                                                   VerticalAlignment="Center" 
+                                                   Foreground="White" 
+                                                   FontSize="20" 
+                                                   Margin="250,3,0,0"/>
+                                            </Grid>
                                             <!-- Posicionamiento dentro del Canvas -->
                                             <Button.RenderTransform>
                                                 <TranslateTransform X="{Binding PositionX}" Y="{Binding PositionY}" />
@@ -551,7 +571,7 @@
                         </Canvas>
                         <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="202,324,1268,295" Opacity="0.5"/>
                         <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1268,324,202,295" Opacity="0.5"/>
-                        <TextBlock HorizontalAlignment="Center" Text="Collecting Bed Exit Queue West" FontSize="15" Height="50" Margin="0,238,0,381" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Center" Text="Collecting Bed Exit Queue West" FontSize="15" Height="50" Margin="0,229,0,390" />
 
                     </Grid>
 
@@ -566,7 +586,7 @@
                         </Rectangle>
 
                         <Canvas>
-                            <ItemsControl ItemsSource="{Binding BeamsBedExit , Mode=OneWay,UpdateSourceTrigger=PropertyChanged}"  >
+                            <ItemsControl ItemsSource="{Binding BeamsBedExit , Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"  >
                                 <ItemsControl.ItemsPanel>
                                     <ItemsPanelTemplate>
                                         <Canvas />
@@ -575,8 +595,18 @@
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate>
                                         <!-- Representación visual de cada Beam como botón con imagen -->
-                                        <Button Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding Name}"   Width="400" Height="35" Background="Transparent">
-                                            <Image Source="{StaticResource Beam}" Width="400" Height="50"/>
+                                        <Button  Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}"   Width="900" Height="35" Background="Transparent">
+                                            <Grid>
+                                                <!-- Imagen de fondo -->
+                                                <Image Source="{StaticResource Beam}" Width="900" Height="200"/>
+                                                <!-- Texto centrado sobre la imagen -->
+                                                <Label Content="{Binding Name}" 
+                                                   HorizontalAlignment="Center" 
+                                                   VerticalAlignment="Center" 
+                                                   Foreground="White" 
+                                                   FontSize="20" 
+                                                   Margin="100,3,0,0"/>
+                                            </Grid>
                                             <!-- Posicionamiento dentro del Canvas -->
                                             <Button.RenderTransform>
                                                 <TranslateTransform X="{Binding PositionX}" Y="{Binding PositionY}" />
@@ -591,20 +621,20 @@
 
                         <!-- Collecting BedExit -->
                         <Border x:Name="WestD" BorderThickness="5,5" BorderBrush="Red" Margin="77,482,1136,10" />
-                        <TextBlock HorizontalAlignment="Left" Text="Collecting Bed Exit" FontSize="15" Margin="169,501,0,126" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit" FontSize="15" Margin="169,496,0,131" />
 
 
                         <!-- Collecting WestExit -->
                         <Border x:Name="EastD" BorderThickness="5,5" BorderBrush="Red" Margin="1138,480,78,10" />
-                        <TextBlock HorizontalAlignment="Left" Text="Collecting Bed Exit West" FontSize="15" Margin="1210,493,0,133" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit West" FontSize="15" Margin="1210,496,0,129" />
 
                     </Grid>
 
                     <Grid Name="Outisde">
                         <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,653,76,0" />
                         <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,19,76,0" />
-                        <Line Stroke="White" Width="2" Stretch="Fill" Y2="1" StrokeDashArray="5 5" HorizontalAlignment="Left" Margin="78,47,0,53" />
-                        <Line Stroke="White" Width="2" Stretch="Fill" Y2="1" StrokeDashArray="5 5" HorizontalAlignment="Left" Margin="1444,47,0,53" />
+                        <Line Stroke="White" Width="2" Stretch="Fill" Y2="1" StrokeDashArray="5 5" HorizontalAlignment="Left" Margin="78,25,0,16" />
+                        <Line Stroke="White" Width="2" Stretch="Fill" Y2="1" StrokeDashArray="5 5" HorizontalAlignment="Left" Margin="1444,25,0,16" />
                         <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="55,447,0,35">
                             <Image.RenderTransform>
                                 <ScaleTransform ScaleX="-1"/>

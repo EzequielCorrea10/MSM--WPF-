@@ -4,15 +4,19 @@ using Janus.Rodeo.Windows.Library.UI.Controls;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using System.Windows.Media.Imaging;
+using System.Windows.Media;
 
 namespace HSM.HMI.Safety.Operation.ViewModels
 {
-    public class Beam : ModelViewBase
+    public class Beam : ModelViewBase, INotifyPropertyChanged
     {
 
         #region private attribute
@@ -36,6 +40,11 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         /// _name
         /// </summary>
         private int? _positionY;
+
+        /// <summary>
+        /// _name
+        /// </summary>
+        private string _imageSource;
         #endregion
 
         #region public properties
@@ -59,9 +68,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             set { _zone = value; }
         }
 
-        /// <summary>
-        /// Length
-        /// </summary>
+
         public int? PositionX
         {
             get { return _positionX; }
@@ -76,9 +83,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             }
         }
 
-        /// <summary>
-        /// Length
-        /// </summary>
+
         public int? PositionY
         {
             get { return _positionY; }

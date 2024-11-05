@@ -23,11 +23,13 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
         #region private attributes
         private vmZoneDetail controller;
         #endregion
-        public ZoneDetail(vmLayout layout)
+        public ZoneDetail(Beam beam)
         {
             InitializeComponent();
 
-            this.controller = new vmZoneDetail(layout.ZoneName);
+            this.controller = new vmZoneDetail(beam);
+            this.Left = (double)beam.PositionX;
+            this.Top = (double)beam.PositionY;
 
             this.Loaded += winEStopDetails_Loaded;
             this.Closing += winEStopDetails_Closing;
@@ -50,6 +52,10 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
         {
             this.Close();
 
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
         }
     }
 }
