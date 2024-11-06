@@ -671,9 +671,9 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
             var result = space / (_beamsBedExit.Count + 1);
 
-            for (int i = 0; i < _beamsBedExit.Count; i++)
+            for (int i = _beamsBedExit.Count - 1; i  >= 0; i--)
             {
-                _beamsBedExit[i].PositionY = (625 - LayoutHeight) + (i+1)* (result+height_beams);
+                _beamsBedExit[i].PositionY = (625 - LayoutHeight) + (_beamsBedExit.Count - i) * (result+height_beams);
             }
 
         }

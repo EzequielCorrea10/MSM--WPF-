@@ -91,12 +91,12 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
                         }
 
                     }
-                    if (!RodeoHandler.Tag.SetValue(string.Format("HSM." + beam.Zone, Configurations.General.RodeoSector ), tagsSet))
+                    if (!RodeoHandler.Tag.SetValue(string.Format("HSM." + beam.Zone ), tagsSet))
                     {                        
                         throw new Exception("Error");
                     }
 
-                    if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag" , Configurations.General.RodeoSector), beam.Zone))
+                    if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag"), string.Format("HSM." + beam.Zone)))
                     {
                         throw new Exception("Error");
                     }

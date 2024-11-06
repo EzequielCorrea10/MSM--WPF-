@@ -9,8 +9,8 @@
         xmlns:view="clr-namespace:HSM.HMI.Safety.Operation.Views"              
         xmlns:converter="clr-namespace:HSM.HMI.Safety.Operation.Converters"                        
         AllowsTransparency="True" Effect="{StaticResource showEffectWindow}" BorderThickness="0"
-        Height="870" Width="1920" Top="0" Left="0" 
-        ResizeMode="NoResize" WindowStyle="None">
+        Height="870" Width="1690" Top="0" Left="0" 
+        ResizeMode="CanResize" WindowStyle="None">
     <Window.Resources>
         <Style TargetType="ScrollBar">
             <Setter Property="Width" Value="50" />

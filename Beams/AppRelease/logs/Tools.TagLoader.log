@@ -8771,3 +8771,90 @@
 2024-11-06 14:09:19.075: InitializeRegister, Message: Information of PID=50536, Process=TagLoader, Arguments=
 2024-11-06 14:09:18.999: LoadClientTypes, Debug: 6 Rows defined for Client types
 2024-11-06 14:09:19.229: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 14:50:57.211: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 14:50:57.226: InitializeRegister, Message: Information of PID=47336, Process=TagLoader, Arguments=
+2024-11-06 14:50:57.138: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 14:50:57.359: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 14:57:26.777: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 14:57:26.791: InitializeRegister, Message: Information of PID=50720, Process=TagLoader, Arguments=
+2024-11-06 14:57:26.736: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 14:57:26.950: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 14:57:53.206: Init, Debug: RTS Driver counter: 1
+2024-11-06 15:01:24.270: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:01:24.284: InitializeRegister, Message: Information of PID=43832, Process=TagLoader, Arguments=
+2024-11-06 15:01:24.260: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:01:24.464: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:01:30.783: Init, Debug: RTS Driver counter: 1
+2024-11-06 15:08:52.581: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:08:52.598: InitializeRegister, Message: Information of PID=50940, Process=TagLoader, Arguments=
+2024-11-06 15:08:52.542: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:08:52.716: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:15:30.984: Init, Debug: RTS Driver counter: 1
+2024-11-06 15:17:14.809: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:17:14.823: InitializeRegister, Message: Information of PID=25308, Process=TagLoader, Arguments=
+2024-11-06 15:17:14.799: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:17:15.015: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:17:24.892: Init, Debug: RTS Driver counter: 1
+2024-11-06 15:24:08.154: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:24:08.167: InitializeRegister, Message: Information of PID=22680, Process=TagLoader, Arguments=
+2024-11-06 15:24:08.142: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:24:08.336: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:25:32.243: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:25:32.259: InitializeRegister, Message: Information of PID=36692, Process=TagLoader, Arguments=
+2024-11-06 15:25:32.205: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:25:32.404: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:26:09.612: Init, Debug: RTS Driver counter: 1
+2024-11-06 15:27:12.924: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:27:12.941: InitializeRegister, Message: Information of PID=41728, Process=TagLoader, Arguments=
+2024-11-06 15:27:12.876: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:27:13.101: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:28:45.264: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:28:45.282: InitializeRegister, Message: Information of PID=37812, Process=TagLoader, Arguments=
+2024-11-06 15:28:45.218: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:28:45.378: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:28:56.503: Init, Debug: RTS Driver counter: 1
+2024-11-06 15:29:44.237: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:29:44.250: InitializeRegister, Message: Information of PID=43816, Process=TagLoader, Arguments=
+2024-11-06 15:29:44.229: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:29:44.415: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:29:54.143: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:29:54.162: InitializeRegister, Message: Information of PID=20704, Process=TagLoader, Arguments=
+2024-11-06 15:29:54.091: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:29:54.302: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:29:59.440: Init, Debug: RTS Driver counter: 1
+2024-11-06 15:30:26.807: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:30:26.821: InitializeRegister, Message: Information of PID=21996, Process=TagLoader, Arguments=
+2024-11-06 15:30:26.770: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:30:26.974: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:30:29.484: Init, Debug: RTS Driver counter: 1
+2024-11-06 15:31:44.491: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:31:44.510: InitializeRegister, Message: Information of PID=2704, Process=TagLoader, Arguments=
+2024-11-06 15:31:44.449: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:31:44.660: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:31:47.713: Init, Debug: RTS Driver counter: 1
+2024-11-06 15:32:16.450: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:32:16.467: InitializeRegister, Message: Information of PID=18148, Process=TagLoader, Arguments=
+2024-11-06 15:32:16.438: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:32:16.634: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:32:42.268: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:32:42.282: InitializeRegister, Message: Information of PID=47480, Process=TagLoader, Arguments=
+2024-11-06 15:32:42.258: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:32:42.439: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:33:31.258: Init, Debug: RTS Driver counter: 1
+2024-11-06 15:35:14.588: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:35:14.599: InitializeRegister, Message: Information of PID=41636, Process=TagLoader, Arguments=
+2024-11-06 15:35:14.580: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:35:14.759: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:36:32.295: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:36:32.329: InitializeRegister, Message: Information of PID=37624, Process=TagLoader, Arguments=
+2024-11-06 15:36:32.276: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:36:32.494: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:38:20.071: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:38:20.110: InitializeRegister, Message: Information of PID=39732, Process=TagLoader, Arguments=
+2024-11-06 15:38:20.064: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:38:20.243: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:42:50.339: InitializeRegister, Message: ********** Start the application **********
+2024-11-06 15:42:50.355: InitializeRegister, Message: Information of PID=28224, Process=TagLoader, Arguments=
+2024-11-06 15:42:50.298: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-11-06 15:42:50.506: LoadClients, Debug: 8 Rows defined for Clients
+2024-11-06 15:42:54.970: Init, Debug: RTS Driver counter: 1
