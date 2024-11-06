@@ -6,9 +6,9 @@ D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\HSM.Util.E9
 D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\HSM.Utility.Common.dll
 D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\HSM.Utility.Common.pdb
 D:\Proyectos\HSM\Beams\AppRelease\debug\HSM.Utility.Common.dll
-D:\Proyectos\HSM\Beams\AppRelease\debug\HSM.Utility.Common.pdb
 D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\HSM.Utility.Common.csproj.AssemblyReference.cache
 D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\HSM.Utility.Common.csproj.CoreCompileInputs.cache
 D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\HSM.Util.E91DA66A.Up2Date
 D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\HSM.Utility.Common.dll
 D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Common\obj\Debug\HSM.Utility.Common.pdb
+D:\Proyectos\HSM\Beams\AppRelease\debug\HSM.Utility.Common.pdb

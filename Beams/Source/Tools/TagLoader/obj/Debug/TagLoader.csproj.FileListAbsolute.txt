@@ -53,9 +53,8 @@ D:\Proyectos\HCM\Beams\Source\Tools\TagLoader\obj\Debug\TagLoader.csproj.CoreCom
 D:\Proyectos\HCM\Beams\Source\Tools\TagLoader\obj\Debug\TagLoader.csproj.Up2Date
 D:\Proyectos\HCM\Beams\Source\Tools\TagLoader\obj\Debug\TagLoader.exe
 D:\Proyectos\HCM\Beams\Source\Tools\TagLoader\obj\Debug\TagLoader.pdb
-D:\Proyectos\HSM\Beams\AppRelease\debug\TagLoader.exe.config
 D:\Proyectos\HSM\Beams\AppRelease\debug\TagLoader.exe
-D:\Proyectos\HSM\Beams\AppRelease\debug\TagLoader.pdb
+D:\Proyectos\HSM\Beams\AppRelease\debug\TagLoader.exe.config
 D:\Proyectos\HSM\Beams\Source\Tools\TagLoader\obj\Debug\TagLoader.csproj.AssemblyReference.cache
 D:\Proyectos\HSM\Beams\Source\Tools\TagLoader\obj\Debug\MainWindow.g.cs
 D:\Proyectos\HSM\Beams\Source\Tools\TagLoader\obj\Debug\App.g.cs
@@ -71,3 +70,4 @@ D:\Proyectos\HSM\Beams\Source\Tools\TagLoader\obj\Debug\TagLoader.csproj.CoreCom
 D:\Proyectos\HSM\Beams\Source\Tools\TagLoader\obj\Debug\TagLoader.csproj.Up2Date
 D:\Proyectos\HSM\Beams\Source\Tools\TagLoader\obj\Debug\TagLoader.exe
 D:\Proyectos\HSM\Beams\Source\Tools\TagLoader\obj\Debug\TagLoader.pdb
+D:\Proyectos\HSM\Beams\AppRelease\debug\TagLoader.pdb

@@ -20,9 +20,8 @@ D:\Proyectos\HCM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\HSM.HMI.Saf
 D:\Proyectos\HCM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\HSM.HMI..915602E5.Up2Date
 D:\Proyectos\HCM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\HSM.HMI.Safety.Operation.exe
 D:\Proyectos\HCM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\HSM.HMI.Safety.Operation.pdb
-D:\Proyectos\HSM\Beams\AppRelease\debug\HSM.HMI.Safety.Operation.exe.config
 D:\Proyectos\HSM\Beams\AppRelease\debug\HSM.HMI.Safety.Operation.exe
-D:\Proyectos\HSM\Beams\AppRelease\debug\HSM.HMI.Safety.Operation.pdb
+D:\Proyectos\HSM\Beams\AppRelease\debug\HSM.HMI.Safety.Operation.exe.config
 D:\Proyectos\HSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\HSM.HMI.Safety.Operation.csproj.AssemblyReference.cache
 D:\Proyectos\HSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\App.baml
 D:\Proyectos\HSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\DesktopWindow.g.cs
@@ -42,3 +41,4 @@ D:\Proyectos\HSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\HSM.HMI.Saf
 D:\Proyectos\HSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\HSM.HMI..915602E5.Up2Date
 D:\Proyectos\HSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\HSM.HMI.Safety.Operation.exe
 D:\Proyectos\HSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\HSM.HMI.Safety.Operation.pdb
+D:\Proyectos\HSM\Beams\AppRelease\debug\HSM.HMI.Safety.Operation.pdb

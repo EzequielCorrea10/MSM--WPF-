@@ -27,9 +27,8 @@ D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Controls\obj\Debug\HSM.Utili
 D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Controls\obj\Debug\HSM.Util.B9B11046.Up2Date
 D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Controls\obj\Debug\HSM.Utility.Controls.dll
 D:\Proyectos\HCM\Beams\Source\Utilities\MSM.Utility.Controls\obj\Debug\HSM.Utility.Controls.pdb
-D:\Proyectos\HSM\Beams\AppRelease\debug\HSM.Utility.Controls.dll.config
 D:\Proyectos\HSM\Beams\AppRelease\debug\HSM.Utility.Controls.dll
-D:\Proyectos\HSM\Beams\AppRelease\debug\HSM.Utility.Controls.pdb
+D:\Proyectos\HSM\Beams\AppRelease\debug\HSM.Utility.Controls.dll.config
 D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Controls\obj\Debug\HSM.Utility.Controls.csproj.AssemblyReference.cache
 D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Controls\obj\Debug\Views\UserControls\usrButtonIndicator.baml
 D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Controls\obj\Debug\Views\UserControls\usrHorizontalMeter.baml
@@ -56,3 +55,4 @@ D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Controls\obj\Debug\HSM.Utili
 D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Controls\obj\Debug\HSM.Util.B9B11046.Up2Date
 D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Controls\obj\Debug\HSM.Utility.Controls.dll
 D:\Proyectos\HSM\Beams\Source\Utilities\MSM.Utility.Controls\obj\Debug\HSM.Utility.Controls.pdb
+D:\Proyectos\HSM\Beams\AppRelease\debug\HSM.Utility.Controls.pdb

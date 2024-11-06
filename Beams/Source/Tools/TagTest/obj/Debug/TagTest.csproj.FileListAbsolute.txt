@@ -75,7 +75,6 @@ D:\Proyectos\MSM\Beams\Source\Tools\TagTest\obj\Debug\TagTest.pdb
 D:\Proyectos\HSM\Beams\Source\Tools\TagTest\bin\Debug\TagTest.exe.config
 D:\Proyectos\HSM\Beams\Source\Tools\TagTest\bin\Debug\TagTest.exe
 D:\Proyectos\HSM\Beams\Source\Tools\TagTest\bin\Debug\TagTest.pdb
-D:\Proyectos\HSM\Beams\Source\Tools\TagTest\bin\Debug\Janus.Rodeo.Windows.Library.Rd_AlarmData.dll
 D:\Proyectos\HSM\Beams\Source\Tools\TagTest\bin\Debug\System.Net.Http.Formatting.dll
 D:\Proyectos\HSM\Beams\Source\Tools\TagTest\obj\Debug\TagTest.csproj.AssemblyReference.cache
 D:\Proyectos\HSM\Beams\Source\Tools\TagTest\obj\Debug\MainWindow.g.cs
