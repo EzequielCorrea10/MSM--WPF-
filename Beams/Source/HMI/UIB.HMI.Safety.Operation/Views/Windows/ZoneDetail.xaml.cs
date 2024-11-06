@@ -1,4 +1,6 @@
 ﻿using HSM.HMI.Safety.Operation.ViewModels;
+using HSM.Utility.Configuration;
+using Janus.Rodeo.Windows.Library.UI.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,12 +24,16 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
     {
         #region private attributes
         private vmZoneDetail controller;
+        private Beam beam;
+        private List<Beam> beams;
         #endregion
-        public ZoneDetail(Beam beam)
+        public ZoneDetail(Beam beam, List<Beam> beams)
         {
             InitializeComponent();
 
             this.controller = new vmZoneDetail(beam);
+            this.beam = beam;
+            this.beams = beams;
             this.Left = (double)beam.PositionX;
             this.Top = (double)beam.PositionY;
 
@@ -56,6 +62,51 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            if (!String.IsNullOrEmpty(BeamName.Text))
+            {
+                if (beams.Contains(beam))
+                {
+                    string tagsSet = string.Empty;
+                    for (int i = 0; i< beams.Count; i++)
+                    {
+                        if(i != beams.Count - 1) { 
+                            if (beams[i] == beam) {
+                                tagsSet += BeamName.Text + ',';
+                            }
+                            else
+                            {
+                                tagsSet += beams[i].Name + ',';
+                            }
+                        }
+                        else
+                        {
+                            if (beams[i] == beam)
+                            {
+                                tagsSet += BeamName.Text;
+                            }
+                            else
+                            {
+                                tagsSet += beams[i].Name;
+                            }
+                        }
+
+                    }
+                    if (!RodeoHandler.Tag.SetValue(string.Format("HSM." + beam.Zone, Configurations.General.RodeoSector ), tagsSet))
+                    {                        
+                        throw new Exception("Error");
+                    }
+
+                    if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag" , Configurations.General.RodeoSector), beam.Zone))
+                    {
+                        throw new Exception("Error");
+                    }
+                }
+            }
+            else
+            {
+                throw new Exception("Error");
+
+            }
         }
     }
 }

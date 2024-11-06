@@ -621,12 +621,12 @@
 
                         <!-- Collecting BedExit -->
                         <Border x:Name="WestD" BorderThickness="5,5" BorderBrush="Red" Margin="77,482,1136,10" />
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit" FontSize="15" Margin="169,496,0,131" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit" FontSize="15" Margin="169,487,0,140" />
 
 
                         <!-- Collecting WestExit -->
                         <Border x:Name="EastD" BorderThickness="5,5" BorderBrush="Red" Margin="1138,480,78,10" />
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit West" FontSize="15" Margin="1210,496,0,129" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit West" FontSize="15" Margin="1210,485,0,140" />
 
                     </Grid>
 
