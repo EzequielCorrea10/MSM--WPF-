@@ -571,7 +571,7 @@
                         </Canvas>
                         <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="202,324,1268,295" Opacity="0.5"/>
                         <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1268,324,202,295" Opacity="0.5"/>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Center" Text="Collecting Bed Exit Queue West" FontSize="15" Height="50" Margin="0,229,0,390" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Center" Text="Collecting Bed Exit Queue West" FontSize="15" Height="50" Margin="0,231,0,388" />
 
                     </Grid>
 
@@ -640,13 +640,13 @@
                                 <ScaleTransform ScaleX="-1"/>
                             </Image.RenderTransform>
                         </Image>
-                        <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="58,44,0,455">
+                        <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="61" Margin="60,-40,0,519">
                             <Image.RenderTransform>
                                 <ScaleTransform ScaleX="-1"/>
                             </Image.RenderTransform>
                         </Image>
-                        <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="1462,34,0,445" RenderTransformOrigin="0.523,0.498"/>
-                        <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="1462,428,0,60"/>
+                        <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="1462,-40,0,519" RenderTransformOrigin="0.523,0.498"/>
+                        <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="1462,450,0,38"/>
                     </Grid>
 
                     <Grid Name="Beams">

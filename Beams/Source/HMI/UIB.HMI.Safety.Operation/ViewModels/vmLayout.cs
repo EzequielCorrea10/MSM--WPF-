@@ -623,7 +623,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                             case "CollectingBedEntryWest":
                                 if (!BeamsBedEntry.Any(x => x.Name == beam.Name && x.Zone == beam.Zone))
                                 {
-                                    beam.PositionX = 1035;
+                                    beam.PositionX = 535;
                                     beam.PositionY = 65;
                                     _beamsBedEntry.Add(beam);
                                     OnPropertyChanged(nameof(BeamsBedEntry));

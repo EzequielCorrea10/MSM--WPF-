@@ -101,6 +101,7 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
                         throw new Exception("Error");
                     }
                 }
+                this.Close();
             }
             else
             {
