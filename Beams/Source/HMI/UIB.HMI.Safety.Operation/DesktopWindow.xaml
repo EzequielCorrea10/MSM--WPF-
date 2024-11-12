@@ -8,9 +8,9 @@
         xmlns:enum="clr-namespace:HSM.HMI.Safety.Operation.Enumerations"              
         xmlns:view="clr-namespace:HSM.HMI.Safety.Operation.Views"              
         xmlns:converter="clr-namespace:HSM.HMI.Safety.Operation.Converters"                        
-        AllowsTransparency="True" Effect="{StaticResource showEffectWindow}" BorderThickness="0"
-        Height="870" Width="1690" Top="0" Left="0" 
-        ResizeMode="CanResize" WindowStyle="None">
+        AllowsTransparency="false" Effect="{StaticResource showEffectWindow}" BorderThickness="0"
+        Height="900" Width="1700" Top="0" Left="0" 
+        ResizeMode="CanResizeWithGrip" WindowStyle="SingleBorderWindow">
     <Window.Resources>
         <Style TargetType="ScrollBar">
             <Setter Property="Width" Value="50" />
@@ -23,7 +23,7 @@
     </Window.Resources>
     <Grid Style="{StaticResource grdBackground}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="150"/>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="*" />
             <RowDefinition Height="5"/>
         </Grid.RowDefinitions>
@@ -34,7 +34,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.ColumnSpan="3" Grid.Row="0" Style="{StaticResource rowTitle}">
-            <Border BorderThickness="0,0,0,10" BorderBrush="#4C195587" Grid.ColumnSpan="20">
+            <Border BorderThickness="0,0,0,10" BorderBrush="#4C195587" Grid.ColumnSpan="5">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -47,11 +47,11 @@
                                          Visibility="{Binding Path=CanClose, Converter={StaticResource BooleanToVisibilityConverter}}" />-->
 
                         <TextBlock x:Name="txtTitle" Padding="60,0,0,0" Foreground="WhiteSmoke" FontSize="50" FontWeight="Bold" LineHeight="48" VerticalAlignment="Center" 
-                                   Text="{Binding Path=ActivePage, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource screenPageToStringConverter}, ConverterParameter={StaticResource boolTrue}}" />
+                                   Text="VT HSM Collecting zone" />
                     </StackPanel>
 
                     <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
-                        <TextBlock Name="txtTitleRepeat" TextAlignment="Right" Padding="0,0,60,0" FontSize="70" Foreground="#262E5F87" Style="{StaticResource AlphaText}"
+                        <TextBlock Name="txtTitleRepeat" TextAlignment="Right" Padding="0,0,60,0" FontSize="1" Foreground="#262E5F87" Style="{StaticResource AlphaText}"
                                    Text="{Binding Path=ActivePage, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource screenPageToStringConverter}, ConverterParameter={StaticResource boolFalse}}" />
                     </StackPanel>
                 </Grid>
@@ -60,7 +60,7 @@
 
         <Grid Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="750"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>

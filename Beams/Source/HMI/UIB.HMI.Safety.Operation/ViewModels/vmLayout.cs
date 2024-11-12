@@ -53,6 +53,10 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         private ObservableCollection<Beam> _beamsBedEntry;
 
         bool beamModified;
+        private bool _beamInStraightener;
+        private bool _beamInBedExit;
+        private bool _beamInBedEntry;
+
 
         private bool _general_layout;
         private List<string> _zones;
@@ -138,7 +142,50 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             }
         }
 
+        public bool BeamInStraightener
+        {
+            get { return this._beamInStraightener; }
+            set
+            {
+                if (this._beamInStraightener != value)
+                {
+                    this._beamInStraightener = value;
 
+                    OnPropertyChanged("BeamInStraightener");
+
+                }
+            }
+        }
+
+        public bool BeamInBedExit
+        {
+            get { return this._beamInBedExit; }
+            set
+            {
+                if (this._beamInBedExit != value)
+                {
+                    this._beamInBedExit = value;
+
+                    OnPropertyChanged("BeamInBedExit");
+
+                }
+            }
+        }
+
+        public bool BeamInBedEntry
+        {
+            get { return this._beamInBedEntry; }
+            set
+            {
+                if (this._beamInBedEntry != value)
+                {
+                    this._beamInBedEntry = value;
+
+                    OnPropertyChanged("BeamInBedEntry");
+
+                }
+            }
+        }
 
         public List<string> Zones
         {
@@ -611,28 +658,20 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                         switch (beam.Zone)
                         {
                             case "Straightener":
-                                if (!BeamsBedEntry.Any(x => x.Name == beam.Name && x.Zone == beam.Zone))
-                                {
                                     beam.PositionX = 100;
                                     beam.PositionY = 65;
                                     _beamsBedEntry.Add(beam);
                                     OnPropertyChanged(nameof(BeamsBedEntry));
-                                }
                                 break;
 
                             case "CollectingBedEntryWest":
-                                if (!BeamsBedEntry.Any(x => x.Name == beam.Name && x.Zone == beam.Zone))
-                                {
                                     beam.PositionX = 535;
                                     beam.PositionY = 65;
                                     _beamsBedEntry.Add(beam);
                                     OnPropertyChanged(nameof(BeamsBedEntry));
-                                }
                                 break;
 
                             case "CollectingBedExitQueueWest":
-                                if (!BeamsInQueue.Any(x => x.Name == beam.Name && x.Zone == beam.Zone))
-                                {
                                     if (_beamsInQueue.Count > 0)
                                     {
                                         beam.PositionX = _beamsInQueue.LastOrDefault().PositionX;
@@ -645,16 +684,14 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                     }
                                     _beamsInQueue.Add(beam);
                                     OnPropertyChanged(nameof(BeamsInQueue));
-                                }
                                 break;
 
                             case "CollectingBedExitWest":
-                                if (!BeamsBedExit.Any(x => x.Name == beam.Name && x.Zone == beam.Zone))
-                                {
+
                                     beam.PositionX = 535;
                                     _beamsBedExit.Add(beam);
                                     OnPropertyChanged(nameof(BeamsBedExit));
-                                }
+                                
                                 break;
                         }
                     }
@@ -701,6 +738,41 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
         }
 
+        private void CheckBeamInZone()
+        {
+            if(_beamsBedExit.Count > 0)
+            {
+                BeamInBedExit = true;
+            }
+            else
+            {
+                BeamInBedExit = false;
+            }
+
+            if (_beamsBedEntry.Count > 0)
+            {
+                foreach (var beam in _beamsBedEntry)
+                {
+                    switch (beam.Zone)
+                    {
+                        case "Straightener":
+                            BeamInStraightener = true;
+                            BeamInBedEntry = false;
+                            break;
+                        case "CollectingBedEntryWest":
+                            BeamInBedEntry = true;
+                            BeamInStraightener = false;
+                            break;
+                    }
+                }
+            }
+            else
+            {
+                BeamInBedEntry = false;
+                BeamInStraightener = false;
+            }
+        }
+
         private void DoProcess(CancellationToken token)
         {
             try
@@ -727,6 +799,8 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                         BeamPosYAlign();
 
                                         AdjustQueue();
+
+                                        CheckBeamInZone();
                                     }
 
                                     Thread.Sleep(2500);

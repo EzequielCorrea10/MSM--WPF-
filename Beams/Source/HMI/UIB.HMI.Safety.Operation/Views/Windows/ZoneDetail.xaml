@@ -7,7 +7,7 @@
                   xmlns:jwidgets="clr-namespace:Janus.Rodeo.Windows.Library.UI.Controls.Widgets;assembly=Janus.Rodeo.Windows.Library.UI.Controls"
                   xmlns:lctr="clr-namespace:HSM.Utility.Controls;assembly=HSM.Utility.Controls"
                   xmlns:view="clr-namespace:HSM.HMI.Safety.Operation.Views"              
-                  WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize" BorderThickness="10" Effect="{StaticResource showEffectWindow}"
+                  WindowStyle="None" AllowsTransparency="False" ResizeMode="NoResize" BorderThickness="10" Effect="{StaticResource showEffectWindow}"
                   SizeToContent="WidthAndHeight" WindowStartupLocation="CenterOwner" FontStretch="Condensed" Background="Transparent" 
         Title="ZoneDetail" >
     <Window.Resources>
