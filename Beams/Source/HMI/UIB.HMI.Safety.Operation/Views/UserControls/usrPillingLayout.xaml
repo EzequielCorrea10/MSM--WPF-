@@ -512,7 +512,7 @@
                         <!-- Imágenes de flechas -->
 
                         <!-- Collecting BedEntry -->
-                        <Border x:Name="West" BorderThickness="5" Margin="79,21,1136,598">
+                        <Border x:Name="West" BorderThickness="5" Margin="79,21,994,598">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -524,10 +524,10 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" FontSize="15" Height="50" Margin="106,40,0,579" ><Run Text="TEST"/><LineBreak/><Run/></TextBlock>
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" FontSize="15" Height="50" Margin="222,36,0,583" ><Run Text="TEST"/><LineBreak/><Run/></TextBlock>
 
                         <!-- Collecting WestEntry -->
-                        <Border x:Name="East" BorderThickness="5,5"  Margin="1139,21,71,598" Grid.ColumnSpan="2">
+                        <Border x:Name="East" BorderThickness="5,5"  Margin="1139,21,77,598" Grid.ColumnSpan="2">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -585,14 +585,24 @@
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
                         </Canvas>
-                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="202,324,1268,295" Opacity="0.5"/>
                         <!--<Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1268,324,202,295" Opacity="0.5"/>-->
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue" FontSize="15" Height="50" Margin="142,242,0,377" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue" FontSize="15" Height="50" Margin="119,111,0,508" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue" FontSize="15" Height="50" Margin="119,211,0,408" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue" FontSize="15" Height="50" Margin="119,319,0,300" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue" FontSize="15" Height="50" Margin="119,423,0,196" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue" FontSize="15" Height="50" Margin="119,525,0,94" />
+
+
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue" FontSize="15" Height="50" Margin="1206,111,0,508" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue" FontSize="15" Height="50" Margin="1206,211,0,408" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue" FontSize="15" Height="50" Margin="1206,319,0,300" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue" FontSize="15" Height="50" Margin="1206,423,0,196" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue" FontSize="15" Height="50" Margin="1206,525,0,94" />
 
                     </Grid>
 
                     <Grid Margin="2,-6,-2,6">
-                        <Rectangle x:Name="BedExit" Margin="0,599,0,10" HorizontalAlignment="Center" Width="1368" IsHitTestVisible="False">
+                        <Rectangle x:Name="BedExit" Margin="0,605,0,10" HorizontalAlignment="Center" Width="1368" IsHitTestVisible="False">
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.001 0.01">
                                     <GradientStop Offset="0.5" Color="Black"/>
@@ -635,7 +645,7 @@
                         <!-- Botones de flechas -->
 
                         <!-- Collecting BedExit -->
-                        <Border x:Name="WestD" BorderThickness="5,5" BorderBrush="Red" Margin="77,599,1136,10">
+                        <Border x:Name="WestD" BorderThickness="5,5" BorderBrush="Red" Margin="77,605,1136,10">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -647,11 +657,11 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit East" FontSize="15" Margin="154,616,0,11" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit East" FontSize="15" Margin="154,624,0,3" />
 
 
                         <!-- Collecting WestExit -->
-                        <Border x:Name="EastD" BorderThickness="5,5"  Margin="1138,599,78,10" >
+                        <Border x:Name="EastD" BorderThickness="5,5"  Margin="1138,605,78,10" >
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -663,7 +673,7 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit West" FontSize="15" Margin="1210,615,0,10" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit West" FontSize="15" Margin="1210,619,0,6" />
 
                     </Grid>
 
