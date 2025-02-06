@@ -525,7 +525,7 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Entry" FontSize="15" Height="50" Margin="165,36,0,583" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Entry East/Straightener" FontSize="15" Height="50" Margin="106,40,0,579" />
 
                         <!-- Collecting WestEntry -->
                         <Border x:Name="East" BorderThickness="5,5"  Margin="1139,21,75,559">
@@ -588,7 +588,7 @@
                         </Canvas>
                         <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="202,324,1268,295" Opacity="0.5"/>
                         <!--<Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1268,324,202,295" Opacity="0.5"/>-->
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue West" FontSize="15" Height="50" Margin="123,242,0,377" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue" FontSize="15" Height="50" Margin="142,242,0,377" />
 
                     </Grid>
 
@@ -649,7 +649,7 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit" FontSize="15" Margin="169,495,0,132" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit East" FontSize="15" Margin="154,502,0,125" />
 
 
                         <!-- Collecting WestExit -->

@@ -25,7 +25,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         private bool _can_close;
         private ScreenPages _activePage;
         private vmLayout _layout_controller;
-        //private vmLayoutSemiAuto _layout_semiauto_controller;
+        private vmPillingZone _layout_semiauto_controller;
         //private vmPositionList _position_controller;
         //private vmTargetDestination _target_controller;
         //private vmZoneList _zone_controller;
@@ -89,29 +89,30 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
         public ScreenPages ActivePage
         {
-            get { return this._activePage = ScreenPages.Layout; }
+            get { return this._activePage = ScreenPages.Collecting; }
             set
             {
                 if (this._activePage != value)
                 {
                     this._activePage = value;
-                    this._activePage = ScreenPages.Layout;
-                   // this.OnPropertyChanged("LayoutActive");
 
-                    HSM.HMI.Safety.Operation.Properties.Settings.Default.SCREEN = (int)ScreenPages.Layout;
+                    this.OnPropertyChanged("LayoutActive");
+                    this.OnPropertyChanged("LayoutSemiAutoActive");
+                    HSM.HMI.Safety.Operation.Properties.Settings.Default.SCREEN = (int)this._activePage;
                     HSM.HMI.Safety.Operation.Properties.Settings.Default.Save();
+
                 }
             }
         }
 
         public bool LayoutActive
         {
-            get { return this._activePage == ScreenPages.Layout; }
+            get { return this._activePage == ScreenPages.Collecting; }
             set
             {
                 if (value)
                 {
-                    this.ActivePage = ScreenPages.Layout;
+                    this.ActivePage = ScreenPages.Collecting;
                 }
             }
         }
@@ -130,27 +131,27 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
         public bool LayoutSemiAutoActive
         {
-            get { return this._activePage == ScreenPages.LayoutSemiAuto; }
+            get { return this._activePage == ScreenPages.Pilling; }
             set
             {
                 if (value)
                 {
-                    this.ActivePage = ScreenPages.LayoutSemiAuto;
+                    this.ActivePage = ScreenPages.Pilling;
                 }
             }
         }
 
-        //public vmLayoutSemiAuto LayoutSemiAutoController
-        //{
-        //    get 
-        //    { 
-        //        if (this._layout_semiauto_controller == null)
-        //        {
-        //            this._layout_semiauto_controller = new vmLayoutSemiAuto(this.Zones, this.Locations, this.Positions, this.Machines.Where(m=>m.Properties.Type.Reference == Tracking.Server.Common.Enumerations.MachineTypes.SemiCrane).ToArray(), this._yards);
-        //        }
-        //        return this._layout_semiauto_controller; 
-        //    }
-        //}
+        public vmPillingZone LayoutSemiAutoController
+        {
+            get
+            {
+                if (this._layout_semiauto_controller == null)
+                {
+                    this._layout_semiauto_controller = new vmPillingZone();
+                }
+                return this._layout_semiauto_controller;
+            }
+        }
 
         public bool PositionActive
         {
@@ -216,12 +217,12 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
         public bool ZoneActive
         {
-            get { return this._activePage == ScreenPages.Zones; }
+            get { return this._activePage == ScreenPages.Pilling; }
             set
             {
                 if (value)
                 {
-                    this.ActivePage = ScreenPages.Zones;
+                    this.ActivePage = ScreenPages.Pilling;
                 }
             }
         }
@@ -503,6 +504,11 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                 if (this._layout_controller != null)
                 {
                     this._layout_controller.EndLoading();
+                }
+
+                if (this._layout_semiauto_controller != null)
+                {
+                    this._layout_semiauto_controller.EndLoading();
                 }
 
                 //if (this._alarm_controller != null)

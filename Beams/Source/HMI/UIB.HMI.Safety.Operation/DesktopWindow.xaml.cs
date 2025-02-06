@@ -46,11 +46,11 @@ namespace HSM.HMI.Safety.Operation
             if (!DesignerProperties.GetIsInDesignMode(this))
             {
                 this.controller = new vmMainDesktop(can_close);
-                //this.controller.ActivePage = page;
+                this.controller.ActivePage = page;
 
-                //this.Loaded += DesktopWindow_Loaded;
-                //this.ContentRendered += DesktopWindow_ContentRendered;
-                //this.Closing += DesktopWindow_Closing;
+                this.Loaded += DesktopWindow_Loaded;
+                this.ContentRendered += DesktopWindow_ContentRendered;
+                this.Closing += DesktopWindow_Closing;
 
                 this.DataContext = this.controller;
             }
@@ -63,104 +63,44 @@ namespace HSM.HMI.Safety.Operation
         #region private events
         private void DesktopWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            //this.controller.Children.Add(this.controller.LayoutController);
-            //this.controller.Children.Add(this.controller.ZoneController);
-            //this.controller.Children.Add(this.controller.RequestController);
-            //this.controller.Children.Add(this.controller.InterlockController);
-            //this.controller.Children.Add(this.controller.AlarmController);
-            //this.controller.Children.Add(this.controller.EStopController);
-            //this.controller.Children.Add(this.controller.PositionController);
-            //this.controller.Children.Add(this.controller.TargetController);
-
-            //foreach (vmMachine machine in this.controller.Machines)
-            //{
-            //    machine.TODetailsAction = new Action<vmMachine>(this.OpenTOWindow);
-            //    this.controller.Children.Add(machine);
-            //}
-
-            //foreach (vmZone zone in this.controller.Zones)
-            //{
-            //    zone.ZoneDetailsAction = new Action<vmZone>(this.OpenZoneWindow);
-            //    zone.EditZoneAction = new Action<vmZone>(this.OpenEditZoneWindow);
-
-            //    this.controller.Children.Add(zone);
-
-            //    if (zone.Interlocks != null)
-            //    {
-            //        zone.InterlocksAction = new Action<vmZoneInterlocks>(this.OpenZoneInterlockWindow);
-            //        this.controller.Children.Add(zone.Interlocks);
-            //    }
-            //}
-
-            //foreach (vmPosition position in this.controller.Positions)
-            //{
-            //    position.PositionDetailsAction = new Action<vmPosition>(this.OpenPositionWindow);
-            //    position.EditPositionAction = new Action<vmPosition>(this.OpenEditPositionWindow);
-            //    this.controller.Children.Add(position);
-            //}
-
-            //foreach (vmRequest request in this.controller.Requests)
-            //{
-            //    request.RequestDetailsAction = new Action<vmRequest>(this.OpenRequestWindow);
-            //    this.controller.Children.Add(request);
-
-            //    foreach (vmTypeSignals signal in request.TypeSignals)
-            //    {
-            //        this.controller.Children.Add(signal);
-            //    }
-
-            //    if (request.Interlocks != null)
-            //    {
-            //        request.InterlocksAction = new Action<vmRequestInterlocks>(this.OpenRequestInterlockWindow);
-            //        this.controller.Children.Add(request.Interlocks);
-            //    }
-            //}
-
-            //foreach (vmLocation location in this.controller.Locations)
-            //{
-            //    location.LocationDetailsAction = new Action<vmLocation>(this.OpenLocationWindow);
-            //    this.controller.Children.Add(location);
-            //}
-
-            //this.controller.LayoutController.CreateTemporaryZoneAction = new Func<vmZoneTemporaryDrawing, bool>(this.OpenCreateTemporaryZoneWindow);
-            //this.controller.EStopController.EquipmentEStopAction = new Action(this.OpenEquipmentEStopWindow);
-            //this.controller.EStopController.PanelsEStopAction = new Action(this.OpenPanelsEStopWindow);
-            //this.controller.EStopController.FailuresEStopAction = new Action(this.OpenFailuresEStopWindow);
-            //this.controller.EStopController.EstopGroupsAction = new Action(this.OpenEStopGroupsWindow);
+            this.controller.Children.Add(this.controller.LayoutController);
+            this.controller.Children.Add(this.controller.LayoutSemiAutoController);
         }
 
-        //private void DesktopWindow_ContentRendered(object sender, EventArgs e)
-        //{
-        //    if (tabLayout.IsSelected)
-        //    {
-        //        this.controller.LayoutController.EndLoading();
-        //    }
-        //    else
-        //    {
-        //        this.tabControl.SelectionChanged += TabControl_SelectionChanged;
-        //    }
-        //}
+        private void DesktopWindow_ContentRendered(object sender, EventArgs e)
+        {
+            if (tabLayout.IsSelected)
+            {
+                this.controller.LayoutController.EndLoading();
+            }
+            else
+            {
+                this.tabControl.SelectionChanged += TabControl_SelectionChanged;
+            }
+        }
 
-        //private void DesktopWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-        //{
-        //    this.controller.Dispose();
 
-        //    Environment.Exit(0);
-        //}
+        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (tabLayout.IsSelected)
+            {
+                try
+                {
+                    this.controller.LayoutController.EndLoading();
 
-        //private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        //{
-        //    if (tabLayout.IsSelected)
-        //    {
-        //        try
-        //        {
-        //            this.controller.LayoutController.EndLoading();
+                    this.tabControl.SelectionChanged -= TabControl_SelectionChanged;
+                }
+                catch { }
+            }
+        }
 
-        //            this.tabControl.SelectionChanged -= TabControl_SelectionChanged;
-        //        }
-        //        catch { }
-        //    }
-        //}
+        private void DesktopWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            this.controller.Dispose();
+
+            Environment.Exit(0);
+        }
+
         #endregion
 
         #region private methods

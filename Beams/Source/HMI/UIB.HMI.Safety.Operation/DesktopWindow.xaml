@@ -18,6 +18,9 @@
 
         <sys:Boolean x:Key="boolTrue">True</sys:Boolean>
         <sys:Boolean x:Key="boolFalse">False</sys:Boolean>
+        <BitmapImage x:Key="janus" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Images/Janus.png" RenderOptions.BitmapScalingMode="HighQuality" />
+        <BitmapImage x:Key="sdi" UriSource="pack://application:,,,/HSM.Utility.Controls;component/Themes/Resources/Images/SDI.png" RenderOptions.BitmapScalingMode="HighQuality" />
+
 
         <converter:ScreenPageToStringConverter x:Key="screenPageToStringConverter" />
     </Window.Resources>
@@ -49,6 +52,8 @@
                         <TextBlock x:Name="txtTitle" Padding="60,0,0,0" Foreground="WhiteSmoke" FontSize="50" FontWeight="Bold" LineHeight="48" VerticalAlignment="Center" 
                                    Text="VT HSM Collecting zone" />
                     </StackPanel>
+                    <Image Opacity="2" HorizontalAlignment="Left" Source="{StaticResource janus}" Width="290" Grid.Column="1" Margin="772,10,0,0"/>
+                    <Image Opacity="2" HorizontalAlignment="Left" Source="{StaticResource sdi}" Width="116" Grid.Column="1" Margin="635,10,0,0"/>
 
                     <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
                         <TextBlock Name="txtTitleRepeat" TextAlignment="Right" Padding="0,0,60,0" FontSize="1" Foreground="#262E5F87" Style="{StaticResource AlphaText}"
@@ -69,16 +74,15 @@
 
             <DockPanel Grid.Row="0" Grid.Column="0" Background="Transparent" Margin="0,5,0,10">
                 <TabControl Style="{StaticResource TabControlStyle}" x:Name="tabControl" HorizontalAlignment="Stretch" Padding="0">
-                    <TabItem Header="Layout" Width="210" Height="40"
+                    <TabItem Header="Collecting Zone&#xD;&#xA;" Width="210" Height="40"
                              Margin="0" Padding="0" Name="tabLayout" Style="{StaticResource BtnTabItemStyle}"
                              IsSelected="{Binding Path=LayoutActive, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                         <view:usrLayout DataContext="{Binding Path=LayoutController, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
                     </TabItem>
-                    <!--<TabItem Header="Layout Semi Auto" Width="200" Height="40"
-                             Margin="0" Padding="0" Name="tabLayoutSemiAuto" Style="{StaticResource BtnTabItemStyle}"
-                             IsSelected="{Binding Path=LayoutSemiAutoActive, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
-                        <view:usrLayoutSemiAuto DataContext="{Binding Path=LayoutSemiAutoController, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
-                    </TabItem>-->
+                    <TabItem Header="Pilling Zone&#xD;&#xA;" Width="200" Height="40" Padding="0" Name="tabLayoutSemiAuto" Style="{StaticResource BtnTabItemStyle}"
+                             IsSelected="{Binding Path=LayoutSemiAutoActive, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top">
+                        <view:usrPillingLayout DataContext="{Binding Path=LayoutSemiAutoController, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+                    </TabItem>
                     <!--<TabItem Header="Positions Semi Auto" Width="210" Height="40"
                              Margin="0" Padding="0" Name="tabPosition" Style="{StaticResource BtnTabItemStyle}"
                              IsSelected="{Binding Path=PositionActive, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
@@ -113,7 +117,7 @@
                     </TabItem>-->
                 </TabControl>
             </DockPanel>
-            
+
             <!--<view:usrEStops Grid.Column="1" Grid.Row="0" Margin="0,5,0,10" DataContext="{Binding Path=EStopController}" />-->
         </Grid>
     </Grid>

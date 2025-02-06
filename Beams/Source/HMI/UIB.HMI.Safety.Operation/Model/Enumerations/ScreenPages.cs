@@ -19,12 +19,12 @@ namespace HSM.HMI.Safety.Operation.Enumerations
         /// <summary>
         /// Layout
         /// </summary>
-        Layout = 1,
+        Collecting = 1,
 
         /// <summary>
         /// Zone
         /// </summary>
-        Zones = 2,
+        Pilling = 2,
 
         /// <summary>
         /// Request

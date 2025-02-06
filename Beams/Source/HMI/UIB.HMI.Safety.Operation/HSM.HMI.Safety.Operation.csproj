@@ -147,9 +147,13 @@
     <Compile Include="ViewModels\vmLayoutZoneSection.cs" />
     <Compile Include="ViewModels\vmMainCommon.cs" />
     <Compile Include="ViewModels\vmMainDesktop.cs" />
+    <Compile Include="ViewModels\vmPillingZone.cs" />
     <Compile Include="ViewModels\vmZoneDetail.cs" />
     <Compile Include="Views\UserControls\usrLayout.xaml.cs">
       <DependentUpon>usrLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\usrPillingLayout.xaml.cs">
+      <DependentUpon>usrPillingLayout.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Windows\ZoneDetail.xaml.cs">
       <DependentUpon>ZoneDetail.xaml</DependentUpon>
@@ -191,6 +195,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\UserControls\usrLayout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\UserControls\usrPillingLayout.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

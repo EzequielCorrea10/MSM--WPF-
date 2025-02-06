@@ -8979,3 +8979,48 @@
 2024-11-07 10:08:16.723: InitializeRegister, Message: Information of PID=16356, Process=TagLoader, Arguments=
 2024-11-07 10:08:16.698: LoadClientTypes, Debug: 6 Rows defined for Client types
 2024-11-07 10:08:16.927: LoadClients, Debug: 8 Rows defined for Clients
+2024-12-12 10:32:31.464: InitializeRegister, Message: ********** Start the application **********
+2024-12-12 10:32:31.488: InitializeRegister, Message: Information of PID=48072, Process=TagLoader, Arguments=
+2024-12-12 10:32:31.416: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-12-12 10:32:31.628: LoadClients, Debug: 8 Rows defined for Clients
+2024-12-12 10:32:31.796: ExecuteGetIslandCfg, Message: RdIslands: Island HSM' not found.
+2024-12-12 10:51:29.028: InitializeRegister, Message: ********** Start the application **********
+2024-12-12 10:51:29.082: InitializeRegister, Message: Information of PID=46428, Process=TagLoader, Arguments=
+2024-12-12 10:51:29.004: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-12-12 10:51:29.273: LoadClients, Debug: 8 Rows defined for Clients
+2024-12-12 10:51:29.377: ExecuteGetIslandCfg, Message: RdIslands: Island HSM' not found.
+2024-12-12 10:52:13.579: InitializeRegister, Message: ********** Start the application **********
+2024-12-12 10:52:13.601: InitializeRegister, Message: Information of PID=34660, Process=TagLoader, Arguments=
+2024-12-12 10:52:13.522: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-12-12 10:52:13.757: LoadClients, Debug: 8 Rows defined for Clients
+2024-12-12 10:52:13.845: ExecuteGetIslandCfg, Message: RdIslands: Island HSM' not found.
+2024-12-12 10:56:22.560: InitializeRegister, Message: ********** Start the application **********
+2024-12-12 10:56:22.577: InitializeRegister, Message: Information of PID=44884, Process=TagLoader, Arguments=
+2024-12-12 10:56:22.512: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-12-12 10:56:22.691: LoadClients, Debug: 8 Rows defined for Clients
+2024-12-12 10:56:22.778: ExecuteGetIslandCfg, Message: RdIslands: Island HSM' not found.
+2024-12-12 10:59:58.621: InitializeRegister, Message: ********** Start the application **********
+2024-12-12 10:59:58.641: InitializeRegister, Message: Information of PID=46136, Process=TagLoader, Arguments=
+2024-12-12 10:59:58.582: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-12-12 10:59:58.808: LoadClients, Debug: 8 Rows defined for Clients
+2024-12-12 10:59:58.894: ExecuteGetIslandCfg, Message: RdIslands: Island HSM' not found.
+2024-12-12 11:02:22.242: InitializeRegister, Message: ********** Start the application **********
+2024-12-12 11:02:22.258: InitializeRegister, Message: Information of PID=45232, Process=TagLoader, Arguments=
+2024-12-12 11:02:22.233: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-12-12 11:02:22.446: LoadClients, Debug: 8 Rows defined for Clients
+2024-12-12 11:02:22.509: ExecuteGetIslandCfg, Message: RdIslands: Island HSM' not found.
+2024-12-12 14:49:41.450: InitializeRegister, Message: ********** Start the application **********
+2024-12-12 14:49:41.468: InitializeRegister, Message: Information of PID=31368, Process=TagLoader, Arguments=
+2024-12-12 14:49:41.440: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-12-12 14:49:41.649: LoadClients, Debug: 8 Rows defined for Clients
+2024-12-12 14:49:41.794: ExecuteGetIslandCfg, Message: RdIslands: Island HSM' not found.
+2024-12-12 14:50:30.989: InitializeRegister, Message: ********** Start the application **********
+2024-12-12 14:50:31.008: InitializeRegister, Message: Information of PID=35096, Process=TagLoader, Arguments=
+2024-12-12 14:50:30.973: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-12-12 14:50:31.141: LoadClients, Debug: 8 Rows defined for Clients
+2024-12-12 14:50:31.221: ExecuteGetIslandCfg, Message: RdIslands: Island HSM' not found.
+2024-12-12 14:51:12.310: InitializeRegister, Message: ********** Start the application **********
+2024-12-12 14:51:12.359: InitializeRegister, Message: Information of PID=25448, Process=TagLoader, Arguments=
+2024-12-12 14:51:12.291: LoadClientTypes, Debug: 6 Rows defined for Client types
+2024-12-12 14:51:12.541: LoadClients, Debug: 8 Rows defined for Clients
+2024-12-12 14:51:12.636: ExecuteGetIslandCfg, Message: RdIslands: Island HSM' not found.

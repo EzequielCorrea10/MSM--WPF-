@@ -33,8 +33,6 @@ namespace HSM.HMI.Safety.Operation.Views
         {
             this.DataContext = new vmLayout();
             InitializeComponent();
-
-
         }
 
         #endregion

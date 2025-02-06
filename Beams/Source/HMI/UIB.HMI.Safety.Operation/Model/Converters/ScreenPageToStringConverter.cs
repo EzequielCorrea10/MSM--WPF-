@@ -28,16 +28,14 @@ namespace HSM.HMI.Safety.Operation.Converters
                 ScreenPages type = (ScreenPages)value;
                 switch(type)
                 {
-                    case ScreenPages.Layout:
-                        return (title) ? "Layout" : "Safety Zones";
-                    case ScreenPages.LayoutSemiAuto:
-                        return (title) ? "Layout Semi Automatic" : "Safety Zones";
+                    case ScreenPages.Collecting:
+                        return (title) ? "Collecting Zone" : "Safety Zones";
+                    case ScreenPages.Pilling:
+                        return (title) ? "Pilling Zone" : "Safety Zones";
                     case ScreenPages.Position:
                         return (title) ? "Position Semi Automatic" : "Safety Zones";
                     case ScreenPages.Target:
                         return (title) ? "Target Semi Automatic" : "Safety Zones";
-                    case ScreenPages.Zones:
-                        return (title) ? "Zones" : "Safety Zones";
                     case ScreenPages.Requests:
                         return (title) ? "Equipment" : "Safety Zones";
                     case ScreenPages.Interlocks:

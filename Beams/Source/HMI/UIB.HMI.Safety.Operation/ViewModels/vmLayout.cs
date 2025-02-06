@@ -106,7 +106,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         public vmLayout()
             : base()
         {
-
+            this._layoutElementSem = new AutoResetEvent(false);
             RdTrace.Debug("Begin Layout");
             this._CreateTemporaryZoneCommand = new RelayCommand(param => this.CreateTemporaryZoneExecute(param));
             this._ShowCommand = new RelayCommand(param => this.ShowExecute(param));
