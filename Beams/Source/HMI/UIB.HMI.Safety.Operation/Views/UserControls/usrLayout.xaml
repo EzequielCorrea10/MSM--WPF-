@@ -510,25 +510,13 @@
                         </ItemsControl>
 
                         <!-- Imágenes de flechas -->
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="735,40,735,579" RenderTransformOrigin="-0.84,0.66" Opacity="0.5"/>
-
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="871,30,599,589" RenderTransformOrigin="-0.84,0.66" Opacity="0.5">
+                        <Image.RenderTransform>
+                            <RotateTransform Angle="180"/>
+                        </Image.RenderTransform>
+                        </Image>
                         <!-- Collecting BedEntry -->
                         <Border x:Name="West" BorderThickness="5" Margin="79,21,1136,559">
-                            <Border.Style>
-                                <Style TargetType="Border">
-                                    <Setter Property="BorderBrush" Value="Red"/>
-                                    <Style.Triggers>
-                                        <DataTrigger Binding="{Binding BeamInStraightener}" Value="True">
-                                            <Setter Property="BorderBrush" Value="Green"/>
-                                        </DataTrigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Border.Style>
-                        </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Entry East/Straightener" FontSize="15" Height="50" Margin="106,40,0,579" />
-
-                        <!-- Collecting WestEntry -->
-                        <Border x:Name="East" BorderThickness="5,5"  Margin="1139,21,75,559">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -540,7 +528,22 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Entry West" FontSize="15" Height="50" Margin="1207,36,0,583" RenderTransformOrigin="0.5,0.75" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Entry West" FontSize="15" Height="50" Margin="146,40,0,579" />
+
+                        <!-- Collecting WestEntry -->
+                        <Border x:Name="East" BorderThickness="5,5"  Margin="1139,21,75,559">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="BorderBrush" Value="Red"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding BeamInStraightener}" Value="True">
+                                            <Setter Property="BorderBrush" Value="Green"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                        </Border>
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Entry East/Straightener" FontSize="15" Height="50" Margin="1167,40,0,579" RenderTransformOrigin="0.5,0.75" />
 
 
                     </Grid>
@@ -586,9 +589,9 @@
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
                         </Canvas>
-                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="202,324,1268,295" Opacity="0.5"/>
+                        <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1288,324,182,295" Opacity="0.5"/>
                         <!--<Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1268,324,202,295" Opacity="0.5"/>-->
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue" FontSize="15" Height="50" Margin="142,242,0,377" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue" FontSize="15" Height="50" Margin="1228,242,0,377" />
 
                     </Grid>
 
@@ -634,26 +637,14 @@
                             </ItemsControl>
                         </Canvas>
                         <!-- Botones de flechas -->
-                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="735,560,735,59" RenderTransformOrigin="-0.26,0.52" Opacity="0.5" />
+                        <Image Height="50" Width="50" Source="{StaticResource RightArrow}" Margin="821,560,649,59" RenderTransformOrigin="-0.26,0.52" Opacity="0.5">
+                            <Image.RenderTransform>
+                            <RotateTransform Angle="180"/>
+                            </Image.RenderTransform>
+                        </Image>
 
                         <!-- Collecting BedExit -->
                         <Border x:Name="WestD" BorderThickness="5,5" BorderBrush="Red" Margin="77,482,1136,10">
-                            <Border.Style>
-                                <Style TargetType="Border">
-                                    <Setter Property="BorderBrush" Value="Red"/>
-                                    <Style.Triggers>
-                                        <DataTrigger Binding="{Binding isBeamInWestArea}" Value="True">
-                                            <Setter Property="BorderBrush" Value="Green"/>
-                                        </DataTrigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Border.Style>
-                        </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit East" FontSize="15" Margin="154,502,0,125" />
-
-
-                        <!-- Collecting WestExit -->
-                        <Border x:Name="EastD" BorderThickness="5,5"  Margin="1138,480,78,10" >
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -665,7 +656,23 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit West" FontSize="15" Margin="1210,493,0,132" />
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit West" FontSize="15" Margin="151,516,0,111" />
+
+
+                        <!-- Collecting WestExit -->
+                        <Border x:Name="EastD" BorderThickness="5,5"  Margin="1138,480,78,10" >
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="BorderBrush" Value="Red"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding isBeamInWestArea}" Value="True">
+                                            <Setter Property="BorderBrush" Value="Green"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                        </Border>
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit East" FontSize="15" Margin="1213,516,0,109" />
 
                     </Grid>
 

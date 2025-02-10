@@ -657,14 +657,14 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                     {
                         switch (beam.Zone)
                         {
-                            case "Straightener":
+                            case "CollectingBedEntryWest":
                                     beam.PositionX = 100;
                                     beam.PositionY = 65;
                                     _beamsBedEntry.Add(beam);
                                     OnPropertyChanged(nameof(BeamsBedEntry));
                                 break;
 
-                            case "CollectingBedEntryWest":
+                            case "Straightener":
                                     beam.PositionX = 535;
                                     beam.PositionY = 65;
                                     _beamsBedEntry.Add(beam);
@@ -679,7 +679,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                     }
                                     else
                                     {
-                                        beam.PositionX = 535;
+                                        beam.PositionX = 100;
                                         beam.PositionY = 430;
                                     }
                                     _beamsInQueue.Add(beam);
@@ -688,7 +688,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
                             case "CollectingBedExitWest":
 
-                                    beam.PositionX = 535;
+                                    beam.PositionX = 100;
                                     _beamsBedExit.Add(beam);
                                     OnPropertyChanged(nameof(BeamsBedExit));
                                 
@@ -717,7 +717,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
         void AdjustQueue()
         {
-            var queueAlign = BeamsInQueue.Where(p => p.PositionY == 430 && p.PositionX == 535).Any();
+            var queueAlign = BeamsInQueue.Where(p => p.PositionY == 430 && p.PositionX == 100).Any();
 
             if (!queueAlign)
             {

@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Tools\\TagLoader\\TagLoader.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

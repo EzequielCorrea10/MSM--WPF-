@@ -53,7 +53,21 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         private ObservableCollection<Beam> _beamsBedEntry;
 
         bool beamModified;
-        private bool _beamInStraightener;
+        private bool _beamInPillingBedW1;
+        private bool _beamInPillingBedW2;
+        private bool _beamInPillingBedW3;
+        private bool _beamInPillingBedW4;
+        private bool _beamInPillingBedE1;
+        private bool _beamInPillingBedE2;
+        private bool _beamInPillingBedE3;
+        private bool _beamInPillingBedE4;
+        private bool _beamInPillingQueueW;
+        private bool _beamInPillingQueueE;
+        private bool _beamInQueueW;
+        private bool _beamInQueueE;
+        private bool _beamInCollectingBedE;
+        private bool _beamInCollectingBedW;
+
         private bool _beamInBedExit;
         private bool _beamInBedEntry;
 
@@ -142,16 +156,212 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             }
         }
 
-        public bool BeamInStraightener
+        public bool BeamInPillingBedW1
         {
-            get { return this._beamInStraightener; }
+            get { return this._beamInPillingBedW1; }
             set
             {
-                if (this._beamInStraightener != value)
+                if (this._beamInPillingBedW1 != value)
                 {
-                    this._beamInStraightener = value;
+                    this._beamInPillingBedW1 = value;
 
-                    OnPropertyChanged("BeamInStraightener");
+                    OnPropertyChanged("BeamInPillingBedW1");
+
+                }
+            }
+        }
+
+        public bool BeamInPillingBedW2
+        {
+            get { return this._beamInPillingBedW2; }
+            set
+            {
+                if (this._beamInPillingBedW2 != value)
+                {
+                    this._beamInPillingBedW2 = value;
+
+                    OnPropertyChanged("BeamInPillingBedW2");
+
+                }
+            }
+        }
+
+        public bool BeamInPillingBedW3
+        {
+            get { return this._beamInPillingBedW3; }
+            set
+            {
+                if (this._beamInPillingBedW3 != value)
+                {
+                    this._beamInPillingBedW3 = value;
+
+                    OnPropertyChanged("BeamInPillingBedW3");
+
+                }
+            }
+        }
+
+        public bool BeamInPillingBedW4
+        {
+            get { return this._beamInPillingBedW4; }
+            set
+            {
+                if (this._beamInPillingBedW4 != value)
+                {
+                    this._beamInPillingBedW4 = value;
+
+                    OnPropertyChanged("BeamInPillingBedW4");
+
+                }
+            }
+        }
+
+        public bool BeamInPillingQueueE
+        {
+            get { return this._beamInPillingQueueE; }
+            set
+            {
+                if (this._beamInPillingQueueE != value)
+                {
+                    this._beamInPillingQueueE = value;
+
+                    OnPropertyChanged("BeamInPillingQueueE");
+
+                }
+            }
+        }
+
+        public bool BeamInQueueE
+        {
+            get { return this._beamInQueueE; }
+            set
+            {
+                if (this._beamInQueueE != value)
+                {
+                    this._beamInQueueE = value;
+
+                    OnPropertyChanged("BeamInQueueE");
+
+                }
+            }
+        }
+
+        public bool BeamInCollectingBedE
+        {
+            get { return this._beamInCollectingBedE; }
+            set
+            {
+                if (this._beamInCollectingBedE != value)
+                {
+                    this._beamInCollectingBedE = value;
+
+                    OnPropertyChanged("BeamInCollectingBedE");
+
+                }
+            }
+        }
+
+
+        public bool BeamInPillingBedE1
+        {
+            get { return this._beamInPillingBedE1; }
+            set
+            {
+                if (this._beamInPillingBedE1 != value)
+                {
+                    this._beamInPillingBedE1 = value;
+
+                    OnPropertyChanged("BeamInPillingBedE1");
+
+                }
+            }
+        }
+
+        public bool BeamInPillingBedE2
+        {
+            get { return this._beamInPillingBedE2; }
+            set
+            {
+                if (this._beamInPillingBedE2 != value)
+                {
+                    this._beamInPillingBedE2 = value;
+
+                    OnPropertyChanged("BeamInPillingBedE2");
+
+                }
+            }
+        }
+
+        public bool BeamInPillingBedE3
+        {
+            get { return this._beamInPillingBedE3; }
+            set
+            {
+                if (this._beamInPillingBedE3 != value)
+                {
+                    this._beamInPillingBedE3 = value;
+
+                    OnPropertyChanged("BeamInPillingBedE3");
+
+                }
+            }
+        }
+
+        public bool BeamInPillingBedE4
+        {
+            get { return this._beamInPillingBedE4; }
+            set
+            {
+                if (this._beamInPillingBedE4 != value)
+                {
+                    this._beamInPillingBedE4 = value;
+
+                    OnPropertyChanged("BeamInPillingBedE4");
+
+                }
+            }
+        }
+
+        public bool BeamInPillingQueueW
+        {
+            get { return this._beamInPillingQueueW; }
+            set
+            {
+                if (this._beamInPillingQueueW != value)
+                {
+                    this._beamInPillingQueueW = value;
+
+                    OnPropertyChanged("BeamInPillingQueueW");
+
+                }
+            }
+        }
+
+        public bool BeamInQueueW
+        {
+            get { return this._beamInQueueW; }
+            set
+            {
+                if (this._beamInQueueW != value)
+                {
+                    this._beamInQueueW = value;
+
+                    OnPropertyChanged("BeamInQueueW");
+
+                }
+            }
+        }
+
+        public bool BeamInCollectingBedW
+        {
+            get { return this._beamInCollectingBedW; }
+            set
+            {
+                if (this._beamInCollectingBedW != value)
+                {
+                    this._beamInCollectingBedW = value;
+
+                    OnPropertyChanged("BeamInCollectingBedW");
 
                 }
             }
@@ -526,10 +736,21 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             _beamsBedEntry = new ObservableCollection<Beam>();
             _beamsInQueue = new ObservableCollection<Beam>();
             _beamsBedExit = new ObservableCollection<Beam>();
-            _zones.Add("Straightener");
-            _zones.Add("CollectingBedEntryWest");
-            _zones.Add("CollectingBedExitQueueWest");
-            _zones.Add("CollectingBedExitWest");
+            _zones.Add("PillingBedW1");
+            _zones.Add("PillingBedW2");
+            _zones.Add("PillingBedW3");
+            _zones.Add("PillingBedW4");
+            _zones.Add("PillingBedE1");
+            _zones.Add("PillingBedE2");
+            _zones.Add("PillingBedE3");
+            _zones.Add("PillingBedE4");
+            _zones.Add("BeamInPillingQueueE");
+            _zones.Add("BeamInPillingQueueW");
+            _zones.Add("BeamInCollectingBedE");
+            _zones.Add("BeamInCollectingBedW");
+            _zones.Add("BeamInQueueE");
+            _zones.Add("BeamInQueueW");
+
 
             this._cancelTask = new CancellationTokenSource();
             this._runningTask = new Task(() => DoProcess(this._cancelTask.Token), this._cancelTask.Token);
@@ -658,11 +879,11 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                     {
                         switch (beam.Zone)
                         {
-                            case "Straightener":
+                            case "PillingBedW1":
                                 beam.PositionX = 100;
                                 beam.PositionY = 65;
                                 _beamsBedEntry.Add(beam);
-                                OnPropertyChanged(nameof(BeamsBedEntry));
+                                OnPropertyChanged(nameof(BeamInPillingBedW1));
                                 break;
 
                             case "CollectingBedEntryWest":
@@ -739,40 +960,40 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
         }
 
-        private void CheckBeamInZone()
-        {
-            if (_beamsBedExit.Count > 0)
-            {
-                BeamInBedExit = true;
-            }
-            else
-            {
-                BeamInBedExit = false;
-            }
+        //private void CheckBeamInZone()
+        //{
+        //    if (_beamsBedExit.Count > 0)
+        //    {
+        //        BeamInBedExit = true;
+        //    }
+        //    else
+        //    {
+        //        BeamInBedExit = false;
+        //    }
 
-            if (_beamsBedEntry.Count > 0)
-            {
-                foreach (var beam in _beamsBedEntry)
-                {
-                    switch (beam.Zone)
-                    {
-                        case "Straightener":
-                            BeamInStraightener = true;
-                            BeamInBedEntry = false;
-                            break;
-                        case "CollectingBedEntryWest":
-                            BeamInBedEntry = true;
-                            BeamInStraightener = false;
-                            break;
-                    }
-                }
-            }
-            else
-            {
-                BeamInBedEntry = false;
-                BeamInStraightener = false;
-            }
-        }
+        //    if (_beamsBedEntry.Count > 0)
+        //    {
+        //        foreach (var beam in _beamsBedEntry)
+        //        {
+        //            switch (beam.Zone)
+        //            {
+        //                case "PillingBed1":
+        //                    BeamInPillingBedE1 = true;
+        //                    BeamInBedEntry = false;
+        //                    break;
+        //                case "CollectingBedEntryWest":
+        //                    BeamInBedEntry = true;
+        //                    BeamInStraightener = false;
+        //                    break;
+        //            }
+        //        }
+        //    }
+        //    else
+        //    {
+        //        BeamInBedEntry = false;
+        //        BeamInStraightener = false;
+        //    }
+        //}
 
         private void DoProcess(CancellationToken token)
         {
@@ -801,7 +1022,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
                                         AdjustQueue();
 
-                                        CheckBeamInZone();
+                                        //CheckBeamInZone();
                                     }
 
                                     Thread.Sleep(2500);

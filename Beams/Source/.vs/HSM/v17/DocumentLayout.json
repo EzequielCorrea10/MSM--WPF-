@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Proyectos\\HSM\\Beams\\Source\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|d:\\proyectos\\hsm\\beams\\source\\hmi\\uib.hmi.safety.operation\\views\\usercontrols\\usrpillinglayout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\views\\usercontrols\\usrpillinglayout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\viewmodels\\vmlayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\viewmodels\\vmlayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\views\\usercontrols\\usrlayout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -15,16 +15,20 @@
       "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\views\\usercontrols\\usrlayout.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|d:\\proyectos\\hsm\\beams\\source\\hmi\\uib.hmi.safety.operation\\views\\usercontrols\\usrpillinglayout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\views\\usercontrols\\usrpillinglayout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\viewmodels\\vmpillingzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\viewmodels\\vmpillingzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\model\\converters\\screenpagetostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\model\\converters\\screenpagetostringconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\viewmodels\\vmpillingzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\viewmodels\\vmpillingzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\desktopwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\desktopwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\desktopwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\viewmodels\\vmlayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\viewmodels\\vmlayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\obj\\Debug\\Views\\UserControls\\usrPillingLayout.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -101,7 +101,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -118,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "usrPillingLayout.xaml",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrPillingLayout.xaml",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrPillingLayout.xaml",
@@ -137,7 +137,7 @@
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrLayout.xaml.cs",
               "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrLayout.xaml.cs",
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrLayout.xaml.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAAACIAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAFoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T13:06:18.554Z",
               "IsPinned": true,
@@ -145,20 +145,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "vmLayout.cs",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmLayout.cs",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmLayout.cs",
               "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmLayout.cs",
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmLayout.cs",
-              "ViewState": "AgIAAMoAAAAAAAAAAAAhwNoAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAMMCAAAAAAAAAAAAAN0CAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T19:59:27.835Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "vmMainCommon.cs",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmMainCommon.cs",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmMainCommon.cs",
@@ -171,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "DesktopWindow.xaml",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\DesktopWindow.xaml",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\DesktopWindow.xaml",
@@ -179,11 +180,12 @@
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\DesktopWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-12-12T13:49:36.473Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "DesktopWindow.xaml.cs",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\DesktopWindow.xaml.cs",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\DesktopWindow.xaml.cs",
@@ -216,51 +218,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\App.xaml.cs",
-              "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\App.xaml.cs",
-              "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\App.xaml.cs",
-              "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\App.xaml.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAACEAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "usrPillingLayout.g.cs",
+              "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\obj\\Debug\\Views\\Windows\\usrPillingLayout.g.cs",
+              "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\obj\\Debug\\Views\\Windows\\usrPillingLayout.g.cs",
+              "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\obj\\Debug\\Views\\Windows\\usrPillingLayout.g.cs",
+              "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\obj\\Debug\\Views\\Windows\\usrPillingLayout.g.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAjwKIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T12:13:38.727Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ScreenPageToStringConverter.cs",
-              "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Model\\Converters\\ScreenPageToStringConverter.cs",
-              "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\Model\\Converters\\ScreenPageToStringConverter.cs",
-              "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Model\\Converters\\ScreenPageToStringConverter.cs",
-              "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\Model\\Converters\\ScreenPageToStringConverter.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA9wBAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T15:05:09.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "vmPillingZone.cs",
-              "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmPillingZone.cs",
-              "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmPillingZone.cs",
-              "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmPillingZone.cs",
-              "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmPillingZone.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAAAG0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T16:30:16.747Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "usrPillingLayout.xaml.cs",
-              "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrPillingLayout.xaml.cs",
-              "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrPillingLayout.xaml.cs",
-              "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrPillingLayout.xaml.cs",
-              "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrPillingLayout.xaml.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:53:56.312Z"
+              "WhenOpened": "2025-02-05T17:53:47.847Z"
             },
             {
               "$type": "Document",
@@ -276,15 +242,49 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "usrPillingLayout.g.cs",
-              "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\obj\\Debug\\Views\\Windows\\usrPillingLayout.g.cs",
-              "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\obj\\Debug\\Views\\Windows\\usrPillingLayout.g.cs",
-              "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\obj\\Debug\\Views\\Windows\\usrPillingLayout.g.cs",
-              "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\obj\\Debug\\Views\\Windows\\usrPillingLayout.g.cs",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAjwKIAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "Janus.Rodeo.Windows.Process.RuleCore.exe.config",
+              "DocumentMoniker": "C:\\Projects\\SIB\\AppRelease\\debug\\Janus.Rodeo.Windows.Process.RuleCore.exe.config",
+              "ToolTip": "C:\\Projects\\SIB\\AppRelease\\debug\\Janus.Rodeo.Windows.Process.RuleCore.exe.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-07T17:20:45.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\App.xaml.cs",
+              "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\App.xaml.cs",
+              "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\App.xaml.cs",
+              "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\App.xaml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAACEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:53:47.847Z"
+              "WhenOpened": "2024-11-07T12:13:38.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ScreenPageToStringConverter.cs",
+              "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Model\\Converters\\ScreenPageToStringConverter.cs",
+              "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\Model\\Converters\\ScreenPageToStringConverter.cs",
+              "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Model\\Converters\\ScreenPageToStringConverter.cs",
+              "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\Model\\Converters\\ScreenPageToStringConverter.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA9wBAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T15:05:09.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "usrPillingLayout.xaml.cs",
+              "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrPillingLayout.xaml.cs",
+              "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrPillingLayout.xaml.cs",
+              "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrPillingLayout.xaml.cs",
+              "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrPillingLayout.xaml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T17:53:56.312Z"
             },
             {
               "$type": "Document",
@@ -309,16 +309,6 @@
               "ViewState": "AgIAABcAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T16:02:34.341Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Janus.Rodeo.Windows.Process.RuleCore.exe.config",
-              "DocumentMoniker": "C:\\Projects\\SIB\\AppRelease\\debug\\Janus.Rodeo.Windows.Process.RuleCore.exe.config",
-              "ToolTip": "C:\\Projects\\SIB\\AppRelease\\debug\\Janus.Rodeo.Windows.Process.RuleCore.exe.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-07T17:20:45.499Z"
             },
             {
               "$type": "Document",
@@ -402,6 +392,40 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2024-11-05T14:28:40.579Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "908ca112-a535-4d0d-bbea-7be69a43998c",
+        "Display": 1,
+        "X": 380,
+        "Y": 190,
+        "Width": 1545,
+        "Height": 847,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "vmPillingZone.cs",
+              "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmPillingZone.cs",
+              "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmPillingZone.cs",
+              "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmPillingZone.cs",
+              "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmPillingZone.cs",
+              "ViewState": "AgIAAOYDAAAAAAAAAAAAAO8CAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T16:30:16.747Z",
+              "EditorCaption": ""
             }
           ]
         }
