@@ -73,7 +73,7 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
                             if (beams[i] == beam) {
                                 tagsSet += BeamName.Text + ',';
                             }
-                            else
+                            else if (beams[i].Zone == beam.Zone)
                             {
                                 tagsSet += beams[i].Name + ',';
                             }
@@ -84,7 +84,7 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
                             {
                                 tagsSet += BeamName.Text;
                             }
-                            else
+                            else if (beams[i].Zone == beam.Zone)
                             {
                                 tagsSet += beams[i].Name;
                             }

@@ -644,7 +644,7 @@
                         </Image>
 
                         <!-- Collecting BedExit -->
-                        <Border x:Name="WestD" BorderThickness="5,5" BorderBrush="Red" Margin="77,482,1136,10">
+                        <Border x:Name="WestD" BorderThickness="5,5" Margin="77,482,1136,10">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>

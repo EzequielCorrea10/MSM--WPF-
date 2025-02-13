@@ -70,6 +70,11 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         private Dictionary<string, object> _allEnableComponents;
         private Dictionary<string, object> _allEnableComponentsSelected;
 
+        private int PosXEast;
+        private int PosXWest;
+        private int PosYWest;
+        private int PosYEast;
+
         #endregion
 
         #region logical attributes
@@ -630,7 +635,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                     }
                 }
             }
-            if(!Beams.SequenceEqual(beams))
+            if(!this.Beams.SequenceEqual(beams))
             {
                 beamModified = true;
                 Beams.Clear();

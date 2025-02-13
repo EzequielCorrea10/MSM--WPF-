@@ -9,7 +9,7 @@
         xmlns:view="clr-namespace:HSM.HMI.Safety.Operation.Views"              
         xmlns:converter="clr-namespace:HSM.HMI.Safety.Operation.Converters"                        
         AllowsTransparency="false" Effect="{StaticResource showEffectWindow}" BorderThickness="0"
-        Height="900" Width="1700" Top="0" Left="0" 
+        Height="944" Width="1700" Top="0" Left="0" 
         ResizeMode="CanResizeWithGrip" WindowStyle="SingleBorderWindow">
     <Window.Resources>
         <Style TargetType="ScrollBar">
@@ -116,9 +116,37 @@
                         </DockPanel>
                     </TabItem>-->
                 </TabControl>
-            </DockPanel>
 
+            </DockPanel>
             <!--<view:usrEStops Grid.Column="1" Grid.Row="0" Margin="0,5,0,10" DataContext="{Binding Path=EStopController}" />-->
         </Grid>
+        <StackPanel
+                                Grid.Column="1"
+                                Margin="0,750,0,0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Top"
+                                Orientation="Horizontal" Height="44" Grid.Row="1">
+            <Button
+                                    Width="150"
+                                    VerticalContentAlignment="Center"
+                                    Background="Transparent"
+                                    Command="{Binding CreateTransportOrderCommand}"
+                                    Style="{StaticResource btnTransparent}"
+                                    ToolTip="Create New">
+                <StackPanel Height="30" Orientation="Horizontal">
+                    <Image
+                                            Height="20"
+                                            Margin="0,5"
+                                            Source="{StaticResource img_Add}" />
+                    <Label
+                                            Margin="10,0"
+                                            Padding="0"
+                                            VerticalContentAlignment="Center"
+                                            Content="Add Beam"
+                                            FontSize="20"
+                                            Style="{StaticResource TransOptionLabel}" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
     </Grid>
 </jctr:jWindowBase>

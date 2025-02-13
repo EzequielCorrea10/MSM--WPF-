@@ -47124,4 +47124,21 @@ Exception message: Error
 Exception message: Error
 ********** Start of Exception **********
    at HSM.HMI.Safety.Operation.ViewModels.vmLayout.BeamsInZone(List`1 zones) in D:\Proyectos\HSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\ViewModels\vmLayout.cs:line 621
-   at HSM.HMI.Safety.Operation.ViewModels.vmLayout.DoProcess(CancellationToken token) in D:\Proyectos\HSM\Beams\Sou
+   at HSM.HMI.Safety.Operation.ViewModels.vmLayout.DoProcess(CancellationToken token) in D:\Proyectos\HSM\Beams\Sou2025-02-13 09:10:52.112: InitializeRegister, Message: ********** Start the application **********
+2025-02-13 09:10:52.121: InitializeRegister, Message: Information of PID=55280, Process=WpfSurface, Arguments=28836 C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86 1818C 15A80 19334 18568 186C4 16F78 13CA0 15850  -4
+2025-02-13 09:10:54.134: Open, Message: for the Status = [Rd_INITIALIZED] the OpenCreate cannot be executed
+2025-02-13 09:17:32.251: InitializeRegister, Message: ********** Start the application **********
+2025-02-13 09:17:32.251: InitializeRegister, Message: Information of PID=55728, Process=WpfSurface, Arguments=28836 C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86 18F6C 1945C 1674C C360 13174 1641C 18BA4 100D4  -4
+2025-02-13 09:17:32.655: Open, Message: for the Status = [Rd_INITIALIZED] the OpenCreate cannot be executed
+2025-02-13 09:18:41.018: InitializeRegister, Message: ********** Start the application **********
+2025-02-13 09:18:41.033: InitializeRegister, Message: Information of PID=59300, Process=WpfSurface, Arguments=28836 C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86 1928C 18D70 19620 1884C 19118 19114 19108 13954  -4
+2025-02-13 09:18:41.398: Open, Message: for the Status = [Rd_INITIALIZED] the OpenCreate cannot be executed
+2025-02-13 09:20:45.672: InitializeRegister, Message: ********** Start the application **********
+2025-02-13 09:20:45.672: InitializeRegister, Message: Information of PID=57436, Process=WpfSurface, Arguments=28836 C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86 197F8 195DC 15690 18604 19290 18FD0 193F8 18658  -4
+2025-02-13 09:20:45.976: Open, Message: for the Status = [Rd_INITIALIZED] the OpenCreate cannot be executed
+2025-02-13 09:21:40.403: InitializeRegister, Message: ********** Start the application **********
+2025-02-13 09:21:40.403: InitializeRegister, Message: Information of PID=56348, Process=WpfSurface, Arguments=28836 C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86 14424 1913C 165DC 16840 19528 13E08 191D0 17B5C  -4
+2025-02-13 09:21:40.703: Open, Message: for the Status = [Rd_INITIALIZED] the OpenCreate cannot be executed
+2025-02-13 09:24:02.289: InitializeRegister, Message: ********** Start the application **********
+2025-02-13 09:24:02.289: InitializeRegister, Message: Information of PID=58224, Process=WpfSurface, Arguments=28836 C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86 19218 191A0 191A4 1919C 16548 1934C 191A8 14210  -4
+2025-02-13 09:24:02.595: Open, Message: for the Status = [Rd_INITIALIZED] the OpenCreate cannot be executed
