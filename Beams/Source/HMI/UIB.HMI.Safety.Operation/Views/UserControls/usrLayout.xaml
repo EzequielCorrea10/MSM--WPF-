@@ -596,7 +596,7 @@
                     </Grid>
 
                     <Grid Margin="2,-6,-2,6">
-                        <Rectangle x:Name="BedExit" Margin="0,480,0,10" HorizontalAlignment="Center" Width="1368" IsHitTestVisible="False">
+                        <Rectangle x:Name="BedExit" Margin="0,480,0,0" HorizontalAlignment="Center" Width="1368" IsHitTestVisible="False">
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.00 0.0">
                                     <GradientStop Offset="0.5" Color="Black"/>
@@ -644,7 +644,7 @@
                         </Image>
 
                         <!-- Collecting BedExit -->
-                        <Border x:Name="WestD" BorderThickness="5,5" Margin="77,482,1136,10">
+                        <Border x:Name="WestD" BorderThickness="5,5" Margin="77,482,1136,0">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -660,7 +660,7 @@
 
 
                         <!-- Collecting WestExit -->
-                        <Border x:Name="EastD" BorderThickness="5,5"  Margin="1138,480,78,10" >
+                        <Border x:Name="EastD" BorderThickness="5,5"  Margin="1138,480,78,0" >
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -677,10 +677,10 @@
                     </Grid>
 
                     <Grid Name="Outisde">
-                        <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,653,76,0" />
+                        <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,665,76,0" />
                         <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,19,76,0" />
-                        <Line Stroke="White" Width="2" Stretch="Fill" Y2="1" StrokeDashArray="5 5" HorizontalAlignment="Left" Margin="78,25,0,16" />
-                        <Line Stroke="White" Width="2" Stretch="Fill" Y2="1" StrokeDashArray="5 5" HorizontalAlignment="Left" Margin="1444,25,0,16" />
+                        <Line Stroke="White" Width="2" Stretch="Fill" Y2="1" StrokeDashArray="5 5" HorizontalAlignment="Left" Margin="78,25,0,5" />
+                        <Line Stroke="White" Width="2" Stretch="Fill" Y2="1" StrokeDashArray="5 5" HorizontalAlignment="Left" Margin="1444,25,0,5" />
                         <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="55,447,0,35">
                             <Image.RenderTransform>
                                 <ScaleTransform ScaleX="-1"/>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Proyectos\HSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\App.xaml
-4-152076453
+5-962527521
 
-421593483531
+432007218419
 24-20006604
-DesktopWindow.xaml;Views\UserControls\usrLayout.xaml;Views\UserControls\usrPillingLayout.xaml;Views\Windows\ZoneDetail.xaml;
+DesktopWindow.xaml;Views\UserControls\usrLayout.xaml;Views\UserControls\usrPillingLayout.xaml;Views\Windows\BeamList.xaml;Views\Windows\ZoneDetail.xaml;
 
 False
 

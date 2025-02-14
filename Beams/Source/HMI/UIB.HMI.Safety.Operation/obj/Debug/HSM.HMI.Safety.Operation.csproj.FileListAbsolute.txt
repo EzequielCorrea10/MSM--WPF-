@@ -44,3 +44,5 @@ D:\Proyectos\HSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\HSM.HMI.Saf
 D:\Proyectos\HSM\Beams\AppRelease\debug\HSM.HMI.Safety.Operation.pdb
 D:\Proyectos\HSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\Views\UserControls\usrPillingLayout.g.cs
 D:\Proyectos\HSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\Views\UserControls\usrPillingLayout.baml
+D:\Proyectos\HSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\Views\Windows\BeamList.g.cs
+D:\Proyectos\HSM\Beams\Source\HMI\UIB.HMI.Safety.Operation\obj\Debug\Views\Windows\BeamList.baml

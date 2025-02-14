@@ -47142,3 +47142,24 @@ Exception message: Error
 2025-02-13 09:24:02.289: InitializeRegister, Message: ********** Start the application **********
 2025-02-13 09:24:02.289: InitializeRegister, Message: Information of PID=58224, Process=WpfSurface, Arguments=28836 C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86 19218 191A0 191A4 1919C 16548 1934C 191A8 14210  -4
 2025-02-13 09:24:02.595: Open, Message: for the Status = [Rd_INITIALIZED] the OpenCreate cannot be executed
+2025-02-13 09:31:11.196: InitializeRegister, Message: ********** Start the application **********
+2025-02-13 09:31:11.204: InitializeRegister, Message: Information of PID=24900, Process=WpfSurface, Arguments=18464 C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86 22AC 2368 2350 2258 2360 18F4 22D0 2340  -4
+2025-02-13 09:31:11.802: Open, Message: for the Status = [Rd_INITIALIZED] the OpenCreate cannot be executed
+2025-02-13 09:36:32.863: InitializeRegister, Message: ********** Start the application **********
+2025-02-13 09:36:32.863: InitializeRegister, Message: Information of PID=48604, Process=WpfSurface, Arguments=18464 C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86 22EC 233C 1EC4 34E0 2F34 34D8 A94 3278  -4
+2025-02-13 09:36:33.181: Open, Message: for the Status = [Rd_INITIALIZED] the OpenCreate cannot be executed
+2025-02-13 09:38:27.114: InitializeRegister, Message: ********** Start the application **********
+2025-02-13 09:38:27.124: InitializeRegister, Message: Information of PID=53984, Process=WpfSurface, Arguments=18464 C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86 3F44 3680 32FC 3608 3C7C 38F4 3D7C 3AB0  -4
+2025-02-13 09:38:27.383: Open, Message: for the Status = [Rd_INITIALIZED] the OpenCreate cannot be executed
+2025-02-13 09:38:54.799: InitializeRegister, Message: ********** Start the application **********
+2025-02-13 09:38:54.805: InitializeRegister, Message: Information of PID=2520, Process=WpfSurface, Arguments=18464 C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86 3CD4 3D94 38FC 3E20 4300 3E64 3B58 3E40  -4
+2025-02-13 09:38:55.123: Open, Message: for the Status = [Rd_INITIALIZED] the OpenCreate cannot be executed
+2025-02-13 09:40:42.145: InitializeRegister, Message: ********** Start the application **********
+2025-02-13 09:40:42.154: InitializeRegister, Message: Information of PID=13032, Process=WpfSurface, Arguments=18464 C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86 43B4 638 439C 4104 436C 421C 4234 3F68  -4
+2025-02-13 09:40:42.452: Open, Message: for the Status = [Rd_INITIALIZED] the OpenCreate cannot be executed
+2025-02-13 09:42:03.555: InitializeRegister, Message: ********** Start the application **********
+2025-02-13 09:42:03.561: InitializeRegister, Message: Information of PID=53696, Process=WpfSurface, Arguments=18464 C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86 340C 1C9C 3DB0 3D88 44D8 3478 403C 8D0  -4
+2025-02-13 09:42:03.856: Open, Message: for the Status = [Rd_INITIALIZED] the OpenCreate cannot be executed
+2025-02-13 09:42:30.878: InitializeRegister, Message: ********** Start the application **********
+2025-02-13 09:42:30.878: InitializeRegister, Message: Information of PID=53220, Process=WpfSurface, Arguments=18464 C:\Program Files\Microsoft Visual Studio\2022\Preview\Common7\IDE\CommonExtensions\Microsoft\XamlDiagnostics\Framework\x86 4458 3FE0 45EC 4514 348C 4758 4480 462C  -4
+2025-02-13 09:42:31.154: Open, Message: for the Status = [Rd_INITIALIZED] the OpenCreate cannot be executed
