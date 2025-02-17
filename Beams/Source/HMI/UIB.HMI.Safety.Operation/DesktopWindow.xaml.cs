@@ -104,6 +104,28 @@ namespace HSM.HMI.Safety.Operation
         #endregion
 
         #region private methods
+
+        private void AddBeam(object sender, RoutedEventArgs e)
+        {
+
+            if (HSM.HMI.Safety.Operation.Properties.Settings.Default.SCREEN == (int)ScreenPages.Collecting)
+            {
+                var test = (System.Windows.Controls.Button)sender;
+                var data = (vmMainDesktop)test.DataContext;
+                var zones = data.LayoutController.Zones;
+                AddBeam zoneDetail = new AddBeam(zones);
+                zoneDetail.ShowDialog();
+            }
+            else
+            {
+                var test = (System.Windows.Controls.Button)sender;
+                var data = (vmMainDesktop)test.DataContext;
+                var zones = data.LayoutSemiAutoController.Zones;
+                AddBeam zoneDetail = new AddBeam(zones);
+                zoneDetail.ShowDialog();
+            }
+            
+        }
         //private void OpenTOWindow(vmMachine crane)
         //{
         //    winTOViewer toViewer = new winTOViewer(crane);

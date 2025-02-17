@@ -779,12 +779,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         /// <summary>
         /// End Loading
         /// </summary>
-        public void EndLoading()
-        {
-            RdTrace.Debug("Set Layout Element");
 
-            this._layoutElementSem.Set();
-        }
         #endregion
 
         #region private methods

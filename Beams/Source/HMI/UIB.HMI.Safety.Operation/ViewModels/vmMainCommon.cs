@@ -112,7 +112,9 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             {
                 if (value)
                 {
-                    this.ActivePage = ScreenPages.Collecting;
+                    this._activePage = ScreenPages.Collecting;
+                    HSM.HMI.Safety.Operation.Properties.Settings.Default.SCREEN = (int)this._activePage;
+                    HSM.HMI.Safety.Operation.Properties.Settings.Default.Save();
                 }
             }
         }
@@ -136,7 +138,9 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             {
                 if (value)
                 {
-                    this.ActivePage = ScreenPages.Pilling;
+                    this._activePage = ScreenPages.Pilling;
+                    HSM.HMI.Safety.Operation.Properties.Settings.Default.SCREEN = (int)this._activePage;
+                    HSM.HMI.Safety.Operation.Properties.Settings.Default.Save();
                 }
             }
         }
@@ -501,15 +505,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                     this.runningTask = null;
                 }
 
-                if (this._layout_controller != null)
-                {
-                    this._layout_controller.EndLoading();
-                }
 
-                if (this._layout_semiauto_controller != null)
-                {
-                    this._layout_semiauto_controller.EndLoading();
-                }
 
                 //if (this._alarm_controller != null)
                 //{

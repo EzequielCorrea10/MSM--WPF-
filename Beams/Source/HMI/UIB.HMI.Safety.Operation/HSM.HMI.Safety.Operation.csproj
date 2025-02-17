@@ -155,6 +155,9 @@
     <Compile Include="Views\UserControls\usrPillingLayout.xaml.cs">
       <DependentUpon>usrPillingLayout.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Windows\AddBeam.xaml.cs">
+      <DependentUpon>AddBeam.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Windows\BeamList.xaml.cs">
       <DependentUpon>BeamList.xaml</DependentUpon>
     </Compile>
@@ -204,6 +207,10 @@
     <Page Include="Views\UserControls\usrPillingLayout.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Windows\AddBeam.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Windows\BeamList.xaml">
       <SubType>Designer</SubType>

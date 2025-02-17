@@ -20,7 +20,3 @@ D:\Proyectos\HSM\Beams\Source\DB\UIB.Database.Design\bin\Debug\UIB.Database.Desi
 D:\Proyectos\HSM\Beams\Source\DB\UIB.Database.Design\obj\Debug\UIB.Database.Design.sqlproj.AssemblyReference.cache
 D:\Proyectos\HSM\Beams\Source\DB\UIB.Database.Design\obj\Debug\UIB.Database.Design.dll
 D:\Proyectos\HSM\Beams\Source\DB\UIB.Database.Design\obj\Debug\UIB.Database.Design.pdb
-D:\Proyectos\HSM\Beams\Source\DB\UIB.Database.Design\obj\Debug\Model.xml
-D:\Proyectos\HSM\Beams\Source\DB\UIB.Database.Design\obj\Debug\refactor.xml
-D:\Proyectos\HSM\Beams\Source\DB\UIB.Database.Design\obj\Debug\postdeploy.sql
-D:\Proyectos\HSM\Beams\Source\DB\UIB.Database.Design\obj\Debug\predeploy.sql
