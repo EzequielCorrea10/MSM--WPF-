@@ -497,10 +497,10 @@
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
                                     <!-- Representación visual de cada Beam como botón con imagen -->
-                                    <Button  Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}"   Width="650" Height="35" Background="Transparent">
+                                    <Button  Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}"   Width="600" Height="35" Background="Transparent">
                                         <Grid>
                                             <!-- Imagen de fondo -->
-                                            <Image Source="{StaticResource Beam}" Width="650" Height="125"/>
+                                            <Image Source="{StaticResource Beam}" Width="600" Height="125"/>
                                             <!-- Texto centrado sobre la imagen -->
                                             <Label Content="{Binding Name}" 
                                                    HorizontalAlignment="Center" 
@@ -589,7 +589,7 @@
                     </Grid>
 
                     <Grid>
-                        <Rectangle Margin="78,292,75,70" x:Name="Queue">
+                        <Rectangle Margin="78,295,75,216" x:Name="PrePilling" IsHitTestVisible="False">
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.00 0.00">
                                     <GradientStop Offset="0.5" Color="Black"/>
@@ -597,8 +597,105 @@
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
                         </Rectangle>
-
                         <Canvas>
+                            <ItemsControl ItemsSource="{Binding PrePillingBeams, Mode=TwoWay ,UpdateSourceTrigger=PropertyChanged}">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <Canvas />
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <!-- Representación visual de cada Beam como botón con imagen -->
+                                        <Button  Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}"   Width="600" Height="35" Background="Transparent">
+                                            <Grid>
+                                                <!-- Imagen de fondo -->
+                                                <Image Source="{StaticResource Beam}" Width="600" Height="125"/>
+                                                <!-- Texto centrado sobre la imagen -->
+                                                <Label Content="{Binding Name}" 
+                                                   HorizontalAlignment="Center" 
+                                                   VerticalAlignment="Center" 
+                                                   Foreground="White"   
+                                                   FontSize="20" 
+                                                   Margin="150,3,0,0"/>
+                                            </Grid>
+                                            <!-- Posicionamiento dentro del Canvas -->
+                                            <Button.RenderTransform>
+                                                <TranslateTransform X="{Binding PositionX}" Y="{Binding PositionY}" />
+                                            </Button.RenderTransform>
+                                        </Button>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </Canvas>
+                        <Border x:Name="PillingBedE4" BorderThickness="2,2"  Margin="1138,364,78,230">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="BorderBrush" Value="Red"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding BeamInPillingBedE4}" Value="True">
+                                            <Setter Property="BorderBrush" Value="Green"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                        </Border>
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Pilling Bed 4 E" FontSize="15" Margin="1235,370,0,256" />
+
+                        <Border x:Name="PillingBedE3" BorderThickness="2,2"  Margin="1138,292,78,307">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="BorderBrush" Value="Red"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding BeamInPillingBedE3}" Value="True">
+                                            <Setter Property="BorderBrush" Value="Green"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                        </Border>
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Pilling Bed 3 E" FontSize="15" Height="50" Margin="1235,297,0,322" />
+
+
+                        <Border x:Name="PillingBedW4" BorderThickness="2,2"  Margin="81,364,1119,230">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="BorderBrush" Value="Red"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding BeamInPillingBedW4}" Value="True">
+                                            <Setter Property="BorderBrush" Value="Green"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                        </Border>
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Pilling Bed 4 W" FontSize="15" Margin="165,370,0,257" />
+
+                        <Border x:Name="PillingBedW3" BorderThickness="2,2"  Margin="81,292,1119,307">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="BorderBrush" Value="Red"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding BeamInPillingBedW3}" Value="True">
+                                            <Setter Property="BorderBrush" Value="Green"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                        </Border>
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Pilling Bed 3 W" FontSize="15" Height="50" Margin="165,297,0,322" />
+
+                    </Grid>
+                    <Grid>
+                        <Rectangle Margin="78,441,75,70" x:Name="Pilling">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.00 0.00">
+                                    <GradientStop Offset="0.5" Color="Black"/>
+                                    <GradientStop Offset="0.5" Color="#222222"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                    <Canvas>
                             <ItemsControl ItemsSource="{Binding PillingBeams, Mode=TwoWay ,UpdateSourceTrigger=PropertyChanged}">
                                 <ItemsControl.ItemsPanel>
                                     <ItemsPanelTemplate>
@@ -608,10 +705,10 @@
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate>
                                         <!-- Representación visual de cada Beam como botón con imagen -->
-                                        <Button  Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}"   Width="650" Height="35" Background="Transparent">
+                                        <Button  Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}"   Width="600" Height="35" Background="Transparent">
                                             <Grid>
                                                 <!-- Imagen de fondo -->
-                                                <Image Source="{StaticResource Beam}" Width="650" Height="125"/>
+                                                <Image Source="{StaticResource Beam}" Width="600" Height="125"/>
                                                 <!-- Texto centrado sobre la imagen -->
                                             </Grid>
                                             <!-- Posicionamiento dentro del Canvas -->
@@ -625,34 +722,6 @@
                         </Canvas>
                         <!--<Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1268,324,202,295" Opacity="0.5"/>-->
 
-
-                        <Border x:Name="PillingBedE3" BorderThickness="2,2"  Margin="1138,364,78,230">
-                            <Border.Style>
-                                <Style TargetType="Border">
-                                    <Setter Property="BorderBrush" Value="Red"/>
-                                    <Style.Triggers>
-                                        <DataTrigger Binding="{Binding BeamInPillingBedE4}" Value="True">
-                                            <Setter Property="BorderBrush" Value="Green"/>
-                                        </DataTrigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Border.Style>
-                        </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Pilling Bed 3 E" FontSize="15" Height="50" Margin="1235,297,0,322" />
-
-                        <Border x:Name="PillingBedE4" BorderThickness="2,2"  Margin="1138,292,78,307">
-                            <Border.Style>
-                                <Style TargetType="Border">
-                                    <Setter Property="BorderBrush" Value="Red"/>
-                                    <Style.Triggers>
-                                        <DataTrigger Binding="{Binding BeamInPillingBedE3}" Value="True">
-                                            <Setter Property="BorderBrush" Value="Green"/>
-                                        </DataTrigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Border.Style>
-                        </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Pilling Bed 4 E" FontSize="15" Margin="1235,370,0,256" />
 
                         <Border x:Name="PillingQueueE" BorderThickness="2,2"  Margin="1138,441,78,157">
                             <Border.Style>
@@ -682,32 +751,7 @@
                         </Border>
                         <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Queue E" FontSize="15" Margin="1257,516,0,110" />
 
-                        <Border x:Name="PillingBedW3" BorderThickness="2,2"  Margin="81,364,1119,230">
-                            <Border.Style>
-                                <Style TargetType="Border">
-                                    <Setter Property="BorderBrush" Value="Red"/>
-                                    <Style.Triggers>
-                                        <DataTrigger Binding="{Binding BeamInPillingBedW4}" Value="True">
-                                            <Setter Property="BorderBrush" Value="Green"/>
-                                        </DataTrigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Border.Style>
-                        </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Pilling Bed 3 W" FontSize="15" Height="50" Margin="165,297,0,322" />
-                        <Border x:Name="PillingBedW4" BorderThickness="2,2"  Margin="81,292,1119,307">
-                            <Border.Style>
-                                <Style TargetType="Border">
-                                    <Setter Property="BorderBrush" Value="Red"/>
-                                    <Style.Triggers>
-                                        <DataTrigger Binding="{Binding BeamInPillingBedW3}" Value="True">
-                                            <Setter Property="BorderBrush" Value="Green"/>
-                                        </DataTrigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Border.Style>
-                        </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Pilling Bed 4 W" FontSize="15" Margin="165,370,0,257" />
+
                         <Border x:Name="PillingQueueW" BorderThickness="2,2"  Margin="81,441,1119,157">
                             <Border.Style>
                                 <Style TargetType="Border">
@@ -758,10 +802,10 @@
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate>
                                         <!-- Representación visual de cada Beam como botón con imagen -->
-                                        <Button  Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}"   Width="650" Height="35" Background="Transparent">
+                                        <Button  Command="{Binding Path=DataContext.FooCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" CommandParameter="{Binding}"   Width="600" Height="35" Background="Transparent">
                                             <Grid>
                                                 <!-- Imagen de fondo -->
-                                                <Image Source="{StaticResource Beam}" Width="650" Height="125"/>
+                                                <Image Source="{StaticResource Beam}" Width="600" Height="125"/>
                                             </Grid>
                                             <!-- Posicionamiento dentro del Canvas -->
                                             <Button.RenderTransform>
@@ -780,14 +824,30 @@
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
                                     <Style.Triggers>
-                                        <DataTrigger Binding="{Binding BeamInPillingBedW5}" Value="True">
+                                        <DataTrigger Binding="{Binding BeamNotInPillingBedW5}" Value="False">
                                             <Setter Property="BorderBrush" Value="Green"/>
                                         </DataTrigger>
                                     </Style.Triggers>
                                 </Style>
                             </Border.Style>
+                            <Rectangle Fill="Transparent" IsHitTestVisible="{Binding BeamNotInPillingBedW5 }"/>
                         </Border>
                         <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Pilling Bed 5 W" FontSize="15" Margin="152,597,0,30" />
+
+                        <Border x:Name="West2" BorderThickness="2,2"  Margin="405,592,794,0">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="BorderBrush" Value="Red"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding BeamNotInPillingBed5W1}" Value="False">
+                                            <Setter Property="BorderBrush" Value="Green"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                            <Rectangle Fill="Transparent" IsHitTestVisible="{Binding BeamNotInPillingBed5W1}"/>
+                        </Border>
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Pilling Bed 5 W 1" FontSize="15" Margin="509,597,0,30" />
 
 
                         <!-- Collecting WestExit -->
@@ -796,14 +856,32 @@
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
                                     <Style.Triggers>
-                                        <DataTrigger Binding="{Binding BeamInPillingBedE5}" Value="True">
+                                        <DataTrigger Binding="{Binding BeamNotInPillingBed5E}" Value="False">
                                             <Setter Property="BorderBrush" Value="Green"/>
                                         </DataTrigger>
                                     </Style.Triggers>
                                 </Style>
                             </Border.Style>
+
+                            <Rectangle Fill="Transparent" IsHitTestVisible="{Binding BeamNotInPillingBed5E}"/>
                         </Border>
                         <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Pilling Bed 5 E" FontSize="15" Margin="1233,596,0,29" />
+
+                        <Border x:Name="East2" BorderThickness="2,2"  Margin="827,592,389,0">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="BorderBrush" Value="Red"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding BeamNotInPillingBed5W2}" Value="False">
+                                            <Setter Property="BorderBrush" Value="Green"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+
+                            <Rectangle Fill="Transparent" IsHitTestVisible="{Binding BeamNotInPillingBed5W2}"/>
+                        </Border>
+                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Pilling Bed 5 W 2" FontSize="15" Margin="923,596,0,29" />
 
                     </Grid>
 

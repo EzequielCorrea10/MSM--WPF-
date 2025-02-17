@@ -3,7 +3,10 @@ using Janus.Rodeo.Windows.Library.UI.Common;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,13 +23,27 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
     /// <summary>
     /// Interaction logic for BeamList.xaml
     /// </summary>
-    public partial class BeamList : Window
+    public partial class BeamList : Window, INotifyPropertyChanged
     {
-        private List<Beam> beams;
+        private string _zoneDisplay;
+
+        public string ZoneDisplay
+        {
+            get { return _zoneDisplay; }
+            set
+            {
+                if (_zoneDisplay != value)
+                {
+                    _zoneDisplay = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
         public BeamList(Beam beam,List<Beam> beams)
         {
             InitializeComponent();
+            
             icTodoList.ItemsSource = beams;
 
             this.Left = (double)beam.PositionX;
@@ -34,6 +51,19 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
 
             this.Loaded += winEStopDetails_Loaded;
             this.Closing += winEStopDetails_Closing;
+
+            DataContext = this;
+
+            StringBuilder formattedZone = new StringBuilder();
+            foreach (char c in beam.Zone)
+            {
+                if ((char.IsUpper(c) || char.IsNumber(c)) && formattedZone.Length > 0)
+                {
+                    formattedZone.Append(" ");
+                }
+                formattedZone.Append(c);
+            }
+            ZoneDisplay = formattedZone.ToString();
         }
 
         private void winEStopDetails_Loaded(object sender, RoutedEventArgs e)
@@ -65,5 +95,10 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
 
         }
 
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }
