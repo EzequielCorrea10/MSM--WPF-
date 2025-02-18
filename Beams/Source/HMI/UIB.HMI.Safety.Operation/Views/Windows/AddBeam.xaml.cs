@@ -86,16 +86,31 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
             Positions = new ObservableCollection<string>();
             foreach (string zone in zones)
             {
-                StringBuilder formattedZone = new StringBuilder();
-                foreach (char c in zone)
+                string fixedZone = String.Empty;
+
+                if (zone == "PillingBedQueueE")
                 {
-                    if ((char.IsUpper(c) || char.IsNumber(c)) && formattedZone.Length > 0)
-                    {
-                        formattedZone.Append(" ");
-                    }
-                    formattedZone.Append(c);
+                    fixedZone = "Confirmed In Next Bundle E";
+                    Zones.Add(fixedZone);
                 }
-                Zones.Add(formattedZone.ToString());
+                else if (zone == "PillingBedQueueW")
+                {
+                    fixedZone = "Confirmed In Next Bundle W";
+                    Zones.Add(fixedZone);
+                }
+                else
+                {
+                    StringBuilder formattedZone = new StringBuilder();
+                    foreach (char c in zone)
+                    {
+                        if ((char.IsUpper(c) || char.IsNumber(c)) && formattedZone.Length > 0)
+                        {
+                            formattedZone.Append(" ");
+                        }
+                        formattedZone.Append(c);
+                    }
+                    Zones.Add(formattedZone.ToString());
+                }
             }
             StorageGroupSelected = Zones.FirstOrDefault();
             DataContext = this;
@@ -125,6 +140,11 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
             if (string.IsNullOrEmpty(StorageGroupSelected))
                 return;
 
+            if (StorageGroupSelected == "Confirmed In Next Bundle E")
+                StorageGroupSelected = "Pilling Bed Queue E";
+            else if(StorageGroupSelected == "Confirmed In Next Bundle W")
+                StorageGroupSelected = "Pilling Bed Queue W";
+
             string output = string.Concat(StorageGroupSelected.Split(' ').Select(word =>
                 CultureInfo.CurrentCulture.TextInfo.ToTitleCase(word.ToLower()))); 
             
@@ -137,12 +157,19 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
             {
                 for (int i = 1; i <= beamsInZoneName.Length + 1; i++)
                 {
-                    Positions.Add("Position " + i);
+                    if (!Positions.Contains("Position " + i))
+                    {
+                        Positions.Add("Position " + i);
+                    }
+                    
                 }
             }
             else
             {
-                Positions.Add("Position 1");
+                if (!Positions.Contains("Position 1"))
+                {
+                    Positions.Add("Position 1");
+                }
             }
             PositionSelected = Positions.FirstOrDefault();
 
@@ -152,6 +179,11 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
         {
             if (!String.IsNullOrEmpty(BeamName.Text))
             {
+                if (StorageGroupSelected == "Confirmed In Next Bundle E")
+                    StorageGroupSelected = "Pilling Bed Queue E";
+                else if (StorageGroupSelected == "Confirmed In Next Bundle W")
+                    StorageGroupSelected = "Pilling Bed Queue W";
+
                 string outputZone = string.Concat(StorageGroupSelected.Split(' ').Select(word =>
                 CultureInfo.CurrentCulture.TextInfo.ToTitleCase(word.ToLower())));
 

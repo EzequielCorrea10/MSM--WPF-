@@ -36,8 +36,8 @@
             <ColumnDefinition Width="10"/>
         </Grid.ColumnDefinitions>
 
-        <Grid Grid.ColumnSpan="3" Grid.Row="0" Style="{StaticResource rowTitle}">
-            <Border BorderThickness="0,0,0,10" BorderBrush="#4C195587" Grid.ColumnSpan="5">
+        <Grid Grid.ColumnSpan="3" Grid.Row="0" >
+            <Border BorderThickness="0,0,0,10"  Grid.ColumnSpan="5">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -50,10 +50,10 @@
                                          Visibility="{Binding Path=CanClose, Converter={StaticResource BooleanToVisibilityConverter}}" />-->
 
                         <TextBlock x:Name="txtTitle" Padding="60,0,0,0" Foreground="WhiteSmoke" FontSize="50" FontWeight="Bold" LineHeight="48" VerticalAlignment="Center" 
-                                   Text="VT HSM Collecting zone" />
+                                   Text="VT HSM " />
                     </StackPanel>
-                    <Image Opacity="2" HorizontalAlignment="Left" Source="{StaticResource janus}" Width="290" Grid.Column="1" Margin="772,10,0,0"/>
-                    <Image Opacity="2" HorizontalAlignment="Left" Source="{StaticResource sdi}" Width="116" Grid.Column="1" Margin="635,10,0,0"/>
+                    <Image Opacity="2" HorizontalAlignment="Left" Source="{StaticResource janus}" Width="290" Grid.Column="1" Margin="1117,10,0,0"/>
+                    <Image Opacity="2" HorizontalAlignment="Left" Source="{StaticResource sdi}" Width="116" Grid.Column="1" Margin="980,10,0,0"/>
 
                     <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
                         <TextBlock Name="txtTitleRepeat" TextAlignment="Right" Padding="0,0,60,0" FontSize="1" Foreground="#262E5F87" Style="{StaticResource AlphaText}"

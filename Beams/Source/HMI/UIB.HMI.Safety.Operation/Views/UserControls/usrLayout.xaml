@@ -528,7 +528,7 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Entry West" FontSize="15" Height="50" Margin="146,40,0,579" />
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Entry West" FontSize="15" Height="50" Margin="146,40,0,579" />
 
                         <!-- Collecting WestEntry -->
                         <Border x:Name="East" BorderThickness="5,5"  Margin="1139,21,75,559">
@@ -543,7 +543,7 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Entry East/Straightener" FontSize="15" Height="50" Margin="1167,40,0,579" RenderTransformOrigin="0.5,0.75" />
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Entry East/Straightener" FontSize="15" Height="50" Margin="1167,40,0,579" RenderTransformOrigin="0.5,0.75" />
 
 
                     </Grid>
@@ -591,7 +591,7 @@
                         </Canvas>
                         <Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1288,324,182,295" Opacity="0.5"/>
                         <!--<Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1268,324,202,295" Opacity="0.5"/>-->
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue" FontSize="15" Height="50" Margin="1228,242,0,377" />
+                        <TextBlock  Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit Queue" FontSize="15" Height="50" Margin="1228,242,0,377" />
 
                     </Grid>
 
@@ -656,7 +656,7 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit West" FontSize="15" Margin="151,516,0,111" />
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit West" FontSize="15" Margin="151,516,0,111" />
 
 
                         <!-- Collecting WestExit -->
@@ -672,7 +672,7 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit East" FontSize="15" Margin="1213,516,0,109" />
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit East" FontSize="15" Margin="1213,516,0,109" />
 
                     </Grid>
 

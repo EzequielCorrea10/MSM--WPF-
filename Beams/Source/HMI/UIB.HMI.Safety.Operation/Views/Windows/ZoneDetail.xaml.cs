@@ -91,6 +91,12 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
                         }
 
                     }
+
+                    if (beam.Zone == "ConfirmedInNextBundleE")
+                        beam.Zone = "PillingBedQueueE";
+                    else if (beam.Zone == "ConfirmedInNextBundleW")
+                        beam.Zone = "PillingBedQueueW";
+
                     if (!RodeoHandler.Tag.SetValue(string.Format("HSM." + beam.Zone ), tagsSet))
                     {                        
                         throw new Exception("Error");

@@ -55,6 +55,16 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
             DataContext = this;
 
             StringBuilder formattedZone = new StringBuilder();
+
+            switch(beam.Zone)
+            {
+                case "PillingBedQueueE":
+                    beam.Zone = "ConfirmedInNextBundleE";
+                    break;
+                case "PillingBedQueueW":
+                    beam.Zone = "ConfirmedInNextBundleW";
+                    break;
+            }
             foreach (char c in beam.Zone)
             {
                 if ((char.IsUpper(c) || char.IsNumber(c)) && formattedZone.Length > 0)
