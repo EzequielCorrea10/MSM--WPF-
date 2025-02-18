@@ -30,8 +30,8 @@ namespace HSM.HMI.Safety.Operation.Converters
                 {
                     case ScreenPages.Collecting:
                         return (title) ? "Collecting Zone" : "Safety Zones";
-                    case ScreenPages.Pilling:
-                        return (title) ? "Pilling Zone" : "Safety Zones";
+                    case ScreenPages.Piling:
+                        return (title) ? "Piling Zone" : "Safety Zones";
                     case ScreenPages.Position:
                         return (title) ? "Position Semi Automatic" : "Safety Zones";
                     case ScreenPages.Target:

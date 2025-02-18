@@ -58,10 +58,10 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
 
             switch(beam.Zone)
             {
-                case "PillingBedQueueE":
+                case "PilingBedQueueE":
                     beam.Zone = "ConfirmedInNextBundleE";
                     break;
-                case "PillingBedQueueW":
+                case "PilingBedQueueW":
                     beam.Zone = "ConfirmedInNextBundleW";
                     break;
             }

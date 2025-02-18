@@ -88,12 +88,12 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
             {
                 string fixedZone = String.Empty;
 
-                if (zone == "PillingBedQueueE")
+                if (zone == "PilingBedQueueE")
                 {
                     fixedZone = "Confirmed In Next Bundle E";
                     Zones.Add(fixedZone);
                 }
-                else if (zone == "PillingBedQueueW")
+                else if (zone == "PilingBedQueueW")
                 {
                     fixedZone = "Confirmed In Next Bundle W";
                     Zones.Add(fixedZone);
@@ -141,9 +141,9 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
                 return;
 
             if (StorageGroupSelected == "Confirmed In Next Bundle E")
-                StorageGroupSelected = "Pilling Bed Queue E";
+                StorageGroupSelected = "Piling Bed Queue E";
             else if(StorageGroupSelected == "Confirmed In Next Bundle W")
-                StorageGroupSelected = "Pilling Bed Queue W";
+                StorageGroupSelected = "Piling Bed Queue W";
 
             string output = string.Concat(StorageGroupSelected.Split(' ').Select(word =>
                 CultureInfo.CurrentCulture.TextInfo.ToTitleCase(word.ToLower()))); 
@@ -180,9 +180,9 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
             if (!String.IsNullOrEmpty(BeamName.Text))
             {
                 if (StorageGroupSelected == "Confirmed In Next Bundle E")
-                    StorageGroupSelected = "Pilling Bed Queue E";
+                    StorageGroupSelected = "Piling Bed Queue E";
                 else if (StorageGroupSelected == "Confirmed In Next Bundle W")
-                    StorageGroupSelected = "Pilling Bed Queue W";
+                    StorageGroupSelected = "Piling Bed Queue W";
 
                 string outputZone = string.Concat(StorageGroupSelected.Split(' ').Select(word =>
                 CultureInfo.CurrentCulture.TextInfo.ToTitleCase(word.ToLower())));
@@ -233,9 +233,19 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
                     throw new Exception("Error");
                 }
 
-                if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag"), string.Format("HSM." + outputZone)))
+                if (outputZone.Contains("Piling"))
                 {
-                    throw new Exception("Error");
+                    if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag_Piling"), string.Format("HSM." + outputZone)))
+                    {
+                        throw new Exception("Error");
+                    }
+                }
+                else
+                {
+                    if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag_Collecting"), string.Format("HSM." + outputZone)))
+                    {
+                        throw new Exception("Error");
+                    }
                 }
 
                 this.Close();

@@ -93,19 +93,30 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
                     }
 
                     if (beam.Zone == "ConfirmedInNextBundleE")
-                        beam.Zone = "PillingBedQueueE";
+                        beam.Zone = "PilingBedQueueE";
                     else if (beam.Zone == "ConfirmedInNextBundleW")
-                        beam.Zone = "PillingBedQueueW";
+                        beam.Zone = "PilingBedQueueW";
 
                     if (!RodeoHandler.Tag.SetValue(string.Format("HSM." + beam.Zone ), tagsSet))
                     {                        
                         throw new Exception("Error");
                     }
 
-                    if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag"), string.Format("HSM." + beam.Zone)))
+                    if (beam.Zone.Contains("Piling") )
                     {
-                        throw new Exception("Error");
+                        if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag_Piling"), string.Format("HSM." + beam.Zone)))
+                        {
+                            throw new Exception("Error");
+                        }
                     }
+                    else
+                    {
+                        if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag_Collecting"), string.Format("HSM." + beam.Zone)))
+                        {
+                            throw new Exception("Error");
+                        }
+                    }
+
                 }
                 this.Close();
             }

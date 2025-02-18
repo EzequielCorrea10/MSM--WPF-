@@ -133,12 +133,12 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
         public bool LayoutSemiAutoActive
         {
-            get { return this._activePage == ScreenPages.Pilling; }
+            get { return this._activePage == ScreenPages.Piling; }
             set
             {
                 if (value)
                 {
-                    this._activePage = ScreenPages.Pilling;
+                    this._activePage = ScreenPages.Piling;
                     HSM.HMI.Safety.Operation.Properties.Settings.Default.SCREEN = (int)this._activePage;
                     HSM.HMI.Safety.Operation.Properties.Settings.Default.Save();
                 }
@@ -221,12 +221,12 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
         public bool ZoneActive
         {
-            get { return this._activePage == ScreenPages.Pilling; }
+            get { return this._activePage == ScreenPages.Piling; }
             set
             {
                 if (value)
                 {
-                    this.ActivePage = ScreenPages.Pilling;
+                    this.ActivePage = ScreenPages.Piling;
                 }
             }
         }

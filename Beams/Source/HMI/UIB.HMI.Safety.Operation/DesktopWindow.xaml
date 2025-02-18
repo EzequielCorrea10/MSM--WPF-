@@ -79,7 +79,7 @@
                              IsSelected="{Binding Path=LayoutActive, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                         <view:usrLayout DataContext="{Binding Path=LayoutController, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
                     </TabItem>
-                    <TabItem Header="Pilling Zone&#xD;&#xA;" Width="210" Height="40" VerticalAlignment="Top" Padding="0" Name="tabLayoutSemiAuto" Style="{StaticResource BtnTabItemStyle}"
+                    <TabItem Header="Piling Zone&#xD;&#xA;" Width="210" Height="40" VerticalAlignment="Top" Padding="0" Name="tabLayoutSemiAuto" Style="{StaticResource BtnTabItemStyle}"
                              IsSelected="{Binding Path=LayoutSemiAutoActive, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                         <view:usrPillingLayout DataContext="{Binding Path=LayoutSemiAutoController, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
                     </TabItem>

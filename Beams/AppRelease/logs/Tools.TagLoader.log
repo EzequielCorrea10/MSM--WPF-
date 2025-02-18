@@ -10971,3 +10971,55 @@
 2025-02-18 10:59:02.436: InitializeRegister, Message: Information of PID=39456, Process=TagLoader, Arguments=
 2025-02-18 10:59:02.414: LoadClientTypes, Debug: 6 Rows defined for Client types
 2025-02-18 10:59:02.585: LoadClients, Debug: 8 Rows defined for Clients
+2025-02-18 12:11:26.103: InitializeRegister, Message: ********** Start the application **********
+2025-02-18 12:11:26.119: InitializeRegister, Message: Information of PID=35140, Process=TagLoader, Arguments=
+2025-02-18 12:11:26.090: LoadClientTypes, Debug: 6 Rows defined for Client types
+2025-02-18 12:11:26.243: LoadClients, Debug: 8 Rows defined for Clients
+2025-02-18 12:11:50.269: Init, Debug: RTS Driver counter: 1
+2025-02-18 12:20:43.923: InitializeRegister, Message: ********** Start the application **********
+2025-02-18 12:20:43.936: InitializeRegister, Message: Information of PID=27272, Process=TagLoader, Arguments=
+2025-02-18 12:20:42.381: LoadClientTypes, Debug: 6 Rows defined for Client types
+2025-02-18 12:20:44.070: LoadClients, Debug: 8 Rows defined for Clients
+2025-02-18 12:20:44.173: ExecuteOpen, Debug: error to open shmem USRData_HSM_HSMSERVER
+2025-02-18 12:20:44.173: Open, Message: Open was not sucesfully, sector HSM - host HSMSERVER
+2025-02-18 12:25:32.964: InitializeRegister, Message: ********** Start the application **********
+2025-02-18 12:25:32.979: InitializeRegister, Message: Information of PID=39504, Process=TagLoader, Arguments=
+2025-02-18 12:25:32.935: LoadClientTypes, Debug: 6 Rows defined for Client types
+2025-02-18 12:25:33.121: LoadClients, Debug: 8 Rows defined for Clients
+2025-02-18 12:25:33.235: ExecuteOpen, Debug: error to open shmem USRData_HSM_HSMSERVER
+2025-02-18 12:25:33.236: Open, Message: Open was not sucesfully, sector HSM - host HSMSERVER
+2025-02-18 12:25:45.223: Init, Debug: RTS Driver counter: 1
+2025-02-18 12:25:45.226: ExecuteOpen, Debug: error to open shmem RTData_HSM_HSMSERVER
+2025-02-18 12:25:45.226: Open, Message: Open was not sucesfully, sector HSM - host HSMSERVER
+2025-02-18 12:25:45.760: ExecuteOpen, Debug: error to open shmem RTData_HSM_HSMSERVER
+2025-02-18 12:25:45.760: Open, Message: Open was not sucesfully, sector HSM - host HSMSERVER
+2025-02-18 12:25:45.985: ExecuteOpen, Debug: error to open shmem RTData_HSM_HSMSERVER
+2025-02-18 12:25:45.985: Open, Message: Open was not sucesfully, sector HSM - host HSMSERVER
+2025-02-18 12:25:46.176: ExecuteOpen, Debug: error to open shmem RTData_HSM_HSMSERVER
+2025-02-18 12:25:46.176: Open, Message: Open was not sucesfully, sector HSM - host HSMSERVER
+2025-02-18 12:25:46.377: ExecuteOpen, Debug: error to open shmem RTData_HSM_HSMSERVER
+2025-02-18 12:25:46.377: Open, Message: Open was not sucesfully, sector HSM - host HSMSERVER
+2025-02-18 12:25:46.577: ExecuteOpen, Debug: error to open shmem RTData_HSM_HSMSERVER
+2025-02-18 12:25:46.577: Open, Message: Open was not sucesfully, sector HSM - host HSMSERVER
+2025-02-18 12:27:06.674: InitializeRegister, Message: ********** Start the application **********
+2025-02-18 12:27:06.686: InitializeRegister, Message: Information of PID=37636, Process=TagLoader, Arguments=
+2025-02-18 12:27:06.639: LoadClientTypes, Debug: 6 Rows defined for Client types
+2025-02-18 12:27:06.792: LoadClients, Debug: 8 Rows defined for Clients
+2025-02-18 12:27:12.108: Init, Debug: RTS Driver counter: 1
+2025-02-18 12:30:08.172: InitializeRegister, Message: ********** Start the application **********
+2025-02-18 12:30:08.183: InitializeRegister, Message: Information of PID=32940, Process=TagLoader, Arguments=
+2025-02-18 12:30:08.164: LoadClientTypes, Debug: 6 Rows defined for Client types
+2025-02-18 12:30:08.264: LoadClients, Debug: 8 Rows defined for Clients
+2025-02-18 12:30:10.598: Init, Debug: RTS Driver counter: 1
+2025-02-18 12:38:18.758: InitializeRegister, Message: ********** Start the application **********
+2025-02-18 12:38:18.770: InitializeRegister, Message: Information of PID=23160, Process=TagLoader, Arguments=
+2025-02-18 12:38:18.750: LoadClientTypes, Debug: 6 Rows defined for Client types
+2025-02-18 12:38:18.910: LoadClients, Debug: 8 Rows defined for Clients
+2025-02-18 12:41:22.279: InitializeRegister, Message: ********** Start the application **********
+2025-02-18 12:41:22.291: InitializeRegister, Message: Information of PID=10552, Process=TagLoader, Arguments=
+2025-02-18 12:41:22.271: LoadClientTypes, Debug: 6 Rows defined for Client types
+2025-02-18 12:41:22.422: LoadClients, Debug: 8 Rows defined for Clients
+2025-02-18 12:42:59.093: InitializeRegister, Message: ********** Start the application **********
+2025-02-18 12:42:59.103: InitializeRegister, Message: Information of PID=26448, Process=TagLoader, Arguments=
+2025-02-18 12:42:59.084: LoadClientTypes, Debug: 6 Rows defined for Client types
+2025-02-18 12:42:59.240: LoadClients, Debug: 8 Rows defined for Clients

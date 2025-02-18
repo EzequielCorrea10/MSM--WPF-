@@ -50,46 +50,46 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         private List<object> _lstLayoutElements;
 
         private ObservableCollection<Beam> _beamsBedExit;
-        private ObservableCollection<Beam> _pillingBeams;
+        private ObservableCollection<Beam> _PilingBeams;
         private ObservableCollection<Beam> _beamsBedEntry;
-        private ObservableCollection<Beam> _prePillingBeams;
+        private ObservableCollection<Beam> _prePilingBeams;
 
-        private ObservableCollection<Beam> _beamPillingBedW1;
-        private ObservableCollection<Beam> _beamPillingBedW2;
-        private ObservableCollection<Beam> _beamPillingBedW3;
-        private ObservableCollection<Beam> _beamPillingBedW4;
+        private ObservableCollection<Beam> _beamPilingBedW1;
+        private ObservableCollection<Beam> _beamPilingBedW2;
+        private ObservableCollection<Beam> _beamPilingBedW3;
+        private ObservableCollection<Beam> _beamPilingBedW4;
 
-        private ObservableCollection<Beam> _beamPillingBedE1;
-        private ObservableCollection<Beam> _beamPillingBedE2;
-        private ObservableCollection<Beam> _beamPillingBedE3;
-        private ObservableCollection<Beam> _beamPillingBedE4;
+        private ObservableCollection<Beam> _beamPilingBedE1;
+        private ObservableCollection<Beam> _beamPilingBedE2;
+        private ObservableCollection<Beam> _beamPilingBedE3;
+        private ObservableCollection<Beam> _beamPilingBedE4;
 
-        private ObservableCollection<Beam> _beamPillingBedQueueE;
-        private ObservableCollection<Beam> _beamPillingBedQueueW;
+        private ObservableCollection<Beam> _beamPilingBedQueueE;
+        private ObservableCollection<Beam> _beamPilingBedQueueW;
 
         private ObservableCollection<Beam> _beamQueueW;
         private ObservableCollection<Beam> _beamQueueE;
 
         bool beamModified;
-        private bool _beamInPillingBedW1;
-        private bool _beamInPillingBedW2;
-        private bool _beamInPillingBedW3;
-        private bool _beamInPillingBedW4;
-        private bool _beamInPillingBedW5;
-        private bool _beamInPillingBed5W1;
-        private bool _beamInPillingBed5W2;
+        private bool _beamInPilingBedW1;
+        private bool _beamInPilingBedW2;
+        private bool _beamInPilingBedW3;
+        private bool _beamInPilingBedW4;
+        private bool _beamInPilingBedW5;
+        private bool _beamInPilingBed5W1;
+        private bool _beamInPilingBed5W2;
 
 
 
-        private bool _beamInPillingBedE1;
-        private bool _beamInPillingBedE2;
-        private bool _beamInPillingBedE3;
-        private bool _beamInPillingBedE4;
-        private bool _beamInPillingBedE5;
-        private bool _beamInPillingQueueW;
-        private bool _beamInPillingQueueE;
-        private bool _beamInPillingPreQueueE;
-        private bool _beamInPillingPreQueueW;
+        private bool _beamInPilingBedE1;
+        private bool _beamInPilingBedE2;
+        private bool _beamInPilingBedE3;
+        private bool _beamInPilingBedE4;
+        private bool _beamInPilingBedE5;
+        private bool _beamInPilingQueueW;
+        private bool _beamInPilingQueueE;
+        private bool _beamInPilingPreQueueE;
+        private bool _beamInPilingPreQueueW;
 
         private bool _beamInCollectingBedE;
         private bool _beamInCollectingBedW;
@@ -156,7 +156,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
         #region Constructors
         /// <summary>
-        /// Initializes a new instance of the <see cref="vmPillingZone"/> class.
+        /// Initializes a new instance of the <see cref="vmPilingZone"/> class.
         /// </summary>
         /// <param name="zones"></param>
         /// <param name="requests"></param>
@@ -202,137 +202,137 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             }
         }
 
-        public bool BeamInPillingBedW1
+        public bool BeamInPilingBedW1
         {
-            get { return this._beamInPillingBedW1; }
+            get { return this._beamInPilingBedW1; }
             set
             {
-                if (this._beamInPillingBedW1 != value)
+                if (this._beamInPilingBedW1 != value)
                 {
-                    this._beamInPillingBedW1 = value;
+                    this._beamInPilingBedW1 = value;
 
-                    OnPropertyChanged("BeamInPillingBedW1");
+                    OnPropertyChanged("BeamInPilingBedW1");
 
                 }
             }
         }
 
-        public bool BeamInPillingBedW2
+        public bool BeamInPilingBedW2
         {
-            get { return this._beamInPillingBedW2; }
+            get { return this._beamInPilingBedW2; }
             set
             {
-                if (this._beamInPillingBedW2 != value)
+                if (this._beamInPilingBedW2 != value)
                 {
-                    this._beamInPillingBedW2 = value;
+                    this._beamInPilingBedW2 = value;
 
-                    OnPropertyChanged("BeamInPillingBedW2");
+                    OnPropertyChanged("BeamInPilingBedW2");
 
                 }
             }
         }
 
-        public bool BeamInPillingBedW3
+        public bool BeamInPilingBedW3
         {
-            get { return this._beamInPillingBedW3; }
+            get { return this._beamInPilingBedW3; }
             set
             {
-                if (this._beamInPillingBedW3 != value)
+                if (this._beamInPilingBedW3 != value)
                 {
-                    this._beamInPillingBedW3 = value;
+                    this._beamInPilingBedW3 = value;
 
-                    OnPropertyChanged("BeamInPillingBedW3");
+                    OnPropertyChanged("BeamInPilingBedW3");
 
                 }
             }
         }
 
-        public bool BeamInPillingBedW4
+        public bool BeamInPilingBedW4
         {
-            get { return this._beamInPillingBedW4; }
+            get { return this._beamInPilingBedW4; }
             set
             {
-                if (this._beamInPillingBedW4 != value)
+                if (this._beamInPilingBedW4 != value)
                 {
-                    this._beamInPillingBedW4 = value;
+                    this._beamInPilingBedW4 = value;
 
-                    OnPropertyChanged("BeamInPillingBedW4");
+                    OnPropertyChanged("BeamInPilingBedW4");
 
                 }
             }
         }
 
 
-        public bool BeamNotInPillingBed5W
+        public bool BeamNotInPilingBed5W
         {
-            get { return this._beamInPillingBedW5; }
+            get { return this._beamInPilingBedW5; }
             set
             {
-                if (this._beamInPillingBedW5 != value)
+                if (this._beamInPilingBedW5 != value)
                 {
-                    this._beamInPillingBedW5 = value;
+                    this._beamInPilingBedW5 = value;
 
-                    OnPropertyChanged("BeamNotInPillingBed5W");
+                    OnPropertyChanged("BeamNotInPilingBed5W");
 
                 }
             }
         }
 
-        public bool BeamNotInPillingBed5W1
+        public bool BeamNotInPilingBed5W1
         {
-            get { return this._beamInPillingBed5W1; }
+            get { return this._beamInPilingBed5W1; }
             set
             {
-                if (this._beamInPillingBed5W1 != value)
+                if (this._beamInPilingBed5W1 != value)
                 {
-                    this._beamInPillingBed5W1 = value;
+                    this._beamInPilingBed5W1 = value;
 
-                    OnPropertyChanged("BeamNotInPillingBed5W1");
+                    OnPropertyChanged("BeamNotInPilingBed5W1");
 
                 }
             }
         }
 
-        public bool BeamNotInPillingBed5W2
+        public bool BeamNotInPilingBed5W2
         {
-            get { return this._beamInPillingBed5W2; }
+            get { return this._beamInPilingBed5W2; }
             set
             {
-                if (this._beamInPillingBed5W2 != value)
+                if (this._beamInPilingBed5W2 != value)
                 {
-                    this._beamInPillingBed5W2 = value;
+                    this._beamInPilingBed5W2 = value;
 
-                    OnPropertyChanged("BeamNotInPillingBed5W2");
+                    OnPropertyChanged("BeamNotInPilingBed5W2");
 
                 }
             }
         }
 
-        public bool BeamInPillingPreQueueE
+        public bool BeamInPilingPreQueueE
         {
-            get { return this._beamInPillingPreQueueE; }
+            get { return this._beamInPilingPreQueueE; }
             set
             {
-                if (this._beamInPillingPreQueueE != value)
+                if (this._beamInPilingPreQueueE != value)
                 {
-                    this._beamInPillingPreQueueE = value;
+                    this._beamInPilingPreQueueE = value;
 
-                    OnPropertyChanged("BeamInPillingPreQueueE");
+                    OnPropertyChanged("BeamInPilingPreQueueE");
 
                 }
             }
         }
 
-        public bool BeamInPillingQueueE
+        public bool BeamInPilingQueueE
         {
-            get { return this._beamInPillingQueueE; }
+            get { return this._beamInPilingQueueE; }
             set
             {
-                if (this._beamInPillingQueueE != value)
+                if (this._beamInPilingQueueE != value)
                 {
-                    this._beamInPillingQueueE = value;
+                    this._beamInPilingQueueE = value;
 
-                    OnPropertyChanged("BeamInPillingQueueE");
+                    OnPropertyChanged("BeamInPilingQueueE");
 
                 }
             }
@@ -354,106 +354,106 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         }
 
 
-        public bool BeamInPillingBedE1
+        public bool BeamInPilingBedE1
         {
-            get { return this._beamInPillingBedE1; }
+            get { return this._beamInPilingBedE1; }
             set
             {
-                if (this._beamInPillingBedE1 != value)
+                if (this._beamInPilingBedE1 != value)
                 {
-                    this._beamInPillingBedE1 = value;
+                    this._beamInPilingBedE1 = value;
 
-                    OnPropertyChanged("BeamInPillingBedE1");
+                    OnPropertyChanged("BeamInPilingBedE1");
 
                 }
             }
         }
 
-        public bool BeamInPillingBedE2
+        public bool BeamInPilingBedE2
         {
-            get { return this._beamInPillingBedE2; }
+            get { return this._beamInPilingBedE2; }
             set
             {
-                if (this._beamInPillingBedE2 != value)
+                if (this._beamInPilingBedE2 != value)
                 {
-                    this._beamInPillingBedE2 = value;
+                    this._beamInPilingBedE2 = value;
 
-                    OnPropertyChanged("BeamInPillingBedE2");
+                    OnPropertyChanged("BeamInPilingBedE2");
 
                 }
             }
         }
 
-        public bool BeamInPillingBedE3
+        public bool BeamInPilingBedE3
         {
-            get { return this._beamInPillingBedE3; }
+            get { return this._beamInPilingBedE3; }
             set
             {
-                if (this._beamInPillingBedE3 != value)
+                if (this._beamInPilingBedE3 != value)
                 {
-                    this._beamInPillingBedE3 = value;
+                    this._beamInPilingBedE3 = value;
 
-                    OnPropertyChanged("BeamInPillingBedE3");
+                    OnPropertyChanged("BeamInPilingBedE3");
 
                 }
             }
         }
 
-        public bool BeamInPillingBedE4
+        public bool BeamInPilingBedE4
         {
-            get { return this._beamInPillingBedE4; }
+            get { return this._beamInPilingBedE4; }
             set
             {
-                if (this._beamInPillingBedE4 != value)
+                if (this._beamInPilingBedE4 != value)
                 {
-                    this._beamInPillingBedE4 = value;
+                    this._beamInPilingBedE4 = value;
 
-                    OnPropertyChanged("BeamInPillingBedE4");
+                    OnPropertyChanged("BeamInPilingBedE4");
 
                 }
             }
         }
 
-        public bool BeamInPillingPreQueueW
+        public bool BeamInPilingPreQueueW
         {
-            get { return this._beamInPillingPreQueueW; }
+            get { return this._beamInPilingPreQueueW; }
             set
             {
-                if (this._beamInPillingPreQueueW != value)
+                if (this._beamInPilingPreQueueW != value)
                 {
-                    this._beamInPillingPreQueueW = value;
+                    this._beamInPilingPreQueueW = value;
 
-                    OnPropertyChanged("BeamInPillingPreQueueW");
+                    OnPropertyChanged("BeamInPilingPreQueueW");
 
                 }
             }
         }
 
-        public bool BeamInPillingQueueW
+        public bool BeamInPilingQueueW
         {
-            get { return this._beamInPillingQueueW; }
+            get { return this._beamInPilingQueueW; }
             set
             {
-                if (this._beamInPillingQueueW != value)
+                if (this._beamInPilingQueueW != value)
                 {
-                    this._beamInPillingQueueW = value;
+                    this._beamInPilingQueueW = value;
 
-                    OnPropertyChanged("BeamInPillingQueueW");
+                    OnPropertyChanged("BeamInPilingQueueW");
 
                 }
             }
         }
 
-        public bool BeamNotInPillingBed5E
+        public bool BeamNotInPilingBed5E
         {
-            get { return this._beamInPillingBedE5; }
+            get { return this._beamInPilingBedE5; }
             set
             {
-                if (this._beamInPillingBedE5 != value)
+                if (this._beamInPilingBedE5 != value)
                 {
-                    this._beamInPillingBedE5 = value;
+                    this._beamInPilingBedE5 = value;
 
-                    OnPropertyChanged("BeamNotInPillingBed5E");
+                    OnPropertyChanged("BeamNotInPilingBed5E");
 
                 }
             }
@@ -491,28 +491,28 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         }
 
 
-        public ObservableCollection<Beam> PillingBeams
+        public ObservableCollection<Beam> PilingBeams
         {
-            get { return this._pillingBeams; }
+            get { return this._PilingBeams; }
             set
             {
-                if (this._pillingBeams != value)
+                if (this._PilingBeams != value)
                 {
-                    this._pillingBeams = value;
-                    OnPropertyChanged(nameof(PillingBeams));
+                    this._PilingBeams = value;
+                    OnPropertyChanged(nameof(PilingBeams));
                 }
             }
         }
 
-        public ObservableCollection<Beam> PrePillingBeams
+        public ObservableCollection<Beam> PrePilingBeams
         {
-            get { return this._prePillingBeams; }
+            get { return this._prePilingBeams; }
             set
             {
-                if (this._prePillingBeams != value)
+                if (this._prePilingBeams != value)
                 {
-                    this._prePillingBeams = value;
-                    OnPropertyChanged(nameof(PrePillingBeams));
+                    this._prePilingBeams = value;
+                    OnPropertyChanged(nameof(PrePilingBeams));
                 }
             }
         }
@@ -838,26 +838,26 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             _zones = new List<string>();
             _beams = new List<Beam>();
             _beamsBedEntry = new ObservableCollection<Beam>();
-            _pillingBeams = new ObservableCollection<Beam>();
-            _prePillingBeams = new ObservableCollection<Beam>();
+            _PilingBeams = new ObservableCollection<Beam>();
+            _prePilingBeams = new ObservableCollection<Beam>();
             _beamsBedExit = new ObservableCollection<Beam>();
 
-            _zones.Add("PillingBed1W");
-            _zones.Add("PillingBed2W");
-            _zones.Add("PillingBed3W");
-            _zones.Add("PillingBed4W");
-            _zones.Add("PillingBed1E");
-            _zones.Add("PillingBed2E");
-            _zones.Add("PillingBed3E");
-            _zones.Add("PillingBed4E");
-            _zones.Add("PillingBedQueueE");
-            _zones.Add("PillingBedQueueW");
-            _zones.Add("PillingBed5W");
-            _zones.Add("PillingBed5W1");
-            _zones.Add("PillingBed5W2");
-            _zones.Add("PillingBed5E");
-            _zones.Add("PillingBedPreQueueE");
-            _zones.Add("PillingBedPreQueueW");
+            _zones.Add("PilingBed1W");
+            _zones.Add("PilingBed2W");
+            _zones.Add("PilingBed3W");
+            _zones.Add("PilingBed4W");
+            _zones.Add("PilingBed1E");
+            _zones.Add("PilingBed2E");
+            _zones.Add("PilingBed3E");
+            _zones.Add("PilingBed4E");
+            _zones.Add("PilingBedQueueE");
+            _zones.Add("PilingBedQueueW");
+            _zones.Add("PilingBed5W");
+            _zones.Add("PilingBed5W1");
+            _zones.Add("PilingBed5W2");
+            _zones.Add("PilingBed5E");
+            _zones.Add("PilingBedPreQueueE");
+            _zones.Add("PilingBedPreQueueW");
 
 
             this._cancelTask = new CancellationTokenSource();
@@ -919,18 +919,18 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             bool showListBeams = false;
             switch (beam.Zone)
             {
-                case "PillingBed1E":
-                case "PillingBed1W":
-                case "PillingBed2E":
-                case "PillingBed2W":
+                case "PilingBed1E":
+                case "PilingBed1W":
+                case "PilingBed2E":
+                case "PilingBed2W":
                     beams = BeamsBedEntry.ToList();
                     showListBeams = false;
                     break;
-                case "PillingBed3E":
-                case "PillingBed3W":
-                case "PillingBed4E":
-                case "PillingBed4W":
-                    beams = PrePillingBeams.ToList();
+                case "PilingBed3E":
+                case "PilingBed3W":
+                case "PilingBed4E":
+                case "PilingBed4W":
+                    beams = PrePilingBeams.ToList();
                     showListBeams = false;
                     break;
                 default:
@@ -945,8 +945,8 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             }
             else
             {
-                if(beam.Zone != "PillingBed5W" && beam.Zone != "PillingBed5E" && beam.Zone != "PillingBed5W1" && beam.Zone != "PillingBed5W2") 
-                    beams = PillingBeams.Where(x => x.Zone == beam.Zone).ToList();
+                if(beam.Zone != "PilingBed5W" && beam.Zone != "PilingBed5E" && beam.Zone != "PilingBed5W1" && beam.Zone != "PilingBed5W2") 
+                    beams = PilingBeams.Where(x => x.Zone == beam.Zone).ToList();
                 else
                     beams = BeamsBedExit.Where(x => x.Zone == beam.Zone).ToList();
 
@@ -995,18 +995,18 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         {
             Application.Current.Dispatcher.Invoke(() =>
             {
-                if (Beams.Count != _beamsBedExit.Count + _pillingBeams.Count + _beamsBedEntry.Count + _prePillingBeams.Count || beamModified)
+                if (Beams.Count != _beamsBedExit.Count + _PilingBeams.Count + _beamsBedEntry.Count + _prePilingBeams.Count || beamModified)
                 {
                     _beamsBedEntry.Clear();
-                    _pillingBeams.Clear();
-                    _prePillingBeams.Clear();
+                    _PilingBeams.Clear();
+                    _prePilingBeams.Clear();
                     _beamsBedExit.Clear();
 
                     foreach (var beam in Beams)
                     {
                         switch (beam.Zone)
                         {
-                            case "PillingBed1W":
+                            case "PilingBed1W":
                                 if (_beamsBedEntry.Count > 0 && _beamsBedEntry.Where(x => x.PositionX == PosXWest && x.PositionY == PosYW1).Any())
                                 {
                                     beam.PositionX = PosXWest;
@@ -1022,7 +1022,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                 OnPropertyChanged(nameof(BeamsBedEntry));
                                 break;
 
-                            case "PillingBed1E":
+                            case "PilingBed1E":
                                 if (_beamsBedEntry.Count > 0 && _beamsBedEntry.Where(x => x.PositionX == PosXEast && x.PositionY == PosYE1).Any())
                                 {
                                     beam.PositionX = PosXEast;
@@ -1038,7 +1038,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                 OnPropertyChanged(nameof(BeamsBedEntry));
                                 break;
 
-                            case "PillingBed2W":
+                            case "PilingBed2W":
                                 if (_beamsBedEntry.Count > 0 && _beamsBedEntry.Where(x => x.PositionX == PosXWest && x.PositionY == PosYW2).Any())
                                 {
                                     beam.PositionX = PosXWest;
@@ -1054,7 +1054,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                 OnPropertyChanged(nameof(BeamsBedEntry));
                                 break;
 
-                            case "PillingBed2E":
+                            case "PilingBed2E":
                                 if (_beamsBedEntry.Count > 0 && _beamsBedEntry.Where(x => x.PositionX == PosXEast && x.PositionY == PosYE2).Any())
                                 {
                                     beam.PositionX = PosXEast;
@@ -1070,12 +1070,12 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                 OnPropertyChanged(nameof(BeamsBedEntry));
                                 break;
 
-                            case "PillingBed3W":
+                            case "PilingBed3W":
 
-                                if (_prePillingBeams.Count > 0 && _prePillingBeams.Where(x => x.PositionX == PosXWest && x.PositionY == PosYW3).Any())
+                                if (_prePilingBeams.Count > 0 && _prePilingBeams.Where(x => x.PositionX == PosXWest && x.PositionY == PosYW3).Any())
                                 {
                                     beam.PositionX = PosXWest;
-                                    beam.PositionY = _prePillingBeams.Where(x => x.PositionX == PosXWest && (x.PositionY <= PosYW3 && x.PositionY > PosYW2)).OrderBy(x => x.PositionY).FirstOrDefault().PositionY - 25;
+                                    beam.PositionY = _prePilingBeams.Where(x => x.PositionX == PosXWest && (x.PositionY <= PosYW3 && x.PositionY > PosYW2)).OrderBy(x => x.PositionY).FirstOrDefault().PositionY - 25;
                                 }
                                 else
                                 {
@@ -1083,34 +1083,34 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                     beam.PositionY = PosYW3;
                                 }
 
-                                _prePillingBeams.Add(beam);
+                                _prePilingBeams.Add(beam);
 
-                                OnPropertyChanged(nameof(PrePillingBeams));
+                                OnPropertyChanged(nameof(PrePilingBeams));
                                 break;
 
-                            case "PillingBed3E":
+                            case "PilingBed3E":
 
-                                if (_prePillingBeams.Count > 0 && _prePillingBeams.Where(x => x.PositionX == PosXEast && x.PositionY == PosYE3).Any())
+                                if (_prePilingBeams.Count > 0 && _prePilingBeams.Where(x => x.PositionX == PosXEast && x.PositionY == PosYE3).Any())
                                 {
                                     beam.PositionX = PosXEast;
-                                    beam.PositionY = _prePillingBeams.Where(x => x.PositionX == PosXEast && (x.PositionY <= PosYE3 && x.PositionY > PosYE2)).OrderBy(x => x.PositionY).FirstOrDefault().PositionY - 25;
+                                    beam.PositionY = _prePilingBeams.Where(x => x.PositionX == PosXEast && (x.PositionY <= PosYE3 && x.PositionY > PosYE2)).OrderBy(x => x.PositionY).FirstOrDefault().PositionY - 25;
                                 }
                                 else
                                 {
                                     beam.PositionX = PosXEast;
                                     beam.PositionY = PosYE3;
                                 }
-                                _prePillingBeams.Add(beam);
+                                _prePilingBeams.Add(beam);
 
-                                OnPropertyChanged(nameof(PrePillingBeams));
+                                OnPropertyChanged(nameof(PrePilingBeams));
                                 break;
 
-                            case "PillingBed4W":
+                            case "PilingBed4W":
 
-                                if (_prePillingBeams.Count > 0 && _prePillingBeams.Where(x => x.PositionX == PosXWest && x.PositionY == PosYW4).Any())
+                                if (_prePilingBeams.Count > 0 && _prePilingBeams.Where(x => x.PositionX == PosXWest && x.PositionY == PosYW4).Any())
                                 {
                                     beam.PositionX = PosXWest;
-                                    beam.PositionY = _prePillingBeams.Where(x => x.PositionX == PosXWest && (x.PositionY <= PosYW4 && x.PositionY > PosYW3)).OrderBy(x => x.PositionY).FirstOrDefault().PositionY - 25;
+                                    beam.PositionY = _prePilingBeams.Where(x => x.PositionX == PosXWest && (x.PositionY <= PosYW4 && x.PositionY > PosYW3)).OrderBy(x => x.PositionY).FirstOrDefault().PositionY - 25;
                                 }
                                 else
                                 {
@@ -1118,16 +1118,16 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                     beam.PositionY = PosYW4;
                                 }
 
-                                _prePillingBeams.Add(beam);
+                                _prePilingBeams.Add(beam);
 
-                                OnPropertyChanged(nameof(PrePillingBeams));
+                                OnPropertyChanged(nameof(PrePilingBeams));
                                 break;
 
-                            case "PillingBed4E":
-                                if (_prePillingBeams.Count > 0 && _prePillingBeams.Where(x => x.PositionX == PosXEast && x.PositionY == PosYE4).Any())
+                            case "PilingBed4E":
+                                if (_prePilingBeams.Count > 0 && _prePilingBeams.Where(x => x.PositionX == PosXEast && x.PositionY == PosYE4).Any())
                                 {
                                     beam.PositionX = PosXEast;
-                                    beam.PositionY = _prePillingBeams.Where(x => x.PositionX == PosXEast && (x.PositionY <= PosYE4 && x.PositionY > PosYE3)).OrderBy(x => x.PositionY).FirstOrDefault().PositionY - 25;
+                                    beam.PositionY = _prePilingBeams.Where(x => x.PositionX == PosXEast && (x.PositionY <= PosYE4 && x.PositionY > PosYE3)).OrderBy(x => x.PositionY).FirstOrDefault().PositionY - 25;
                                 }
                                 else
                                 {
@@ -1135,50 +1135,50 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                     beam.PositionY = PosYE4;
                                 }
 
-                                _prePillingBeams.Add(beam);
-                                OnPropertyChanged(nameof(PrePillingBeams));
+                                _prePilingBeams.Add(beam);
+                                OnPropertyChanged(nameof(PrePilingBeams));
                                 break;
-                            case "PillingBedPreQueueW":
+                            case "PilingBedPreQueueW":
 
                                 beam.PositionX = PosXWest;
                                 beam.PositionY = PosYWPreQ;
 
 
-                                _pillingBeams.Add(beam);
-                                OnPropertyChanged(nameof(PillingBeams));
+                                _PilingBeams.Add(beam);
+                                OnPropertyChanged(nameof(PilingBeams));
                                 break;
 
-                            case "PillingBedPreQueueE":
+                            case "PilingBedPreQueueE":
 
                                 beam.PositionX = PosXEast;
                                 beam.PositionY = PosYEPreQ;
 
 
-                                _pillingBeams.Add(beam);
+                                _PilingBeams.Add(beam);
 
-                                OnPropertyChanged(nameof(PillingBeams));
+                                OnPropertyChanged(nameof(PilingBeams));
                                 break;
-                            case "PillingBedQueueW":
+                            case "PilingBedQueueW":
                                 beam.PositionX = PosXWest;
                                 beam.PositionY = PosYWQ;
 
-                                _pillingBeams.Add(beam);
+                                _PilingBeams.Add(beam);
 
-                                OnPropertyChanged(nameof(PillingBeams));
+                                OnPropertyChanged(nameof(PilingBeams));
                                 break;
 
-                            case "PillingBedQueueE":
+                            case "PilingBedQueueE":
 
                                 beam.PositionX = PosXEast;
                                 beam.PositionY = PosYEQ;
 
 
-                                _pillingBeams.Add(beam);
+                                _PilingBeams.Add(beam);
 
-                                OnPropertyChanged(nameof(PillingBeams));
+                                OnPropertyChanged(nameof(PilingBeams));
                                 break;
 
-                            case "PillingBed5E":
+                            case "PilingBed5E":
 
                                 beam.PositionX = PosXEast;
                                 beam.PositionY = PosYE5;
@@ -1186,7 +1186,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                 OnPropertyChanged(nameof(BeamsBedExit));
                                 break;
 
-                            case "PillingBed5W":
+                            case "PilingBed5W":
 
                                 beam.PositionX = PosXWest;
                                 beam.PositionY = PosYW5;
@@ -1194,7 +1194,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                 OnPropertyChanged(nameof(BeamsBedExit));
                                 break;
 
-                            case "PillingBed5W1":
+                            case "PilingBed5W1":
 
                                 beam.PositionX = PosXWest;
                                 beam.PositionY = PosYW5;
@@ -1202,7 +1202,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                 OnPropertyChanged(nameof(BeamsBedExit));
                                 break;
 
-                            case "PillingBed5W2":
+                            case "PilingBed5W2":
 
                                 beam.PositionX = PosXEast;
                                 beam.PositionY = PosYE5;
@@ -1235,38 +1235,38 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             {
                 switch (_beamsBedEntry[i].Zone)
                 {
-                    case "PillingBed1E":
+                    case "PilingBed1E":
                         beamsAdjustE1.Add(_beamsBedEntry[i]);
                         break;
 
-                    case "PillingBed1W":
+                    case "PilingBed1W":
                         beamsAdjustW1.Add(_beamsBedEntry[i]);
                         break;
-                    case "PillingBed2E":
+                    case "PilingBed2E":
                         beamsAdjustE2.Add(_beamsBedEntry[i]);
                         break;
-                    case "PillingBed2W":
+                    case "PilingBed2W":
                         beamsAdjustW2.Add(_beamsBedEntry[i]);
                         break;
                 }
             }
 
-            for (int i = 0; i < _prePillingBeams.Count; i++)
+            for (int i = 0; i < _prePilingBeams.Count; i++)
             {
-                switch (_prePillingBeams[i].Zone)
+                switch (_prePilingBeams[i].Zone)
                 {
-                    case "PillingBed3E":
-                        beamsAdjustE3.Add(_prePillingBeams[i]);
+                    case "PilingBed3E":
+                        beamsAdjustE3.Add(_prePilingBeams[i]);
                         break;
 
-                    case "PillingBed3W":
-                        beamsAdjustW3.Add(_prePillingBeams[i]);
+                    case "PilingBed3W":
+                        beamsAdjustW3.Add(_prePilingBeams[i]);
                         break;
-                    case "PillingBed4E":
-                        beamsAdjustE4.Add(_prePillingBeams[i]);
+                    case "PilingBed4E":
+                        beamsAdjustE4.Add(_prePilingBeams[i]);
                         break;
-                    case "PillingBed4W":
-                        beamsAdjustW4.Add(_prePillingBeams[i]);
+                    case "PilingBed4W":
+                        beamsAdjustW4.Add(_prePilingBeams[i]);
                         break;
                 }
             }
@@ -1373,81 +1373,81 @@ namespace HSM.HMI.Safety.Operation.ViewModels
 
         private void CheckBeamInZone()
         {
-            if (_prePillingBeams.Count > 0)
+            if (_prePilingBeams.Count > 0)
             {
                 bool beaminE3 = false;
                 bool beaminE4 = false;
                 bool beaminW3 = false;
                 bool beaminW4 = false;
-                for (int i = 0; i < _prePillingBeams.Count; i++)
+                for (int i = 0; i < _prePilingBeams.Count; i++)
                 {
-                    switch (_prePillingBeams[i].Zone)
+                    switch (_prePilingBeams[i].Zone)
                     {
-                        case "PillingBed3E":
+                        case "PilingBed3E":
                             beaminE3 = true;
                             break;
 
-                        case "PillingBed4E":
+                        case "PilingBed4E":
                             beaminE4 = true;
                             break;
 
-                        case "PillingBed3W":
+                        case "PilingBed3W":
                             beaminW3 = true;
                             break;
 
-                        case "PillingBed4W":
+                        case "PilingBed4W":
                             beaminW4 = true;
                             break;
                     }
                 }
-                BeamInPillingBedE3 = beaminE3;
-                BeamInPillingBedE4 = beaminE4;
-                BeamInPillingBedW3 = beaminW3;
-                BeamInPillingBedW4 = beaminW4;
+                BeamInPilingBedE3 = beaminE3;
+                BeamInPilingBedE4 = beaminE4;
+                BeamInPilingBedW3 = beaminW3;
+                BeamInPilingBedW4 = beaminW4;
             }
             else
             {
-                BeamInPillingBedE3 = false;
-                BeamInPillingBedE4 = false;
-                BeamInPillingBedW3 = false;
-                BeamInPillingBedW4 = false;
+                BeamInPilingBedE3 = false;
+                BeamInPilingBedE4 = false;
+                BeamInPilingBedW3 = false;
+                BeamInPilingBedW4 = false;
             }
-            if (_pillingBeams.Count > 0)
+            if (_PilingBeams.Count > 0)
             {
                 bool beaminPreQW = false;
                 bool beaminPreQE = false;
                 bool beaminQE = false;
                 bool beaminQw = false;
-                for (int i = 0; i < _pillingBeams.Count; i++)
+                for (int i = 0; i < _PilingBeams.Count; i++)
                 {
-                    switch (_pillingBeams[i].Zone)
+                    switch (_PilingBeams[i].Zone)
                     {
-                        case "PillingBedPreQueueE":
+                        case "PilingBedPreQueueE":
                             beaminPreQE = true;
                             break;
-                        case "PillingBedPreQueueW":
+                        case "PilingBedPreQueueW":
                             beaminPreQW = true;
                             break;
-                        case "PillingBedQueueW":
+                        case "PilingBedQueueW":
                             beaminQw = true;
                             break;
-                        case "PillingBedQueueE":
+                        case "PilingBedQueueE":
                             beaminQE = true;
                             break;
                     }
                 }
 
-                BeamInPillingQueueE = beaminQE;
-                BeamInPillingPreQueueE = beaminPreQE;
-                BeamInPillingPreQueueW = beaminPreQW;
-                BeamInPillingQueueW = beaminQw;
+                BeamInPilingQueueE = beaminQE;
+                BeamInPilingPreQueueE = beaminPreQE;
+                BeamInPilingPreQueueW = beaminPreQW;
+                BeamInPilingQueueW = beaminQw;
             }
             else
             {
-                BeamInPillingQueueE = false;
-                BeamInPillingQueueW = false;
-                BeamInPillingPreQueueE = false;
-                BeamInPillingPreQueueW = false;
+                BeamInPilingQueueE = false;
+                BeamInPilingQueueW = false;
+                BeamInPilingPreQueueE = false;
+                BeamInPilingPreQueueW = false;
             }
 
 
@@ -1462,34 +1462,34 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                 {
                     switch (_beamsBedEntry[i].Zone)
                     {
-                        case "PillingBed1E":
+                        case "PilingBed1E":
                             beaminE1 = true;
                             break;
 
-                        case "PillingBed1W":
+                        case "PilingBed1W":
                             beaminW1 = true;
                             break;
-                        case "PillingBed2E":
+                        case "PilingBed2E":
                             beaminE2 = true;
                             break;
-                        case "PillingBed2W":
+                        case "PilingBed2W":
                             beaminW2 = true;
                             break;
                     }
                 }
 
-                BeamInPillingBedE1 = beaminE1;
-                BeamInPillingBedW1 = beaminW1;
-                BeamInPillingBedW2 = beaminW2;
-                BeamInPillingBedE2 = beaminE2;
+                BeamInPilingBedE1 = beaminE1;
+                BeamInPilingBedW1 = beaminW1;
+                BeamInPilingBedW2 = beaminW2;
+                BeamInPilingBedE2 = beaminE2;
 
             }
             else
             {
-                BeamInPillingBedE1 = false;
-                BeamInPillingBedW1 = false;
-                BeamInPillingBedW2 = false;
-                BeamInPillingBedE2 = false;
+                BeamInPilingBedE1 = false;
+                BeamInPilingBedW1 = false;
+                BeamInPilingBedW2 = false;
+                BeamInPilingBedE2 = false;
             }
 
             if (_beamsBedExit.Count > 0)
@@ -1503,34 +1503,34 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                 {
                     switch (_beamsBedExit[i].Zone)
                     {
-                        case "PillingBed5E":
+                        case "PilingBed5E":
                             beaminE5 = false;
                             break;
 
-                        case "PillingBed5W":
+                        case "PilingBed5W":
                             beaminW5 = false;
                             break;
-                        case "PillingBed5W1":
+                        case "PilingBed5W1":
                             beamin5W1 = false;
                             break;
 
-                        case "PillingBed5W2":
+                        case "PilingBed5W2":
                             beamin5W2 = false;
                             break;
                     }
                 }
 
-                BeamNotInPillingBed5E = beaminE5;
-                BeamNotInPillingBed5W = beaminW5;
-                BeamNotInPillingBed5W1 = beamin5W1;
-                BeamNotInPillingBed5W2 = beamin5W2;
+                BeamNotInPilingBed5E = beaminE5;
+                BeamNotInPilingBed5W = beaminW5;
+                BeamNotInPilingBed5W1 = beamin5W1;
+                BeamNotInPilingBed5W2 = beamin5W2;
             }
             else
             {
-                BeamNotInPillingBed5E = true;
-                BeamNotInPillingBed5W = true;
-                BeamNotInPillingBed5W1 = true;
-                BeamNotInPillingBed5W2 = true;
+                BeamNotInPilingBed5E = true;
+                BeamNotInPilingBed5W = true;
+                BeamNotInPilingBed5W1 = true;
+                BeamNotInPilingBed5W2 = true;
             }
 
         }

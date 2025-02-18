@@ -24,7 +24,7 @@ namespace HSM.HMI.Safety.Operation.Enumerations
         /// <summary>
         /// Zone
         /// </summary>
-        Pilling = 2,
+        Piling = 2,
 
         /// <summary>
         /// Request
