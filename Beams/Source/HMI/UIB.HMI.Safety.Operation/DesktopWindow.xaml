@@ -9,7 +9,7 @@
         xmlns:view="clr-namespace:HSM.HMI.Safety.Operation.Views"              
         xmlns:converter="clr-namespace:HSM.HMI.Safety.Operation.Converters"                        
         AllowsTransparency="false" Effect="{StaticResource showEffectWindow}" BorderThickness="0"
-        Height="920" Width="1700" Top="0" Left="0" 
+        Height="960" Width="1700" Top="0" Left="0" 
         ResizeMode="CanResizeWithGrip" WindowStyle="SingleBorderWindow" WindowStartupLocation="CenterOwner">
     <Window.Resources>
         <Style TargetType="ScrollBar">
@@ -52,7 +52,7 @@
                         <TextBlock x:Name="txtTitle" Padding="60,0,0,0" Foreground="WhiteSmoke" FontSize="50" FontWeight="Bold" LineHeight="48" VerticalAlignment="Center" 
                                    Text="VT HSM " />
                     </StackPanel>
-                    <Image Opacity="2" HorizontalAlignment="Left" Source="{StaticResource janus}" Width="290" Grid.Column="1" Margin="1117,10,0,0"/>
+                    <Image Opacity="2" HorizontalAlignment="Left" Source="{StaticResource janus}" Width="290" Grid.Column="1" Margin="1117,10,0,10"/>
                     <Image Opacity="2" HorizontalAlignment="Left" Source="{StaticResource sdi}" Width="116" Grid.Column="1" Margin="980,10,0,0"/>
 
                     <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
@@ -65,14 +65,14 @@
 
         <Grid Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">
             <Grid.RowDefinitions>
-                <RowDefinition Height="750"/>
+                <RowDefinition Height="800"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <DockPanel Grid.Row="0" Grid.Column="0" Background="Transparent" Margin="0,5,0,10">
+            <DockPanel Grid.Row="0" Grid.Column="0" Background="Transparent" Margin="0,0,0,10">
                 <TabControl Style="{StaticResource TabControlStyle}" x:Name="tabControl" HorizontalAlignment="Stretch" Padding="0" VerticalAlignment="Top">
                     <TabItem Header="Collecting Zone&#xD;&#xA;" Width="210" Height="40"
                              Margin="0" Padding="0" Name="tabLayout" Style="{StaticResource BtnTabItemStyle}"
@@ -122,7 +122,7 @@
         </Grid>
         <StackPanel
                                 Grid.Column="1"
-                                Margin="0,731,0,0"
+                                Margin="0,763,0,0"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Top"
                                 Orientation="Horizontal" Height="44" Grid.Row="1">

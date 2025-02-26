@@ -89,6 +89,8 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         private bool _beamInPilingQueueW;
         private bool _beamInPilingQueueE;
         private bool _beamInPilingPreQueueE;
+        private bool _beamInNextToConfirmE;
+        private bool _beamInNextToConfirmW;
         private bool _beamInPilingPreQueueW;
 
         private bool _beamInCollectingBedE;
@@ -98,20 +100,22 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         private int PosXWest = 90;
 
         private int PosYW1 = 125;
-        private int PosYW2 = 255;
-        private int PosYW3 = 340;
-        private int PosYW4 = 415;
-        private int PosYWPreQ = 465;
-        private int PosYWQ = 540;
-        private int PosYW5 = 615;
+        private int PosYW2 = 240;
+        private int PosYW3 = 305;
+        private int PosYW4 = 375;
+        private int PosYWPreQ = 420;
+        private int PosYWNextToConfirmW = 485;
+        private int PosYWQ = 555;
+        private int PosYW5 = 650;
 
         private int PosYE1 = 125;
-        private int PosYE2 = 255;
-        private int PosYE3 = 340;
-        private int PosYE4 = 415;
-        private int PosYEPreQ = 465;
-        private int PosYEQ = 540;
-        private int PosYE5 = 615;
+        private int PosYE2 = 240;
+        private int PosYE3 = 305;
+        private int PosYE4 = 375;
+        private int PosYEPreQ = 420;
+        private int PosYWNextToConfirmE = 485;
+        private int PosYEQ = 555;
+        private int PosYE5 = 650;
 
         private bool _beamInBedExit;
         private bool _beamInBedEntry;
@@ -202,6 +206,20 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             }
         }
 
+        public bool BeamInNextToConfirmW
+        {
+            get { return this._beamInNextToConfirmW; }
+            set
+            {
+                if (this._beamInNextToConfirmW != value)
+                {
+                    this._beamInNextToConfirmW = value;
+
+                    OnPropertyChanged("BeamInNextToConfirmW");
+
+                }
+            }
+        }
         public bool BeamInPilingBedW1
         {
             get { return this._beamInPilingBedW1; }
@@ -318,6 +336,21 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                     this._beamInPilingPreQueueE = value;
 
                     OnPropertyChanged("BeamInPilingPreQueueE");
+
+                }
+            }
+        }
+
+        public bool BeamInNextToConfirmE
+        {
+            get { return this._beamInNextToConfirmE; }
+            set
+            {
+                if (this._beamInNextToConfirmE != value)
+                {
+                    this._beamInNextToConfirmE = value;
+
+                    OnPropertyChanged("BeamInNextToConfirmE");
 
                 }
             }
@@ -852,6 +885,8 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             _zones.Add("PilingBed4E");
             _zones.Add("PilingBedQueueE");
             _zones.Add("PilingBedQueueW");
+            _zones.Add("PilingBedNextToConfirmE");
+            _zones.Add("PilingBedNextToConfirmW");
             _zones.Add("PilingBed5W");
             _zones.Add("PilingBed5W1");
             _zones.Add("PilingBed5W2");
@@ -1209,6 +1244,18 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                 _beamsBedExit.Add(beam);
                                 OnPropertyChanged(nameof(BeamsBedExit));
                                 break;
+                            case "PilingBedNextToConfirmW":
+                                beam.PositionX = PosXWest;
+                                beam.PositionY = PosYWNextToConfirmW;
+                                _PilingBeams.Add(beam);
+                                OnPropertyChanged(nameof(BeamsBedExit));
+                                break;
+                            case "PilingBedNextToConfirmE":
+                                beam.PositionX = PosXEast;
+                                beam.PositionY = PosYWNextToConfirmE;
+                                _PilingBeams.Add(beam);
+                                OnPropertyChanged(nameof(BeamsBedExit));
+                                break;
                         }
                     }
                 }
@@ -1220,7 +1267,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             int LayoutHeight = 100;
             int height_beams = 15;
 
-            int LayoutHeightMin = 60;
+            int LayoutHeightMin = 50;
 
             ObservableCollection<Beam> beamsAdjustE1 = new ObservableCollection<Beam>();
             ObservableCollection<Beam> beamsAdjustE2 = new ObservableCollection<Beam>();
@@ -1412,12 +1459,16 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                 BeamInPilingBedW3 = false;
                 BeamInPilingBedW4 = false;
             }
+
             if (_PilingBeams.Count > 0)
             {
                 bool beaminPreQW = false;
                 bool beaminPreQE = false;
                 bool beaminQE = false;
                 bool beaminQw = false;
+                bool beaminNextW = false;
+                bool beaminNextE = false;
+
                 for (int i = 0; i < _PilingBeams.Count; i++)
                 {
                     switch (_PilingBeams[i].Zone)
@@ -1434,6 +1485,12 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                         case "PilingBedQueueE":
                             beaminQE = true;
                             break;
+                        case "PilingBedNextToConfirmE":
+                            beaminNextE = true;
+                            break;
+                        case "PilingBedNextToConfirmW":
+                            beaminNextW = true;
+                            break;
                     }
                 }
 
@@ -1441,6 +1498,8 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                 BeamInPilingPreQueueE = beaminPreQE;
                 BeamInPilingPreQueueW = beaminPreQW;
                 BeamInPilingQueueW = beaminQw;
+                BeamInNextToConfirmE = beaminNextE;
+                BeamInNextToConfirmW = beaminNextW;
             }
             else
             {
@@ -1448,6 +1507,8 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                 BeamInPilingQueueW = false;
                 BeamInPilingPreQueueE = false;
                 BeamInPilingPreQueueW = false;
+                BeamInNextToConfirmE = false;
+                BeamInNextToConfirmW = false;
             }
 
 

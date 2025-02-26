@@ -13,7 +13,7 @@
              xmlns:behaviour="clr-namespace:HSM.HMI.Safety.Operation.Behaviours"
              xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              xmlns:view="clr-namespace:HSM.HMI.Safety.Operation.Views"              
-             BorderThickness="0">
+             BorderThickness="0" Height="720" >
     <UserControl.Resources>
         <converter:LayoutLeftMarginConverter x:Key="layoutLeftMarginConverter" />
         <converter:LayoutTopMarginConverter x:Key="layoutTopMarginConverter" />
@@ -436,9 +436,9 @@
 
         </Grid>
 
-        <DockPanel DockPanel.Dock="Bottom" LastChildFill="True" Margin="0,0,0,0">
+        <DockPanel DockPanel.Dock="Top" LastChildFill="True" Margin="0,0,0,0">
 
-            <ScrollViewer Name="scrollXY" Width="1520" Height="669" Margin="5,2,5,2" Padding="0" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"
+            <ScrollViewer Name="scrollXY" Width="1520" Height="720" Margin="5,2,5,2" Padding="0" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"
                           behaviour:TouchScrolling.IsEnabled="False"
                           behaviour:TouchZoom.IsEnabled="False"
                           behaviour:TouchDrawing.IsEnabled="False"
@@ -464,13 +464,10 @@
                 <Grid Style="{StaticResource grdBackground}" Margin="0">
 
                     <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1323*"/>
-                            <ColumnDefinition Width="197*"/>
-                        </Grid.ColumnDefinitions>
+
 
                         <!-- Fondo principal con gradiente -->
-                        <Rectangle Margin="79,21,77,510" x:Name="BedEntry" Grid.ColumnSpan="2">
+                        <Rectangle Margin="79,21,77,578" x:Name="BedEntry">
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.00 0.0">
                                     <GradientStop Offset="0.5" Color="Black"/>
@@ -479,7 +476,7 @@
                             </Rectangle.Fill>
                         </Rectangle>
 
-                        <Rectangle Margin="81,159,77,374" x:Name="BedEntry2" Grid.ColumnSpan="2">
+                        <Rectangle Margin="80,142,78,391" x:Name="BedEntry2">
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.00 0.00">
                                     <GradientStop Offset="0.5" Color="Black"/>
@@ -488,7 +485,7 @@
                             </Rectangle.Fill>
                         </Rectangle>
 
-                        <ItemsControl ItemsSource="{Binding BeamsBedEntry, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                        <ItemsControl ItemsSource="{Binding BeamsBedEntry, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="3" Margin="0,0,192,0">
                             <ItemsControl.ItemsPanel>
                                 <ItemsPanelTemplate>
                                     <Canvas />
@@ -521,7 +518,7 @@
                         <!-- Imágenes de flechas -->
 
                         <!-- Collecting BedEntry -->
-                        <Border x:Name="West" BorderThickness="2" Margin="81,22,932,512">
+                        <Border x:Name="West" BorderThickness="2"  Margin="81,21,1119,578">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -533,14 +530,14 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" FontSize="15" Height="50" Margin="187,26,0,593" ><Run Text="Piling Bed 1 W"/><LineBreak/><Run/></TextBlock>
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" FontSize="15" Height="50" Margin="187,23,0,647" ><Run Text="Piling Bed 1 W"/><LineBreak/><Run/></TextBlock>
 
                         <!-- Collecting WestEntry -->
-                        <Border x:Name="East" BorderThickness="2,2"  Margin="1138,21,77,512" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5">
+                        <Border x:Name="East" BorderThickness="2,2"  Margin="1123,21,77,578" RenderTransformOrigin="0.5,0.5">
                             <Border.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
-                                    <SkewTransform AngleX="-0.247"/>
+                                    <SkewTransform AngleX="-0.281"/>
                                     <RotateTransform/>
                                     <TranslateTransform X="-0.246"/>
                                 </TransformGroup>
@@ -557,8 +554,16 @@
                             </Border.Style>
                         </Border>
 
-                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 1 E" FontSize="15" Height="50" Margin="1241,26,0,593" RenderTransformOrigin="0.5,0.75" Grid.ColumnSpan="2" />
-                        <Border x:Name="PilingBedE2" BorderThickness="2,2"  Margin="1138,159,77,379" Grid.ColumnSpan="2">
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 1 E" FontSize="15" Height="50" Margin="1238,23,0,647" RenderTransformOrigin="0.5,0.75" />
+                        <Border x:Name="PilingBedE2" BorderThickness="2,2"   Margin="1123,143,77,457" RenderTransformOrigin="0.5,0.5">
+                            <Border.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform AngleX="-0.247"/>
+                                    <RotateTransform/>
+                                    <TranslateTransform X="-0.246"/>
+                                </TransformGroup>
+                            </Border.RenderTransform>
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -570,9 +575,9 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 2 E" FontSize="15" Height="50" Margin="1235,164,0,455" />
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 2 E" FontSize="15" Margin="1238,145,0,550" />
 
-                        <Border x:Name="PilingBedW2" BorderThickness="2,2"  Margin="81,159,932,379">
+                        <Border x:Name="PilingBedW2" BorderThickness="2" Margin="81,143,1119,457">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -584,12 +589,12 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 2 W" FontSize="15" Height="50" Margin="187,164,0,455" />
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 2 W" FontSize="15" Margin="187,145,0,537" />
 
                     </Grid>
 
-                    <Grid>
-                        <Rectangle Margin="78,295,75,216" x:Name="PrePiling" IsHitTestVisible="False">
+                    <Grid Margin="0,-4,0,4">
+                        <Rectangle Margin="78,298,77,216" x:Name="PrePiling" IsHitTestVisible="False">
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.00 0.00">
                                     <GradientStop Offset="0.5" Color="Black"/>
@@ -628,7 +633,7 @@
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
                         </Canvas>
-                        <Border x:Name="PilingBedE4" BorderThickness="2,2"  Margin="1138,364,78,230">
+                        <Border x:Name="PilingBedE4" BorderThickness="2,2"  Margin="1123,335,77,319">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -640,9 +645,9 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 4 E" FontSize="15" Margin="1235,370,0,256" />
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 4 E" FontSize="15" Margin="1232,337,0,351" />
 
-                        <Border x:Name="PilingBedE3" BorderThickness="2,2"  Margin="1138,292,78,307">
+                        <Border x:Name="PilingBedE3" BorderThickness="2,2"   Margin="1123,268,77,386">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -654,10 +659,10 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 3 E" FontSize="15" Height="50" Margin="1235,297,0,322" />
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 3 E" FontSize="15" Margin="1232,270,0,426" />
 
 
-                        <Border x:Name="PilingBedW4" BorderThickness="2,2"  Margin="81,364,1119,230">
+                        <Border x:Name="PilingBedW4" BorderThickness="2,2"   Margin="81,335,1119,319">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -669,9 +674,9 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 4 W" FontSize="15" Margin="191,370,0,257" />
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 4 W" FontSize="15" Margin="191,337,0,357" />
 
-                        <Border x:Name="PilingBedW3" BorderThickness="2,2"  Margin="81,292,1119,307">
+                        <Border x:Name="PilingBedW3" BorderThickness="2,2"  Margin="81,268,1119,386">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -683,11 +688,11 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 3 W" FontSize="15" Height="50" Margin="191,297,0,322" />
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 3 W" FontSize="15" Margin="191,271,0,427" />
 
                     </Grid>
                     <Grid>
-                        <Rectangle Margin="78,441,75,70" x:Name="Piling">
+                        <Rectangle Margin="78,468,78,122" x:Name="Piling">
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.00 0.00">
                                     <GradientStop Offset="0.5" Color="Black"/>
@@ -723,7 +728,7 @@
                         <!--<Image Height="50" Width="50" Source="{StaticResource DownArrow}" Margin="1268,324,202,295" Opacity="0.5"/>-->
 
 
-                        <Border x:Name="PilingQueueE" BorderThickness="2,2"  Margin="1138,441,78,157">
+                        <Border x:Name="PilingQueueE" BorderThickness="2,2"  Margin="1123,398,77,256">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -735,9 +740,24 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" FontSize="15" Margin="1229,443,0,184" ><Run Text="Piling Pre Queue E"/></TextBlock>
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" FontSize="15" Margin="1222,400,0,291" ><Run Text="Piling Pre Queue E"/></TextBlock>
 
-                        <Border x:Name="QueueE" BorderThickness="2,2"  Margin="1138,514,78,84">
+                        <Border x:Name="NextToConfirmE" BorderThickness="2,2" Margin="1123,465,77,189">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="BorderBrush" Value="Red"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding BeamInNextToConfirmE}" Value="True">
+                                            <Setter Property="BorderBrush" Value="Green"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                        </Border>
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Next to confirm E" FontSize="15" Margin="1225,467,0,229" />
+
+
+                        <Border x:Name="QueueE" BorderThickness="2,2" Margin="1123,532,77,122">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -749,10 +769,10 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Confirmed in next bundle E" FontSize="15" Margin="1202,516,0,110" />
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Confirmed in next bundle E" FontSize="15" Margin="1202,534,0,162" />
 
 
-                        <Border x:Name="PilingQueueW" BorderThickness="2,2"  Margin="81,441,1119,157">
+                        <Border x:Name="PilingQueueW" BorderThickness="2,2" Margin="81,398,1119,256">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -764,8 +784,22 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" FontSize="15" Margin="173,443,0,184" ><Run Text="Piling Pre Queue W"/></TextBlock>
-                        <Border x:Name="QueueW" BorderThickness="2,2"  Margin="81,514,1119,84">
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" FontSize="15" Margin="177,400,0,294" ><Run Text="Piling Pre Queue W"/></TextBlock>
+                        <Border x:Name="NextToConfirmW" BorderThickness="2,2" Margin="81,465,1119,189">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="BorderBrush" Value="Red"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding BeamInNextToConfirmW}" Value="True">
+                                            <Setter Property="BorderBrush" Value="Green"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                        </Border>
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Next to confirm W" FontSize="15" Margin="177,467,0,229" />
+
+                        <Border x:Name="QueueW" BorderThickness="2,2"  Margin="81,532,1119,122">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -777,13 +811,13 @@
                                 </Style>
                             </Border.Style>
                         </Border>
-                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Confirmed in next bundle W" FontSize="15" Margin="148,516,0,110" />
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Confirmed in next bundle W" FontSize="15" Margin="148,534,0,162" />
 
 
                     </Grid>
 
                     <Grid Margin="2,-6,-2,6">
-                        <Rectangle x:Name="BedExit" Margin="0,592,0,0" HorizontalAlignment="Center" Width="1368" IsHitTestVisible="False">
+                        <Rectangle x:Name="BedExit" Margin="0,605,0,0" HorizontalAlignment="Center" Width="1362" IsHitTestVisible="False">
                             <Rectangle.Fill>
                                 <LinearGradientBrush SpreadMethod="Reflect" StartPoint="0 0" EndPoint="0.00 0.0">
                                     <GradientStop Offset="0.5" Color="Black"/>
@@ -819,7 +853,7 @@
                         <!-- Botones de flechas -->
 
                         <!-- Collecting BedExit -->
-                        <Border x:Name="WestD" BorderThickness="2,2"  Margin="79,592,1120,0">
+                        <Border x:Name="WestD" BorderThickness="2,2"  Margin="79,605,1121,0">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -832,9 +866,9 @@
                             </Border.Style>
                             <Rectangle Fill="Transparent" IsHitTestVisible="{Binding BeamNotInPilingBed5W }"/>
                         </Border>
-                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 5 W" FontSize="15" Margin="190,596,0,31" />
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 5 W" FontSize="15" Margin="191,607,0,81" />
 
-                        <Border x:Name="West2" BorderThickness="2,2"  Margin="405,592,794,0">
+                        <Border x:Name="West2" BorderThickness="2,2"  Margin="402,605,798,0">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -847,11 +881,11 @@
                             </Border.Style>
                             <Rectangle Fill="Transparent" IsHitTestVisible="{Binding BeamNotInPilingBed5W1}"/>
                         </Border>
-                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 5 W 1" FontSize="15" Margin="509,597,0,30" />
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 5 W 1" FontSize="15" Margin="508,615,0,63" />
 
 
                         <!-- Collecting WestExit -->
-                        <Border x:Name="EastD" BorderThickness="2,2"  Margin="1136,592,80,0">
+                        <Border x:Name="EastD" BorderThickness="2,2"  Margin="1121,605,79,0">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -865,9 +899,9 @@
 
                             <Rectangle Fill="Transparent" IsHitTestVisible="{Binding BeamNotInPilingBed5E}"/>
                         </Border>
-                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 5 E" FontSize="15" Margin="1241,596,0,29" />
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 5 E" FontSize="15" Margin="1236,607,0,81" />
 
-                        <Border x:Name="East2" BorderThickness="2,2"  Margin="827,592,389,0">
+                        <Border x:Name="East2" BorderThickness="2,2"  Margin="799,605,401,0">
                             <Border.Style>
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
@@ -881,12 +915,12 @@
 
                             <Rectangle Fill="Transparent" IsHitTestVisible="{Binding BeamNotInPilingBed5W2}"/>
                         </Border>
-                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 5 W 2" FontSize="15" Margin="923,596,0,29" />
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Piling Bed 5 W 2" FontSize="15" Margin="905,607,0,84" />
 
                     </Grid>
 
                     <Grid Name="Outisde">
-                        <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,665,76,0" />
+                        <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,715,76,0" />
                         <Line Stroke="White" Height="2" Stretch="Fill" X2="1" StrokeDashArray="5 5" VerticalAlignment="Top" Margin="78,19,76,0" />
                         <Line Stroke="White" Width="2" Stretch="Fill" Y2="1" StrokeDashArray="5 5" HorizontalAlignment="Left" Margin="78,25,0,5" />
                         <Line Stroke="White" Width="2" Stretch="Fill" Y2="1" StrokeDashArray="5 5" HorizontalAlignment="Left" Margin="1444,25,0,5" />
@@ -920,14 +954,14 @@
                                 <ScaleTransform ScaleX="-1"/>
                             </Image.RenderTransform>
                         </Image>
-                        
+
                         <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="1462,-26,0,505" RenderTransformOrigin="0.523,0.498"/>
                         <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="1462,106,0,373" RenderTransformOrigin="0.523,0.498"/>
                         <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="1462,220,0,259" RenderTransformOrigin="0.523,0.498"/>
                         <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="1462,305,0,174" RenderTransformOrigin="0.523,0.498"/>
                         <Image Source="{StaticResource DownArrow2}" HorizontalAlignment="Left" Width="58" Margin="1462,521,0,-33"/>
-                    
-                    
+
+
                     </Grid>
 
                     <Grid Name="Beams" Margin="0,0,0,-12">

@@ -649,14 +649,30 @@
                                 <Style TargetType="Border">
                                     <Setter Property="BorderBrush" Value="Red"/>
                                     <Style.Triggers>
-                                        <DataTrigger Binding="{Binding BeamInBedExit}" Value="True">
+                                        <DataTrigger Binding="{Binding BeamNotInBedExit}" Value="False">
                                             <Setter Property="BorderBrush" Value="Green"/>
                                         </DataTrigger>
                                     </Style.Triggers>
                                 </Style>
                             </Border.Style>
+                            <Rectangle Fill="Transparent" IsHitTestVisible="{Binding BeamNotInBedExit }"/>
                         </Border>
                         <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit West" FontSize="15" Margin="151,516,0,111" />
+
+                        <Border x:Name="West1" BorderThickness="5,5" Margin="389,482,824,0">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="BorderBrush" Value="Red"/>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding BeamNotInBedExitWest1}" Value="False">
+                                            <Setter Property="BorderBrush" Value="Green"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                            <Rectangle Fill="Transparent" IsHitTestVisible="{Binding BeamNotInBedExitWest1 }"/>
+                        </Border>
+                        <TextBlock Foreground="Gray" IsHitTestVisible="False" HorizontalAlignment="Left" Text="Collecting Bed Exit West 1" FontSize="15" Margin="457,516,0,111" />
 
 
                         <!-- Collecting WestExit -->

@@ -55,6 +55,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         bool beamModified;
         private bool _beamInStraightener;
         private bool _beamInBedExit;
+        private bool _beamInBedExitWest1;
         private bool _beamInBedEntry;
 
 
@@ -162,7 +163,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             }
         }
 
-        public bool BeamInBedExit
+        public bool BeamNotInBedExit
         {
             get { return this._beamInBedExit; }
             set
@@ -171,7 +172,22 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                 {
                     this._beamInBedExit = value;
 
-                    OnPropertyChanged("BeamInBedExit");
+                    OnPropertyChanged("BeamNotInBedExit");
+
+                }
+            }
+        }
+
+        public bool BeamNotInBedExitWest1
+        {
+            get { return this._beamInBedExitWest1; }
+            set
+            {
+                if (this._beamInBedExitWest1 != value)
+                {
+                    this._beamInBedExitWest1 = value;
+
+                    OnPropertyChanged("BeamNotInBedExitWest1");
 
                 }
             }
@@ -535,6 +551,7 @@ namespace HSM.HMI.Safety.Operation.ViewModels
             _zones.Add("CollectingBedEntryWest");
             _zones.Add("CollectingBedExitQueueWest");
             _zones.Add("CollectingBedExitWest");
+            _zones.Add("CollectingBedExitWest1");
 
             this._cancelTask = new CancellationTokenSource();
             this._runningTask = new Task(() => DoProcess(this._cancelTask.Token), this._cancelTask.Token);
@@ -607,6 +624,9 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                     break;
 
                 case "CollectingBedExitWest":
+                    beams = BeamsBedExit.ToList();
+                    break;
+                case "CollectingBedExitWest1":
                     beams = BeamsBedExit.ToList();
                     break;
             }
@@ -691,12 +711,20 @@ namespace HSM.HMI.Safety.Operation.ViewModels
                                     OnPropertyChanged(nameof(BeamsInQueue));
                                 break;
 
-                            case "CollectingBedExitWest":
+                            case "CollectingBedExitWest1":
 
                                     beam.PositionX = 100;
                                     _beamsBedExit.Add(beam);
                                     OnPropertyChanged(nameof(BeamsBedExit));
                                 
+                                break;
+
+                            case "CollectingBedExitWest":
+
+                                beam.PositionX = 100;
+                                _beamsBedExit.Add(beam);
+                                OnPropertyChanged(nameof(BeamsBedExit));
+
                                 break;
                         }
                     }
@@ -747,11 +775,27 @@ namespace HSM.HMI.Safety.Operation.ViewModels
         {
             if(_beamsBedExit.Count > 0)
             {
-                BeamInBedExit = true;
+                bool beaminBedExit = true;
+                bool beaminBedExit1 = true;
+                foreach (var beam in _beamsBedExit)
+                {
+                    switch (beam.Zone)
+                    {
+                        case "CollectingBedExitWest":
+                            beaminBedExit = false;
+                            break;
+                        case "CollectingBedExitWest1":
+                            beaminBedExit1 = false;
+                            break;
+                    }
+                }
+                BeamNotInBedExit = beaminBedExit;
+                BeamNotInBedExitWest1 = beaminBedExit1;
             }
             else
             {
-                BeamInBedExit = false;
+                BeamNotInBedExit = true;
+                BeamNotInBedExitWest1 = true;
             }
 
             if (_beamsBedEntry.Count > 0)
