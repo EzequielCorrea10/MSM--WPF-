@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "D:\\Proyectos\\HSM\\Beams\\Source\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\viewmodels\\vmlayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\viewmodels\\vmlayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\views\\windows\\addbeam.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\views\\windows\\addbeam.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\views\\windows\\beamlist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\views\\windows\\beamlist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\views\\windows\\zonedetail.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\views\\windows\\zonedetail.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\viewmodels\\vmpillingzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\viewmodels\\vmpillingzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|d:\\proyectos\\hsm\\beams\\source\\hmi\\uib.hmi.safety.operation\\viewmodels\\vmlayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\viewmodels\\vmlayout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\views\\usercontrols\\usrlayout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\views\\usercontrols\\usrlayout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|d:\\proyectos\\hsm\\beams\\source\\hmi\\uib.hmi.safety.operation\\views\\usercontrols\\usrpillinglayout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\views\\usercontrols\\usrpillinglayout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\views\\usercontrols\\usrpillinglayout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\views\\windows\\beamlist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\views\\windows\\beamlist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\viewmodels\\vmzonedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,20 +55,12 @@
       "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\views\\windows\\zonedetail.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|d:\\proyectos\\hsm\\beams\\source\\hmi\\uib.hmi.safety.operation\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\views\\usercontrols\\usrpillinglayout.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\views\\usercontrols\\usrpillinglayout.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\views\\windows\\addbeam.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\views\\windows\\addbeam.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\views\\windows\\zonedetail.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|solutionrelative:hmi\\uib.hmi.safety.operation\\views\\windows\\zonedetail.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D02EE36E-48F6-420C-9C0C-1E685BB816CC}|HMI\\UIB.HMI.Safety.Operation\\HSM.HMI.Safety.Operation.csproj|D:\\Proyectos\\HSM\\Beams\\Source\\hmi\\uib.hmi.safety.operation\\views\\usercontrols\\usrlayout.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -132,28 +132,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{896e815d-3862-4978-a1bc-cb6a3e70045c}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 16,
@@ -168,20 +148,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "AddBeam.xaml.cs",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\AddBeam.xaml.cs",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\AddBeam.xaml.cs",
               "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\AddBeam.xaml.cs",
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\AddBeam.xaml.cs",
-              "ViewState": "AgIAAN8AAAAAAAAAAAAAAPQAAACCAAAAAAAAAA==",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAqwLIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T14:42:16.423Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "usrPillingLayout.xaml",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrPillingLayout.xaml",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrPillingLayout.xaml",
@@ -189,12 +170,11 @@
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrPillingLayout.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-05T17:45:36.431Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "usrLayout.xaml",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrLayout.xaml",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrLayout.xaml",
@@ -202,18 +182,17 @@
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrLayout.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-10-29T19:45:18.193Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "vmLayout.cs",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmLayout.cs",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmLayout.cs",
               "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmLayout.cs",
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmLayout.cs",
-              "ViewState": "AgIAAAEDAAAAAAAAAAAqwBgDAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAO8CAAAAAAAAAAAuwBQDAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T19:59:27.835Z",
               "IsPinned": true,
@@ -221,33 +200,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "vmPillingZone.cs",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmPillingZone.cs",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmPillingZone.cs",
               "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmPillingZone.cs",
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmPillingZone.cs",
-              "ViewState": "AgIAAN8FAAAAAAAAAAAAABUGAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUGAAAAAAAAAAAAABUGAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T16:30:16.747Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{896e815d-3862-4978-a1bc-cb6a3e70045c}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "ZoneDetail.xaml",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\ZoneDetail.xaml",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\ZoneDetail.xaml",
               "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\ZoneDetail.xaml",
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\ZoneDetail.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-17T12:46:24.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T12:46:24.227Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "vmMainDesktop.cs",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmMainDesktop.cs",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmMainDesktop.cs",
@@ -255,24 +249,22 @@
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmMainDesktop.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T18:08:01.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T18:08:01.757Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\App.xaml",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\App.xaml",
               "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\App.xaml",
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-25T17:37:28.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T17:37:28.887Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "vmZoneDetail.cs",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmZoneDetail.cs",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmZoneDetail.cs",
@@ -280,37 +272,52 @@
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmZoneDetail.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T13:36:34.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T13:36:34.988Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "BeamList.xaml.cs",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\BeamList.xaml.cs",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\BeamList.xaml.cs",
               "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\BeamList.xaml.cs",
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\BeamList.xaml.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAqwDMAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwDMAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-14T15:50:31.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "ZoneDetail.xaml.cs",
+              "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\ZoneDetail.xaml.cs",
+              "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\ZoneDetail.xaml.cs",
+              "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\ZoneDetail.xaml.cs",
+              "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\ZoneDetail.xaml.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAqwD8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T13:42:11.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "DesktopWindow.xaml",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\DesktopWindow.xaml",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\DesktopWindow.xaml",
               "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\DesktopWindow.xaml",
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\DesktopWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-13T12:14:29.888Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T12:14:29.888Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "DesktopWindow.xaml.cs",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\DesktopWindow.xaml.cs",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\DesktopWindow.xaml.cs",
@@ -318,12 +325,11 @@
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\DesktopWindow.xaml.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAiwHwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T19:09:31.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T19:09:31.127Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "vmMainCommon.cs",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmMainCommon.cs",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmMainCommon.cs",
@@ -331,24 +337,11 @@
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\ViewModels\\vmMainCommon.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAqwJEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T23:31:19.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T23:31:19.175Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "ZoneDetail.xaml.cs",
-              "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\ZoneDetail.xaml.cs",
-              "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\ZoneDetail.xaml.cs",
-              "ToolTip": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\ZoneDetail.xaml.cs",
-              "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\Views\\Windows\\ZoneDetail.xaml.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T13:42:11.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "usrPillingLayout.xaml.cs",
               "DocumentMoniker": "D:\\Proyectos\\HSM\\Beams\\Source\\HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrPillingLayout.xaml.cs",
               "RelativeDocumentMoniker": "HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrPillingLayout.xaml.cs",
@@ -356,8 +349,7 @@
               "RelativeToolTip": "HMI\\UIB.HMI.Safety.Operation\\Views\\UserControls\\usrPillingLayout.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:53:56.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T17:53:56.312Z"
             },
             {
               "$type": "Document",

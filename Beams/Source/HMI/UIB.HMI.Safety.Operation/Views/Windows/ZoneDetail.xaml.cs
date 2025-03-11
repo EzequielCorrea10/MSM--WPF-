@@ -62,69 +62,63 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            if (!String.IsNullOrEmpty(BeamName.Text))
+            if (beams.Contains(beam))
             {
-                if (beams.Contains(beam))
+                string tagsSet = string.Empty;
+                for (int i = 0; i < beams.Count; i++)
                 {
-                    string tagsSet = string.Empty;
-                    for (int i = 0; i< beams.Count; i++)
+                    if (i != beams.Count - 1)
                     {
-                        if(i != beams.Count - 1) { 
-                            if (beams[i] == beam) {
-                                tagsSet += BeamName.Text + ',';
-                            }
-                            else if (beams[i].Zone == beam.Zone)
-                            {
-                                tagsSet += beams[i].Name + ',';
-                            }
-                        }
-                        else
+                        if (beams[i] == beam)
                         {
-                            if (beams[i] == beam)
-                            {
-                                tagsSet += BeamName.Text;
-                            }
-                            else if (beams[i].Zone == beam.Zone)
-                            {
-                                tagsSet += beams[i].Name;
-                            }
+                            tagsSet += BeamName.Text + ',';
                         }
-
-                    }
-
-                    if (beam.Zone == "ConfirmedInNextBundleE")
-                        beam.Zone = "PilingBedQueueE";
-                    else if (beam.Zone == "ConfirmedInNextBundleW")
-                        beam.Zone = "PilingBedQueueW";
-
-                    if (!RodeoHandler.Tag.SetValue(string.Format("HSM." + beam.Zone ), tagsSet))
-                    {                        
-                        throw new Exception("Error");
-                    }
-
-                    if (beam.Zone.Contains("Piling") )
-                    {
-                        if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag_Piling"), string.Format("HSM." + beam.Zone)))
+                        else if (beams[i].Zone == beam.Zone)
                         {
-                            throw new Exception("Error");
+                            tagsSet += beams[i].Name + ',';
                         }
                     }
                     else
                     {
-                        if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag_Collecting"), string.Format("HSM." + beam.Zone)))
+                        if (beams[i] == beam)
                         {
-                            throw new Exception("Error");
+                            tagsSet += BeamName.Text;
+                        }
+                        else if (beams[i].Zone == beam.Zone)
+                        {
+                            tagsSet += beams[i].Name;
                         }
                     }
 
                 }
-                this.Close();
-            }
-            else
-            {
-                throw new Exception("Error");
+
+                if (beam.Zone == "ConfirmedInNextBundleE")
+                    beam.Zone = "PilingBedQueueE";
+                else if (beam.Zone == "ConfirmedInNextBundleW")
+                    beam.Zone = "PilingBedQueueW";
+
+                if (!RodeoHandler.Tag.SetValue(string.Format("HSM." + beam.Zone), tagsSet))
+                {
+                    throw new Exception("Error");
+                }
+
+                if (beam.Zone.Contains("Piling"))
+                {
+                    if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag_Piling"), string.Format("HSM." + beam.Zone)))
+                    {
+                        throw new Exception("Error");
+                    }
+                }
+                else
+                {
+                    if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag_Collecting"), string.Format("HSM." + beam.Zone)))
+                    {
+                        throw new Exception("Error");
+                    }
+                }
 
             }
+            this.Close();
         }
     }
 }

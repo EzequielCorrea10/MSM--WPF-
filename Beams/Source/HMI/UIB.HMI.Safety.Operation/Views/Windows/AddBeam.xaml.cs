@@ -177,84 +177,76 @@ namespace HSM.HMI.Safety.Operation.Views.Windows
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            if (!String.IsNullOrEmpty(BeamName.Text))
+            if (StorageGroupSelected == "Confirmed In Next Bundle E")
+                StorageGroupSelected = "Piling Bed Queue E";
+            else if (StorageGroupSelected == "Confirmed In Next Bundle W")
+                StorageGroupSelected = "Piling Bed Queue W";
+
+            string outputZone = string.Concat(StorageGroupSelected.Split(' ').Select(word =>
+            CultureInfo.CurrentCulture.TextInfo.ToTitleCase(word.ToLower())));
+
+            int index = PositionSelected.IndexOf("Position");
+            int numberPart = int.Parse(PositionSelected.Substring(index + "Position".Length).Trim());
+
+            string[] beamsInZoneName = tag.Split(',');
+
+            List<string> result = new List<string>();
+
+            if (beamsInZoneName.Length > numberPart)
             {
-                if (StorageGroupSelected == "Confirmed In Next Bundle E")
-                    StorageGroupSelected = "Piling Bed Queue E";
-                else if (StorageGroupSelected == "Confirmed In Next Bundle W")
-                    StorageGroupSelected = "Piling Bed Queue W";
-
-                string outputZone = string.Concat(StorageGroupSelected.Split(' ').Select(word =>
-                CultureInfo.CurrentCulture.TextInfo.ToTitleCase(word.ToLower())));
-
-                int index = PositionSelected.IndexOf("Position");
-                int numberPart = int.Parse (PositionSelected.Substring(index + "Position".Length).Trim());
-
-                string[] beamsInZoneName = tag.Split(',');
-
-                List<string> result = new List<string>();
-
-                if (beamsInZoneName.Length > numberPart)
+                for (int i = 1; i <= beamsInZoneName.Length; i++)
                 {
-                    for (int i = 1; i <= beamsInZoneName.Length; i++)
+                    if (numberPart == i)
                     {
-                        if (numberPart == i)
-                        {
-                            result.Add(BeamName.Text);
-                        }
+                        result.Add(BeamName.Text);
+                    }
 
-                        if (i <= beamsInZoneName.Length && !String.IsNullOrEmpty(beamsInZoneName[i - 1])) // Asegura que no se salga del rango original
-                        {
-                            result.Add(beamsInZoneName[i - 1]);
-                        }
+                    if (i <= beamsInZoneName.Length && !String.IsNullOrEmpty(beamsInZoneName[i - 1])) // Asegura que no se salga del rango original
+                    {
+                        result.Add(beamsInZoneName[i - 1]);
                     }
                 }
-                else
-                {
-                    for (int i = 1; i <= numberPart; i++)
-                    {
-                        if (numberPart == i)
-                        {
-                            result.Add(BeamName.Text);
-                        }
-
-                        if (i <= beamsInZoneName.Length && !String.IsNullOrEmpty(beamsInZoneName[i-1])) // Asegura que no se salga del rango original
-                        {
-                            result.Add(beamsInZoneName[i - 1]);
-                        }
-                    }
-                }
-
-
-                string finalResult = string.Join(",", result);
-
-                if (!RodeoHandler.Tag.SetValue(string.Format("HSM." + outputZone), finalResult))
-                {
-                    throw new Exception("Error");
-                }
-
-                if (outputZone.Contains("Piling"))
-                {
-                    if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag_Piling"), string.Format("HSM." + outputZone)))
-                    {
-                        throw new Exception("Error");
-                    }
-                }
-                else
-                {
-                    if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag_Collecting"), string.Format("HSM." + outputZone)))
-                    {
-                        throw new Exception("Error");
-                    }
-                }
-
-                this.Close();
             }
             else
             {
-                throw new Exception("Error");
+                for (int i = 1; i <= numberPart; i++)
+                {
+                    if (numberPart == i)
+                    {
+                        result.Add(BeamName.Text);
+                    }
 
+                    if (i <= beamsInZoneName.Length && !String.IsNullOrEmpty(beamsInZoneName[i - 1])) // Asegura que no se salga del rango original
+                    {
+                        result.Add(beamsInZoneName[i - 1]);
+                    }
+                }
             }
+
+
+            string finalResult = string.Join(",", result);
+
+            if (!RodeoHandler.Tag.SetValue(string.Format("HSM." + outputZone), finalResult))
+            {
+                throw new Exception("Error");
+            }
+
+            if (outputZone.Contains("Piling"))
+            {
+                if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag_Piling"), string.Format("HSM." + outputZone)))
+                {
+                    throw new Exception("Error");
+                }
+            }
+            else
+            {
+                if (!RodeoHandler.Tag.SetValue(string.Format("HSM.Check_On_Tag_Collecting"), string.Format("HSM." + outputZone)))
+                {
+                    throw new Exception("Error");
+                }
+            }
+
+            this.Close();
         }
         #endregion
     }
